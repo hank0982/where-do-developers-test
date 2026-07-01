@@ -1,68 +1,74 @@
-# Thesis / Paper Title
-This repository is a companion page for the following thesis / publication:
-> Author Names. Publication year. Thesis / Paper title. Publication venue / proceedings.
+# Anonymous Replication Package
 
-It contains all the material required for replicating the study, including: X, Y, and Z.
+This repository is an anonymous replication package prepared for peer review of an ICSE submission.
+It intentionally omits author identities, affiliations, and project-specific attribution.
 
-## How to cite us
-The scientific article describing design, execution, and main results of this study is available [here](https://www.google.com).<br> 
-If this study is helping your research, consider to cite it is as follows, thanks!
+The current package primarily exposes the dynamic-analysis pipeline used to collect per-test coverage and level-0 method-call observations for a set of Java projects.
 
+## Contents
+
+The main material is located under [src/replication_dynamic_analysis](src/replication_dynamic_analysis/):
+
+- [jacoco-pertest](src/replication_dynamic_analysis/jacoco-pertest/) contains the per-test JaCoCo wrapper, listeners, and tracking agent.
+- [java_repos](src/replication_dynamic_analysis/java_repos/) contains the subject Java projects used by the study.
+- [scripts](src/replication_dynamic_analysis/scripts/) contains the import and orchestration scripts for rebuilding the analysis outputs.
+- [readme](src/replication_dynamic_analysis/readme/) contains supporting documentation copied with the dynamic-analysis bundle.
+
+## Environment
+
+The replication material assumes a Unix-like environment with:
+
+- Java
+- Maven
+- Python 3
+
+Additional Maven dependencies for the listeners and agents are built automatically when needed.
+
+## Quick Start
+
+From the repository root:
+
+```bash
+cd src/replication_dynamic_analysis
 ```
-@article{,
-  title={},
-  author={},
-  journal={},
-  volume={},
-  pages={},
-  year={},
-  publisher={}
-}
+
+Run the per-test dynamic-analysis wrapper on one subject project:
+
+```bash
+./jacoco-pertest/jacoco-pertest-wrapper-v2.sh ./java_repos/commons-io test
 ```
 
-## Quick start
-Here a documentation on how to use the replication material should be provided.
+This produces per-test artifacts inside the target repository, including:
 
-### Getting started
+- `target/jacoco-pertest/`
+- `jacoco-pertest-results/`
 
-1. Provide step-by-step instruction on how to use this repository, including requirements, and installation / script execution steps.
+To rebuild the broader per-repository analysis pipeline for one project:
 
-2. Code snippets should be formatted as follows.
-   - `git clone https://github.com/S2-group/template-replication-package`
+```bash
+./scripts/rebuild_repo_db.sh commons-io
+```
 
-3. Links to specific folders / files of the repository can be linked in Markdown, for example this is a link to the [src](src/) folder.
+To process multiple repositories:
 
-## Repository Structure
-This is the root directory of the repository. The directory is structured as follows:
+```bash
+./scripts/process_all_java_repos.sh
+```
 
-    template-replication-package
-     .
-     |
-     |--- src/                             Source code used in the thesis / paper
-     |
-     |--- documentation/                   Further structured documentation of the replication package content
-     |
-     |--- data/                            Data used in the thesis / paper 
-            |
-            |--- additional_subfolder/     Subfolders should be further nested to increase readability                 
-  
+## Notes on Structure
 
-Usually, replication packages should include:
-* a [src](src/) folder, containing the entirety of the source code used in the study,
-* a [data](data/) folder, containing the raw, intermediate, and final data of the study
-* if needed, a [documentation](documentation/) folder, where additional information w.r.t. this README is provided. 
+The dynamic-analysis bundle is intentionally self-contained. In particular, `scripts/methods-csv/` is included so the level-0 tracker can resolve concrete method identifiers during execution.
 
-In addition, the replication package can include additional data/results (in form of raw data, tables, and/or diagrams) which were not included in the study manuscript.
+The top-level `data/` and `documentation/` directories are retained for packaging convenience, but the runnable artifacts for the current submission snapshot are under `src/replication_dynamic_analysis/`.
 
-## Replication package naming convention
-The final name of this repository, as appearing in the published article, should be formatted according to the following naming convention:
-`<short conference/journal name>-<yyyy>-<semantic word>-<semantic word>-rep-pkg`
+## RQ4 Data
 
-For example, the repository of a research published at the International conference on ICT for Sustainability (ICT4S) in 2022, which investigates cloud tactics would be named `ICT4S-2022-cloud-tactics-rep-pkg`
+The `data/RQ4/` directory contains the RQ4 export derived from `Sheet4` of the qualitative coding workbook:
 
-## Preferred repository license
-As general indication, we suggest to use:
-* [MIT license](https://opensource.org/licenses/MIT) for code-based repositories, and 
-* [Creative Commons Attribution 4.0	(CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) for text-based repository (papers, docts, etc.).
+- [`data/RQ4/Qualitative Notes for The Most Tested Method.csv`](data/RQ4/Qualitative%20Notes%20for%20The%20Most%20Tested%20Method.csv)
 
-For more information on how to add a license to your replication package, refer to the [official GitHUb documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
+This file is the consolidated RQ4 table, with focal-method identifiers, aggregate execution counts, tag counts, majority test-case type, and summarized oracle/test-type labels.
+
+## Anonymity Notice
+
+This package is distributed in anonymous form for peer review. Any identifying metadata should remain suppressed until the review process is complete.

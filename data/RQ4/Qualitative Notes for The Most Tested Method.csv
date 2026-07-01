@@ -1,0 +1,359 @@
+repo,rank,method_id,class_name,method_name,focal_method,test_count,parameterized,non_parameterized,parameterized_sets,non_parameterized_sets,total,parameters_qty,tag_count,majority_test_case_type,tags,largest_parameterized_execution,largest_non_parameterized_execution,Oracle Type,Parameterized Test Type,Single Test Oracle Type,Single Test Type,
+commons-cli,1,446,org.apache.commons.cli.OptionValidator,validate,org.apache.commons.cli.OptionValidator.validate,111,109,2,1,2,111,1,1,parameterized,package-private,109,1,Strong Oracle (Rule-derived),Parameterized Test Case: Dynamically Generated Pairs (Rule Based),Strong Oracle (Throw a specific error),Multiple Unique Test Cases,
+commons-cli,2,282,org.apache.commons.cli.Parser,parse,org.apache.commons.cli.Parser.parse,108,12,96,12,67,108,2,3,non_parameterized,"override,abstract-class,public",1,3,Strong Oracle (Fixed for each input),Parameterized Test Case: Iterate Different Class,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Inheritance for common test set
+Multiple Unique Test Cases",
+commons-cli,3,243,org.apache.commons.cli.DefaultParser,parse,org.apache.commons.cli.DefaultParser.parse,102,42,60,16,60,102,2,2,non_parameterized,"override,public",16,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Iterate Different Class,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-cli,4,410,org.apache.commons.cli.CommandLine,hasOption,org.apache.commons.cli.CommandLine.hasOption,59,56,3,8,3,59,1,1,parameterized,public,16,1,Strong Oracle (Fixed for each input),"Parameterized Test Case: Fixed Dataset
+Parameterized Test Case: Iterate Different Class",Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-cli,5,41,org.apache.commons.cli.TypeHandler,createValue,org.apache.commons.cli.TypeHandler.createValue,51,50,1,1,1,51,2,1,parameterized,public,50,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Weak Oracle (Not Null),Multiple Unique Test Cases,
+commons-cli,6,52,org.apache.commons.cli.TypeHandler,createValue,org.apache.commons.cli.TypeHandler.createValue,50,50,0,1,0,50,2,1,parameterized,public,50,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+commons-cli,7,403,org.apache.commons.cli.CommandLine,hasOption,org.apache.commons.cli.CommandLine.hasOption,46,41,5,4,5,46,1,1,parameterized,public,16,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-cli,8,439,org.apache.commons.cli.CommandLine,hasOption,org.apache.commons.cli.CommandLine.hasOption,41,40,1,3,1,41,1,1,parameterized,public,16,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-cli,9,418,org.apache.commons.cli.CommandLine,getOptionValue,org.apache.commons.cli.CommandLine.getOptionValue,40,36,4,7,4,40,1,1,parameterized,public,16,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-cli,10,406,org.apache.commons.cli.CommandLine,hasOption,org.apache.commons.cli.CommandLine.hasOption,40,40,0,3,0,40,1,1,parameterized,public,16,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+commons-collections,1,1275,org.apache.commons.collections4.map.ConcurrentReferenceHashMap,entrySet,org.apache.commons.collections4.map.ConcurrentReferenceHashMap.entrySet,144,0,144,0,17,144,0,2,non_parameterized,"override,public",0,19,X,X,"Strong Oracle (Return a specific value)
+Weak Oracle (Not Null)","Inheritance for common test set
+Multiple Unique Test Cases",
+commons-collections,2,1219,org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder,get,org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.get,131,0,131,0,11,131,0,2,non_parameterized,"override,public",0,19,X,X,"Strong Oracle (Return a specific value)
+Weak Oracle (Not Null)
+Weak Oracle (Throw an error)","Inheritance for common test set
+Multiple Unique Test Cases",
+commons-collections,3,1271,org.apache.commons.collections4.map.ConcurrentReferenceHashMap,put,org.apache.commons.collections4.map.ConcurrentReferenceHashMap.put,93,0,93,0,7,93,2,2,non_parameterized,"override,public",0,19,X,X,"Weak Oracle (Throw an error)
+Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)","Inheritance for common test set
+Multiple Unique Test Cases",
+commons-collections,4,4057,org.apache.commons.collections4.collection.AbstractCollectionDecorator,contains,org.apache.commons.collections4.collection.AbstractCollectionDecorator.contains,83,0,83,0,6,83,1,3,non_parameterized,"override,abstract-class,public",0,34,X,X,Strong Oracle (Return a specific value),"Inheritance for common test set
+Multiple Unique Test Cases",
+commons-collections,5,1570,org.apache.commons.collections4.map.AbstractMapDecorator,equals,org.apache.commons.collections4.map.AbstractMapDecorator.equals,83,0,83,0,6,83,1,3,non_parameterized,"override,abstract-class,public",0,21,X,X,"Strong Oracle (Return a specific value)
+Coarse Oracle (Less Than)","Inheritance for common test set
+Multiple Unique Test Cases",
+commons-collections,6,1294,org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator,remove,org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.remove,82,0,82,0,6,82,0,2,non_parameterized,"abstract-class,public",0,19,X,X,Strong Oracle (Return a specific value),"Inheritance for common test set
+Multiple Unique Test Cases",
+commons-collections,7,1266,org.apache.commons.collections4.map.ConcurrentReferenceHashMap,clear,org.apache.commons.collections4.map.ConcurrentReferenceHashMap.clear,76,0,76,0,4,76,0,2,non_parameterized,"override,public",0,19,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-collections,8,1280,org.apache.commons.collections4.map.ConcurrentReferenceHashMap,values,org.apache.commons.collections4.map.ConcurrentReferenceHashMap.values,75,0,75,0,5,75,0,2,non_parameterized,"override,public",0,19,X,X,"Strong Oracle (Return a specific value)
+Coarse Oracle (Less Than)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-collections,9,1193,org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet,remove,org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet.remove,75,0,75,0,4,75,1,2,non_parameterized,"override,public",0,19,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-collections,10,1279,org.apache.commons.collections4.map.ConcurrentReferenceHashMap,keySet,org.apache.commons.collections4.map.ConcurrentReferenceHashMap.keySet,70,0,70,0,5,70,0,2,non_parameterized,"override,public",0,19,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,1,772,org.apache.commons.dbcp2.BasicDataSource,getConnection,org.apache.commons.dbcp2.BasicDataSource.getConnection,161,0,161,0,51,161,0,2,non_parameterized,"override,public",0,5,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)
+Weak Oracle (Not the same) 
+Weak Oracle (Not Null)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,2,1681,org.apache.commons.dbcp2.DelegatingStatement,close,org.apache.commons.dbcp2.DelegatingStatement.close,54,0,54,0,14,54,0,2,non_parameterized,"override,public",0,11,X,X,"Strong Oracle (Throw a specific error)
+Weak Oracle (Not Null)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,3,1183,org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper,close,org.apache.commons.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper.close,48,0,48,0,19,48,0,2,non_parameterized,"override,public",0,5,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)
+Weak Oracle (Not Null)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,4,992,org.apache.commons.dbcp2.managed.ManagedDataSource,getConnection,org.apache.commons.dbcp2.managed.ManagedDataSource.getConnection,46,0,46,0,32,46,0,2,non_parameterized,"override,public",0,3,X,X,"Weak Oracle (Not Null)
+Strong Oracle (Throw a specific error)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,5,61,org.apache.commons.dbcp2.DelegatingPreparedStatement,executeQuery,org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery,42,0,42,0,18,42,0,2,non_parameterized,"override,public",0,9,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)
+Weak Oracle (Not Null)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,6,938,org.apache.commons.dbcp2.managed.ManagedConnection,close,org.apache.commons.dbcp2.managed.ManagedConnection.close,39,0,39,0,23,39,0,2,non_parameterized,"override,public",0,3,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)
+Weak Oracle (Not Null)
+Weak Oracle (Not the same) ","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,7,298,org.apache.commons.dbcp2.datasources.InstanceKeyDataSource,getConnection,org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection,34,0,34,0,28,34,2,3,non_parameterized,"override,abstract-class,public",0,2,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)
+Weak Oracle (Not Null)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,8,140,org.apache.commons.dbcp2.datasources.InstanceKeyDataSourceFactory,getObjectInstance,org.apache.commons.dbcp2.datasources.InstanceKeyDataSourceFactory.getObjectInstance,28,26,2,1,2,28,4,3,parameterized,"override,abstract-class,public",26,1,Weak Oracle (Not Null),Parameterized Test Case: Fixed Dataset,"Weak Oracle (Not Null)
+Weak Oracle (Throw an error)",Multiple Unique Test Cases,
+commons-dbcp,9,1654,org.apache.commons.dbcp2.DelegatingConnection,prepareStatement,org.apache.commons.dbcp2.DelegatingConnection.prepareStatement,27,0,27,0,12,27,1,2,non_parameterized,"override,public",0,9,X,X,"Weak Oracle (Throw an error)
+Weak Oracle (Not the same) 
+Weak Oracle (Not Null)
+Strong Oracle (Throw a specific error)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-dbcp,10,671,org.apache.commons.dbcp2.BasicDataSource,createDataSource,org.apache.commons.dbcp2.BasicDataSource.createDataSource,26,0,26,0,11,26,0,1,non_parameterized,protected,0,5,X,X,"Strong Oracle (Return a specific value)
+Coarse Oracle (Less Than)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-exec,1,105,org.apache.commons.exec.DefaultExecutor,execute,org.apache.commons.exec.DefaultExecutor.execute,32,0,32,0,32,32,1,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)
+Weak Oracle (Throw an error)",Multiple Unique Test Cases,
+commons-exec,2,129,org.apache.commons.exec.DefaultExecutor,execute,org.apache.commons.exec.DefaultExecutor.execute,14,0,14,0,14,14,2,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Return a specific value)
+Weak Oracle (Throw an error)",Multiple Unique Test Cases,
+commons-exec,3,252,org.apache.commons.exec.CommandLine,addArgument,org.apache.commons.exec.CommandLine.addArgument,8,0,8,0,8,8,1,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-exec,4,77,org.apache.commons.exec.launcher.CommandLauncherImpl,isFailure,org.apache.commons.exec.launcher.CommandLauncherImpl.isFailure,8,0,8,0,2,8,1,3,non_parameterized,"override,abstract-class,public",0,4,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-exec,5,261,org.apache.commons.exec.CommandLine,CommandLine,org.apache.commons.exec.CommandLine.CommandLine,7,0,7,0,7,7,1,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-exec,6,271,org.apache.commons.exec.CommandLine,parse,org.apache.commons.exec.CommandLine.parse,7,0,7,0,7,7,1,1,non_parameterized,public,0,1,X,X,Strong Oracle (Throw a specific error),Multiple Unique Test Cases,
+commons-exec,7,121,org.apache.commons.exec.DefaultExecutor,isFailure,org.apache.commons.exec.DefaultExecutor.isFailure,6,0,6,0,6,6,1,2,non_parameterized,"override,public",0,1,X,X,"Weak Oracle (Throw an error)
+Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-exec,8,109,org.apache.commons.exec.DefaultExecutor,setWatchdog,org.apache.commons.exec.DefaultExecutor.setWatchdog,5,0,5,0,5,5,1,2,non_parameterized,"override,public",0,1,X,X,"Weak Oracle (Throw an error)
+Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-exec,9,37,org.apache.commons.exec.ExecuteWatchdog,destroyProcess,org.apache.commons.exec.ExecuteWatchdog.destroyProcess,5,0,5,0,5,5,0,1,non_parameterized,public,0,1,X,X,"Weak Oracle (Throw an error)
+Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-exec,10,259,org.apache.commons.exec.CommandLine,addArgument,org.apache.commons.exec.CommandLine.addArgument,4,0,4,0,4,4,2,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-io,1,518,org.apache.commons.io.Charsets,isAlias,org.apache.commons.io.Charsets.isAlias,790,790,0,1,0,790,2,1,parameterized,public,790,0,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),X,X,
+commons-io,2,1680,org.apache.commons.io.input.CharSequenceInputStream,read,org.apache.commons.io.input.CharSequenceInputStream.read,192,187,5,4,5,192,3,2,parameterized,"override,public",169,1,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-io,3,1804,org.apache.commons.io.input.XmlStreamReader,XmlStreamReader,org.apache.commons.io.input.XmlStreamReader.XmlStreamReader,185,173,12,1,12,185,3,1,parameterized,public,173,1,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-io,4,1819,org.apache.commons.io.input.XmlStreamReader$Builder,get,org.apache.commons.io.input.XmlStreamReader$Builder.get,178,173,5,1,5,178,0,2,parameterized,"override,public",173,1,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),"Weak Oracle (Throw an error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-io,5,522,org.apache.commons.io.Charsets,isUTF8,org.apache.commons.io.Charsets.isUTF8,172,172,0,1,0,172,1,1,parameterized,public,172,0,Strong Oracle (Fixed),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),X,X,
+commons-io,6,1671,org.apache.commons.io.input.CharSequenceInputStream,available,org.apache.commons.io.input.CharSequenceInputStream.available,171,169,2,1,2,171,0,2,parameterized,"override,public",169,1,Strong Oracle (Rule-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-io,7,1487,org.apache.commons.io.build.AbstractOrigin,getRandomAccessFile,org.apache.commons.io.build.AbstractOrigin.getRandomAccessFile,110,0,110,0,8,110,1,2,non_parameterized,"abstract-class,public",0,33,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-io,8,699,org.apache.commons.io.output.BrokenWriter,write,org.apache.commons.io.output.BrokenWriter.write,105,104,1,8,1,105,3,2,parameterized,"override,public",13,1,Strong Oracle (Fixed),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",One unique test case,
+commons-io,9,669,org.apache.commons.io.output.ThresholdingOutputStream,write,org.apache.commons.io.output.ThresholdingOutputStream.write,104,104,0,8,0,104,3,2,parameterized,"override,public",13,0,"Strong Oracle (Rule-derived)
+Strong Oracle (Fixed)",Parameterized Test Case: Fixed Dataset,X,X,
+commons-io,10,400,org.apache.commons.io.channels.FileChannels,contentEquals,org.apache.commons.io.channels.FileChannels.contentEquals,80,80,0,1,0,80,3,1,parameterized,public,80,0,"Strong Oracle (Rule-derived)
+Strong Oracle (Fixed)",Parameterized Test Case: Dynamically Generated Pairs (Rule Based),X,X,
+commons-jxpath,1,247,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,getValue,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.getValue,170,0,170,0,136,170,1,2,non_parameterized,"override,public",0,2,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-jxpath,2,270,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,getPointer,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.getPointer,54,0,54,0,52,54,1,2,non_parameterized,"override,public",0,2,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-jxpath,3,268,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,createPathAndSetValue,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.createPathAndSetValue,22,0,22,0,16,22,2,2,non_parameterized,"override,public",0,2,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-jxpath,4,239,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,iteratePointers,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.iteratePointers,22,0,22,0,19,22,1,2,non_parameterized,"override,public",0,2,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-jxpath,5,274,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,createPath,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.createPath,21,0,21,0,16,21,1,2,non_parameterized,"override,public",0,2,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-jxpath,6,267,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,compileExpression,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.compileExpression,20,0,20,0,20,20,1,1,non_parameterized,private,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-jxpath,7,282,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,iterate,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.iterate,18,0,18,0,16,18,1,2,non_parameterized,"override,public",0,2,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-jxpath,8,251,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl,setValue,org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.setValue,18,0,18,0,13,18,2,2,non_parameterized,"override,public",0,2,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-jxpath,9,1652,org.apache.commons.jxpath.JXPathContext,compile,org.apache.commons.jxpath.JXPathContext.compile,14,0,14,0,14,14,1,2,non_parameterized,"abstract-class,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-jxpath,10,1662,org.apache.commons.jxpath.JXPathContext,selectSingleNode,org.apache.commons.jxpath.JXPathContext.selectSingleNode,14,0,14,0,14,14,1,2,non_parameterized,"abstract-class,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-lang,1,2598,org.apache.commons.lang3.time.FastDateParser,parse,org.apache.commons.lang3.time.FastDateParser.parse,48289,48277,12,27,12,48289,1,2,parameterized,"override,public",44897,1,"Strong Oracle (Library-derived)
+Strong Oracle (Fixed)","Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule)
+Parameterized Test Case: Fixed Dataset","Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-lang,2,2605,org.apache.commons.lang3.time.FastDateParser,FastDateParser,org.apache.commons.lang3.time.FastDateParser.FastDateParser,47150,47143,7,22,7,47150,4,1,parameterized,protected,44897,1,"Strong Oracle (Library-derived)
+Strong Oracle (Fixed)","Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule)
+Parameterized Test Case: Dynamically Generated Pairs (Rule Based)
+Parameterized Test Case: Fixed Dataset","Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-lang,3,4265,org.apache.commons.lang3.LocaleUtils,toLocale,org.apache.commons.lang3.LocaleUtils.toLocale,1274,1265,9,3,9,1274,1,1,parameterized,public,767,1,"Strong Oracle (Library-derived)
+Strong Oracle (Fixed for each input)
+Strong Oracle (Fixed)","Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule)
+Parameterized Test Case: Dynamically Generated Pairs (Rule Based)
+Parameterized Test Case: Fixed Dataset",Strong Oracle (Throw a specific error),Multiple Unique Test Cases,
+commons-lang,4,4264,org.apache.commons.lang3.LocaleUtils,toLocale,org.apache.commons.lang3.LocaleUtils.toLocale,1070,1069,1,1,1,1070,1,1,parameterized,public,1069,1,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),Strong Oracle (Return a specific value),One unique test case,
+commons-lang,5,2612,org.apache.commons.lang3.time.FastDateParser,FastDateParser,org.apache.commons.lang3.time.FastDateParser.FastDateParser,1069,1069,0,1,0,1069,3,1,parameterized,protected,1069,0,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),X,X,
+commons-lang,6,2602,org.apache.commons.lang3.time.FastDateParser,init,org.apache.commons.lang3.time.FastDateParser.init,1069,1069,0,2,0,1069,1,1,parameterized,private,1068,0,Weak Oracle (Throw an error),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),X,X,
+commons-lang,7,2945,org.apache.commons.lang3.time.FastDateFormat,format,org.apache.commons.lang3.time.FastDateFormat.format,634,632,2,1,2,634,1,2,parameterized,"override,public",632,1,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-lang,8,2943,org.apache.commons.lang3.time.FastDateFormat,getInstance,org.apache.commons.lang3.time.FastDateFormat.getInstance,633,632,1,1,1,633,2,1,parameterized,public,632,1,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),Strong Oracle (Return a specific value),One unique test case,
+commons-lang,9,2706,org.apache.commons.lang3.time.CalendarUtils,toLocalDateTime,org.apache.commons.lang3.time.CalendarUtils.toLocalDateTime,632,632,0,1,0,632,0,1,parameterized,public,632,0,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),X,X,
+commons-lang,10,2702,org.apache.commons.lang3.time.CalendarUtils,toOffsetDateTime,org.apache.commons.lang3.time.CalendarUtils.toOffsetDateTime,632,632,0,1,0,632,0,1,parameterized,public,632,0,Strong Oracle (Library-derived),Parameterized Test Case: Dynamically Generated Pairs (External Library & Rule),X,X,
+commons-math,1,3282,org.apache.commons.math4.legacy.ode.AbstractIntegrator,integrate,org.apache.commons.math4.legacy.ode.AbstractIntegrator.integrate,92,0,92,0,87,92,5,3,non_parameterized,"override,abstract-class,public",0,2,X,X,"Coarse Oracle (Larger Than, Less Than)
+Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-math,2,1077,org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizer,optimize,org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizer.optimize,84,0,84,0,37,84,1,2,non_parameterized,"override,public",0,4,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)
+Coarse Oracle (Larger Than)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-math,3,4654,org.apache.commons.math4.legacy.optim.BaseOptimizer,optimize,org.apache.commons.math4.legacy.optim.BaseOptimizer.optimize,67,59,8,2,8,67,1,2,parameterized,"abstract-class,public",30,1,Coarse Oracle (Less Than),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-math,4,3931,org.apache.commons.math4.legacy.analysis.integration.gauss.GaussIntegrator,integrate,org.apache.commons.math4.legacy.analysis.integration.gauss.GaussIntegrator.integrate,65,0,65,0,6,65,1,1,non_parameterized,public,0,60,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-math,5,4459,org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer,optimize,org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer.optimize,59,41,18,1,18,59,1,3,parameterized,"override,abstract-class,public",41,1,Coarse Oracle (Less Than),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-math,6,4517,org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.SimplexOptimizer,doOptimize,org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.SimplexOptimizer.doOptimize,49,38,11,2,11,49,0,2,parameterized,"override,protected",29,1,Coarse Oracle (Less Than),Parameterized Test Case: Fixed Dataset,"Coarse Oracle (Less Than, Larger Than)
+Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-math,7,1006,org.apache.commons.math4.legacy.fitting.leastsquares.LevenbergMarquardtOptimizer,optimize,org.apache.commons.math4.legacy.fitting.leastsquares.LevenbergMarquardtOptimizer.optimize,48,0,48,0,48,48,1,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)
+Coarse Oracle (Less Than, Larger Than)",Multiple Unique Test Cases,
+commons-math,8,3938,org.apache.commons.math4.legacy.analysis.integration.gauss.SymmetricGaussIntegrator,integrate,org.apache.commons.math4.legacy.analysis.integration.gauss.SymmetricGaussIntegrator.integrate,33,0,33,0,4,33,1,2,non_parameterized,"override,public",0,30,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)","Multiple Unique Test Cases
+Inheritance for common test set",
+commons-math,9,4531,org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.NelderMeadTransform,create,org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.NelderMeadTransform.create,33,29,4,1,4,33,3,2,parameterized,"override,public",29,1,Coarse Oracle (Less Than),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Coarse Oracle (Less Than, Larger Than)",Multiple Unique Test Cases,
+commons-math,10,3311,org.apache.commons.math4.legacy.ode.sampling.StepNormalizer,StepNormalizer,org.apache.commons.math4.legacy.ode.sampling.StepNormalizer.StepNormalizer,30,0,30,0,17,30,4,1,non_parameterized,public,0,2,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-net,1,66,org.apache.commons.net.util.SubnetUtils,SubnetUtils,org.apache.commons.net.util.SubnetUtils.SubnetUtils,58,50,8,2,8,58,1,1,parameterized,public,25,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-net,2,68,org.apache.commons.net.util.SubnetUtils,setInclusiveHostCount,org.apache.commons.net.util.SubnetUtils.setInclusiveHostCount,27,25,2,1,2,27,1,1,parameterized,public,25,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-net,3,95,org.apache.commons.net.util.SubnetUtils$SubnetInfo,iterableAddressStrings,org.apache.commons.net.util.SubnetUtils$SubnetInfo.iterableAddressStrings,27,25,2,1,2,27,0,1,parameterized,public,25,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-net,4,413,org.apache.commons.net.imap.IMAPCommand,getCommand,org.apache.commons.net.imap.IMAPCommand.getCommand,26,26,0,1,0,26,1,1,parameterized,public,26,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+commons-net,5,85,org.apache.commons.net.util.SubnetUtils$SubnetInfo,streamAddressStrings,org.apache.commons.net.util.SubnetUtils$SubnetInfo.streamAddressStrings,26,25,1,1,1,26,0,1,parameterized,public,25,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),One unique test case,
+commons-net,6,1348,org.apache.commons.net.ftp.parser.UnixFTPEntryParser,parseFTPEntry,org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry,24,0,24,0,24,24,1,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Return a specific value)
+Weak Oracle (Not Null)",Multiple Unique Test Cases,
+commons-net,7,1364,org.apache.commons.net.ftp.parser.CompositeFileEntryParser,parseFTPEntry,org.apache.commons.net.ftp.parser.CompositeFileEntryParser.parseFTPEntry,17,0,17,0,11,17,1,2,non_parameterized,"override,public",0,3,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-net,8,1334,org.apache.commons.net.ftp.parser.FTPTimestampParserImpl,parseTimestamp,org.apache.commons.net.ftp.parser.FTPTimestampParserImpl.parseTimestamp,17,0,17,0,17,17,2,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-net,9,380,org.apache.commons.net.imap.IMAPReply,literalCount,org.apache.commons.net.imap.IMAPReply.literalCount,17,17,0,2,0,17,1,1,parameterized,public,10,0,"Strong Oracle (Fixed for each input)
+Strong Oracle (Fixed)",Parameterized Test Case: Fixed Dataset,X,X,
+commons-net,10,425,org.apache.commons.net.imap.IMAP,quoteMailboxName,org.apache.commons.net.imap.IMAP.quoteMailboxName,10,8,2,1,2,10,1,1,parameterized,package-private,8,1,Strong Oracle (Fixed),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-text,1,697,org.apache.commons.text.similarity.DamerauLevenshteinDistance,apply,org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply,195,195,0,1,0,195,2,1,parameterized,public,195,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+commons-text,2,1014,org.apache.commons.text.StringSubstitutor,replace,org.apache.commons.text.StringSubstitutor.replace,90,0,90,0,90,90,1,1,non_parameterized,public,0,1,X,X,"Weak Oracle (Throw an error)
+Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,From Fuzz
+commons-text,3,695,org.apache.commons.text.similarity.DamerauLevenshteinDistance,unlimitedCompare,org.apache.commons.text.similarity.DamerauLevenshteinDistance.unlimitedCompare,64,64,0,2,0,64,2,1,parameterized,private,32,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+commons-text,4,78,org.apache.commons.text.io.StringSubstitutorReader,read,org.apache.commons.text.io.StringSubstitutorReader.read,56,0,56,0,56,56,3,2,non_parameterized,"override,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-text,5,784,org.apache.commons.text.similarity.LevenshteinDistance,LevenshteinDistance,org.apache.commons.text.similarity.LevenshteinDistance.LevenshteinDistance,44,43,1,2,1,44,1,1,parameterized,public,38,1,"Strong Oracle (Fixed for each input)
+Strong Oracle (Fixed)","Parameterized Test Case: Fixed Dataset
+Parameterized Test Case: Iterate Different Class",Strong Oracle (Throw a specific error),One unique test case,
+commons-text,6,780,org.apache.commons.text.similarity.LevenshteinDistance,apply,org.apache.commons.text.similarity.LevenshteinDistance.apply,39,38,1,1,1,39,2,2,parameterized,"override,public",38,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Throw a specific error),One unique test case,
+commons-text,7,1110,org.apache.commons.text.StringTokenizer,next,org.apache.commons.text.StringTokenizer.next,38,0,38,0,38,38,0,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-text,8,700,org.apache.commons.text.similarity.DamerauLevenshteinDistance,apply,org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply,37,35,2,1,2,37,2,2,parameterized,"override,public",35,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Iterate Different Class,Strong Oracle (Throw a specific error),One unique test case,
+commons-text,9,350,org.apache.commons.text.StrTokenizer,next,org.apache.commons.text.StrTokenizer.next,37,0,37,0,37,37,0,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+commons-text,10,786,org.apache.commons.text.similarity.LevenshteinDistance,apply,org.apache.commons.text.similarity.LevenshteinDistance.apply,34,32,2,7,2,34,2,1,parameterized,public,5,1,Strong Oracle (Fixed),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+commons-validator,1,291,org.apache.commons.validator.routines.IBANValidator,isValid,org.apache.commons.validator.routines.IBANValidator.isValid,312,311,1,3,1,312,1,1,parameterized,public,111,1,Strong Oracle (Fixed),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),One unique test case,
+commons-validator,2,751,org.apache.commons.validator.Validator,validate,org.apache.commons.validator.Validator.validate,96,0,96,0,87,96,0,1,non_parameterized,public,0,6,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-validator,3,287,org.apache.commons.validator.routines.IBANValidator,getValidator,org.apache.commons.validator.routines.IBANValidator.getValidator,90,89,1,1,1,90,1,1,parameterized,public,89,1,Strong Oracle (Rule-derived),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),One unique test case,
+commons-validator,4,415,org.apache.commons.validator.routines.AbstractNumberValidator,parse,org.apache.commons.validator.routines.AbstractNumberValidator.parse,44,0,44,0,6,44,3,2,non_parameterized,"abstract-class,protected",0,8,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-validator,5,409,org.apache.commons.validator.routines.AbstractNumberValidator,isValid,org.apache.commons.validator.routines.AbstractNumberValidator.isValid,31,0,31,0,13,31,3,3,non_parameterized,"override,abstract-class,public",0,7,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-validator,6,434,org.apache.commons.validator.routines.UrlValidator,isValid,org.apache.commons.validator.routines.UrlValidator.isValid,28,0,28,0,28,28,1,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-validator,7,243,org.apache.commons.validator.routines.EmailValidator,isValid,org.apache.commons.validator.routines.EmailValidator.isValid,21,0,21,0,21,21,1,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+commons-validator,8,292,org.apache.commons.validator.routines.IBANValidator,validate,org.apache.commons.validator.routines.IBANValidator.validate,20,20,0,2,0,20,1,1,parameterized,public,15,0,"Strong Oracle (Fixed)
+Strong Oracle (Fixed for each input)",Parameterized Test Case: Fixed Dataset,X,X,
+commons-validator,9,56,org.apache.commons.validator.ValidatorAction,executeValidationMethod,org.apache.commons.validator.ValidatorAction.executeValidationMethod,15,0,15,0,14,15,4,1,non_parameterized,package-private,0,2,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+commons-validator,10,451,org.apache.commons.validator.routines.AbstractFormatValidator,isValid,org.apache.commons.validator.routines.AbstractFormatValidator.isValid,15,0,15,0,14,15,2,2,non_parameterized,"abstract-class,public",0,2,X,X,Strong Oracle (Return a specific value),"Multiple Unique Test Cases
+Inheritance for common test set",
+cucumber-reporting,1,62,net.masterthought.cucumber.json.Embedding,getExtension,net.masterthought.cucumber.json.Embedding.getExtension,68,68,0,3,0,68,0,1,parameterized,public,30,0,"Strong Oracle (Fixed)
+Strong Oracle (Fixed for each input)",Parameterized Test Case: Fixed Dataset,X,X,
+cucumber-reporting,2,65,net.masterthought.cucumber.json.Embedding,getMimeType,net.masterthought.cucumber.json.Embedding.getMimeType,40,38,2,2,2,40,0,1,parameterized,public,30,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+cucumber-reporting,3,67,net.masterthought.cucumber.json.Embedding,getData,net.masterthought.cucumber.json.Embedding.getData,38,38,0,2,0,38,0,1,parameterized,public,30,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+cucumber-reporting,4,68,net.masterthought.cucumber.json.Embedding,getName,net.masterthought.cucumber.json.Embedding.getName,38,38,0,2,0,38,0,1,parameterized,public,30,0,"Strong Oracle (Fixed)
+Strong Oracle (Fixed for each input)",Parameterized Test Case: Fixed Dataset,X,X,
+cucumber-reporting,5,66,net.masterthought.cucumber.json.Embedding,Embedding,net.masterthought.cucumber.json.Embedding.Embedding,30,30,0,1,0,30,2,1,parameterized,public,30,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+cucumber-reporting,6,61,net.masterthought.cucumber.json.Embedding,getDecodedData,net.masterthought.cucumber.json.Embedding.getDecodedData,25,25,0,2,0,25,0,1,parameterized,public,23,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+cucumber-reporting,7,64,net.masterthought.cucumber.json.Embedding,getFileName,net.masterthought.cucumber.json.Embedding.getFileName,24,24,0,2,0,24,0,1,parameterized,public,22,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+cucumber-reporting,8,3,net.masterthought.cucumber.util.StepNameFormatter,format,net.masterthought.cucumber.util.StepNameFormatter.format,10,0,10,0,10,10,4,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+cucumber-reporting,9,344,net.masterthought.cucumber.ReportParser,parseClassificationsFiles,net.masterthought.cucumber.ReportParser.parseClassificationsFiles,8,0,8,0,8,8,1,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+cucumber-reporting,10,345,net.masterthought.cucumber.ReportParser,parseJsonFiles,net.masterthought.cucumber.ReportParser.parseJsonFiles,8,0,8,0,8,8,1,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+dropwizard,1,2663,io.dropwizard.util.DataSizeUnit,convert,io.dropwizard.util.DataSizeUnit.convert,121,121,0,1,0,121,2,1,parameterized,public,121,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+dropwizard,2,476,io.dropwizard.configuration.BaseConfigurationFactory,build,io.dropwizard.configuration.BaseConfigurationFactory.build,99,5,94,1,73,99,2,3,non_parameterized,"override,abstract-class,public",5,2,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)","Multiple Unique Test Cases
+Inheritance for common test set",
+dropwizard,3,2176,io.dropwizard.metrics.common.BaseReporterFactory,getFilter,io.dropwizard.metrics.common.BaseReporterFactory.getFilter,84,84,0,3,0,84,0,2,parameterized,"abstract-class,public",28,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+dropwizard,4,435,io.dropwizard.client.DropwizardApacheConnector,apply,io.dropwizard.client.DropwizardApacheConnector.apply,28,0,28,0,28,28,1,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+dropwizard,5,363,io.dropwizard.client.HttpClientBuilder,createClient,io.dropwizard.client.HttpClientBuilder.createClient,28,0,28,0,28,28,3,2,non_parameterized,"override,protected",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+dropwizard,6,2180,io.dropwizard.metrics.common.RegexStringMatchingStrategy,containsMatch,io.dropwizard.metrics.common.RegexStringMatchingStrategy.containsMatch,28,28,0,1,0,28,2,2,parameterized,"override,public",28,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+dropwizard,7,2159,io.dropwizard.metrics.common.SubstringMatchingStrategy,containsMatch,io.dropwizard.metrics.common.SubstringMatchingStrategy.containsMatch,28,28,0,1,0,28,2,2,parameterized,"override,public",28,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+dropwizard,8,1900,io.dropwizard.lifecycle.setup.ExecutorServiceBuilder,getNameWithoutFormat,io.dropwizard.lifecycle.setup.ExecutorServiceBuilder.getNameWithoutFormat,24,24,0,1,0,24,1,1,parameterized,package-private,24,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+dropwizard,9,290,io.dropwizard.client.JerseyClientBuilder,build,io.dropwizard.client.JerseyClientBuilder.build,23,0,23,0,23,23,1,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+dropwizard,10,2646,io.dropwizard.util.Duration,toJavaDuration,io.dropwizard.util.Duration.toJavaDuration,21,21,0,1,0,21,0,1,parameterized,public,21,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+dyn4j,1,898,org.dyn4j.collision.manifold.ClippingManifoldSolver,getManifold,org.dyn4j.collision.manifold.ClippingManifoldSolver.getManifold,51,0,51,0,51,51,6,2,non_parameterized,"override,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+dyn4j,2,1082,org.dyn4j.collision.narrowphase.Gjk,distance,org.dyn4j.collision.narrowphase.Gjk.distance,49,0,49,0,49,49,5,2,non_parameterized,"override,public",0,1,X,X,"Coarse Oracle (Larger Than)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+dyn4j,3,1079,org.dyn4j.collision.narrowphase.Gjk,detect,org.dyn4j.collision.narrowphase.Gjk.detect,48,0,48,0,48,48,5,2,non_parameterized,"override,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+dyn4j,4,1000,org.dyn4j.collision.narrowphase.Sat,detect,org.dyn4j.collision.narrowphase.Sat.detect,46,0,46,0,46,46,5,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+dyn4j,5,1068,org.dyn4j.collision.narrowphase.Gjk,detect,org.dyn4j.collision.narrowphase.Gjk.detect,45,0,45,0,45,45,4,2,non_parameterized,"override,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+dyn4j,6,516,org.dyn4j.dynamics.joint.AbstractJoint,AbstractJoint,org.dyn4j.dynamics.joint.AbstractJoint.AbstractJoint,36,0,36,0,36,36,1,2,non_parameterized,"abstract-class,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+dyn4j,7,2647,org.dyn4j.world.AbstractPhysicsWorld,step,org.dyn4j.world.AbstractPhysicsWorld.step,31,0,31,0,31,31,1,3,non_parameterized,"override,abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+dyn4j,8,2225,org.dyn4j.geometry.decompose.Bayazit,decompose,org.dyn4j.geometry.decompose.Bayazit.decompose,30,0,30,0,30,30,1,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+dyn4j,9,999,org.dyn4j.collision.narrowphase.Sat,detect,org.dyn4j.collision.narrowphase.Sat.detect,28,0,28,0,28,28,4,2,non_parameterized,"override,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+dyn4j,10,2229,org.dyn4j.geometry.decompose.SweepLine,triangulate,org.dyn4j.geometry.decompose.SweepLine.triangulate,28,0,28,0,28,28,1,2,non_parameterized,"override,public",0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+gson,1,800,com.google.gson.Gson,toJson,com.google.gson.Gson.toJson,284,0,284,0,284,284,1,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+gson,2,811,com.google.gson.Gson,fromJson,com.google.gson.Gson.fromJson,280,0,280,0,280,280,2,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+gson,3,810,com.google.gson.Gson,toJson,com.google.gson.Gson.toJson,105,0,105,0,105,105,2,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+gson,4,791,com.google.gson.Gson,fromJson,com.google.gson.Gson.fromJson,69,0,69,0,69,69,2,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Throw a specific error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+gson,5,859,com.google.gson.GsonBuilder,registerTypeAdapter,com.google.gson.GsonBuilder.registerTypeAdapter,67,0,67,0,67,67,2,1,non_parameterized,public,0,1,X,X,"Weak Oracle (Throw an error)
+Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+gson,6,156,com.google.gson.stream.JsonReader,nextString,com.google.gson.stream.JsonReader.nextString,41,0,41,0,41,41,0,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+gson,7,186,com.google.gson.stream.JsonReader,skipValue,com.google.gson.stream.JsonReader.skipValue,39,7,32,7,32,39,0,1,non_parameterized,public,1,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Iterate Different Class,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+gson,8,181,com.google.gson.stream.JsonReader,peek,com.google.gson.stream.JsonReader.peek,34,0,34,0,34,34,0,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+gson,9,150,com.google.gson.stream.JsonReader,beginArray,com.google.gson.stream.JsonReader.beginArray,30,3,27,3,27,30,0,1,non_parameterized,public,1,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Iterate Different Class,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+gson,10,683,com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter,read,com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read,28,0,28,0,28,28,1,2,non_parameterized,"override,public",0,1,X,X,"Weak Oracle (Not Equal)
+Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+jfreechart,1,704,org.jfree.data.general.AbstractDataset,readObject,org.jfree.data.general.AbstractDataset.readObject,38,0,38,0,38,38,1,2,non_parameterized,"abstract-class,private",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,2,707,org.jfree.data.general.AbstractDataset,writeObject,org.jfree.data.general.AbstractDataset.writeObject,38,0,38,0,38,38,1,2,non_parameterized,"abstract-class,private",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,3,4838,org.jfree.chart.renderer.AbstractRenderer,readObject,org.jfree.chart.renderer.AbstractRenderer.readObject,32,0,32,0,32,32,1,2,non_parameterized,"abstract-class,private",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,4,4729,org.jfree.chart.renderer.AbstractRenderer,writeObject,org.jfree.chart.renderer.AbstractRenderer.writeObject,32,0,32,0,32,32,1,2,non_parameterized,"abstract-class,private",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,5,7257,org.jfree.chart.JFreeChart,draw,org.jfree.chart.JFreeChart.draw,24,0,24,0,24,24,4,1,non_parameterized,public,0,1,X,X,"Weak Oracle (Throw an error)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+jfreechart,6,7157,org.jfree.chart.internal.CloneUtils,clone,org.jfree.chart.internal.CloneUtils.clone,20,0,20,0,20,20,1,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,7,4291,org.jfree.chart.renderer.category.AbstractCategoryItemRenderer,clone,org.jfree.chart.renderer.category.AbstractCategoryItemRenderer.clone,18,0,18,0,18,18,0,3,non_parameterized,"override,abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,8,3577,org.jfree.chart.renderer.xy.AbstractXYItemRenderer,hashCode,org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode,16,0,16,0,16,16,0,3,non_parameterized,"override,abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,9,8468,org.jfree.chart.axis.DateAxis,previousStandardDate,org.jfree.chart.axis.DateAxis.previousStandardDate,13,0,13,0,13,13,2,1,non_parameterized,protected,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jfreechart,10,1228,org.jfree.data.time.RegularTimePeriod,getCalendarInstance,org.jfree.data.time.RegularTimePeriod.getCalendarInstance,13,0,13,0,13,13,0,2,non_parameterized,"abstract-class,protected",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+joda-money,1,110,org.joda.money.format.MoneyFormatter,print,org.joda.money.format.MoneyFormatter.print,477,449,28,6,28,477,1,1,parameterized,public,142,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+joda-money,2,115,org.joda.money.format.MoneyFormatter,parse,org.joda.money.format.MoneyFormatter.parse,467,442,25,4,25,467,2,1,parameterized,public,142,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+joda-money,3,95,org.joda.money.format.MoneyFormatterBuilder,appendAmount,org.joda.money.format.MoneyFormatterBuilder.appendAmount,437,434,3,4,3,437,1,1,parameterized,public,142,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+joda-money,4,100,org.joda.money.format.MoneyFormatterBuilder,toFormatter,org.joda.money.format.MoneyFormatterBuilder.toFormatter,301,292,9,3,9,301,0,1,parameterized,public,142,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+joda-money,5,181,org.joda.money.BigMoney,parse,org.joda.money.BigMoney.parse,23,18,5,1,5,23,1,1,parameterized,public,18,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+joda-money,6,49,org.joda.money.format.MoneyAmountStyle,equals,org.joda.money.format.MoneyAmountStyle.equals,22,0,22,0,22,22,1,2,non_parameterized,"override,public",0,1,X,X,"Weak Oracle (Not Equal)
+Strong Oracle (Return a specific value)",Multiple Unique Test Cases,
+joda-money,7,330,org.joda.money.Money,parse,org.joda.money.Money.parse,20,17,3,1,3,20,1,1,parameterized,public,17,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Throw a specific error),Multiple Unique Test Cases,
+joda-money,8,200,org.joda.money.BigMoney,total,org.joda.money.BigMoney.total,19,0,19,0,19,19,2,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+joda-money,9,1,org.joda.money.CurrencyUnit,registerCurrency,org.joda.money.CurrencyUnit.registerCurrency,16,0,16,0,16,16,4,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+joda-money,10,185,org.joda.money.BigMoney,total,org.joda.money.BigMoney.total,15,0,15,0,15,15,1,1,non_parameterized,public,0,1,X,X,"Strong Oracle (Return a specific value)
+Strong Oracle (Throw a specific error)",Multiple Unique Test Cases,
+jsoup,1,135,org.jsoup.Jsoup,parse,org.jsoup.Jsoup.parse,125,5,120,2,120,125,1,1,non_parameterized,public,4,1,Strong Oracle (Rule-derived),Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Weak Oracle (Not Null)",Multiple Unique Test Cases,
+jsoup,2,734,org.jsoup.nodes.Element,select,org.jsoup.nodes.Element.select,101,11,90,6,90,101,1,1,non_parameterized,public,4,1,Strong Oracle (Rule-derived),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jsoup,3,1563,org.jsoup.parser.TreeBuilder,parse,org.jsoup.parser.TreeBuilder.parse,100,50,50,1,50,100,3,2,tie,"abstract-class,package-private",50,1,"Weak Oracle (Throw an error)
+Weak Oracle (Not Null)",Parameterized Test Case: Fixed Dataset,"Strong Oracle (Return a specific value)
+Weak Oracle (Not Null)",Multiple Unique Test Cases,
+jsoup,4,1242,org.jsoup.parser.TokenQueue,consumeCssIdentifier,org.jsoup.parser.TokenQueue.consumeCssIdentifier,72,69,3,1,3,72,0,1,parameterized,public,69,1,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jsoup,5,814,org.jsoup.nodes.Element,html,org.jsoup.nodes.Element.html,67,4,63,1,63,67,0,1,non_parameterized,public,4,1,Strong Oracle (Rule-derived),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jsoup,6,1235,org.jsoup.parser.TokenQueue,escapeCssIdentifier,org.jsoup.parser.TokenQueue.escapeCssIdentifier,57,57,0,1,0,57,1,1,parameterized,public,57,0,Strong Oracle (Fixed for each input),Parameterized Test Case: Fixed Dataset,X,X,
+jsoup,7,120,org.jsoup.Jsoup,parseBodyFragment,org.jsoup.Jsoup.parseBodyFragment,55,50,5,1,5,55,1,1,parameterized,public,50,1,Weak Oracle (Not Null),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jsoup,8,128,org.jsoup.Jsoup,parse,org.jsoup.Jsoup.parse,54,50,4,1,4,54,3,1,parameterized,public,50,1,Weak Oracle (Not Null),Parameterized Test Case: Fixed Dataset,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+jsoup,9,129,org.jsoup.Jsoup,parse,org.jsoup.Jsoup.parse,50,50,0,1,0,50,4,1,parameterized,public,50,0,Weak Oracle (Not Null),Parameterized Test Case: Fixed Dataset,X,X,
+jsoup,10,119,org.jsoup.Jsoup,parse,org.jsoup.Jsoup.parse,48,0,48,0,48,48,2,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,1,2366,se.michaelthelin.spotify.requests.AbstractRequest,executeAsync,se.michaelthelin.spotify.requests.AbstractRequest.executeAsync,102,0,102,0,102,102,0,2,non_parameterized,"abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,2,2367,se.michaelthelin.spotify.requests.AbstractRequest,getUri,se.michaelthelin.spotify.requests.AbstractRequest.getUri,17,0,17,0,17,17,0,2,non_parameterized,"abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,3,2363,se.michaelthelin.spotify.requests.AbstractRequest,getHeaders,se.michaelthelin.spotify.requests.AbstractRequest.getHeaders,13,0,13,0,13,13,0,2,non_parameterized,"abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,4,173,se.michaelthelin.spotify.SpotifyHttpManager,get,se.michaelthelin.spotify.SpotifyHttpManager.get,10,10,0,2,0,10,2,2,parameterized,"override,public",7,0,Strong Oracle (Fixed),Parameterized Test Case: Fixed Dataset,X,X,
+spotify-web-api-java,5,183,se.michaelthelin.spotify.SpotifyHttpManager$ResponseHandler,handleResponse,se.michaelthelin.spotify.SpotifyHttpManager$ResponseHandler.handleResponse,10,10,0,2,0,10,1,2,parameterized,"override,public",7,0,Strong Oracle (Fixed),Parameterized Test Case: Fixed Dataset,X,X,
+spotify-web-api-java,6,215,se.michaelthelin.spotify.SpotifyHttpRequestRetryStrategy,retryRequest,se.michaelthelin.spotify.SpotifyHttpRequestRetryStrategy.retryRequest,8,0,8,0,8,8,4,2,non_parameterized,"override,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,7,2375,se.michaelthelin.spotify.requests.AbstractRequest,bodyParametersToJson,se.michaelthelin.spotify.requests.AbstractRequest.bodyParametersToJson,6,0,6,0,6,6,1,2,non_parameterized,"abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,8,219,se.michaelthelin.spotify.SpotifyHttpRequestRetryStrategy,getRetryInterval,se.michaelthelin.spotify.SpotifyHttpRequestRetryStrategy.getRetryInterval,5,0,5,0,5,5,3,2,non_parameterized,"override,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,9,154,se.michaelthelin.spotify.SpotifyApiThreading,executeAsync,se.michaelthelin.spotify.SpotifyApiThreading.executeAsync,4,0,4,0,4,4,1,1,non_parameterized,public,0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+spotify-web-api-java,10,2365,se.michaelthelin.spotify.requests.AbstractRequest,getBodyParameters,se.michaelthelin.spotify.requests.AbstractRequest.getBodyParameters,3,0,3,0,3,3,0,2,non_parameterized,"abstract-class,public",0,1,X,X,Strong Oracle (Return a specific value),Multiple Unique Test Cases,
+,,,,,,114278,108644,5634,249,4083,114278,259,299,,,44897,60,,,,,
