@@ -66,8 +66,11 @@ The top-level `data/` and `documentation/` directories are retained for packagin
 The `data/RQ4/` directory contains the RQ4 export derived from `Sheet4` of the qualitative coding workbook:
 
 - [`data/RQ4/Qualitative Notes for The Most Tested Method.csv`](data/RQ4/Qualitative%20Notes%20for%20The%20Most%20Tested%20Method.csv)
+- [`data/RQ4/RQ4_codebook.csv`](data/RQ4/RQ4_codebook.csv)
 
-This file is the consolidated RQ4 table, with focal-method identifiers, aggregate execution counts, tag counts, majority test-case type, and summarized oracle/test-type labels.
+The main RQ4 CSV export is the consolidated RQ4 table, with focal-method identifiers, aggregate execution counts, tag counts, majority test-case type, and summarized oracle/test-type labels.
+
+The codebook records the coding scheme used for the final four RQ4 dimensions: parameterized oracle type, parameterized test type, single-test oracle type, and single-test type. For each code, it provides the observed occurrence count together with its definition, inclusion criteria, exclusion criteria, and any additional notes.
 
 ## Anonymity Notice
 
