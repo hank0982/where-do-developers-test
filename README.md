@@ -12,7 +12,8 @@ The main material is located under [src/replication_dynamic_analysis](src/replic
 - [jacoco-pertest](src/replication_dynamic_analysis/jacoco-pertest/) contains the per-test JaCoCo wrapper, listeners, and tracking agent.
 - [java_repos](src/replication_dynamic_analysis/java_repos/) contains the subject Java projects used by the study.
 - [scripts](src/replication_dynamic_analysis/scripts/) contains the import and orchestration scripts for rebuilding the analysis outputs.
-- [readme](src/replication_dynamic_analysis/readme/) contains supporting documentation copied with the dynamic-analysis bundle.
+- [README.md](src/replication_dynamic_analysis/README.md) is the entrypoint for the self-contained dynamic-analysis bundle.
+- [documentation/methods](documentation/methods/) contains the LLM-method documentation used to describe the annotation workflow, prompt inventory, and observed model configurations.
 
 ## Environment
 
@@ -71,6 +72,14 @@ The `data/RQ4/` directory contains the RQ4 export derived from `Sheet4` of the q
 The main RQ4 CSV export is the consolidated RQ4 table, with focal-method identifiers, aggregate execution counts, tag counts, majority test-case type, and summarized oracle/test-type labels.
 
 The codebook records the coding scheme used for the final four RQ4 dimensions: parameterized oracle type, parameterized test type, single-test oracle type, and single-test type. For each code, it provides the observed occurrence count together with its definition, inclusion criteria, exclusion criteria, and any additional notes.
+
+## Documentation
+
+The repository also includes method documentation for the LLM-assisted annotation pipeline under [`documentation/methods/`](documentation/methods/):
+
+- [`documentation/methods/llm-annotation-workflow.md`](documentation/methods/llm-annotation-workflow.md) describes the multi-round focal-method annotation workflow, including request expansion, follow-up selection, and final compression.
+- [`documentation/methods/llm-configurations.md`](documentation/methods/llm-configurations.md) records the observed model identifiers, sampling parameters, request formats, and historical configuration variants used in archived runs.
+- [`documentation/methods/llm-prompts.md`](documentation/methods/llm-prompts.md) inventories the prompt builders and representative emitted system and user prompts used by the current annotation pipeline.
 
 ## Anonymity Notice
 
