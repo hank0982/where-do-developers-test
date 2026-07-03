@@ -62,6 +62,14 @@ The dynamic-analysis bundle is intentionally self-contained. In particular, `scr
 
 The top-level `data/` and `documentation/` directories are retained for packaging convenience, but the runnable artifacts for the current submission snapshot are under `src/replication_dynamic_analysis/`.
 
+## RQ2 and RQ3 Data
+
+The `data/RQ2and3/` directory contains the combined method-level export used for RQ2 and RQ3:
+
+- [`data/RQ2and3/method_rows_export.csv`](data/RQ2and3/method_rows_export.csv)
+
+This CSV includes per-method structural metrics (`wmc`, `fanin`, `fanout`, parameter/return counts, visibility flags), repository and history fields (`repo`, commit counts, timestamps, age), and dynamic-analysis summary fields such as `level0_tests`, `annotated_tests`, `machine_annotated_tests`, `avg_depth`, descendant/child counts, call counts, and the corresponding variance columns.
+
 ## RQ4 Data
 
 The `data/RQ4/` directory contains the RQ4 export derived from `Sheet4` of the qualitative coding workbook:
