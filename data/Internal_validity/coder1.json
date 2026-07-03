@@ -1,0 +1,1441 @@
+[
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.AlreadySelectedExceptionTest_testConstructor_09312f09",
+        "selected_method_ids": [
+            6,
+            7
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.DeprecatedAttributesTest_testBuilderNonDefaults_b88c0557",
+        "selected_method_ids": [
+            30,
+            36,
+            37,
+            38,
+            39
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testAnt_b7ff77b6",
+        "selected_method_ids": [
+            282
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testGroovy_4870f441",
+        "selected_method_ids": [
+            278
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testLs_bba1ec7a",
+        "selected_method_ids": [
+            282
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.OptionValidatorTest_testValidate_785bb995",
+        "selected_method_ids": [
+            446
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.CommandLineTest_testGetOptionPropertiesWithOption_cd51a648",
+        "selected_method_ids": [
+            391
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testMan_b8a29269",
+        "selected_method_ids": [
+            321
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testNLT_b8a6bc85",
+        "selected_method_ids": [
+            282
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.bloomfilter.ArrayCountingBloomFilterTest_testExcludesDuplicates_3027f7f4",
+        "selected_method_ids": [
+            1774,
+            1778
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.TypeHandlerTest_testCreateValue_9e92e086",
+        "selected_method_ids": [
+            41,
+            52
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.CollectionUtilsTest_testIsEqualCollectionToSelf_814c95be",
+        "selected_method_ids": [
+            2627
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.bloomfilter.DefaultBitMapExtractorTest_testForEachBitMapPair_2fc658e2",
+        "selected_method_ids": [
+            1893
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.CollectionUtilsTest_testRemoveCountNegative_cc745fcf",
+        "selected_method_ids": [
+            2616
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.ArrayListIterator2Test_testFullIterator_d373ab10",
+        "selected_method_ids": [
+            2847,
+            3002
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.FilterIteratorTest_testRemoveNextEmpty_e1083705",
+        "selected_method_ids": [
+            2946
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.SingletonIterator2Test_testSerializeDeserializeThenCompare_e3ebba58",
+        "selected_method_ids": [
+            2801
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIteratorTest_testMapIteratorOrder_cdecb7b7",
+        "selected_method_ids": [
+            3056,
+            3059
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.list.DefaultAbstractLinkedListJava21Test_testListGetByIndexBoundsChecking_c03faa05",
+        "selected_method_ids": [
+            3574
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.list.NodeCachingLinkedListTest_testObjectHashCodeEqualsContract_b58f2c7e",
+        "selected_method_ids": [
+            3284,
+            3304
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.IteratorUtilsTest_testChainedIteratorList_020475fb",
+        "selected_method_ids": [
+            669
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.list.PredicatedListTest_testSimpleSerialization_88f65b6d",
+        "selected_method_ids": [
+            3435
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMapKSoftVSoftIdCTest_testEntrySetContains2_ee6dc792",
+        "selected_method_ids": [
+            1191
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMapKStrongVWeakIdCTest_testKeySetIteratorRemoveChangesMap_6319a2a1",
+        "selected_method_ids": [
+            1294
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.Flat3MapTest_testEntryIteratorSetValue1_104bbff5",
+        "selected_method_ids": [
+            1515
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.HashedMapTest_testMapIsEmpty_c2fbc23a",
+        "selected_method_ids": [
+            1053
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.LRUMapTest_testKeySetClearChangesMap_16edc112",
+        "selected_method_ids": []
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.LinkedMapTest_testMapGet_33e7718d",
+        "selected_method_ids": [
+            1060
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.LRUMapTest_testFullMapCompatibility_b769ad96",
+        "selected_method_ids": [
+            1032
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ReferenceMapTest_testEntrySetRemove1_f25caacc",
+        "selected_method_ids": [
+            1004
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.UnmodifiableSortedMapTest_testHeadMap_19da90eb",
+        "selected_method_ids": [
+            1479
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.multimap.ArrayListValuedLinkedHashMapTest_testAsMapRemove_617eaafd",
+        "selected_method_ids": [
+            4810
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMapTest_testAsMapGet_Empty_af24918d",
+        "selected_method_ids": [
+            1575
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ReferenceIdentityMapTest_testBasics_c4374078",
+        "selected_method_ids": [
+            745,
+            747,
+            751,
+            762,
+            765
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ListOrderedMapTest_testFailFastEntrySet_f93537fd",
+        "selected_method_ids": []
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.StaticBucketMapTest_testKeySetRetainAll_87651868",
+        "selected_method_ids": [
+            1704
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ReferenceMapTest_testValuesRemoveAll_20cfb74a",
+        "selected_method_ids": [
+            766
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.queue.CircularFifoQueueTest_testCollectionIterator_a47582df",
+        "selected_method_ids": [
+            586,
+            587,
+            602
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.queue.TransformedQueueTest_testCollectionIteratorRemove_e8947003",
+        "selected_method_ids": [
+            4052
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.ListOrderedSet2Test_testCollectionContains_15824850",
+        "selected_method_ids": [
+            4057
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.ListOrderedSetTest_testObjectHashCodeEqualsSelfHashCode_8339b833",
+        "selected_method_ids": [
+            2310
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.PredicatedSetTest_testSimpleSerialization_88f65b6d",
+        "selected_method_ids": [
+            3807
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.TransformedSetTest_testCollectionAdd_33442a72",
+        "selected_method_ids": [
+            4034
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.MapBackedSet2Test_testCollectionRemove_17ca4175",
+        "selected_method_ids": [
+            2326
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.trie.PatriciaTrieTest_testMapSize_5dbce4cc",
+        "selected_method_ids": [
+            2561
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.Jdbc41BridgeTest_testAbort_a162873f",
+        "selected_method_ids": [
+            1746
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestCPDSConnectionFactory_testSharedPoolDSDestroyOnReturn_f60b1cc8",
+        "selected_method_ids": [
+            1170
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource_testPerUserMinEvictableIdleTimeMillisWithUserMapNotInitialized_d46b1fff",
+        "selected_method_ids": [
+            204,
+            214
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource_testMultipleThreads1_3506eb0b",
+        "selected_method_ids": []
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.managed.TestLocalXaResource_testStartNoFlagButAlreadyEnlisted_35314c9b",
+        "selected_method_ids": [
+            1013
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingCallableStatement_testGetBooleanString_ef375f16",
+        "selected_method_ids": [
+            1239
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingConnection_testSetHoldability_ed4f513c",
+        "selected_method_ids": [
+            1656
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.managed.TestBasicManagedDataSource_testBackPointers_83ce46d0",
+        "selected_method_ids": [
+            452,
+            1665,
+            1689,
+            1714,
+            1727
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData_testGetConnection_c94f53e3",
+        "selected_method_ids": [
+            1494
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.Jdbc41BridgeTest_testGetObjectName_00b5fc6f",
+        "selected_method_ids": [
+            1749
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingResultSet_testRowDeleted_29eebbd2",
+        "selected_method_ids": [
+            572
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestAbandonedBasicDataSource_testNoOverlapBetweenDisconnectionAndIgnoreSqlCodes_e9a6c28a",
+        "selected_method_ids": [
+            791,
+            810
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestPoolableConnection_testFastFailValidation_ffbfe1a6",
+        "selected_method_ids": [
+            1601,
+            1380,
+            1387
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestPoolingDataSource_testBackPointers_83ce46d0",
+        "selected_method_ids": [
+            452,
+            1601,
+            1665,
+            1689,
+            1714,
+            1727
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestPoolingDataSource_testMaxTotal_d7b70b73",
+        "selected_method_ids": [
+            1200
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithBothQuotes_0d5199eb",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsWithQuotes_c59208a5",
+        "selected_method_ids": [
+            255
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithQuote_bdbc4aab",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithQuotesAround_90e2b437",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithSingleQuote_c832a2c3",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithSpace_1e3382b5",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgument_c148d08d",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsArrayNull_8906ba9a",
+        "selected_method_ids": [
+            263
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsArray_0bc5f7b3",
+        "selected_method_ids": [
+            263
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsWithQuotesAndSpaces_e84d71a1",
+        "selected_method_ids": [
+            255
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.ByteOrderMarkTest_testConstantCharsetNames_fffb6b53",
+        "selected_method_ids": [
+            3022
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testMissingStartDirectory_e40cb700",
+        "selected_method_ids": [
+            2910
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsCopyToFileTest_testCopyInputStreamToFile_e6a6ad3b",
+        "selected_method_ids": [
+            355
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsAlias_2063ec45",
+        "selected_method_ids": [
+            518
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileSystemTest_testNameLengthStrategyTruncate_Throws_2ec2adc0",
+        "selected_method_ids": [
+            3071
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testCopyDirectoryToDirectory_NonExistingDest_63b75268",
+        "selected_method_ids": [
+            241
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testDeleteDirectorySymbolicLinkAbsent_7ef7c016",
+        "selected_method_ids": [
+            346
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testIO300_24bbcb7c",
+        "selected_method_ids": [
+            370
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveDirectory_Errors_bc330441",
+        "selected_method_ids": [
+            326
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveFileToDirectoryErrors_404263df",
+        "selected_method_ids": [
+            286
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testReadFileToByteArray_2b1894f3",
+        "selected_method_ids": [
+            236
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testToFile5_91d14d8d",
+        "selected_method_ids": [
+            249
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testToURLs3a_c804d4c0",
+        "selected_method_ids": [
+            361
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_4arg_32a42a70",
+        "selected_method_ids": [
+            232
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FilenameUtilsTest_testGetPathNoEndSeparator_with_null_character_f29a3440",
+        "selected_method_ids": [
+            465
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOIndexedExceptionTest_testPlain_cb26ff59",
+        "selected_method_ids": [
+            3038
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_1b5c853b",
+        "selected_method_ids": [
+            244
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_2160509a",
+        "selected_method_ids": [
+            291
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines_54d19b99",
+        "selected_method_ids": [
+            309
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testCopyLarge_NoSkip_1357438c",
+        "selected_method_ids": [
+            144
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testCloseConsumer_09e8849d",
+        "selected_method_ids": [
+            159
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testRead_ReadableByteChannel_bd3bfb35",
+        "selected_method_ids": [
+            59,
+            185
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testToByteArray_InputStream_NegativeSize_35f405a7",
+        "selected_method_ids": [
+            25
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsWriteTest_testWrite_charArrayToOutputStream_nullEncoding_00f2374d",
+        "selected_method_ids": [
+            86
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.LineIteratorTest_testConstructor_09312f09",
+        "selected_method_ids": [
+            213
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.RandomAccessFileModeTest_testValueOfMode_ecddbbba",
+        "selected_method_ids": [
+            3088
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.TaggedIOExceptionTest_testTaggedIOException_74e80cac",
+        "selected_method_ids": [
+            580
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.build.AbstractStreamBuilderTest_getGetSeekableByteChannel_6f3b93d9",
+        "selected_method_ids": [
+            1389
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.build.WriterStreamOriginTest_testGetRandomAccessFile_adb83e2f",
+        "selected_method_ids": [
+            1487
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.ByteArraySeekableByteChannelTest_testWriteBeyondSizeGrows_25c08004",
+        "selected_method_ids": [
+            384
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.CloseShieldChannelTest_testCloseIsShielded_d6100c63",
+        "selected_method_ids": [
+            376
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.CloseShieldChannelTest_testPreservesInterfaces_d6100c63",
+        "selected_method_ids": [
+            407
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.FileChannelsTest_testContentEqualsFileChannel_2a0c25e5",
+        "selected_method_ids": [
+            405
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsAlias_4d2e1c91",
+        "selected_method_ids": [
+            518
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.comparator.ExtensionFileComparatorTest_testCaseSensitivity_154ecc1e",
+        "selected_method_ids": [
+            1372,
+            1373
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.FileChannelsTest_testContentEqualsSequenceInputStream_9e5ea302",
+        "selected_method_ids": [
+            402
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.comparator.NameFileComparatorTest_testSortListNull_ff9d4076",
+        "selected_method_ids": [
+            1348
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.file.CopyDirectoryVisitorTest_testCopyDirectoryFolders1FileSize0_767012ce",
+        "selected_method_ids": [
+            1086,
+            1078
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.file.PathUtilsCountingTest_testCountFolders2FileSize2_0cc1b3cc",
+        "selected_method_ids": [
+            1125
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.file.PathUtilsTest_testCopyDirectoryForDifferentFilesystemsWithRelativePathReverse_7a37b29a",
+        "selected_method_ids": [
+            1103
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.filefilter.FileFilterTest_testFilterSet_fromArray_2f4ad1a9",
+        "selected_method_ids": [
+            2425
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.filefilter.SymbolicLinkFileFilterTest_testFileNameFilter_HardFile_d45957b6",
+        "selected_method_ids": [
+            2613
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsAlias_666f81f6",
+        "selected_method_ids": [
+            518
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testFindFirst_d7ea8fc6",
+        "selected_method_ids": [
+            2768
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testUnordered_c57617c3",
+        "selected_method_ids": [
+            2829
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testUnwrap_30efd956",
+        "selected_method_ids": [
+            2733
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.AutoCloseInputStreamTest_testClose_1c3fb007",
+        "selected_method_ids": [
+            2194
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.BOMInputStreamTest_testSkipReturnValueWithBom_cb16874b",
+        "selected_method_ids": [
+            1940
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.BrokenReaderTest_testReadCharArrayIndexed_7e0fd364",
+        "selected_method_ids": [
+            2004
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.BufferedFileChannelInputStreamTest_testNegativeBytesSkippedAfterRead_5ff729a7",
+        "selected_method_ids": [
+            1993
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CharSequenceInputStreamTest_testAvailable_5354a768",
+        "selected_method_ids": [
+            1671
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CharSequenceInputStreamTest_testLargeSingleByteRead_RequiredCharsets_d1de5289",
+        "selected_method_ids": [
+            1681
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CharSequenceInputStreamTest_testBufferedRead_AvailableCharset_8e700429",
+        "selected_method_ids": [
+            1680
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.ChecksumInputStreamTest_testAvailableAfterClose_ba0abb74",
+        "selected_method_ids": [
+            1769,
+            1781
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CountingInputStreamTest_testResetting_e2572e8c",
+        "selected_method_ids": []
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.MarkShieldInputStreamTest_testReadAfterClose_051aeaf7",
+        "selected_method_ids": [
+            1767,
+            1769
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.NullInputStreamTest_testSkipThrowAtEof_3a008495",
+        "selected_method_ids": [
+            1700
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.QueueInputStreamTest_testBufferedReads_51220c29",
+        "selected_method_ids": []
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.RandomAccessFileInputStreamTest_testConstructorCloseOnCloseFalse_9e3f46bb",
+        "selected_method_ids": [
+            2150,
+            2154
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.SwappedDataInputStreamTest_testReadUTF_e4f11c80",
+        "selected_method_ids": [
+            2188
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStreamTest_testInvalidConstructor3LengthUnder_90c35795",
+        "selected_method_ids": [
+            2246
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.TaggedInputStreamTest_testCloseHandleIOException_7f8824fc",
+        "selected_method_ids": [
+            1775
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_ByteArrayIndex_c9a11ede",
+        "selected_method_ids": [
+            1920
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_ByteArray_4d1ba076",
+        "selected_method_ids": [
+            1920
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_Byte_6af10405",
+        "selected_method_ids": [
+            1920
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest_testCalculateRawEncodingStandardUtf32_31e0a743",
+        "selected_method_ids": [
+            1815
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest_testTextXml_e9ad09b9",
+        "selected_method_ids": [
+            1817
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.buffer.CircularBufferInputStreamTest_testIO683_24e9c03a",
+        "selected_method_ids": [
+            2122
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.AppendableOutputStreamTest_testWriteStringBuilder_5384fe9e",
+        "selected_method_ids": [
+            681
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.BrokenWriterTest_testWriteCharArrayIndexed_d5f4e76a",
+        "selected_method_ids": [
+            699
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.ProxyCollectionWriterTest_testArrayIOExceptionOnWriteInt2_2990a862",
+        "selected_method_ids": [
+            607
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.ByteArrayOutputStreamTest_testInvalidWriteLenUnder_3c62b54b",
+        "selected_method_ids": [
+            652
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.ProxyOutputStreamTest_testWriteNullArrayProxiesToUnderlying_13413dc0",
+        "selected_method_ids": [
+            872
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.StringBuilderWriterTest_testAppendChar_6fe0e843",
+        "selected_method_ids": [
+            749
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.UncheckedFilterWriterTest_testAppendCharSequenceThrows_8355b2d1",
+        "selected_method_ids": [
+            782
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.serialization.ProxyTest_testAcceptProxy_00bffe55",
+        "selected_method_ids": [
+            477
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.WriterOutputStreamTest_testLargeUTF8WithSingleByteWrite_1ae648b0",
+        "selected_method_ids": [
+            932,
+            936,
+            941,
+            1508
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.compiler.VariableTest_testRemovePathArrayElement_15b7907f",
+        "selected_method_ids": [
+            238
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.beans.BeanModelTest_testRemovePathBeanValue_e3a8c867",
+        "selected_method_ids": [
+            238
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanModelTest_testSetPropertyValue_a2859a0d",
+        "selected_method_ids": [
+            251
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.DeferredFileOutputStreamTest_testTempFileAboveThreshold_56177d00",
+        "selected_method_ids": [
+            669
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.DeferredFileOutputStreamTest_testTempFileBelowThreshold_5617085f",
+        "selected_method_ids": [
+            669
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.XmlStreamWriterTest_testLatin7Encoding_c8ef8459",
+        "selected_method_ids": [
+            855
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.XmlStreamWriterTest_testUTF16BEEncoding_ee528fd1",
+        "selected_method_ids": [
+            855
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.serialization.ValidatingObjectInputStreamTest_testOurTestClassAcceptedFirstWildcard_99c4d318",
+        "selected_method_ids": [
+            492
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsUTF8Charset_51226463",
+        "selected_method_ids": [
+            522
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testCancel_233c73ad",
+        "selected_method_ids": [
+            2910
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testAdd_b7faaff0",
+        "selected_method_ids": [
+            17
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testNodes_66a19a80",
+        "selected_method_ids": [
+            17
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testRemove_0c02e337",
+        "selected_method_ids": [
+            14
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanModelTest_testAxisPreceding_b516c3b1",
+        "selected_method_ids": [
+            247
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest_testTypeConversions_a49a7052",
+        "selected_method_ids": [
+            247
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.util.ValueUtilsTest_testGetValueFromSetTooSmall_1b635fdf",
+        "selected_method_ids": [
+            91
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllDoubleArray_94b8d3be",
+        "selected_method_ids": [
+            3345
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ClassUtilsTest_test_getName_Object_75d0ec2b",
+        "selected_method_ids": [
+            1489,
+            1503
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.issues.JXPath172DynamicTest_testIssue172_nestedpropertyDoesNotExist_Lenient_02d78f3c",
+        "selected_method_ids": [
+            270,
+            1662
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testBinaryToLong_23bd972b",
+        "selected_method_ids": [
+            1403
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testBinaryToHexDigitMsb0_bits_aa6a84d2",
+        "selected_method_ids": [
+            1404
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testHexToByte_b3dd16ad",
+        "selected_method_ids": [
+            1410
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.DoubleRangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllNullObjectArray_85570fc9",
+        "selected_method_ids": [
+            3259
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.IntegerRangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testLanguagesByCountry_6a919117",
+        "selected_method_ids": [
+            4256
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testParses_18bdca72",
+        "selected_method_ids": []
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testParseAllLocales_54200905",
+        "selected_method_ids": [
+            4265
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocaleGetIso3Country_24a65a23",
+        "selected_method_ids": [
+            4265
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsTest_testIndexOfFloatWithStartIndex_5d4da7dc",
+        "selected_method_ids": [
+            3232
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocaleGetIso3LanguageKown_96ba54f0",
+        "selected_method_ids": [
+            4265
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsTest_testIsNotEmptyPrimitives_2b4f0d43",
+        "selected_method_ids": [
+            3046,
+            3122,
+            3279,
+            3316,
+            3347,
+            3359,
+            3363,
+            3420
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocales_69eed7cf",
+        "selected_method_ids": [
+            4264
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LongRangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ObjectUtilsTest_testPossibleCloneOfNotCloneable_85c1eb76",
+        "selected_method_ids": [
+            1845
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testParses_a1e8b66f",
+        "selected_method_ids": [
+            2598
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_493e302c",
+        "selected_method_ids": [
+            2545
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_a8e34e50",
+        "selected_method_ids": [
+            2545
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_f4fa10aa",
+        "selected_method_ids": [
+            2545
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RangeTest_testIsStartedBy_cbade8bd",
+        "selected_method_ids": [
+            1556
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.StringUtilsContainsTest_testContainsIgnoreCase_StringString_dbcb960f",
+        "selected_method_ids": [
+            1183
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.StringUtilsTest_testDefaultIfBlank_CharBuffers_bea87f87",
+        "selected_method_ids": [
+            1180
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ValidateTest$NoNullElements$WithCollection$WithoutMessage_shouldNotThrowExceptionForNonEmptyCollection_8a7f369f",
+        "selected_method_ids": [
+            90
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ValidateTest$NotBlank$WithMessage_shouldThrowIllegalArgumentExceptionWithGivenMessageForEmptyString_e3131635",
+        "selected_method_ids": [
+            86
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.CompareToBuilderTest_testObjectComparatorNull_651b25cf",
+        "selected_method_ids": [
+            1010,
+            1015
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.CompareToBuilderTest_testObjectComparator_06d24568",
+        "selected_method_ids": [
+            1010,
+            1015
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ToStringBuilderTest_testShortArray_6af6e2b0",
+        "selected_method_ids": [
+            611,
+            627
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ToStringBuilderTest_testFloatArray_81f8e8d0",
+        "selected_method_ids": [
+            611,
+            624
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest_test_toStringExcludeArrayWithNulls_426d284f",
+        "selected_method_ids": [
+            697
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.HashCodeBuilderTest_testSuper_7a06ecca",
+        "selected_method_ids": [
+            794
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.EqualsBuilderTest_testObjectRecursiveCycleSelfreference_e142db5b",
+        "selected_method_ids": [
+            591
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ReflectionDiffBuilderTest_testTransientFieldDifference_4325dde0",
+        "selected_method_ids": [
+            561
+        ]
+    }
+]
