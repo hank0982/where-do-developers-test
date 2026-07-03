@@ -1,0 +1,7 @@
+.m2
+dbs/*.db
+dbs/batch_input_*
+scripts/bin
+**/__pycache__
+java_repos/*/target
+java_repos/*/jacoco-pertest-results

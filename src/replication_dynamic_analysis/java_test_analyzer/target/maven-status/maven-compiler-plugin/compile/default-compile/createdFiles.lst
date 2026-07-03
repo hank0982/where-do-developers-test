@@ -1,0 +1,6 @@
+com/example/testanalyzer/Main$Context.class
+com/example/testanalyzer/Main$JavaSourceVisitor.class
+com/example/testanalyzer/Main$TestMethod.class
+com/example/testanalyzer/Main$TestMethodVisitor.class
+com/example/testanalyzer/Main.class
+com/example/testanalyzer/Main$Args.class
