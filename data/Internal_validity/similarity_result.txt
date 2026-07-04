@@ -1,0 +1,4 @@
+Average Exact Set Match: 0.8350
+Average Jaccard Similarity: 0.8790
+Average MASI Similarity: 0.8552
+Average F1 Score: 0.8942

@@ -1,0 +1,3436 @@
+[
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.AlreadySelectedExceptionTest_testConstructor_09312f09",
+        "selected_method_ids": [
+            6,
+            7
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testAnt_b7ff77b6",
+        "selected_method_ids": [
+            282
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.DeprecatedAttributesTest_testBuilderNonDefaults_b88c0557",
+        "selected_method_ids": [
+            30,
+            36,
+            37,
+            38,
+            39
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testGroovy_4870f441",
+        "selected_method_ids": [
+            278
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testLs_bba1ec7a",
+        "selected_method_ids": [
+            282
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.OptionValidatorTest_testValidate_785bb995",
+        "selected_method_ids": [
+            446
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testMan_b8a29269",
+        "selected_method_ids": [
+            321
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.CommandLineTest_testGetOptionPropertiesWithOption_cd51a648",
+        "selected_method_ids": [
+            391
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testNLT_b8a6bc85",
+        "selected_method_ids": [
+            282
+        ]
+    },
+    {
+        "project": "commons-cli",
+        "current_db_test_name": "org.apache.commons.cli.TypeHandlerTest_testCreateValue_9e92e086",
+        "selected_method_ids": [
+            41,
+            52
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.bloomfilter.ArrayCountingBloomFilterTest_testExcludesDuplicates_3027f7f4",
+        "selected_method_ids": [
+            1774,
+            1778
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.CollectionUtilsTest_testIsEqualCollectionToSelf_814c95be",
+        "selected_method_ids": [
+            2627
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.bloomfilter.DefaultBitMapExtractorTest_testForEachBitMapPair_2fc658e2",
+        "selected_method_ids": [
+            1893
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.CollectionUtilsTest_testRemoveCountNegative_cc745fcf",
+        "selected_method_ids": [
+            2616
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.ArrayListIterator2Test_testFullIterator_d373ab10",
+        "selected_method_ids": [
+            2847,
+            3002
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.FilterIteratorTest_testRemoveNextEmpty_e1083705",
+        "selected_method_ids": [
+            2946
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.SingletonIterator2Test_testSerializeDeserializeThenCompare_e3ebba58",
+        "selected_method_ids": [
+            2801
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIteratorTest_testMapIteratorOrder_cdecb7b7",
+        "selected_method_ids": [
+            3056,
+            3059,
+            3063
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.list.DefaultAbstractLinkedListJava21Test_testListGetByIndexBoundsChecking_c03faa05",
+        "selected_method_ids": [
+            3574
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.list.NodeCachingLinkedListTest_testObjectHashCodeEqualsContract_b58f2c7e",
+        "selected_method_ids": [
+            3284,
+            3304
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.list.PredicatedListTest_testSimpleSerialization_88f65b6d",
+        "selected_method_ids": [
+            3807
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.IteratorUtilsTest_testChainedIteratorList_020475fb",
+        "selected_method_ids": [
+            669
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMapKSoftVSoftIdCTest_testEntrySetContains2_ee6dc792",
+        "selected_method_ids": [
+            1191
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMapKStrongVWeakIdCTest_testKeySetIteratorRemoveChangesMap_6319a2a1",
+        "selected_method_ids": [
+            1279,
+            1294,
+            1311
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.Flat3MapTest_testEntryIteratorSetValue1_104bbff5",
+        "selected_method_ids": [
+            1528
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.HashedMapTest_testMapIsEmpty_c2fbc23a",
+        "selected_method_ids": [
+            1053
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.LRUMapTest_testFullMapCompatibility_b769ad96",
+        "selected_method_ids": [
+            844
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.LRUMapTest_testKeySetClearChangesMap_16edc112",
+        "selected_method_ids": [
+            957,
+            1064
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.LinkedMapTest_testMapGet_33e7718d",
+        "selected_method_ids": [
+            1060
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ListOrderedMapTest_testFailFastEntrySet_f93537fd",
+        "selected_method_ids": [
+            1337,
+            1370,
+            1377,
+            1384,
+            1401
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ReferenceIdentityMapTest_testBasics_c4374078",
+        "selected_method_ids": [
+            745,
+            747,
+            751,
+            762,
+            765
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ReferenceMapTest_testEntrySetRemove1_f25caacc",
+        "selected_method_ids": [
+            1004
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.ReferenceMapTest_testValuesRemoveAll_20cfb74a",
+        "selected_method_ids": [
+            766
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.StaticBucketMapTest_testKeySetRetainAll_87651868",
+        "selected_method_ids": [
+            1704
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.map.UnmodifiableSortedMapTest_testHeadMap_19da90eb",
+        "selected_method_ids": [
+            1479
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.multimap.ArrayListValuedLinkedHashMapTest_testAsMapRemove_617eaafd",
+        "selected_method_ids": [
+            4810
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMapTest_testAsMapGet_Empty_af24918d",
+        "selected_method_ids": [
+            4731,
+            4808
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.queue.CircularFifoQueueTest_testCollectionIterator_a47582df",
+        "selected_method_ids": [
+            586,
+            587,
+            602
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.queue.TransformedQueueTest_testCollectionIteratorRemove_e8947003",
+        "selected_method_ids": [
+            4052
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.ListOrderedSet2Test_testCollectionContains_15824850",
+        "selected_method_ids": [
+            4057
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.ListOrderedSetTest_testObjectHashCodeEqualsSelfHashCode_8339b833",
+        "selected_method_ids": [
+            2310
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.MapBackedSet2Test_testCollectionRemove_17ca4175",
+        "selected_method_ids": [
+            2326
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.PredicatedSetTest_testSimpleSerialization_88f65b6d",
+        "selected_method_ids": [
+            3807
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.set.TransformedSetTest_testCollectionAdd_33442a72",
+        "selected_method_ids": [
+            4034
+        ]
+    },
+    {
+        "project": "commons-collections",
+        "current_db_test_name": "org.apache.commons.collections4.trie.PatriciaTrieTest_testMapSize_5dbce4cc",
+        "selected_method_ids": [
+            2561
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.Jdbc41BridgeTest_testAbort_a162873f",
+        "selected_method_ids": [
+            1746
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestCPDSConnectionFactory_testSharedPoolDSDestroyOnReturn_f60b1cc8",
+        "selected_method_ids": [
+            298,
+            1170
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource_testPerUserMinEvictableIdleTimeMillisWithUserMapNotInitialized_d46b1fff",
+        "selected_method_ids": [
+            204,
+            214
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource_testMultipleThreads1_3506eb0b",
+        "selected_method_ids": [
+            327
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.managed.TestBasicManagedDataSource_testBackPointers_83ce46d0",
+        "selected_method_ids": [
+            61,
+            452,
+            938,
+            1579,
+            1585,
+            1593,
+            1601,
+            1607,
+            1613,
+            1622,
+            1623,
+            1633,
+            1634,
+            1650,
+            1654,
+            1665,
+            1689,
+            1714,
+            1727
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.managed.TestLocalXaResource_testStartNoFlagButAlreadyEnlisted_35314c9b",
+        "selected_method_ids": [
+            1013
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingCallableStatement_testGetBooleanString_ef375f16",
+        "selected_method_ids": [
+            1239
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingConnection_testSetHoldability_ed4f513c",
+        "selected_method_ids": [
+            1656
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData_testGetConnection_c94f53e3",
+        "selected_method_ids": [
+            1494
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.Jdbc41BridgeTest_testGetObjectName_00b5fc6f",
+        "selected_method_ids": [
+            1749
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingResultSet_testRowDeleted_29eebbd2",
+        "selected_method_ids": [
+            572
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestAbandonedBasicDataSource_testNoOverlapBetweenDisconnectionAndIgnoreSqlCodes_e9a6c28a",
+        "selected_method_ids": [
+            791,
+            810
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestPoolableConnection_testFastFailValidation_ffbfe1a6",
+        "selected_method_ids": [
+            1380,
+            1387,
+            1601
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestPoolingDataSource_testBackPointers_83ce46d0",
+        "selected_method_ids": [
+            445,
+            1200,
+            1601,
+            1665,
+            1689,
+            1696,
+            1714
+        ]
+    },
+    {
+        "project": "commons-dbcp",
+        "current_db_test_name": "org.apache.commons.dbcp2.TestPoolingDataSource_testMaxTotal_d7b70b73",
+        "selected_method_ids": [
+            1200
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithBothQuotes_0d5199eb",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsWithQuotes_c59208a5",
+        "selected_method_ids": [
+            255
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithQuote_bdbc4aab",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithQuotesAround_90e2b437",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithSingleQuote_c832a2c3",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithSpace_1e3382b5",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgument_c148d08d",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsArrayNull_8906ba9a",
+        "selected_method_ids": [
+            263
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsArray_0bc5f7b3",
+        "selected_method_ids": [
+            263
+        ]
+    },
+    {
+        "project": "commons-exec",
+        "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentsWithQuotesAndSpaces_e84d71a1",
+        "selected_method_ids": [
+            255
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.ByteOrderMarkTest_testConstantCharsetNames_fffb6b53",
+        "selected_method_ids": [
+            3022
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testMissingStartDirectory_e40cb700",
+        "selected_method_ids": [
+            2910
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileSystemTest_testNameLengthStrategyTruncate_Throws_2ec2adc0",
+        "selected_method_ids": [
+            3071
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsCopyToFileTest_testCopyInputStreamToFile_e6a6ad3b",
+        "selected_method_ids": [
+            355
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsAlias_2063ec45",
+        "selected_method_ids": [
+            518
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testCopyDirectoryToDirectory_NonExistingDest_63b75268",
+        "selected_method_ids": [
+            241
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testDeleteDirectorySymbolicLinkAbsent_7ef7c016",
+        "selected_method_ids": [
+            346
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testIO300_24bbcb7c",
+        "selected_method_ids": [
+            370
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveDirectory_Errors_bc330441",
+        "selected_method_ids": [
+            326
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveFileToDirectoryErrors_404263df",
+        "selected_method_ids": [
+            286
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testReadFileToByteArray_2b1894f3",
+        "selected_method_ids": [
+            236
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testToFile5_91d14d8d",
+        "selected_method_ids": [
+            249
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testToURLs3a_c804d4c0",
+        "selected_method_ids": [
+            361
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_1b5c853b",
+        "selected_method_ids": [
+            244
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_4arg_32a42a70",
+        "selected_method_ids": [
+            232
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_2160509a",
+        "selected_method_ids": [
+            291
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines_54d19b99",
+        "selected_method_ids": [
+            309
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.FilenameUtilsTest_testGetPathNoEndSeparator_with_null_character_f29a3440",
+        "selected_method_ids": [
+            465
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOIndexedExceptionTest_testPlain_cb26ff59",
+        "selected_method_ids": [
+            3038
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testCloseConsumer_09e8849d",
+        "selected_method_ids": [
+            159
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testCopyLarge_NoSkip_1357438c",
+        "selected_method_ids": [
+            144
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testRead_ReadableByteChannel_bd3bfb35",
+        "selected_method_ids": [
+            59,
+            185
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testToByteArray_InputStream_NegativeSize_35f405a7",
+        "selected_method_ids": [
+            25
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.IOUtilsWriteTest_testWrite_charArrayToOutputStream_nullEncoding_00f2374d",
+        "selected_method_ids": [
+            86
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.LineIteratorTest_testConstructor_09312f09",
+        "selected_method_ids": [
+            213
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.RandomAccessFileModeTest_testValueOfMode_ecddbbba",
+        "selected_method_ids": [
+            3088
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.TaggedIOExceptionTest_testTaggedIOException_74e80cac",
+        "selected_method_ids": [
+            577,
+            580
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.build.AbstractStreamBuilderTest_getGetSeekableByteChannel_6f3b93d9",
+        "selected_method_ids": [
+            1389
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.build.WriterStreamOriginTest_testGetRandomAccessFile_adb83e2f",
+        "selected_method_ids": [
+            1487
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.ByteArraySeekableByteChannelTest_testWriteBeyondSizeGrows_25c08004",
+        "selected_method_ids": [
+            384,
+            399
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.CloseShieldChannelTest_testCloseIsShielded_d6100c63",
+        "selected_method_ids": [
+            407
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.CloseShieldChannelTest_testPreservesInterfaces_d6100c63",
+        "selected_method_ids": [
+            407
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.FileChannelsTest_testContentEqualsFileChannel_2a0c25e5",
+        "selected_method_ids": [
+            405
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsAlias_4d2e1c91",
+        "selected_method_ids": [
+            518
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.channels.FileChannelsTest_testContentEqualsSequenceInputStream_9e5ea302",
+        "selected_method_ids": [
+            402
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.comparator.ExtensionFileComparatorTest_testCaseSensitivity_154ecc1e",
+        "selected_method_ids": [
+            1372,
+            1373
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.comparator.NameFileComparatorTest_testSortListNull_ff9d4076",
+        "selected_method_ids": [
+            1348
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.file.CopyDirectoryVisitorTest_testCopyDirectoryFolders1FileSize0_767012ce",
+        "selected_method_ids": [
+            1078,
+            1080,
+            1086,
+            1087
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.file.PathUtilsCountingTest_testCountFolders2FileSize2_0cc1b3cc",
+        "selected_method_ids": [
+            1125
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.file.PathUtilsTest_testCopyDirectoryForDifferentFilesystemsWithRelativePathReverse_7a37b29a",
+        "selected_method_ids": [
+            1103
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.filefilter.FileFilterTest_testFilterSet_fromArray_2f4ad1a9",
+        "selected_method_ids": [
+            2425
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.filefilter.SymbolicLinkFileFilterTest_testFileNameFilter_HardFile_d45957b6",
+        "selected_method_ids": [
+            2613
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsAlias_666f81f6",
+        "selected_method_ids": [
+            518
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testFindFirst_d7ea8fc6",
+        "selected_method_ids": [
+            2768
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testUnordered_c57617c3",
+        "selected_method_ids": [
+            2829
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testUnwrap_30efd956",
+        "selected_method_ids": [
+            2733
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.AutoCloseInputStreamTest_testClose_1c3fb007",
+        "selected_method_ids": [
+            2194
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.BOMInputStreamTest_testSkipReturnValueWithBom_cb16874b",
+        "selected_method_ids": [
+            1940
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.BrokenReaderTest_testReadCharArrayIndexed_7e0fd364",
+        "selected_method_ids": [
+            2004
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.BufferedFileChannelInputStreamTest_testNegativeBytesSkippedAfterRead_5ff729a7",
+        "selected_method_ids": [
+            1993
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CharSequenceInputStreamTest_testAvailable_5354a768",
+        "selected_method_ids": [
+            1671
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CharSequenceInputStreamTest_testBufferedRead_AvailableCharset_8e700429",
+        "selected_method_ids": [
+            1680
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CharSequenceInputStreamTest_testLargeSingleByteRead_RequiredCharsets_d1de5289",
+        "selected_method_ids": [
+            1681
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.ChecksumInputStreamTest_testAvailableAfterClose_ba0abb74",
+        "selected_method_ids": [
+            1769,
+            1781
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.CountingInputStreamTest_testResetting_e2572e8c",
+        "selected_method_ids": [
+            1648,
+            1650,
+            1777
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.MarkShieldInputStreamTest_testReadAfterClose_051aeaf7",
+        "selected_method_ids": [
+            1767,
+            1769
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.NullInputStreamTest_testSkipThrowAtEof_3a008495",
+        "selected_method_ids": [
+            1700
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.QueueInputStreamTest_testBufferedReads_51220c29",
+        "selected_method_ids": [
+            2039
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.RandomAccessFileInputStreamTest_testConstructorCloseOnCloseFalse_9e3f46bb",
+        "selected_method_ids": [
+            2152,
+            2154
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.SwappedDataInputStreamTest_testReadUTF_e4f11c80",
+        "selected_method_ids": [
+            2188
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.TaggedInputStreamTest_testCloseHandleIOException_7f8824fc",
+        "selected_method_ids": [
+            1769
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStreamTest_testInvalidConstructor3LengthUnder_90c35795",
+        "selected_method_ids": [
+            2246
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_ByteArrayIndex_c9a11ede",
+        "selected_method_ids": [
+            1920
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_ByteArray_4d1ba076",
+        "selected_method_ids": [
+            1920
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_Byte_6af10405",
+        "selected_method_ids": [
+            1920
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest_testCalculateRawEncodingStandardUtf32_31e0a743",
+        "selected_method_ids": [
+            1815
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest_testTextXml_e9ad09b9",
+        "selected_method_ids": [
+            1817
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.input.buffer.CircularBufferInputStreamTest_testIO683_24e9c03a",
+        "selected_method_ids": [
+            2122
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.AppendableOutputStreamTest_testWriteStringBuilder_5384fe9e",
+        "selected_method_ids": [
+            681
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.BrokenWriterTest_testWriteCharArrayIndexed_d5f4e76a",
+        "selected_method_ids": [
+            699
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.ByteArrayOutputStreamTest_testInvalidWriteLenUnder_3c62b54b",
+        "selected_method_ids": [
+            652
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.DeferredFileOutputStreamTest_testTempFileAboveThreshold_56177d00",
+        "selected_method_ids": [
+            669,
+            708
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.DeferredFileOutputStreamTest_testTempFileBelowThreshold_5617085f",
+        "selected_method_ids": [
+            669
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.ProxyCollectionWriterTest_testArrayIOExceptionOnWriteInt2_2990a862",
+        "selected_method_ids": [
+            607
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.ProxyOutputStreamTest_testWriteNullArrayProxiesToUnderlying_13413dc0",
+        "selected_method_ids": [
+            872
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.StringBuilderWriterTest_testAppendChar_6fe0e843",
+        "selected_method_ids": [
+            749
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.UncheckedFilterWriterTest_testAppendCharSequenceThrows_8355b2d1",
+        "selected_method_ids": [
+            782
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.WriterOutputStreamTest_testLargeUTF8WithSingleByteWrite_1ae648b0",
+        "selected_method_ids": [
+            932
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.XmlStreamWriterTest_testLatin7Encoding_c8ef8459",
+        "selected_method_ids": [
+            850,
+            855
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.output.XmlStreamWriterTest_testUTF16BEEncoding_ee528fd1",
+        "selected_method_ids": [
+            850,
+            855
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.serialization.ProxyTest_testAcceptProxy_00bffe55",
+        "selected_method_ids": [
+            477
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.serialization.ValidatingObjectInputStreamTest_testOurTestClassAcceptedFirstWildcard_99c4d318",
+        "selected_method_ids": [
+            515
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsUTF8Charset_51226463",
+        "selected_method_ids": [
+            522
+        ]
+    },
+    {
+        "project": "commons-io",
+        "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testCancel_233c73ad",
+        "selected_method_ids": [
+            2910
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testAdd_b7faaff0",
+        "selected_method_ids": [
+            17
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.compiler.VariableTest_testRemovePathArrayElement_15b7907f",
+        "selected_method_ids": [
+            238
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testNodes_66a19a80",
+        "selected_method_ids": [
+            19
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.beans.BeanModelTest_testRemovePathBeanValue_e3a8c867",
+        "selected_method_ids": [
+            238
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanModelTest_testAxisPreceding_b516c3b1",
+        "selected_method_ids": [
+            247
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testRemove_0c02e337",
+        "selected_method_ids": [
+            14
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanModelTest_testSetPropertyValue_a2859a0d",
+        "selected_method_ids": [
+            251
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest_testTypeConversions_a49a7052",
+        "selected_method_ids": [
+            247
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.util.ValueUtilsTest_testGetValueFromSetTooSmall_1b635fdf",
+        "selected_method_ids": [
+            91
+        ]
+    },
+    {
+        "project": "commons-jxpath",
+        "current_db_test_name": "org.apache.commons.jxpath.issues.JXPath172DynamicTest_testIssue172_nestedpropertyDoesNotExist_Lenient_02d78f3c",
+        "selected_method_ids": [
+            270,
+            1662
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllDoubleArray_94b8d3be",
+        "selected_method_ids": [
+            3345
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ClassUtilsTest_test_getName_Object_75d0ec2b",
+        "selected_method_ids": [
+            1489
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testBinaryToHexDigitMsb0_bits_aa6a84d2",
+        "selected_method_ids": [
+            1404
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testBinaryToLong_23bd972b",
+        "selected_method_ids": [
+            1403
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testHexToByte_b3dd16ad",
+        "selected_method_ids": [
+            1410
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.DoubleRangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllNullObjectArray_85570fc9",
+        "selected_method_ids": [
+            3259
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.IntegerRangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testLanguagesByCountry_6a919117",
+        "selected_method_ids": [
+            4256
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testParses_18bdca72",
+        "selected_method_ids": [
+            2598,
+            2605
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testParseAllLocales_54200905",
+        "selected_method_ids": [
+            4265
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocaleGetIso3Country_24a65a23",
+        "selected_method_ids": [
+            4265
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsTest_testIndexOfFloatWithStartIndex_5d4da7dc",
+        "selected_method_ids": [
+            3232
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocaleGetIso3LanguageKown_96ba54f0",
+        "selected_method_ids": [
+            4265
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsTest_testIsNotEmptyPrimitives_2b4f0d43",
+        "selected_method_ids": [
+            3046,
+            3122,
+            3279,
+            3316,
+            3347,
+            3359,
+            3363,
+            3420
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocales_69eed7cf",
+        "selected_method_ids": [
+            4264
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.LongRangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ObjectUtilsTest_testPossibleCloneOfNotCloneable_85c1eb76",
+        "selected_method_ids": [
+            1845
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testParses_a1e8b66f",
+        "selected_method_ids": [
+            2598,
+            2605
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_493e302c",
+        "selected_method_ids": [
+            2545
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_a8e34e50",
+        "selected_method_ids": [
+            2545
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_f4fa10aa",
+        "selected_method_ids": [
+            2545
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RangeTest_testIsBeforeRange_ad057283",
+        "selected_method_ids": [
+            1553
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.RangeTest_testIsStartedBy_cbade8bd",
+        "selected_method_ids": [
+            1556
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.StringUtilsContainsTest_testContainsIgnoreCase_StringString_dbcb960f",
+        "selected_method_ids": [
+            1183
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.StringUtilsTest_testDefaultIfBlank_CharBuffers_bea87f87",
+        "selected_method_ids": [
+            1180
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ValidateTest$NoNullElements$WithCollection$WithoutMessage_shouldNotThrowExceptionForNonEmptyCollection_8a7f369f",
+        "selected_method_ids": [
+            90
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ValidateTest$NotBlank$WithMessage_shouldThrowIllegalArgumentExceptionWithGivenMessageForEmptyString_e3131635",
+        "selected_method_ids": [
+            86
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.CompareToBuilderTest_testObjectComparatorNull_651b25cf",
+        "selected_method_ids": [
+            1012,
+            1015
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.CompareToBuilderTest_testObjectComparator_06d24568",
+        "selected_method_ids": [
+            1012,
+            1015
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.EqualsBuilderTest_testObjectRecursiveCycleSelfreference_e142db5b",
+        "selected_method_ids": [
+            591
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.HashCodeBuilderTest_testSuper_7a06ecca",
+        "selected_method_ids": [
+            794
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ReflectionDiffBuilderTest_testTransientFieldDifference_4325dde0",
+        "selected_method_ids": [
+            561
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest_test_toStringExcludeArrayWithNulls_426d284f",
+        "selected_method_ids": [
+            697
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ToStringBuilderTest_testFloatArray_81f8e8d0",
+        "selected_method_ids": [
+            611,
+            624,
+            630
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ToStringBuilderTest_testShortArray_6af6e2b0",
+        "selected_method_ids": [
+            611,
+            627,
+            630
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.builder.ToStringStyleTest_testSetSizeStartText_5ef7aa9f",
+        "selected_method_ids": [
+            931
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testTzParses_376857b8",
+        "selected_method_ids": [
+            2598,
+            2612
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest_testChangeEvents_b4e774dc",
+        "selected_method_ids": [
+            2459,
+            2466
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.concurrent.LazyInitializerSupplierTest_testWorkingCloser_0d60bb5a",
+        "selected_method_ids": [
+            2265
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest_testInitializeResultsIsSuccessfulFalse_629890ec",
+        "selected_method_ids": [
+            2329
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParser_TimeZoneStrategyTest_testTimeZoneStrategy_DateFormatSymbols_90ddcdba",
+        "selected_method_ids": [
+            2598,
+            2605
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.concurrent.UncheckedFutureTest_testOnFuture_d8146335",
+        "selected_method_ids": [
+            2378
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParser_TimeZoneStrategyTest_testTimeZoneStrategy_TimeZone_d7bc7609",
+        "selected_method_ids": [
+            2598
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDatePrinterTest_testHourFormats_651c9867",
+        "selected_method_ids": [
+            2781
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDatePrinterTimeZonesTest_testCalendarTimezoneRespected_c2953629",
+        "selected_method_ids": [
+            2943,
+            2945
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastTimeZoneTest_testUTC_b90cc433",
+        "selected_method_ids": [
+            2720,
+            2721
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.GmtTimeZoneTest_testGetRawOffset_2f74f518",
+        "selected_method_ids": [
+            2992
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.WeekYearTest_testParser_c5c3313e",
+        "selected_method_ids": [
+            2600
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testPairOfMapEntry_29ed59da",
+        "selected_method_ids": [
+            3800
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testPairOfObjects_821cded2",
+        "selected_method_ids": [
+            3799
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testToStringLeft_7a7a2606",
+        "selected_method_ids": [
+            3741
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.tuple.TripleTest_testComparable2_72343a27",
+        "selected_method_ids": [
+            3772
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.tuple.TripleTest_testFormattable_padded_3cda5c4b",
+        "selected_method_ids": [
+            3768
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.BooleanUtilsTest_testOneHot_primitive_nullInput_68f1dee6",
+        "selected_method_ids": [
+            1135
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testCreateBigDecimal_ea1ae640",
+        "selected_method_ids": [
+            1919
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testIsDigits_a24dc9e3",
+        "selected_method_ids": [
+            1879
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testMaxInt_nullArray_6ac58771",
+        "selected_method_ids": [
+            1884
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.mutable.MutableIntTest_testIncrement_1962a4be",
+        "selected_method_ids": [
+            2001
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.mutable.MutableObjectTest_testEquals_4d3b87b2",
+        "selected_method_ids": [
+            2075
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.mutable.MutableShortTest_testToString_3f3c7e9f",
+        "selected_method_ids": [
+            2128
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.reflect.FieldUtilsTest_testGetFieldForceAccessIllegalArgumentException1_a777fa1d",
+        "selected_method_ids": [
+            4210
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.reflect.FieldUtilsTest_testGetFieldForceAccess_fc2d971a",
+        "selected_method_ids": [
+            4210
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.reflect.FieldUtilsTest_testGetFieldIllegalArgumentException1_a002e660",
+        "selected_method_ids": [
+            4241
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_testIsArrayGenericTypes_9e88b120",
+        "selected_method_ids": [
+            4137
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_testTypeToString_82026a1a",
+        "selected_method_ids": [
+            4143
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_test_LANG_1114_3d4567c8",
+        "selected_method_ids": [
+            4149
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderAppendInsertTest_testAppend_FormattedString_a58cb65b",
+        "selected_method_ids": [
+            499
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderAppendInsertTest_testAppend_StringBuilder_int_int_846b3418",
+        "selected_method_ids": [
+            389,
+            390,
+            475
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderTest_testCapacityAndLength_a284b652",
+        "selected_method_ids": [
+            382,
+            422,
+            434,
+            473,
+            493,
+            501,
+            505,
+            513
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderTest_testLang295_7ea79eaf",
+        "selected_method_ids": [
+            393,
+            452
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.CharSetTest_testHashCode_e184288e",
+        "selected_method_ids": [
+            3031
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.StrLookupTest_testMapLookup_nullMap_0b25f51b",
+        "selected_method_ids": [
+            140,
+            144
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.StrSubstitutorTest_testStaticReplacePrefixSuffix_8e764ed8",
+        "selected_method_ids": [
+            326
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.StrTokenizerTest_testTSV_b8fe7fa6",
+        "selected_method_ids": [
+            209,
+            211,
+            232,
+            266
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.CharSetUtilsTest_testKeep_StringStringarray_6e78f230",
+        "selected_method_ids": [
+            4280
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.text.translate.EntityArraysTest_testHTML40_EXTENDED_ESCAPE_74427542",
+        "selected_method_ids": [
+            179
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.CalendarUtilsTest_testToLocalDateTime_14c6bf1f",
+        "selected_method_ids": [
+            2706
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ClassPathUtilsTest_testToFullyQualifiedPathPackageNullString_b3443f7b",
+        "selected_method_ids": [
+            1450
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ClassUtilsShortClassNameTest_testDollarSignImmediatelyAfterPackage_e9afe15e",
+        "selected_method_ids": [
+            1518
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ClassUtilsTest_testGetClassArrayIllegal_30df726f",
+        "selected_method_ids": [
+            1484
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.CalendarUtilsTest_testToOffsetDateTime_5d8a5c7d",
+        "selected_method_ids": [
+            2702
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.ClassUtilsTest_testGetClassArray_051a0238",
+        "selected_method_ids": [
+            1484
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.CalendarUtilsTest_testToZonedDateTime_6eaa4404",
+        "selected_method_ids": [
+            2712
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.DateUtilsTest_testLANG799_DE_FAIL_0cfacff5",
+        "selected_method_ids": [
+            2867
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateFormat_PrinterTest_testTimeZoneAsZ_088be95e",
+        "selected_method_ids": [
+            2781,
+            2971
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserSDFTest_testUpperCase_6005bc89",
+        "selected_method_ids": [
+            2598,
+            2612
+        ]
+    },
+    {
+        "project": "commons-lang",
+        "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testDayNumberOfWeek_296b9b5f",
+        "selected_method_ids": [
+            2598
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizerWithSVDTest_testCircleFittingGoodInit_825852aa",
+        "selected_method_ids": [
+            1077
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.linear.FieldMatrixImplTest_testGetRowVector_7d82fab9",
+        "selected_method_ids": [
+            2097
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.linear.RealVectorTest_testSet_ab36de70",
+        "selected_method_ids": [
+            1479
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.linear.UnmodifiableArrayRealVectorTest_testAddToEntry_00eb4908",
+        "selected_method_ids": [
+            1490
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.ode.ContinuousOutputModelTest_testRandomAccess_fcb8f5b9",
+        "selected_method_ids": [
+            3244,
+            3245,
+            3248
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradientTest_testRemainderField_35ff4f07",
+        "selected_method_ids": [
+            3686
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.SimplexOptimizerTest_testFunctionWithMultiDirectional_d1e91b3b",
+        "selected_method_ids": [
+            4459
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.SimplexOptimizerTest_testFunctionWithNelderMead_7c3ae180",
+        "selected_method_ids": [
+            4459
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.analysis.function.GaussianTest_testParametricValue_9356a6cf",
+        "selected_method_ids": [
+            4169
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.random.HaltonSequenceGeneratorTest_test3DReference_42a69408",
+        "selected_method_ids": [
+            2749
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.stat.descriptive.SynchronizedDescriptiveStatisticsTest_testInit0_b87013ae",
+        "selected_method_ids": [
+            761
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.stat.descriptive.SynchronizedDescriptiveStatisticsTest_testInitCopy_3a8c7757",
+        "selected_method_ids": [
+            775
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.transform.FastCosineTransformerTest_testTransformRealInvalidDataSize_d751749d",
+        "selected_method_ids": [
+            5372
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.transform.TransformUtilsTest_testSampleNegativeNumberOfPoints_d752e794",
+        "selected_method_ids": [
+            5368
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.analysis.integration.SimpsonIntegratorTest_testSinFunction_f91e70de",
+        "selected_method_ids": [
+            3983
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.analysis.integration.gauss.HermiteParametricTest_testAllMonomials_ec4bca18",
+        "selected_method_ids": [
+            3938
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.core.jdkmath.AccurateMathStrictComparisonTest_test1_b71466fb",
+        "selected_method_ids": [
+            65
+        ]
+    },
+    {
+        "project": "commons-math",
+        "current_db_test_name": "org.apache.commons.math4.legacy.core.jdkmath.AccurateMathTest_testExpSpecialCases_5f6f5dd5",
+        "selected_method_ids": [
+            69
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.SocketClientTest_testConnectResolved_c495cd11",
+        "selected_method_ids": [
+            735
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.SocketClientTest_testConnectUnresolved_fc690a6a",
+        "selected_method_ids": [
+            723
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.ftp.parser.UnixFTPEntryParserTest_testLeadingSpacesNET566_2588147a",
+        "selected_method_ids": [
+            1344,
+            1348
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.imap.IMAPCommandTest_getCommand_ef226146",
+        "selected_method_ids": [
+            413
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.SocketClientTest_testProxySettings_b742b680",
+        "selected_method_ids": [
+            749
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.telnet.SimpleOptionHandlerTest_testAnswerSubnegotiation_28bd1572",
+        "selected_method_ids": [
+            870
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.bsd.RCommandClientTest_testConstructor_09312f09",
+        "selected_method_ids": [
+            327
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.bsd.RCommandClientTest_testDefaultPort_a5da3771",
+        "selected_method_ids": [
+            739
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.util.SubnetUtilsTest_testSubnetAddressStreamCount_92bde828",
+        "selected_method_ids": [
+            85
+        ]
+    },
+    {
+        "project": "commons-net",
+        "current_db_test_name": "org.apache.commons.net.ftp.FTPClientTest_testParsePassiveModeReplyForLocalAddressWithSimpleNatWorkaroundStrategy_57b2f9ca",
+        "selected_method_ids": [
+            1072
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.similarity.DamerauLevenshteinDistanceTest_testCalculateDamerauLevenshteinDistance_SimilarityInput_d4021729",
+        "selected_method_ids": [
+            697
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.similarity.DamerauLevenshteinDistanceTest_testCalculateDamerauLevenshteinDistance_eb5dd5ff",
+        "selected_method_ids": [
+            700
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.similarity.StringMetricFromTest_testMissingMetric_10a7eb45",
+        "selected_method_ids": [
+            705
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.StrSubstitutorTest_testReplaceEmpty_769246ec",
+        "selected_method_ids": [
+            453,
+            454
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.StrTokenizerTest_testBasicQuoted4_a9faa671",
+        "selected_method_ids": [
+            350,
+            366,
+            383,
+            394,
+            410
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.StrTokenizerTest_testConstructor_charArray_char_62e67d4a",
+        "selected_method_ids": [
+            353
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.StringSubstitutorTest_testSubstituteDefaultProperties_305f07e9",
+        "selected_method_ids": [
+            1019
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.TextStringBuilderAppendInsertTest_testAppendln_CharArray_bba5b2d3",
+        "selected_method_ids": [
+            608
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.OssFuzzTest_testStringSubstitutorInterpolatorFuzzer5447769450741760_91feca83",
+        "selected_method_ids": [
+            1014
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.TextStringBuilderTest_testContains_String_204aa8a0",
+        "selected_method_ids": [
+            551
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.TextStringBuilderTest_testLang412Left_1b03835d",
+        "selected_method_ids": [
+            657
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.TextStringBuilderTest_testReadFromReadableAppendsToEnd_fc899e4a",
+        "selected_method_ids": [
+            530
+        ]
+    },
+    {
+        "project": "commons-text",
+        "current_db_test_name": "org.apache.commons.text.io.StringSubstitutorFilterReaderTest_testReplaceUnknownShortestKeyOnly_de24953a",
+        "selected_method_ids": [
+            78
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.routines.BigIntegerValidatorTest_testInvalidNotStrict_eddec738",
+        "selected_method_ids": [
+            409,
+            415
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.ByteTest_testByteBeyondMin_86efccea",
+        "selected_method_ids": [
+            751
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.ByteTest_testByteFailure_9356cc71",
+        "selected_method_ids": [
+            751
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.ByteTest_testByteMax_aca2d4cb",
+        "selected_method_ids": [
+            751
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.ByteTest_testByteMin_aca65239",
+        "selected_method_ids": [
+            751
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.ByteTest_testNumberFailure_2b835fd0",
+        "selected_method_ids": [
+            751
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.routines.ShortValidatorTest_testRangeMinMax_05f6e71e",
+        "selected_method_ids": [
+            406,
+            411,
+            416
+        ]
+    },
+    {
+        "project": "commons-validator",
+        "current_db_test_name": "org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest_testZeroSum_1d173652",
+        "selected_method_ids": [
+            520,
+            521
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addClassificationFiles_addsPropertyFiles_56fba4e2",
+        "selected_method_ids": [
+            231
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.json.ArgumentTest_getArguments_ReturnsArguments_36743bb3",
+        "selected_method_ids": [
+            141
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addClassifications_AddsClassification_0243cb8c",
+        "selected_method_ids": [
+            227
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addCustomCssFiles_addsPropertyFiles_2cdfedd8",
+        "selected_method_ids": [
+            236
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addCustomJsFiles_addsPropertyFiles_504711ee",
+        "selected_method_ids": [
+            246
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.json.HookTest_hasContent_WithEmbedding_ReturnsTrue_b08b2ba4",
+        "selected_method_ids": [
+            73
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addPresentationMode_AddsPresentationMode_1a21a011",
+        "selected_method_ids": [
+            262
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.sorting.SortingFactoryTest_sortFeatures_OnNATURAL_ReturnsSameList_9edf418f",
+        "selected_method_ids": [
+            389
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addReducingMethod_AddsReducingMethod_c1091131",
+        "selected_method_ids": [
+            252
+        ]
+    },
+    {
+        "project": "cucumber-reporting",
+        "current_db_test_name": "net.masterthought.cucumber.ReportParserTest_parseJsonFiles_OnNoReport_ThrowsException_15ef0b3b",
+        "selected_method_ids": [
+            345
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.assets.AssetsBundleTest_canHaveCustomPaths_e49a6f46",
+        "selected_method_ids": [
+            96,
+            99
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.metrics.common.ScheduledReporterManagerTest_testStopWithoutReporting_ea5eb09b",
+        "selected_method_ids": [
+            2149,
+            2151
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.views.common.ViewMessageBodyWriterTest_detectLocaleShouldReturnCorrectLocale_4206df05",
+        "selected_method_ids": [
+            2753
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.assets.AssetsBundleTest_canHaveDifferentDefaultMediaType_9226715f",
+        "selected_method_ids": [
+            99,
+            101
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.core.server.DefaultServerFactoryTest_hasResponseMeteredLevel_cf6cc258",
+        "selected_method_ids": [
+            621
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.assets.AssetsBundleTest_canHaveDifferentUriAndResourcePaths_9abbdaf5",
+        "selected_method_ids": [
+            99,
+            105
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.client.ConfiguredCloseableHttpClientTest_getClient_returns_config_provided_at_construction_19023ee5",
+        "selected_method_ids": [
+            346
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.hibernate.AbstractDAOTest_hasAnEntityClass_be1ac1ef",
+        "selected_method_ids": [
+            1252
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.assets.AssetsBundleTest_canSupportDifferentAssetsBundleName_359fadcb",
+        "selected_method_ids": [
+            99,
+            103
+        ]
+    },
+    {
+        "project": "dropwizard",
+        "current_db_test_name": "io.dropwizard.client.DropwizardSSLConnectionSocketFactoryTest_shouldSucceedWithBcProvider_4fea70e8",
+        "selected_method_ids": [
+            290,
+            435
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.dynamics.joint.DistanceJointTest_setSameLimitValid_9fbc7b09",
+        "selected_method_ids": [
+            681
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.geometry.GeometryTest_minkowskiSumInvalidCount1_b1e872de",
+        "selected_method_ids": [
+            2152
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_detectAABB_305579d3",
+        "selected_method_ids": [
+            1424
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.geometry.RayTest_createNullStart_e631457f",
+        "selected_method_ids": [
+            2171
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.geometry.Vector3Test_dot_00018549",
+        "selected_method_ids": [
+            1567,
+            1603
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.geometry.Vector3Test_tripleProduct_4be552b1",
+        "selected_method_ids": [
+            1574
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.geometry.decompose.EarClippingTest_triangulateFailSelfIntersection4_3bfb8915",
+        "selected_method_ids": [
+            2237
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_getAABBExpansionMethod_c5e5a705",
+        "selected_method_ids": [
+            1420
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_getBroadphaseFilter_ea55bb43",
+        "selected_method_ids": [
+            1430
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_getSetUpdateTrackingEnabled_4c6bc341",
+        "selected_method_ids": [
+            1357,
+            1425
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.world.ConstraintGraphTest_multiCollision_fdf861f9",
+        "selected_method_ids": [
+            2942
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.world.listener.ListenerAdaptersTest_stepListenerAdapter_80a4438f",
+        "selected_method_ids": [
+            3007,
+            3008,
+            3009,
+            3010
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionItemBroadphaseTest_updateSmall_57a50668",
+        "selected_method_ids": [
+            1320
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.collision.shapes.RectangleSegmentTest_detectSat_90e77643",
+        "selected_method_ids": [
+            999,
+            1000
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.dynamics.SettingsTest_setNullContinuousDetectionMode_5b4703b0",
+        "selected_method_ids": [
+            201
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.dynamics.TorqueTest_tostring_ccb1664c",
+        "selected_method_ids": [
+            838
+        ]
+    },
+    {
+        "project": "dyn4j",
+        "current_db_test_name": "org.dyn4j.dynamics.joint.AbstractPairedBodyJointTest_getBodyIterator_ad7c76a6",
+        "selected_method_ids": [
+            507
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.CommentsTest_testParseComments_49081355",
+        "selected_method_ids": [
+            791
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.internal.LazilyParsedNumberTest_testEquals_86d6316d",
+        "selected_method_ids": [
+            282
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.internal.LazilyParsedNumberTest_testHashCode_48dcad11",
+        "selected_method_ids": [
+            284
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.internal.LinkedTreeMapTest_testContainsNullKeyIsAlwaysFalse_60e6a263",
+        "selected_method_ids": [
+            731
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.JsonNullTest_testEqualsAndHashcode_c0614b86",
+        "selected_method_ids": [
+            989,
+            990
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.internal.bind.JsonTreeWriterTest_testPrematureClose_9dbcfa3a",
+        "selected_method_ids": [
+            606
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.reflect.TypeTokenTest_testIsAssignableFromRawTypes_c8cbb5cc",
+        "selected_method_ids": [
+            955
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.stream.JsonReaderPathTest_path_37d311cc",
+        "selected_method_ids": [
+            556,
+            559
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.stream.JsonReaderPathTest_path_548b77ba",
+        "selected_method_ids": [
+            148,
+            167
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.JsonObjectTest_testAddingAndRemovingObjectProperties_a76d4264",
+        "selected_method_ids": [
+            828,
+            836
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.stream.JsonReaderTest_testNulls_ee8507a7",
+        "selected_method_ids": [
+            154
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.stream.JsonReaderTest_testSkipValueAfterEndOfDocument_2dc2ac70",
+        "selected_method_ids": [
+            186
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.FieldAttributesTest_testDeclaringClass_dcb51ee6",
+        "selected_method_ids": [
+            191
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.stream.JsonReaderTest_testStrictNonExecutePrefixWithSkipValue_f2d9650a",
+        "selected_method_ids": [
+            186
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.stream.JsonWriterTest_testNullName_8f0585ad",
+        "selected_method_ids": [
+            106
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.FieldAttributesTest_testModifiers_10fd8a7f",
+        "selected_method_ids": [
+            198
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.FieldAttributesTest_testName_77c09c2c",
+        "selected_method_ids": [
+            193
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.JsonStreamParserTest_testIncompleteInput_a0e47667",
+        "selected_method_ids": [
+            927,
+            929
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.JsonStreamParserTest_testNoSideEffectForHasNext_46b456ac",
+        "selected_method_ids": [
+            927
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.MixedStreamTest_testReadClosed_03b3b04b",
+        "selected_method_ids": [
+            816
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.GenericArrayTypeTest_testNotEquals_489df098",
+        "selected_method_ids": [
+            350
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.GenericArrayTypeTest_testOurTypeFunctionality_f10b1bcf",
+        "selected_method_ids": [
+            347,
+            348,
+            350
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.GsonBuilderTest_testCreatingMoreThanOnce_be5036c8",
+        "selected_method_ids": [
+            868
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.OverrideCoreTypeAdaptersTest_testOverrideStringAdapter_a3b3ef6b",
+        "selected_method_ids": [
+            810,
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.CircularReferenceTest_testDirectedAcyclicGraphSerialization_17d3dc35",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.CollectionTest_testCollectionOfStringsSerialization_e838123c",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.DefaultMapJsonSerializerTest_testEmptyMapNoTypeSerialization_4914ae53",
+        "selected_method_ids": [
+            794
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.DefaultMapJsonSerializerTest_testEmptyMapSerialization_7c30772e",
+        "selected_method_ids": [
+            794
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.DefaultTypeAdaptersTest_testStringBuilderDeserialization_0ef59af7",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.ExposeFieldsTest_testNullExposeFieldSerialization_ec54683f",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.DefaultMapJsonSerializerTest_testNonEmptyMapSerialization_fa9fe645",
+        "selected_method_ids": [
+            794
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest_testJsonAdapterInvoked_5818f907",
+        "selected_method_ids": [
+            800,
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.GsonTest_testOverridesDefaultExcluder_7a31aa8d",
+        "selected_method_ids": [
+            786,
+            868
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.JsonTreeTest_testToJsonTreeObjectType_cd646fdd",
+        "selected_method_ids": [
+            794
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.JsonTreeTest_testToJsonTree_6cad0b36",
+        "selected_method_ids": [
+            789
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.MapTest_testMapSerializationEmpty_4e1db82a",
+        "selected_method_ids": [
+            810
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.NamingPolicyTest_testGsonWithNonDefaultFieldNamingPolicyDeserialiation_a8b10917",
+        "selected_method_ids": [
+            811,
+            849
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.PrimitiveTest_testPrimitiveIntegerAutoboxedSerialization_f17e41f6",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.SerializedNameTest_testFirstNameIsChosenForSerialization_400b6fd4",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.SerializedNameTest_testMultipleNamesDeserializedCorrectly_0e35d0b4",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testAssignmentCharDeserialization_1e7ae124",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testAssignmentCharSerialization_90ca3463",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedBackslashInStringDeserialization_d41b154a",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedBackslashInStringSerialization_2d153a09",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlNInStringDeserialization_24730257",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlNInStringSerialization_fcaf0656",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlRInStringDeserialization_f2b1135b",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlRInStringSerialization_e685885a",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapingQuotesInStringDeserialization_42d90a2c",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testEscapingQuotesInStringSerialization_bb2eff6b",
+        "selected_method_ids": [
+            800,
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testJavascriptKeywordsInStringDeserialization_eee0c9ce",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testJavascriptKeywordsInStringSerialization_40063f8d",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testSingleQuoteInStringDeserialization_2b7266c7",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testStringValueAsSingleElementArraySerialization_cd007973",
+        "selected_method_ids": [
+            800,
+            810
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testStringValueDeserialization_12c51b5d",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testStringValueSerialization_249fa8dc",
+        "selected_method_ids": [
+            800
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.functional.StringTest_testStringWithEscapedSlashDeserialization_338ed232",
+        "selected_method_ids": [
+            811
+        ]
+    },
+    {
+        "project": "gson",
+        "current_db_test_name": "com.google.gson.JsonArrayTest_testRemove_7ebb2bb3",
+        "selected_method_ids": [
+            907
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.renderer.xy.XYBubbleRendererTest_testHashcode_181f3c6e",
+        "selected_method_ids": [
+            3577
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.renderer.xy.XYDotRendererTest_testGetLegendItemSeriesIndex_05c58ff8",
+        "selected_method_ids": [
+            3442
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.renderer.xy.XYStepAreaRendererTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            3597
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.title.DateTitleTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            7897
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.KeyedObjects2DTest_testRemoveColumnByIndex_1efb5bb0",
+        "selected_method_ids": [
+            1898
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.RangeTest_testConstrain_78ecd0c6",
+        "selected_method_ids": [
+            873
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.category.CategoryToPieDatasetTest_testGetKey_9f45249c",
+        "selected_method_ids": [
+            1087
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testCloning2_59b115cb",
+        "selected_method_ids": [
+            1052
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            1052
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testGetValue_210c4c2e",
+        "selected_method_ids": [
+            1056,
+            1057,
+            1059
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.function.NormalDistributionFunction2DTest_testEquals_4d3b87b2",
+        "selected_method_ids": [
+            1868
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.gantt.TaskSeriesCollectionTest_testGetStartValue2_32b87520",
+        "selected_method_ids": [
+            902,
+            910
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.statistics.BoxAndWhiskerCalculatorTest_testCalculateBoxAndWhiskerStatistics_adf0ce81",
+        "selected_method_ids": [
+            2158
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.statistics.DefaultStatisticalCategoryDatasetTest_testGetRangeBounds2_25d08ba5",
+        "selected_method_ids": [
+            2111
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.statistics.StatisticsTest_testCorrelation2_2fd9cd23",
+        "selected_method_ids": [
+            2070
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.time.MillisecondTest_testGetSerialIndex_0515e1bb",
+        "selected_method_ids": [
+            1682
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.time.SecondTest_testDateConstructor1_c8829e38",
+        "selected_method_ids": [
+            1657
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.axis.DateAxisTest_testPreviousStandardDateYearA_8a4250b1",
+        "selected_method_ids": [
+            8468
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.time.TimeSeriesTest_testBug1864222_2408742c",
+        "selected_method_ids": [
+            1608
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.time.TimeSeriesTest_testCreateCopy1_2ff0694f",
+        "selected_method_ids": [
+            1608
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.time.TimeSeriesTest_testRemoveAgedItems5_9eae2971",
+        "selected_method_ids": [
+            1599
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.time.WeekTest_testGetStart_a22986df",
+        "selected_method_ids": [
+            1226
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.axis.ExtendedCategoryAxisTest_testCloning2_59b115cb",
+        "selected_method_ids": [
+            8602
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.xy.CategoryTableXYDatasetTest_testCloning2_59b115cb",
+        "selected_method_ids": [
+            48
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.xy.TableXYDatasetTest_test788597_6d0c29cf",
+        "selected_method_ids": [
+            494
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.xy.TableXYDatasetTest_testAutoPrune_73ad9d8a",
+        "selected_method_ids": [
+            493,
+            508,
+            513
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.xy.VectorDataItemTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            1924
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.xy.XIntervalDataItemTest_testEquals_4d3b87b2",
+        "selected_method_ids": [
+            1922
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.data.xy.YIntervalSeriesTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            1150
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.block.GridArrangementTest_testNF_bba22c4b",
+        "selected_method_ids": [
+            5121
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorTest_testGenerateURLFragment_b4d3cd39",
+        "selected_method_ids": [
+            7307
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            7465
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest_testPublicCloneable_d4c44add",
+        "selected_method_ids": [
+            7469
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.plot.MarkerTest_testGetSetLabelTextAnchor_3de3ff19",
+        "selected_method_ids": [
+            5994,
+            6000
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.plot.MeterPlotTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            6320
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.XYBarChartTest_testSetSeriesToolTipGenerator_8ab92898",
+        "selected_method_ids": [
+            3573
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.plot.compass.PlumNeedleTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            6707
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.plot.dial.DialTextAnnotationTest_testSerialization_703231ff",
+        "selected_method_ids": [
+            7088,
+            7091
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.plot.pie.MultiplePiePlotTest_testEquals_4d3b87b2",
+        "selected_method_ids": [
+            6091
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.plot.pie.PiePlotTest_testBug1126_c_7ff9d8cb",
+        "selected_method_ids": [
+            6125,
+            6159,
+            6247
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.renderer.LookupPaintScaleTest_testCloning_02e4ace9",
+        "selected_method_ids": [
+            4913
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.renderer.category.BoxAndWhiskerRendererTest_testGetLegendItem_ec3c0945",
+        "selected_method_ids": [
+            4439
+        ]
+    },
+    {
+        "project": "jfreechart",
+        "current_db_test_name": "org.jfree.chart.renderer.category.GroupedStackedBarRendererTest_testDrawWithNullInfo_f39d2692",
+        "selected_method_ids": [
+            4660
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.TestBigMoney_test_abs_negative_3bc88d30",
+        "selected_method_ids": [
+            205
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.format.TestMoneyFormatterBuilder_test_appendAmount_MoneyAmountStyle_BHD_d5b68663",
+        "selected_method_ids": [
+            95,
+            110,
+            115
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.format.TestMoneyFormatterBuilder_test_appendAmount_MoneyAmountStyle_GBP_f63f755a",
+        "selected_method_ids": [
+            95
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.TestBigMoney_test_factory_total_Iterable_nullNotFirst_d321b735",
+        "selected_method_ids": [
+            208
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.format.TestMoneyFormatterBuilder_test_appendCurrencyNumeric3Code_parse_tooShort_30e76ec9",
+        "selected_method_ids": [
+            115
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.TestBigMoney_test_abs_positive_74c7b9f4",
+        "selected_method_ids": [
+            205
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.TestBigMoney_test_minusMinor_zero_53c4eb96",
+        "selected_method_ids": [
+            204
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.TestBigMoney_test_compareTo_BigMoney_bae7ddad",
+        "selected_method_ids": [
+            188
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.TestMoney_test_plus_double_zero_01790cbf",
+        "selected_method_ids": [
+            308
+        ]
+    },
+    {
+        "project": "joda-money",
+        "current_db_test_name": "org.joda.money.TestMoney_test_withAmount_doubleRoundingMode_19b8f5fd",
+        "selected_method_ids": [
+            307
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.JsoupTest_parseWithPath_4110d75f",
+        "selected_method_ids": [
+            117,
+            130,
+            134
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.select.SelectorTest_testNestedHas_6e543e72",
+        "selected_method_ids": [
+            734
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.select.TraversorTest_filterSkipEntirely_73aeead6",
+        "selected_method_ids": [
+            1996
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.integration.ConnectTest_throwsExceptionOn404_650906d8",
+        "selected_method_ids": [
+            216
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.integration.FuzzFixesTest_testHtmlFragmentParse_ff3c47d2",
+        "selected_method_ids": [
+            120
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.integration.FuzzFixesTest_testHtmlParse_f238cdce",
+        "selected_method_ids": [
+            128
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.nodes.DocumentTest_setTextPreservesDocumentStructure_e8bfaac1",
+        "selected_method_ids": [
+            950
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.nodes.ElementTest_elementIsIterable_a5f34ad9",
+        "selected_method_ids": [
+            739,
+            937,
+            940
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.helper.ValidateTest_testEnsureNotNullWithMessage_c84dd3d8",
+        "selected_method_ids": [
+            392
+        ]
+    },
+    {
+        "project": "jsoup",
+        "current_db_test_name": "org.jsoup.parser.HtmlParserTest_handlesXmlDeclAndCommentsBeforeDoctype_eb16c7ff",
+        "selected_method_ids": [
+            131
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.library.RemoveAlbumsForCurrentUserRequestTest_shouldReturnDefault_async_bd47513c",
+        "selected_method_ids": [
+            2366
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.player.GetUsersCurrentlyPlayingTrackRequestTest_shouldReturnEmpty_async_35023f88",
+        "selected_method_ids": [
+            2366
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.player.StartResumeUsersPlaybackRequestNumericTest_shouldPreserveBooleanParametersAsBooleans_e9a3edd1",
+        "selected_method_ids": [
+            103
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.playlists.GetListOfUsersPlaylistsRequestTest_shouldReturnDefault_sync_fbd7583d",
+        "selected_method_ids": [
+            1696
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistCoverImageRequestTest_shouldReturnDefault_sync_fbd7583d",
+        "selected_method_ids": [
+            1745
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistsItemsRequestTest_shouldReturnDefaultEpisode_sync_2676ab3e",
+        "selected_method_ids": [
+            1710
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.SpotifyHttpManagerTest_throwsSpotifyWebApiExceptionForAll4xxStatusCodes_28573e23",
+        "selected_method_ids": [
+            173
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequestTest_shouldReturnDefault_sync_fbd7583d",
+        "selected_method_ids": [
+            2305
+        ]
+    },
+    {
+        "project": "spotify-web-api-java",
+        "current_db_test_name": "se.michaelthelin.spotify.requests.data.browse.miscellaneous.GetAvailableGenreSeedsRequestTest_shouldReturnDefault_sync_fbd7583d",
+        "selected_method_ids": [
+            1948
+        ]
+    }
+]
