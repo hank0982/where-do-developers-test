@@ -1,0 +1,44 @@
+{
+  "id": "1357",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.RangeTest_testConstrain_78ecd0c6",
+  "test_path": "org/jfree/data/RangeTest",
+  "test_name": "testConstrain",
+  "body": "@Test\n    public void testConstrain() {\n        Range r1 = new Range(0.0, 1.0);\n\n        double d = r1.constrain(0.5);\n        assertEquals(0.5, d, 0.0000001);\n\n        d = r1.constrain(0.0);\n        assertEquals(0.0, d, 0.0000001);\n\n        d = r1.constrain(1.0);\n        assertEquals(1.0, d, 0.0000001);\n\n        d = r1.constrain(-1.0);\n        assertEquals(0.0, d, 0.0000001);\n\n        d = r1.constrain(2.0);\n        assertEquals(1.0, d, 0.0000001);\n\n        d = r1.constrain(Double.POSITIVE_INFINITY);\n        assertEquals(1.0, d, 0.0000001);\n\n        d = r1.constrain(Double.NEGATIVE_INFINITY);\n        assertEquals(0.0, d, 0.0000001);\n\n        d = r1.constrain(Double.NaN);\n        assertTrue(Double.isNaN(d));\n    }",
+  "invocations": [
+    "Range",
+    "constrain"
+  ],
+  "signature": {
+    "org.jfree.data.Range(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.Range.constrain(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.Range.constrain(double)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.Range.constrain(double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 873,
+      "class_name": "org.jfree.data.Range",
+      "method_name": "constrain",
+      "signature": "org.jfree.data.Range.constrain(double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

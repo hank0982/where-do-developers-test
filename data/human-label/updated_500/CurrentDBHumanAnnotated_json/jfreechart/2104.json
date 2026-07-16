@@ -1,0 +1,112 @@
+{
+  "id": "2104",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.xy.TableXYDatasetTest_test788597_6d0c29cf",
+  "test_path": "org/jfree/data/xy/TableXYDatasetTest",
+  "test_name": "test788597",
+  "body": "@Test\n    public void test788597() {\n        DefaultTableXYDataset<String> dataset = new DefaultTableXYDataset<>();\n        dataset.addSeries(createSeries1());\n        assertEquals(4, dataset.getItemCount());\n        dataset.removeAllSeries();\n        assertEquals(0, dataset.getItemCount());\n    }",
+  "invocations": [
+    "AbstractXYDataset",
+    "AbstractIntervalXYDataset",
+    "DefaultTableXYDataset",
+    "removeAllSeries",
+    "DefaultTableXYDataset",
+    "addSeries",
+    "getItemCount",
+    "add",
+    "XYSeries",
+    "AbstractSeriesDataset",
+    "AbstractDataset",
+    "Series"
+  ],
+  "signature": {
+    "org.jfree.data.xy.AbstractXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.AbstractIntervalXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.DefaultTableXYDataset(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.DefaultTableXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.DefaultTableXYDataset.addSeries(org.jfree.data.xy.XYSeries<S>)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.xy.XYSeries<S>"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.DefaultTableXYDataset.getItemCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.XYSeries.add(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.XYSeries(K, boolean, boolean)": {
+      "params_len": 3,
+      "params": [
+        "K",
+        "boolean",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractSeriesDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.Series(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 494,
+      "class_name": "org.jfree.data.xy.DefaultTableXYDataset",
+      "method_name": "removeAllSeries",
+      "signature": "org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

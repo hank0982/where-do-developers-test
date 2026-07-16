@@ -1,0 +1,64 @@
+{
+  "id": "9809",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserSDFTest_testUpperCase_6005bc89",
+  "test_path": "org/apache/commons/lang3/time/FastDateParserSDFTest",
+  "test_name": "testUpperCase",
+  "body": "@ParameterizedTest\n    @MethodSource(\"data\")\n    void testUpperCase(final String format, final String input, final Locale locale, final boolean valid) {\n        checkParse(input.toUpperCase(locale), format, locale, valid);\n    }",
+  "invocations": [
+    "parse",
+    "FastDateParser",
+    "FastDateParser"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2598,
+      "class_name": "org.apache.commons.lang3.time.FastDateParser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+    },
+    {
+      "method_id": 2612,
+      "class_name": "org.apache.commons.lang3.time.FastDateParser",
+      "method_name": "FastDateParser",
+      "signature": "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

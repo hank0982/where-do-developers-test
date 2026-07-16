@@ -1,0 +1,41 @@
+{
+  "id": "318",
+  "project": "commons-validator",
+  "current_db_test_name": "org.apache.commons.validator.routines.IBANValidatorTest_testExampleAccountsShouldBeValid_905507a9",
+  "test_path": "org/apache/commons/validator/routines/IBANValidatorTest",
+  "test_name": "testExampleAccountsShouldBeValid",
+  "body": "@ParameterizedTest\n    @MethodSource(\"ibanRegistrySourceExamples\")\n    void testExampleAccountsShouldBeValid(final String countryName, final String example) {\n        Assumptions.assumeFalse(INVALID_IBAN_FIXTURES.contains(example), \"Skip invalid example: \" + example + \" for \" + countryName);\n        assertTrue(IBANValidator.getInstance().isValid(example), \"IBAN validator returned false for \" + example + \" for \" + countryName);\n    }",
+  "invocations": [
+    "getInstance",
+    "isValid"
+  ],
+  "signature": {
+    "org.apache.commons.validator.routines.IBANValidator.getInstance()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.routines.IBANValidator.isValid(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.validator.routines.IBANValidator.isValid(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.validator.routines.IBANValidator.isValid(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 291,
+      "class_name": "org.apache.commons.validator.routines.IBANValidator",
+      "method_name": "isValid",
+      "signature": "org.apache.commons.validator.routines.IBANValidator.isValid(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

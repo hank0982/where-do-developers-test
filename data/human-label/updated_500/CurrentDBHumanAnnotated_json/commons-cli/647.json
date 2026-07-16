@@ -1,0 +1,53 @@
+{
+  "id": "647",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.TypeHandlerTest_testCreateValue_9e92e086",
+  "test_path": "org/apache/commons/cli/TypeHandlerTest",
+  "test_name": "testCreateValue",
+  "body": "@SuppressWarnings(\"unchecked\")\n    @ParameterizedTest(name = \"{0} as {1}\")",
+  "invocations": [
+    "createValue",
+    "createValue"
+  ],
+  "signature": {
+    "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Class<T>)",
+    "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Class<T>)",
+    "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 41,
+      "class_name": "org.apache.commons.cli.TypeHandler",
+      "method_name": "createValue",
+      "signature": "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Class<T>)"
+    },
+    {
+      "method_id": 52,
+      "class_name": "org.apache.commons.cli.TypeHandler",
+      "method_name": "createValue",
+      "signature": "org.apache.commons.cli.TypeHandler.createValue(java.lang.String, java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

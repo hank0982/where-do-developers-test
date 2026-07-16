@@ -1,0 +1,75 @@
+{
+  "id": "4115",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.ChecksumInputStreamTest_testAvailableAfterClose_ba0abb74",
+  "test_path": "org/apache/commons/io/input/ChecksumInputStreamTest",
+  "test_name": "testAvailableAfterClose",
+  "body": "@SuppressWarnings(\"resource\")\n    @Test\n    void testAvailableAfterClose() throws Exception {\n        final InputStream shadow;\n        try (InputStream in = createInputStream()) {\n            assertTrue(in.available() > 0);\n            shadow = in;\n        }\n        assertEquals(0, shadow.available());\n    }",
+  "invocations": [
+    "setCharSequence",
+    "close",
+    "available",
+    "builder",
+    "get",
+    "setChecksum"
+  ],
+  "signature": {
+    "org.apache.commons.io.build.AbstractOriginSupplier.setCharSequence(java.lang.CharSequence)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.available()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ChecksumInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ChecksumInputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ChecksumInputStream$Builder.setChecksum(java.util.zip.Checksum)": {
+      "params_len": 1,
+      "params": [
+        "java.util.zip.Checksum"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.ProxyInputStream.close()",
+    "org.apache.commons.io.input.ProxyInputStream.available()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.ProxyInputStream.close()",
+    "org.apache.commons.io.input.ProxyInputStream.available()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1769,
+      "class_name": "org.apache.commons.io.input.ProxyInputStream",
+      "method_name": "close",
+      "signature": "org.apache.commons.io.input.ProxyInputStream.close()"
+    },
+    {
+      "method_id": 1781,
+      "class_name": "org.apache.commons.io.input.ProxyInputStream",
+      "method_name": "available",
+      "signature": "org.apache.commons.io.input.ProxyInputStream.available()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

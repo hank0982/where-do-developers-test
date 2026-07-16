@@ -1,0 +1,53 @@
+{
+  "id": "6344",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.mutable.MutableIntTest_testIncrement_1962a4be",
+  "test_path": "org/apache/commons/lang3/mutable/MutableIntTest",
+  "test_name": "testIncrement",
+  "body": "@Test\n    void testIncrement() {\n        final MutableInt mutNum = new MutableInt(1);\n        mutNum.increment();\n\n        assertEquals(2, mutNum.intValue());\n        assertEquals(2L, mutNum.longValue());\n    }",
+  "invocations": [
+    "intValue",
+    "MutableInt",
+    "increment",
+    "longValue"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.mutable.MutableInt.intValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.mutable.MutableInt(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.mutable.MutableInt.increment()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.mutable.MutableInt.longValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.mutable.MutableInt.increment()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.mutable.MutableInt.increment()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2001,
+      "class_name": "org.apache.commons.lang3.mutable.MutableInt",
+      "method_name": "increment",
+      "signature": "org.apache.commons.lang3.mutable.MutableInt.increment()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

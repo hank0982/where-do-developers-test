@@ -1,0 +1,131 @@
+{
+  "id": "5076",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.LRUMapTest_testFullMapCompatibility_b769ad96",
+  "test_path": "org/apache/commons/collections4/map/LRUMapTest",
+  "test_name": "testFullMapCompatibility",
+  "body": "@Test\n    void testFullMapCompatibility() throws Exception {\n        /*\n         * Create canonical objects with this code Map map = makeFullMap(); if (!(map instanceof Serializable)) return;\n         *\n         * writeExternalFormToDisk((Serializable) map, getCanonicalFullCollectionName(map));\n         */\n\n        // test to make sure the canonical form has been preserved\n        final Map<K, V> map = makeFullMap();\n        if (map instanceof Serializable && !skipSerializedCanonicalTests() && isTestSerialization()) {\n            @SuppressWarnings(\"unchecked\")\n            final Map<K, V> map2 = (Map<K, V>) readExternalFormFromDisk(getCanonicalFullCollectionName(map));\n            assertEquals(getSampleKeys().length, map2.size(), \"Map is the right size\");\n        }\n    }",
+  "invocations": [
+    "NullComparator",
+    "compare",
+    "NullComparator",
+    "LRUMap",
+    "readObject",
+    "LRUMap",
+    "LRUMap",
+    "AbstractLinkedMap",
+    "AbstractLinkedMap",
+    "size",
+    "AbstractHashedMap",
+    "put",
+    "AbstractHashedMap"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.comparators.NullComparator(java.util.Comparator<? super E>, boolean)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Comparator<? super E>",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.comparators.NullComparator.compare(E, E)": {
+      "params_len": 2,
+      "params": [
+        "E",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.comparators.NullComparator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.LRUMap(int, int, float, boolean)": {
+      "params_len": 4,
+      "params": [
+        "int",
+        "int",
+        "float",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.LRUMap.readObject(java.io.ObjectInputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.ObjectInputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.LRUMap(int, float, boolean)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "float",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.LRUMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractLinkedMap(int, float)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "float"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractLinkedMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "float"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.LRUMap.readObject(java.io.ObjectInputStream)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.LRUMap.readObject(java.io.ObjectInputStream)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 844,
+      "class_name": "org.apache.commons.collections4.map.LRUMap",
+      "method_name": "readObject",
+      "signature": "org.apache.commons.collections4.map.LRUMap.readObject(java.io.ObjectInputStream)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

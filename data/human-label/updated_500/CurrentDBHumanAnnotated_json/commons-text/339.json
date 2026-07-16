@@ -1,0 +1,128 @@
+{
+  "id": "339",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.StrTokenizerTest_testBasicQuoted4_a9faa671",
+  "test_path": "org/apache/commons/text/StrTokenizerTest",
+  "test_name": "testBasicQuoted4",
+  "body": "@Test\n    void testBasicQuoted4() {\n        final String input = \"a: 'b' 'c' :d\";\n        final StrTokenizer tok = new StrTokenizer(input, ':', '\\'');\n        tok.setTrimmerMatcher(StrMatcher.trimMatcher());\n        tok.setIgnoreEmptyTokens(false);\n        tok.setEmptyTokenAsNull(true);\n        assertEquals(\"a\", tok.next());\n        assertEquals(\"b c\", tok.next());\n        assertEquals(\"d\", tok.next());\n        assertFalse(tok.hasNext());\n    }",
+  "invocations": [
+    "next",
+    "setEmptyTokenAsNull",
+    "StrTokenizer",
+    "StrTokenizer",
+    "StrTokenizer",
+    "hasNext",
+    "setIgnoreEmptyTokens",
+    "setTrimmerMatcher",
+    "trimMatcher"
+  ],
+  "signature": {
+    "org.apache.commons.text.StrTokenizer.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer.setEmptyTokenAsNull(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer(java.lang.String, char)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer(java.lang.String, char, char)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "char",
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer.setIgnoreEmptyTokens(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer.setTrimmerMatcher(org.apache.commons.text.StrMatcher)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.text.StrMatcher"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrMatcher.trimMatcher()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.StrTokenizer.next()",
+    "org.apache.commons.text.StrTokenizer.setEmptyTokenAsNull(boolean)",
+    "org.apache.commons.text.StrTokenizer(java.lang.String, char, char)",
+    "org.apache.commons.text.StrTokenizer.setIgnoreEmptyTokens(boolean)",
+    "org.apache.commons.text.StrTokenizer.setTrimmerMatcher(org.apache.commons.text.StrMatcher)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.StrTokenizer.next()",
+    "org.apache.commons.text.StrTokenizer.setEmptyTokenAsNull(boolean)",
+    "org.apache.commons.text.StrTokenizer(java.lang.String, char, char)",
+    "org.apache.commons.text.StrTokenizer.setIgnoreEmptyTokens(boolean)",
+    "org.apache.commons.text.StrTokenizer.setTrimmerMatcher(org.apache.commons.text.StrMatcher)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 350,
+      "class_name": "org.apache.commons.text.StrTokenizer",
+      "method_name": "next",
+      "signature": "org.apache.commons.text.StrTokenizer.next()"
+    },
+    {
+      "method_id": 366,
+      "class_name": "org.apache.commons.text.StrTokenizer",
+      "method_name": "setEmptyTokenAsNull",
+      "signature": "org.apache.commons.text.StrTokenizer.setEmptyTokenAsNull(boolean)"
+    },
+    {
+      "method_id": 383,
+      "class_name": "org.apache.commons.text.StrTokenizer",
+      "method_name": "StrTokenizer",
+      "signature": "org.apache.commons.text.StrTokenizer(java.lang.String, char, char)"
+    },
+    {
+      "method_id": 394,
+      "class_name": "org.apache.commons.text.StrTokenizer",
+      "method_name": "setIgnoreEmptyTokens",
+      "signature": "org.apache.commons.text.StrTokenizer.setIgnoreEmptyTokens(boolean)"
+    },
+    {
+      "method_id": 410,
+      "class_name": "org.apache.commons.text.StrTokenizer",
+      "method_name": "setTrimmerMatcher",
+      "signature": "org.apache.commons.text.StrTokenizer.setTrimmerMatcher(org.apache.commons.text.StrMatcher)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

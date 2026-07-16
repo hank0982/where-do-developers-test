@@ -1,0 +1,50 @@
+{
+  "id": "4",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addCustomJsFiles_addsPropertyFiles_504711ee",
+  "test_path": "net/masterthought/cucumber/ConfigurationTest_addCustomJsFiles",
+  "test_name": "addsPropertyFiles",
+  "body": "@Test\n    void addCustomJsFiles_addsPropertyFiles() {\n\n        // given\n        Configuration configuration = new Configuration(outputDirectory, projectName);\n        List<String> jsFiles = new ArrayList<>();\n        jsFiles.add(\"custom-code.js\");\n\n        // when\n        configuration.addCustomJsFiles(jsFiles);\n\n        // then\n        List<String> returnedJsFiles = configuration.getCustomJsFiles();\n        assertThat(returnedJsFiles).containsExactly(\"custom-code.js\");\n    }",
+  "invocations": [
+    "getCustomJsFiles",
+    "addCustomJsFiles",
+    "Configuration"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.Configuration.getCustomJsFiles()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration.addCustomJsFiles(java.util.List<java.lang.String>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<java.lang.String>"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.Configuration.addCustomJsFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.Configuration.addCustomJsFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 246,
+      "class_name": "net.masterthought.cucumber.Configuration",
+      "method_name": "addCustomJsFiles",
+      "signature": "net.masterthought.cucumber.Configuration.addCustomJsFiles(java.util.List<java.lang.String>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

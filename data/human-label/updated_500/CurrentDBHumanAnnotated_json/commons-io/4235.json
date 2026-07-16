@@ -1,0 +1,85 @@
+{
+  "id": "4235",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.MarkShieldInputStreamTest_testReadAfterClose_051aeaf7",
+  "test_path": "org/apache/commons/io/input/MarkShieldInputStreamTest",
+  "test_name": "testReadAfterClose",
+  "body": "@ParameterizedTest\n    @MethodSource(AbstractInputStreamTest.ARRAY_LENGTHS_NAME)\n    void testReadAfterClose(final int len) throws Exception {\n        try (MarkTestableInputStream in = new MarkTestableInputStream(new NullInputStream(len, false, false));\n                MarkShieldInputStream msis = new MarkShieldInputStream(in)) {\n            assertEquals(len, in.available());\n            in.close();\n            assertThrows(IOException.class, in::read);\n        }\n    }",
+  "invocations": [
+    "MarkShieldInputStream",
+    "NullInputStream",
+    "read",
+    "close",
+    "ProxyInputStream",
+    "available",
+    "AbstractInputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.MarkShieldInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.NullInputStream(long, boolean, boolean)": {
+      "params_len": 3,
+      "params": [
+        "long",
+        "boolean",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.read()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.available()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.AbstractInputStream()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.ProxyInputStream.read()",
+    "org.apache.commons.io.input.ProxyInputStream.close()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.ProxyInputStream.read()",
+    "org.apache.commons.io.input.ProxyInputStream.close()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1767,
+      "class_name": "org.apache.commons.io.input.ProxyInputStream",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.input.ProxyInputStream.read()"
+    },
+    {
+      "method_id": 1769,
+      "class_name": "org.apache.commons.io.input.ProxyInputStream",
+      "method_name": "close",
+      "signature": "org.apache.commons.io.input.ProxyInputStream.close()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

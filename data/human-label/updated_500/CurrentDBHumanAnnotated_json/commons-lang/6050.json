@@ -1,0 +1,35 @@
+{
+  "id": "6050",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testIsDigits_a24dc9e3",
+  "test_path": "org/apache/commons/lang3/math/NumberUtilsTest",
+  "test_name": "testIsDigits",
+  "body": "@Test\n    void testIsDigits() {\n        assertFalse(NumberUtils.isDigits(null), \"isDigits(null) failed\");\n        assertFalse(NumberUtils.isDigits(\"\"), \"isDigits('') failed\");\n        assertTrue(NumberUtils.isDigits(\"12345\"), \"isDigits(String) failed\");\n        assertFalse(NumberUtils.isDigits(\"1234.5\"), \"isDigits(String) neg 1 failed\");\n        assertFalse(NumberUtils.isDigits(\"1ab\"), \"isDigits(String) neg 3 failed\");\n        assertFalse(NumberUtils.isDigits(\"abc\"), \"isDigits(String) neg 4 failed\");\n    }",
+  "invocations": [
+    "isDigits"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.math.NumberUtils.isDigits(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.math.NumberUtils.isDigits(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.math.NumberUtils.isDigits(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1879,
+      "class_name": "org.apache.commons.lang3.math.NumberUtils",
+      "method_name": "isDigits",
+      "signature": "org.apache.commons.lang3.math.NumberUtils.isDigits(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

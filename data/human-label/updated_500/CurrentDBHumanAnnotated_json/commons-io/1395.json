@@ -1,0 +1,55 @@
+{
+  "id": "1395",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_2160509a",
+  "test_path": "org/apache/commons/io/FileUtilsTest_testWriteLines_4argsWithAppendOptionTrue",
+  "test_name": "ShouldNotDeletePreviousFileLines",
+  "body": "@Test\n    void testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines() throws Exception {\n        final File file = TestUtils.newFile(tempDirFile, \"lines.txt\");\n        FileUtils.writeStringToFile(file, \"This line was there before you...\");\n\n        final List<String> linesToAppend = Arrays.asList(\"my first line\", \"The second Line\");\n        FileUtils.writeLines(file, linesToAppend, null, true);\n\n        final String expected = \"This line was there before you...\"\n                + \"my first line\"\n                + System.lineSeparator() + \"The second Line\"\n                + System.lineSeparator();\n        final String actual = FileUtils.readFileToString(file);\n        assertEquals(expected, actual);\n    }",
+  "invocations": [
+    "writeLines",
+    "writeStringToFile",
+    "readFileToString"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.util.Collection<?>, java.lang.String, boolean)": {
+      "params_len": 4,
+      "params": [
+        "java.io.File",
+        "java.util.Collection<?>",
+        "java.lang.String",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.FileUtils.writeStringToFile(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.FileUtils.readFileToString(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.util.Collection<?>, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.util.Collection<?>, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 291,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "writeLines",
+      "signature": "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.util.Collection<?>, java.lang.String, boolean)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

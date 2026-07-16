@@ -1,0 +1,58 @@
+{
+  "id": "680",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.NamingPolicyTest_testGsonWithNonDefaultFieldNamingPolicyDeserialiation_a8b10917",
+  "test_path": "com/google/gson/functional/NamingPolicyTest",
+  "test_name": "testGsonWithNonDefaultFieldNamingPolicyDeserialiation",
+  "body": "@Test\n  public void testGsonWithNonDefaultFieldNamingPolicyDeserialiation() {\n    Gson gson = builder.setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();\n    String target = \"{\\\"SomeConstantStringInstanceField\\\":\\\"someValue\\\"}\";\n    StringWrapper deserializedObject = gson.fromJson(target, StringWrapper.class);\n    assertThat(deserializedObject.someConstantStringInstanceField).isEqualTo(\"someValue\");\n  }",
+  "invocations": [
+    "fromJson",
+    "setFieldNamingPolicy",
+    "create"
+  ],
+  "signature": {
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder.setFieldNamingPolicy(com.google.gson.FieldNamingPolicy)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.FieldNamingPolicy"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder.create()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)",
+    "com.google.gson.GsonBuilder.setFieldNamingPolicy(com.google.gson.FieldNamingPolicy)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)",
+    "com.google.gson.GsonBuilder.setFieldNamingPolicy(com.google.gson.FieldNamingPolicy)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 811,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+    },
+    {
+      "method_id": 849,
+      "class_name": "com.google.gson.GsonBuilder",
+      "method_name": "setFieldNamingPolicy",
+      "signature": "com.google.gson.GsonBuilder.setFieldNamingPolicy(com.google.gson.FieldNamingPolicy)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

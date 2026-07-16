@@ -1,0 +1,953 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R] /Count 16 /MediaBox [0 0 612 792] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 3825 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 1) Tj ET
+BT /F2 18 Tf 1 0 0 1 54.00 738.00 Tm (Reviewer Appendix: Label Difference Review) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 709.00 Tm (This appendix summarizes the reviewed differences between the original human annotations) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 695.00 Tm (and the current annotations.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 675.00 Tm (Scope: the review file covers label differences between the original human annotation and the) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 662.00 Tm (current annotation.) Tj ET
+0.60 w 54.00 641.00 m 558.00 641.00 l S
+BT /F2 14 Tf 1 0 0 1 54.00 625.00 Tm (Interpretation of difference types) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 603.00 Tm (- Objective: marked when the original annotated method is not shown in the execution) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 589.00 Tm (  trace, and we revise the annotation to match the current methods in this version as) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 575.00 Tm (  closely as possible.) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 558.00 Tm (- Subjective: marked when the authors disagree with the original label.) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 541.00 Tm (- The previous human annotations do not include execution IDs and therefore do not) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 527.00 Tm (  distinguish between different executions. This can be especially problematic in cases) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 513.00 Tm (  such as gson::1174 and gson::1175, where both tests share the same source-code) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 499.00 Tm (  location but execute on different classes: JsonTreeReader in one case and JsonReader) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 485.00 Tm (  in the other.) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 468.00 Tm (- Paper scoring note: the score reported in the paper is based on the objective) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 454.00 Tm (  modifications. The subjective annotations are used in the updated set of 500) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 440.00 Tm (  annotations.) Tj ET
+0.60 w 54.00 418.00 m 558.00 418.00 l S
+BT /F2 14 Tf 1 0 0 1 54.00 402.00 Tm (Summary) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 380.00 Tm (- Test cases with different annotations between the updated and original human) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 366.00 Tm (  annotations: 39) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 349.00 Tm (- Objective difference labels: 31) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 332.00 Tm (- Subjective difference labels: 49) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 315.00 Tm (- Cases containing at least one objective difference: 15) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 298.00 Tm (- Cases containing at least one subjective difference: 27) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 281.00 Tm (- Cases containing both objective and subjective differences: 3) Tj ET
+0.60 w 54.00 259.00 m 558.00 259.00 l S
+BT /F2 15 Tf 1 0 0 1 54.00 243.00 Tm (Project: commons-io) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 219.00 Tm (1. Test commons-io::1485) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 202.00 Tm (Original human annotation) Tj ET
+BT /F1 9 Tf 1 0 0 1 68.00 186.00 Tm (- Not available from the matched comparison source.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 173.00 Tm (Current annotation) Tj ET
+BT /F1 9 Tf 1 0 0 1 68.00 157.00 Tm (- Not available from the matched comparison source.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 144.00 Tm (Reason category: version drift behavior change) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 129.00 Tm (Explanation: org.apache.commons.io.IOCase.values\(\) does not get invoked in the call graph.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 112.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 96.00 Tm (- OBJECTIVE | Only in original human annotation | org.apache.commons.io.IOCase.values\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 79.00 Tm (2. Test commons-io::999) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 62.00 Tm (Test name: testCancel) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 4998 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 2) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 738.00 Tm (Current Test Name and Execution ID: org.apache.commons.io.DirectoryWalkerTest_testCancel_233c73ad) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 725.00 Tm (Old Test Name: org.apache.commons.io.DirectoryWalkerTestCase.testCancel\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 709.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 693.00 Tm (- org.apache.commons.io.DirectoryWalker.handleCancelled\(File, Collection, CancelException\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 680.00 Tm (- org.apache.commons.io.DirectoryWalker.walk\(java.io.File, java.util.Collection<T>\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 667.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 651.00 Tm (- org.apache.commons.io.DirectoryWalker.walk\(java.io.File, java.util.Collection<T>\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 638.00 Tm (Reason category: old label irrrelevant) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 623.00 Tm (Explanation: handleCancel is defined and overwritten in the test suite.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 606.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 590.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 578.00 Tm (  org.apache.commons.io.DirectoryWalker.handleCancelled\(File, Collection, CancelException\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 565.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 553.00 Tm (  org.apache.commons.io.DirectoryWalker.handleCancelled\(java.io.File,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 541.00 Tm (  java.util.Collection<T>, org.apache.commons.io.DirectoryWalker.CancelException\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 524.00 Tm (3. Test commons-io::5825) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 507.00 Tm (Test name: testLargeUTF8WithSingleByteWrite) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 493.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 481.00 Tm (org.apache.commons.io.output.WriterOutputStreamTest_testLargeUTF8WithSingleByteWrite_1ae648b0) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 468.00 Tm (Old Test Name: org.apache.commons.io.output.WriterOutputStreamTest.testLargeUTF8WithSingleByteWrite\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 452.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 436.00 Tm (- org.apache.commons.io.output.WriterOutputStream.WriterOutputStream\(Writer, String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 423.00 Tm (- org.apache.commons.io.output.WriterOutputStream.write\(int\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 410.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 394.00 Tm (- org.apache.commons.io.output.WriterOutputStream.write\(int\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 381.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 366.00 Tm (Explanation: org.apache.commons.io.output.WriterOutputStream.WriterOutputStream\(Writer, String\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 353.00 Tm (is just a setup method. write itself is the focal method.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 336.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 320.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 308.00 Tm (  org.apache.commons.io.output.WriterOutputStream\(java.io.Writer, java.lang.String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 295.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 283.00 Tm (  org.apache.commons.io.output.WriterOutputStream.WriterOutputStream\(Writer, String\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 266.00 Tm (4. Test commons-io::5844) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 249.00 Tm (Test name: testLatin7Encoding) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 235.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 223.00 Tm (org.apache.commons.io.output.XmlStreamWriterTest_testLatin7Encoding_c8ef8459) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 210.00 Tm (Old Test Name: org.apache.commons.io.output.XmlStreamWriterTest.testLatin7Encoding\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 194.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 178.00 Tm (- org.apache.commons.io.output.XmlStreamWriter.detectEncoding\(char[], int, int\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 165.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 149.00 Tm (- org.apache.commons.io.output.XmlStreamWriter.detectEncoding\(char[], int, int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 136.00 Tm (- org.apache.commons.io.output.XmlStreamWriter.write\(char[], int, int\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 123.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 108.00 Tm (Explanation: Write is the core behavior with detection as well.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 91.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 75.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 63.00 Tm (  org.apache.commons.io.output.XmlStreamWriter.write\(char[], int, int\)) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 4947 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 3) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 738.00 Tm (5. Test commons-io::5847) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 721.00 Tm (Test name: testUTF16BEEncoding) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 707.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 695.00 Tm (org.apache.commons.io.output.XmlStreamWriterTest_testUTF16BEEncoding_ee528fd1) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 682.00 Tm (Old Test Name: org.apache.commons.io.output.XmlStreamWriterTest.testUTF16BEEncoding\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 666.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 650.00 Tm (- org.apache.commons.io.output.XmlStreamWriter.detectEncoding\(char[], int, int\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 637.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 621.00 Tm (- org.apache.commons.io.output.XmlStreamWriter.detectEncoding\(char[], int, int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 608.00 Tm (- org.apache.commons.io.output.XmlStreamWriter.write\(char[], int, int\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 595.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 580.00 Tm (Explanation: Write is the core behavior with detection as well.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 563.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 547.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 535.00 Tm (  org.apache.commons.io.output.XmlStreamWriter.write\(char[], int, int\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 518.00 Tm (6. Test commons-io::1390) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 501.00 Tm (Test name: testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 487.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 475.00 Tm (org.apache.commons.io.FileUtilsTest_testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_1b5c853b) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 462.00 Tm (Old Test Name:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 450.00 Tm (org.apache.commons.io.FileUtilsTestCase.testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 434.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 418.00 Tm (- org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 405.00 Tm (- org.apache.commons.io.FileUtils.writeLines\(java.io.File, java.util.Collection<?>,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 393.00 Tm (  boolean\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 380.00 Tm (- org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 368.00 Tm (  java.nio.charset.Charset\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 355.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 339.00 Tm (- org.apache.commons.io.FileUtils.writeLines\(java.io.File, java.util.Collection<?>,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 327.00 Tm (  boolean\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 314.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 299.00 Tm (Explanation: org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 286.00 Tm (org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 273.00 Tm (java.nio.charset.Charset\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 260.00 Tm (are setup method. testWriteLines should be the focus as suggested by testname.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 243.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 227.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 215.00 Tm (  org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 202.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 190.00 Tm (  org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 178.00 Tm (  java.nio.charset.Charset\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 161.00 Tm (7. Test commons-io::1395) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 144.00 Tm (Test name: testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 130.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 118.00 Tm (org.apache.commons.io.FileUtilsTest_testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_2160509a) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 105.00 Tm (Old Test Name:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 93.00 Tm (org.apache.commons.io.FileUtilsTestCase.testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 77.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 61.00 Tm (- org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 5068 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 4) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- org.apache.commons.io.FileUtils.writeLines\(java.io.File, java.util.Collection<?>,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 726.00 Tm (  java.lang.String, boolean\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 713.00 Tm (- org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 700.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 684.00 Tm (- org.apache.commons.io.FileUtils.writeLines\(java.io.File, java.util.Collection<?>,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 672.00 Tm (  java.lang.String, boolean\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 659.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 644.00 Tm (Explanation: org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 631.00 Tm (org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 618.00 Tm (java.nio.charset.Charset\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 605.00 Tm (are setup method. testWriteLines should be the focus as suggested by testname.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 588.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 572.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 560.00 Tm (  org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 547.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 535.00 Tm (  org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 518.00 Tm (8. Test commons-io::1396) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 501.00 Tm (Test name: testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 487.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 475.00 Tm (org.apache.commons.io.FileUtilsTest_testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines_54d19b99) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 462.00 Tm (Old Test Name:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 450.00 Tm (org.apache.commons.io.FileUtilsTestCase.testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 434.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 418.00 Tm (- org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 405.00 Tm (- org.apache.commons.io.FileUtils.writeLines\(java.io.File, java.lang.String,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 393.00 Tm (  java.util.Collection<?>, java.lang.String, boolean\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 380.00 Tm (- org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 367.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 351.00 Tm (- org.apache.commons.io.FileUtils.writeLines\(java.io.File, java.lang.String,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 339.00 Tm (  java.util.Collection<?>, java.lang.String, boolean\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 326.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 311.00 Tm (Explanation: org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 298.00 Tm (org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 285.00 Tm (java.nio.charset.Charset\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 272.00 Tm (are setup method. testWriteLines should be the focus as suggested by testname.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 255.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 239.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 227.00 Tm (  org.apache.commons.io.FileUtils.readFileToString\(java.io.File\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 214.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 202.00 Tm (  org.apache.commons.io.FileUtils.writeStringToFile\(java.io.File, java.lang.String\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 185.00 Tm (9. Test commons-io::5195) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 168.00 Tm (Test name: testWriteStringBuilder) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 154.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 142.00 Tm (org.apache.commons.io.output.AppendableOutputStreamTest_testWriteStringBuilder_5384fe9e) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 129.00 Tm (Old Test Name: org.apache.commons.io.output.AppendableOutputStreamTest.testWriteStringBuilder\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 113.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 97.00 Tm (- org.apache.commons.io.output.AppendableOutputStream.getAppendable\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 84.00 Tm (- org.apache.commons.io.output.AppendableOutputStream.write\(int\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 71.00 Tm (Current annotation) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 4342 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 5) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- org.apache.commons.io.output.AppendableOutputStream.write\(int\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 725.00 Tm (Reason category: old label contains probe) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 710.00 Tm (Explanation: getAppendable is just a probe to check the output. write is the focal method.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 693.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 677.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 665.00 Tm (  org.apache.commons.io.output.AppendableOutputStream.getAppendable\(\)) Tj ET
+0.60 w 54.00 648.00 m 558.00 648.00 l S
+BT /F2 15 Tf 1 0 0 1 54.00 632.00 Tm (Project: commons-lang) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 608.00 Tm (10. Test commons-lang::5238) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 591.00 Tm (Test name: testFloatArray) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 577.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 565.00 Tm (org.apache.commons.lang3.builder.ToStringBuilderTest_testFloatArray_81f8e8d0) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 552.00 Tm (Old Test Name: org.apache.commons.lang3.builder.ToStringBuilderTest.testFloatArray\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 536.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 520.00 Tm (- org.apache.commons.lang3.builder.ToStringBuilder.toString\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 507.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 491.00 Tm (- org.apache.commons.lang3.builder.ToStringBuilder.append\(java.lang.Object\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 478.00 Tm (- org.apache.commons.lang3.builder.ToStringBuilder.append\(float[]\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 465.00 Tm (- org.apache.commons.lang3.builder.ToStringBuilder.toString\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 452.00 Tm (Reason category: Unspecified) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 437.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 421.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 409.00 Tm (  org.apache.commons.lang3.builder.ToStringBuilder.append\(java.lang.Object\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 392.00 Tm (11. Test commons-lang::3865) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 375.00 Tm (Test name: testRandomPrintRange) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 361.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 349.00 Tm (org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_493e302c) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 336.00 Tm (Old Test Name: org.apache.commons.lang3.RandomStringUtilsTest.testRandomPrintRange\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 320.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 304.00 Tm (- org.apache.commons.lang3.RandomStringUtils.randomPrint\(int, int\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 291.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 275.00 Tm (- org.apache.commons.lang3.RandomStringUtils.nextPrint\(int, int\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 262.00 Tm (Reason category: version drift behavior change) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 247.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 231.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 219.00 Tm (  org.apache.commons.lang3.RandomStringUtils.nextPrint\(int, int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 206.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 194.00 Tm (  org.apache.commons.lang3.RandomStringUtils.randomPrint\(int, int\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 177.00 Tm (12. Test commons-lang::128) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 160.00 Tm (Test name: testRemoveAllNullObjectArray) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 146.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 134.00 Tm (org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllNullObjectArray_85570fc9) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 121.00 Tm (Old Test Name: org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest.testRemoveAllNullObjectArray\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 105.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 89.00 Tm (- org.apache.commons.lang3.ArrayUtils.remove\(T[], int\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 76.00 Tm (Current annotation) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 4749 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 6) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- org.apache.commons.lang3.ArrayUtils.removeAll\(T[], int[]\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 725.00 Tm (Reason category: Unspecified) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 710.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 694.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 682.00 Tm (  org.apache.commons.lang3.ArrayUtils.removeAll\(T[], int[]\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 669.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 657.00 Tm (  org.apache.commons.lang3.ArrayUtils.remove\(T[], int\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 640.00 Tm (13. Test commons-lang::1141) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 623.00 Tm (Test name: test_getName_Object) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 609.00 Tm (Current Test Name and Execution ID: org.apache.commons.lang3.ClassUtilsTest_test_getName_Object_75d0ec2b) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 596.00 Tm (Old Test Name: org.apache.commons.lang3.ClassUtilsTest.test_getName_Object\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 580.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 564.00 Tm (- org.apache.commons.lang3.ClassUtils.getName\(Class, String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 551.00 Tm (- org.apache.commons.lang3.ClassUtils.getName\(Object, String\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 538.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 522.00 Tm (- org.apache.commons.lang3.ClassUtils.getName\(java.lang.Object, java.lang.String\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 509.00 Tm (Reason category: Unspecified) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 494.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 478.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 466.00 Tm (  org.apache.commons.lang3.ClassUtils.getName\(java.lang.Class<?>, java.lang.String\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 449.00 Tm (14. Test commons-lang::7094) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 432.00 Tm (Test name: testCapacityAndLength) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 418.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 406.00 Tm (org.apache.commons.lang3.text.StrBuilderTest_testCapacityAndLength_a284b652) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 393.00 Tm (Old Test Name: org.apache.commons.lang3.text.StrBuilderTest.testCapacityAndLength\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 377.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 361.00 Tm (- org.apache.commons.lang3.text.StrBuilder.capacity\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 348.00 Tm (- org.apache.commons.lang3.text.StrBuilder.ensureCapacity\(int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 335.00 Tm (- org.apache.commons.lang3.text.StrBuilder.isEmpty\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 322.00 Tm (- org.apache.commons.lang3.text.StrBuilder.length\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 309.00 Tm (- org.apache.commons.lang3.text.StrBuilder.minimizeCapacity\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 296.00 Tm (- org.apache.commons.lang3.text.StrBuilder.size\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 283.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 267.00 Tm (- org.apache.commons.lang3.text.StrBuilder.length\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 254.00 Tm (- org.apache.commons.lang3.text.StrBuilder.capacity\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 241.00 Tm (- org.apache.commons.lang3.text.StrBuilder.append\(java.lang.String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 228.00 Tm (- org.apache.commons.lang3.text.StrBuilder.isEmpty\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 215.00 Tm (- org.apache.commons.lang3.text.StrBuilder.ensureCapacity\(int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 202.00 Tm (- org.apache.commons.lang3.text.StrBuilder.minimizeCapacity\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 189.00 Tm (- org.apache.commons.lang3.text.StrBuilder.setLength\(int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 176.00 Tm (- org.apache.commons.lang3.text.StrBuilder.size\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 163.00 Tm (- org.apache.commons.lang3.text.StrBuilder.clear\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 150.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 135.00 Tm (Explanation: This method clearly targeting all methods.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 118.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 102.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 90.00 Tm (  org.apache.commons.lang3.text.StrBuilder.append\(java.lang.String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 77.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 65.00 Tm (  org.apache.commons.lang3.text.StrBuilder.clear\(\)) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 5018 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 7) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 726.00 Tm (  org.apache.commons.lang3.text.StrBuilder.setLength\(int\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 709.00 Tm (15. Test commons-lang::5548) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 692.00 Tm (Test name: testChangeEvents) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 678.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 666.00 Tm (org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest_testChangeEvents_b4e774dc) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 653.00 Tm (Old Test Name: org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest.testChangeEvents\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 637.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 621.00 Tm (-) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 609.00 Tm (  org.apache.commons.lang3.concurrent.AbstractCircuitBreaker.addChangeListener\(java.beans.PropertyChangeListener\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 596.00 Tm (- org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.close\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 583.00 Tm (- org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.open\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 570.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 554.00 Tm (- org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.close\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 541.00 Tm (- org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.open\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 528.00 Tm (Reason category: old label contains probe) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 513.00 Tm (Explanation: addChangeListener is just a probe to listen to changes.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 496.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 480.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 468.00 Tm (  org.apache.commons.lang3.concurrent.AbstractCircuitBreaker.addChangeListener\(java.beans.PropertyChangeListener\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 451.00 Tm (16. Test commons-lang::5642) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 434.00 Tm (Test name: testInitializeResultsIsSuccessfulFalse) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 420.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 408.00 Tm (org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest_testInitializeResultsIsSuccessfulFalse_629890ec) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 395.00 Tm (Old Test Name:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 383.00 Tm (org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.testInitializeResultsIsSuccessfulFalse\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 367.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 351.00 Tm (- org.apache.commons.lang3.concurrent.BackgroundInitializer.start\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 338.00 Tm (-) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 326.00 Tm (  org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.addInitializer\(java.lang.String,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 314.00 Tm (  org.apache.commons.lang3.concurrent.BackgroundInitializer<?>\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 301.00 Tm (- org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.initialize\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 288.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 272.00 Tm (-) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 260.00 Tm (  org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults.isSuccessful\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 247.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 232.00 Tm (Explanation: as suggested by name, this test is targetting isSuccessful.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 215.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 199.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 187.00 Tm (  org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults.isSuccessful\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 174.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 162.00 Tm (  org.apache.commons.lang3.concurrent.BackgroundInitializer.start\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 149.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 137.00 Tm (  org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.addInitializer\(java.lang.String,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 125.00 Tm (  org.apache.commons.lang3.concurrent.BackgroundInitializer<?>\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 112.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 100.00 Tm (  org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.initialize\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 83.00 Tm (17. Test commons-lang::7129) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 66.00 Tm (Test name: testLang295) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 21 0 R >>
+endobj
+21 0 obj
+<< /Length 4732 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 8) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 738.00 Tm (Current Test Name and Execution ID: org.apache.commons.lang3.text.StrBuilderTest_testLang295_7ea79eaf) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 725.00 Tm (Old Test Name: org.apache.commons.lang3.text.StrBuilderTest.testLang295\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 709.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 693.00 Tm (- org.apache.commons.lang3.text.StrBuilder.StrBuilder\(String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 680.00 Tm (- org.apache.commons.lang3.text.StrBuilder.contains\(char\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 667.00 Tm (- org.apache.commons.lang3.text.StrBuilder.deleteFirst\(java.lang.String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 654.00 Tm (- org.apache.commons.lang3.text.StrBuilder.indexOf\(char\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 641.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 625.00 Tm (- org.apache.commons.lang3.text.StrBuilder.contains\(char\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 612.00 Tm (- org.apache.commons.lang3.text.StrBuilder.indexOf\(char\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 599.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 584.00 Tm (Explanation: org.apache.commons.lang3.text.StrBuilder\(java.lang.String\) and) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 571.00 Tm (org.apache.commons.lang3.text.StrBuilder.deleteFirst\(java.lang.String\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 558.00 Tm (are just a setup method in this test case.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 541.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 525.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 513.00 Tm (  org.apache.commons.lang3.text.StrBuilder\(java.lang.String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 500.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 488.00 Tm (  org.apache.commons.lang3.text.StrBuilder.StrBuilder\(String\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 475.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 463.00 Tm (  org.apache.commons.lang3.text.StrBuilder.deleteFirst\(java.lang.String\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 446.00 Tm (18. Test commons-lang::4807) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 429.00 Tm (Test name: testObjectComparator) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 415.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 403.00 Tm (org.apache.commons.lang3.builder.CompareToBuilderTest_testObjectComparator_06d24568) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 390.00 Tm (Old Test Name: org.apache.commons.lang3.builder.CompareToBuilderTest.testObjectComparator\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 374.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 358.00 Tm (- org.apache.commons.lang3.builder.CompareToBuilder.toComparison\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 345.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 329.00 Tm (- org.apache.commons.lang3.builder.CompareToBuilder.toComparison\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 316.00 Tm (- org.apache.commons.lang3.builder.CompareToBuilder.append\(java.lang.Object,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 304.00 Tm (  java.lang.Object, java.util.Comparator<?>\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 291.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 276.00 Tm (Explanation: Append is also the core behavior here.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 259.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 243.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 231.00 Tm (  org.apache.commons.lang3.builder.CompareToBuilder.append\(java.lang.Object,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 219.00 Tm (  java.lang.Object, java.util.Comparator<?>\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 202.00 Tm (19. Test commons-lang::4929) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 185.00 Tm (Test name: testObjectRecursiveCycleSelfreference) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 171.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 159.00 Tm (org.apache.commons.lang3.builder.EqualsBuilderTest_testObjectRecursiveCycleSelfreference_e142db5b) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 146.00 Tm (Old Test Name: org.apache.commons.lang3.builder.EqualsBuilderTest.testObjectRecursiveCycleSelfreference\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 130.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 114.00 Tm (- org.apache.commons.lang3.builder.EqualsBuilder.isEquals\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 101.00 Tm (- org.apache.commons.lang3.builder.EqualsBuilder.setTestRecursive\(boolean\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 88.00 Tm (Current annotation) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 23 0 R >>
+endobj
+23 0 obj
+<< /Length 4486 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 9) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- org.apache.commons.lang3.builder.EqualsBuilder.append\(java.lang.Object,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 726.00 Tm (  java.lang.Object\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 713.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 698.00 Tm (Explanation: append\(\) performs the comparison.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 685.00 Tm (\(this test was also discussed heavily as one author also mark setTestRecrsive\) However, after) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 672.00 Tm (the discssion, we think the setTestRecursive is merely a setup call, the append is the actual) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 659.00 Tm (function that carries out the behavior under test.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 642.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 626.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 614.00 Tm (  org.apache.commons.lang3.builder.EqualsBuilder.append\(java.lang.Object,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 602.00 Tm (  java.lang.Object\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 589.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 577.00 Tm (  org.apache.commons.lang3.builder.EqualsBuilder.isEquals\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 564.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 552.00 Tm (  org.apache.commons.lang3.builder.EqualsBuilder.setTestRecursive\(boolean\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 535.00 Tm (20. Test commons-lang::5304) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 518.00 Tm (Test name: testSetSizeStartText) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 504.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 492.00 Tm (org.apache.commons.lang3.builder.ToStringStyleTest_testSetSizeStartText_5ef7aa9f) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 479.00 Tm (Old Test Name: org.apache.commons.lang3.builder.ToStringStyleTest.testSetSizeStartText\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 463.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 447.00 Tm (- org.apache.commons.lang3.builder.ToStringStyle.getSizeStartText\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 434.00 Tm (- org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText\(java.lang.String\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 421.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 405.00 Tm (- org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText\(java.lang.String\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 392.00 Tm (Reason category: Unspecified) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 377.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 361.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 349.00 Tm (  org.apache.commons.lang3.builder.ToStringStyle.getSizeStartText\(\)) Tj ET
+0.60 w 54.00 332.00 m 558.00 332.00 l S
+BT /F2 15 Tf 1 0 0 1 54.00 316.00 Tm (Project: gson) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 292.00 Tm (21. Test gson::1174) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 275.00 Tm (Test name: path) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 261.00 Tm (Current Test Name and Execution ID: com.google.gson.stream.JsonReaderPathTest_path_37d311cc) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 248.00 Tm (Old Test Name: com.google.gson.stream.JsonReaderPathTest.path\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 232.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 216.00 Tm (- com.google.gson.internal.bind.JsonTreeReader.getPath\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 203.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 187.00 Tm (- com.google.gson.internal.bind.JsonTreeReader.getPreviousPath\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 174.00 Tm (- com.google.gson.internal.bind.JsonTreeReader.getPath\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 161.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 146.00 Tm (Explanation: the original dataset did not account for execution differences.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 129.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 113.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 101.00 Tm (  com.google.gson.internal.bind.JsonTreeReader.getPath\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 88.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 76.00 Tm (  com.google.gson.stream.JsonReader.getPath\(\)) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 25 0 R >>
+endobj
+25 0 obj
+<< /Length 4495 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 10) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 726.00 Tm (  com.google.gson.internal.bind.JsonTreeReader.getPreviousPath\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 709.00 Tm (22. Test gson::105) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 692.00 Tm (Test name: testEqualsAndHashcode) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 678.00 Tm (Current Test Name and Execution ID: com.google.gson.JsonNullTest_testEqualsAndHashcode_c0614b86) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 665.00 Tm (Old Test Name: com.google.gson.JsonNullTest.testEqualsAndHashcode\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 649.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 633.00 Tm (- com.google.gson.common.MoreAsserts.assertEqualsAndHashCode\(Object, Object\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 620.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 604.00 Tm (- com.google.gson.JsonNull.hashCode\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 591.00 Tm (- com.google.gson.JsonNull.equals\(java.lang.Object\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 578.00 Tm (Reason category: Unspecified) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 563.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 547.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 535.00 Tm (  com.google.gson.JsonNull.equals\(java.lang.Object\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 522.00 Tm (- OBJECTIVE | Only in current annotation | com.google.gson.JsonNull.hashCode\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 509.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 497.00 Tm (  com.google.gson.common.MoreAsserts.assertEqualsAndHashCode\(Object, Object\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 480.00 Tm (23. Test gson::15) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 463.00 Tm (Test name: testName) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 449.00 Tm (Current Test Name and Execution ID: com.google.gson.FieldAttributesTest_testName_77c09c2c) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 436.00 Tm (Old Test Name: com.google.gson.FieldAttributesTest.testName\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 420.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 404.00 Tm (- com.google.gson.FieldAttributes\(java.lang.reflect.Field\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 391.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 375.00 Tm (- com.google.gson.FieldAttributes.getName\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 362.00 Tm (Reason category: Unspecified) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 347.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 331.00 Tm (- OBJECTIVE | Only in current annotation | com.google.gson.FieldAttributes.getName\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 318.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 306.00 Tm (  com.google.gson.FieldAttributes\(java.lang.reflect.Field\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 289.00 Tm (24. Test gson::56) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 272.00 Tm (Test name: testOverridesDefaultExcluder) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 258.00 Tm (Current Test Name and Execution ID: com.google.gson.GsonTest_testOverridesDefaultExcluder_7a31aa8d) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 245.00 Tm (Old Test Name: com.google.gson.GsonTest.testOverridesDefaultExcluder\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 229.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 213.00 Tm (- com.google.gson.Gson\(com.google.gson.GsonBuilder\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 200.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 184.00 Tm (- com.google.gson.Gson\(com.google.gson.GsonBuilder\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 171.00 Tm (- com.google.gson.GsonBuilder.create\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 158.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 143.00 Tm (Explanation: both Gson constructor and the GsonBuilder are equally important under this test) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 130.00 Tm (\(this test was heavily discussed and were initially labeled differently by two authors. we later) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 117.00 Tm (decide to keep both to recognize GsonBuilders' importance in this test\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 100.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 84.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 72.00 Tm (  com.google.gson.Gson\(com.google.gson.GsonBuilder\)) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 27 0 R >>
+endobj
+27 0 obj
+<< /Length 4552 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 11) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- OBJECTIVE | Only in original human annotation | com.google.gson.Gson.Gson\(Excluder,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 726.00 Tm (  FieldNamingStrategy, Map, boolean, boolean, boolean, boolean, boolean, boolean, boolean,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 714.00 Tm (  LongSerializationPolicy, List\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 701.00 Tm (- SUBJECTIVE | Only in current annotation | com.google.gson.GsonBuilder.create\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 684.00 Tm (25. Test gson::203) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 667.00 Tm (Test name: testReadClosed) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 653.00 Tm (Current Test Name and Execution ID: com.google.gson.MixedStreamTest_testReadClosed_03b3b04b) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 640.00 Tm (Old Test Name: com.google.gson.MixedStreamTest.testReadClosed\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 624.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 608.00 Tm (- com.google.gson.Gson.fromJson\(com.google.gson.stream.JsonReader, java.lang.reflect.Type\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 595.00 Tm (- com.google.gson.stream.JsonReader.close\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 582.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 566.00 Tm (- com.google.gson.Gson.fromJson\(com.google.gson.stream.JsonReader, java.lang.reflect.Type\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 553.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 538.00 Tm (Explanation: close is just to prepare the state to test if the fromJson would throw an error.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 521.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 505.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 493.00 Tm (  com.google.gson.Gson.fromJson\(com.google.gson.stream.JsonReader,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 481.00 Tm (  java.lang.reflect.Class\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 468.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 456.00 Tm (  com.google.gson.stream.JsonReader.close\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 439.00 Tm (26. Test gson::1175) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 422.00 Tm (Test name: path) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 408.00 Tm (Current Test Name and Execution ID: com.google.gson.stream.JsonReaderPathTest_path_548b77ba) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 395.00 Tm (Old Test Name: com.google.gson.stream.JsonReaderPathTest.path\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 379.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 363.00 Tm (- com.google.gson.stream.JsonReader.getPath\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 350.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 334.00 Tm (- com.google.gson.stream.JsonReader.getPreviousPath\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 321.00 Tm (- com.google.gson.stream.JsonReader.getPath\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 308.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 293.00 Tm (Explanation: getPreviousPath is also heavily tested.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 276.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 260.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 248.00 Tm (  com.google.gson.stream.JsonReader.getPreviousPath\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 231.00 Tm (27. Test gson::966) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 214.00 Tm (Test name: testEscapingQuotesInStringSerialization) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 200.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 188.00 Tm (com.google.gson.functional.StringTest_testEscapingQuotesInStringSerialization_bb2eff6b) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 175.00 Tm (Old Test Name: com.google.gson.functional.StringTest.testEscapingQuotesInStringSerialization\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 159.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 143.00 Tm (- com.google.gson.Gson.toJson\(java.lang.Object\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 130.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 114.00 Tm (- com.google.gson.Gson.toJson\(java.lang.Object\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 101.00 Tm (- com.google.gson.Gson.fromJson\(java.lang.String, java.lang.Class<T>\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 88.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 73.00 Tm (Explanation: serialization is testing both write and read.) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 29 0 R >>
+endobj
+29 0 obj
+<< /Length 4722 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 12) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 738.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 722.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 710.00 Tm (  com.google.gson.Gson.fromJson\(java.lang.String, java.lang.Class<T>\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 693.00 Tm (28. Test gson::21) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 676.00 Tm (Test name: testNotEquals) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 662.00 Tm (Current Test Name and Execution ID: com.google.gson.GenericArrayTypeTest_testNotEquals_489df098) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 649.00 Tm (Old Test Name: com.google.gson.GenericArrayTypeTest.testNotEquals\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 633.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 617.00 Tm (- com.google.gson.reflect.TypeToken.getType\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 604.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 588.00 Tm (- com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals\(java.lang.Object\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 575.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 560.00 Tm (Explanation: getType is just a setup, this test is clearly testing the equal functionaity.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 543.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 527.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 515.00 Tm (  com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals\(java.lang.Object\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 502.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 490.00 Tm (  com.google.gson.reflect.TypeToken.getType\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 473.00 Tm (29. Test gson::22) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 456.00 Tm (Test name: testOurTypeFunctionality) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 442.00 Tm (Current Test Name and Execution ID: com.google.gson.GenericArrayTypeTest_testOurTypeFunctionality_f10b1bcf) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 429.00 Tm (Old Test Name: com.google.gson.GenericArrayTypeTest.testOurTypeFunctionality\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 413.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 397.00 Tm (- com.google.gson.reflect.TypeToken.getType\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 384.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 368.00 Tm (- com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.getGenericComponentType\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 355.00 Tm (- com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.hashCode\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 342.00 Tm (- com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals\(java.lang.Object\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 329.00 Tm (Reason category: old label irrrelevant) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 314.00 Tm (Explanation: Get type is just a setup call to retrieve the type. the test is to test the) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 301.00 Tm (functionality underneath the type class.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 284.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 268.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 256.00 Tm (  com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals\(java.lang.Object\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 243.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 231.00 Tm (  com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.getGenericComponentType\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 218.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 206.00 Tm (  com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.hashCode\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 193.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 181.00 Tm (  com.google.gson.reflect.TypeToken.getType\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 164.00 Tm (30. Test gson::232) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 147.00 Tm (Test name: testOverrideStringAdapter) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 133.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 121.00 Tm (com.google.gson.OverrideCoreTypeAdaptersTest_testOverrideStringAdapter_a3b3ef6b) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 108.00 Tm (Old Test Name: com.google.gson.OverrideCoreTypeAdaptersTest.testOverrideStringAdapter\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 92.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 76.00 Tm (- com.google.gson.GsonBuilder.registerTypeAdapter\(java.lang.reflect.Type,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 64.00 Tm (  java.lang.Object\)) Tj ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 31 0 R >>
+endobj
+31 0 obj
+<< /Length 4713 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 13) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 738.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 722.00 Tm (- com.google.gson.Gson.toJson\(java.lang.Object, java.lang.reflect.Type\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 709.00 Tm (- com.google.gson.Gson.fromJson\(java.lang.String, java.lang.Class<T>\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 696.00 Tm (Reason category: old label missing core behavior) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 681.00 Tm (Explanation: while registerTypeAdaptor is mentioned in the test name, it is just a setup call.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 668.00 Tm (the core behavior can only be expressed in toJson and fromJson.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 651.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 635.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 623.00 Tm (  com.google.gson.Gson.fromJson\(java.lang.String, java.lang.Class<T>\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 610.00 Tm (- SUBJECTIVE | Only in current annotation | com.google.gson.Gson.toJson\(java.lang.Object,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 598.00 Tm (  java.lang.reflect.Type\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 585.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 573.00 Tm (  com.google.gson.GsonBuilder.registerTypeAdapter\(java.lang.reflect.Type,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 561.00 Tm (  java.lang.Object\)) Tj ET
+0.60 w 54.00 544.00 m 558.00 544.00 l S
+BT /F2 15 Tf 1 0 0 1 54.00 528.00 Tm (Project: jfreechart) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 504.00 Tm (31. Test jfreechart::795) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 487.00 Tm (Test name: testBug1126_c) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 473.00 Tm (Current Test Name and Execution ID: org.jfree.chart.plot.pie.PiePlotTest_testBug1126_c_7ff9d8cb) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 460.00 Tm (Old Test Name: org.jfree.chart.plot.PiePlotTest.testBug1126_c\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 444.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 428.00 Tm (- org.jfree.chart.plot.PiePlot.clone\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 415.00 Tm (- org.jfree.chart.plot.PiePlot.getSectionOutlineStroke\(Comparable\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 402.00 Tm (- org.jfree.chart.plot.PiePlot.setSectionOutlineStroke\(Comparable, Stroke\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 389.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 373.00 Tm (- org.jfree.chart.plot.pie.PiePlot.clone\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 360.00 Tm (- org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke\(K, java.awt.Stroke\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 347.00 Tm (- org.jfree.chart.plot.pie.PiePlot.getSectionOutlineStroke\(K\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 334.00 Tm (Reason category: version drift behavior change) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 319.00 Tm (Explanation: the API name updated.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 302.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 286.00 Tm (- OBJECTIVE | Only in current annotation | org.jfree.chart.plot.pie.PiePlot.clone\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 273.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 261.00 Tm (  org.jfree.chart.plot.pie.PiePlot.getSectionOutlineStroke\(K\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 248.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 236.00 Tm (  org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke\(K, java.awt.Stroke\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 223.00 Tm (- OBJECTIVE | Only in original human annotation | org.jfree.chart.plot.PiePlot.clone\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 210.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 198.00 Tm (  org.jfree.chart.plot.PiePlot.getSectionOutlineStroke\(Comparable\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 185.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 173.00 Tm (  org.jfree.chart.plot.PiePlot.setSectionOutlineStroke\(Comparable, Stroke\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 156.00 Tm (32. Test jfreechart::452) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 139.00 Tm (Test name: testCloning) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 125.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 113.00 Tm (org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest_testCloning_02e4ace9) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 100.00 Tm (Old Test Name: org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest.testCloning\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 84.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 68.00 Tm (- org.jfree.chart.labels.AbstractCategoryItemLabelGenerator.clone\(\)) Tj ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 33 0 R >>
+endobj
+33 0 obj
+<< /Length 4470 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 14) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 738.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 722.00 Tm (- org.jfree.chart.labels.StandardCategoryToolTipGenerator.clone\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 709.00 Tm (Reason category: Unspecified) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 694.00 Tm (Explanation: as suggested by test name, this test is targetted StandardCategoryToolTipGenerator) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 681.00 Tm (instead of the abstractcategoryitemlabelgenerator.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 664.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 648.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 636.00 Tm (  org.jfree.chart.labels.StandardCategoryToolTipGenerator.clone\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 623.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 611.00 Tm (  org.jfree.chart.labels.AbstractCategoryItemLabelGenerator.clone\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 594.00 Tm (33. Test jfreechart::707) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 577.00 Tm (Test name: testCloning) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 563.00 Tm (Current Test Name and Execution ID: org.jfree.chart.plot.compass.PlumNeedleTest_testCloning_02e4ace9) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 550.00 Tm (Old Test Name: org.jfree.chart.needle.PlumNeedleTest.testCloning\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 534.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 518.00 Tm (- org.jfree.chart.needle.PlumNeedle.clone\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 505.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 489.00 Tm (- org.jfree.chart.plot.compass.PlumNeedle.clone\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 476.00 Tm (Reason category: version drift behavior change) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 461.00 Tm (Explanation: the API function name updated.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 444.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 428.00 Tm (- OBJECTIVE | Only in current annotation | org.jfree.chart.plot.compass.PlumNeedle.clone\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 415.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 403.00 Tm (  org.jfree.chart.needle.PlumNeedle.clone\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 386.00 Tm (34. Test jfreechart::1129) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 369.00 Tm (Test name: testHashcode) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 355.00 Tm (Current Test Name and Execution ID: org.jfree.chart.renderer.xy.XYBubbleRendererTest_testHashcode_181f3c6e) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 342.00 Tm (Old Test Name: org.jfree.chart.renderer.xy.XYBubbleRendererTest.testHashcode\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 326.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 310.00 Tm (- org.jfree.chart.renderer.AbstractRenderer.hashCode\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 297.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 281.00 Tm (- org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 268.00 Tm (Reason category: version drift behavior change) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 253.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 237.00 Tm (- OBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 225.00 Tm (  org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 212.00 Tm (- OBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 200.00 Tm (  org.jfree.chart.renderer.AbstractRenderer.hashCode\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 183.00 Tm (35. Test jfreechart::2104) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 166.00 Tm (Test name: test788597) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 152.00 Tm (Current Test Name and Execution ID: org.jfree.data.xy.TableXYDatasetTest_test788597_6d0c29cf) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 139.00 Tm (Old Test Name: org.jfree.data.xy.TableXYDatasetTest.test788597\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 123.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 107.00 Tm (- org.jfree.data.xy.DefaultTableXYDataset.addSeries\(org.jfree.data.xy.XYSeries<S>\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 94.00 Tm (- org.jfree.data.xy.DefaultTableXYDataset.getItemCount\(\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 81.00 Tm (- org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 68.00 Tm (Current annotation) Tj ET
+endstream
+endobj
+34 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 35 0 R >>
+endobj
+35 0 obj
+<< /Length 5005 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 15) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 738.00 Tm (- org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 725.00 Tm (Reason category: old label contains probe) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 710.00 Tm (Explanation: the old lablel contains both probe and the setup. the test is to verify if the) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 697.00 Tm (removeALlSeries can actually remove all the item in the dataset.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 680.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 664.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 652.00 Tm (  org.jfree.data.xy.DefaultTableXYDataset.addSeries\(org.jfree.data.xy.XYSeries<S>\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 639.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 627.00 Tm (  org.jfree.data.xy.DefaultTableXYDataset.getItemCount\(\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 610.00 Tm (36. Test jfreechart::832) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 593.00 Tm (Test name: testCloning) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 579.00 Tm (Current Test Name and Execution ID: org.jfree.chart.renderer.LookupPaintScaleTest_testCloning_02e4ace9) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 566.00 Tm (Old Test Name: org.jfree.chart.renderer.LookupPaintScaleTest.testCloning\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 550.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 534.00 Tm (- org.jfree.chart.renderer.LookupPaintScale.add\(double, java.awt.Paint\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 521.00 Tm (- org.jfree.chart.renderer.LookupPaintScale.clone\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 508.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 492.00 Tm (- org.jfree.chart.renderer.LookupPaintScale.clone\(\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 479.00 Tm (Reason category: old label contains setup method) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 464.00 Tm (Explanation: add is just use to check if the state mutation would affect the clone.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 447.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 431.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 419.00 Tm (  org.jfree.chart.renderer.LookupPaintScale.add\(double, java.awt.Paint\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 402.00 Tm (37. Test jfreechart::913) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 385.00 Tm (Test name: testDrawWithNullInfo) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 371.00 Tm (Current Test Name and Execution ID:) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 359.00 Tm (org.jfree.chart.renderer.category.GroupedStackedBarRendererTest_testDrawWithNullInfo_f39d2692) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 346.00 Tm (Old Test Name: org.jfree.chart.renderer.category.GroupedStackedBarRendererTest.testDrawWithNullInfo\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 330.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 314.00 Tm (- org.jfree.chart.JFreeChart.createBufferedImage\(int, int,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 302.00 Tm (  org.jfree.chart.ChartRenderingInfo\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 289.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 273.00 Tm (-) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 261.00 Tm (  org.jfree.chart.renderer.category.GroupedStackedBarRenderer.drawItem\(java.awt.Graphics2D,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 249.00 Tm (  org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 237.00 Tm (  org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 225.00 Tm (  org.jfree.chart.axis.ValueAxis, org.jfree.data.category.CategoryDataset, int, int, int\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 212.00 Tm (Reason category: old label too shallow) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 197.00 Tm (Explanation: as suggested by the test case class name this test is used to test) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 184.00 Tm (GroupedStackedBarRenderer draw item functionality.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 167.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 151.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 139.00 Tm (  org.jfree.chart.renderer.category.GroupedStackedBarRenderer.drawItem\(java.awt.Graphics2D,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 127.00 Tm (  org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 115.00 Tm (  org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 103.00 Tm (  org.jfree.chart.axis.ValueAxis, org.jfree.data.category.CategoryDataset, int, int, int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 90.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 78.00 Tm (  org.jfree.chart.JFreeChart.createBufferedImage\(int, int,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 66.00 Tm (  org.jfree.chart.ChartRenderingInfo\)) Tj ET
+endstream
+endobj
+36 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 37 0 R >>
+endobj
+37 0 obj
+<< /Length 3621 >>
+stream
+BT /F1 9 Tf 1 0 0 1 510.00 24.00 Tm (Page 16) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 738.00 Tm (38. Test jfreechart::316) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 721.00 Tm (Test name: testNF) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 707.00 Tm (Current Test Name and Execution ID: org.jfree.chart.block.GridArrangementTest_testNF_bba22c4b) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 694.00 Tm (Old Test Name: org.jfree.chart.block.GridArrangementTest.testNF\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 678.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 662.00 Tm (- org.jfree.chart.block.BlockContainer.arrange\(java.awt.Graphics2D,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 650.00 Tm (  org.jfree.chart.block.RectangleConstraint\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 637.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 621.00 Tm (- org.jfree.chart.block.GridArrangement.arrangeNF\(org.jfree.chart.block.BlockContainer,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 609.00 Tm (  java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 596.00 Tm (Reason category: old label too shallow) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 581.00 Tm (Explanation: as suggested by name this is to test arrangeNF not just arrange.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 564.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 548.00 Tm (- SUBJECTIVE | Only in current annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 536.00 Tm (  org.jfree.chart.block.GridArrangement.arrangeNF\(org.jfree.chart.block.BlockContainer,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 524.00 Tm (  java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 511.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 499.00 Tm (  org.jfree.chart.block.BlockContainer.arrange\(java.awt.Graphics2D,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 487.00 Tm (  org.jfree.chart.block.RectangleConstraint\)) Tj ET
+BT /F2 12 Tf 1 0 0 1 54.00 470.00 Tm (39. Test jfreechart::68) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 453.00 Tm (Test name: testSetSeriesToolTipGenerator) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 439.00 Tm (Current Test Name and Execution ID: org.jfree.chart.XYBarChartTest_testSetSeriesToolTipGenerator_8ab92898) Tj ET
+BT /F1 9 Tf 1 0 0 1 54.00 426.00 Tm (Old Test Name: org.jfree.chart.XYBarChartTest.testSetSeriesToolTipGenerator\(\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 410.00 Tm (Original human annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 394.00 Tm (- org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getToolTipGenerator\(int, int\)) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 381.00 Tm (- org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setSeriesToolTipGenerator\(int,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 369.00 Tm (  org.jfree.chart.labels.XYToolTipGenerator\)) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 356.00 Tm (Current annotation) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 340.00 Tm (- org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setSeriesToolTipGenerator\(int,) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 328.00 Tm (  org.jfree.chart.labels.XYToolTipGenerator\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 315.00 Tm (Reason category: old label contains probe) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 300.00 Tm (Explanation: as suggested by test name, this is targeting setSeriesToolTipGenerator not the) Tj ET
+BT /F1 10 Tf 1 0 0 1 54.00 287.00 Tm (getter.) Tj ET
+BT /F2 11 Tf 1 0 0 1 54.00 270.00 Tm (Classified differences) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 254.00 Tm (- SUBJECTIVE | Only in original human annotation |) Tj ET
+BT /F3 9 Tf 1 0 0 1 68.00 242.00 Tm (  org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getToolTipGenerator\(int, int\)) Tj ET
+endstream
+endobj
+xref
+0 38
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000250 00000 n 
+0000000320 00000 n 
+0000000395 00000 n 
+0000000463 00000 n 
+0000000585 00000 n 
+0000004462 00000 n 
+0000004584 00000 n 
+0000009634 00000 n 
+0000009758 00000 n 
+0000014758 00000 n 
+0000014882 00000 n 
+0000020003 00000 n 
+0000020127 00000 n 
+0000024522 00000 n 
+0000024646 00000 n 
+0000029448 00000 n 
+0000029572 00000 n 
+0000034643 00000 n 
+0000034767 00000 n 
+0000039552 00000 n 
+0000039676 00000 n 
+0000044215 00000 n 
+0000044339 00000 n 
+0000048887 00000 n 
+0000049011 00000 n 
+0000053616 00000 n 
+0000053740 00000 n 
+0000058515 00000 n 
+0000058639 00000 n 
+0000063405 00000 n 
+0000063529 00000 n 
+0000068052 00000 n 
+0000068176 00000 n 
+0000073234 00000 n 
+0000073358 00000 n 
+trailer
+<< /Size 38 /Root 1 0 R >>
+startxref
+77032
+%%EOF

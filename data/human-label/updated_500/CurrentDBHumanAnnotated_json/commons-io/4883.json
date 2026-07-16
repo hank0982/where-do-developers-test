@@ -1,0 +1,57 @@
+{
+  "id": "4883",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStreamTest_testInvalidConstructor3LengthUnder_90c35795",
+  "test_path": "org/apache/commons/io/input/UnsynchronizedByteArrayInputStreamTest",
+  "test_name": "testInvalidConstructor3LengthUnder",
+  "body": "@Test\n    void testInvalidConstructor3LengthUnder() {\n        assertThrows(IllegalArgumentException.class, () -> {\n            newStream(IOUtils.EMPTY_BYTE_ARRAY, 0, -1);\n        });\n    }",
+  "invocations": [
+    "setLength",
+    "setOffset",
+    "setByteArray",
+    "builder"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setLength(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setOffset(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setByteArray(byte[])": {
+      "params_len": 1,
+      "params": [
+        "byte[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setLength(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setLength(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2246,
+      "class_name": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder",
+      "method_name": "setLength",
+      "signature": "org.apache.commons.io.input.UnsynchronizedByteArrayInputStream$Builder.setLength(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

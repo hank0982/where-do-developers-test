@@ -1,0 +1,43 @@
+{
+  "id": "1355",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testLanguagesByCountry_6a919117",
+  "test_path": "org/apache/commons/lang3/LocaleUtilsTest",
+  "test_name": "testLanguagesByCountry",
+  "body": "@Test\n    void testLanguagesByCountry() {\n        assertLanguageByCountry(null, new String[0]);\n        assertLanguageByCountry(\"GB\", new String[]{\"en\"});\n        assertLanguageByCountry(\"ZZ\", new String[0]);\n        assertLanguageByCountry(\"CH\", new String[]{\"fr\", \"de\", \"it\"});\n    }",
+  "invocations": [
+    "isEmpty",
+    "languagesByCountry"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.StringUtils.isEmpty(java.lang.CharSequence)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.LocaleUtils.languagesByCountry(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.LocaleUtils.languagesByCountry(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.LocaleUtils.languagesByCountry(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4256,
+      "class_name": "org.apache.commons.lang3.LocaleUtils",
+      "method_name": "languagesByCountry",
+      "signature": "org.apache.commons.lang3.LocaleUtils.languagesByCountry(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

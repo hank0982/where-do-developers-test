@@ -1,0 +1,63 @@
+{
+  "id": "69",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.TestAbandonedBasicDataSource_testNoOverlapBetweenDisconnectionAndIgnoreSqlCodes_e9a6c28a",
+  "test_path": "org/apache/commons/dbcp2/TestAbandonedBasicDataSource",
+  "test_name": "testNoOverlapBetweenDisconnectionAndIgnoreSqlCodes",
+  "body": "@Test\n    void testNoOverlapBetweenDisconnectionAndIgnoreSqlCodes() {\n        // Set disconnection SQL codes without overlap\n        final HashSet<String> disconnectionSqlCodes = new HashSet<>(Arrays.asList(\"XXX\", \"ZZZ\"));\n        ds.setDisconnectionSqlCodes(disconnectionSqlCodes);\n\n        // Set ignore SQL codes without overlap\n        final HashSet<String> disconnectionIgnoreSqlCodes = new HashSet<>(Arrays.asList(\"YYY\", \"AAA\"));\n        ds.setDisconnectionIgnoreSqlCodes(disconnectionIgnoreSqlCodes);\n\n        assertEquals(disconnectionSqlCodes, ds.getDisconnectionSqlCodes(), \"Disconnection SQL codes should match the set values.\");\n        assertEquals(disconnectionIgnoreSqlCodes, ds.getDisconnectionIgnoreSqlCodes(), \"Disconnection Ignore SQL codes should match the set values.\");\n    }",
+  "invocations": [
+    "getDisconnectionIgnoreSqlCodes",
+    "getDisconnectionSqlCodes",
+    "setDisconnectionSqlCodes",
+    "setDisconnectionIgnoreSqlCodes"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.BasicDataSource.getDisconnectionIgnoreSqlCodes()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.BasicDataSource.getDisconnectionSqlCodes()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionSqlCodes(java.util.Collection<java.lang.String>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<java.lang.String>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionIgnoreSqlCodes(java.util.Collection<java.lang.String>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<java.lang.String>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionSqlCodes(java.util.Collection<java.lang.String>)",
+    "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionIgnoreSqlCodes(java.util.Collection<java.lang.String>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionSqlCodes(java.util.Collection<java.lang.String>)",
+    "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionIgnoreSqlCodes(java.util.Collection<java.lang.String>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 791,
+      "class_name": "org.apache.commons.dbcp2.BasicDataSource",
+      "method_name": "setDisconnectionSqlCodes",
+      "signature": "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionSqlCodes(java.util.Collection<java.lang.String>)"
+    },
+    {
+      "method_id": 810,
+      "class_name": "org.apache.commons.dbcp2.BasicDataSource",
+      "method_name": "setDisconnectionIgnoreSqlCodes",
+      "signature": "org.apache.commons.dbcp2.BasicDataSource.setDisconnectionIgnoreSqlCodes(java.util.Collection<java.lang.String>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

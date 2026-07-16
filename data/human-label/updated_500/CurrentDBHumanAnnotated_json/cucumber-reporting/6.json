@@ -1,0 +1,50 @@
+{
+  "id": "6",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addReducingMethod_AddsReducingMethod_c1091131",
+  "test_path": "net/masterthought/cucumber/ConfigurationTest_addReducingMethod",
+  "test_name": "AddsReducingMethod",
+  "body": "@Test\n    void addReducingMethod_AddsReducingMethod() {\n\n        // given\n        Configuration configuration = new Configuration(outputDirectory, projectName);\n        ReducingMethod reducingMethod = ReducingMethod.MERGE_FEATURES_BY_ID;\n\n        // when\n        configuration.addReducingMethod(reducingMethod);\n\n        // then\n        assertThat(configuration.getReducingMethods()).containsOnly(reducingMethod);\n    }",
+  "invocations": [
+    "addReducingMethod",
+    "getReducingMethods",
+    "Configuration"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.Configuration.addReducingMethod(net.masterthought.cucumber.reducers.ReducingMethod)": {
+      "params_len": 1,
+      "params": [
+        "net.masterthought.cucumber.reducers.ReducingMethod"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration.getReducingMethods()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.Configuration.addReducingMethod(net.masterthought.cucumber.reducers.ReducingMethod)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.Configuration.addReducingMethod(net.masterthought.cucumber.reducers.ReducingMethod)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 252,
+      "class_name": "net.masterthought.cucumber.Configuration",
+      "method_name": "addReducingMethod",
+      "signature": "net.masterthought.cucumber.Configuration.addReducingMethod(net.masterthought.cucumber.reducers.ReducingMethod)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

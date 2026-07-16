@@ -1,0 +1,36 @@
+{
+  "id": "1731",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.bloomfilter.DefaultBitMapExtractorTest_testForEachBitMapPair_2fc658e2",
+  "test_path": "org/apache/commons/collections4/bloomfilter/DefaultBitMapExtractorTest",
+  "test_name": "testForEachBitMapPair",
+  "body": "@Test\n    final void testForEachBitMapPair() {\n        final LongBiPredicate func = (x, y) -> x == y;\n        assertTrue(createEmptyExtractor().processBitMapPairs(createEmptyExtractor(), func), \"empty == empty failed\");\n        assertFalse(createEmptyExtractor().processBitMapPairs(createExtractor(), func), \"empty == not_empty failed\");\n        assertFalse(createExtractor().processBitMapPairs(createEmptyExtractor(), func), \"not_empty == empty passed\");\n        assertTrue(createExtractor().processBitMapPairs(createExtractor(), func), \"not_empty == not_empty failed\");\n\n        // test BitMapExtractors of different length send 0 for missing values.\n        final int[] count = new int[3];\n        final LongBiPredicate lbp = (x, y) -> {\n            if (x == 0) {\n                count[0]++;\n            }\n            if (y == 0) {\n                count[1]++;\n            }\n            count[2]++;\n            return true;\n        };\n        createEmptyExtractor().processBitMapPairs(createExtractor(), lbp);\n        assertEquals(count[2], count[0]);\n\n        Arrays.fill(count, 0);\n        createExtractor().processBitMapPairs(createEmptyExtractor(), lbp);\n        assertEquals(count[2], count[1]);\n\n        // test where the created extractor does not process all records because the predicate function\n        // returns false before the processing is completed.\n        final int[] limit = new int[1];\n        final LongBiPredicate shortFunc =  (x, y) -> {\n            limit[0]++;\n            return limit[0] < 2;\n        };\n        final BitMapExtractor shortExtractor = l -> true;\n        assertFalse(createExtractor().processBitMapPairs(shortExtractor, shortFunc));\n    }",
+  "invocations": [
+    "processBitMapPairs"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.bloomfilter.BitMapExtractor.processBitMapPairs(org.apache.commons.collections4.bloomfilter.BitMapExtractor, org.apache.commons.collections4.bloomfilter.LongBiPredicate)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.collections4.bloomfilter.BitMapExtractor",
+        "org.apache.commons.collections4.bloomfilter.LongBiPredicate"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.bloomfilter.BitMapExtractor.processBitMapPairs(org.apache.commons.collections4.bloomfilter.BitMapExtractor, org.apache.commons.collections4.bloomfilter.LongBiPredicate)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.bloomfilter.BitMapExtractor.processBitMapPairs(org.apache.commons.collections4.bloomfilter.BitMapExtractor, org.apache.commons.collections4.bloomfilter.LongBiPredicate)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1893,
+      "class_name": "org.apache.commons.collections4.bloomfilter.BitMapExtractor",
+      "method_name": "processBitMapPairs",
+      "signature": "org.apache.commons.collections4.bloomfilter.BitMapExtractor.processBitMapPairs(org.apache.commons.collections4.bloomfilter.BitMapExtractor, org.apache.commons.collections4.bloomfilter.LongBiPredicate)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

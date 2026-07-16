@@ -1,0 +1,81 @@
+{
+  "id": "267",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistsItemsRequestTest_shouldReturnDefaultEpisode_sync_2676ab3e",
+  "test_path": "se/michaelthelin/spotify/requests/data/playlists/GetPlaylistsItemsRequestTest_shouldReturnDefaultEpisode",
+  "test_name": "sync",
+  "body": "@Test\n  public void shouldReturnDefaultEpisode_sync() throws IOException, SpotifyWebApiException, ParseException {\n    shouldReturnDefaultEpisode(defaultEpisodeRequest.execute());\n  }",
+  "invocations": [
+    "getOffset",
+    "getNext",
+    "getItems",
+    "getLimit",
+    "getPrevious",
+    "getTotal",
+    "getHref",
+    "getTrack",
+    "execute"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.model_objects.specification.Paging.getOffset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.Paging.getNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.Paging.getItems()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.Paging.getLimit()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.Paging.getPrevious()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.Paging.getTotal()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.Paging.getHref()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.PlaylistTrack.getTrack()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistsItemsRequest.execute()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistsItemsRequest.execute()"
+  ],
+  "current_db_human_annotation": [
+    "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistsItemsRequest.execute()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1710,
+      "class_name": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistsItemsRequest",
+      "method_name": "execute",
+      "signature": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistsItemsRequest.execute()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

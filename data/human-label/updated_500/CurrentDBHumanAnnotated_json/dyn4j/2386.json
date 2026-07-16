@@ -1,0 +1,131 @@
+{
+  "id": "2386",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.world.listener.ListenerAdaptersTest_stepListenerAdapter_80a4438f",
+  "test_path": "org/dyn4j/world/listener/ListenerAdaptersTest",
+  "test_name": "stepListenerAdapter",
+  "body": "@Test\n\tpublic void stepListenerAdapter() {\n\t\t// test that nothing happens, even with null\n\t\tStepListenerAdapter<Body> sla = new StepListenerAdapter<Body>();\n\t\tTimeStep ts = new TimeStep(0.3);\n\t\tWorld<Body> w = new World<Body>();\n\t\t\n\t\t// nothing to assert since they are no-ops with no effect any where\n\t\tsla.begin(null, w);\n\t\tsla.begin(ts, null);\n\t\tsla.begin(null, null);\n\t\tsla.begin(ts, w);\n\t\t\n\t\tsla.end(ts, w);\n\t\tsla.end(ts, null);\n\t\tsla.end(null, w);\n\t\tsla.end(null, null);\n\t\t\n\t\tsla.postSolve(ts, w);\n\t\tsla.postSolve(null, w);\n\t\tsla.postSolve(ts, null);\n\t\tsla.postSolve(null, null);\n\t\t\n\t\tsla.updatePerformed(ts, w);\n\t\tsla.updatePerformed(null, w);\n\t\tsla.updatePerformed(ts, null);\n\t\tsla.updatePerformed(null, null);\n\t}",
+  "invocations": [
+    "TimeStep",
+    "AbstractPhysicsWorld",
+    "AbstractCollisionWorld",
+    "World",
+    "World",
+    "updatePerformed",
+    "begin",
+    "postSolve",
+    "end"
+  ],
+  "signature": {
+    "org.dyn4j.dynamics.TimeStep(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractPhysicsWorld(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.World()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.World(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.listener.StepListenerAdapter.updatePerformed(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)": {
+      "params_len": 2,
+      "params": [
+        "org.dyn4j.dynamics.TimeStep",
+        "org.dyn4j.world.PhysicsWorld<T",
+        "?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.listener.StepListenerAdapter.begin(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)": {
+      "params_len": 2,
+      "params": [
+        "org.dyn4j.dynamics.TimeStep",
+        "org.dyn4j.world.PhysicsWorld<T",
+        "?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.listener.StepListenerAdapter.postSolve(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)": {
+      "params_len": 2,
+      "params": [
+        "org.dyn4j.dynamics.TimeStep",
+        "org.dyn4j.world.PhysicsWorld<T",
+        "?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.listener.StepListenerAdapter.end(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)": {
+      "params_len": 2,
+      "params": [
+        "org.dyn4j.dynamics.TimeStep",
+        "org.dyn4j.world.PhysicsWorld<T",
+        "?>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.world.listener.StepListenerAdapter.updatePerformed(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)",
+    "org.dyn4j.world.listener.StepListenerAdapter.begin(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)",
+    "org.dyn4j.world.listener.StepListenerAdapter.postSolve(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)",
+    "org.dyn4j.world.listener.StepListenerAdapter.end(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.world.listener.StepListenerAdapter.updatePerformed(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)",
+    "org.dyn4j.world.listener.StepListenerAdapter.begin(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)",
+    "org.dyn4j.world.listener.StepListenerAdapter.postSolve(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)",
+    "org.dyn4j.world.listener.StepListenerAdapter.end(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3007,
+      "class_name": "org.dyn4j.world.listener.StepListenerAdapter",
+      "method_name": "updatePerformed",
+      "signature": "org.dyn4j.world.listener.StepListenerAdapter.updatePerformed(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)"
+    },
+    {
+      "method_id": 3008,
+      "class_name": "org.dyn4j.world.listener.StepListenerAdapter",
+      "method_name": "begin",
+      "signature": "org.dyn4j.world.listener.StepListenerAdapter.begin(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)"
+    },
+    {
+      "method_id": 3009,
+      "class_name": "org.dyn4j.world.listener.StepListenerAdapter",
+      "method_name": "postSolve",
+      "signature": "org.dyn4j.world.listener.StepListenerAdapter.postSolve(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)"
+    },
+    {
+      "method_id": 3010,
+      "class_name": "org.dyn4j.world.listener.StepListenerAdapter",
+      "method_name": "end",
+      "signature": "org.dyn4j.world.listener.StepListenerAdapter.end(org.dyn4j.dynamics.TimeStep, org.dyn4j.world.PhysicsWorld<T, ?>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "6",
+  "project": "commons-exec",
+  "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgument_c148d08d",
+  "test_path": "org/apache/commons/exec/CommandLineTest",
+  "test_name": "testAddArgument",
+  "body": "@Test\n    void testAddArgument() {\n        final CommandLine cmdl = new CommandLine(\"test\");\n        cmdl.addArgument(\"foo\");\n        cmdl.addArgument(\"bar\");\n        assertEquals(\"[test, foo, bar]\", cmdl.toString());\n        assertArrayEquals(new String[] { \"test\", \"foo\", \"bar\" }, cmdl.toStrings());\n    }",
+  "invocations": [
+    "addArgument",
+    "toStrings",
+    "toString",
+    "CommandLine"
+  ],
+  "signature": {
+    "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.CommandLine.toStrings()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.CommandLine.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.CommandLine(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 252,
+      "class_name": "org.apache.commons.exec.CommandLine",
+      "method_name": "addArgument",
+      "signature": "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

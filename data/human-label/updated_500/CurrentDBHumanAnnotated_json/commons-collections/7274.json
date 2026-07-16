@@ -1,0 +1,48 @@
+{
+  "id": "7274",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.set.PredicatedSetTest_testSimpleSerialization_88f65b6d",
+  "test_path": "org/apache/commons/collections4/set/PredicatedSetTest",
+  "test_name": "testSimpleSerialization",
+  "body": "@Test\n    public void testSimpleSerialization() throws Exception {\n        final Object o = makeObject();\n        if (o instanceof Serializable && isTestSerialization()) {\n            final byte[] object = writeExternalFormToBytes((Serializable) o);\n            readExternalFormFromBytes(object);\n        }\n    }",
+  "invocations": [
+    "predicatedSet",
+    "readResolve",
+    "AbstractPredicate"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.set.PredicatedSet.predicatedSet(java.util.Set<E>, org.apache.commons.collections4.Predicate<? super E>)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Set<E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.functors.TruePredicate.readResolve()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.functors.AbstractPredicate()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.functors.TruePredicate.readResolve()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.functors.TruePredicate.readResolve()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3807,
+      "class_name": "org.apache.commons.collections4.functors.TruePredicate",
+      "method_name": "readResolve",
+      "signature": "org.apache.commons.collections4.functors.TruePredicate.readResolve()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

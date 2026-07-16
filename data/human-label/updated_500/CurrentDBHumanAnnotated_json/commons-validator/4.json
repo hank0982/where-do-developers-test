@@ -1,0 +1,75 @@
+{
+  "id": "4",
+  "project": "commons-validator",
+  "current_db_test_name": "org.apache.commons.validator.ByteTest_testByteMax_aca2d4cb",
+  "test_path": "org/apache/commons/validator/ByteTest",
+  "test_name": "testByteMax",
+  "body": "@Test\n    void testByteMax() throws ValidatorException {\n        // Create bean to run test on.\n        final ValueBean info = new ValueBean();\n        info.setValue(Byte.toString(Byte.MAX_VALUE));\n\n        valueTest(info, true);\n    }",
+  "invocations": [
+    "containsAction",
+    "isValid",
+    "getValidatorResult",
+    "Validator",
+    "validate",
+    "setParameter"
+  ],
+  "signature": {
+    "org.apache.commons.validator.ValidatorResult.containsAction(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.ValidatorResult.isValid(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.ValidatorResults.getValidatorResult(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.Validator(org.apache.commons.validator.ValidatorResources, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.validator.ValidatorResources",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.Validator.validate()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.Validator.setParameter(java.lang.String, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.validator.Validator.validate()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.validator.Validator.validate()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 751,
+      "class_name": "org.apache.commons.validator.Validator",
+      "method_name": "validate",
+      "signature": "org.apache.commons.validator.Validator.validate()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "120",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.JsonObjectTest_testAddingAndRemovingObjectProperties_a76d4264",
+  "test_path": "com/google/gson/JsonObjectTest",
+  "test_name": "testAddingAndRemovingObjectProperties",
+  "body": "@Test\n  public void testAddingAndRemovingObjectProperties() {\n    JsonObject jsonObj = new JsonObject();\n    String propertyName = \"property\";\n    assertThat(jsonObj.has(propertyName)).isFalse();\n    assertThat(jsonObj.get(propertyName)).isNull();\n\n    JsonPrimitive value = new JsonPrimitive(\"blah\");\n    jsonObj.add(propertyName, value);\n    assertThat(jsonObj.get(propertyName)).isEqualTo(value);\n\n    JsonElement removedElement = jsonObj.remove(propertyName);\n    assertThat(removedElement).isEqualTo(value);\n    assertThat(jsonObj.has(propertyName)).isFalse();\n    assertThat(jsonObj.get(propertyName)).isNull();\n\n    assertThat(jsonObj.remove(propertyName)).isNull();\n  }",
+  "invocations": [
+    "JsonElement",
+    "JsonObject",
+    "remove",
+    "has",
+    "get",
+    "add",
+    "JsonPrimitive"
+  ],
+  "signature": {
+    "com.google.gson.JsonElement()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonObject.remove(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonObject.has(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonObject.get(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonObject.add(java.lang.String, com.google.gson.JsonElement)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "com.google.gson.JsonElement"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonPrimitive(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.JsonObject.remove(java.lang.String)",
+    "com.google.gson.JsonObject.add(java.lang.String, com.google.gson.JsonElement)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.JsonObject.remove(java.lang.String)",
+    "com.google.gson.JsonObject.add(java.lang.String, com.google.gson.JsonElement)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 828,
+      "class_name": "com.google.gson.JsonObject",
+      "method_name": "remove",
+      "signature": "com.google.gson.JsonObject.remove(java.lang.String)"
+    },
+    {
+      "method_id": 836,
+      "class_name": "com.google.gson.JsonObject",
+      "method_name": "add",
+      "signature": "com.google.gson.JsonObject.add(java.lang.String, com.google.gson.JsonElement)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

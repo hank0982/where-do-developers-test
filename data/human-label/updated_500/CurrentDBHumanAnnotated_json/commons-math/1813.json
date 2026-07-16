@@ -1,0 +1,75 @@
+{
+  "id": "1813",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.linear.FieldMatrixImplTest_testGetRowVector_7d82fab9",
+  "test_path": "org/apache/commons/math4/legacy/linear/FieldMatrixImplTest",
+  "test_name": "testGetRowVector",
+  "body": "@Test\n    public void testGetRowVector() {\n        FieldMatrix<Dfp> m = new Array2DRowFieldMatrix<>(subTestData);\n        FieldVector<Dfp> mRow0 = new ArrayFieldVector<>(subRow0[0]);\n        FieldVector<Dfp> mRow3 = new ArrayFieldVector<>(subRow3[0]);\n        Assert.assertEquals(\"Row0\", mRow0, m.getRowVector(0));\n        Assert.assertEquals(\"Row3\", mRow3, m.getRowVector(3));\n        try {\n            m.getRowVector(-1);\n            Assert.fail(\"Expecting OutOfRangeException\");\n        } catch (OutOfRangeException ex) {\n            // expected\n        }\n        try {\n            m.getRowVector(4);\n            Assert.fail(\"Expecting OutOfRangeException\");\n        } catch (OutOfRangeException ex) {\n            // expected\n        }\n    }",
+  "invocations": [
+    "Array2DRowFieldMatrix",
+    "equals",
+    "ArrayFieldVector",
+    "AbstractFieldMatrix",
+    "getRowVector",
+    "extractField"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.linear.Array2DRowFieldMatrix(T[][])": {
+      "params_len": 1,
+      "params": [
+        "T[][]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.ArrayFieldVector.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.ArrayFieldVector(T[])": {
+      "params_len": 1,
+      "params": [
+        "T[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.AbstractFieldMatrix(org.apache.commons.math4.legacy.linear.Field<T>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.linear.Field<T>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.AbstractFieldMatrix.getRowVector(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.AbstractFieldMatrix.extractField(T[][])": {
+      "params_len": 1,
+      "params": [
+        "T[][]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.linear.AbstractFieldMatrix.getRowVector(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.linear.AbstractFieldMatrix.getRowVector(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2097,
+      "class_name": "org.apache.commons.math4.legacy.linear.AbstractFieldMatrix",
+      "method_name": "getRowVector",
+      "signature": "org.apache.commons.math4.legacy.linear.AbstractFieldMatrix.getRowVector(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

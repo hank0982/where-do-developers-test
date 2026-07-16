@@ -1,0 +1,44 @@
+{
+  "id": "3093",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.filefilter.FileFilterTest_testFilterSet_fromArray_2f4ad1a9",
+  "test_path": "org/apache/commons/io/filefilter/FileFilterTest_testFilterSet",
+  "test_name": "fromArray",
+  "body": "@Test\n    void testFilterSet_fromArray() throws Exception {\n        final File fileA = TestUtils.newFile(temporaryFolder, \"A\");\n        final File fileB = TestUtils.newFile(temporaryFolder, \"B\");\n\n        final IOFileFilter filter = FileFilterUtils.nameFileFilter(\"A\");\n\n        final Set<File> filteredSet = FileFilterUtils.filterSet(filter, fileA, fileB);\n\n        assertTrue(filteredSet.contains(fileA));\n        assertFalse(filteredSet.contains(fileB));\n    }",
+  "invocations": [
+    "filterSet",
+    "nameFileFilter"
+  ],
+  "signature": {
+    "org.apache.commons.io.filefilter.FileFilterUtils.filterSet(org.apache.commons.io.filefilter.IOFileFilter, java.io.File[])": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.io.filefilter.IOFileFilter",
+        "java.io.File[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.filefilter.FileFilterUtils.nameFileFilter(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.filefilter.FileFilterUtils.filterSet(org.apache.commons.io.filefilter.IOFileFilter, java.io.File[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.filefilter.FileFilterUtils.filterSet(org.apache.commons.io.filefilter.IOFileFilter, java.io.File[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2425,
+      "class_name": "org.apache.commons.io.filefilter.FileFilterUtils",
+      "method_name": "filterSet",
+      "signature": "org.apache.commons.io.filefilter.FileFilterUtils.filterSet(org.apache.commons.io.filefilter.IOFileFilter, java.io.File[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

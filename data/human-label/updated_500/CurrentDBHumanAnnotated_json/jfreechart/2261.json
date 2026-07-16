@@ -1,0 +1,72 @@
+{
+  "id": "2261",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.xy.YIntervalSeriesTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/data/xy/YIntervalSeriesTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        YIntervalSeries<String> s1 = new YIntervalSeries<>(\"s1\");\n        s1.add(1.0, 0.5, 1.5, 2.0);\n        YIntervalSeries<String> s2 = CloneUtils.clone(s1);\n        assertNotSame(s1, s2);\n        assertSame(s1.getClass(), s2.getClass());\n        assertEquals(s1, s2);\n    }",
+  "invocations": [
+    "Series",
+    "ComparableObjectSeries",
+    "add",
+    "equals",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.data.general.Series(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.ComparableObjectSeries(K, boolean, boolean)": {
+      "params_len": 3,
+      "params": [
+        "K",
+        "boolean",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.YIntervalSeries.add(double, double, double, double)": {
+      "params_len": 4,
+      "params": [
+        "double",
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.ComparableObjectSeries.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.ComparableObjectSeries.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.ComparableObjectSeries.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1150,
+      "class_name": "org.jfree.data.ComparableObjectSeries",
+      "method_name": "clone",
+      "signature": "org.jfree.data.ComparableObjectSeries.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "347",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.IteratorUtilsTest_testChainedIteratorList_020475fb",
+  "test_path": "org/apache/commons/collections4/IteratorUtilsTest",
+  "test_name": "testChainedIteratorList",
+  "body": "@Test\n    void testChainedIteratorList() {\n        final IteratorChainTest iteratorChainTest = new IteratorChainTest();\n        iteratorChainTest.setUp();\n        final List<Iterator<String>> list = new ArrayList<>();\n        list.add(iteratorChainTest.getList1().iterator());\n        list.add(iteratorChainTest.getList2().iterator());\n        list.add(iteratorChainTest.getList3().iterator());\n        final List<String> expected = new ArrayList<>(iteratorChainTest.getList1());\n        expected.addAll(iteratorChainTest.getList2());\n        expected.addAll(iteratorChainTest.getList3());\n        final Iterator<String> iter = IteratorUtils.chainedIterator(list);\n        final List<String> actual = new ArrayList<>();\n        iter.forEachRemaining(actual::add);\n        assertEquals(actual, expected);\n    }",
+  "invocations": [
+    "chainedIterator",
+    "next",
+    "hasNext"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.IteratorUtils.chainedIterator(java.util.Collection<? extends java.util.Iterator<? extends E>>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<? extends java.util.Iterator<? extends E>>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.IteratorChain.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.IteratorChain.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.IteratorUtils.chainedIterator(java.util.Collection<? extends java.util.Iterator<? extends E>>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.IteratorUtils.chainedIterator(java.util.Collection<? extends java.util.Iterator<? extends E>>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 669,
+      "class_name": "org.apache.commons.collections4.IteratorUtils",
+      "method_name": "chainedIterator",
+      "signature": "org.apache.commons.collections4.IteratorUtils.chainedIterator(java.util.Collection<? extends java.util.Iterator<? extends E>>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "1325",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveDirectory_Errors_bc330441",
+  "test_path": "org/apache/commons/io/FileUtilsTest_testMoveDirectory",
+  "test_name": "Errors",
+  "body": "@Test\n    void testMoveDirectory_Errors() throws Exception {\n        assertThrows(NullPointerException.class, () -> FileUtils.moveDirectory(null, new File(\"foo\")));\n        assertThrows(NullPointerException.class, () -> FileUtils.moveDirectory(new File(\"foo\"), null));\n        assertThrows(FileNotFoundException.class, () -> FileUtils.moveDirectory(new File(\"non-existent\"), new File(\"foo\")));\n\n        final File testFile = new File(tempDirFile, \"testMoveDirectoryFile\");\n        if (!testFile.getParentFile().exists()) {\n            fail(\"Cannot create file \" + testFile + \" as the parent directory does not exist\");\n        }\n        try (OutputStream output = new BufferedOutputStream(Files.newOutputStream(testFile.toPath()))) {\n            TestUtils.generateTestData(output, 0);\n        }\n        assertThrows(IllegalArgumentException.class, () -> FileUtils.moveDirectory(testFile, new File(\"foo\")));\n        final File testSrcFile = new File(tempDirFile, \"testMoveDirectorySource\");\n        final File testDestFile = new File(tempDirFile, \"testMoveDirectoryDest\");\n        testSrcFile.mkdir();\n        testDestFile.mkdir();\n        assertThrows(FileExistsException.class, () -> FileUtils.moveDirectory(testSrcFile, testDestFile),\n            \"Expected FileExistsException when dest already exists\");\n\n    }",
+  "invocations": [
+    "moveDirectory"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.moveDirectory(java.io.File, java.io.File)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.moveDirectory(java.io.File, java.io.File)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.moveDirectory(java.io.File, java.io.File)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 326,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "moveDirectory",
+      "signature": "org.apache.commons.io.FileUtils.moveDirectory(java.io.File, java.io.File)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

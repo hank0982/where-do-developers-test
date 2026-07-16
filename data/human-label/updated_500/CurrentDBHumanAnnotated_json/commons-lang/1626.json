@@ -1,0 +1,35 @@
+{
+  "id": "1626",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testParseAllLocales_54200905",
+  "test_path": "org/apache/commons/lang3/LocaleUtilsTest",
+  "test_name": "testParseAllLocales",
+  "body": "@ParameterizedTest\n    @MethodSource(\"java.util.Locale#getAvailableLocales\")\n    void testParseAllLocales(final Locale actualLocale) {\n        // Check if it's possible to recreate the Locale using just the standard constructor\n        final Locale locale = new Locale(actualLocale.getLanguage(), actualLocale.getCountry(), actualLocale.getVariant());\n        if (actualLocale.equals(locale)) { // it is possible for LocaleUtils.toLocale to handle these Locales\n            final String str = actualLocale.toString();\n            // Look for the script/extension suffix\n            int suff = str.indexOf(\"_#\");\n            if (suff == - 1) {\n                suff = str.indexOf(\"#\");\n            }\n            String localeStr = str;\n            if (suff >= 0) { // we have a suffix\n                assertIllegalArgumentException(() -> LocaleUtils.toLocale(str));\n                // try without suffix\n                localeStr = str.substring(0, suff);\n            }\n            final Locale loc = LocaleUtils.toLocale(localeStr);\n            assertEquals(actualLocale, loc);\n        }\n    }",
+  "invocations": [
+    "toLocale"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4265,
+      "class_name": "org.apache.commons.lang3.LocaleUtils",
+      "method_name": "toLocale",
+      "signature": "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

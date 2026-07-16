@@ -1,0 +1,44 @@
+{
+  "id": "245",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.integration.FuzzFixesTest_testHtmlFragmentParse_ff3c47d2",
+  "test_path": "org/jsoup/integration/FuzzFixesTest",
+  "test_name": "testHtmlFragmentParse",
+  "body": "@ParameterizedTest\n    @MethodSource(\"testFiles\")\n    void testHtmlFragmentParse(File file) throws IOException {\n        String html = ParseTest.getFileAsString(file);\n        Document doc = Jsoup.parseBodyFragment(html);\n        assertNotNull(doc);\n    }",
+  "invocations": [
+    "parseBodyFragment",
+    "readToByteBuffer"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parseBodyFragment(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.helper.DataUtil.readToByteBuffer(java.io.InputStream, int)": {
+      "params_len": 2,
+      "params": [
+        "java.io.InputStream",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.Jsoup.parseBodyFragment(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.Jsoup.parseBodyFragment(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 120,
+      "class_name": "org.jsoup.Jsoup",
+      "method_name": "parseBodyFragment",
+      "signature": "org.jsoup.Jsoup.parseBodyFragment(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

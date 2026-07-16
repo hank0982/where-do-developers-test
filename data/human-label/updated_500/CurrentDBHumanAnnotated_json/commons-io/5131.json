@@ -1,0 +1,104 @@
+{
+  "id": "5131",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest_testCalculateRawEncodingStandardUtf32_31e0a743",
+  "test_path": "org/apache/commons/io/input/XmlStreamReaderUtilitiesTest",
+  "test_name": "testCalculateRawEncodingStandardUtf32",
+  "body": "@Test\n    void testCalculateRawEncodingStandardUtf32() throws IOException {\n        // Standard BOM Checks           BOM         Other       Default\n        testCalculateRawEncodingStandard(\"UTF-8\",    \"UTF-32BE\", \"UTF-32LE\");\n        testCalculateRawEncodingStandard(\"UTF-32BE\", \"UTF-8\",    \"UTF-32LE\");\n        testCalculateRawEncodingStandard(\"UTF-32LE\", \"UTF-8\",    \"UTF-32BE\");\n}",
+  "invocations": [
+    "setCharSequence",
+    "getContentTypeMime",
+    "getContentTypeEncoding",
+    "getXmlEncoding",
+    "getBomEncoding",
+    "getXmlGuessEncoding",
+    "get",
+    "builder",
+    "XmlStreamReader",
+    "close",
+    "calculateRawEncoding"
+  ],
+  "signature": {
+    "org.apache.commons.io.build.AbstractOriginSupplier.setCharSequence(java.lang.CharSequence)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReaderException.getContentTypeMime()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReaderException.getContentTypeEncoding()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReaderException.getXmlEncoding()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReaderException.getBomEncoding()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReaderException.getXmlGuessEncoding()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReader(java.io.InputStream, java.lang.String, boolean, java.lang.String)": {
+      "params_len": 4,
+      "params": [
+        "java.io.InputStream",
+        "java.lang.String",
+        "boolean",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReader.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.XmlStreamReader.calculateRawEncoding(java.lang.String, java.lang.String, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.XmlStreamReader.calculateRawEncoding(java.lang.String, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.XmlStreamReader.calculateRawEncoding(java.lang.String, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1815,
+      "class_name": "org.apache.commons.io.input.XmlStreamReader",
+      "method_name": "calculateRawEncoding",
+      "signature": "org.apache.commons.io.input.XmlStreamReader.calculateRawEncoding(java.lang.String, java.lang.String, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "717",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.CharSetTest_testHashCode_e184288e",
+  "test_path": "org/apache/commons/lang3/CharSetTest",
+  "test_name": "testHashCode",
+  "body": "@Test\n    void testHashCode() {\n        final CharSet abc = CharSet.getInstance(\"abc\");\n        final CharSet abc2 = CharSet.getInstance(\"abc\");\n        final CharSet atoc = CharSet.getInstance(\"a-c\");\n        final CharSet atoc2 = CharSet.getInstance(\"a-c\");\n        final CharSet notatoc = CharSet.getInstance(\"^a-c\");\n        final CharSet notatoc2 = CharSet.getInstance(\"^a-c\");\n\n        assertEquals(abc.hashCode(), abc.hashCode());\n        assertEquals(abc.hashCode(), abc2.hashCode());\n        assertEquals(atoc.hashCode(), atoc.hashCode());\n        assertEquals(atoc.hashCode(), atoc2.hashCode());\n        assertEquals(notatoc.hashCode(), notatoc.hashCode());\n        assertEquals(notatoc.hashCode(), notatoc2.hashCode());\n    }",
+  "invocations": [
+    "hashCode",
+    "getInstance"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.CharSet.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.CharSet.getInstance(java.lang.String[])": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.CharSet.hashCode()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.CharSet.hashCode()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3031,
+      "class_name": "org.apache.commons.lang3.CharSet",
+      "method_name": "hashCode",
+      "signature": "org.apache.commons.lang3.CharSet.hashCode()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "2113",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.xy.VectorDataItemTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/data/xy/VectorDataItemTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        VectorDataItem v1 = new VectorDataItem(1.0, 2.0, 3.0, 4.0);\n        VectorDataItem v2 = CloneUtils.clone(v1);\n        assertNotSame(v1, v2);\n        assertSame(v1.getClass(), v2.getClass());\n        assertEquals(v1, v2);\n    }",
+  "invocations": [
+    "XYCoordinate",
+    "VectorDataItem",
+    "Vector",
+    "ComparableObjectItem",
+    "equals",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.data.xy.XYCoordinate(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.VectorDataItem(double, double, double, double)": {
+      "params_len": 4,
+      "params": [
+        "double",
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.Vector(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.ComparableObjectItem(java.lang.Comparable, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.ComparableObjectItem.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.ComparableObjectItem.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.ComparableObjectItem.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1924,
+      "class_name": "org.jfree.data.ComparableObjectItem",
+      "method_name": "clone",
+      "signature": "org.jfree.data.ComparableObjectItem.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "2229",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.channels.ByteArraySeekableByteChannelTest_testWriteBeyondSizeGrows_25c08004",
+  "test_path": "org/apache/commons/io/channels/ByteArraySeekableByteChannelTest",
+  "test_name": "testWriteBeyondSizeGrows",
+  "body": "@Test\n    void testWriteBeyondSizeGrows() throws IOException {\n        channel.position(100);\n        final byte[] data = \"test\".getBytes();\n        channel.write(ByteBuffer.wrap(data));\n        assertEquals(104, channel.size());\n        assertEquals(104, channel.position());\n        // Verify the gap contains zeros (implementation dependent)\n        channel.position(0);\n        final ByteBuffer buffer = ByteBuffer.allocate(100);\n        channel.read(buffer);\n        // Most implementations will fill gaps with zeros\n        final byte[] expectedGap = new byte[100];\n        assertArrayEquals(expectedGap, buffer.array());\n    }",
+  "invocations": [
+    "read",
+    "write",
+    "size",
+    "position",
+    "position"
+  ],
+  "signature": {
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.read(java.nio.ByteBuffer)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.ByteBuffer"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.write(java.nio.ByteBuffer)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.ByteBuffer"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.position()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.position(long)": {
+      "params_len": 1,
+      "params": [
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.write(java.nio.ByteBuffer)",
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.position(long)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.write(java.nio.ByteBuffer)",
+    "org.apache.commons.io.channels.ByteArraySeekableByteChannel.position(long)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 384,
+      "class_name": "org.apache.commons.io.channels.ByteArraySeekableByteChannel",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.channels.ByteArraySeekableByteChannel.write(java.nio.ByteBuffer)"
+    },
+    {
+      "method_id": 399,
+      "class_name": "org.apache.commons.io.channels.ByteArraySeekableByteChannel",
+      "method_name": "position",
+      "signature": "org.apache.commons.io.channels.ByteArraySeekableByteChannel.position(long)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

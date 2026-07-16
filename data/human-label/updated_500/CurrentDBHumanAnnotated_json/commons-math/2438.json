@@ -1,0 +1,130 @@
+{
+  "id": "2438",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.ode.ContinuousOutputModelTest_testRandomAccess_fcb8f5b9",
+  "test_path": "org/apache/commons/math4/legacy/ode/ContinuousOutputModelTest",
+  "test_name": "testRandomAccess",
+  "body": "@Test\n  public void testRandomAccess() throws DimensionMismatchException, NumberIsTooSmallException, MaxCountExceededException, NoBracketingException {\n\n    ContinuousOutputModel cm = new ContinuousOutputModel();\n    integ.addStepHandler(cm);\n    integ.integrate(pb,\n                    pb.getInitialTime(), pb.getInitialState(),\n                    pb.getFinalTime(), new double[pb.getDimension()]);\n\n    Random random = new Random(347588535632L);\n    double maxError    = 0.0;\n    double maxErrorDot = 0.0;\n    for (int i = 0; i < 1000; ++i) {\n      double r = random.nextDouble();\n      double time = r * pb.getInitialTime() + (1.0 - r) * pb.getFinalTime();\n      cm.setInterpolatedTime(time);\n      double[] interpolatedY    = cm.getInterpolatedState();\n      double[] interpolatedYDot = cm.getInterpolatedDerivatives();\n      double[] theoreticalY     = pb.computeTheoreticalState(time);\n      double[] theoreticalYDot  = new double[pb.getDimension()];\n      pb.doComputeDerivatives(time, theoreticalY, theoreticalYDot);\n      double dx = interpolatedY[0] - theoreticalY[0];\n      double dy = interpolatedY[1] - theoreticalY[1];\n      double error = dx * dx + dy * dy;\n      maxError = JdkMath.max(maxError, error);\n      double dxDot = interpolatedYDot[0] - theoreticalYDot[0];\n      double dyDot = interpolatedYDot[1] - theoreticalYDot[1];\n      double errorDot = dxDot * dxDot + dyDot * dyDot;\n      maxErrorDot = JdkMath.max(maxErrorDot, errorDot);\n    }\n\n    Assert.assertEquals(0.0, maxError,    1.0e-9);\n    Assert.assertEquals(0.0, maxErrorDot, 4.0e-7);\n  }",
+  "invocations": [
+    "abs",
+    "sin",
+    "sqrt",
+    "cos",
+    "max",
+    "ContinuousOutputModel",
+    "setInterpolatedTime",
+    "getInterpolatedState",
+    "getInterpolatedDerivatives",
+    "addStepHandler",
+    "integrate"
+  ],
+  "signature": {
+    "org.apache.commons.math4.core.jdkmath.JdkMath.abs(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.core.jdkmath.JdkMath.sin(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.core.jdkmath.JdkMath.sqrt(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.core.jdkmath.JdkMath.cos(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.core.jdkmath.JdkMath.max(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.setInterpolatedTime(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedState()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedDerivatives()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.ode.AbstractIntegrator.addStepHandler(org.apache.commons.math4.legacy.ode.sampling.StepHandler)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.ode.sampling.StepHandler"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.ode.AbstractIntegrator.integrate(org.apache.commons.math4.legacy.ode.FirstOrderDifferentialEquations, double, double[], double, double[])": {
+      "params_len": 5,
+      "params": [
+        "org.apache.commons.math4.legacy.ode.FirstOrderDifferentialEquations",
+        "double",
+        "double[]",
+        "double",
+        "double[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.setInterpolatedTime(double)",
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedState()",
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedDerivatives()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.setInterpolatedTime(double)",
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedState()",
+    "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedDerivatives()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3244,
+      "class_name": "org.apache.commons.math4.legacy.ode.ContinuousOutputModel",
+      "method_name": "setInterpolatedTime",
+      "signature": "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.setInterpolatedTime(double)"
+    },
+    {
+      "method_id": 3245,
+      "class_name": "org.apache.commons.math4.legacy.ode.ContinuousOutputModel",
+      "method_name": "getInterpolatedState",
+      "signature": "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedState()"
+    },
+    {
+      "method_id": 3248,
+      "class_name": "org.apache.commons.math4.legacy.ode.ContinuousOutputModel",
+      "method_name": "getInterpolatedDerivatives",
+      "signature": "org.apache.commons.math4.legacy.ode.ContinuousOutputModel.getInterpolatedDerivatives()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

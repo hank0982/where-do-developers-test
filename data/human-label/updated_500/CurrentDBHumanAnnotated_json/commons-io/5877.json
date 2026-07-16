@@ -1,0 +1,63 @@
+{
+  "id": "5877",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.serialization.ValidatingObjectInputStreamTest_testOurTestClassAcceptedFirstWildcard_99c4d318",
+  "test_path": "org/apache/commons/io/serialization/ValidatingObjectInputStreamTest",
+  "test_name": "testOurTestClassAcceptedFirstWildcard",
+  "body": "@Test\n    void testOurTestClassAcceptedFirstWildcard() throws Exception {\n        assertSerialization(addCloseable(newFixture()).accept(\"*MockSerializedClass\", \"*Integer\"));\n    }",
+  "invocations": [
+    "get",
+    "accept",
+    "resolveClass",
+    "builder",
+    "setInputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.serialization.ValidatingObjectInputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.serialization.ValidatingObjectInputStream.accept(java.lang.String[])": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.serialization.ValidatingObjectInputStream.resolveClass(java.io.ObjectStreamClass)": {
+      "params_len": 1,
+      "params": [
+        "java.io.ObjectStreamClass"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.serialization.ValidatingObjectInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractOriginSupplier.setInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.serialization.ValidatingObjectInputStream.accept(java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.serialization.ValidatingObjectInputStream.accept(java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 492,
+      "class_name": "org.apache.commons.io.serialization.ValidatingObjectInputStream",
+      "method_name": "accept",
+      "signature": "org.apache.commons.io.serialization.ValidatingObjectInputStream.accept(java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,182 @@
+{
+  "id": "7567",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.trie.PatriciaTrieTest_testMapSize_5dbce4cc",
+  "test_path": "org/apache/commons/collections4/trie/PatriciaTrieTest",
+  "test_name": "testMapSize",
+  "body": "@Test\n    void testMapSize() {\n        resetEmpty();\n        assertEquals(0, getMap().size(), \"Map.size() should be 0 with an empty map\");\n        verify();\n\n        resetFull();\n        assertEquals(getSampleKeys().length, getMap().size(), \"Map.size() should equal the number of entries in the map\");\n        verify();\n    }",
+  "invocations": [
+    "PatriciaTrie",
+    "size",
+    "contains",
+    "iterator",
+    "hasNext",
+    "toString",
+    "next",
+    "next",
+    "next",
+    "size",
+    "iterator",
+    "contains",
+    "size",
+    "iterator",
+    "values",
+    "entrySet",
+    "put",
+    "size",
+    "keySet",
+    "AbstractPatriciaTrie",
+    "AbstractBitwiseTrie",
+    "getValue",
+    "hashCode",
+    "getKey"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.trie.PatriciaTrie()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$KeySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$KeySet.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$KeySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$AbstractTrieIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$TrieEntry.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$KeySet$KeyIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$EntrySet$EntryIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$Values$ValueIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$Values.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$Values.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$EntrySet.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$EntrySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie$EntrySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie.values()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie(org.apache.commons.collections4.trie.KeyAnalyzer<? super K>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.trie.KeyAnalyzer<? super K>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractBitwiseTrie(org.apache.commons.collections4.trie.KeyAnalyzer<? super K>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.trie.KeyAnalyzer<? super K>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry.getValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.trie.AbstractBitwiseTrie$BasicEntry.getKey()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie.size()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrie.size()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2561,
+      "class_name": "org.apache.commons.collections4.trie.AbstractPatriciaTrie",
+      "method_name": "size",
+      "signature": "org.apache.commons.collections4.trie.AbstractPatriciaTrie.size()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

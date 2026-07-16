@@ -1,0 +1,35 @@
+{
+  "id": "799",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestMoney_test_plus_double_zero_01790cbf",
+  "test_path": "org/joda/money/TestMoney_test_plus_double",
+  "test_name": "zero",
+  "body": "@Test\n    void test_plus_double_zero() {\n        var test = GBP_2_34.plus(0d);\n        assertThat(test).isSameAs(GBP_2_34);\n    }",
+  "invocations": [
+    "plus"
+  ],
+  "signature": {
+    "org.joda.money.Money.plus(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.Money.plus(double)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.Money.plus(double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 308,
+      "class_name": "org.joda.money.Money",
+      "method_name": "plus",
+      "signature": "org.joda.money.Money.plus(double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

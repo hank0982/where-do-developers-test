@@ -1,0 +1,69 @@
+{
+  "id": "5598",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.concurrent.LazyInitializerSupplierTest_testWorkingCloser_0d60bb5a",
+  "test_path": "org/apache/commons/lang3/concurrent/LazyInitializerSupplierTest",
+  "test_name": "testWorkingCloser",
+  "body": "@SuppressWarnings(\"rawtypes\")\n    @Test\n    void testWorkingCloser() throws Exception {\n        final ConcurrentInitializer<CloseableObject> initializer = createInitializerThatThrowsException(\n                CloseableObject::new,\n                CloseableObject::close);\n\n        final CloseableObject closeableObject = initializer.get();\n        assertFalse(closeableObject.isClosed());\n        ((AbstractConcurrentInitializer) initializer).close();\n        assertTrue(closeableObject.isClosed());\n    }",
+  "invocations": [
+    "builder",
+    "get",
+    "get",
+    "close",
+    "setCloser",
+    "setInitializer"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.concurrent.LazyInitializer.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.LazyInitializer.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.LazyInitializer$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer$AbstractBuilder.setCloser(org.apache.commons.lang3.function.FailableConsumer<T, ? extends java.lang.Exception>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.lang3.function.FailableConsumer<T",
+        "? extends java.lang.Exception>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer$AbstractBuilder.setInitializer(org.apache.commons.lang3.function.FailableSupplier<T, ? extends java.lang.Exception>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.lang3.function.FailableSupplier<T",
+        "? extends java.lang.Exception>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer.close()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer.close()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2265,
+      "class_name": "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer",
+      "method_name": "close",
+      "signature": "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer.close()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "74",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ReportParserTest_parseJsonFiles_OnNoReport_ThrowsException_15ef0b3b",
+  "test_path": "net/masterthought/cucumber/ReportParserTest_parseJsonFiles_OnNoReport",
+  "test_name": "ThrowsException",
+  "body": "@Test\n    void parseJsonFiles_OnNoReport_ThrowsException() {\n        // given\n        initWithJson();\n        ReportParser reportParser = new ReportParser(configuration);\n\n        // when & then\n        assertThatThrownBy(() -> reportParser.parseJsonFiles(jsonReports))\n                .isInstanceOf(ValidationException.class)\n                .hasMessage(\"No JSON report file was found!\");\n    }",
+  "invocations": [
+    "ReportParser",
+    "parseJsonFiles"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.ReportParser(net.masterthought.cucumber.Configuration)": {
+      "params_len": 1,
+      "params": [
+        "net.masterthought.cucumber.Configuration"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.ReportParser.parseJsonFiles(java.util.List<java.lang.String>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<java.lang.String>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.ReportParser.parseJsonFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.ReportParser.parseJsonFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 345,
+      "class_name": "net.masterthought.cucumber.ReportParser",
+      "method_name": "parseJsonFiles",
+      "signature": "net.masterthought.cucumber.ReportParser.parseJsonFiles(java.util.List<java.lang.String>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

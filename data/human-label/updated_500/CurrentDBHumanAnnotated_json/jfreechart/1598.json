@@ -1,0 +1,75 @@
+{
+  "id": "1598",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.statistics.DefaultStatisticalCategoryDatasetTest_testGetRangeBounds2_25d08ba5",
+  "test_path": "org/jfree/data/statistics/DefaultStatisticalCategoryDatasetTest",
+  "test_name": "testGetRangeBounds2",
+  "body": "@Test\n    public void testGetRangeBounds2() {\n        DefaultStatisticalCategoryDataset<String, String> d1\n                = new DefaultStatisticalCategoryDataset<>();\n        d1.add(1.0, 2.0, \"R1\", \"C1\");\n        assertEquals(new Range(1.0, 1.0), d1.getRangeBounds(false));\n        assertEquals(new Range(-1.0, 3.0), d1.getRangeBounds(true));\n\n        d1.add(10.0, 20.0, \"R1\", \"C1\");\n        assertEquals(new Range(10.0, 10.0), d1.getRangeBounds(false));\n        assertEquals(new Range(-10.0, 30.0), d1.getRangeBounds(true));\n    }",
+  "invocations": [
+    "AbstractDataset",
+    "Range",
+    "equals",
+    "add",
+    "DefaultStatisticalCategoryDataset",
+    "getRangeBounds"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.Range(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.Range.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.statistics.DefaultStatisticalCategoryDataset.add(double, double, R, C)": {
+      "params_len": 4,
+      "params": [
+        "double",
+        "double",
+        "R",
+        "C"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.statistics.DefaultStatisticalCategoryDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds(boolean)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds(boolean)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2111,
+      "class_name": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset",
+      "method_name": "getRangeBounds",
+      "signature": "org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds(boolean)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

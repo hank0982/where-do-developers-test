@@ -1,0 +1,47 @@
+{
+  "id": "21",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.GenericArrayTypeTest_testNotEquals_489df098",
+  "test_path": "com/google/gson/GenericArrayTypeTest",
+  "test_name": "testNotEquals",
+  "body": "@Test\n  public void testNotEquals() throws Exception {\n    Type differentGenericArrayType = new TypeToken<List<String>[][]>() {}.getType();\n    assertThat(differentGenericArrayType.equals(ourType)).isFalse();\n    assertThat(ourType.equals(differentGenericArrayType)).isFalse();\n  }",
+  "invocations": [
+    "equals",
+    "getType",
+    "TypeToken"
+  ],
+  "signature": {
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken.getType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 350,
+      "class_name": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl",
+      "method_name": "equals",
+      "signature": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

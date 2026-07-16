@@ -1,0 +1,90 @@
+{
+  "id": "4896",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.Flat3MapTest_testEntryIteratorSetValue1_104bbff5",
+  "test_path": "org/apache/commons/collections4/map/Flat3MapTest",
+  "test_name": "testEntryIteratorSetValue1",
+  "body": "@Test\n    @SuppressWarnings(\"unchecked\")\n    void testEntryIteratorSetValue1() throws Exception {\n        final Flat3Map<K, V> map = makeObject();\n        map.put((K) ONE, (V) TEN);\n        map.put((K) TWO, (V) TWENTY);\n        map.put((K) THREE, (V) THIRTY);\n\n        final Iterator<Map.Entry<K, V>> it = map.entrySet().iterator();\n        final Map.Entry<K, V> entry = it.next();\n        entry.setValue((V) \"NewValue\");\n        assertEquals(3, map.size());\n        assertTrue(map.containsKey(ONE));\n        assertTrue(map.containsKey(TWO));\n        assertTrue(map.containsKey(THREE));\n        assertEquals(\"NewValue\", map.get(ONE));\n        assertEquals(TWENTY, map.get(TWO));\n        assertEquals(THIRTY, map.get(THREE));\n    }",
+  "invocations": [
+    "size",
+    "Flat3Map",
+    "get",
+    "put",
+    "containsKey",
+    "entrySet",
+    "setValue",
+    "iterator",
+    "next"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.Flat3Map.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map.get(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map.containsKey(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map$FlatMapEntry.setValue(V)": {
+      "params_len": 1,
+      "params": [
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map$EntrySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.Flat3Map$EntrySetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.Flat3Map$FlatMapEntry.setValue(V)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.Flat3Map$FlatMapEntry.setValue(V)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1528,
+      "class_name": "org.apache.commons.collections4.map.Flat3Map$FlatMapEntry",
+      "method_name": "setValue",
+      "signature": "org.apache.commons.collections4.map.Flat3Map$FlatMapEntry.setValue(V)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "968",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.StringTest_testJavascriptKeywordsInStringSerialization_40063f8d",
+  "test_path": "com/google/gson/functional/StringTest",
+  "test_name": "testJavascriptKeywordsInStringSerialization",
+  "body": "@Test\n  public void testJavascriptKeywordsInStringSerialization() {\n    String value = \"null true false function\";\n    String json = gson.toJson(value);\n    assertThat(json).isEqualTo(\"\\\"\" + value + \"\\\"\");\n  }",
+  "invocations": [
+    "toJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

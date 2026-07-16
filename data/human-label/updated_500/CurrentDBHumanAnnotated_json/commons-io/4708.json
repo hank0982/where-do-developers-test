@@ -1,0 +1,71 @@
+{
+  "id": "4708",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.TaggedInputStreamTest_testCloseHandleIOException_7f8824fc",
+  "test_path": "org/apache/commons/io/input/TaggedInputStreamTest",
+  "test_name": "testCloseHandleIOException",
+  "body": "@SuppressWarnings({ \"resource\" })",
+  "invocations": [
+    "TaggedInputStream",
+    "isClosed",
+    "close",
+    "ProxyInputStream",
+    "BrokenInputStream",
+    "BrokenInputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.TaggedInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.isClosed()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BrokenInputStream(java.lang.Throwable)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Throwable"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BrokenInputStream(java.util.function.Supplier<java.lang.Throwable>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.function.Supplier<java.lang.Throwable>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.ProxyInputStream.close()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.ProxyInputStream.close()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1769,
+      "class_name": "org.apache.commons.io.input.ProxyInputStream",
+      "method_name": "close",
+      "signature": "org.apache.commons.io.input.ProxyInputStream.close()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

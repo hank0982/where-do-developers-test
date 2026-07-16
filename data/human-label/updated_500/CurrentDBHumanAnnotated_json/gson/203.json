@@ -1,0 +1,76 @@
+{
+  "id": "203",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.MixedStreamTest_testReadClosed_03b3b04b",
+  "test_path": "com/google/gson/MixedStreamTest",
+  "test_name": "testReadClosed",
+  "body": "@Test\n  public void testReadClosed() throws IOException {\n    Gson gson = new Gson();\n    JsonReader jsonReader = new JsonReader(new StringReader(CARS_JSON));\n    jsonReader.close();\n    var e =\n        assertThrows(\n            JsonParseException.class,\n            () -> gson.fromJson(jsonReader, new TypeToken<List<Car>>() {}.getType()));\n    assertThat(e).hasCauseThat().hasMessageThat().isEqualTo(\"JsonReader is closed\");\n  }",
+  "invocations": [
+    "JsonReader",
+    "close",
+    "Gson",
+    "Gson",
+    "fromJson",
+    "getType",
+    "TypeToken"
+  ],
+  "signature": {
+    "com.google.gson.stream.JsonReader(java.io.Reader)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Reader"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonReader.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson(com.google.gson.GsonBuilder)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.GsonBuilder"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type)": {
+      "params_len": 2,
+      "params": [
+        "com.google.gson.stream.JsonReader",
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken.getType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 816,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

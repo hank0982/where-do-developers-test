@@ -1,0 +1,36 @@
+{
+  "id": "4262",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.StringUtilsTest_testDefaultIfBlank_CharBuffers_bea87f87",
+  "test_path": "org/apache/commons/lang3/StringUtilsTest_testDefaultIfBlank",
+  "test_name": "CharBuffers",
+  "body": "@Test\n    void testDefaultIfBlank_CharBuffers() {\n        assertEquals(\"NULL\", StringUtils.defaultIfBlank(CharBuffer.wrap(\"\"), CharBuffer.wrap(\"NULL\")).toString());\n        assertEquals(\"NULL\", StringUtils.defaultIfBlank(CharBuffer.wrap(\" \"), CharBuffer.wrap(\"NULL\")).toString());\n        assertEquals(\"abc\", StringUtils.defaultIfBlank(CharBuffer.wrap(\"abc\"), CharBuffer.wrap(\"NULL\")).toString());\n        assertNull(StringUtils.defaultIfBlank(CharBuffer.wrap(\"\"), (CharBuffer) null));\n        // Tests compatibility for the API return type\n        final CharBuffer s = StringUtils.defaultIfBlank(CharBuffer.wrap(\"abc\"), CharBuffer.wrap(\"NULL\"));\n        assertEquals(\"abc\", s.toString());\n    }",
+  "invocations": [
+    "defaultIfBlank"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.StringUtils.defaultIfBlank(T, T)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.StringUtils.defaultIfBlank(T, T)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.StringUtils.defaultIfBlank(T, T)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1180,
+      "class_name": "org.apache.commons.lang3.StringUtils",
+      "method_name": "defaultIfBlank",
+      "signature": "org.apache.commons.lang3.StringUtils.defaultIfBlank(T, T)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

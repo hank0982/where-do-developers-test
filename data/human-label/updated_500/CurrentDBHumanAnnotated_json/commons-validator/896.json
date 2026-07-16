@@ -1,0 +1,51 @@
+{
+  "id": "896",
+  "project": "commons-validator",
+  "current_db_test_name": "org.apache.commons.validator.routines.checkdigit.LuhnCheckDigitTest_testZeroSum_1d173652",
+  "test_path": "org/apache/commons/validator/routines/checkdigit/LuhnCheckDigitTest",
+  "test_name": "testZeroSum",
+  "body": "@Test\n    void testZeroSum() {\n        assertFalse(routine.isValid(zeroSum), \"isValid() Zero Sum\");\n        final Exception e = assertThrows(Exception.class, () -> routine.calculate(zeroSum), \"Zero Sum\");\n        assertEquals(\"Invalid code, sum is zero\", e.getMessage(), \"isValid() Zero Sum\");\n    }",
+  "invocations": [
+    "isValid",
+    "calculate"
+  ],
+  "signature": {
+    "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.isValid(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.calculate(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.calculate(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.calculate(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 520,
+      "class_name": "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit",
+      "method_name": "isValid",
+      "signature": "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.isValid(java.lang.String)"
+    },
+    {
+      "method_id": 521,
+      "class_name": "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit",
+      "method_name": "calculate",
+      "signature": "org.apache.commons.validator.routines.checkdigit.ModulusCheckDigit.calculate(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

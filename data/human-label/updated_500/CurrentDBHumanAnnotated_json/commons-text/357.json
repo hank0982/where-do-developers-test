@@ -1,0 +1,73 @@
+{
+  "id": "357",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.StrTokenizerTest_testConstructor_charArray_char_62e67d4a",
+  "test_path": "org/apache/commons/text/StrTokenizerTest_testConstructor_charArray",
+  "test_name": "char",
+  "body": "@Test\n    void testConstructor_charArray_char() {\n        StrTokenizer tok = new StrTokenizer(\"a b\".toCharArray(), ' ');\n        assertEquals(1, tok.getDelimiterMatcher().isMatch(\" \".toCharArray(), 0, 0, 1));\n        assertEquals(\"a\", tok.next());\n        assertEquals(\"b\", tok.next());\n        assertFalse(tok.hasNext());\n\n        tok = new StrTokenizer(ArrayUtils.EMPTY_CHAR_ARRAY, ' ');\n        assertFalse(tok.hasNext());\n\n        tok = new StrTokenizer((char[]) null, ' ');\n        assertFalse(tok.hasNext());\n    }",
+  "invocations": [
+    "next",
+    "StrTokenizer",
+    "StrTokenizer",
+    "hasNext",
+    "getDelimiterMatcher",
+    "isMatch"
+  ],
+  "signature": {
+    "org.apache.commons.text.StrTokenizer.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer(char[], char)": {
+      "params_len": 2,
+      "params": [
+        "char[]",
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer(char[])": {
+      "params_len": 1,
+      "params": [
+        "char[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrTokenizer.getDelimiterMatcher()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrMatcher$CharMatcher.isMatch(char[], int, int, int)": {
+      "params_len": 4,
+      "params": [
+        "char[]",
+        "int",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.StrTokenizer(char[], char)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.StrTokenizer(char[], char)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 353,
+      "class_name": "org.apache.commons.text.StrTokenizer",
+      "method_name": "StrTokenizer",
+      "signature": "org.apache.commons.text.StrTokenizer(char[], char)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

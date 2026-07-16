@@ -1,0 +1,89 @@
+{
+  "id": "6895",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.queue.CircularFifoQueueTest_testCollectionIterator_a47582df",
+  "test_path": "org/apache/commons/collections4/queue/CircularFifoQueueTest",
+  "test_name": "testCollectionIterator",
+  "body": "@Test\n    void testCollectionIterator() {\n        resetEmpty();\n        Iterator<E> it1 = getCollection().iterator();\n        assertFalse(it1.hasNext(), \"Iterator for empty Collection shouldn't have next.\");\n        final Iterator<E> finalIt1 = it1;\n        assertThrows(NoSuchElementException.class, () -> finalIt1.next(),\n                \"Iterator at end of Collection should throw NoSuchElementException when next is called.\");\n        // make sure nothing has changed after non-modification\n        verify();\n\n        resetFull();\n        it1 = getCollection().iterator();\n        for (final E element : getCollection()) {\n            assertTrue(it1.hasNext(), \"Iterator for full collection should haveNext\");\n            it1.next();\n        }\n        assertFalse(it1.hasNext(), \"Iterator should be finished\");\n\n        final ArrayList<E> list = new ArrayList<>();\n        it1 = getCollection().iterator();\n        for (int i = 0; i < getCollection().size(); i++) {\n            final E next = it1.next();\n            assertTrue(getCollection().contains(next),\n                    \"Collection should contain element returned by its iterator\");\n            list.add(next);\n        }\n        final Iterator<E> finalIt2 = it1;\n        assertThrows(NoSuchElementException.class, () -> finalIt2.next(),\n                \"iterator.next() should raise NoSuchElementException after it finishes\");\n        // make sure nothing has changed after non-modification\n        verify();\n    }",
+  "invocations": [
+    "next",
+    "hasNext",
+    "CircularFifoQueue",
+    "add",
+    "isEmpty",
+    "size",
+    "iterator"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.queue.CircularFifoQueue(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.queue.CircularFifoQueue.add(E)": {
+      "params_len": 1,
+      "params": [
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.queue.CircularFifoQueue.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.queue.CircularFifoQueue.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.queue.CircularFifoQueue.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.next()",
+    "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.hasNext()",
+    "org.apache.commons.collections4.queue.CircularFifoQueue.iterator()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.next()",
+    "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.hasNext()",
+    "org.apache.commons.collections4.queue.CircularFifoQueue.iterator()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 586,
+      "class_name": "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1",
+      "method_name": "next",
+      "signature": "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.next()"
+    },
+    {
+      "method_id": 587,
+      "class_name": "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1",
+      "method_name": "hasNext",
+      "signature": "org.apache.commons.collections4.queue.CircularFifoQueue$Anonymous1.hasNext()"
+    },
+    {
+      "method_id": 602,
+      "class_name": "org.apache.commons.collections4.queue.CircularFifoQueue",
+      "method_name": "iterator",
+      "signature": "org.apache.commons.collections4.queue.CircularFifoQueue.iterator()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

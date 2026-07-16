@@ -1,0 +1,37 @@
+{
+  "id": "2468",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.channels.FileChannelsTest_testContentEqualsSequenceInputStream_9e5ea302",
+  "test_path": "org/apache/commons/io/channels/FileChannelsTest",
+  "test_name": "testContentEqualsSequenceInputStream",
+  "body": "@ParameterizedTest\n    @ValueSource(ints = { 1, 2, 4, 8, 16, 1024, 4096, 8192 })",
+  "invocations": [
+    "contentEquals"
+  ],
+  "signature": {
+    "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.ReadableByteChannel, java.nio.channels.ReadableByteChannel, int)": {
+      "params_len": 3,
+      "params": [
+        "java.nio.channels.ReadableByteChannel",
+        "java.nio.channels.ReadableByteChannel",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.ReadableByteChannel, java.nio.channels.ReadableByteChannel, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.ReadableByteChannel, java.nio.channels.ReadableByteChannel, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 402,
+      "class_name": "org.apache.commons.io.channels.FileChannels",
+      "method_name": "contentEquals",
+      "signature": "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.ReadableByteChannel, java.nio.channels.ReadableByteChannel, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

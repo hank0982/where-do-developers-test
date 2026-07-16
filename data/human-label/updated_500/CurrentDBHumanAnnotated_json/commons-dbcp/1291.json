@@ -1,0 +1,35 @@
+{
+  "id": "1291",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestSharedPoolDataSource_testMultipleThreads1_3506eb0b",
+  "test_path": "org/apache/commons/dbcp2/datasources/TestSharedPoolDataSource",
+  "test_name": "testMultipleThreads1",
+  "body": "@Test\n    void testMultipleThreads1() throws Exception {\n        // Override wait time in order to allow for Thread.sleep(1) sometimes taking a lot longer on\n        // some JVMs, e.g. Windows.\n        final Duration defaultMaxWaitDuration = Duration.ofMillis(430);\n        ((SharedPoolDataSource) ds).setDefaultMaxWait(defaultMaxWaitDuration);\n        multipleThreads(Duration.ofMillis(1), false, false, defaultMaxWaitDuration);\n    }",
+  "invocations": [
+    "setDefaultMaxWait"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.setDefaultMaxWait(java.time.Duration)": {
+      "params_len": 1,
+      "params": [
+        "java.time.Duration"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.setDefaultMaxWait(java.time.Duration)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.setDefaultMaxWait(java.time.Duration)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 327,
+      "class_name": "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource",
+      "method_name": "setDefaultMaxWait",
+      "signature": "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.setDefaultMaxWait(java.time.Duration)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "5410",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.ListOrderedMapTest_testFailFastEntrySet_f93537fd",
+  "test_path": "org/apache/commons/collections4/map/ListOrderedMapTest",
+  "test_name": "testFailFastEntrySet",
+  "body": "@Test\n    void testFailFastEntrySet() {\n        if (!isRemoveSupported()) {\n            return;\n        }\n        if (!isFailFastExpected()) {\n            return;\n        }\n        resetFull();\n        Iterator<Map.Entry<K, V>> it = getMap().entrySet().iterator();\n        final Map.Entry<K, V> val = it.next();\n        getMap().remove(val.getKey());\n        final Iterator<Map.Entry<K, V>> finalIt0 = it;\n        assertThrows(ConcurrentModificationException.class, () -> finalIt0.next());\n\n        resetFull();\n        it = getMap().entrySet().iterator();\n        it.next();\n        getMap().clear();\n        final Iterator<Map.Entry<K, V>> finalIt1 = it;\n        assertThrows(ConcurrentModificationException.class, () -> finalIt1.next());\n    }",
+  "invocations": [
+    "NullComparator",
+    "compare",
+    "NullComparator",
+    "next",
+    "put",
+    "remove",
+    "keySet",
+    "entrySet",
+    "listOrderedMap",
+    "iterator",
+    "size",
+    "getKey"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.comparators.NullComparator(java.util.Comparator<? super E>, boolean)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Comparator<? super E>",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.comparators.NullComparator.compare(E, E)": {
+      "params_len": 2,
+      "params": [
+        "E",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.comparators.NullComparator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap$ListOrderedIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.remove(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.listOrderedMap(java.util.Map<K, V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<K",
+        "V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap$EntrySetView.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractMapDecorator.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.keyvalue.AbstractKeyValue.getKey()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.ListOrderedMap$ListOrderedIterator.next()",
+    "org.apache.commons.collections4.map.ListOrderedMap.remove(java.lang.Object)",
+    "org.apache.commons.collections4.map.ListOrderedMap.clear()",
+    "org.apache.commons.collections4.map.ListOrderedMap.entrySet()",
+    "org.apache.commons.collections4.map.ListOrderedMap$EntrySetView.iterator()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.ListOrderedMap$ListOrderedIterator.next()",
+    "org.apache.commons.collections4.map.ListOrderedMap.remove(java.lang.Object)",
+    "org.apache.commons.collections4.map.ListOrderedMap.clear()",
+    "org.apache.commons.collections4.map.ListOrderedMap.entrySet()",
+    "org.apache.commons.collections4.map.ListOrderedMap$EntrySetView.iterator()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1337,
+      "class_name": "org.apache.commons.collections4.map.ListOrderedMap$ListOrderedIterator",
+      "method_name": "next",
+      "signature": "org.apache.commons.collections4.map.ListOrderedMap$ListOrderedIterator.next()"
+    },
+    {
+      "method_id": 1370,
+      "class_name": "org.apache.commons.collections4.map.ListOrderedMap",
+      "method_name": "remove",
+      "signature": "org.apache.commons.collections4.map.ListOrderedMap.remove(java.lang.Object)"
+    },
+    {
+      "method_id": 1377,
+      "class_name": "org.apache.commons.collections4.map.ListOrderedMap",
+      "method_name": "clear",
+      "signature": "org.apache.commons.collections4.map.ListOrderedMap.clear()"
+    },
+    {
+      "method_id": 1384,
+      "class_name": "org.apache.commons.collections4.map.ListOrderedMap",
+      "method_name": "entrySet",
+      "signature": "org.apache.commons.collections4.map.ListOrderedMap.entrySet()"
+    },
+    {
+      "method_id": 1401,
+      "class_name": "org.apache.commons.collections4.map.ListOrderedMap$EntrySetView",
+      "method_name": "iterator",
+      "signature": "org.apache.commons.collections4.map.ListOrderedMap$EntrySetView.iterator()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

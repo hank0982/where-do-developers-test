@@ -1,0 +1,47 @@
+{
+  "id": "1",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_abs_negative_3bc88d30",
+  "test_path": "org/joda/money/TestBigMoney_test_abs",
+  "test_name": "negative",
+  "body": "@Test\n    void test_abs_negative() {\n        var test = BigMoney.parse(\"GBP -2.34\").abs();\n        assertThat(test).hasToString(\"GBP 2.34\");\n    }",
+  "invocations": [
+    "parse",
+    "abs",
+    "toString"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.BigMoney.abs()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.BigMoney.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.abs()"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.abs()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 205,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "abs",
+      "signature": "org.joda.money.BigMoney.abs()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

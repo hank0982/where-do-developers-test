@@ -1,0 +1,79 @@
+{
+  "id": "1172",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.renderer.xy.XYStepAreaRendererTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/chart/renderer/xy/XYStepAreaRendererTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        XYStepAreaRenderer r1 = new XYStepAreaRenderer();\n        XYStepAreaRenderer r2 = CloneUtils.clone(r1);\n        assertNotSame(r1, r2);\n        assertSame(r1.getClass(), r2.getClass());\n        assertEquals(r1, r2);\n    }",
+  "invocations": [
+    "AbstractXYItemRenderer",
+    "XYStepAreaRenderer",
+    "XYStepAreaRenderer",
+    "XYStepAreaRenderer",
+    "equals",
+    "AbstractRenderer",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYStepAreaRenderer(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYStepAreaRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYStepAreaRenderer(int, org.jfree.chart.labels.XYToolTipGenerator, org.jfree.chart.urls.XYURLGenerator)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "org.jfree.chart.labels.XYToolTipGenerator",
+        "org.jfree.chart.urls.XYURLGenerator"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYStepAreaRenderer.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.AbstractRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.renderer.xy.XYStepAreaRenderer.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.renderer.xy.XYStepAreaRenderer.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3597,
+      "class_name": "org.jfree.chart.renderer.xy.XYStepAreaRenderer",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.renderer.xy.XYStepAreaRenderer.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "2499",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.comparator.ExtensionFileComparatorTest_testCaseSensitivity_154ecc1e",
+  "test_path": "org/apache/commons/io/comparator/ExtensionFileComparatorTest",
+  "test_name": "testCaseSensitivity",
+  "body": "@Test\n    void testCaseSensitivity() {\n        final File file3 = new File(\"abc.FOO\");\n        final Comparator<File> sensitive = new ExtensionFileComparator(null); /* test null as well */\n        assertEquals(0, sensitive.compare(equalFile1, equalFile2), \"sensitive file1 & file2 = 0\");\n        assertTrue(sensitive.compare(equalFile1, file3) > 0, \"sensitive file1 & file3 > 0\");\n        assertTrue(sensitive.compare(equalFile1, lessFile) > 0, \"sensitive file1 & less  > 0\");\n\n        final Comparator<File> insensitive = ExtensionFileComparator.EXTENSION_INSENSITIVE_COMPARATOR;\n        assertEquals(0, insensitive.compare(equalFile1, equalFile2), \"insensitive file1 & file2 = 0\");\n        assertEquals(0, insensitive.compare(equalFile1, file3), \"insensitive file1 & file3 = 0\");\n        assertTrue(insensitive.compare(equalFile1, lessFile) > 0, \"insensitive file1 & file4 > 0\");\n        assertTrue(insensitive.compare(file3, lessFile) > 0, \"insensitive file3 & less  > 0\");\n    }",
+  "invocations": [
+    "compare",
+    "ExtensionFileComparator"
+  ],
+  "signature": {
+    "org.apache.commons.io.comparator.ExtensionFileComparator.compare(java.io.File, java.io.File)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.comparator.ExtensionFileComparator(org.apache.commons.io.IOCase)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.IOCase"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.comparator.ExtensionFileComparator.compare(java.io.File, java.io.File)",
+    "org.apache.commons.io.comparator.ExtensionFileComparator(org.apache.commons.io.IOCase)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.comparator.ExtensionFileComparator.compare(java.io.File, java.io.File)",
+    "org.apache.commons.io.comparator.ExtensionFileComparator(org.apache.commons.io.IOCase)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1372,
+      "class_name": "org.apache.commons.io.comparator.ExtensionFileComparator",
+      "method_name": "compare",
+      "signature": "org.apache.commons.io.comparator.ExtensionFileComparator.compare(java.io.File, java.io.File)"
+    },
+    {
+      "method_id": 1373,
+      "class_name": "org.apache.commons.io.comparator.ExtensionFileComparator",
+      "method_name": "ExtensionFileComparator",
+      "signature": "org.apache.commons.io.comparator.ExtensionFileComparator(org.apache.commons.io.IOCase)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

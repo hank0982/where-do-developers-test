@@ -1,0 +1,155 @@
+{
+  "id": "5079",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.LRUMapTest_testKeySetClearChangesMap_16edc112",
+  "test_path": "org/apache/commons/collections4/map/LRUMapTest",
+  "test_name": "testKeySetClearChangesMap",
+  "body": "@Test\n    void testKeySetClearChangesMap() {\n        if (!isRemoveSupported()) {\n            return;\n        }\n\n        // clear values, reflected in map\n        resetFull();\n        Set<K> keySet = getMap().keySet();\n        assertFalse(getMap().isEmpty());\n        assertFalse(keySet.isEmpty());\n        keySet.clear();\n        assertTrue(getMap().isEmpty());\n        assertTrue(keySet.isEmpty());\n\n        // clear map, reflected in values\n        resetFull();\n        keySet = getMap().keySet();\n        assertFalse(getMap().isEmpty());\n        assertFalse(keySet.isEmpty());\n        getMap().clear();\n        assertTrue(getMap().isEmpty());\n        assertTrue(keySet.isEmpty());\n    }",
+  "invocations": [
+    "NullComparator",
+    "compare",
+    "NullComparator",
+    "LRUMap",
+    "LRUMap",
+    "LRUMap",
+    "AbstractLinkedMap",
+    "clear",
+    "size",
+    "AbstractHashedMap",
+    "put",
+    "keySet",
+    "isEmpty",
+    "entrySet",
+    "clear",
+    "size"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.comparators.NullComparator(java.util.Comparator<? super E>, boolean)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Comparator<? super E>",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.comparators.NullComparator.compare(E, E)": {
+      "params_len": 2,
+      "params": [
+        "E",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.comparators.NullComparator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.LRUMap(int, int, float, boolean)": {
+      "params_len": 4,
+      "params": [
+        "int",
+        "int",
+        "float",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.LRUMap(int, float, boolean)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "float",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.LRUMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractLinkedMap(int, float)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "float"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractLinkedMap.clear()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "float"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.clear()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.AbstractLinkedMap.clear()",
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.clear()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.AbstractLinkedMap.clear()",
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.clear()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 957,
+      "class_name": "org.apache.commons.collections4.map.AbstractLinkedMap",
+      "method_name": "clear",
+      "signature": "org.apache.commons.collections4.map.AbstractLinkedMap.clear()"
+    },
+    {
+      "method_id": 1064,
+      "class_name": "org.apache.commons.collections4.map.AbstractHashedMap$KeySet",
+      "method_name": "clear",
+      "signature": "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.clear()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

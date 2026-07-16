@@ -1,0 +1,209 @@
+{
+  "id": "2353",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.world.ConstraintGraphTest_multiCollision_fdf861f9",
+  "test_path": "org/dyn4j/world/ConstraintGraphTest",
+  "test_name": "multiCollision",
+  "body": "@Test\n\tpublic void multiCollision() {\n\t\tConstraintGraph<Body> g = new ConstraintGraph<Body>();\n\t\t\n\t\tBody b1 = new TestBody();\n\t\tBody b2 = new TestBody();\n\t\tBody b3 = new TestBody();\n\t\tBody b4 = new TestBody();\n\t\t\n\t\tBodyFixture f1 = b1.addFixture(Geometry.createRectangle(15.0, 1.0));\n\t\tb1.setMass(MassType.NORMAL);\n\t\t\n\t\tBodyFixture f2 = b2.addFixture(Geometry.createSquare(1.0));\n\t\tConvex c = Geometry.createSquare(1.0);\n\t\tc.translate(-0.5, 0.0);\n\t\tBodyFixture f3 = b2.addFixture(c);\n\t\tb2.setMass(MassType.NORMAL);\n\t\tb2.translate(0.0, 0.75);\n\t\t\n\t\tBodyFixture f4 = b3.addFixture(Geometry.createCircle(1.0));\n\t\tb3.setMass(MassType.NORMAL);\n\t\t\n\t\tBodyFixture f5 = b4.addFixture(Geometry.createCircle(0.5));\n\t\tb4.setMass(MassType.NORMAL);\n\t\t\n\t\tg.addBody(b1);\n\t\tg.addBody(b2);\n\t\tg.addBody(b3);\n\t\tg.addBody(b4);\n\t\t\n\t\tContactConstraint<Body> cc1 = new ContactConstraint<Body>(new BasicCollisionPair<CollisionItem<Body, BodyFixture>>(\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b1, f1),\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b2, f2)));\n\t\tContactConstraint<Body> cc2 = new ContactConstraint<Body>(new BasicCollisionPair<CollisionItem<Body, BodyFixture>>(\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b1, f1),\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b2, f3)));\n\t\tContactConstraint<Body> cc3 = new ContactConstraint<Body>(new BasicCollisionPair<CollisionItem<Body, BodyFixture>>(\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b1, f1),\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b3, f4)));\n\t\tContactConstraint<Body> cc4 = new ContactConstraint<Body>(new BasicCollisionPair<CollisionItem<Body, BodyFixture>>(\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b3, f4),\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b4, f5)));\n\t\tContactConstraint<Body> cc5 = new ContactConstraint<Body>(new BasicCollisionPair<CollisionItem<Body, BodyFixture>>(\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b2, f2),\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b3, f4)));\n\t\tContactConstraint<Body> cc6 = new ContactConstraint<Body>(new BasicCollisionPair<CollisionItem<Body, BodyFixture>>(\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b2, f2),\n\t\t\t\tnew BasicCollisionItem<Body, BodyFixture>(b4, f5)));\n\t\t\n\t\tg.addContactConstraint(cc1);\n\t\tg.addContactConstraint(cc2);\n\t\tg.addContactConstraint(cc3);\n\t\tg.addContactConstraint(cc4);\n\t\tg.addContactConstraint(cc5);\n\t\tg.addContactConstraint(cc6);\n\t\t\n\t\tSettings settings = new Settings();\n\t\tTimeStep step = new TimeStep(settings.getStepFrequency());\n\t\tVector2 gravity = new Vector2();\n\t\tContactConstraintSolver<Body> solver = new SequentialImpulses<Body>();\n\t\t\n\t\tg.solve(solver, gravity, step, settings);\n\t}",
+  "invocations": [
+    "AbstractPhysicsBody",
+    "setMass",
+    "addFixture",
+    "AbstractPhysicsBody",
+    "ContactConstraint",
+    "Settings",
+    "getStepFrequency",
+    "Body",
+    "TimeStep",
+    "translate",
+    "AbstractCollisionBody",
+    "BasicCollisionPair",
+    "BasicCollisionItem",
+    "translate",
+    "Vector2",
+    "createRectangle",
+    "createCircle",
+    "createSquare",
+    "addContactConstraint",
+    "solve",
+    "ConstraintGraph",
+    "ConstraintGraph",
+    "addBody"
+  ],
+  "signature": {
+    "org.dyn4j.dynamics.AbstractPhysicsBody()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.AbstractPhysicsBody.setMass(org.dyn4j.geometry.MassType)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.MassType"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.AbstractPhysicsBody.addFixture(org.dyn4j.geometry.Convex)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.Convex"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.AbstractPhysicsBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.contact.ContactConstraint(org.dyn4j.collision.CollisionPair<org.dyn4j.collision.CollisionItem<T, org.dyn4j.dynamics.BodyFixture>>)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.collision.CollisionPair<org.dyn4j.collision.CollisionItem<T",
+        "org.dyn4j.dynamics.BodyFixture>>"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.Settings()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.Settings.getStepFrequency()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.Body()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.TimeStep(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody.translate(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.BasicCollisionPair(T, T)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.BasicCollisionItem(T, E)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Polygon.translate(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Vector2()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createRectangle(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createCircle(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createSquare(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.ConstraintGraph.addContactConstraint(org.dyn4j.dynamics.contact.ContactConstraint<T>)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.dynamics.contact.ContactConstraint<T>"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.ConstraintGraph.solve(org.dyn4j.dynamics.contact.ContactConstraintSolver<T>, org.dyn4j.geometry.Vector2, org.dyn4j.dynamics.TimeStep, org.dyn4j.dynamics.Settings)": {
+      "params_len": 4,
+      "params": [
+        "org.dyn4j.dynamics.contact.ContactConstraintSolver<T>",
+        "org.dyn4j.geometry.Vector2",
+        "org.dyn4j.dynamics.TimeStep",
+        "org.dyn4j.dynamics.Settings"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.ConstraintGraph(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.ConstraintGraph()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.ConstraintGraph.addBody(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.world.ConstraintGraph.solve(org.dyn4j.dynamics.contact.ContactConstraintSolver<T>, org.dyn4j.geometry.Vector2, org.dyn4j.dynamics.TimeStep, org.dyn4j.dynamics.Settings)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.world.ConstraintGraph.solve(org.dyn4j.dynamics.contact.ContactConstraintSolver<T>, org.dyn4j.geometry.Vector2, org.dyn4j.dynamics.TimeStep, org.dyn4j.dynamics.Settings)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2942,
+      "class_name": "org.dyn4j.world.ConstraintGraph",
+      "method_name": "solve",
+      "signature": "org.dyn4j.world.ConstraintGraph.solve(org.dyn4j.dynamics.contact.ContactConstraintSolver<T>, org.dyn4j.geometry.Vector2, org.dyn4j.dynamics.TimeStep, org.dyn4j.dynamics.Settings)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "148",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.json.ArgumentTest_getArguments_ReturnsArguments_36743bb3",
+  "test_path": "net/masterthought/cucumber/json/ArgumentTest_getArguments",
+  "test_name": "ReturnsArguments",
+  "body": "@Test\n    void getArguments_ReturnsArguments() {\n\n        // given\n        Argument matchArgument = features.get(0).getElements()[1].getSteps()[0].getMatch().getArguments()[0];\n\n        // when\n        int offset = matchArgument.getOffset();\n\n        // then\n        assertThat(offset).isEqualTo(23);\n    }",
+  "invocations": [
+    "getMatch",
+    "getOffset",
+    "getSteps",
+    "getElements",
+    "getArguments"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.json.Step.getMatch()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.support.Argument.getOffset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.Element.getSteps()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.Feature.getElements()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.Match.getArguments()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.json.support.Argument.getOffset()"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.json.support.Argument.getOffset()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 141,
+      "class_name": "net.masterthought.cucumber.json.support.Argument",
+      "method_name": "getOffset",
+      "signature": "net.masterthought.cucumber.json.support.Argument.getOffset()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "3268",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testFindFirst_d7ea8fc6",
+  "test_path": "org/apache/commons/io/function/IOStreamTest",
+  "test_name": "testFindFirst",
+  "body": "@SuppressWarnings(\"resource\") // custom stream not recognized by compiler warning machinery\n    @Test\n    void testFindFirst() throws IOException {\n        // compile vs type\n        assertThrows(IOException.class, () -> IOStream.of(\"A\").filter(TestConstants.THROWING_IO_PREDICATE).findFirst());\n        // compile vs inline lambda\n        assertThrows(IOException.class, () -> IOStream.of(\"A\").filter(e -> {\n            throw new IOException(\"Failure\");\n        }).findAny());\n\n        assertTrue(IOStream.of(\"A\", \"B\").filter(IOPredicate.alwaysTrue()).findFirst().isPresent());\n        assertFalse(IOStream.of(\"A\", \"B\").filter(IOPredicate.alwaysFalse()).findFirst().isPresent());\n    }",
+  "invocations": [
+    "of",
+    "findFirst",
+    "filter"
+  ],
+  "signature": {
+    "org.apache.commons.io.function.IOStream.of(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.function.IOStream.findFirst()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.function.IOStream.filter(org.apache.commons.io.function.IOPredicate<? super T>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.function.IOPredicate<? super T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.function.IOStream.findFirst()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.function.IOStream.findFirst()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2768,
+      "class_name": "org.apache.commons.io.function.IOStream",
+      "method_name": "findFirst",
+      "signature": "org.apache.commons.io.function.IOStream.findFirst()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "931",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.core.jdkmath.AccurateMathStrictComparisonTest_test1_b71466fb",
+  "test_path": "org/apache/commons/math4/legacy/core/jdkmath/AccurateMathStrictComparisonTest",
+  "test_name": "test1",
+  "body": "@Test\n    public void test1() throws Exception {\n        setupMethodCall(mathMethod, fastMethod, types, valueArrays);\n    }",
+  "invocations": [
+    "decrementExact"
+  ],
+  "signature": {
+    "org.apache.commons.math4.core.jdkmath.AccurateMath.decrementExact(long)": {
+      "params_len": 1,
+      "params": [
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.core.jdkmath.AccurateMath.decrementExact(long)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.core.jdkmath.AccurateMath.decrementExact(long)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 65,
+      "class_name": "org.apache.commons.math4.core.jdkmath.AccurateMath",
+      "method_name": "decrementExact",
+      "signature": "org.apache.commons.math4.core.jdkmath.AccurateMath.decrementExact(long)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

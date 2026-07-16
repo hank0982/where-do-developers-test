@@ -1,0 +1,92 @@
+{
+  "id": "200",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.axis.ExtendedCategoryAxisTest_testCloning2_59b115cb",
+  "test_path": "org/jfree/chart/axis/ExtendedCategoryAxisTest",
+  "test_name": "testCloning2",
+  "body": "@Test\n    public void testCloning2() throws CloneNotSupportedException {\n        ExtendedCategoryAxis a1 = new ExtendedCategoryAxis(\"Test\");\n        a1.setTickLabelFont(\"C1\", new Font(\"Dialog\", Font.PLAIN, 15));\n        a1.setTickLabelPaint(\"C1\", new GradientPaint(1.0f, 2.0f, Color.RED,\n                3.0f, 4.0f, Color.WHITE));\n        ExtendedCategoryAxis a2 = (ExtendedCategoryAxis) a1.clone();\n        assertNotSame(a1, a2);\n        assertSame(a1.getClass(), a2.getClass());\n        assertEquals(a1, a2);\n\n        // check that changing a tick label font in a1 doesn't change a2\n        a1.setTickLabelFont(\"C1\", null);\n        assertNotEquals(a1, a2);\n        a2.setTickLabelFont(\"C1\", null);\n        assertEquals(a1, a2);\n\n        // check that changing a tick label paint in a1 doesn't change a2\n        a1.setTickLabelPaint(\"C1\", Color.YELLOW);\n        assertNotEquals(a1, a2);\n        a2.setTickLabelPaint(\"C1\", Color.YELLOW);\n        assertEquals(a1, a2);\n\n        // check that changing a category label tooltip in a1 doesn't change a2\n        a1.addCategoryLabelToolTip(\"C1\", \"XYZ\");\n        assertNotEquals(a1, a2);\n        a2.addCategoryLabelToolTip(\"C1\", \"XYZ\");\n        assertEquals(a1, a2);\n    }",
+  "invocations": [
+    "setTickLabelFont",
+    "setTickLabelPaint",
+    "CategoryAxis",
+    "addCategoryLabelToolTip",
+    "Axis",
+    "clone",
+    "ExtendedCategoryAxis",
+    "equals"
+  ],
+  "signature": {
+    "org.jfree.chart.axis.CategoryAxis.setTickLabelFont(java.lang.Comparable, java.awt.Font)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.awt.Font"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.CategoryAxis.setTickLabelPaint(java.lang.Comparable, java.awt.Paint)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.CategoryAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.CategoryAxis.addCategoryLabelToolTip(java.lang.Comparable, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.Axis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.ExtendedCategoryAxis.clone()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.ExtendedCategoryAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.ExtendedCategoryAxis.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.axis.ExtendedCategoryAxis.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.axis.ExtendedCategoryAxis.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 8602,
+      "class_name": "org.jfree.chart.axis.ExtendedCategoryAxis",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.axis.ExtendedCategoryAxis.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

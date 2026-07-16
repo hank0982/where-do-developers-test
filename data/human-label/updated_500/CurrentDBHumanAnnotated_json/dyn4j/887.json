@@ -1,0 +1,35 @@
+{
+  "id": "887",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.dynamics.SettingsTest_setNullContinuousDetectionMode_5b4703b0",
+  "test_path": "org/dyn4j/dynamics/SettingsTest",
+  "test_name": "setNullContinuousDetectionMode",
+  "body": "@Test(expected = NullPointerException.class)\n\tpublic void setNullContinuousDetectionMode() {\n\t\tsettings.setContinuousDetectionMode(null);\n\t}",
+  "invocations": [
+    "setContinuousDetectionMode"
+  ],
+  "signature": {
+    "org.dyn4j.dynamics.Settings.setContinuousDetectionMode(org.dyn4j.dynamics.ContinuousDetectionMode)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.dynamics.ContinuousDetectionMode"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.dynamics.Settings.setContinuousDetectionMode(org.dyn4j.dynamics.ContinuousDetectionMode)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.dynamics.Settings.setContinuousDetectionMode(org.dyn4j.dynamics.ContinuousDetectionMode)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 201,
+      "class_name": "org.dyn4j.dynamics.Settings",
+      "method_name": "setContinuousDetectionMode",
+      "signature": "org.dyn4j.dynamics.Settings.setContinuousDetectionMode(org.dyn4j.dynamics.ContinuousDetectionMode)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

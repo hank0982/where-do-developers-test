@@ -1,0 +1,68 @@
+{
+  "id": "1825",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.TaggedIOExceptionTest_testTaggedIOException_74e80cac",
+  "test_path": "org/apache/commons/io/TaggedIOExceptionTest",
+  "test_name": "testTaggedIOException",
+  "body": "@Test\n    void testTaggedIOException() {\n        final Serializable tag = UUID.randomUUID();\n        final IOException exception = new IOException(\"Test exception\");\n        final TaggedIOException tagged = new TaggedIOException(exception, tag);\n        assertTrue(TaggedIOException.isTaggedWith(tagged, tag));\n        assertFalse(TaggedIOException.isTaggedWith(tagged, UUID.randomUUID()));\n        assertEquals(exception, tagged.getCause());\n        assertEquals(exception.getMessage(), tagged.getMessage());\n    }",
+  "invocations": [
+    "isTaggedWith",
+    "getCause",
+    "TaggedIOException",
+    "IOExceptionWithCause"
+  ],
+  "signature": {
+    "org.apache.commons.io.TaggedIOException.isTaggedWith(java.lang.Throwable, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Throwable",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.TaggedIOException.getCause()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.TaggedIOException(java.io.IOException, java.io.Serializable)": {
+      "params_len": 2,
+      "params": [
+        "java.io.IOException",
+        "java.io.Serializable"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.IOExceptionWithCause(java.lang.String, java.lang.Throwable)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Throwable"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.TaggedIOException.isTaggedWith(java.lang.Throwable, java.lang.Object)",
+    "org.apache.commons.io.TaggedIOException(java.io.IOException, java.io.Serializable)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.TaggedIOException.isTaggedWith(java.lang.Throwable, java.lang.Object)",
+    "org.apache.commons.io.TaggedIOException(java.io.IOException, java.io.Serializable)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 577,
+      "class_name": "org.apache.commons.io.TaggedIOException",
+      "method_name": "isTaggedWith",
+      "signature": "org.apache.commons.io.TaggedIOException.isTaggedWith(java.lang.Throwable, java.lang.Object)"
+    },
+    {
+      "method_id": 580,
+      "class_name": "org.apache.commons.io.TaggedIOException",
+      "method_name": "TaggedIOException",
+      "signature": "org.apache.commons.io.TaggedIOException(java.io.IOException, java.io.Serializable)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

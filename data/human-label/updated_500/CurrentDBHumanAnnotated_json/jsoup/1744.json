@@ -1,0 +1,52 @@
+{
+  "id": "1744",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.select.TraversorTest_filterSkipEntirely_73aeead6",
+  "test_path": "org/jsoup/select/TraversorTest",
+  "test_name": "filterSkipEntirely",
+  "body": "@Test\n    public void filterSkipEntirely() {\n        Document doc = Jsoup.parse(\"<div><p>Hello</p></div><div>There</div>\");\n        final StringBuilder accum = new StringBuilder();\n        NodeTraversor.filter(new NodeFilter() {\n            @Override\n            public FilterResult head(Node node, int depth) {\n                // OMIT p:\n                if (\"p\".equals(node.nodeName()))\n                    return FilterResult.SKIP_ENTIRELY;\n                accum.append(\"<\").append(node.nodeName()).append(\">\");\n                return FilterResult.CONTINUE;\n            }\n\n            @Override\n            public FilterResult tail(Node node, int depth) {\n                accum.append(\"</\").append(node.nodeName()).append(\">\");\n                return FilterResult.CONTINUE;\n            }\n        }, doc.select(\"div\"));\n        assertEquals(\"<div></div><div><#text></#text></div>\", accum.toString());\n    }",
+  "invocations": [
+    "parse",
+    "select",
+    "filter"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.select(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.select.NodeTraversor.filter(org.jsoup.select.NodeFilter, org.jsoup.select.Elements)": {
+      "params_len": 2,
+      "params": [
+        "org.jsoup.select.NodeFilter",
+        "org.jsoup.select.Elements"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.select.NodeTraversor.filter(org.jsoup.select.NodeFilter, org.jsoup.select.Elements)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.select.NodeTraversor.filter(org.jsoup.select.NodeFilter, org.jsoup.select.Elements)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1996,
+      "class_name": "org.jsoup.select.NodeTraversor",
+      "method_name": "filter",
+      "signature": "org.jsoup.select.NodeTraversor.filter(org.jsoup.select.NodeFilter, org.jsoup.select.Elements)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

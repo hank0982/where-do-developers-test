@@ -1,0 +1,51 @@
+{
+  "id": "5685",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.ProxyCollectionWriterTest_testArrayIOExceptionOnWriteInt2_2990a862",
+  "test_path": "org/apache/commons/io/output/ProxyCollectionWriterTest",
+  "test_name": "testArrayIOExceptionOnWriteInt2",
+  "body": "@Test\n    void testArrayIOExceptionOnWriteInt2() throws IOException {\n        final Writer badW = BrokenWriter.INSTANCE;\n        final StringWriter goodW = mock(StringWriter.class);\n        @SuppressWarnings(\"resource\") // not necessary to close this\n        final ProxyCollectionWriter tw = new ProxyCollectionWriter(goodW, badW, null);\n        try {\n            tw.write(32);\n            fail(\"Expected \" + IOException.class.getName());\n        } catch (final IOExceptionList e) {\n            verify(goodW).write(32);\n            assertEquals(1, e.getCauseList().size());\n            assertEquals(1, e.getCause(0, IOIndexedException.class).getIndex());\n\n        }\n    }",
+  "invocations": [
+    "FilterCollectionWriter",
+    "write",
+    "ProxyCollectionWriter"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.FilterCollectionWriter(java.io.Writer[])": {
+      "params_len": 1,
+      "params": [
+        "java.io.Writer[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ProxyCollectionWriter.write(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ProxyCollectionWriter(java.io.Writer[])": {
+      "params_len": 1,
+      "params": [
+        "java.io.Writer[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.ProxyCollectionWriter.write(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.ProxyCollectionWriter.write(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 607,
+      "class_name": "org.apache.commons.io.output.ProxyCollectionWriter",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.ProxyCollectionWriter.write(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

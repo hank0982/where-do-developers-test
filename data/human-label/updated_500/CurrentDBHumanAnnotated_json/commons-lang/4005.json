@@ -1,0 +1,44 @@
+{
+  "id": "4005",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.RangeTest_testIsBeforeRange_ad057283",
+  "test_path": "org/apache/commons/lang3/RangeTest",
+  "test_name": "testIsBeforeRange",
+  "body": "@Test\n    void testIsBeforeRange() {\n        assertFalse(intRange.isBeforeRange(null));\n\n        assertFalse(intRange.isBeforeRange(Range.between(5, 9)));\n\n        assertFalse(intRange.isBeforeRange(Range.between(5, 10)));\n        assertFalse(intRange.isBeforeRange(Range.between(5, 20)));\n        assertFalse(intRange.isBeforeRange(Range.between(5, 25)));\n        assertFalse(intRange.isBeforeRange(Range.between(15, 25)));\n\n        assertTrue(intRange.isBeforeRange(Range.between(21, 25)));\n\n        assertFalse(intRange.isBeforeRange(Range.between(10, 20)));\n    }",
+  "invocations": [
+    "between",
+    "isBeforeRange"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.Range.between(T, T)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.Range.isBeforeRange(org.apache.commons.lang3.Range<T>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.lang3.Range<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.Range.isBeforeRange(org.apache.commons.lang3.Range<T>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.Range.isBeforeRange(org.apache.commons.lang3.Range<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1553,
+      "class_name": "org.apache.commons.lang3.Range",
+      "method_name": "isBeforeRange",
+      "signature": "org.apache.commons.lang3.Range.isBeforeRange(org.apache.commons.lang3.Range<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "466",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.ExposeFieldsTest_testNullExposeFieldSerialization_ec54683f",
+  "test_path": "com/google/gson/functional/ExposeFieldsTest",
+  "test_name": "testNullExposeFieldSerialization",
+  "body": "@Test\n  public void testNullExposeFieldSerialization() {\n    ClassWithExposedFields object = new ClassWithExposedFields(null, 1);\n    String json = gson.toJson(object);\n\n    assertThat(json).isEqualTo(object.getExpectedJson());\n  }",
+  "invocations": [
+    "toJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

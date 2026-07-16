@@ -1,0 +1,57 @@
+{
+  "id": "4358",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.NullInputStreamTest_testSkipThrowAtEof_3a008495",
+  "test_path": "org/apache/commons/io/input/NullInputStreamTest",
+  "test_name": "testSkipThrowAtEof",
+  "body": "@Test\n    void testSkipThrowAtEof() throws Exception {\n        try (InputStream input = new TestNullInputStream(10, true, true)) {\n            assertEquals(0, input.read(), \"Read 1\");\n            assertEquals(1, input.read(), \"Read 2\");\n            assertEquals(5, input.skip(5), \"Skip 1\");\n            assertEquals(7, input.read(), \"Read 3\");\n            assertEquals(2, input.skip(5), \"Skip 2\"); // only 2 left to skip\n            // End of File\n            final IOException e1 = assertThrows(EOFException.class, () -> input.skip(5), \"Skip 3 (EOF)\");\n            assertTrue(StringUtils.isNotBlank(e1.getMessage()));\n\n            final IOException e2 = assertThrows(IOException.class, () -> input.skip(5), \"Expected IOException for skipping after end of file\");\n            assertTrue(StringUtils.isNotBlank(e2.getMessage()));\n        }\n    }",
+  "invocations": [
+    "skip",
+    "read",
+    "NullInputStream",
+    "AbstractInputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.NullInputStream.skip(long)": {
+      "params_len": 1,
+      "params": [
+        "long"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.NullInputStream.read()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.NullInputStream(long, boolean, boolean)": {
+      "params_len": 3,
+      "params": [
+        "long",
+        "boolean",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.AbstractInputStream()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.NullInputStream.skip(long)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.NullInputStream.skip(long)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1700,
+      "class_name": "org.apache.commons.io.input.NullInputStream",
+      "method_name": "skip",
+      "signature": "org.apache.commons.io.input.NullInputStream.skip(long)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

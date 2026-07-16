@@ -1,0 +1,57 @@
+{
+  "id": "58662",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastTimeZoneTest_testUTC_b90cc433",
+  "test_path": "org/apache/commons/lang3/time/FastTimeZoneTest",
+  "test_name": "testUTC",
+  "body": "@Test\n    void testUTC() {\n        assertEquals(FastTimeZone.getGmtTimeZone(), FastTimeZone.getTimeZone(\"UTC\"));\n    }",
+  "invocations": [
+    "getTimeZone",
+    "getGmtTimeZone",
+    "equals"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastTimeZone.getTimeZone(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastTimeZone.getGmtTimeZone()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.GmtTimeZone.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastTimeZone.getTimeZone(java.lang.String)",
+    "org.apache.commons.lang3.time.FastTimeZone.getGmtTimeZone()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastTimeZone.getTimeZone(java.lang.String)",
+    "org.apache.commons.lang3.time.FastTimeZone.getGmtTimeZone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2720,
+      "class_name": "org.apache.commons.lang3.time.FastTimeZone",
+      "method_name": "getTimeZone",
+      "signature": "org.apache.commons.lang3.time.FastTimeZone.getTimeZone(java.lang.String)"
+    },
+    {
+      "method_id": 2721,
+      "class_name": "org.apache.commons.lang3.time.FastTimeZone",
+      "method_name": "getGmtTimeZone",
+      "signature": "org.apache.commons.lang3.time.FastTimeZone.getGmtTimeZone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

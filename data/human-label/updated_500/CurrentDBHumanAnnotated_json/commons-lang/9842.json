@@ -1,0 +1,46 @@
+{
+  "id": "9842",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testDayNumberOfWeek_296b9b5f",
+  "test_path": "org/apache/commons/lang3/time/FastDateParserTest",
+  "test_name": "testDayNumberOfWeek",
+  "body": "@Test\n    void testDayNumberOfWeek() throws ParseException {\n        final DateParser parser = getInstance(\"u\");\n        final Calendar calendar = Calendar.getInstance();\n\n        calendar.setTime(parser.parse(\"1\"));\n        assertEquals(Calendar.MONDAY, calendar.get(Calendar.DAY_OF_WEEK));\n\n        calendar.setTime(parser.parse(\"6\"));\n        assertEquals(Calendar.SATURDAY, calendar.get(Calendar.DAY_OF_WEEK));\n\n        calendar.setTime(parser.parse(\"7\"));\n        assertEquals(Calendar.SUNDAY, calendar.get(Calendar.DAY_OF_WEEK));\n    }",
+  "invocations": [
+    "parse",
+    "FastDateParser"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2598,
+      "class_name": "org.apache.commons.lang3.time.FastDateParser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "8882",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.CalendarUtilsTest_testToZonedDateTime_6eaa4404",
+  "test_path": "org/apache/commons/lang3/time/CalendarUtilsTest",
+  "test_name": "testToZonedDateTime",
+  "body": "@ParameterizedTest\n    @MethodSource(TimeZonesTest.TIME_ZONE_GET_AVAILABLE_IDS)\n    void testToZonedDateTime(final String timeZoneId) {\n        final TimeZone timeZone = TimeZones.getTimeZone(timeZoneId);\n        final ZoneId zoneId = timeZone.toZoneId();\n        final Calendar calendar = new GregorianCalendar(timeZone);\n        calendar.setTimeInMillis(0);\n        assertEquals(ZonedDateTime.ofInstant(calendar.toInstant(), calendar.getTimeZone().toZoneId()), new CalendarUtils(calendar).toZonedDateTime());\n        final ZonedDateTime zdt1 = ZonedDateTime.of(1, 2, 3, 4, 5, 6, 0, zoneId);\n        calendar.setTimeInMillis(zdt1.toInstant().toEpochMilli());\n        assertEquals(ZonedDateTime.ofInstant(zdt1.toInstant(), calendar.getTimeZone().toZoneId()), new CalendarUtils(calendar).toZonedDateTime());\n    }",
+  "invocations": [
+    "getTimeZone",
+    "CalendarUtils",
+    "CalendarUtils",
+    "toZonedDateTime"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.TimeZones.getTimeZone(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils(java.util.Calendar, java.util.Locale)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Calendar",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils.toZonedDateTime()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.CalendarUtils.toZonedDateTime()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.CalendarUtils.toZonedDateTime()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2712,
+      "class_name": "org.apache.commons.lang3.time.CalendarUtils",
+      "method_name": "toZonedDateTime",
+      "signature": "org.apache.commons.lang3.time.CalendarUtils.toZonedDateTime()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

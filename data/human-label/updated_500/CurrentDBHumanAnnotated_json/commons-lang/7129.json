@@ -1,0 +1,67 @@
+{
+  "id": "7129",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderTest_testLang295_7ea79eaf",
+  "test_path": "org/apache/commons/lang3/text/StrBuilderTest",
+  "test_name": "testLang295",
+  "body": "@Test\n    void testLang295() {\n        final StrBuilder sb = new StrBuilder(\"onetwothree\");\n        sb.deleteFirst(\"three\");\n        assertFalse(sb.contains('h'), \"The contains(char) method is looking beyond the end of the string\");\n        assertEquals(-1, sb.indexOf('h'), \"The indexOf(char) method is looking beyond the end of the string\");\n    }",
+  "invocations": [
+    "contains",
+    "deleteFirst",
+    "StrBuilder",
+    "indexOf"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.text.StrBuilder.contains(char)": {
+      "params_len": 1,
+      "params": [
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.deleteFirst(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.indexOf(char)": {
+      "params_len": 1,
+      "params": [
+        "char"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.text.StrBuilder.contains(char)",
+    "org.apache.commons.lang3.text.StrBuilder.indexOf(char)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.text.StrBuilder.contains(char)",
+    "org.apache.commons.lang3.text.StrBuilder.indexOf(char)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 393,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "contains",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.contains(char)"
+    },
+    {
+      "method_id": 452,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "indexOf",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.indexOf(char)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

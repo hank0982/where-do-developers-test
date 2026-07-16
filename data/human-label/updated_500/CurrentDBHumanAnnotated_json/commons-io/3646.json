@@ -1,0 +1,41 @@
+{
+  "id": "3646",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.BufferedFileChannelInputStreamTest_testNegativeBytesSkippedAfterRead_5ff729a7",
+  "test_path": "org/apache/commons/io/input/BufferedFileChannelInputStreamTest",
+  "test_name": "testNegativeBytesSkippedAfterRead",
+  "body": "@Test\n    void testNegativeBytesSkippedAfterRead() throws IOException {\n        for (final InputStream inputStream : inputStreams) {\n            for (int i = 0; i < 1024; i++) {\n                assertEquals(ExpectedBytes[i], (byte) inputStream.read());\n            }\n            // Skipping negative bytes should essential be a no-op\n            assertEquals(0, inputStream.skip(-1));\n            assertEquals(0, inputStream.skip(-1024));\n            assertEquals(0, inputStream.skip(Long.MIN_VALUE));\n            assertEquals(1024, inputStream.skip(1024));\n            for (int i = 2048; i < ExpectedBytes.length; i++) {\n                assertEquals(ExpectedBytes[i], (byte) inputStream.read());\n            }\n        }\n    }",
+  "invocations": [
+    "read",
+    "skip"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.BufferedFileChannelInputStream.read()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BufferedFileChannelInputStream.skip(long)": {
+      "params_len": 1,
+      "params": [
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.BufferedFileChannelInputStream.skip(long)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.BufferedFileChannelInputStream.skip(long)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1993,
+      "class_name": "org.apache.commons.io.input.BufferedFileChannelInputStream",
+      "method_name": "skip",
+      "signature": "org.apache.commons.io.input.BufferedFileChannelInputStream.skip(long)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

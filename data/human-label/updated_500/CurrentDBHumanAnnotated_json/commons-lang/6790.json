@@ -1,0 +1,35 @@
+{
+  "id": "6790",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_testTypeToString_82026a1a",
+  "test_path": "org/apache/commons/lang3/reflect/TypeUtilsTest",
+  "test_name": "testTypeToString",
+  "body": "static Stream<Type> testTypeToString() {\n        // @formatter:off\n        return Stream.of(Comparator.class, Comparable.class, ArrayList.class, HashMap.class)\n                .flatMap(cls -> Stream.of(cls.getDeclaredMethods()))\n                .flatMap(m ->\n                    Stream.concat(Stream.of(m.getGenericExceptionTypes()),\n                    Stream.concat(Stream.of(m.getGenericParameterTypes()),\n                    Stream.concat(Stream.of(m.getGenericReturnType()), Stream.of(m.getTypeParameters())))));\n        // @formatter:on\n    }",
+  "invocations": [
+    "toString"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.reflect.TypeUtils.toString(java.lang.reflect.Type)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.reflect.TypeUtils.toString(java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.reflect.TypeUtils.toString(java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4143,
+      "class_name": "org.apache.commons.lang3.reflect.TypeUtils",
+      "method_name": "toString",
+      "signature": "org.apache.commons.lang3.reflect.TypeUtils.toString(java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "2",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testAnt_b7ff77b6",
+  "test_path": "org/apache/commons/cli/ApplicationTest",
+  "test_name": "testAnt",
+  "body": "@Test\n    void testAnt() throws Exception {\n        // use the GNU parser\n        final CommandLineParser parser = new GnuParser();\n        final Options options = new Options();\n        options.addOption(\"help\", false, \"print this message\");\n        options.addOption(\"projecthelp\", false, \"print project help information\");\n        options.addOption(\"version\", false, \"print the version information and exit\");\n        options.addOption(\"quiet\", false, \"be extra quiet\");\n        options.addOption(\"verbose\", false, \"be extra verbose\");\n        options.addOption(\"debug\", false, \"print debug information\");\n        options.addOption(\"logfile\", true, \"use given file for log\");\n        options.addOption(\"logger\", true, \"the class which is to perform the logging\");\n        options.addOption(\"listener\", true, \"add an instance of a class as a project listener\");\n        options.addOption(\"buildfile\", true, \"use given buildfile\");\n        //@formatter:off\n        options.addOption(OptionBuilder.withDescription(\"use value for given property\")\n                                        .hasArgs()\n                                        .withValueSeparator()\n                                        .create('D'));\n                           //, null, true, , false, true);\n        //@formatter:on\n        options.addOption(\"find\", true, \"search for buildfile towards the root of the filesystem and use it\");\n\n        final String[] args = {\"-buildfile\", \"mybuild.xml\", \"-Dproperty=value\", \"-Dproperty1=value1\", \"-projecthelp\"};\n\n        final CommandLine line = parser.parse(options, args);\n\n        // check multiple values\n        final String[] opts = line.getOptionValues(\"D\");\n        assertEquals(\"property\", opts[0]);\n        assertEquals(\"value\", opts[1]);\n        assertEquals(\"property1\", opts[2]);\n        assertEquals(\"value1\", opts[3]);\n\n        // check single value\n        assertEquals(line.getOptionValue(\"buildfile\"), \"mybuild.xml\");\n\n        // check option\n        assertTrue(line.hasOption(\"projecthelp\"));\n    }",
+  "invocations": [
+    "GnuParser",
+    "addOption",
+    "Options",
+    "addOption",
+    "Parser",
+    "parse",
+    "withDescription",
+    "withValueSeparator",
+    "hasArgs",
+    "create",
+    "getOptionValue",
+    "getOptionValues",
+    "hasOption"
+  ],
+  "signature": {
+    "org.apache.commons.cli.GnuParser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options.addOption(org.apache.commons.cli.Option)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.cli.Option"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options.addOption(java.lang.String, boolean, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "boolean",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.cli.Options",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withDescription(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withValueSeparator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.hasArgs()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.create(char)": {
+      "params_len": 1,
+      "params": [
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.getOptionValue(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.getOptionValues(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.hasOption(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 282,
+      "class_name": "org.apache.commons.cli.Parser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

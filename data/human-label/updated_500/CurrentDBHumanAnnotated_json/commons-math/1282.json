@@ -1,0 +1,165 @@
+{
+  "id": "1282",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizerWithSVDTest_testCircleFittingGoodInit_825852aa",
+  "test_path": "org/apache/commons/math4/legacy/fitting/leastsquares/GaussNewtonOptimizerWithSVDTest",
+  "test_name": "testCircleFittingGoodInit",
+  "body": "@Test\n    public void testCircleFittingGoodInit() {\n        CircleVectorial circle = new CircleVectorial();\n        double[][] points = circlePoints;\n        double[] weights = new double[points.length];\n        Arrays.fill(weights, 2);\n        for (int i = 0; i < points.length; ++i) {\n            circle.addPoint(points[i][0], points[i][1]);\n        }\n        final double[] start = {0, 0};\n\n        Optimum optimum = optimizer.optimize(\n                builder(circle).weight(new DiagonalMatrix(weights)).start(start).build());\n\n        assertEquals(1e-6, optimum.getPoint(), -0.1517383071957963, 0.2074999736353867);\n        Assert.assertEquals(0.04268731682389561, optimum.getRMS(), 1e-8);\n    }",
+  "invocations": [
+    "maxEvaluations",
+    "weight",
+    "start",
+    "target",
+    "build",
+    "model",
+    "maxIterations",
+    "checkerPair",
+    "optimize",
+    "getPoint",
+    "getRMS",
+    "AbstractRealMatrix",
+    "getDimension",
+    "getEntry",
+    "DiagonalMatrix",
+    "DiagonalMatrix",
+    "AbstractConvergenceChecker",
+    "SimpleVectorValueChecker"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.maxEvaluations(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.weight(org.apache.commons.math4.legacy.linear.RealMatrix)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.linear.RealMatrix"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.start(double[])": {
+      "params_len": 1,
+      "params": [
+        "double[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.target(double[])": {
+      "params_len": 1,
+      "params": [
+        "double[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.build()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.model(org.apache.commons.math4.legacy.analysis.MultivariateVectorFunction, org.apache.commons.math4.legacy.analysis.MultivariateMatrixFunction)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.math4.legacy.analysis.MultivariateVectorFunction",
+        "org.apache.commons.math4.legacy.analysis.MultivariateMatrixFunction"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.maxIterations(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresBuilder.checkerPair(org.apache.commons.math4.legacy.optim.ConvergenceChecker<org.apache.commons.math4.legacy.optim.PointVectorValuePair>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.optim.ConvergenceChecker<org.apache.commons.math4.legacy.optim.PointVectorValuePair>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizer.optimize(org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresProblem)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresProblem"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.OptimumImpl.getPoint()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.fitting.leastsquares.OptimumImpl.getRMS()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.AbstractRealMatrix()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.ArrayRealVector.getDimension()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.ArrayRealVector.getEntry(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.DiagonalMatrix(double[])": {
+      "params_len": 1,
+      "params": [
+        "double[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.DiagonalMatrix(double[], boolean)": {
+      "params_len": 2,
+      "params": [
+        "double[]",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.AbstractConvergenceChecker(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.SimpleVectorValueChecker(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizer.optimize(org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresProblem)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizer.optimize(org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresProblem)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1077,
+      "class_name": "org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizer",
+      "method_name": "optimize",
+      "signature": "org.apache.commons.math4.legacy.fitting.leastsquares.GaussNewtonOptimizer.optimize(org.apache.commons.math4.legacy.fitting.leastsquares.LeastSquaresProblem)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

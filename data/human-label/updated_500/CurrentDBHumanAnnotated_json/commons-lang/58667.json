@@ -1,0 +1,43 @@
+{
+  "id": "58667",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.GmtTimeZoneTest_testGetRawOffset_2f74f518",
+  "test_path": "org/apache/commons/lang3/time/GmtTimeZoneTest",
+  "test_name": "testGetRawOffset",
+  "body": "@Test\n    void testGetRawOffset() {\n        assertEquals(0, new GmtTimeZone(false, 0, 0).getRawOffset());\n    }",
+  "invocations": [
+    "GmtTimeZone",
+    "getRawOffset"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.GmtTimeZone(boolean, int, int)": {
+      "params_len": 3,
+      "params": [
+        "boolean",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.GmtTimeZone.getRawOffset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.GmtTimeZone.getRawOffset()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.GmtTimeZone.getRawOffset()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2992,
+      "class_name": "org.apache.commons.lang3.time.GmtTimeZone",
+      "method_name": "getRawOffset",
+      "signature": "org.apache.commons.lang3.time.GmtTimeZone.getRawOffset()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "56",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.GsonTest_testOverridesDefaultExcluder_7a31aa8d",
+  "test_path": "com/google/gson/GsonTest",
+  "test_name": "testOverridesDefaultExcluder",
+  "body": "@Test\n  public void testOverridesDefaultExcluder() {\n    Gson gson = createGson();\n\n    assertThat(gson.excluder).isEqualTo(CUSTOM_EXCLUDER);\n    assertThat(gson.fieldNamingStrategy()).isEqualTo(CUSTOM_FIELD_NAMING_STRATEGY);\n    assertThat(gson.serializeNulls()).isTrue();\n    assertThat(gson.htmlSafe()).isFalse();\n  }",
+  "invocations": [
+    "htmlSafe",
+    "serializeNulls",
+    "fieldNamingStrategy",
+    "GsonBuilder",
+    "create",
+    "disableHtmlEscaping"
+  ],
+  "signature": {
+    "com.google.gson.Gson.htmlSafe()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.serializeNulls()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.fieldNamingStrategy()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder.create()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder.disableHtmlEscaping()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson(com.google.gson.GsonBuilder)",
+    "com.google.gson.GsonBuilder.create()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson(com.google.gson.GsonBuilder)",
+    "com.google.gson.GsonBuilder.create()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 786,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "Gson",
+      "signature": "com.google.gson.Gson(com.google.gson.GsonBuilder)"
+    },
+    {
+      "method_id": 868,
+      "class_name": "com.google.gson.GsonBuilder",
+      "method_name": "create",
+      "signature": "com.google.gson.GsonBuilder.create()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

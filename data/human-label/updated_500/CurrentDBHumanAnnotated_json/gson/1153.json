@@ -1,0 +1,43 @@
+{
+  "id": "1153",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.reflect.TypeTokenTest_testIsAssignableFromRawTypes_c8cbb5cc",
+  "test_path": "com/google/gson/reflect/TypeTokenTest",
+  "test_name": "testIsAssignableFromRawTypes",
+  "body": "@SuppressWarnings({\"deprecation\"})",
+  "invocations": [
+    "isAssignableFrom",
+    "get"
+  ],
+  "signature": {
+    "com.google.gson.reflect.TypeToken.isAssignableFrom(java.lang.Class<?>)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Class<?>"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken.get(java.lang.Class<T>)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.reflect.TypeToken.isAssignableFrom(java.lang.Class<?>)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.reflect.TypeToken.isAssignableFrom(java.lang.Class<?>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 955,
+      "class_name": "com.google.gson.reflect.TypeToken",
+      "method_name": "isAssignableFrom",
+      "signature": "com.google.gson.reflect.TypeToken.isAssignableFrom(java.lang.Class<?>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

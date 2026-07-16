@@ -1,0 +1,26 @@
+{
+  "id": "7003",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.queue.TransformedQueueTest_testCanonicalFullCollectionExists_b89ce32c",
+  "test_path": "org/apache/commons/collections4/queue/TransformedQueueTest",
+  "test_name": "testCanonicalFullCollectionExists",
+  "body": "@Test\n    public void testCanonicalFullCollectionExists() {\n        if (supportsFullCollections() && isTestSerialization() && !skipSerializedCanonicalTests()) {\n            final Object object = makeObject();\n            if (object instanceof Serializable) {\n                final String name = getCanonicalFullCollectionName(object);\n                assertTrue(\n                        new File(name).exists(),\n                        \"Canonical full collection (\" + name + \") is not in SCM\");\n            }\n        }\n    }",
+  "invocations": [
+    "transformingQueue"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.queue.TransformedQueue.transformingQueue(java.util.Queue<E>, org.apache.commons.collections4.Transformer<? super E, ? extends E>)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Queue<E>",
+        "org.apache.commons.collections4.Transformer<? super E",
+        "? extends E>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [],
+  "current_db_human_annotation": [],
+  "current_db_human_annotation_details": [],
+  "label_source": "reviewed_empty"
+}

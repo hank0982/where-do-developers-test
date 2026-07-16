@@ -1,0 +1,94 @@
+{
+  "id": "795",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.plot.pie.PiePlotTest_testBug1126_c_7ff9d8cb",
+  "test_path": "org/jfree/chart/plot/pie/PiePlotTest_testBug1126",
+  "test_name": "c",
+  "body": "@Test\n    public void testBug1126_c() throws CloneNotSupportedException {\n        DefaultPieDataset<String> dataset1 = new DefaultPieDataset<>();\n        PiePlot plot1 = new PiePlot(dataset1);\n        plot1.setSectionOutlineStroke(\"A\", new BasicStroke(5.0f));\n        plot1.setSectionOutlineStroke(\"B\", new BasicStroke(6.0f));\n        PiePlot plot2 = CloneUtils.clone(plot1);\n        plot2.setSectionOutlineStroke(\"A\", new BasicStroke(7.0f));\n        plot2.setSectionOutlineStroke(\"B\", new BasicStroke(8.0f));\n        assertEquals(new BasicStroke(5.0f), plot1.getSectionOutlineStroke(\"A\"));\n        assertEquals(new BasicStroke(6.0f), plot1.getSectionOutlineStroke(\"B\"));\n        assertEquals(new BasicStroke(7.0f), plot2.getSectionOutlineStroke(\"A\"));\n        assertEquals(new BasicStroke(8.0f), plot2.getSectionOutlineStroke(\"B\"));\n    }",
+  "invocations": [
+    "AbstractDataset",
+    "DefaultPieDataset",
+    "Plot",
+    "PiePlot",
+    "setSectionOutlineStroke",
+    "getSectionOutlineStroke",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.DefaultPieDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.Plot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.PiePlot(org.jfree.data.general.PieDataset<K>)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.general.PieDataset<K>"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke(K, java.awt.Stroke)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "java.awt.Stroke"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.PiePlot.getSectionOutlineStroke(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.plot.pie.PiePlot.clone()",
+    "org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke(K, java.awt.Stroke)",
+    "org.jfree.chart.plot.pie.PiePlot.getSectionOutlineStroke(K)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.plot.pie.PiePlot.clone()",
+    "org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke(K, java.awt.Stroke)",
+    "org.jfree.chart.plot.pie.PiePlot.getSectionOutlineStroke(K)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 6125,
+      "class_name": "org.jfree.chart.plot.pie.PiePlot",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.plot.pie.PiePlot.clone()"
+    },
+    {
+      "method_id": 6159,
+      "class_name": "org.jfree.chart.plot.pie.PiePlot",
+      "method_name": "setSectionOutlineStroke",
+      "signature": "org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke(K, java.awt.Stroke)"
+    },
+    {
+      "method_id": 6247,
+      "class_name": "org.jfree.chart.plot.pie.PiePlot",
+      "method_name": "getSectionOutlineStroke",
+      "signature": "org.jfree.chart.plot.pie.PiePlot.getSectionOutlineStroke(K)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

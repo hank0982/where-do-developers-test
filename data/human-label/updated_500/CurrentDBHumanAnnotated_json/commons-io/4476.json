@@ -1,0 +1,81 @@
+{
+  "id": "4476",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.RandomAccessFileInputStreamTest_testConstructorCloseOnCloseFalse_9e3f46bb",
+  "test_path": "org/apache/commons/io/input/RandomAccessFileInputStreamTest",
+  "test_name": "testConstructorCloseOnCloseFalse",
+  "body": "@SuppressWarnings(\"resource\") // instance variable access\n    @Test\n    void testConstructorCloseOnCloseFalse() throws IOException {\n        try (RandomAccessFile file = createRandomAccessFile()) {\n            try (RandomAccessFileInputStream inputStream = RandomAccessFileInputStream.builder()\n                    .setRandomAccessFile(createRandomAccessFile())\n                    .get()) {\n                assertFalse(inputStream.isCloseOnClose());\n                assertNotEquals(-1, inputStream.getRandomAccessFile().read());\n            }\n            file.read();\n        }\n    }",
+  "invocations": [
+    "isCloseOnClose",
+    "close",
+    "builder",
+    "getRandomAccessFile",
+    "setRandomAccessFile",
+    "get",
+    "create"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.RandomAccessFileInputStream.isCloseOnClose()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.RandomAccessFileInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.RandomAccessFileInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.RandomAccessFileInputStream.getRandomAccessFile()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.RandomAccessFileInputStream$Builder.setRandomAccessFile(java.io.RandomAccessFile)": {
+      "params_len": 1,
+      "params": [
+        "java.io.RandomAccessFile"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.RandomAccessFileInputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.RandomAccessFileMode.create(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.RandomAccessFileInputStream(org.apache.commons.io.input.RandomAccessFileInputStream.Builder)",
+    "org.apache.commons.io.input.RandomAccessFileInputStream.close()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.RandomAccessFileInputStream(org.apache.commons.io.input.RandomAccessFileInputStream.Builder)",
+    "org.apache.commons.io.input.RandomAccessFileInputStream.close()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2152,
+      "class_name": "org.apache.commons.io.input.RandomAccessFileInputStream",
+      "method_name": "RandomAccessFileInputStream",
+      "signature": "org.apache.commons.io.input.RandomAccessFileInputStream(org.apache.commons.io.input.RandomAccessFileInputStream.Builder)"
+    },
+    {
+      "method_id": 2154,
+      "class_name": "org.apache.commons.io.input.RandomAccessFileInputStream",
+      "method_name": "close",
+      "signature": "org.apache.commons.io.input.RandomAccessFileInputStream.close()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

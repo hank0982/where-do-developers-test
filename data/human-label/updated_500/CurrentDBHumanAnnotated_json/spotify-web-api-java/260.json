@@ -1,0 +1,33 @@
+{
+  "id": "260",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistCoverImageRequestTest_shouldReturnDefault_sync_fbd7583d",
+  "test_path": "se/michaelthelin/spotify/requests/data/playlists/GetPlaylistCoverImageRequestTest_shouldReturnDefault",
+  "test_name": "sync",
+  "body": "@Test\n  public void shouldReturnDefault_sync() throws IOException, SpotifyWebApiException, ParseException {\n    shouldReturnDefault(defaultRequest.execute());\n  }",
+  "invocations": [
+    "execute"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistCoverImageRequest.execute()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistCoverImageRequest.execute()"
+  ],
+  "current_db_human_annotation": [
+    "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistCoverImageRequest.execute()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1745,
+      "class_name": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistCoverImageRequest",
+      "method_name": "execute",
+      "signature": "se.michaelthelin.spotify.requests.data.playlists.GetPlaylistCoverImageRequest.execute()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

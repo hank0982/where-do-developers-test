@@ -1,0 +1,119 @@
+{
+  "id": "1058",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestCPDSConnectionFactory_testSharedPoolDSDestroyOnReturn_f60b1cc8",
+  "test_path": "org/apache/commons/dbcp2/datasources/TestCPDSConnectionFactory",
+  "test_name": "testSharedPoolDSDestroyOnReturn",
+  "body": "@Test\n    void testSharedPoolDSDestroyOnReturn() throws Exception {\n        try (final PerUserPoolDataSource ds = new PerUserPoolDataSource()) {\n            ds.setConnectionPoolDataSource(cpds);\n            ds.setPerUserMaxTotal(\"userName\", 10);\n            ds.setPerUserMaxWait(\"userName\", Duration.ofMillis(50));\n            ds.setPerUserMaxIdle(\"userName\", 2);\n            final Connection conn1 = ds.getConnection(\"userName\", \"password\");\n            final Connection conn2 = ds.getConnection(\"userName\", \"password\");\n            final Connection conn3 = ds.getConnection(\"userName\", \"password\");\n            assertEquals(3, ds.getNumActive(\"userName\"));\n            conn1.close();\n            assertEquals(1, ds.getNumIdle(\"userName\"));\n            conn2.close();\n            assertEquals(2, ds.getNumIdle(\"userName\"));\n            conn3.close(); // Return to pool will trigger destroy -> close sequence\n            assertEquals(2, ds.getNumIdle(\"userName\"));\n        }\n    }",
+  "invocations": [
+    "getNumActive",
+    "setPerUserMaxTotal",
+    "setPerUserMaxWait",
+    "setPerUserMaxIdle",
+    "close",
+    "PerUserPoolDataSource",
+    "getNumIdle",
+    "setConnectionPoolDataSource",
+    "getConnection",
+    "InstanceKeyDataSource",
+    "close"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.getNumActive(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.setPerUserMaxTotal(java.lang.String, java.lang.Integer)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Integer"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.setPerUserMaxWait(java.lang.String, java.time.Duration)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.time.Duration"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.setPerUserMaxIdle(java.lang.String, java.lang.Integer)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Integer"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.getNumIdle(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.setConnectionPoolDataSource(javax.sql.ConnectionPoolDataSource)": {
+      "params_len": 1,
+      "params": [
+        "javax.sql.ConnectionPoolDataSource"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(java.lang.String, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(java.lang.String, java.lang.String)",
+    "org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(java.lang.String, java.lang.String)",
+    "org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 298,
+      "class_name": "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource",
+      "method_name": "getConnection",
+      "signature": "org.apache.commons.dbcp2.datasources.InstanceKeyDataSource.getConnection(java.lang.String, java.lang.String)"
+    },
+    {
+      "method_id": 1170,
+      "class_name": "org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl",
+      "method_name": "close",
+      "signature": "org.apache.commons.dbcp2.cpdsadapter.ConnectionImpl.close()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

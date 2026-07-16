@@ -1,0 +1,74 @@
+{
+  "id": "1827",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.time.SecondTest_testDateConstructor1_c8829e38",
+  "test_path": "org/jfree/data/time/SecondTest",
+  "test_name": "testDateConstructor1",
+  "body": "@Test\n    public void testDateConstructor1() {\n        TimeZone zone = TimeZone.getTimeZone(\"GMT\");\n        Calendar cal = Calendar.getInstance(zone);\n        Locale locale = Locale.getDefault();  // locale shouldn't matter here\n        Second s1 = new Second(new Date(1016729758999L), zone, locale);\n        Second s2 = new Second(new Date(1016729759000L), zone, locale);\n\n        assertEquals(58, s1.getSecond());\n        assertEquals(1016729758999L, s1.getLastMillisecond(cal));\n\n        assertEquals(59, s2.getSecond());\n        assertEquals(1016729759000L, s2.getFirstMillisecond(cal));\n    }",
+  "invocations": [
+    "RegularTimePeriod",
+    "getFirstMillisecond",
+    "Second",
+    "getLastMillisecond",
+    "Second",
+    "getSecond"
+  ],
+  "signature": {
+    "org.jfree.data.time.RegularTimePeriod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Second.getFirstMillisecond(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Second(java.util.Date, java.util.TimeZone, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.util.Date",
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Second.getLastMillisecond(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Second(java.util.Date, java.util.Calendar)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Date",
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Second.getSecond()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.time.Second(java.util.Date, java.util.TimeZone, java.util.Locale)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.time.Second(java.util.Date, java.util.TimeZone, java.util.Locale)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1657,
+      "class_name": "org.jfree.data.time.Second",
+      "method_name": "Second",
+      "signature": "org.jfree.data.time.Second(java.util.Date, java.util.TimeZone, java.util.Locale)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

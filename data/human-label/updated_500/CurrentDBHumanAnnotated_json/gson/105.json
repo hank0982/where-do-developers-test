@@ -1,0 +1,61 @@
+{
+  "id": "105",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.JsonNullTest_testEqualsAndHashcode_c0614b86",
+  "test_path": "com/google/gson/JsonNullTest",
+  "test_name": "testEqualsAndHashcode",
+  "body": "@SuppressWarnings(\"deprecation\")\n  @Test\n  public void testEqualsAndHashcode() {\n    MoreAsserts.assertEqualsAndHashCode(new JsonNull(), new JsonNull());\n    MoreAsserts.assertEqualsAndHashCode(new JsonNull(), JsonNull.INSTANCE);\n    MoreAsserts.assertEqualsAndHashCode(JsonNull.INSTANCE, JsonNull.INSTANCE);\n  }",
+  "invocations": [
+    "JsonElement",
+    "hashCode",
+    "equals",
+    "JsonNull"
+  ],
+  "signature": {
+    "com.google.gson.JsonElement()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonNull.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonNull.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonNull()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.JsonNull.hashCode()",
+    "com.google.gson.JsonNull.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.JsonNull.hashCode()",
+    "com.google.gson.JsonNull.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 989,
+      "class_name": "com.google.gson.JsonNull",
+      "method_name": "hashCode",
+      "signature": "com.google.gson.JsonNull.hashCode()"
+    },
+    {
+      "method_id": 990,
+      "class_name": "com.google.gson.JsonNull",
+      "method_name": "equals",
+      "signature": "com.google.gson.JsonNull.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

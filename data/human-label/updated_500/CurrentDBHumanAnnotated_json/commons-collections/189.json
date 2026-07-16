@@ -1,0 +1,37 @@
+{
+  "id": "189",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.CollectionUtilsTest_testRemoveCountNegative_cc745fcf",
+  "test_path": "org/apache/commons/collections4/CollectionUtilsTest",
+  "test_name": "testRemoveCountNegative",
+  "body": "@Test\n    void testRemoveCountNegative() {\n        final Collection<Integer> list = new ArrayList<>();\n        assertThrows(IndexOutOfBoundsException.class, () -> CollectionUtils.removeCount(list, 0, -1));\n    }",
+  "invocations": [
+    "removeCount"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.CollectionUtils.removeCount(java.util.Collection<E>, int, int)": {
+      "params_len": 3,
+      "params": [
+        "java.util.Collection<E>",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.CollectionUtils.removeCount(java.util.Collection<E>, int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.CollectionUtils.removeCount(java.util.Collection<E>, int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2616,
+      "class_name": "org.apache.commons.collections4.CollectionUtils",
+      "method_name": "removeCount",
+      "signature": "org.apache.commons.collections4.CollectionUtils.removeCount(java.util.Collection<E>, int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

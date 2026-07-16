@@ -1,0 +1,75 @@
+{
+  "id": "59",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.ftp.FTPClientTest_testParsePassiveModeReplyForLocalAddressWithSimpleNatWorkaroundStrategy_57b2f9ca",
+  "test_path": "org/apache/commons/net/ftp/FTPClientTest",
+  "test_name": "testParsePassiveModeReplyForLocalAddressWithSimpleNatWorkaroundStrategy",
+  "body": "@Test\n    public void testParsePassiveModeReplyForLocalAddressWithSimpleNatWorkaroundStrategy() throws Exception {\n        final FTPClient client = new PassiveNatWorkAroundLocalClient(\"8.8.8.8\");\n        client.setPassiveNatWorkaroundStrategy(hostname -> \"4.4.4.4\");\n        client.setIpAddressFromPasvResponse(true);\n        client._parsePassiveModeReply(\"227 Entering Passive Mode (172,16,204,138,192,22).\");\n        assertEquals(\"4.4.4.4\", client.getPassiveHost());\n        client.setIpAddressFromPasvResponse(false);\n        client._parsePassiveModeReply(\"227 Entering Passive Mode (172,16,204,138,192,22).\");\n        assertNull(client.getPassiveHost());\n    }",
+  "invocations": [
+    "SocketClient",
+    "_parsePassiveModeReply",
+    "FTPClient",
+    "setPassiveNatWorkaroundStrategy",
+    "getPassiveHost",
+    "setIpAddressFromPasvResponse",
+    "FTP"
+  ],
+  "signature": {
+    "org.apache.commons.net.SocketClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient._parsePassiveModeReply(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient.setPassiveNatWorkaroundStrategy(org.apache.commons.net.ftp.FTPClient.HostnameResolver)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.net.ftp.FTPClient.HostnameResolver"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient.getPassiveHost()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient.setIpAddressFromPasvResponse(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTP()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.ftp.FTPClient._parsePassiveModeReply(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.ftp.FTPClient._parsePassiveModeReply(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1072,
+      "class_name": "org.apache.commons.net.ftp.FTPClient",
+      "method_name": "_parsePassiveModeReply",
+      "signature": "org.apache.commons.net.ftp.FTPClient._parsePassiveModeReply(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

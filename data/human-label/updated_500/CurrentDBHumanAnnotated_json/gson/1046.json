@@ -1,0 +1,59 @@
+{
+  "id": "1046",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.internal.LinkedTreeMapTest_testContainsNullKeyIsAlwaysFalse_60e6a263",
+  "test_path": "com/google/gson/internal/LinkedTreeMapTest",
+  "test_name": "testContainsNullKeyIsAlwaysFalse",
+  "body": "@Test\n  public void testContainsNullKeyIsAlwaysFalse() {\n    LinkedTreeMap<String, String> map = new LinkedTreeMap<>();\n    assertThat(map.containsKey(null)).isFalse();\n    map.put(\"a\", \"android\");\n    assertThat(map.containsKey(null)).isFalse();\n  }",
+  "invocations": [
+    "LinkedTreeMap",
+    "LinkedTreeMap",
+    "put",
+    "containsKey"
+  ],
+  "signature": {
+    "com.google.gson.internal.LinkedTreeMap(java.util.Comparator<? super K>, boolean)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Comparator<? super K>",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LinkedTreeMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LinkedTreeMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LinkedTreeMap.containsKey(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.internal.LinkedTreeMap.containsKey(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.internal.LinkedTreeMap.containsKey(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 731,
+      "class_name": "com.google.gson.internal.LinkedTreeMap",
+      "method_name": "containsKey",
+      "signature": "com.google.gson.internal.LinkedTreeMap.containsKey(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

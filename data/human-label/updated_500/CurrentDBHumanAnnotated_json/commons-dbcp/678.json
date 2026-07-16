@@ -1,0 +1,33 @@
+{
+  "id": "678",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingResultSet_testRowDeleted_29eebbd2",
+  "test_path": "org/apache/commons/dbcp2/TestDelegatingResultSet",
+  "test_name": "testRowDeleted",
+  "body": "@Test\n    void testRowDeleted() throws Exception {\n        try {\n            delegate.rowDeleted();\n        } catch (final SQLException e) {\n        }\n        verify(rs, times(1)).rowDeleted();\n    }",
+  "invocations": [
+    "rowDeleted"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.DelegatingResultSet.rowDeleted()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.DelegatingResultSet.rowDeleted()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.DelegatingResultSet.rowDeleted()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 572,
+      "class_name": "org.apache.commons.dbcp2.DelegatingResultSet",
+      "method_name": "rowDeleted",
+      "signature": "org.apache.commons.dbcp2.DelegatingResultSet.rowDeleted()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

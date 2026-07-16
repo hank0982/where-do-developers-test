@@ -1,0 +1,37 @@
+{
+  "id": "6427",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.reflect.FieldUtilsTest_testGetFieldForceAccessIllegalArgumentException1_a777fa1d",
+  "test_path": "org/apache/commons/lang3/reflect/FieldUtilsTest",
+  "test_name": "testGetFieldForceAccessIllegalArgumentException1",
+  "body": "@Test\n    void testGetFieldForceAccessIllegalArgumentException1() {\n        assertIllegalArgumentException(() -> FieldUtils.getField(PublicChild.class, null, true));\n    }",
+  "invocations": [
+    "getField"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Class<?>",
+        "java.lang.String",
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4210,
+      "class_name": "org.apache.commons.lang3.reflect.FieldUtils",
+      "method_name": "getField",
+      "signature": "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

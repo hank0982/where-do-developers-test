@@ -1,0 +1,36 @@
+{
+  "id": "1",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.Jdbc41BridgeTest_testAbort_a162873f",
+  "test_path": "org/apache/commons/dbcp2/Jdbc41BridgeTest",
+  "test_name": "testAbort",
+  "body": "@SuppressWarnings(\"resource\")\n    @Test\n    void testAbort() throws SQLException {\n        // Normal\n        try (Connection conn = getConnection()) {\n            Jdbc41Bridge.abort(conn, r -> {\n                // empty for now\n            });\n        }\n        // Force AbstractMethodError\n        try (Connection conn = getConnection()) {\n            final Connection spy = Mockito.spy(conn);\n            Mockito.doThrow(new AbstractMethodError()).when(spy).abort(r -> {\n                // empty for now\n            });\n            Jdbc41Bridge.abort(spy, r -> {\n                // empty for now\n            });\n        }\n    }",
+  "invocations": [
+    "abort"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.Jdbc41Bridge.abort(java.sql.Connection, java.util.concurrent.Executor)": {
+      "params_len": 2,
+      "params": [
+        "java.sql.Connection",
+        "java.util.concurrent.Executor"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.Jdbc41Bridge.abort(java.sql.Connection, java.util.concurrent.Executor)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.Jdbc41Bridge.abort(java.sql.Connection, java.util.concurrent.Executor)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1746,
+      "class_name": "org.apache.commons.dbcp2.Jdbc41Bridge",
+      "method_name": "abort",
+      "signature": "org.apache.commons.dbcp2.Jdbc41Bridge.abort(java.sql.Connection, java.util.concurrent.Executor)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "186",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingCallableStatement_testGetBooleanString_ef375f16",
+  "test_path": "org/apache/commons/dbcp2/TestDelegatingCallableStatement",
+  "test_name": "testGetBooleanString",
+  "body": "@Test\n    void testGetBooleanString() throws Exception {\n        try {\n            delegate.getBoolean(\"foo\");\n        } catch (final SQLException e) {\n        }\n        verify(obj, times(1)).getBoolean(\"foo\");\n    }",
+  "invocations": [
+    "getBoolean"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.DelegatingCallableStatement.getBoolean(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.DelegatingCallableStatement.getBoolean(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.DelegatingCallableStatement.getBoolean(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1239,
+      "class_name": "org.apache.commons.dbcp2.DelegatingCallableStatement",
+      "method_name": "getBoolean",
+      "signature": "org.apache.commons.dbcp2.DelegatingCallableStatement.getBoolean(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

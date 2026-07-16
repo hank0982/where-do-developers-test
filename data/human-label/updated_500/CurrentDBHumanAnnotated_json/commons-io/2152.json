@@ -1,0 +1,35 @@
+{
+  "id": "2152",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.build.WriterStreamOriginTest_testGetRandomAccessFile_adb83e2f",
+  "test_path": "org/apache/commons/io/build/WriterStreamOriginTest",
+  "test_name": "testGetRandomAccessFile",
+  "body": "@Override\n    @Test\n    void testGetRandomAccessFile() {\n        // Cannot convert a RandomAccessFile to a File.\n        assertThrows(UnsupportedOperationException.class, super::testGetRandomAccessFile);\n    }",
+  "invocations": [
+    "getRandomAccessFile"
+  ],
+  "signature": {
+    "org.apache.commons.io.build.AbstractOrigin.getRandomAccessFile(java.nio.file.OpenOption[])": {
+      "params_len": 1,
+      "params": [
+        "java.nio.file.OpenOption[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.build.AbstractOrigin.getRandomAccessFile(java.nio.file.OpenOption[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.build.AbstractOrigin.getRandomAccessFile(java.nio.file.OpenOption[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1487,
+      "class_name": "org.apache.commons.io.build.AbstractOrigin",
+      "method_name": "getRandomAccessFile",
+      "signature": "org.apache.commons.io.build.AbstractOrigin.getRandomAccessFile(java.nio.file.OpenOption[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

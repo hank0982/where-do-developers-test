@@ -1,0 +1,109 @@
+{
+  "id": "7288",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.text.StrTokenizerTest_testTSV_b8fe7fa6",
+  "test_path": "org/apache/commons/lang3/text/StrTokenizerTest",
+  "test_name": "testTSV",
+  "body": "@Test\n    void testTSV() {\n        testXSVAbc(StrTokenizer.getTSVInstance(TSV_SIMPLE_FIXTURE));\n        testXSVAbc(StrTokenizer.getTSVInstance(TSV_SIMPLE_FIXTURE.toCharArray()));\n    }",
+  "invocations": [
+    "size",
+    "nextToken",
+    "getTSVInstance",
+    "nextIndex",
+    "getTSVInstance",
+    "getCSVInstance",
+    "getTSVInstance",
+    "previousToken",
+    "previousIndex"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.text.StrTokenizer.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.nextToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(char[])": {
+      "params_len": 1,
+      "params": [
+        "char[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.nextIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.getCSVInstance()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.previousToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrTokenizer.previousIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.text.StrTokenizer.nextToken()",
+    "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(char[])",
+    "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(java.lang.String)",
+    "org.apache.commons.lang3.text.StrTokenizer.previousToken()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.text.StrTokenizer.nextToken()",
+    "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(char[])",
+    "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(java.lang.String)",
+    "org.apache.commons.lang3.text.StrTokenizer.previousToken()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 209,
+      "class_name": "org.apache.commons.lang3.text.StrTokenizer",
+      "method_name": "nextToken",
+      "signature": "org.apache.commons.lang3.text.StrTokenizer.nextToken()"
+    },
+    {
+      "method_id": 211,
+      "class_name": "org.apache.commons.lang3.text.StrTokenizer",
+      "method_name": "getTSVInstance",
+      "signature": "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(char[])"
+    },
+    {
+      "method_id": 232,
+      "class_name": "org.apache.commons.lang3.text.StrTokenizer",
+      "method_name": "getTSVInstance",
+      "signature": "org.apache.commons.lang3.text.StrTokenizer.getTSVInstance(java.lang.String)"
+    },
+    {
+      "method_id": 266,
+      "class_name": "org.apache.commons.lang3.text.StrTokenizer",
+      "method_name": "previousToken",
+      "signature": "org.apache.commons.lang3.text.StrTokenizer.previousToken()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

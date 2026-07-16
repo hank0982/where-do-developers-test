@@ -1,0 +1,83 @@
+{
+  "id": "22",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.GenericArrayTypeTest_testOurTypeFunctionality_f10b1bcf",
+  "test_path": "com/google/gson/GenericArrayTypeTest",
+  "test_name": "testOurTypeFunctionality",
+  "body": "@Test\n  public void testOurTypeFunctionality() throws Exception {\n    Type parameterizedType = new TypeToken<List<String>>() {}.getType();\n    Type genericArrayType = new TypeToken<List<String>[]>() {}.getType();\n\n    assertThat(ourType.getGenericComponentType()).isEqualTo(parameterizedType);\n    assertThat(ourType).isEqualTo(genericArrayType);\n    assertThat(ourType.hashCode()).isEqualTo(genericArrayType.hashCode());\n  }",
+  "invocations": [
+    "getGenericComponentType",
+    "hashCode",
+    "equals",
+    "equals",
+    "getType",
+    "TypeToken"
+  ],
+  "signature": {
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.getGenericComponentType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.GsonTypes$ParameterizedTypeImpl.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken.getType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.getGenericComponentType()",
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.hashCode()",
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.getGenericComponentType()",
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.hashCode()",
+    "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 347,
+      "class_name": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl",
+      "method_name": "getGenericComponentType",
+      "signature": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.getGenericComponentType()"
+    },
+    {
+      "method_id": 348,
+      "class_name": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl",
+      "method_name": "hashCode",
+      "signature": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.hashCode()"
+    },
+    {
+      "method_id": 350,
+      "class_name": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl",
+      "method_name": "equals",
+      "signature": "com.google.gson.internal.GsonTypes$GenericArrayTypeImpl.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

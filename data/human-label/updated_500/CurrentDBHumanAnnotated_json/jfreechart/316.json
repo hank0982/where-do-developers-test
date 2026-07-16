@@ -1,0 +1,84 @@
+{
+  "id": "316",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.block.GridArrangementTest_testNF_bba22c4b",
+  "test_path": "org/jfree/chart/block/GridArrangementTest",
+  "test_name": "testNF",
+  "body": "@Test\n    public void testNF() {\n        BlockContainer c = createTestContainer1();\n        RectangleConstraint constraint = RectangleConstraint.NONE.toFixedHeight(\n                100.0);\n        Size2D s = c.arrange(null, constraint);\n        assertEquals(90.0, s.width, EPSILON);\n        assertEquals(100.0, s.height, EPSILON);\n    }",
+  "invocations": [
+    "add",
+    "BlockContainer",
+    "arrange",
+    "toFixedHeight",
+    "GridArrangement",
+    "EmptyBlock",
+    "AbstractBlock"
+  ],
+  "signature": {
+    "org.jfree.chart.block.BlockContainer.add(org.jfree.chart.block.Block)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.block.Block"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.block.BlockContainer(org.jfree.chart.block.Arrangement)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.block.Arrangement"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.block.BlockContainer.arrange(java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint)": {
+      "params_len": 2,
+      "params": [
+        "java.awt.Graphics2D",
+        "org.jfree.chart.block.RectangleConstraint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.block.RectangleConstraint.toFixedHeight(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.block.GridArrangement(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.block.EmptyBlock(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.block.AbstractBlock()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.block.GridArrangement.arrangeNF(org.jfree.chart.block.BlockContainer, java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.block.GridArrangement.arrangeNF(org.jfree.chart.block.BlockContainer, java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 5121,
+      "class_name": "org.jfree.chart.block.GridArrangement",
+      "method_name": "arrangeNF",
+      "signature": "org.jfree.chart.block.GridArrangement.arrangeNF(org.jfree.chart.block.BlockContainer, java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "333",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingConnection_testSetHoldability_ed4f513c",
+  "test_path": "org/apache/commons/dbcp2/TestDelegatingConnection",
+  "test_name": "testSetHoldability",
+  "body": "@Test\n    void testSetHoldability() throws Exception {\n        final int expected = 1;\n        h2DConnection.setHoldability(expected);\n        assertEquals(expected, h2DConnection.getHoldability());\n    }",
+  "invocations": [
+    "getHoldability",
+    "setHoldability"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.DelegatingConnection.getHoldability()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingConnection.setHoldability(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.DelegatingConnection.setHoldability(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.DelegatingConnection.setHoldability(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1656,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "setHoldability",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.setHoldability(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

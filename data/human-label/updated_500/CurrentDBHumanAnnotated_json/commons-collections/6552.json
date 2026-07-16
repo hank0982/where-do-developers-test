@@ -1,0 +1,97 @@
+{
+  "id": "6552",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMapTest_testAsMapGet_Empty_af24918d",
+  "test_path": "org/apache/commons/collections4/multimap/UnmodifiableMultiValuedMapTest_testAsMapGet",
+  "test_name": "Empty",
+  "body": "@Test\n    void testAsMapGet_Empty() {\n        resetEmpty();\n        final Map<K, Collection<V>> mapCol = getMap().asMap();\n        assertNull(mapCol.get(\"k0\"));\n        assertEquals(0, mapCol.size());\n    }",
+  "invocations": [
+    "size",
+    "get",
+    "AbstractListValuedMap",
+    "unmodifiableMultiValuedMap",
+    "asMap",
+    "ArrayListValuedHashMap",
+    "ArrayListValuedHashMap",
+    "AbstractMultiValuedMap"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.AbstractMapDecorator.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractMapDecorator.get(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractListValuedMap(java.util.Map<K, ? extends java.util.List<V>>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<K",
+        "? extends java.util.List<V>>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap.unmodifiableMultiValuedMap(org.apache.commons.collections4.MultiValuedMap<? extends K, ? extends V>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.MultiValuedMap<? extends K",
+        "? extends V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap.asMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.ArrayListValuedHashMap(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.ArrayListValuedHashMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap(java.util.Map<K, ? extends java.util.Collection<V>>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<K",
+        "? extends java.util.Collection<V>>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap.asMap()",
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap.get(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap.asMap()",
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap.get(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4731,
+      "class_name": "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap",
+      "method_name": "asMap",
+      "signature": "org.apache.commons.collections4.multimap.UnmodifiableMultiValuedMap.asMap()"
+    },
+    {
+      "method_id": 4808,
+      "class_name": "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap",
+      "method_name": "get",
+      "signature": "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap.get(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

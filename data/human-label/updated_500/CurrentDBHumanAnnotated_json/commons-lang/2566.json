@@ -1,0 +1,43 @@
+{
+  "id": "2566",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocaleGetIso3LanguageKown_96ba54f0",
+  "test_path": "org/apache/commons/lang3/LocaleUtilsTest",
+  "test_name": "testToLocaleGetIso3LanguageKown",
+  "body": "@Test\n    @DefaultLocale(country = \"US\", language = \"en\")\n    void testToLocaleGetIso3LanguageKown() {\n        assertEquals(\"United States\", LocaleUtils.toLocale(\"US\").getDisplayCountry());\n        assertEquals(\"United Kingdom\", LocaleUtils.toLocale(\"GB\").getDisplayCountry());\n        assertEquals(\"Pakistan\", LocaleUtils.toLocale(\"PK\").getDisplayCountry());\n        assertEquals(\"India\", LocaleUtils.toLocale(\"IN\").getDisplayCountry());\n        assertEquals(\"France\", LocaleUtils.toLocale(\"FR\").getDisplayCountry());\n    }",
+  "invocations": [
+    "ofCountry",
+    "toLocale"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.LocaleUtils.ofCountry(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4265,
+      "class_name": "org.apache.commons.lang3.LocaleUtils",
+      "method_name": "toLocale",
+      "signature": "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "5701",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.ProxyOutputStreamTest_testWriteNullArrayProxiesToUnderlying_13413dc0",
+  "test_path": "org/apache/commons/io/output/ProxyOutputStreamTest",
+  "test_name": "testWriteNullArrayProxiesToUnderlying",
+  "body": "@Test\n    void testWriteNullArrayProxiesToUnderlying() throws Exception {\n        assertFalse(hitByteArray.get());\n        final byte[] ba = null;\n        assertThrows(NullPointerException.class, () -> target.write(ba));\n        assertTrue(hitByteArray.get());\n        assertThrows(NullPointerException.class, () -> proxied.write(ba));\n        assertTrue(hitByteArray.get());\n    }",
+  "invocations": [
+    "write"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.AbstractByteArrayOutputStream.write(byte[])": {
+      "params_len": 1,
+      "params": [
+        "byte[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.AbstractByteArrayOutputStream.write(byte[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.AbstractByteArrayOutputStream.write(byte[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 872,
+      "class_name": "org.apache.commons.io.output.AbstractByteArrayOutputStream",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.AbstractByteArrayOutputStream.write(byte[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

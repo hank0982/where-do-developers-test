@@ -1,0 +1,83 @@
+{
+  "id": "1737",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.IOUtilsWriteTest_testWrite_charArrayToOutputStream_nullEncoding_00f2374d",
+  "test_path": "org/apache/commons/io/IOUtilsWriteTest_testWrite_charArrayToOutputStream",
+  "test_name": "nullEncoding",
+  "body": "@Test\n    void testWrite_charArrayToOutputStream_nullEncoding() throws Exception {\n        final String str = new String(inData, StandardCharsets.US_ASCII);\n\n        final ByteArrayOutputStream baout = new ByteArrayOutputStream();\n        final ThrowOnFlushAndCloseOutputStream out = new ThrowOnFlushAndCloseOutputStream(baout, true, true);\n\n        IOUtils.write(str.toCharArray(), out, (String) null);\n        out.off();\n        out.flush();\n\n        assertEquals(inData.length, baout.size(), \"Sizes differ\");\n        assertArrayEquals(inData, baout.toByteArray(), \"Content differs\");\n    }",
+  "invocations": [
+    "write",
+    "AbstractByteArrayOutputStream",
+    "flush",
+    "ProxyOutputStream",
+    "toByteArray",
+    "ByteArrayOutputStream",
+    "ByteArrayOutputStream",
+    "size"
+  ],
+  "signature": {
+    "org.apache.commons.io.IOUtils.write(char[], java.io.OutputStream, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "char[]",
+        "java.io.OutputStream",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.AbstractByteArrayOutputStream()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ProxyOutputStream.flush()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ProxyOutputStream(java.io.OutputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.OutputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ByteArrayOutputStream.toByteArray()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ByteArrayOutputStream(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ByteArrayOutputStream()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ByteArrayOutputStream.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.IOUtils.write(char[], java.io.OutputStream, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.IOUtils.write(char[], java.io.OutputStream, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 86,
+      "class_name": "org.apache.commons.io.IOUtils",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.IOUtils.write(char[], java.io.OutputStream, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,205 @@
+{
+  "id": "64",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.client.DropwizardSSLConnectionSocketFactoryTest_shouldSucceedWithBcProvider_4fea70e8",
+  "test_path": "io/dropwizard/client/DropwizardSSLConnectionSocketFactoryTest",
+  "test_name": "shouldSucceedWithBcProvider",
+  "body": "@Test\n    void shouldSucceedWithBcProvider() throws Exception {\n        // switching host verifier off for simplicity\n        tlsConfiguration.setVerifyHostname(false);\n\n        tlsConfiguration.setKeyStorePath(toFile(\"stores/client/acme-weak.keystore.p12\"));\n        tlsConfiguration.setKeyStorePassword(\"acme2\");\n        tlsConfiguration.setKeyStoreType(\"PKCS12\");\n        tlsConfiguration.setKeyStoreProvider(PROVIDER_NAME);\n        tlsConfiguration.setCertAlias(\"acme-weak\");\n\n        tlsConfiguration.setTrustStorePath(toFile(\"stores/server/acme-weak.truststore.p12\"));\n        tlsConfiguration.setTrustStorePassword(\"acme2\");\n        tlsConfiguration.setTrustStoreType(\"PKCS12\");\n        tlsConfiguration.setTrustStoreProvider(PROVIDER_NAME);\n\n        final Client client = new JerseyClientBuilder(TLS_APP_RULE.getEnvironment()).using(jerseyClientConfiguration).build(\"custom_jce_supported\");\n        final Response response = client.target(String.format(\"https://localhost:%d\", TLS_APP_RULE.getPort(5))).request().get();\n\n        assertThat(response.getStatus()).isEqualTo(200);\n    }",
+  "invocations": [
+    "build",
+    "createDropwizardApacheConnector",
+    "using",
+    "setTrustStorePassword",
+    "setKeyStorePath",
+    "setKeyStoreType",
+    "setKeyStoreProvider",
+    "setVerifyHostname",
+    "setTrustStorePath",
+    "setTrustStoreProvider",
+    "setKeyStorePassword",
+    "setCertAlias",
+    "setTrustStoreType",
+    "getName",
+    "apply",
+    "filter",
+    "filter",
+    "configure",
+    "configure",
+    "getEnvironment",
+    "getPort",
+    "getResource"
+  ],
+  "signature": {
+    "io.dropwizard.client.JerseyClientBuilder.build(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.JerseyClientBuilder.createDropwizardApacheConnector(io.dropwizard.client.ConfiguredCloseableHttpClient)": {
+      "params_len": 1,
+      "params": [
+        "io.dropwizard.client.ConfiguredCloseableHttpClient"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.JerseyClientBuilder.using(io.dropwizard.client.JerseyClientConfiguration)": {
+      "params_len": 1,
+      "params": [
+        "io.dropwizard.client.JerseyClientConfiguration"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setTrustStorePassword(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setKeyStorePath(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setKeyStoreType(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setKeyStoreProvider(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setVerifyHostname(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setTrustStorePath(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setTrustStoreProvider(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setKeyStorePassword(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setCertAlias(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.ssl.TlsConfiguration.setTrustStoreType(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.DropwizardApacheConnector.getName()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.DropwizardApacheConnector.apply(io.dropwizard.client.ClientRequest)": {
+      "params_len": 1,
+      "params": [
+        "io.dropwizard.client.ClientRequest"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.client.JerseyIgnoreRequestUserAgentHeaderFilter.filter(io.dropwizard.client.ClientRequestContext)": {
+      "params_len": 1,
+      "params": [
+        "io.dropwizard.client.ClientRequestContext"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.jersey.gzip.ConfiguredGZipEncoder.filter(io.dropwizard.jersey.gzip.ClientRequestContext)": {
+      "params_len": 1,
+      "params": [
+        "io.dropwizard.jersey.gzip.ClientRequestContext"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.jersey.validation.HibernateValidationBinder.configure()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.jersey.jackson.JacksonFeature.configure(io.dropwizard.jersey.jackson.FeatureContext)": {
+      "params_len": 1,
+      "params": [
+        "io.dropwizard.jersey.jackson.FeatureContext"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.testing.junit5.DropwizardAppExtension.getEnvironment()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.testing.junit5.DropwizardAppExtension.getPort(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.util.Resources.getResource(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "io.dropwizard.client.JerseyClientBuilder.build(java.lang.String)",
+    "io.dropwizard.client.DropwizardApacheConnector.apply(io.dropwizard.client.ClientRequest)"
+  ],
+  "current_db_human_annotation": [
+    "io.dropwizard.client.JerseyClientBuilder.build(java.lang.String)",
+    "io.dropwizard.client.DropwizardApacheConnector.apply(io.dropwizard.client.ClientRequest)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 290,
+      "class_name": "io.dropwizard.client.JerseyClientBuilder",
+      "method_name": "build",
+      "signature": "io.dropwizard.client.JerseyClientBuilder.build(java.lang.String)"
+    },
+    {
+      "method_id": 435,
+      "class_name": "io.dropwizard.client.DropwizardApacheConnector",
+      "method_name": "apply",
+      "signature": "io.dropwizard.client.DropwizardApacheConnector.apply(io.dropwizard.client.ClientRequest)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

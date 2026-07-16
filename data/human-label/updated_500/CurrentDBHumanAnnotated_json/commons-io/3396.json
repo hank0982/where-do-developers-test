@@ -1,0 +1,67 @@
+{
+  "id": "3396",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.BOMInputStreamTest_testSkipReturnValueWithBom_cb16874b",
+  "test_path": "org/apache/commons/io/input/BOMInputStreamTest",
+  "test_name": "testSkipReturnValueWithBom",
+  "body": "@Test\n    void testSkipReturnValueWithBom() throws IOException {\n        final byte[] data = { (byte) 0x31, (byte) 0x32, (byte) 0x33 };\n        try (BOMInputStream is1 = BOMInputStream.builder().setInputStream(createUtf8Input(data, true)).get()) {\n            assertEquals(2, is1.skip(2));\n            assertEquals((byte) 0x33, is1.read());\n        }\n    }",
+  "invocations": [
+    "setInputStream",
+    "close",
+    "get",
+    "read",
+    "builder",
+    "skip"
+  ],
+  "signature": {
+    "org.apache.commons.io.build.AbstractOriginSupplier.setInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BOMInputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BOMInputStream.read()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BOMInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BOMInputStream.skip(long)": {
+      "params_len": 1,
+      "params": [
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.BOMInputStream.skip(long)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.BOMInputStream.skip(long)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1940,
+      "class_name": "org.apache.commons.io.input.BOMInputStream",
+      "method_name": "skip",
+      "signature": "org.apache.commons.io.input.BOMInputStream.skip(long)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

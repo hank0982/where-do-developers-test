@@ -1,0 +1,35 @@
+{
+  "id": "2299",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.channels.CloseShieldChannelTest_testPreservesInterfaces_d6100c63",
+  "test_path": "org/apache/commons/io/channels/CloseShieldChannelTest",
+  "test_name": "testPreservesInterfaces",
+  "body": "@ParameterizedTest\n    @MethodSource(\"channelInterfaces\")\n    void testPreservesInterfaces(final Class<? extends Channel> channelClass) {\n        final Channel channel = mock(channelClass);\n        final Channel shield = CloseShieldChannel.wrap(channel);\n        assertNotSame(channel, shield);\n        assertTrue(channelClass.isInstance(shield));\n    }",
+  "invocations": [
+    "wrap"
+  ],
+  "signature": {
+    "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 407,
+      "class_name": "org.apache.commons.io.channels.CloseShieldChannel",
+      "method_name": "wrap",
+      "signature": "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

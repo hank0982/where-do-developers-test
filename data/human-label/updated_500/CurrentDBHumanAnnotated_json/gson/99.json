@@ -1,0 +1,47 @@
+{
+  "id": "99",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.JsonArrayTest_testRemove_7ebb2bb3",
+  "test_path": "com/google/gson/JsonArrayTest",
+  "test_name": "testRemove",
+  "body": "@Test\n  public void testRemove() {\n    JsonArray array = new JsonArray();\n    assertThrows(IndexOutOfBoundsException.class, () -> array.remove(0));\n\n    JsonPrimitive a = new JsonPrimitive(\"a\");\n    array.add(a);\n    assertThat(array.remove(a)).isTrue();\n    assertThat(array).doesNotContain(a);\n    array.add(a);\n    array.add(new JsonPrimitive(\"b\"));\n    assertThat(array.remove(1).getAsString()).isEqualTo(\"b\");\n    assertThat(array).hasSize(1);\n    assertThat(array).contains(a);\n  }",
+  "invocations": [
+    "JsonElement",
+    "JsonArray",
+    "remove"
+  ],
+  "signature": {
+    "com.google.gson.JsonElement()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonArray()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonArray.remove(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.JsonArray.remove(int)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.JsonArray.remove(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 907,
+      "class_name": "com.google.gson.JsonArray",
+      "method_name": "remove",
+      "signature": "com.google.gson.JsonArray.remove(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

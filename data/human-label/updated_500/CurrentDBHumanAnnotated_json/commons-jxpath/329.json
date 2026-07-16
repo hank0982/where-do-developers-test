@@ -1,0 +1,44 @@
+{
+  "id": "329",
+  "project": "commons-jxpath",
+  "current_db_test_name": "org.apache.commons.jxpath.ri.model.dynabeans.DynaBeanModelTest_testSetPropertyValue_a2859a0d",
+  "test_path": "org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanModelTest",
+  "test_name": "testSetPropertyValue",
+  "body": "@Test\n    void testSetPropertyValue() {\n        // Simple property\n        assertXPathSetValue(context, \"int\", Integer.valueOf(2));\n        // Simple property with conversion from string\n        assertXPathSetValue(context, \"int\", \"3\", Integer.valueOf(3));\n        // Simple property with conversion from array\n        assertXPathSetValue(context, \"int\", new int[] { 4 }, Integer.valueOf(4));\n        // Attribute (which is the same as a child for beans\n        assertXPathSetValue(context, \"@int\", Integer.valueOf(10));\n    }",
+  "invocations": [
+    "getValue",
+    "setValue"
+  ],
+  "signature": {
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.getValue(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.setValue(java.lang.String, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.setValue(java.lang.String, java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.setValue(java.lang.String, java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 251,
+      "class_name": "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl",
+      "method_name": "setValue",
+      "signature": "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.setValue(java.lang.String, java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

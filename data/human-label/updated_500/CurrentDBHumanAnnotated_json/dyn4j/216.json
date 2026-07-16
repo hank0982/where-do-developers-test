@@ -1,0 +1,33 @@
+{
+  "id": "216",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_getBroadphaseFilter_ea55bb43",
+  "test_path": "org/dyn4j/collision/broadphase/CollisionBodyBroadphaseTest",
+  "test_name": "getBroadphaseFilter",
+  "body": "@Test\n\tpublic void getBroadphaseFilter() {\n\t\tBroadphaseFilter<TestCollisionBody> filter = this.broadphase.getBroadphaseFilter();\n\t\tTestCase.assertNotNull(filter);\n\t}",
+  "invocations": [
+    "getBroadphaseFilter"
+  ],
+  "signature": {
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getBroadphaseFilter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getBroadphaseFilter()"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getBroadphaseFilter()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1430,
+      "class_name": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector",
+      "method_name": "getBroadphaseFilter",
+      "signature": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getBroadphaseFilter()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

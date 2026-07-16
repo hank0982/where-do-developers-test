@@ -1,0 +1,36 @@
+{
+  "id": "957",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.StringTest_testAssignmentCharDeserialization_1e7ae124",
+  "test_path": "com/google/gson/functional/StringTest",
+  "test_name": "testAssignmentCharDeserialization",
+  "body": "@Test\n  public void testAssignmentCharDeserialization() {\n    String json = \"\\\"abc=\\\"\";\n    String value = gson.fromJson(json, String.class);\n    assertThat(value).isEqualTo(\"abc=\");\n\n    json = \"'abc\\\\u003d'\";\n    value = gson.fromJson(json, String.class);\n    assertThat(value).isEqualTo(\"abc=\");\n  }",
+  "invocations": [
+    "fromJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 811,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

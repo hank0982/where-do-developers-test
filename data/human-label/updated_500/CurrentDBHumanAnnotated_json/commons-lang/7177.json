@@ -1,0 +1,52 @@
+{
+  "id": "7177",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.text.StrLookupTest_testMapLookup_nullMap_0b25f51b",
+  "test_path": "org/apache/commons/lang3/text/StrLookupTest_testMapLookup",
+  "test_name": "nullMap",
+  "body": "@Test\n    void testMapLookup_nullMap() {\n        final Map<String, ?> map = null;\n        assertNull(StrLookup.mapLookup(map).lookup(null));\n        assertNull(StrLookup.mapLookup(map).lookup(\"\"));\n        assertNull(StrLookup.mapLookup(map).lookup(\"any\"));\n    }",
+  "invocations": [
+    "lookup",
+    "mapLookup"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.text.StrLookup$MapStrLookup.lookup(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrLookup.mapLookup(java.util.Map<java.lang.String, V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<java.lang.String",
+        "V>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.text.StrLookup$MapStrLookup.lookup(java.lang.String)",
+    "org.apache.commons.lang3.text.StrLookup.mapLookup(java.util.Map<java.lang.String, V>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.text.StrLookup$MapStrLookup.lookup(java.lang.String)",
+    "org.apache.commons.lang3.text.StrLookup.mapLookup(java.util.Map<java.lang.String, V>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 140,
+      "class_name": "org.apache.commons.lang3.text.StrLookup$MapStrLookup",
+      "method_name": "lookup",
+      "signature": "org.apache.commons.lang3.text.StrLookup$MapStrLookup.lookup(java.lang.String)"
+    },
+    {
+      "method_id": 144,
+      "class_name": "org.apache.commons.lang3.text.StrLookup",
+      "method_name": "mapLookup",
+      "signature": "org.apache.commons.lang3.text.StrLookup.mapLookup(java.util.Map<java.lang.String, V>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "58725",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.WeekYearTest_testParser_c5c3313e",
+  "test_path": "org/apache/commons/lang3/time/WeekYearTest",
+  "test_name": "testParser",
+  "body": "@ParameterizedTest\n    @MethodSource(\"data\")\n    void testParser(final Calendar vulgar, final String isoForm) {\n        final DateParser parser = new FastDateParser(\"YYYY-'W'ww-u\", TimeZone.getDefault(), Locale.getDefault());\n\n        final Calendar cal = Calendar.getInstance();\n        cal.setMinimalDaysInFirstWeek(4);\n        cal.setFirstDayOfWeek(Calendar.MONDAY);\n        cal.clear();\n\n        parser.parse(isoForm, new ParsePosition(0), cal);\n        assertEquals(vulgar.getTime(), cal.getTime());\n    }",
+  "invocations": [
+    "parse",
+    "FastDateParser",
+    "FastDateParser"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String, java.text.ParsePosition, java.util.Calendar)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.text.ParsePosition",
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String, java.text.ParsePosition, java.util.Calendar)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String, java.text.ParsePosition, java.util.Calendar)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2600,
+      "class_name": "org.apache.commons.lang3.time.FastDateParser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String, java.text.ParsePosition, java.util.Calendar)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

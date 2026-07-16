@@ -1,0 +1,95 @@
+{
+  "id": "5548",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest_testChangeEvents_b4e774dc",
+  "test_path": "org/apache/commons/lang3/concurrent/EventCountCircuitBreakerTest",
+  "test_name": "testChangeEvents",
+  "body": "@Test\n    void testChangeEvents() {\n        final EventCountCircuitBreaker breaker = new EventCountCircuitBreaker(OPENING_THRESHOLD, 1,\n                TimeUnit.SECONDS);\n        final ChangeListener listener = new ChangeListener(breaker);\n        breaker.addChangeListener(listener);\n        breaker.open();\n        breaker.close();\n        listener.verify(Boolean.TRUE, Boolean.FALSE);\n    }",
+  "invocations": [
+    "addChangeListener",
+    "AbstractCircuitBreaker",
+    "EventCountCircuitBreaker",
+    "close",
+    "EventCountCircuitBreaker",
+    "EventCountCircuitBreaker",
+    "open"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.concurrent.AbstractCircuitBreaker.addChangeListener(java.beans.PropertyChangeListener)": {
+      "params_len": 1,
+      "params": [
+        "java.beans.PropertyChangeListener"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.AbstractCircuitBreaker()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker(int, long, java.util.concurrent.TimeUnit, int, long, java.util.concurrent.TimeUnit)": {
+      "params_len": 6,
+      "params": [
+        "int",
+        "long",
+        "java.util.concurrent.TimeUnit",
+        "int",
+        "long",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker(int, long, java.util.concurrent.TimeUnit)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "long",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker(int, long, java.util.concurrent.TimeUnit, int)": {
+      "params_len": 4,
+      "params": [
+        "int",
+        "long",
+        "java.util.concurrent.TimeUnit",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.open()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.close()",
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.open()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.close()",
+    "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.open()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2459,
+      "class_name": "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker",
+      "method_name": "close",
+      "signature": "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.close()"
+    },
+    {
+      "method_id": 2466,
+      "class_name": "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker",
+      "method_name": "open",
+      "signature": "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.open()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "5136",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.buffer.CircularBufferInputStreamTest_testIO683_24e9c03a",
+  "test_path": "org/apache/commons/io/input/buffer/CircularBufferInputStreamTest",
+  "test_name": "testIO683",
+  "body": "@Test\n    void testIO683() throws IOException {\n        final byte[] buffer = {0, 1, -2, -2, -1, 4};\n        try (ByteArrayInputStream bais = new ByteArrayInputStream(buffer); CircularBufferInputStream cbis = new CircularBufferInputStream(bais)) {\n            int b;\n            int i = 0;\n            while ((b = cbis.read()) != -1) {\n                assertEquals(buffer[i] & 0xFF, b, \"byte at index \" + i + \" should be equal\");\n                i++;\n            }\n            assertEquals(buffer.length, i, \"Should have read all the bytes\");\n        }\n    }",
+  "invocations": [
+    "close",
+    "CircularBufferInputStream",
+    "read",
+    "CircularBufferInputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.buffer.CircularBufferInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.buffer.CircularBufferInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.buffer.CircularBufferInputStream.read()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.buffer.CircularBufferInputStream(java.io.InputStream, int)": {
+      "params_len": 2,
+      "params": [
+        "java.io.InputStream",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.buffer.CircularBufferInputStream.read()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.buffer.CircularBufferInputStream.read()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2122,
+      "class_name": "org.apache.commons.io.input.buffer.CircularBufferInputStream",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.input.buffer.CircularBufferInputStream.read()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

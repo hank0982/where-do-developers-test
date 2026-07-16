@@ -1,0 +1,129 @@
+{
+  "id": "5556",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.DeferredFileOutputStreamTest_testTempFileBelowThreshold_5617085f",
+  "test_path": "org/apache/commons/io/output/DeferredFileOutputStreamTest",
+  "test_name": "testTempFileBelowThreshold",
+  "body": "@ParameterizedTest(name = \"initialBufferSize = {0}\")",
+  "invocations": [
+    "getThreshold",
+    "getByteCount",
+    "ThresholdingOutputStream",
+    "ThresholdingOutputStream",
+    "write",
+    "isThresholdExceeded",
+    "getFile",
+    "getPath",
+    "close",
+    "DeferredFileOutputStream",
+    "isInMemory",
+    "DeferredFileOutputStream",
+    "noop"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.ThresholdingOutputStream.getThreshold()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream.getByteCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream(int, org.apache.commons.io.function.IOConsumer<org.apache.commons.io.output.ThresholdingOutputStream>, org.apache.commons.io.function.IOFunction<org.apache.commons.io.output.ThresholdingOutputStream, java.io.OutputStream>)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "org.apache.commons.io.function.IOConsumer<org.apache.commons.io.output.ThresholdingOutputStream>",
+        "org.apache.commons.io.function.IOFunction<org.apache.commons.io.output.ThresholdingOutputStream",
+        "java.io.OutputStream>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream.isThresholdExceeded()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.getFile()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.getPath()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream(int, java.io.File, java.lang.String, java.lang.String, java.io.File, int)": {
+      "params_len": 6,
+      "params": [
+        "int",
+        "java.io.File",
+        "java.lang.String",
+        "java.lang.String",
+        "java.io.File",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.isInMemory()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream(int, int, java.lang.String, java.lang.String, java.io.File)": {
+      "params_len": 5,
+      "params": [
+        "int",
+        "int",
+        "java.lang.String",
+        "java.lang.String",
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.function.IOConsumer.noop()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 669,
+      "class_name": "org.apache.commons.io.output.ThresholdingOutputStream",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "108",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllDoubleArray_94b8d3be",
+  "test_path": "org/apache/commons/lang3/ArrayUtilsRemoveMultipleTest",
+  "test_name": "testRemoveAllDoubleArray",
+  "body": "@Test\n    void testRemoveAllDoubleArray() {\n        double[] array;\n\n        array = ArrayUtils.removeAll(new double[] { 1 }, 0);\n        assertArrayEquals(ArrayUtils.EMPTY_DOUBLE_ARRAY, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2 }, 0);\n        assertArrayEquals(new double[]{2}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2 }, 1);\n        assertArrayEquals(new double[]{1}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 1 }, 1);\n        assertArrayEquals(new double[]{1, 1}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2 }, 0, 1);\n        assertArrayEquals(ArrayUtils.EMPTY_DOUBLE_ARRAY, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 3 }, 0, 1);\n        assertArrayEquals(new double[]{3}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 3 }, 1, 2);\n        assertArrayEquals(new double[]{1}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 3 }, 0, 2);\n        assertArrayEquals(new double[]{2}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 3, 4, 5 }, 1, 3);\n        assertArrayEquals(new double[]{1, 3, 5}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 3, 4, 5 }, 0, 2, 4);\n        assertArrayEquals(new double[]{2, 4}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 3, 4, 5, 6, 7 }, 1, 3, 5);\n        assertArrayEquals(new double[]{1, 3, 5, 7}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n\n        array = ArrayUtils.removeAll(new double[] { 1, 2, 3, 4, 5, 6, 7 }, 0, 2, 4, 6);\n        assertArrayEquals(new double[]{2, 4, 6}, array);\n        assertEquals(Double.TYPE, array.getClass().getComponentType());\n    }",
+  "invocations": [
+    "removeAll"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.ArrayUtils.removeAll(double[], int[])": {
+      "params_len": 2,
+      "params": [
+        "double[]",
+        "int[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ArrayUtils.removeAll(double[], int[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ArrayUtils.removeAll(double[], int[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3345,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "removeAll",
+      "signature": "org.apache.commons.lang3.ArrayUtils.removeAll(double[], int[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

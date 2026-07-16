@@ -1,0 +1,56 @@
+{
+  "id": "6250",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.UnmodifiableSortedMapTest_testHeadMap_19da90eb",
+  "test_path": "org/apache/commons/collections4/map/UnmodifiableSortedMapTest",
+  "test_name": "testHeadMap",
+  "body": "@Test\n    void testHeadMap() {\n        final SortedMap<K, V> map = makeFullMap();\n        final SortedMap<K, V> m = new TreeMap<>();\n        // \"again\" is the first key of the map\n        assertSame(m.isEmpty(), map.headMap((K) \"again\").isEmpty());\n        assertSame(18, map.size());\n        // \"you\" is the last key of the map\n        assertSame(17, map.headMap((K) \"you\").size());\n        // \"we'll\" is the before key of \"you\"\n        assertSame(16, map.headMap((K) \"we'll\").size());\n    }",
+  "invocations": [
+    "headMap",
+    "unmodifiableSortedMap",
+    "isEmpty",
+    "size"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.UnmodifiableSortedMap.headMap(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.UnmodifiableSortedMap.unmodifiableSortedMap(java.util.SortedMap<K, ? extends V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.SortedMap<K",
+        "? extends V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractMapDecorator.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractMapDecorator.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.UnmodifiableSortedMap.headMap(K)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.UnmodifiableSortedMap.headMap(K)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1479,
+      "class_name": "org.apache.commons.collections4.map.UnmodifiableSortedMap",
+      "method_name": "headMap",
+      "signature": "org.apache.commons.collections4.map.UnmodifiableSortedMap.headMap(K)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

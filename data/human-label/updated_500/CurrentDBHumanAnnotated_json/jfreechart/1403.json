@@ -1,0 +1,101 @@
+{
+  "id": "1403",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testGetValue_210c4c2e",
+  "test_path": "org/jfree/data/category/DefaultIntervalCategoryDatasetTest",
+  "test_name": "testGetValue",
+  "body": "@Test\n    public void testGetValue() {\n        double[] starts_S1 = new double[] {0.1, 0.2, 0.3};\n        double[] starts_S2 = new double[] {0.3, 0.4, 0.5};\n        double[] ends_S1 = new double[] {0.5, 0.6, 0.7};\n        double[] ends_S2 = new double[] {0.7, 0.8, 0.9};\n        double[][] starts = new double[][] {starts_S1, starts_S2};\n        double[][] ends = new double[][] {ends_S1, ends_S2};\n        DefaultIntervalCategoryDataset d = new DefaultIntervalCategoryDataset(\n                new Comparable[] {\"Series 1\", \"Series 2\"},\n                new Comparable[] {\"Category 1\", \"Category 2\", \"Category 3\"},\n                DataUtils.createNumberArray2D(starts),\n                DataUtils.createNumberArray2D(ends));\n\n        assertEquals(0.1, d.getStartValue(\"Series 1\", \"Category 1\"));\n        assertEquals(0.2, d.getStartValue(\"Series 1\", \"Category 2\"));\n        assertEquals(0.3, d.getStartValue(\"Series 1\", \"Category 3\"));\n        assertEquals(0.3, d.getStartValue(\"Series 2\", \"Category 1\"));\n        assertEquals(0.4, d.getStartValue(\"Series 2\", \"Category 2\"));\n        assertEquals(0.5, d.getStartValue(\"Series 2\", \"Category 3\"));\n        assertEquals(0.5, d.getEndValue(\"Series 1\", \"Category 1\"));\n        assertEquals(0.6, d.getEndValue(\"Series 1\", \"Category 2\"));\n        assertEquals(0.7, d.getEndValue(\"Series 1\", \"Category 3\"));\n        assertEquals(0.7, d.getEndValue(\"Series 2\", \"Category 1\"));\n        assertEquals(0.8, d.getEndValue(\"Series 2\", \"Category 2\"));\n        assertEquals(0.9, d.getEndValue(\"Series 2\", \"Category 3\"));\n\n        boolean pass = false;\n        try {\n            d.getValue(\"XX\", \"Category 1\");\n        }\n        catch (UnknownKeyException e) {\n            pass = true;\n        }\n        assertTrue(pass);\n\n        pass = false;\n        try {\n            d.getValue(\"Series 1\", \"XX\");\n        }\n        catch (UnknownKeyException e) {\n            pass = true;\n        }\n        assertTrue(pass);\n    }",
+  "invocations": [
+    "AbstractSeriesDataset",
+    "AbstractDataset",
+    "DefaultIntervalCategoryDataset",
+    "getStartValue",
+    "getValue",
+    "getEndValue",
+    "createNumberArray2D"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractSeriesDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])": {
+      "params_len": 4,
+      "params": [
+        "java.lang.Comparable[]",
+        "java.lang.Comparable[]",
+        "java.lang.Number[][]",
+        "java.lang.Number[][]"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue(java.lang.Comparable, java.lang.Comparable)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.lang.Comparable"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getValue(java.lang.Comparable, java.lang.Comparable)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.lang.Comparable"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue(java.lang.Comparable, java.lang.Comparable)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.lang.Comparable"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.DataUtils.createNumberArray2D(double[][])": {
+      "params_len": 1,
+      "params": [
+        "double[][]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue(java.lang.Comparable, java.lang.Comparable)",
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getValue(java.lang.Comparable, java.lang.Comparable)",
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue(java.lang.Comparable, java.lang.Comparable)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue(java.lang.Comparable, java.lang.Comparable)",
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getValue(java.lang.Comparable, java.lang.Comparable)",
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue(java.lang.Comparable, java.lang.Comparable)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1056,
+      "class_name": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+      "method_name": "getStartValue",
+      "signature": "org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue(java.lang.Comparable, java.lang.Comparable)"
+    },
+    {
+      "method_id": 1057,
+      "class_name": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+      "method_name": "getValue",
+      "signature": "org.jfree.data.category.DefaultIntervalCategoryDataset.getValue(java.lang.Comparable, java.lang.Comparable)"
+    },
+    {
+      "method_id": 1059,
+      "class_name": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+      "method_name": "getEndValue",
+      "signature": "org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue(java.lang.Comparable, java.lang.Comparable)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

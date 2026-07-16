@@ -1,0 +1,82 @@
+{
+  "id": "1390",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/data/category/DefaultIntervalCategoryDatasetTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        double[] starts_S1 = new double[] {0.1, 0.2, 0.3};\n        double[] starts_S2 = new double[] {0.3, 0.4, 0.5};\n        double[] ends_S1 = new double[] {0.5, 0.6, 0.7};\n        double[] ends_S2 = new double[] {0.7, 0.8, 0.9};\n        double[][] starts = new double[][] {starts_S1, starts_S2};\n        double[][] ends = new double[][] {ends_S1, ends_S2};\n        DefaultIntervalCategoryDataset d1 = new DefaultIntervalCategoryDataset(\n                new Comparable[] {\"Series 1\", \"Series 2\"},\n                new Comparable[] {\"Category 1\", \"Category 2\", \"Category 3\"},\n                DataUtils.createNumberArray2D(starts),\n                DataUtils.createNumberArray2D(ends));\n        DefaultIntervalCategoryDataset d2 \n                = (DefaultIntervalCategoryDataset) d1.clone();\n        assertNotSame(d1, d2);\n        assertSame(d1.getClass(), d2.getClass());\n        assertEquals(d1, d2);\n\n        // check that the clone doesn't share the same underlying arrays.\n        d1.setStartValue(0, \"Category 1\", 0.99);\n        assertNotEquals(d1, d2);\n        d2.setStartValue(0, \"Category 1\", 0.99);\n        assertEquals(d1, d2);\n    }",
+  "invocations": [
+    "AbstractSeriesDataset",
+    "AbstractDataset",
+    "setStartValue",
+    "DefaultIntervalCategoryDataset",
+    "equals",
+    "clone",
+    "createNumberArray2D"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractSeriesDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.setStartValue(int, java.lang.Comparable, java.lang.Number)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "java.lang.Comparable",
+        "java.lang.Number"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])": {
+      "params_len": 4,
+      "params": [
+        "java.lang.Comparable[]",
+        "java.lang.Comparable[]",
+        "java.lang.Number[][]",
+        "java.lang.Number[][]"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.DataUtils.createNumberArray2D(double[][])": {
+      "params_len": 1,
+      "params": [
+        "double[][]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1052,
+      "class_name": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+      "method_name": "clone",
+      "signature": "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

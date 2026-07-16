@@ -1,0 +1,61 @@
+{
+  "id": "1834",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.build.AbstractStreamBuilderTest_getGetSeekableByteChannel_6f3b93d9",
+  "test_path": "org/apache/commons/io/build/AbstractStreamBuilderTest",
+  "test_name": "getGetSeekableByteChannel",
+  "body": "@ParameterizedTest\n    @MethodSource(\"fileBasedConfigurers\")\n    void getGetSeekableByteChannel(final IOConsumer<Builder> configurer) throws Exception {\n        final Builder builder = builder();\n        configurer.accept(builder);\n        try (ReadableByteChannel channel = assertDoesNotThrow(() -> builder.getChannel(SeekableByteChannel.class))) {\n            assertTrue(channel.isOpen());\n        }\n    }",
+  "invocations": [
+    "getChannel",
+    "AbstractStreamBuilder",
+    "AbstractSupplier",
+    "setPath",
+    "AbstractOriginSupplier"
+  ],
+  "signature": {
+    "org.apache.commons.io.build.AbstractStreamBuilder.getChannel(java.lang.Class<C>)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Class<C>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractStreamBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractSupplier()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractOriginSupplier.setPath(java.nio.file.Path)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.file.Path"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractOriginSupplier()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.build.AbstractStreamBuilder.getChannel(java.lang.Class<C>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.build.AbstractStreamBuilder.getChannel(java.lang.Class<C>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1389,
+      "class_name": "org.apache.commons.io.build.AbstractStreamBuilder",
+      "method_name": "getChannel",
+      "signature": "org.apache.commons.io.build.AbstractStreamBuilder.getChannel(java.lang.Class<C>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "7336",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.set.TransformedSetTest_testCollectionAdd_33442a72",
+  "test_path": "org/apache/commons/collections4/set/TransformedSetTest",
+  "test_name": "testCollectionAdd",
+  "body": "@Test\n    void testCollectionAdd() {\n        if (!isAddSupported()) {\n            return;\n        }\n\n        final E[] elements = getFullElements();\n        for (final E element : elements) {\n            resetEmpty();\n            final boolean r = getCollection().add(element);\n            getConfirmed().add(element);\n            verify();\n            assertTrue(r, \"Empty collection changed after add\");\n            assertEquals(1, getCollection().size(), \"Collection size is 1 after first add\");\n        }\n\n        resetEmpty();\n        int size = 0;\n        for (final E element : elements) {\n            final boolean r = getCollection().add(element);\n            getConfirmed().add(element);\n            verify();\n            if (r) {\n                size++;\n            }\n            assertEquals(size, getCollection().size(), \"Collection size should grow after add\");\n            assertTrue(getCollection().contains(element), \"Collection should contain added element\");\n        }\n    }",
+  "invocations": [
+    "transformingSet",
+    "hashCode",
+    "add",
+    "iterator",
+    "contains",
+    "isEmpty",
+    "size"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.set.TransformedSet.transformingSet(java.util.Set<E>, org.apache.commons.collections4.Transformer<? super E, ? extends E>)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Set<E>",
+        "org.apache.commons.collections4.Transformer<? super E",
+        "? extends E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.TransformedSet.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.TransformedCollection.add(E)": {
+      "params_len": 1,
+      "params": [
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.collection.TransformedCollection.add(E)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.collection.TransformedCollection.add(E)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4034,
+      "class_name": "org.apache.commons.collections4.collection.TransformedCollection",
+      "method_name": "add",
+      "signature": "org.apache.commons.collections4.collection.TransformedCollection.add(E)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "4422",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.QueueInputStreamTest_testBufferedReads_51220c29",
+  "test_path": "org/apache/commons/io/input/QueueInputStreamTest",
+  "test_name": "testBufferedReads",
+  "body": "@ParameterizedTest(name = \"inputData={0}\")",
+  "invocations": [
+    "toString",
+    "QueueOutputStream",
+    "builder",
+    "QueueInputStream",
+    "QueueInputStream",
+    "setBlockingQueue"
+  ],
+  "signature": {
+    "org.apache.commons.io.IOUtils.toString(java.io.InputStream, java.nio.charset.Charset)": {
+      "params_len": 2,
+      "params": [
+        "java.io.InputStream",
+        "java.nio.charset.Charset"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.QueueOutputStream(java.util.concurrent.BlockingQueue<java.lang.Integer>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.concurrent.BlockingQueue<java.lang.Integer>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.QueueInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.QueueInputStream(java.util.concurrent.BlockingQueue<java.lang.Integer>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.concurrent.BlockingQueue<java.lang.Integer>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.QueueInputStream(org.apache.commons.io.input.QueueInputStream.Builder)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.input.QueueInputStream.Builder"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.QueueInputStream$Builder.setBlockingQueue(java.util.concurrent.BlockingQueue<java.lang.Integer>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.concurrent.BlockingQueue<java.lang.Integer>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.QueueInputStream.read(byte[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.QueueInputStream.read(byte[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2039,
+      "class_name": "org.apache.commons.io.input.QueueInputStream",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.input.QueueInputStream.read(byte[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

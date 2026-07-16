@@ -1,0 +1,65 @@
+{
+  "id": "1072",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.metrics.common.ScheduledReporterManagerTest_testStopWithoutReporting_ea5eb09b",
+  "test_path": "io/dropwizard/metrics/common/ScheduledReporterManagerTest",
+  "test_name": "testStopWithoutReporting",
+  "body": "@Test\n    void testStopWithoutReporting() throws Exception {\n        final boolean reportOnStop = false;\n        ScheduledReporter mockReporter = mock(ScheduledReporter.class);\n        ScheduledReporterManager manager = new ScheduledReporterManager(mockReporter, Duration.minutes(5), reportOnStop);\n\n        manager.start();\n        manager.stop();\n\n        verify(mockReporter).start(5L, TimeUnit.MINUTES);\n        verify(mockReporter).stop();\n        verifyNoMoreInteractions(mockReporter);\n    }",
+  "invocations": [
+    "start",
+    "ScheduledReporterManager",
+    "stop",
+    "minutes"
+  ],
+  "signature": {
+    "io.dropwizard.metrics.common.ScheduledReporterManager.start()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.metrics.common.ScheduledReporterManager(io.dropwizard.metrics.common.ScheduledReporter, io.dropwizard.metrics.common.Duration, boolean)": {
+      "params_len": 3,
+      "params": [
+        "io.dropwizard.metrics.common.ScheduledReporter",
+        "io.dropwizard.metrics.common.Duration",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.metrics.common.ScheduledReporterManager.stop()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.util.Duration.minutes(long)": {
+      "params_len": 1,
+      "params": [
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "io.dropwizard.metrics.common.ScheduledReporterManager.start()",
+    "io.dropwizard.metrics.common.ScheduledReporterManager.stop()"
+  ],
+  "current_db_human_annotation": [
+    "io.dropwizard.metrics.common.ScheduledReporterManager.start()",
+    "io.dropwizard.metrics.common.ScheduledReporterManager.stop()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2149,
+      "class_name": "io.dropwizard.metrics.common.ScheduledReporterManager",
+      "method_name": "start",
+      "signature": "io.dropwizard.metrics.common.ScheduledReporterManager.start()"
+    },
+    {
+      "method_id": 2151,
+      "class_name": "io.dropwizard.metrics.common.ScheduledReporterManager",
+      "method_name": "stop",
+      "signature": "io.dropwizard.metrics.common.ScheduledReporterManager.stop()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

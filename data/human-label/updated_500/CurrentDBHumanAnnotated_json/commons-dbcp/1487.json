@@ -1,0 +1,36 @@
+{
+  "id": "1487",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.managed.TestLocalXaResource_testStartNoFlagButAlreadyEnlisted_35314c9b",
+  "test_path": "org/apache/commons/dbcp2/managed/TestLocalXaResource",
+  "test_name": "testStartNoFlagButAlreadyEnlisted",
+  "body": "@Test\n    void testStartNoFlagButAlreadyEnlisted() throws XAException {\n        resource.start(new TestXid(), XAResource.TMNOFLAGS);\n        assertThrows(XAException.class, () -> resource.start(new TestXid(), XAResource.TMNOFLAGS));\n    }",
+  "invocations": [
+    "start"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.managed.LocalXAConnectionFactory$LocalXAResource.start(javax.transaction.xa.Xid, int)": {
+      "params_len": 2,
+      "params": [
+        "javax.transaction.xa.Xid",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.managed.LocalXAConnectionFactory$LocalXAResource.start(javax.transaction.xa.Xid, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.managed.LocalXAConnectionFactory$LocalXAResource.start(javax.transaction.xa.Xid, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1013,
+      "class_name": "org.apache.commons.dbcp2.managed.LocalXAConnectionFactory$LocalXAResource",
+      "method_name": "start",
+      "signature": "org.apache.commons.dbcp2.managed.LocalXAConnectionFactory$LocalXAResource.start(javax.transaction.xa.Xid, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

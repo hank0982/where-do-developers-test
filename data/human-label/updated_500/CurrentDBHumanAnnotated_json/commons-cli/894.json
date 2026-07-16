@@ -1,0 +1,43 @@
+{
+  "id": "894",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.help.UtilTest_testRtrim_f8f040e1",
+  "test_path": "org/apache/commons/cli/help/UtilTest",
+  "test_name": "testRtrim",
+  "body": "@ParameterizedTest\n    @MethodSource(\"charArgs\")\n    void testRtrim(final Character c, final boolean isWhitespace) {\n        if (isWhitespace) {\n            assertEquals(\"worx\", Util.rtrim(String.format(\"worx%s\", c)), () -> String.format(\"Did not process character 0x%x\", (int) c));\n        } else {\n            assertNotEquals(\"worx\", Util.rtrim(String.format(\"worx%s\", c)), () -> String.format(\"Did not process character 0x%x\", (int) c));\n        }\n        final String text = String.format(\"%c%c%c\", c, c, c);\n        assertEquals(isWhitespace ? \"\" : text, Util.ltrim(text));\n    }",
+  "invocations": [
+    "rtrim",
+    "ltrim"
+  ],
+  "signature": {
+    "org.apache.commons.cli.help.Util.rtrim(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.Util.ltrim(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.help.Util.rtrim(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.help.Util.rtrim(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 162,
+      "class_name": "org.apache.commons.cli.help.Util",
+      "method_name": "rtrim",
+      "signature": "org.apache.commons.cli.help.Util.rtrim(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "3",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addCustomCssFiles_addsPropertyFiles_2cdfedd8",
+  "test_path": "net/masterthought/cucumber/ConfigurationTest_addCustomCssFiles",
+  "test_name": "addsPropertyFiles",
+  "body": "@Test\n    void addCustomCssFiles_addsPropertyFiles() {\n\n        // given\n        Configuration configuration = new Configuration(outputDirectory, projectName);\n        List<String> cssFiles = new ArrayList<>();\n        cssFiles.add(\"my-styling.css\");\n        cssFiles.add(\"my-other-styling.css\");\n\n        // when\n        configuration.addCustomCssFiles(cssFiles);\n\n        // then\n        List<String> returnedCssFiles = configuration.getCustomCssFiles();\n        assertThat(returnedCssFiles).containsExactly(\"my-styling.css\", \"my-other-styling.css\");\n    }",
+  "invocations": [
+    "addCustomCssFiles",
+    "getCustomCssFiles",
+    "Configuration"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.Configuration.addCustomCssFiles(java.util.List<java.lang.String>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<java.lang.String>"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration.getCustomCssFiles()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.Configuration.addCustomCssFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.Configuration.addCustomCssFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 236,
+      "class_name": "net.masterthought.cucumber.Configuration",
+      "method_name": "addCustomCssFiles",
+      "signature": "net.masterthought.cucumber.Configuration.addCustomCssFiles(java.util.List<java.lang.String>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "971",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.TestPoolingDataSource_testMaxTotal_d7b70b73",
+  "test_path": "org/apache/commons/dbcp2/TestPoolingDataSource",
+  "test_name": "testMaxTotal",
+  "body": "@Test\n    public void testMaxTotal() throws Exception {\n        final Connection[] c = new Connection[getMaxTotal()];\n        for (int i = 0; i < c.length; i++) {\n            c[i] = newConnection();\n            assertNotNull(c[i]);\n        }\n\n        // should only be able to open 10 connections, so this test should\n        // throw an exception\n        assertThrows(SQLException.class, this::newConnection);\n\n        for (final Connection element : c) {\n            element.close();\n        }\n    }",
+  "invocations": [
+    "getConnection"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.PoolingDataSource.getConnection()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.PoolingDataSource.getConnection()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.PoolingDataSource.getConnection()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1200,
+      "class_name": "org.apache.commons.dbcp2.PoolingDataSource",
+      "method_name": "getConnection",
+      "signature": "org.apache.commons.dbcp2.PoolingDataSource.getConnection()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

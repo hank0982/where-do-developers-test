@@ -1,0 +1,50 @@
+{
+  "id": "1573",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testCloseConsumer_09e8849d",
+  "test_path": "org/apache/commons/io/IOUtilsTest",
+  "test_name": "testCloseConsumer",
+  "body": "@Test\n    void testCloseConsumer() {\n        // null consumer\n        final Closeable nullCloseable = null;\n        assertDoesNotThrow(() -> IOUtils.close(nullCloseable, null));\n        assertDoesNotThrow(() -> IOUtils.close(new StringReader(\"s\"), null));\n        assertDoesNotThrow(() -> IOUtils.close(new ThrowOnCloseReader(new StringReader(\"s\")), null));\n        // null consumer doesn't throw\n        final IOConsumer<IOException> nullConsumer = null;\n        assertDoesNotThrow(() -> IOUtils.close(nullCloseable, nullConsumer));\n        assertDoesNotThrow(() -> IOUtils.close(new StringReader(\"s\"), nullConsumer));\n        assertDoesNotThrow(() -> IOUtils.close(new ThrowOnCloseReader(new StringReader(\"s\")), nullConsumer));\n        // noop consumer doesn't throw\n        final IOConsumer<IOException> silentConsumer = IOConsumer.noop();\n        assertDoesNotThrow(() -> IOUtils.close(nullCloseable, silentConsumer));\n        assertDoesNotThrow(() -> IOUtils.close(new StringReader(\"s\"), silentConsumer));\n        assertDoesNotThrow(() -> IOUtils.close(new ThrowOnCloseReader(new StringReader(\"s\")), silentConsumer));\n        // consumer passes on the throw\n        final IOConsumer<IOException> noisyConsumer = ExceptionUtils::rethrow;\n        // no throw\n        assertDoesNotThrow(() -> IOUtils.close(nullCloseable, noisyConsumer));\n        // no throw\n        assertDoesNotThrow(() -> IOUtils.close(new StringReader(\"s\"), noisyConsumer));\n        // closeable throws\n        assertThrows(IOException.class, () -> IOUtils.close(new ThrowOnCloseReader(new StringReader(\"s\")), noisyConsumer));\n        // consumes other than IOException\n        final AtomicBoolean b = new AtomicBoolean();\n        final IOConsumer<IOException> consumer = e -> b.set(true);\n        // IOException subclass\n        assertDoesNotThrow(() -> IOUtils.close(new BrokenOutputStream((Throwable) new EOFException()), consumer));\n        assertTrue(b.get());\n        b.set(false);\n        // RuntimeException\n        assertDoesNotThrow(() -> IOUtils.close(new BrokenOutputStream(new RuntimeException()), consumer));\n        assertTrue(b.get());\n        b.set(false);\n        // RuntimeException subclass\n        assertDoesNotThrow(() -> IOUtils.close(new BrokenOutputStream(new UnsupportedOperationException()), consumer));\n        assertTrue(b.get());\n    }",
+  "invocations": [
+    "close",
+    "ProxyReader",
+    "noop"
+  ],
+  "signature": {
+    "org.apache.commons.io.IOUtils.close(java.io.Closeable, org.apache.commons.io.function.IOConsumer<java.io.IOException>)": {
+      "params_len": 2,
+      "params": [
+        "java.io.Closeable",
+        "org.apache.commons.io.function.IOConsumer<java.io.IOException>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyReader(java.io.Reader)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Reader"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.function.IOConsumer.noop()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.IOUtils.close(java.io.Closeable, org.apache.commons.io.function.IOConsumer<java.io.IOException>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.IOUtils.close(java.io.Closeable, org.apache.commons.io.function.IOConsumer<java.io.IOException>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 159,
+      "class_name": "org.apache.commons.io.IOUtils",
+      "method_name": "close",
+      "signature": "org.apache.commons.io.IOUtils.close(java.io.Closeable, org.apache.commons.io.function.IOConsumer<java.io.IOException>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

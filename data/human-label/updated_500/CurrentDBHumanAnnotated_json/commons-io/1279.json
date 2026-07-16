@@ -1,0 +1,35 @@
+{
+  "id": "1279",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testDeleteDirectorySymbolicLinkAbsent_7ef7c016",
+  "test_path": "org/apache/commons/io/FileUtilsTest",
+  "test_name": "testDeleteDirectorySymbolicLinkAbsent",
+  "body": "@Test\n    void testDeleteDirectorySymbolicLinkAbsent() throws IOException {\n        final ImmutablePair<Path, Path> pair = createTempSymbolicLinkedRelativeDir();\n        final Path symlinkedDir = pair.getLeft();\n        final Path targetDir = pair.getRight();\n        assertTrue(Files.exists(symlinkedDir), symlinkedDir::toString);\n        Files.delete(symlinkedDir);\n        assertTrue(Files.exists(targetDir), targetDir::toString);\n        assertFalse(Files.exists(symlinkedDir), symlinkedDir::toString);\n        // actual test\n        FileUtils.deleteDirectory(symlinkedDir.toFile());\n        assertFalse(Files.exists(symlinkedDir), symlinkedDir::toString);\n    }",
+  "invocations": [
+    "deleteDirectory"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.deleteDirectory(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.deleteDirectory(java.io.File)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.deleteDirectory(java.io.File)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 346,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "deleteDirectory",
+      "signature": "org.apache.commons.io.FileUtils.deleteDirectory(java.io.File)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

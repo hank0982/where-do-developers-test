@@ -1,0 +1,33 @@
+{
+  "id": "2",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_abs_positive_74c7b9f4",
+  "test_path": "org/joda/money/TestBigMoney_test_abs",
+  "test_name": "positive",
+  "body": "@Test\n    void test_abs_positive() {\n        var test = GBP_2_34.abs();\n        assertThat(test).isSameAs(GBP_2_34);\n    }",
+  "invocations": [
+    "abs"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.abs()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.abs()"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.abs()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 205,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "abs",
+      "signature": "org.joda.money.BigMoney.abs()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

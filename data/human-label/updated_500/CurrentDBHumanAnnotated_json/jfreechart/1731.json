@@ -1,0 +1,124 @@
+{
+  "id": "1731",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.time.MillisecondTest_testGetSerialIndex_0515e1bb",
+  "test_path": "org/jfree/data/time/MillisecondTest",
+  "test_name": "testGetSerialIndex",
+  "body": "@Test\n    public void testGetSerialIndex() {\n        Millisecond m = new Millisecond(500, 1, 1, 1, 1, 1, 2000);\n        assertEquals(3155850061500L, m.getSerialIndex());\n        m = new Millisecond(500, 1, 1, 1, 1, 1, 1900);\n        // TODO: this must be wrong...\n        assertEquals(176461500L, m.getSerialIndex());\n    }",
+  "invocations": [
+    "RegularTimePeriod",
+    "Day",
+    "Minute",
+    "Minute",
+    "Hour",
+    "Second",
+    "Second",
+    "Millisecond",
+    "Millisecond",
+    "getSerialIndex"
+  ],
+  "signature": {
+    "org.jfree.data.time.RegularTimePeriod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Day(int, int, int)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Minute(int, int, int, int, int)": {
+      "params_len": 5,
+      "params": [
+        "int",
+        "int",
+        "int",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Minute(int, org.jfree.data.time.Hour)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "org.jfree.data.time.Hour"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Hour(int, org.jfree.data.time.Day)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "org.jfree.data.time.Day"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Second(int, org.jfree.data.time.Minute)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "org.jfree.data.time.Minute"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Second(int, int, int, int, int, int)": {
+      "params_len": 6,
+      "params": [
+        "int",
+        "int",
+        "int",
+        "int",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Millisecond(int, int, int, int, int, int, int)": {
+      "params_len": 7,
+      "params": [
+        "int",
+        "int",
+        "int",
+        "int",
+        "int",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Millisecond(int, org.jfree.data.time.Second)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "org.jfree.data.time.Second"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Millisecond.getSerialIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.time.Millisecond.getSerialIndex()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.time.Millisecond.getSerialIndex()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1682,
+      "class_name": "org.jfree.data.time.Millisecond",
+      "method_name": "getSerialIndex",
+      "signature": "org.jfree.data.time.Millisecond.getSerialIndex()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

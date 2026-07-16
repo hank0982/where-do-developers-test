@@ -1,0 +1,52 @@
+{
+  "id": "5",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addPresentationMode_AddsPresentationMode_1a21a011",
+  "test_path": "net/masterthought/cucumber/ConfigurationTest_addPresentationMode",
+  "test_name": "AddsPresentationMode",
+  "body": "@Test\n    void addPresentationMode_AddsPresentationMode() {\n\n        // given\n        Configuration configuration = new Configuration(outputDirectory, projectName);\n        PresentationMode presentationMode = PresentationMode.EXPAND_ALL_STEPS;\n\n        // when\n        configuration.addPresentationModes(presentationMode);\n\n        // then\n        assertThat(configuration.containsPresentationMode(presentationMode)).isTrue();\n    }",
+  "invocations": [
+    "containsPresentationMode",
+    "Configuration",
+    "addPresentationModes"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.Configuration.containsPresentationMode(net.masterthought.cucumber.presentation.PresentationMode)": {
+      "params_len": 1,
+      "params": [
+        "net.masterthought.cucumber.presentation.PresentationMode"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration.addPresentationModes(net.masterthought.cucumber.presentation.PresentationMode)": {
+      "params_len": 1,
+      "params": [
+        "net.masterthought.cucumber.presentation.PresentationMode"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.Configuration.addPresentationModes(net.masterthought.cucumber.presentation.PresentationMode)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.Configuration.addPresentationModes(net.masterthought.cucumber.presentation.PresentationMode)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 262,
+      "class_name": "net.masterthought.cucumber.Configuration",
+      "method_name": "addPresentationModes",
+      "signature": "net.masterthought.cucumber.Configuration.addPresentationModes(net.masterthought.cucumber.presentation.PresentationMode)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

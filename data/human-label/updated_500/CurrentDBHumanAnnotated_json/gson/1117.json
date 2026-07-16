@@ -1,0 +1,61 @@
+{
+  "id": "1117",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.internal.bind.JsonTreeWriterTest_testPrematureClose_9dbcfa3a",
+  "test_path": "com/google/gson/internal/bind/JsonTreeWriterTest",
+  "test_name": "testPrematureClose",
+  "body": "@Test\n  public void testPrematureClose() throws Exception {\n    JsonTreeWriter writer = new JsonTreeWriter();\n    writer.setStrictness(Strictness.LENIENT);\n    writer.beginArray();\n    var e = assertThrows(IOException.class, () -> writer.close());\n    assertThat(e).hasMessageThat().isEqualTo(\"Incomplete document\");\n  }",
+  "invocations": [
+    "JsonWriter",
+    "setStrictness",
+    "close",
+    "beginArray",
+    "JsonTreeWriter"
+  ],
+  "signature": {
+    "com.google.gson.stream.JsonWriter(java.io.Writer)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Writer"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonWriter.setStrictness(com.google.gson.Strictness)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.Strictness"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeWriter.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeWriter.beginArray()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeWriter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.internal.bind.JsonTreeWriter.close()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.internal.bind.JsonTreeWriter.close()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 606,
+      "class_name": "com.google.gson.internal.bind.JsonTreeWriter",
+      "method_name": "close",
+      "signature": "com.google.gson.internal.bind.JsonTreeWriter.close()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

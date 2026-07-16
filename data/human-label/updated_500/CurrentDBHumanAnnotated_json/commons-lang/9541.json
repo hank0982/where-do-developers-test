@@ -1,0 +1,71 @@
+{
+  "id": "9541",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastDateFormat_PrinterTest_testTimeZoneAsZ_088be95e",
+  "test_path": "org/apache/commons/lang3/time/FastDateFormat_PrinterTest",
+  "test_name": "testTimeZoneAsZ",
+  "body": "@DefaultTimeZone(\"UTC\")\n    @Test\n    void testTimeZoneAsZ() {\n        final Calendar c = Calendar.getInstance(FastTimeZone.getGmtTimeZone());\n        final FastDateFormat noColonFormat = FastDateFormat.getInstance(\"Z\");\n        assertEquals(\"+0000\", noColonFormat.format(c));\n\n        final FastDateFormat isoFormat = FastDateFormat.getInstance(\"ZZ\");\n        assertEquals(\"Z\", isoFormat.format(c));\n\n        final FastDateFormat colonFormat = FastDateFormat.getInstance(\"ZZZ\");\n        assertEquals(\"+00:00\", colonFormat.format(c));\n    }",
+  "invocations": [
+    "getGmtTimeZone",
+    "format",
+    "getInstance",
+    "inDaylightTime",
+    "getRawOffset"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastTimeZone.getGmtTimeZone()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateFormat.format(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.GmtTimeZone.inDaylightTime(java.util.Date)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.GmtTimeZone.getRawOffset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDatePrinter.format(java.util.Calendar)",
+    "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDatePrinter.format(java.util.Calendar)",
+    "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2781,
+      "class_name": "org.apache.commons.lang3.time.FastDatePrinter",
+      "method_name": "format",
+      "signature": "org.apache.commons.lang3.time.FastDatePrinter.format(java.util.Calendar)"
+    },
+    {
+      "method_id": 2971,
+      "class_name": "org.apache.commons.lang3.time.FastDateFormat",
+      "method_name": "getInstance",
+      "signature": "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

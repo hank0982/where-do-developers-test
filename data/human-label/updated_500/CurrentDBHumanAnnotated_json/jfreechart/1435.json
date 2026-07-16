@@ -1,0 +1,44 @@
+{
+  "id": "1435",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.function.NormalDistributionFunction2DTest_testEquals_4d3b87b2",
+  "test_path": "org/jfree/data/function/NormalDistributionFunction2DTest",
+  "test_name": "testEquals",
+  "body": "@Test\n    public void testEquals() {\n        NormalDistributionFunction2D f1 = new NormalDistributionFunction2D(1.0,\n                2.0);\n        NormalDistributionFunction2D f2 = new NormalDistributionFunction2D(1.0,\n                2.0);\n        assertEquals(f1, f2);\n        f1 = new NormalDistributionFunction2D(2.0, 3.0);\n        assertNotEquals(f1, f2);\n        f2 = new NormalDistributionFunction2D(2.0, 3.0);\n        assertEquals(f1, f2);\n    }",
+  "invocations": [
+    "NormalDistributionFunction2D",
+    "equals"
+  ],
+  "signature": {
+    "org.jfree.data.function.NormalDistributionFunction2D(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.function.NormalDistributionFunction2D.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.function.NormalDistributionFunction2D.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.function.NormalDistributionFunction2D.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1868,
+      "class_name": "org.jfree.data.function.NormalDistributionFunction2D",
+      "method_name": "equals",
+      "signature": "org.jfree.data.function.NormalDistributionFunction2D.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

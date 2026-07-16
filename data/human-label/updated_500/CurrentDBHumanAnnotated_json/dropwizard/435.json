@@ -1,0 +1,33 @@
+{
+  "id": "435",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.hibernate.AbstractDAOTest_hasAnEntityClass_be1ac1ef",
+  "test_path": "io/dropwizard/hibernate/AbstractDAOTest",
+  "test_name": "hasAnEntityClass",
+  "body": "@Test\n    void hasAnEntityClass() {\n        assertThat(dao.getEntityClass())\n                .isEqualTo(String.class);\n    }",
+  "invocations": [
+    "getEntityClass"
+  ],
+  "signature": {
+    "io.dropwizard.hibernate.AbstractDAO.getEntityClass()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "io.dropwizard.hibernate.AbstractDAO.getEntityClass()"
+  ],
+  "current_db_human_annotation": [
+    "io.dropwizard.hibernate.AbstractDAO.getEntityClass()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1252,
+      "class_name": "io.dropwizard.hibernate.AbstractDAO",
+      "method_name": "getEntityClass",
+      "signature": "io.dropwizard.hibernate.AbstractDAO.getEntityClass()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

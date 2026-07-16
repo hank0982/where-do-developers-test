@@ -1,0 +1,41 @@
+{
+  "id": "7158",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.set.ListOrderedSetTest_testObjectHashCodeEqualsSelfHashCode_8339b833",
+  "test_path": "org/apache/commons/collections4/set/ListOrderedSetTest",
+  "test_name": "testObjectHashCodeEqualsSelfHashCode",
+  "body": "@Test\n    void testObjectHashCodeEqualsSelfHashCode() {\n        final Object obj = makeObject();\n        assertEquals(obj.hashCode(), obj.hashCode(), \"hashCode should be repeatable\");\n    }",
+  "invocations": [
+    "listOrderedSet",
+    "hashCode"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.set.ListOrderedSet.listOrderedSet(java.util.Set<E>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Set<E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.AbstractSetDecorator.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.set.AbstractSetDecorator.hashCode()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.set.AbstractSetDecorator.hashCode()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2310,
+      "class_name": "org.apache.commons.collections4.set.AbstractSetDecorator",
+      "method_name": "hashCode",
+      "signature": "org.apache.commons.collections4.set.AbstractSetDecorator.hashCode()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

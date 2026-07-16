@@ -1,0 +1,151 @@
+{
+  "id": "889",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.renderer.category.BoxAndWhiskerRendererTest_testGetLegendItem_ec3c0945",
+  "test_path": "org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest",
+  "test_name": "testGetLegendItem",
+  "body": "@Test\n    public void testGetLegendItem() {\n        DefaultBoxAndWhiskerCategoryDataset<String, String> dataset\n                = new DefaultBoxAndWhiskerCategoryDataset<>();\n        List<Double> values = new ArrayList<>();\n        values.add(1.10);\n        values.add(1.45);\n        values.add(1.33);\n        values.add(1.23);\n        dataset.add(values, \"R1\", \"C1\");\n        BoxAndWhiskerRenderer r = new BoxAndWhiskerRenderer();\n        CategoryPlot<String, String> plot = new CategoryPlot<>(dataset, new CategoryAxis(\"x\"),\n                new NumberAxis(\"y\"), r);\n        /*JFreeChart chart =*/ new JFreeChart(plot);\n        LegendItem li = r.getLegendItem(0, 0);\n        assertNotNull(li);\n        r.setSeriesVisibleInLegend(0, Boolean.FALSE);\n        li = r.getLegendItem(0, 0);\n        assertNull(li);\n    }",
+  "invocations": [
+    "AbstractDataset",
+    "DefaultBoxAndWhiskerCategoryDataset",
+    "AbstractCategoryItemRenderer",
+    "getLegendItem",
+    "BoxAndWhiskerRenderer",
+    "AbstractRenderer",
+    "setSeriesVisibleInLegend",
+    "Plot",
+    "CategoryPlot",
+    "JFreeChart",
+    "JFreeChart",
+    "CategoryAxis",
+    "Axis",
+    "ValueAxis",
+    "NumberAxis",
+    "createStandardTickUnits"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.BoxAndWhiskerRenderer.getLegendItem(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.BoxAndWhiskerRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.AbstractRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.AbstractRenderer.setSeriesVisibleInLegend(int, java.lang.Boolean)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "java.lang.Boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.Plot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.CategoryPlot(org.jfree.data.category.CategoryDataset<R, C>, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.chart.renderer.category.CategoryItemRenderer)": {
+      "params_len": 4,
+      "params": [
+        "org.jfree.data.category.CategoryDataset<R",
+        "C>",
+        "org.jfree.chart.axis.CategoryAxis",
+        "org.jfree.chart.axis.ValueAxis",
+        "org.jfree.chart.renderer.category.CategoryItemRenderer"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart(java.lang.String, java.awt.Font, org.jfree.chart.plot.Plot, boolean)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.awt.Font",
+        "org.jfree.chart.plot.Plot",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart(org.jfree.chart.plot.Plot)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.plot.Plot"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.CategoryAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.Axis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.ValueAxis(java.lang.String, org.jfree.chart.axis.TickUnitSource)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "org.jfree.chart.axis.TickUnitSource"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.NumberAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.NumberAxis.createStandardTickUnits()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.renderer.category.BoxAndWhiskerRenderer.getLegendItem(int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.renderer.category.BoxAndWhiskerRenderer.getLegendItem(int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4439,
+      "class_name": "org.jfree.chart.renderer.category.BoxAndWhiskerRenderer",
+      "method_name": "getLegendItem",
+      "signature": "org.jfree.chart.renderer.category.BoxAndWhiskerRenderer.getLegendItem(int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

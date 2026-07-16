@@ -1,0 +1,71 @@
+{
+  "id": "2707",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.file.PathUtilsCountingTest_testCountFolders2FileSize2_0cc1b3cc",
+  "test_path": "org/apache/commons/io/file/PathUtilsCountingTest",
+  "test_name": "testCountFolders2FileSize2",
+  "body": "@Test\n    void testCountFolders2FileSize2() throws IOException {\n        final PathCounters pathCounts = PathUtils\n                .countDirectory(Paths.get(\"src/test/resources/org/apache/commons/io/dirs-2-file-size-2\"));\n        assertCounts(3, 2, 2, pathCounts);\n    }",
+  "invocations": [
+    "getDirectoryCounter",
+    "getFileCounter",
+    "getByteCounter",
+    "getLong",
+    "getBigInteger",
+    "get",
+    "countDirectory"
+  ],
+  "signature": {
+    "org.apache.commons.io.file.Counters$AbstractPathCounters.getDirectoryCounter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$AbstractPathCounters.getFileCounter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$AbstractPathCounters.getByteCounter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$LongCounter.getLong()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$LongCounter.getBigInteger()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$LongCounter.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.PathUtils.countDirectory(java.nio.file.Path)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.file.Path"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.file.PathUtils.countDirectory(java.nio.file.Path)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.file.PathUtils.countDirectory(java.nio.file.Path)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1125,
+      "class_name": "org.apache.commons.io.file.PathUtils",
+      "method_name": "countDirectory",
+      "signature": "org.apache.commons.io.file.PathUtils.countDirectory(java.nio.file.Path)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

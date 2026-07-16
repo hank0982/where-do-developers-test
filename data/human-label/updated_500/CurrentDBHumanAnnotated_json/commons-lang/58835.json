@@ -1,0 +1,43 @@
+{
+  "id": "58835",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.tuple.TripleTest_testFormattable_padded_3cda5c4b",
+  "test_path": "org/apache/commons/lang3/tuple/TripleTest_testFormattable",
+  "test_name": "padded",
+  "body": "@Test\n    void testFormattable_padded() {\n        final Triple<String, String, String> triple = Triple.of(\"Key\", \"Something\", \"Value\");\n        assertEquals(\"         (Key,Something,Value)\", String.format(\"%1$30s\", triple));\n    }",
+  "invocations": [
+    "of",
+    "toString"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.tuple.Triple.of(L, M, R)": {
+      "params_len": 3,
+      "params": [
+        "L",
+        "M",
+        "R"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.Triple.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.tuple.Triple.toString()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.tuple.Triple.toString()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3768,
+      "class_name": "org.apache.commons.lang3.tuple.Triple",
+      "method_name": "toString",
+      "signature": "org.apache.commons.lang3.tuple.Triple.toString()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

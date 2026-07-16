@@ -1,0 +1,48 @@
+{
+  "id": "4017",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMapKSoftVWeakIdCTest_testSerializeDeserializeThenCompare_e3ebba58",
+  "test_path": "org/apache/commons/collections4/map/ConcurrentReferenceHashMapKSoftVWeakIdCTest",
+  "test_name": "testSerializeDeserializeThenCompare",
+  "body": "@Test\n    public void testSerializeDeserializeThenCompare() throws Exception {\n        final Object obj = makeObject();\n        if (obj instanceof Serializable && isTestSerialization()) {\n            final Object dest = serializeDeserialize(obj);\n            if (isEqualsCheckable()) {\n                assertEquals(obj, dest, \"obj != deserialize(serialize(obj))\");\n            }\n        }\n    }",
+  "invocations": [
+    "get",
+    "setOptions",
+    "weakValues",
+    "softKeys",
+    "builder"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.setOptions(java.util.EnumSet<org.apache.commons.collections4.map.ConcurrentReferenceHashMap.Option>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.EnumSet<org.apache.commons.collections4.map.ConcurrentReferenceHashMap.Option>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.weakValues()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.softKeys()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [],
+  "current_db_human_annotation": [],
+  "current_db_human_annotation_details": [],
+  "label_source": "reviewed_empty"
+}

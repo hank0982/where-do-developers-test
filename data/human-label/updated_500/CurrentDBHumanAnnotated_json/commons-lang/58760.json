@@ -1,0 +1,54 @@
+{
+  "id": "58760",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testPairOfMapEntry_29ed59da",
+  "test_path": "org/apache/commons/lang3/tuple/ImmutablePairTest",
+  "test_name": "testPairOfMapEntry",
+  "body": "@Test\n    void testPairOfMapEntry() {\n        assertSame(ImmutablePair.nullPair(), ImmutablePair.of(null));\n        final HashMap<Integer, String> map = new HashMap<>();\n        map.put(0, \"foo\");\n        final Entry<Integer, String> entry = map.entrySet().iterator().next();\n        final Pair<Integer, String> pair = ImmutablePair.of(entry);\n        assertEquals(entry.getKey(), pair.getLeft());\n        assertEquals(entry.getValue(), pair.getRight());\n    }",
+  "invocations": [
+    "nullPair",
+    "getLeft",
+    "of",
+    "getRight"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.tuple.ImmutablePair.nullPair()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.ImmutablePair.getLeft()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.ImmutablePair.of(java.util.Map.Entry<L, R>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map.Entry<L",
+        "R>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.ImmutablePair.getRight()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.tuple.ImmutablePair.of(java.util.Map.Entry<L, R>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.tuple.ImmutablePair.of(java.util.Map.Entry<L, R>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3800,
+      "class_name": "org.apache.commons.lang3.tuple.ImmutablePair",
+      "method_name": "of",
+      "signature": "org.apache.commons.lang3.tuple.ImmutablePair.of(java.util.Map.Entry<L, R>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

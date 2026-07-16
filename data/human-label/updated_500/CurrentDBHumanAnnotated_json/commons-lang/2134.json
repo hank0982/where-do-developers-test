@@ -1,0 +1,43 @@
+{
+  "id": "2134",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocaleGetIso3Country_24a65a23",
+  "test_path": "org/apache/commons/lang3/LocaleUtilsTest",
+  "test_name": "testToLocaleGetIso3Country",
+  "body": "@ParameterizedTest\n    @MethodSource(\"java.util.Locale#getISOCountries\")\n    void testToLocaleGetIso3Country(final String country) {\n        assertEquals(LocaleUtils.ofCountry(country).getISO3Country(), LocaleUtils.toLocale(country).getISO3Country());\n    }",
+  "invocations": [
+    "ofCountry",
+    "toLocale"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.LocaleUtils.ofCountry(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4265,
+      "class_name": "org.apache.commons.lang3.LocaleUtils",
+      "method_name": "toLocale",
+      "signature": "org.apache.commons.lang3.LocaleUtils.toLocale(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

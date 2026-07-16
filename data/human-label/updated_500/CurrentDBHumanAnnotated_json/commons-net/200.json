@@ -1,0 +1,80 @@
+{
+  "id": "200",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.ftp.parser.UnixFTPEntryParserTest_testLeadingSpacesNET566_2588147a",
+  "test_path": "org/apache/commons/net/ftp/parser/UnixFTPEntryParserTest",
+  "test_name": "testLeadingSpacesNET566",
+  "body": "@Test\n    public void testLeadingSpacesNET566() { // check new behavior\n        final FTPFile f = new UnixFTPEntryParser(null, false).parseFTPEntry(\"drwxr-xr-x   2 john smith     group         4096 Mar  2 15:13   zxbox\");\n        assertNotNull(f);\n        assertEquals(\"  zxbox\", f.getName()); // leading spaces retained\n    }",
+  "invocations": [
+    "FTPFileEntryParserImpl",
+    "UnixFTPEntryParser",
+    "parseFTPEntry",
+    "ConfigurableFTPFileEntryParserImpl",
+    "RegexFTPFileEntryParserImpl",
+    "getName"
+  ],
+  "signature": {
+    "org.apache.commons.net.ftp.FTPFileEntryParserImpl()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig, boolean)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.net.ftp.FTPClientConfig",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPFile.getName()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig, boolean)",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig, boolean)",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1344,
+      "class_name": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser",
+      "method_name": "UnixFTPEntryParser",
+      "signature": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig, boolean)"
+    },
+    {
+      "method_id": 1348,
+      "class_name": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser",
+      "method_name": "parseFTPEntry",
+      "signature": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

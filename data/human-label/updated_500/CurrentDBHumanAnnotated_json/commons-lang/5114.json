@@ -1,0 +1,130 @@
+{
+  "id": "5114",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.ReflectionDiffBuilderTest_testTransientFieldDifference_4325dde0",
+  "test_path": "org/apache/commons/lang3/builder/ReflectionDiffBuilderTest",
+  "test_name": "testTransientFieldDifference",
+  "body": "@Test\n    void testTransientFieldDifference() {\n        final TypeTestClass firstObject = new TypeTestClass();\n        firstObject.transientField = \"a\";\n        final TypeTestClass secondObject = new TypeTestClass();\n        secondObject.transientField = \"b\";\n        DiffResult<TypeTestClass> list = firstObject.diff(secondObject);\n        assertEquals(0, list.getNumberOfDiffs());\n        list = firstObject.diffDeprecated(secondObject);\n        assertEquals(0, list.getNumberOfDiffs());\n    }",
+  "invocations": [
+    "ReflectionDiffBuilder",
+    "setExcludeFieldNames",
+    "ReflectionDiffBuilder",
+    "builder",
+    "build",
+    "build",
+    "setExcludeFieldNames",
+    "setDiffBuilder",
+    "builder",
+    "build",
+    "setLeft",
+    "setStyle",
+    "setRight",
+    "getNumberOfDiffs"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder(org.apache.commons.lang3.builder.DiffBuilder<T>, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.lang3.builder.DiffBuilder<T>",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder.setExcludeFieldNames(java.lang.String[])": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder(T, T, org.apache.commons.lang3.builder.ToStringStyle)": {
+      "params_len": 3,
+      "params": [
+        "T",
+        "T",
+        "org.apache.commons.lang3.builder.ToStringStyle"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder.build()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder$Builder.build()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder$Builder.setExcludeFieldNames(java.lang.String[])": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder$Builder.setDiffBuilder(org.apache.commons.lang3.builder.DiffBuilder<T>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.lang3.builder.DiffBuilder<T>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.DiffBuilder.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.DiffBuilder$Builder.build()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.DiffBuilder$Builder.setLeft(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.DiffBuilder$Builder.setStyle(org.apache.commons.lang3.builder.ToStringStyle)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.lang3.builder.ToStringStyle"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.DiffBuilder$Builder.setRight(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.DiffResult.getNumberOfDiffs()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder.build()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.ReflectionDiffBuilder.build()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 561,
+      "class_name": "org.apache.commons.lang3.builder.ReflectionDiffBuilder",
+      "method_name": "build",
+      "signature": "org.apache.commons.lang3.builder.ReflectionDiffBuilder.build()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

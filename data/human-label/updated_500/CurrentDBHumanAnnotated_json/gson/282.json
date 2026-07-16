@@ -1,0 +1,35 @@
+{
+  "id": "282",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.CircularReferenceTest_testDirectedAcyclicGraphSerialization_17d3dc35",
+  "test_path": "com/google/gson/functional/CircularReferenceTest",
+  "test_name": "testDirectedAcyclicGraphSerialization",
+  "body": "@Test\n  public void testDirectedAcyclicGraphSerialization() {\n    ContainsReferenceToSelfType a = new ContainsReferenceToSelfType();\n    ContainsReferenceToSelfType b = new ContainsReferenceToSelfType();\n    ContainsReferenceToSelfType c = new ContainsReferenceToSelfType();\n    a.children.add(b);\n    a.children.add(c);\n    b.children.add(c);\n    assertThat(gson.toJson(a)).isNotNull();\n  }",
+  "invocations": [
+    "toJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

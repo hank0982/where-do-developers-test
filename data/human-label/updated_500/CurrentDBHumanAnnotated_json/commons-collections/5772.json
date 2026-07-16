@@ -1,0 +1,128 @@
+{
+  "id": "5772",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.ReferenceIdentityMapTest_testBasics_c4374078",
+  "test_path": "org/apache/commons/collections4/map/ReferenceIdentityMapTest",
+  "test_name": "testBasics",
+  "body": "@Test\n    @SuppressWarnings(\"unchecked\")\n    void testBasics() {\n        final IterableMap<K, V> map = new ReferenceIdentityMap<>(ReferenceStrength.HARD, ReferenceStrength.HARD);\n        assertEquals(0, map.size());\n\n        map.put((K) I1A, (V) I2A);\n        assertEquals(1, map.size());\n        assertSame(I2A, map.get(I1A));\n        assertSame(null, map.get(I1B));\n        assertTrue(map.containsKey(I1A));\n        assertFalse(map.containsKey(I1B));\n        assertTrue(map.containsValue(I2A));\n        assertFalse(map.containsValue(I2B));\n\n        map.put((K) I1A, (V) I2B);\n        assertEquals(1, map.size());\n        assertSame(I2B, map.get(I1A));\n        assertSame(null, map.get(I1B));\n        assertTrue(map.containsKey(I1A));\n        assertFalse(map.containsKey(I1B));\n        assertFalse(map.containsValue(I2A));\n        assertTrue(map.containsValue(I2B));\n\n        map.put((K) I1B, (V) I2B);\n        assertEquals(2, map.size());\n        assertSame(I2B, map.get(I1A));\n        assertSame(I2B, map.get(I1B));\n        assertTrue(map.containsKey(I1A));\n        assertTrue(map.containsKey(I1B));\n        assertFalse(map.containsValue(I2A));\n        assertTrue(map.containsValue(I2B));\n    }",
+  "invocations": [
+    "containsValue",
+    "put",
+    "get",
+    "containsKey",
+    "size",
+    "AbstractReferenceMap",
+    "AbstractHashedMap",
+    "ReferenceIdentityMap"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.AbstractReferenceMap.containsValue(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.get(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.containsKey(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap(org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, int, float, boolean)": {
+      "params_len": 5,
+      "params": [
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "int",
+        "float",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "float"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ReferenceIdentityMap(org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.AbstractReferenceMap.containsValue(java.lang.Object)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.put(K, V)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.get(java.lang.Object)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.containsKey(java.lang.Object)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.size()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.AbstractReferenceMap.containsValue(java.lang.Object)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.put(K, V)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.get(java.lang.Object)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.containsKey(java.lang.Object)",
+    "org.apache.commons.collections4.map.AbstractReferenceMap.size()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 745,
+      "class_name": "org.apache.commons.collections4.map.AbstractReferenceMap",
+      "method_name": "containsValue",
+      "signature": "org.apache.commons.collections4.map.AbstractReferenceMap.containsValue(java.lang.Object)"
+    },
+    {
+      "method_id": 747,
+      "class_name": "org.apache.commons.collections4.map.AbstractReferenceMap",
+      "method_name": "put",
+      "signature": "org.apache.commons.collections4.map.AbstractReferenceMap.put(K, V)"
+    },
+    {
+      "method_id": 751,
+      "class_name": "org.apache.commons.collections4.map.AbstractReferenceMap",
+      "method_name": "get",
+      "signature": "org.apache.commons.collections4.map.AbstractReferenceMap.get(java.lang.Object)"
+    },
+    {
+      "method_id": 762,
+      "class_name": "org.apache.commons.collections4.map.AbstractReferenceMap",
+      "method_name": "containsKey",
+      "signature": "org.apache.commons.collections4.map.AbstractReferenceMap.containsKey(java.lang.Object)"
+    },
+    {
+      "method_id": 765,
+      "class_name": "org.apache.commons.collections4.map.AbstractReferenceMap",
+      "method_name": "size",
+      "signature": "org.apache.commons.collections4.map.AbstractReferenceMap.size()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

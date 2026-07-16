@@ -1,0 +1,63 @@
+{
+  "id": "450",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.nodes.DocumentTest_setTextPreservesDocumentStructure_e8bfaac1",
+  "test_path": "org/jsoup/nodes/DocumentTest",
+  "test_name": "setTextPreservesDocumentStructure",
+  "body": "@Test public void setTextPreservesDocumentStructure() {\n        Document doc = Jsoup.parse(\"<p>Hello</p>\");\n        doc.text(\"Replaced\");\n        assertEquals(\"Replaced\", doc.text());\n        assertEquals(\"Replaced\", doc.body().text());\n        assertEquals(1, doc.select(\"head\").size());\n    }",
+  "invocations": [
+    "parse",
+    "select",
+    "text",
+    "text",
+    "body"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.select(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.text()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Document.text(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Document.body()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.nodes.Document.text(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.nodes.Document.text(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 950,
+      "class_name": "org.jsoup.nodes.Document",
+      "method_name": "text",
+      "signature": "org.jsoup.nodes.Document.text(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

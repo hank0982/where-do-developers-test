@@ -1,0 +1,88 @@
+{
+  "id": "39",
+  "project": "commons-exec",
+  "current_db_test_name": "org.apache.commons.exec.DefaultExecutorTest_testExecuteAsyncNonExistingApplication_46867492",
+  "test_path": "org/apache/commons/exec/DefaultExecutorTest",
+  "test_name": "testExecuteAsyncNonExistingApplication",
+  "body": "@Test\n    void testExecuteAsyncNonExistingApplication() throws Exception {\n        final CommandLine cl = new CommandLine(nonExistingTestScript);\n        final DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();\n        final DefaultExecutor executor = DefaultExecutor.builder().get();\n\n        executor.execute(cl, resultHandler);\n        resultHandler.waitFor();\n\n        assertTrue(executor.isFailure(resultHandler.getExitValue()));\n        assertNotNull(resultHandler.getException());\n    }",
+  "invocations": [
+    "getExitValue",
+    "getException",
+    "DefaultExecuteResultHandler",
+    "waitFor",
+    "isFailure",
+    "execute",
+    "builder",
+    "get",
+    "CommandLine"
+  ],
+  "signature": {
+    "org.apache.commons.exec.DefaultExecuteResultHandler.getExitValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.DefaultExecuteResultHandler.getException()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.DefaultExecuteResultHandler()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.DefaultExecuteResultHandler.waitFor()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.DefaultExecutor.isFailure(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine, org.apache.commons.exec.ExecuteResultHandler)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.exec.CommandLine",
+        "org.apache.commons.exec.ExecuteResultHandler"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.DefaultExecutor.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.DefaultExecutor$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.CommandLine(java.nio.file.Path)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.file.Path"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine, org.apache.commons.exec.ExecuteResultHandler)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine, org.apache.commons.exec.ExecuteResultHandler)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 129,
+      "class_name": "org.apache.commons.exec.DefaultExecutor",
+      "method_name": "execute",
+      "signature": "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine, org.apache.commons.exec.ExecuteResultHandler)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

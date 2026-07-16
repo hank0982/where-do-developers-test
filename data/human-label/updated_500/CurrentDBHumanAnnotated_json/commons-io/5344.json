@@ -1,0 +1,53 @@
+{
+  "id": "5344",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.BrokenWriterTest_testWriteCharArrayIndexed_d5f4e76a",
+  "test_path": "org/apache/commons/io/output/BrokenWriterTest",
+  "test_name": "testWriteCharArrayIndexed",
+  "body": "@ParameterizedTest\n    @MethodSource(\"org.apache.commons.io.BrokenTestFactories#parameters\")\n    void testWriteCharArrayIndexed(final Class<Throwable> clazz) throws Exception {\n        final Throwable exception = clazz.newInstance();\n        @SuppressWarnings(\"resource\")\n        final BrokenWriter brokenWriter = createBrokenWriter(exception);\n        final char[] cbuf = new char[1];\n        assertEquals(exception, assertThrows(clazz, () -> brokenWriter.write(cbuf, 0, 1)));\n        // Verify that the exception is thrown before checking the parameters.\n        assertEquals(exception, assertThrows(clazz, () -> brokenWriter.write(cbuf, -1, 0)));\n        assertEquals(exception, assertThrows(clazz, () -> brokenWriter.write(cbuf, 0, -1)));\n        assertEquals(exception, assertThrows(clazz, () -> brokenWriter.write(cbuf, 0, 2)));\n        assertEquals(exception, assertThrows(clazz, () -> brokenWriter.write((char[]) null, 0, 0)));\n    }",
+  "invocations": [
+    "BrokenWriter",
+    "BrokenWriter",
+    "write"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.BrokenWriter(java.io.IOException)": {
+      "params_len": 1,
+      "params": [
+        "java.io.IOException"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.BrokenWriter(java.util.function.Supplier<java.lang.Throwable>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.function.Supplier<java.lang.Throwable>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.BrokenWriter.write(char[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.BrokenWriter.write(char[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.BrokenWriter.write(char[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 699,
+      "class_name": "org.apache.commons.io.output.BrokenWriter",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.BrokenWriter.write(char[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "58006",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastDatePrinterTest_testHourFormats_651c9867",
+  "test_path": "org/apache/commons/lang3/time/FastDatePrinterTest",
+  "test_name": "testHourFormats",
+  "body": "@Test\n    void testHourFormats() {\n        final Calendar calendar = Calendar.getInstance();\n        calendar.clear();\n        final DatePrinter printer = getInstance(\"K k H h\");\n\n        calendar.set(Calendar.HOUR_OF_DAY, 0);\n        assertEquals(\"0 24 0 12\", printer.format(calendar));\n\n        calendar.set(Calendar.HOUR_OF_DAY, 12);\n        assertEquals(\"0 12 12 12\", printer.format(calendar));\n\n        calendar.set(Calendar.HOUR_OF_DAY, 23);\n        assertEquals(\"11 23 23 11\", printer.format(calendar));\n    }",
+  "invocations": [
+    "format",
+    "FastDatePrinter"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastDatePrinter.format(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDatePrinter(java.lang.String, java.util.TimeZone, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDatePrinter.format(java.util.Calendar)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDatePrinter.format(java.util.Calendar)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2781,
+      "class_name": "org.apache.commons.lang3.time.FastDatePrinter",
+      "method_name": "format",
+      "signature": "org.apache.commons.lang3.time.FastDatePrinter.format(java.util.Calendar)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "787",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.plot.pie.MultiplePiePlotTest_testEquals_4d3b87b2",
+  "test_path": "org/jfree/chart/plot/pie/MultiplePiePlotTest",
+  "test_name": "testEquals",
+  "body": "@Test\n    public void testEquals() {\n        MultiplePiePlot p1 = new MultiplePiePlot();\n        MultiplePiePlot p2 = new MultiplePiePlot();\n        assertEquals(p1, p2);\n        assertEquals(p2, p1);\n\n        p1.setDataExtractOrder(TableOrder.BY_ROW);\n        assertNotEquals(p1, p2);\n        p2.setDataExtractOrder(TableOrder.BY_ROW);\n        assertEquals(p1, p2);\n\n        p1.setLimit(1.23);\n        assertNotEquals(p1, p2);\n        p2.setLimit(1.23);\n        assertEquals(p1, p2);\n\n        p1.setAggregatedItemsKey(\"Aggregated Items\");\n        assertNotEquals(p1, p2);\n        p2.setAggregatedItemsKey(\"Aggregated Items\");\n        assertEquals(p1, p2);\n\n        p1.setAggregatedItemsPaint(new GradientPaint(1.0f, 2.0f, Color.RED,\n                3.0f, 4.0f, Color.YELLOW));\n        assertNotEquals(p1, p2);\n        p2.setAggregatedItemsPaint(new GradientPaint(1.0f, 2.0f, Color.RED,\n                3.0f, 4.0f, Color.YELLOW));\n        assertEquals(p1, p2);\n\n        p1.setPieChart(ChartFactory.createPieChart(\"Title\", null, true, true,\n                true));\n        assertNotEquals(p1, p2);\n        p2.setPieChart(ChartFactory.createPieChart(\"Title\", null, true, true,\n                true));\n        assertEquals(p1, p2);\n\n        p1.setLegendItemShape(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0));\n        assertNotEquals(p1, p2);\n        p2.setLegendItemShape(new Rectangle2D.Double(1.0, 2.0, 3.0, 4.0));\n        assertEquals(p1, p2);\n    }",
+  "invocations": [
+    "Plot",
+    "setAggregatedItemsPaint",
+    "MultiplePiePlot",
+    "setLimit",
+    "setAggregatedItemsKey",
+    "MultiplePiePlot",
+    "setPieChart",
+    "setLegendItemShape",
+    "equals",
+    "setDataExtractOrder",
+    "createPieChart"
+  ],
+  "signature": {
+    "org.jfree.chart.plot.Plot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot.setAggregatedItemsPaint(java.awt.Paint)": {
+      "params_len": 1,
+      "params": [
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot(org.jfree.data.category.CategoryDataset)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.category.CategoryDataset"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot.setLimit(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot.setAggregatedItemsKey(java.lang.Comparable)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Comparable"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot.setPieChart(org.jfree.chart.JFreeChart)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.JFreeChart"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot.setLegendItemShape(java.awt.Shape)": {
+      "params_len": 1,
+      "params": [
+        "java.awt.Shape"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.pie.MultiplePiePlot.setDataExtractOrder(org.jfree.chart.api.TableOrder)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.api.TableOrder"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.ChartFactory.createPieChart(java.lang.String, org.jfree.data.general.PieDataset, boolean, boolean, boolean)": {
+      "params_len": 5,
+      "params": [
+        "java.lang.String",
+        "org.jfree.data.general.PieDataset",
+        "boolean",
+        "boolean",
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.plot.pie.MultiplePiePlot.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.plot.pie.MultiplePiePlot.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 6091,
+      "class_name": "org.jfree.chart.plot.pie.MultiplePiePlot",
+      "method_name": "equals",
+      "signature": "org.jfree.chart.plot.pie.MultiplePiePlot.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

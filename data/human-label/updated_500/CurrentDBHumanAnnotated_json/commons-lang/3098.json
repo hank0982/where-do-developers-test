@@ -1,0 +1,35 @@
+{
+  "id": "3098",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testToLocales_69eed7cf",
+  "test_path": "org/apache/commons/lang3/LocaleUtilsTest",
+  "test_name": "testToLocales",
+  "body": "@ParameterizedTest\n    @MethodSource(\"java.util.Locale#getAvailableLocales\")\n    void testToLocales(final Locale actualLocale) {\n        assertEquals(actualLocale, LocaleUtils.toLocale(actualLocale));\n    }",
+  "invocations": [
+    "toLocale"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.util.Locale)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.util.Locale)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.LocaleUtils.toLocale(java.util.Locale)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4264,
+      "class_name": "org.apache.commons.lang3.LocaleUtils",
+      "method_name": "toLocale",
+      "signature": "org.apache.commons.lang3.LocaleUtils.toLocale(java.util.Locale)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

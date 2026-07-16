@@ -1,0 +1,37 @@
+{
+  "id": "1326",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveFileToDirectoryErrors_404263df",
+  "test_path": "org/apache/commons/io/FileUtilsTest",
+  "test_name": "testMoveFileToDirectoryErrors",
+  "body": "@Test\n    void testMoveFileToDirectoryErrors() throws Exception {\n        assertThrows(NullPointerException.class, () -> FileUtils.moveFileToDirectory(null, new File(\"foo\"), true));\n        assertThrows(NullPointerException.class, () -> FileUtils.moveFileToDirectory(new File(\"foo\"), null, true));\n        final File testFile1 = new File(tempDirFile, \"testMoveFileFile1\");\n        final File testFile2 = new File(tempDirFile, \"testMoveFileFile2\");\n        if (!testFile1.getParentFile().exists()) {\n            fail(\"Cannot create file \" + testFile1 + \" as the parent directory does not exist\");\n        }\n        try (BufferedOutputStream output1 = new BufferedOutputStream(Files.newOutputStream(testFile1.toPath()))) {\n            TestUtils.generateTestData(output1, 0);\n        }\n        if (!testFile2.getParentFile().exists()) {\n            fail(\"Cannot create file \" + testFile2 + \" as the parent directory does not exist\");\n        }\n        final BufferedOutputStream output = new BufferedOutputStream(Files.newOutputStream(testFile2.toPath()));\n        try {\n            TestUtils.generateTestData(output, 0);\n        } finally {\n            IOUtils.closeQuietly(output);\n        }\n        assertThrows(IllegalArgumentException.class, () -> FileUtils.moveFileToDirectory(testFile1, testFile2, true));\n\n        final File nonExistent = new File(tempDirFile, \"testMoveFileNonExistent\");\n        assertThrows(IOException.class, () -> FileUtils.moveFileToDirectory(testFile1, nonExistent, false));\n    }",
+  "invocations": [
+    "moveFileToDirectory"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.moveFileToDirectory(java.io.File, java.io.File, boolean)": {
+      "params_len": 3,
+      "params": [
+        "java.io.File",
+        "java.io.File",
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.moveFileToDirectory(java.io.File, java.io.File, boolean)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.moveFileToDirectory(java.io.File, java.io.File, boolean)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 286,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "moveFileToDirectory",
+      "signature": "org.apache.commons.io.FileUtils.moveFileToDirectory(java.io.File, java.io.File, boolean)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

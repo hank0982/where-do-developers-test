@@ -1,0 +1,39 @@
+{
+  "id": "1181",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testBinaryToLong_23bd972b",
+  "test_path": "org/apache/commons/lang3/ConversionTest",
+  "test_name": "testBinaryToLong",
+  "body": "@Test\n    void testBinaryToLong() {\n        final boolean[] src = {\n            false, false, true, true, true, false, true, true, true, true, true, true, true,\n            false, false, false, true, true, true, true, false, false, false, false, false,\n            false, true, true, true, false, false, false, false, false, false, false, true,\n            true, true, true, true, false, false, false, false, true, false, false, true, true,\n            false, false, false, false, true, false, true, false, true, false, false, true,\n            true, false, true, true, true, false, false, false, false, true};\n        // conversion of \"CDF1F0C10F12345678\" by HexToBinary\n        assertEquals(0x0000000000000000L, Conversion.binaryToLong(src, 0, 0L, 0, 0));\n        assertEquals(0x000000000000000CL, Conversion.binaryToLong(src, 0, 0L, 0, 1 * 4));\n        assertEquals(0x000000001C0F1FDCL, Conversion.binaryToLong(src, 0, 0L, 0, 8 * 4));\n        assertEquals(0x0000000001C0F1FDL, Conversion.binaryToLong(src, 1 * 4, 0L, 0, 8 * 4));\n        assertEquals(\n            0x123456798ABCDEF0L, Conversion.binaryToLong(src, 0, 0x123456798ABCDEF0L, 0, 0));\n        assertEquals(\n            0x1234567876BCDEF0L,\n            Conversion.binaryToLong(src, 15 * 4, 0x123456798ABCDEF0L, 24, 3 * 4));\n        assertIllegalArgumentException(() -> Conversion.binaryToLong(src, 15 * 4, 0x123456798ABCDEF0L, 24, Long.SIZE));\n    }",
+  "invocations": [
+    "binaryToLong"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.Conversion.binaryToLong(boolean[], int, long, int, int)": {
+      "params_len": 5,
+      "params": [
+        "boolean[]",
+        "int",
+        "long",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.Conversion.binaryToLong(boolean[], int, long, int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.Conversion.binaryToLong(boolean[], int, long, int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1403,
+      "class_name": "org.apache.commons.lang3.Conversion",
+      "method_name": "binaryToLong",
+      "signature": "org.apache.commons.lang3.Conversion.binaryToLong(boolean[], int, long, int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

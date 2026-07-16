@@ -1,0 +1,35 @@
+{
+  "id": "6031",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testCreateBigDecimal_ea1ae640",
+  "test_path": "org/apache/commons/lang3/math/NumberUtilsTest",
+  "test_name": "testCreateBigDecimal",
+  "body": "@Test\n    void testCreateBigDecimal() {\n        assertEquals(new BigDecimal(\"1234.5\"), NumberUtils.createBigDecimal(\"1234.5\"),\n            \"createBigDecimal(String) failed\");\n        assertNull(NumberUtils.createBigDecimal(null), \"createBigDecimal(null) failed\");\n        testCreateBigDecimalFailure(\"\");\n        testCreateBigDecimalFailure(\" \");\n        testCreateBigDecimalFailure(\"\\b\\t\\n\\f\\r\");\n        // Funky whitespaces\n        testCreateBigDecimalFailure(\"\\u00A0\\uFEFF\\u000B\\u000C\\u001C\\u001D\\u001E\\u001F\");\n        // sign alone not valid\n        testCreateBigDecimalFailure(\"-\");\n        // comment in NumberUtils suggests some implementations may incorrectly allow this\n        testCreateBigDecimalFailure(\"--\");\n        testCreateBigDecimalFailure(\"--0\");\n        // sign alone not valid\n        testCreateBigDecimalFailure(\"+\");\n        // in case this was also allowed by some JVMs\n        testCreateBigDecimalFailure(\"++\");\n        testCreateBigDecimalFailure(\"++0\");\n    }",
+  "invocations": [
+    "createBigDecimal"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1919,
+      "class_name": "org.apache.commons.lang3.math.NumberUtils",
+      "method_name": "createBigDecimal",
+      "signature": "org.apache.commons.lang3.math.NumberUtils.createBigDecimal(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

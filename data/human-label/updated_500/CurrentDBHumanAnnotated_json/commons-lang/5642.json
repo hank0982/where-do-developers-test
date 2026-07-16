@@ -1,0 +1,97 @@
+{
+  "id": "5642",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest_testInitializeResultsIsSuccessfulFalse_629890ec",
+  "test_path": "org/apache/commons/lang3/concurrent/MultiBackgroundInitializerTest",
+  "test_name": "testInitializeResultsIsSuccessfulFalse",
+  "body": "@Test\n    void testInitializeResultsIsSuccessfulFalse()\n            throws ConcurrentException {\n        final AbstractChildBackgroundInitializer child = createChildBackgroundInitializer();\n        child.ex = new Exception();\n        initializer.addInitializer(CHILD_INIT, child);\n        initializer.start();\n        final MultiBackgroundInitializer.MultiBackgroundInitializerResults res = initializer\n                .get();\n        assertFalse(res.isSuccessful(), \"Wrong success flag\");\n    }\n\n    /**\n     * Tests the isSuccessful() method of the result object if no child\n     * initializer has thrown an exception.\n     *\n     * @throws org.apache.commons.lang3.concurrent.ConcurrentException so we don't have to catch it\n     */\n    @Test\n    void testInitializeResultsIsSuccessfulTrue()\n            throws ConcurrentException {\n        final AbstractChildBackgroundInitializer child = createChildBackgroundInitializer();\n        initializer.addInitializer(CHILD_INIT, child);\n        initializer.start();\n        final MultiBackgroundInitializer.MultiBackgroundInitializerResults res = initializer\n                .get();\n        assertTrue(res.isSuccessful(), \"Wrong success flag\");\n    }\n\n    /**\n     * Tests the behavior of the initializer if one of the child initializers\n     * throws a runtime exception.\n     */\n    @Test\n    void testInitializeRuntimeEx() {\n        final AbstractChildBackgroundInitializer child = createChildBackgroundInitializer();\n        child.ex = new RuntimeException();\n        initializer.addInitializer(CHILD_INIT, child);\n        initializer.start();\n        final Exception ex = assertThrows(Exception.class, initializer::get);\n        assertEquals(child.ex, ex, \"Wrong exception\");\n    }",
+  "invocations": [
+    "AbstractConcurrentInitializer",
+    "AbstractConcurrentInitializer",
+    "isSuccessful",
+    "addInitializer",
+    "get",
+    "start",
+    "BackgroundInitializer",
+    "BackgroundInitializer",
+    "nop",
+    "nul"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer(org.apache.commons.lang3.function.FailableSupplier<? extends T, ? extends java.lang.Exception>, org.apache.commons.lang3.function.FailableConsumer<? super T, ? extends java.lang.Exception>)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.lang3.function.FailableSupplier<? extends T",
+        "? extends java.lang.Exception>",
+        "org.apache.commons.lang3.function.FailableConsumer<? super T",
+        "? extends java.lang.Exception>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.AbstractConcurrentInitializer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults.isSuccessful()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.addInitializer(java.lang.String, org.apache.commons.lang3.concurrent.BackgroundInitializer<?>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "org.apache.commons.lang3.concurrent.BackgroundInitializer<?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.BackgroundInitializer.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.BackgroundInitializer.start()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.BackgroundInitializer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.BackgroundInitializer(java.util.concurrent.ExecutorService)": {
+      "params_len": 1,
+      "params": [
+        "java.util.concurrent.ExecutorService"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.function.FailableConsumer.nop()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.function.FailableSupplier.nul()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults.isSuccessful()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults.isSuccessful()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2329,
+      "class_name": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults",
+      "method_name": "isSuccessful",
+      "signature": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults.isSuccessful()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

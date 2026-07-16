@@ -1,0 +1,37 @@
+{
+  "id": "6",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.Jdbc41BridgeTest_testGetObjectName_00b5fc6f",
+  "test_path": "org/apache/commons/dbcp2/Jdbc41BridgeTest",
+  "test_name": "testGetObjectName",
+  "body": "@Test\n    void testGetObjectName() throws SQLException {\n        // Normal\n        try (Connection conn = getConnection();\n                ResultSet rs = conn.getMetaData().getTypeInfo()) {\n            rs.next();\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"TYPE_NAME\", String.class));\n            //\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"DATA_TYPE\", Integer.class));\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"DATA_TYPE\", Long.class));\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"DATA_TYPE\", Double.class));\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"DATA_TYPE\", Float.class));\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"DATA_TYPE\", Byte.class));\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"DATA_TYPE\", BigDecimal.class));\n            //\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"NULLABLE\", Short.class));\n            assertNotNull(Jdbc41Bridge.getObject(rs, \"CASE_SENSITIVE\", Boolean.class));\n        }\n    }",
+  "invocations": [
+    "getObject"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.Jdbc41Bridge.getObject(java.sql.ResultSet, java.lang.String, java.lang.Class<T>)": {
+      "params_len": 3,
+      "params": [
+        "java.sql.ResultSet",
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.Jdbc41Bridge.getObject(java.sql.ResultSet, java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.Jdbc41Bridge.getObject(java.sql.ResultSet, java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1749,
+      "class_name": "org.apache.commons.dbcp2.Jdbc41Bridge",
+      "method_name": "getObject",
+      "signature": "org.apache.commons.dbcp2.Jdbc41Bridge.getObject(java.sql.ResultSet, java.lang.String, java.lang.Class<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

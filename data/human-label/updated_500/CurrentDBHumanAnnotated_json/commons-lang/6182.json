@@ -1,0 +1,35 @@
+{
+  "id": "6182",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testMaxInt_nullArray_6ac58771",
+  "test_path": "org/apache/commons/lang3/math/NumberUtilsTest_testMaxInt",
+  "test_name": "nullArray",
+  "body": "@Test\n    void testMaxInt_nullArray() {\n        assertNullPointerException(() -> NumberUtils.max((int[]) null));\n    }",
+  "invocations": [
+    "max"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.math.NumberUtils.max(int[])": {
+      "params_len": 1,
+      "params": [
+        "int[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.math.NumberUtils.max(int[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.math.NumberUtils.max(int[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1884,
+      "class_name": "org.apache.commons.lang3.math.NumberUtils",
+      "method_name": "max",
+      "signature": "org.apache.commons.lang3.math.NumberUtils.max(int[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

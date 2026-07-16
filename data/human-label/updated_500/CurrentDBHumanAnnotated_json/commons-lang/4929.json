@@ -1,0 +1,56 @@
+{
+  "id": "4929",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.EqualsBuilderTest_testObjectRecursiveCycleSelfreference_e142db5b",
+  "test_path": "org/apache/commons/lang3/builder/EqualsBuilderTest",
+  "test_name": "testObjectRecursiveCycleSelfreference",
+  "body": "@Test\n    void testObjectRecursiveCycleSelfreference() {\n        final TestRecursiveCycleObject o1A = new TestRecursiveCycleObject(1);\n        final TestRecursiveCycleObject o1B = new TestRecursiveCycleObject(1);\n        final TestRecursiveCycleObject o2 = new TestRecursiveCycleObject(2);\n\n        assertTrue(new EqualsBuilder().setTestRecursive(true).append(o1A, o1A).isEquals());\n        assertTrue(new EqualsBuilder().setTestRecursive(true).append(o1A, o1B).isEquals());\n        assertFalse(new EqualsBuilder().setTestRecursive(true).append(o1A, o2).isEquals());\n    }",
+  "invocations": [
+    "EqualsBuilder",
+    "isEquals",
+    "append",
+    "setTestRecursive"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.EqualsBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.EqualsBuilder.isEquals()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.EqualsBuilder.append(java.lang.Object, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.EqualsBuilder.setTestRecursive(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.EqualsBuilder.append(java.lang.Object, java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.EqualsBuilder.append(java.lang.Object, java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 591,
+      "class_name": "org.apache.commons.lang3.builder.EqualsBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.builder.EqualsBuilder.append(java.lang.Object, java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

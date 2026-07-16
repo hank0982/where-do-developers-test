@@ -1,0 +1,35 @@
+{
+  "id": "1566",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.statistics.BoxAndWhiskerCalculatorTest_testCalculateBoxAndWhiskerStatistics_adf0ce81",
+  "test_path": "org/jfree/data/statistics/BoxAndWhiskerCalculatorTest",
+  "test_name": "testCalculateBoxAndWhiskerStatistics",
+  "body": "@Test\n    public void testCalculateBoxAndWhiskerStatistics() {\n\n        // try null list\n        boolean pass = false;\n        try {\n            BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(null);\n        }\n        catch (IllegalArgumentException e) {\n            pass = true;\n        }\n        assertTrue(pass);\n\n        // try a list containing a single value\n        List<Number> values = new ArrayList<>();\n        values.add(1.1);\n        BoxAndWhiskerItem item\n            = BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(values);\n        assertEquals(1.1, item.getMean().doubleValue(), EPSILON);\n        assertEquals(1.1, item.getMedian().doubleValue(), EPSILON);\n        assertEquals(1.1, item.getQ1().doubleValue(), EPSILON);\n        assertEquals(1.1, item.getQ3().doubleValue(), EPSILON);\n    }",
+  "invocations": [
+    "calculateBoxAndWhiskerStatistics"
+  ],
+  "signature": {
+    "org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(java.util.List<? extends java.lang.Number>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<? extends java.lang.Number>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(java.util.List<? extends java.lang.Number>)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(java.util.List<? extends java.lang.Number>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2158,
+      "class_name": "org.jfree.data.statistics.BoxAndWhiskerCalculator",
+      "method_name": "calculateBoxAndWhiskerStatistics",
+      "signature": "org.jfree.data.statistics.BoxAndWhiskerCalculator.calculateBoxAndWhiskerStatistics(java.util.List<? extends java.lang.Number>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

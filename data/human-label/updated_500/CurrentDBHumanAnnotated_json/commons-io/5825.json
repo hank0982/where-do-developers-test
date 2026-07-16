@@ -1,0 +1,127 @@
+{
+  "id": "5825",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.WriterOutputStreamTest_testLargeUTF8WithSingleByteWrite_1ae648b0",
+  "test_path": "org/apache/commons/io/output/WriterOutputStreamTest",
+  "test_name": "testLargeUTF8WithSingleByteWrite",
+  "body": "@Test\n    void testLargeUTF8WithSingleByteWrite() throws IOException {\n        testWithSingleByteWrite(LARGE_TEST_STRING, UTF_8);\n    }",
+  "invocations": [
+    "toCharset",
+    "toCharset",
+    "WriterOutputStream",
+    "WriterOutputStream",
+    "builder",
+    "write",
+    "WriterOutputStream",
+    "close",
+    "WriterOutputStream",
+    "get",
+    "setCharset",
+    "setWriter"
+  ],
+  "signature": {
+    "org.apache.commons.io.Charsets.toCharset(java.nio.charset.Charset)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.charset.Charset"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.Charsets.toCharset(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream(java.io.Writer, java.nio.charset.Charset, int, boolean)": {
+      "params_len": 4,
+      "params": [
+        "java.io.Writer",
+        "java.nio.charset.Charset",
+        "int",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream(java.io.Writer, java.lang.String, int, boolean)": {
+      "params_len": 4,
+      "params": [
+        "java.io.Writer",
+        "java.lang.String",
+        "int",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream.write(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream(java.io.Writer, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.Writer",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream(java.io.Writer, java.nio.charset.CharsetDecoder, int, boolean)": {
+      "params_len": 4,
+      "params": [
+        "java.io.Writer",
+        "java.nio.charset.CharsetDecoder",
+        "int",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.WriterOutputStream$Builder.setCharset(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractOriginSupplier.setWriter(java.io.Writer)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Writer"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.WriterOutputStream.write(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.WriterOutputStream.write(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 932,
+      "class_name": "org.apache.commons.io.output.WriterOutputStream",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.WriterOutputStream.write(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

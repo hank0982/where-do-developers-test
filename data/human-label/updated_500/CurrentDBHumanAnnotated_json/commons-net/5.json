@@ -1,0 +1,51 @@
+{
+  "id": "5",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.bsd.RCommandClientTest_testDefaultPort_a5da3771",
+  "test_path": "org/apache/commons/net/bsd/RCommandClientTest",
+  "test_name": "testDefaultPort",
+  "body": "@Test\n    public void testDefaultPort() {\n        assertEquals(RCommandClient.DEFAULT_PORT, newClient().getDefaultPort());\n    }",
+  "invocations": [
+    "RExecClient",
+    "RCommandClient",
+    "SocketClient",
+    "getDefaultPort"
+  ],
+  "signature": {
+    "org.apache.commons.net.bsd.RExecClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.bsd.RCommandClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient.getDefaultPort()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.SocketClient.getDefaultPort()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.SocketClient.getDefaultPort()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 739,
+      "class_name": "org.apache.commons.net.SocketClient",
+      "method_name": "getDefaultPort",
+      "signature": "org.apache.commons.net.SocketClient.getDefaultPort()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

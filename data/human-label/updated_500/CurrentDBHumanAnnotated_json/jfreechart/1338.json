@@ -1,0 +1,66 @@
+{
+  "id": "1338",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.KeyedObjects2DTest_testRemoveColumnByIndex_1efb5bb0",
+  "test_path": "org/jfree/data/KeyedObjects2DTest",
+  "test_name": "testRemoveColumnByIndex",
+  "body": "@Test\n    public void testRemoveColumnByIndex() {\n        KeyedObjects2D<String, String> data = new KeyedObjects2D<>();\n        data.setObject(\"Obj1\", \"R1\", \"C1\");\n        data.setObject(\"Obj2\", \"R2\", \"C2\");\n        data.removeColumn(0);\n        assertEquals(1, data.getColumnCount());\n        assertEquals(\"Obj2\", data.getObject(1, 0));\n\n        // try negative column index\n        boolean pass = false;\n        try {\n            data.removeColumn(-1);\n        }\n        catch (IndexOutOfBoundsException e) {\n            pass = true;\n        }\n        assertTrue(pass);\n\n        // try column index too high\n        pass = false;\n        try {\n            data.removeColumn(data.getColumnCount());\n        }\n        catch (IndexOutOfBoundsException e) {\n            pass = true;\n        }\n        assertTrue(pass);\n    }",
+  "invocations": [
+    "setObject",
+    "getColumnCount",
+    "removeColumn",
+    "getObject",
+    "KeyedObjects2D"
+  ],
+  "signature": {
+    "org.jfree.data.KeyedObjects2D.setObject(java.lang.Object, R, C)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "R",
+        "C"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.KeyedObjects2D.getColumnCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.KeyedObjects2D.removeColumn(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.KeyedObjects2D.getObject(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.KeyedObjects2D()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.KeyedObjects2D.removeColumn(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.KeyedObjects2D.removeColumn(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1898,
+      "class_name": "org.jfree.data.KeyedObjects2D",
+      "method_name": "removeColumn",
+      "signature": "org.jfree.data.KeyedObjects2D.removeColumn(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

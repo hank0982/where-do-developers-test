@@ -1,0 +1,65 @@
+{
+  "id": "3",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.SocketClientTest_testProxySettings_b742b680",
+  "test_path": "org/apache/commons/net/SocketClientTest",
+  "test_name": "testProxySettings",
+  "body": "@Test\n    public void testProxySettings() {\n        final SocketClient socketClient = new FTPClient();\n        assertNull(socketClient.getProxy());\n        final Proxy proxy = new Proxy(Proxy.Type.SOCKS, new InetSocketAddress(PROXY_HOST, PROXY_PORT));\n        socketClient.setProxy(proxy);\n        assertEquals(proxy, socketClient.getProxy());\n        assertFalse(socketClient.isConnected());\n    }",
+  "invocations": [
+    "SocketClient",
+    "getProxy",
+    "setProxy",
+    "isConnected",
+    "FTPClient",
+    "FTP"
+  ],
+  "signature": {
+    "org.apache.commons.net.SocketClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient.getProxy()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient.setProxy(java.net.Proxy)": {
+      "params_len": 1,
+      "params": [
+        "java.net.Proxy"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient.isConnected()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTP()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.SocketClient.setProxy(java.net.Proxy)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.SocketClient.setProxy(java.net.Proxy)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 749,
+      "class_name": "org.apache.commons.net.SocketClient",
+      "method_name": "setProxy",
+      "signature": "org.apache.commons.net.SocketClient.setProxy(java.net.Proxy)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

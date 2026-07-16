@@ -1,0 +1,147 @@
+{
+  "id": "272",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsTest_testIsNotEmptyPrimitives_2b4f0d43",
+  "test_path": "org/apache/commons/lang3/ArrayUtilsTest",
+  "test_name": "testIsNotEmptyPrimitives",
+  "body": "@Test\n    void testIsNotEmptyPrimitives() {\n        final long[] emptyLongArray = {};\n        final long[] notEmptyLongArray = {1L};\n        assertFalse(ArrayUtils.isNotEmpty((long[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyLongArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyLongArray));\n\n        final int[] emptyIntArray = {};\n        final int[] notEmptyIntArray = {1};\n        assertFalse(ArrayUtils.isNotEmpty((int[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyIntArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyIntArray));\n\n        final short[] emptyShortArray = {};\n        final short[] notEmptyShortArray = {1};\n        assertFalse(ArrayUtils.isNotEmpty((short[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyShortArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyShortArray));\n\n        final char[] emptyCharArray = {};\n        final char[] notEmptyCharArray = {1};\n        assertFalse(ArrayUtils.isNotEmpty((char[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyCharArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyCharArray));\n\n        final byte[] emptyByteArray = {};\n        final byte[] notEmptyByteArray = {1};\n        assertFalse(ArrayUtils.isNotEmpty((byte[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyByteArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyByteArray));\n\n        final double[] emptyDoubleArray = {};\n        final double[] notEmptyDoubleArray = {1.0};\n        assertFalse(ArrayUtils.isNotEmpty((double[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyDoubleArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyDoubleArray));\n\n        final float[] emptyFloatArray = {};\n        final float[] notEmptyFloatArray = {1.0F};\n        assertFalse(ArrayUtils.isNotEmpty((float[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyFloatArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyFloatArray));\n\n        final boolean[] emptyBooleanArray = {};\n        final boolean[] notEmptyBooleanArray = {true};\n        assertFalse(ArrayUtils.isNotEmpty((boolean[]) null));\n        assertFalse(ArrayUtils.isNotEmpty(emptyBooleanArray));\n        assertTrue(ArrayUtils.isNotEmpty(notEmptyBooleanArray));\n    }",
+  "invocations": [
+    "isNotEmpty",
+    "isNotEmpty",
+    "isNotEmpty",
+    "isNotEmpty",
+    "isNotEmpty",
+    "isNotEmpty",
+    "isNotEmpty",
+    "isNotEmpty"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(short[])": {
+      "params_len": 1,
+      "params": [
+        "short[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(char[])": {
+      "params_len": 1,
+      "params": [
+        "char[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(int[])": {
+      "params_len": 1,
+      "params": [
+        "int[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(double[])": {
+      "params_len": 1,
+      "params": [
+        "double[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(float[])": {
+      "params_len": 1,
+      "params": [
+        "float[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(byte[])": {
+      "params_len": 1,
+      "params": [
+        "byte[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(boolean[])": {
+      "params_len": 1,
+      "params": [
+        "boolean[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(long[])": {
+      "params_len": 1,
+      "params": [
+        "long[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(short[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(char[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(int[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(double[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(float[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(byte[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(boolean[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(long[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(short[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(char[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(int[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(double[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(float[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(byte[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(boolean[])",
+    "org.apache.commons.lang3.ArrayUtils.isNotEmpty(long[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3046,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(short[])"
+    },
+    {
+      "method_id": 3122,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(char[])"
+    },
+    {
+      "method_id": 3279,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(int[])"
+    },
+    {
+      "method_id": 3316,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(double[])"
+    },
+    {
+      "method_id": 3347,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(float[])"
+    },
+    {
+      "method_id": 3359,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(byte[])"
+    },
+    {
+      "method_id": 3363,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(boolean[])"
+    },
+    {
+      "method_id": 3420,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "isNotEmpty",
+      "signature": "org.apache.commons.lang3.ArrayUtils.isNotEmpty(long[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

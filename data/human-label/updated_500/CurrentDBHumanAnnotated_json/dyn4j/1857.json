@@ -1,0 +1,63 @@
+{
+  "id": "1857",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.geometry.Vector3Test_dot_00018549",
+  "test_path": "org/dyn4j/geometry/Vector3Test",
+  "test_name": "dot",
+  "body": "@Test\n\tpublic void dot() {\n\t\tVector3 v1 = new Vector3(1.0, 1.0, -1.0);\n\t\tVector3 v2 = new Vector3(0.0, 1.0, 0.0);\n\t\t\n\t\tTestCase.assertEquals(1.0, v1.dot(v2));\n\t\t\n\t\tTestCase.assertEquals(1.0, v1.dot(0.0, 1.0, 0.0));\n\t\t\n\t\t// test a perpendicular vector\n\t\tTestCase.assertEquals(0.0, v1.dot(-1.0, 1.0, 0.0));\n\t\t\n\t\tTestCase.assertEquals(2.0, v1.dot(1.0, 1.0, 0.0));\n\t}",
+  "invocations": [
+    "dot",
+    "Vector3",
+    "dot"
+  ],
+  "signature": {
+    "org.dyn4j.geometry.Vector3.dot(org.dyn4j.geometry.Vector3)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.Vector3"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Vector3(double, double, double)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Vector3.dot(double, double, double)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.geometry.Vector3.dot(org.dyn4j.geometry.Vector3)",
+    "org.dyn4j.geometry.Vector3.dot(double, double, double)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.geometry.Vector3.dot(org.dyn4j.geometry.Vector3)",
+    "org.dyn4j.geometry.Vector3.dot(double, double, double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1567,
+      "class_name": "org.dyn4j.geometry.Vector3",
+      "method_name": "dot",
+      "signature": "org.dyn4j.geometry.Vector3.dot(org.dyn4j.geometry.Vector3)"
+    },
+    {
+      "method_id": 1603,
+      "class_name": "org.dyn4j.geometry.Vector3",
+      "method_name": "dot",
+      "signature": "org.dyn4j.geometry.Vector3.dot(double, double, double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

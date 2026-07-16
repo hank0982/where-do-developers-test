@@ -1,0 +1,47 @@
+{
+  "id": "5304",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.ToStringStyleTest_testSetSizeStartText_5ef7aa9f",
+  "test_path": "org/apache/commons/lang3/builder/ToStringStyleTest",
+  "test_name": "testSetSizeStartText",
+  "body": "@Test\n    void testSetSizeStartText() {\n        final ToStringStyle style = new ToStringStyleImpl();\n        style.setSizeStartText(null);\n        assertEquals(\"\", style.getSizeStartText());\n    }",
+  "invocations": [
+    "getSizeStartText",
+    "ToStringStyle",
+    "setSizeStartText"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.ToStringStyle.getSizeStartText()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringStyle()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 931,
+      "class_name": "org.apache.commons.lang3.builder.ToStringStyle",
+      "method_name": "setSizeStartText",
+      "signature": "org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

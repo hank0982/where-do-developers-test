@@ -1,0 +1,61 @@
+{
+  "id": "1631",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testRead_ReadableByteChannel_bd3bfb35",
+  "test_path": "org/apache/commons/io/IOUtilsTest_testRead",
+  "test_name": "ReadableByteChannel",
+  "body": "@Test\n    void testRead_ReadableByteChannel() throws Exception {\n        final ByteBuffer buffer = ByteBuffer.allocate(FILE_SIZE);\n        final FileInputStream fileInputStream = new FileInputStream(testFile);\n        final FileChannel input = fileInputStream.getChannel();\n        try {\n            assertEquals(FILE_SIZE, IOUtils.read(input, buffer));\n            assertEquals(0, IOUtils.read(input, buffer));\n            assertEquals(0, buffer.remaining());\n            assertEquals(0, input.read(buffer));\n            buffer.clear();\n            assertThrows(EOFException.class, () -> IOUtils.readFully(input, buffer));\n        } finally {\n            IOUtils.closeQuietly(input, fileInputStream);\n        }\n    }",
+  "invocations": [
+    "read",
+    "closeQuietly",
+    "readFully"
+  ],
+  "signature": {
+    "org.apache.commons.io.IOUtils.read(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)": {
+      "params_len": 2,
+      "params": [
+        "java.nio.channels.ReadableByteChannel",
+        "java.nio.ByteBuffer"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.IOUtils.closeQuietly(java.io.Closeable[])": {
+      "params_len": 1,
+      "params": [
+        "java.io.Closeable[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.IOUtils.readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)": {
+      "params_len": 2,
+      "params": [
+        "java.nio.channels.ReadableByteChannel",
+        "java.nio.ByteBuffer"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.IOUtils.read(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)",
+    "org.apache.commons.io.IOUtils.readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.IOUtils.read(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)",
+    "org.apache.commons.io.IOUtils.readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 59,
+      "class_name": "org.apache.commons.io.IOUtils",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.IOUtils.read(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)"
+    },
+    {
+      "method_id": 185,
+      "class_name": "org.apache.commons.io.IOUtils",
+      "method_name": "readFully",
+      "signature": "org.apache.commons.io.IOUtils.readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

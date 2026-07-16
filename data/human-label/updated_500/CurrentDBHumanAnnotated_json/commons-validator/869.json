@@ -1,0 +1,51 @@
+{
+  "id": "869",
+  "project": "commons-validator",
+  "current_db_test_name": "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigitTest_testInvalidLength_1d580a8c",
+  "test_path": "org/apache/commons/validator/routines/checkdigit/ISBNCheckDigitTest",
+  "test_name": "testInvalidLength",
+  "body": "@Test\n    void testInvalidLength() {\n        assertFalse(routine.isValid(\"123456789\"), \"isValid() Lth 9 \");\n        assertFalse(routine.isValid(\"12345678901\"), \"isValid() Lth 11\");\n        assertFalse(routine.isValid(\"123456789012\"), \"isValid() Lth 12\");\n        assertFalse(routine.isValid(\"12345678901234\"), \"isValid() Lth 14\");\n\n        Exception e = assertThrows(CheckDigitException.class, () -> routine.calculate(\"12345678\"), \"calculate() Lth 8\");\n        assertEquals(\"Invalid ISBN Length = 8\", e.getMessage(), \"calculate() Lth 8\");\n\n        e = assertThrows(CheckDigitException.class, () -> routine.calculate(\"1234567890\"), \"calculate() Lth 10\");\n        assertEquals(\"Invalid ISBN Length = 10\", e.getMessage(), \"calculate() Lth 10\");\n\n        e = assertThrows(CheckDigitException.class, () -> routine.calculate(\"12345678901\"), \"calculate() Lth 11\");\n        assertEquals(\"Invalid ISBN Length = 11\", e.getMessage(), \"calculate() Lth 11\");\n\n        e = assertThrows(CheckDigitException.class, () -> routine.calculate(\"1234567890123\"), \"calculate() Lth 13\");\n        assertEquals(\"Invalid ISBN Length = 13\", e.getMessage(), \"calculate() Lth 13\");\n    }",
+  "invocations": [
+    "calculate",
+    "isValid"
+  ],
+  "signature": {
+    "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.calculate(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.isValid(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.calculate(java.lang.String)",
+    "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.isValid(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.calculate(java.lang.String)",
+    "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.isValid(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 538,
+      "class_name": "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit",
+      "method_name": "calculate",
+      "signature": "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.calculate(java.lang.String)"
+    },
+    {
+      "method_id": 540,
+      "class_name": "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit",
+      "method_name": "isValid",
+      "signature": "org.apache.commons.validator.routines.checkdigit.ISBNCheckDigit.isValid(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

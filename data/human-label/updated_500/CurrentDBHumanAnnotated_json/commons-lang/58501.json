@@ -1,0 +1,52 @@
+{
+  "id": "58501",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastDatePrinterTimeZonesTest_testCalendarTimezoneRespected_c2953629",
+  "test_path": "org/apache/commons/lang3/time/FastDatePrinterTimeZonesTest",
+  "test_name": "testCalendarTimezoneRespected",
+  "body": "@ParameterizedTest\n    @MethodSource(\"data\")\n    void testCalendarTimezoneRespected(final TimeZone timeZone) {\n        final Calendar cal = Calendar.getInstance(timeZone);\n\n        final SimpleDateFormat sdf = new SimpleDateFormat(PATTERN);\n        sdf.setTimeZone(timeZone);\n        final String expectedValue = sdf.format(cal.getTime());\n        final String actualValue = FastDateFormat.getInstance(PATTERN, timeZone).format(cal);\n        assertEquals(expectedValue, actualValue);\n    }",
+  "invocations": [
+    "getInstance",
+    "format"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String, java.util.TimeZone)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateFormat.format(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String, java.util.TimeZone)",
+    "org.apache.commons.lang3.time.FastDateFormat.format(java.util.Calendar)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String, java.util.TimeZone)",
+    "org.apache.commons.lang3.time.FastDateFormat.format(java.util.Calendar)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2943,
+      "class_name": "org.apache.commons.lang3.time.FastDateFormat",
+      "method_name": "getInstance",
+      "signature": "org.apache.commons.lang3.time.FastDateFormat.getInstance(java.lang.String, java.util.TimeZone)"
+    },
+    {
+      "method_id": 2945,
+      "class_name": "org.apache.commons.lang3.time.FastDateFormat",
+      "method_name": "format",
+      "signature": "org.apache.commons.lang3.time.FastDateFormat.format(java.util.Calendar)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

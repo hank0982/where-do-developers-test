@@ -1,0 +1,1808 @@
+{
+  "dataset": "suggested_label_146",
+  "case_count": 146,
+  "cases": [
+    {
+      "project": "commons-io",
+      "id": "999",
+      "ground_truth_test_fqn": "org.apache.commons.io.DirectoryWalkerTestCase.testCancel()",
+      "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testCancel_233c73ad",
+      "test_name": "testCancel",
+      "test_path": "org/apache/commons/io/DirectoryWalkerTest",
+      "dataset_json_relpath": "commons-io/999.json",
+      "gold_labels": [
+        "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1012",
+      "ground_truth_test_fqn": "org.apache.commons.io.DirectoryWalkerTestCase.testMissingStartDirectory()",
+      "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testMissingStartDirectory_e40cb700",
+      "test_name": "testMissingStartDirectory",
+      "test_path": "org/apache/commons/io/DirectoryWalkerTest",
+      "dataset_json_relpath": "commons-io/1012.json",
+      "gold_labels": [
+        "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1237",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testCopyDirectoryToDirectory_NonExistingDest()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testCopyDirectoryToDirectory_NonExistingDest_63b75268",
+      "test_name": "testCopyDirectoryToDirectory_NonExistingDest",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1237.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.copyDirectoryToDirectory(java.io.File, java.io.File)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1304",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testIO300()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testIO300_24bbcb7c",
+      "test_name": "testIO300",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1304.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.moveDirectoryToDirectory(java.io.File, java.io.File, boolean)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1325",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testMoveDirectory_Errors()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveDirectory_Errors_bc330441",
+      "test_name": "testMoveDirectory_Errors",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1325.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.moveDirectory(java.io.File, java.io.File)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1326",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testMoveFileToDirectory_Errors()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testMoveFileToDirectoryErrors_404263df",
+      "test_name": "testMoveFileToDirectoryErrors",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1326.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.moveFileToDirectory(java.io.File, java.io.File, boolean)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1346",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testReadFileToByteArray()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testReadFileToByteArray_2b1894f3",
+      "test_name": "testReadFileToByteArray",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1346.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.readFileToByteArray(java.io.File)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1390",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_1b5c853b",
+      "test_name": "testWriteLines_3argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1390.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.readFileToString(java.io.File)",
+        "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.util.Collection<?>, boolean)",
+        "org.apache.commons.io.FileUtils.writeStringToFile(java.io.File, java.lang.String, java.nio.charset.Charset)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1395",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines_2160509a",
+      "test_name": "testWriteLines_4argsWithAppendOptionTrue_ShouldNotDeletePreviousFileLines",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1395.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.readFileToString(java.io.File)",
+        "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.util.Collection<?>, java.lang.String, boolean)",
+        "org.apache.commons.io.FileUtils.writeStringToFile(java.io.File, java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1396",
+      "ground_truth_test_fqn": "org.apache.commons.io.FileUtilsTestCase.testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines()",
+      "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines_54d19b99",
+      "test_name": "testWriteLines_5argsWithAppendOptionFalse_ShouldDeletePreviousFileLines",
+      "test_path": "org/apache/commons/io/FileUtilsTest",
+      "dataset_json_relpath": "commons-io/1396.json",
+      "gold_labels": [
+        "org.apache.commons.io.FileUtils.readFileToString(java.io.File)",
+        "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.lang.String, java.util.Collection<?>, java.lang.String, boolean)",
+        "org.apache.commons.io.FileUtils.writeStringToFile(java.io.File, java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1434",
+      "ground_truth_test_fqn": "org.apache.commons.io.FilenameUtilsTestCase.testGetPathNoEndSeparator_with_null_byte()",
+      "current_db_test_name": "org.apache.commons.io.FilenameUtilsTest_testGetPathNoEndSeparator_with_null_character_f29a3440",
+      "test_name": "testGetPathNoEndSeparator_with_null_character",
+      "test_path": "org/apache/commons/io/FilenameUtilsTest",
+      "dataset_json_relpath": "commons-io/1434.json",
+      "gold_labels": [
+        "org.apache.commons.io.FilenameUtils.getPathNoEndSeparator(java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1485",
+      "ground_truth_test_fqn": "org.apache.commons.io.IOCaseTestCase.test_serialization()",
+      "current_db_test_name": "org.apache.commons.io.IOCaseTest_test_serialization_23a5eb44",
+      "test_name": "test_serialization",
+      "test_path": "org/apache/commons/io/IOCaseTest",
+      "dataset_json_relpath": "commons-io/1485.json",
+      "gold_labels": []
+    },
+    {
+      "project": "commons-io",
+      "id": "1601",
+      "ground_truth_test_fqn": "org.apache.commons.io.IOUtilsTestCase.testCopyLarge_NoSkip()",
+      "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testCopyLarge_NoSkip_1357438c",
+      "test_name": "testCopyLarge_NoSkip",
+      "test_path": "org/apache/commons/io/IOUtilsTest",
+      "dataset_json_relpath": "commons-io/1601.json",
+      "gold_labels": [
+        "org.apache.commons.io.IOUtils.copyLarge(java.io.InputStream, java.io.OutputStream, long, long)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1631",
+      "ground_truth_test_fqn": "org.apache.commons.io.IOUtilsTestCase.testRead_ReadableByteChannel()",
+      "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testRead_ReadableByteChannel_bd3bfb35",
+      "test_name": "testRead_ReadableByteChannel",
+      "test_path": "org/apache/commons/io/IOUtilsTest",
+      "dataset_json_relpath": "commons-io/1631.json",
+      "gold_labels": [
+        "org.apache.commons.io.IOUtils.read(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)",
+        "org.apache.commons.io.IOUtils.readFully(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "1825",
+      "ground_truth_test_fqn": "org.apache.commons.io.TaggedIOExceptionTest.testTaggedIOException()",
+      "current_db_test_name": "org.apache.commons.io.TaggedIOExceptionTest_testTaggedIOException_74e80cac",
+      "test_name": "testTaggedIOException",
+      "test_path": "org/apache/commons/io/TaggedIOExceptionTest",
+      "dataset_json_relpath": "commons-io/1825.json",
+      "gold_labels": [
+        "org.apache.commons.io.TaggedIOException(java.io.IOException, java.io.Serializable)",
+        "org.apache.commons.io.TaggedIOException.isTaggedWith(java.lang.Throwable, java.lang.Object)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "2519",
+      "ground_truth_test_fqn": "org.apache.commons.io.comparator.ComparatorAbstractTestCase.testSortListNull()",
+      "current_db_test_name": "org.apache.commons.io.comparator.NameFileComparatorTest_testSortListNull_ff9d4076",
+      "test_name": "testSortListNull",
+      "test_path": "org/apache/commons/io/comparator/NameFileComparatorTest",
+      "dataset_json_relpath": "commons-io/2519.json",
+      "gold_labels": [
+        "org.apache.commons.io.comparator.AbstractFileComparator.sort(java.util.List<java.io.File>)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "3345",
+      "ground_truth_test_fqn": "org.apache.commons.io.input.AutoCloseInputStreamTest.testClose()",
+      "current_db_test_name": "org.apache.commons.io.input.AutoCloseInputStreamTest_testClose_1c3fb007",
+      "test_name": "testClose",
+      "test_path": "org/apache/commons/io/input/AutoCloseInputStreamTest",
+      "dataset_json_relpath": "commons-io/3345.json",
+      "gold_labels": [
+        "org.apache.commons.io.input.AutoCloseInputStream.close()"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "4195",
+      "ground_truth_test_fqn": "org.apache.commons.io.input.CountingInputStreamTest.testResetting()",
+      "current_db_test_name": "org.apache.commons.io.input.CountingInputStreamTest_testResetting_e2572e8c",
+      "test_name": "testResetting",
+      "test_path": "org/apache/commons/io/input/CountingInputStreamTest",
+      "dataset_json_relpath": "commons-io/4195.json",
+      "gold_labels": [
+        "org.apache.commons.io.input.CountingInputStream.getCount()",
+        "org.apache.commons.io.input.CountingInputStream.resetCount()",
+        "org.apache.commons.io.input.ProxyInputStream.read(byte[], int, int)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "4925",
+      "ground_truth_test_fqn": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest.twoLinesAtEnd()",
+      "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_ByteArrayIndex_c9a11ede",
+      "test_name": "testTwoLinesAtEnd_ByteArrayIndex",
+      "test_path": "org/apache/commons/io/input/WindowsLineEndingInputStreamTest",
+      "dataset_json_relpath": "commons-io/4925.json",
+      "gold_labels": [
+        "org.apache.commons.io.input.WindowsLineEndingInputStream.read()"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "4926",
+      "ground_truth_test_fqn": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest.twoLinesAtEnd()",
+      "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_ByteArray_4d1ba076",
+      "test_name": "testTwoLinesAtEnd_ByteArray",
+      "test_path": "org/apache/commons/io/input/WindowsLineEndingInputStreamTest",
+      "dataset_json_relpath": "commons-io/4926.json",
+      "gold_labels": [
+        "org.apache.commons.io.input.WindowsLineEndingInputStream.read()"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "4927",
+      "ground_truth_test_fqn": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest.twoLinesAtEnd()",
+      "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_Byte_6af10405",
+      "test_name": "testTwoLinesAtEnd_Byte",
+      "test_path": "org/apache/commons/io/input/WindowsLineEndingInputStreamTest",
+      "dataset_json_relpath": "commons-io/4927.json",
+      "gold_labels": [
+        "org.apache.commons.io.input.WindowsLineEndingInputStream.read()"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5135",
+      "ground_truth_test_fqn": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest.testTextXml()",
+      "current_db_test_name": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest_testTextXml_e9ad09b9",
+      "test_name": "testTextXml",
+      "test_path": "org/apache/commons/io/input/XmlStreamReaderUtilitiesTest",
+      "dataset_json_relpath": "commons-io/5135.json",
+      "gold_labels": [
+        "org.apache.commons.io.input.XmlStreamReader.isTextXml(java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5195",
+      "ground_truth_test_fqn": "org.apache.commons.io.output.AppendableOutputStreamTest.testWriteStringBuilder()",
+      "current_db_test_name": "org.apache.commons.io.output.AppendableOutputStreamTest_testWriteStringBuilder_5384fe9e",
+      "test_name": "testWriteStringBuilder",
+      "test_path": "org/apache/commons/io/output/AppendableOutputStreamTest",
+      "dataset_json_relpath": "commons-io/5195.json",
+      "gold_labels": [
+        "org.apache.commons.io.output.AppendableOutputStream.getAppendable()",
+        "org.apache.commons.io.output.AppendableOutputStream.write(int)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5556",
+      "ground_truth_test_fqn": "org.apache.commons.io.output.DeferredFileOutputStreamTest.testTempFileBelowThreshold()",
+      "current_db_test_name": "org.apache.commons.io.output.DeferredFileOutputStreamTest_testTempFileBelowThreshold_5617085f",
+      "test_name": "testTempFileBelowThreshold",
+      "test_path": "org/apache/commons/io/output/DeferredFileOutputStreamTest",
+      "dataset_json_relpath": "commons-io/5556.json",
+      "gold_labels": [
+        "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5736",
+      "ground_truth_test_fqn": "org.apache.commons.io.output.StringBuilderWriterTest.testAppendChar()",
+      "current_db_test_name": "org.apache.commons.io.output.StringBuilderWriterTest_testAppendChar_6fe0e843",
+      "test_name": "testAppendChar",
+      "test_path": "org/apache/commons/io/output/StringBuilderWriterTest",
+      "dataset_json_relpath": "commons-io/5736.json",
+      "gold_labels": [
+        "org.apache.commons.io.output.StringBuilderWriter.append(char)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5825",
+      "ground_truth_test_fqn": "org.apache.commons.io.output.WriterOutputStreamTest.testLargeUTF8WithSingleByteWrite()",
+      "current_db_test_name": "org.apache.commons.io.output.WriterOutputStreamTest_testLargeUTF8WithSingleByteWrite_1ae648b0",
+      "test_name": "testLargeUTF8WithSingleByteWrite",
+      "test_path": "org/apache/commons/io/output/WriterOutputStreamTest",
+      "dataset_json_relpath": "commons-io/5825.json",
+      "gold_labels": [
+        "org.apache.commons.io.output.WriterOutputStream.WriterOutputStream(Writer, String)",
+        "org.apache.commons.io.output.WriterOutputStream.write(int)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5844",
+      "ground_truth_test_fqn": "org.apache.commons.io.output.XmlStreamWriterTest.testLatin7Encoding()",
+      "current_db_test_name": "org.apache.commons.io.output.XmlStreamWriterTest_testLatin7Encoding_c8ef8459",
+      "test_name": "testLatin7Encoding",
+      "test_path": "org/apache/commons/io/output/XmlStreamWriterTest",
+      "dataset_json_relpath": "commons-io/5844.json",
+      "gold_labels": [
+        "org.apache.commons.io.output.XmlStreamWriter.detectEncoding(char[], int, int)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5847",
+      "ground_truth_test_fqn": "org.apache.commons.io.output.XmlStreamWriterTest.testUTF16BEEncoding()",
+      "current_db_test_name": "org.apache.commons.io.output.XmlStreamWriterTest_testUTF16BEEncoding_ee528fd1",
+      "test_name": "testUTF16BEEncoding",
+      "test_path": "org/apache/commons/io/output/XmlStreamWriterTest",
+      "dataset_json_relpath": "commons-io/5847.json",
+      "gold_labels": [
+        "org.apache.commons.io.output.XmlStreamWriter.detectEncoding(char[], int, int)"
+      ]
+    },
+    {
+      "project": "commons-io",
+      "id": "5877",
+      "ground_truth_test_fqn": "org.apache.commons.io.serialization.ValidatingObjectInputStreamTest.ourTestClassAcceptedFirstWildcard()",
+      "current_db_test_name": "org.apache.commons.io.serialization.ValidatingObjectInputStreamTest_testOurTestClassAcceptedFirstWildcard_99c4d318",
+      "test_name": "testOurTestClassAcceptedFirstWildcard",
+      "test_path": "org/apache/commons/io/serialization/ValidatingObjectInputStreamTest",
+      "dataset_json_relpath": "commons-io/5877.json",
+      "gold_labels": [
+        "org.apache.commons.io.serialization.ValidatingObjectInputStream.accept(java.lang.String[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "128",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest.testRemoveAllNullObjectArray()",
+      "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllNullObjectArray_85570fc9",
+      "test_name": "testRemoveAllNullObjectArray",
+      "test_path": "org/apache/commons/lang3/ArrayUtilsRemoveMultipleTest",
+      "dataset_json_relpath": "commons-lang/128.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.ArrayUtils.removeAll(T[], int[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "272",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.ArrayUtilsTest.testIsNotEmptyPrimitives()",
+      "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsTest_testIsNotEmptyPrimitives_2b4f0d43",
+      "test_name": "testIsNotEmptyPrimitives",
+      "test_path": "org/apache/commons/lang3/ArrayUtilsTest",
+      "dataset_json_relpath": "commons-lang/272.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(boolean[])",
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(byte[])",
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(char[])",
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(double[])",
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(float[])",
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(int[])",
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(long[])",
+        "org.apache.commons.lang3.ArrayUtils.isNotEmpty(short[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "717",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.CharSetTest.testHashCode()",
+      "current_db_test_name": "org.apache.commons.lang3.CharSetTest_testHashCode_e184288e",
+      "test_name": "testHashCode",
+      "test_path": "org/apache/commons/lang3/CharSetTest",
+      "dataset_json_relpath": "commons-lang/717.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.CharSet.hashCode()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "729",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.CharSetUtilsTest.testKeep_StringStringarray()",
+      "current_db_test_name": "org.apache.commons.lang3.CharSetUtilsTest_testKeep_StringStringarray_6e78f230",
+      "test_name": "testKeep_StringStringarray",
+      "test_path": "org/apache/commons/lang3/CharSetUtilsTest",
+      "dataset_json_relpath": "commons-lang/729.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.CharSetUtils.keep(java.lang.String, java.lang.String[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "775",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.ClassPathUtilsTest.testToFullyQualifiedPathPackageNullString()",
+      "current_db_test_name": "org.apache.commons.lang3.ClassPathUtilsTest_testToFullyQualifiedPathPackageNullString_b3443f7b",
+      "test_name": "testToFullyQualifiedPathPackageNullString",
+      "test_path": "org/apache/commons/lang3/ClassPathUtilsTest",
+      "dataset_json_relpath": "commons-lang/775.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.ClassPathUtils.toFullyQualifiedPath(java.lang.Package, java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "1141",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.ClassUtilsTest.test_getName_Object()",
+      "current_db_test_name": "org.apache.commons.lang3.ClassUtilsTest_test_getName_Object_75d0ec2b",
+      "test_name": "test_getName_Object",
+      "test_path": "org/apache/commons/lang3/ClassUtilsTest",
+      "dataset_json_relpath": "commons-lang/1141.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.ClassUtils.getName(java.lang.Object, java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "1176",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.ConversionTest.testBinaryToHexDigitMsb0_bits()",
+      "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testBinaryToHexDigitMsb0_bits_aa6a84d2",
+      "test_name": "testBinaryToHexDigitMsb0_bits",
+      "test_path": "org/apache/commons/lang3/ConversionTest",
+      "dataset_json_relpath": "commons-lang/1176.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.Conversion.binaryToHexDigitMsb0_4bits(boolean[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "1355",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.LocaleUtilsTest.testLanguagesByCountry()",
+      "current_db_test_name": "org.apache.commons.lang3.LocaleUtilsTest_testLanguagesByCountry_6a919117",
+      "test_name": "testLanguagesByCountry",
+      "test_path": "org/apache/commons/lang3/LocaleUtilsTest",
+      "dataset_json_relpath": "commons-lang/1355.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.LocaleUtils.languagesByCountry(java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "3780",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.ObjectUtilsTest.testPossibleCloneOfNotCloneable()",
+      "current_db_test_name": "org.apache.commons.lang3.ObjectUtilsTest_testPossibleCloneOfNotCloneable_85c1eb76",
+      "test_name": "testPossibleCloneOfNotCloneable",
+      "test_path": "org/apache/commons/lang3/ObjectUtilsTest",
+      "dataset_json_relpath": "commons-lang/3780.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.ObjectUtils.cloneIfPossible(T)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "3865",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.RandomStringUtilsTest.testRandomPrintRange()",
+      "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_493e302c",
+      "test_name": "testRandomPrintRange",
+      "test_path": "org/apache/commons/lang3/RandomStringUtilsTest",
+      "dataset_json_relpath": "commons-lang/3865.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.RandomStringUtils.nextPrint(int, int)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "4005",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.RangeTest.testIsBeforeRange()",
+      "current_db_test_name": "org.apache.commons.lang3.RangeTest_testIsBeforeRange_ad057283",
+      "test_name": "testIsBeforeRange",
+      "test_path": "org/apache/commons/lang3/RangeTest",
+      "dataset_json_relpath": "commons-lang/4005.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.Range.isBeforeRange(org.apache.commons.lang3.Range<T>)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "4127",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.StringUtilsContainsTest.testContainsIgnoreCase_StringString()",
+      "current_db_test_name": "org.apache.commons.lang3.StringUtilsContainsTest_testContainsIgnoreCase_StringString_dbcb960f",
+      "test_name": "testContainsIgnoreCase_StringString",
+      "test_path": "org/apache/commons/lang3/StringUtilsContainsTest",
+      "dataset_json_relpath": "commons-lang/4127.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.StringUtils.containsIgnoreCase(java.lang.CharSequence, java.lang.CharSequence)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "4262",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.StringUtilsTest.testDefaultIfBlank_CharBuffers()",
+      "current_db_test_name": "org.apache.commons.lang3.StringUtilsTest_testDefaultIfBlank_CharBuffers_bea87f87",
+      "test_name": "testDefaultIfBlank_CharBuffers",
+      "test_path": "org/apache/commons/lang3/StringUtilsTest",
+      "dataset_json_relpath": "commons-lang/4262.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.StringUtils.defaultIfBlank(T, T)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "4807",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.builder.CompareToBuilderTest.testObjectComparator()",
+      "current_db_test_name": "org.apache.commons.lang3.builder.CompareToBuilderTest_testObjectComparator_06d24568",
+      "test_name": "testObjectComparator",
+      "test_path": "org/apache/commons/lang3/builder/CompareToBuilderTest",
+      "dataset_json_relpath": "commons-lang/4807.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.builder.CompareToBuilder.toComparison()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "4929",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.builder.EqualsBuilderTest.testObjectRecursiveCycleSelfreference()",
+      "current_db_test_name": "org.apache.commons.lang3.builder.EqualsBuilderTest_testObjectRecursiveCycleSelfreference_e142db5b",
+      "test_name": "testObjectRecursiveCycleSelfreference",
+      "test_path": "org/apache/commons/lang3/builder/EqualsBuilderTest",
+      "dataset_json_relpath": "commons-lang/4929.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.builder.EqualsBuilder.isEquals()",
+        "org.apache.commons.lang3.builder.EqualsBuilder.setTestRecursive(boolean)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "4997",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.builder.HashCodeBuilderTest.testSuper()",
+      "current_db_test_name": "org.apache.commons.lang3.builder.HashCodeBuilderTest_testSuper_7a06ecca",
+      "test_name": "testSuper",
+      "test_path": "org/apache/commons/lang3/builder/HashCodeBuilderTest",
+      "dataset_json_relpath": "commons-lang/4997.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder.appendSuper(int)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "5238",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.builder.ToStringBuilderTest.testFloatArray()",
+      "current_db_test_name": "org.apache.commons.lang3.builder.ToStringBuilderTest_testFloatArray_81f8e8d0",
+      "test_name": "testFloatArray",
+      "test_path": "org/apache/commons/lang3/builder/ToStringBuilderTest",
+      "dataset_json_relpath": "commons-lang/5238.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.builder.ToStringBuilder.append(float[])",
+        "org.apache.commons.lang3.builder.ToStringBuilder.toString()",
+        "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "5304",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.builder.ToStringStyleTest.testSetSizeStartText()",
+      "current_db_test_name": "org.apache.commons.lang3.builder.ToStringStyleTest_testSetSizeStartText_5ef7aa9f",
+      "test_name": "testSetSizeStartText",
+      "test_path": "org/apache/commons/lang3/builder/ToStringStyleTest",
+      "dataset_json_relpath": "commons-lang/5304.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.builder.ToStringStyle.getSizeStartText()",
+        "org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText(java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "5548",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest.testChangeEvents()",
+      "current_db_test_name": "org.apache.commons.lang3.concurrent.EventCountCircuitBreakerTest_testChangeEvents_b4e774dc",
+      "test_name": "testChangeEvents",
+      "test_path": "org/apache/commons/lang3/concurrent/EventCountCircuitBreakerTest",
+      "dataset_json_relpath": "commons-lang/5548.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.concurrent.AbstractCircuitBreaker.addChangeListener(java.beans.PropertyChangeListener)",
+        "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.close()",
+        "org.apache.commons.lang3.concurrent.EventCountCircuitBreaker.open()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "5642",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest.testInitializeResultsIsSuccessfulFalse()",
+      "current_db_test_name": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializerTest_testInitializeResultsIsSuccessfulFalse_629890ec",
+      "test_name": "testInitializeResultsIsSuccessfulFalse",
+      "test_path": "org/apache/commons/lang3/concurrent/MultiBackgroundInitializerTest",
+      "dataset_json_relpath": "commons-lang/5642.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.concurrent.BackgroundInitializer.start()",
+        "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.addInitializer(java.lang.String, org.apache.commons.lang3.concurrent.BackgroundInitializer<?>)",
+        "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.initialize()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6050",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.math.NumberUtilsTest.testIsDigits()",
+      "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testIsDigits_a24dc9e3",
+      "test_name": "testIsDigits",
+      "test_path": "org/apache/commons/lang3/math/NumberUtilsTest",
+      "dataset_json_relpath": "commons-lang/6050.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.math.NumberUtils.isDigits(java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6182",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.math.NumberUtilsTest.testMaxInt_nullArray()",
+      "current_db_test_name": "org.apache.commons.lang3.math.NumberUtilsTest_testMaxInt_nullArray_6ac58771",
+      "test_name": "testMaxInt_nullArray",
+      "test_path": "org/apache/commons/lang3/math/NumberUtilsTest",
+      "dataset_json_relpath": "commons-lang/6182.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.math.NumberUtils.max(int[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6344",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.mutable.MutableIntTest.testIncrement()",
+      "current_db_test_name": "org.apache.commons.lang3.mutable.MutableIntTest_testIncrement_1962a4be",
+      "test_name": "testIncrement",
+      "test_path": "org/apache/commons/lang3/mutable/MutableIntTest",
+      "dataset_json_relpath": "commons-lang/6344.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.mutable.MutableInt.increment()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6402",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.mutable.MutableShortTest.testToString()",
+      "current_db_test_name": "org.apache.commons.lang3.mutable.MutableShortTest_testToString_3f3c7e9f",
+      "test_name": "testToString",
+      "test_path": "org/apache/commons/lang3/mutable/MutableShortTest",
+      "dataset_json_relpath": "commons-lang/6402.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.mutable.MutableShort.toString()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6431",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.reflect.FieldUtilsTest.testGetFieldForceAccess()",
+      "current_db_test_name": "org.apache.commons.lang3.reflect.FieldUtilsTest_testGetFieldForceAccess_fc2d971a",
+      "test_name": "testGetFieldForceAccess",
+      "test_path": "org/apache/commons/lang3/reflect/FieldUtilsTest",
+      "dataset_json_relpath": "commons-lang/6431.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6432",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.reflect.FieldUtilsTest.testGetFieldIllegalArgumentException1()",
+      "current_db_test_name": "org.apache.commons.lang3.reflect.FieldUtilsTest_testGetFieldIllegalArgumentException1_a002e660",
+      "test_name": "testGetFieldIllegalArgumentException1",
+      "test_path": "org/apache/commons/lang3/reflect/FieldUtilsTest",
+      "dataset_json_relpath": "commons-lang/6432.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6563",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.reflect.TypeUtilsTest.testIsArrayGenericTypes()",
+      "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_testIsArrayGenericTypes_9e88b120",
+      "test_name": "testIsArrayGenericTypes",
+      "test_path": "org/apache/commons/lang3/reflect/TypeUtilsTest",
+      "dataset_json_relpath": "commons-lang/6563.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.reflect.TypeUtils.isArrayType(java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "6955",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.reflect.TypeUtilsTest.testLang1114()",
+      "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_test_LANG_1114_3d4567c8",
+      "test_name": "test_LANG_1114",
+      "test_path": "org/apache/commons/lang3/reflect/TypeUtilsTest",
+      "dataset_json_relpath": "commons-lang/6955.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.reflect.TypeUtils.equals(java.lang.reflect.Type, java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "7057",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppend_FormattedString()",
+      "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderAppendInsertTest_testAppend_FormattedString_a58cb65b",
+      "test_name": "testAppend_FormattedString",
+      "test_path": "org/apache/commons/lang3/text/StrBuilderAppendInsertTest",
+      "dataset_json_relpath": "commons-lang/7057.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String, java.lang.Object[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "7065",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.text.StrBuilderAppendInsertTest.testAppend_StringBuilder_int_int()",
+      "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderAppendInsertTest_testAppend_StringBuilder_int_int_846b3418",
+      "test_name": "testAppend_StringBuilder_int_int",
+      "test_path": "org/apache/commons/lang3/text/StrBuilderAppendInsertTest",
+      "dataset_json_relpath": "commons-lang/7065.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String, int, int)",
+        "org.apache.commons.lang3.text.StrBuilder.append(java.lang.StringBuilder, int, int)",
+        "org.apache.commons.lang3.text.StrBuilder.toString()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "7094",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.text.StrBuilderTest.testCapacityAndLength()",
+      "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderTest_testCapacityAndLength_a284b652",
+      "test_name": "testCapacityAndLength",
+      "test_path": "org/apache/commons/lang3/text/StrBuilderTest",
+      "dataset_json_relpath": "commons-lang/7094.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.text.StrBuilder.capacity()",
+        "org.apache.commons.lang3.text.StrBuilder.ensureCapacity(int)",
+        "org.apache.commons.lang3.text.StrBuilder.isEmpty()",
+        "org.apache.commons.lang3.text.StrBuilder.length()",
+        "org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()",
+        "org.apache.commons.lang3.text.StrBuilder.size()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "7129",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.text.StrBuilderTest.testLang295()",
+      "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderTest_testLang295_7ea79eaf",
+      "test_name": "testLang295",
+      "test_path": "org/apache/commons/lang3/text/StrBuilderTest",
+      "dataset_json_relpath": "commons-lang/7129.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.text.StrBuilder.StrBuilder(String)",
+        "org.apache.commons.lang3.text.StrBuilder.contains(char)",
+        "org.apache.commons.lang3.text.StrBuilder.deleteFirst(java.lang.String)",
+        "org.apache.commons.lang3.text.StrBuilder.indexOf(char)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "7177",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.text.StrLookupTest.testMapLookup_nullMap()",
+      "current_db_test_name": "org.apache.commons.lang3.text.StrLookupTest_testMapLookup_nullMap_0b25f51b",
+      "test_name": "testMapLookup_nullMap",
+      "test_path": "org/apache/commons/lang3/text/StrLookupTest",
+      "dataset_json_relpath": "commons-lang/7177.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.text.StrLookup$MapStrLookup.lookup(java.lang.String)",
+        "org.apache.commons.lang3.text.StrLookup.mapLookup(java.util.Map<java.lang.String, V>)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "7232",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.text.StrSubstitutorTest.testStaticReplacePrefixSuffix()",
+      "current_db_test_name": "org.apache.commons.lang3.text.StrSubstitutorTest_testStaticReplacePrefixSuffix_8e764ed8",
+      "test_name": "testStaticReplacePrefixSuffix",
+      "test_path": "org/apache/commons/lang3/text/StrSubstitutorTest",
+      "dataset_json_relpath": "commons-lang/7232.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.text.StrSubstitutor.replace(java.lang.Object, java.util.Map<java.lang.String, V>, java.lang.String, java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "7309",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.text.translate.EntityArraysTest.testHTML40_EXTENDED_ESCAPE()",
+      "current_db_test_name": "org.apache.commons.lang3.text.translate.EntityArraysTest_testHTML40_EXTENDED_ESCAPE_74427542",
+      "test_name": "testHTML40_EXTENDED_ESCAPE",
+      "test_path": "org/apache/commons/lang3/text/translate/EntityArraysTest",
+      "dataset_json_relpath": "commons-lang/7309.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.text.translate.EntityArrays.HTML40_EXTENDED_ESCAPE()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "9357",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.time.DateUtilsTest.testLANG799_DE_FAIL()",
+      "current_db_test_name": "org.apache.commons.lang3.time.DateUtilsTest_testLANG799_DE_FAIL_0cfacff5",
+      "test_name": "testLANG799_DE_FAIL",
+      "test_path": "org/apache/commons/lang3/time/DateUtilsTest",
+      "dataset_json_relpath": "commons-lang/9357.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.time.DateUtils.parseDate(java.lang.String, java.lang.String[])"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "9842",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.time.FastDateParserTest.testDayNumberOfWeek()",
+      "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testDayNumberOfWeek_296b9b5f",
+      "test_name": "testDayNumberOfWeek",
+      "test_path": "org/apache/commons/lang3/time/FastDateParserTest",
+      "dataset_json_relpath": "commons-lang/9842.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "58662",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.time.FastTimeZoneTest.testUTC()",
+      "current_db_test_name": "org.apache.commons.lang3.time.FastTimeZoneTest_testUTC_b90cc433",
+      "test_name": "testUTC",
+      "test_path": "org/apache/commons/lang3/time/FastTimeZoneTest",
+      "dataset_json_relpath": "commons-lang/58662.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.time.FastTimeZone.getGmtTimeZone()",
+        "org.apache.commons.lang3.time.FastTimeZone.getTimeZone(java.lang.String)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "58667",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.time.GmtTimeZoneTest.getRawOffset()",
+      "current_db_test_name": "org.apache.commons.lang3.time.GmtTimeZoneTest_testGetRawOffset_2f74f518",
+      "test_name": "testGetRawOffset",
+      "test_path": "org/apache/commons/lang3/time/GmtTimeZoneTest",
+      "dataset_json_relpath": "commons-lang/58667.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.time.GmtTimeZone.getRawOffset()"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "58760",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.tuple.ImmutablePairTest.testPairOf()",
+      "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testPairOfMapEntry_29ed59da",
+      "test_name": "testPairOfMapEntry",
+      "test_path": "org/apache/commons/lang3/tuple/ImmutablePairTest",
+      "dataset_json_relpath": "commons-lang/58760.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.tuple.ImmutablePair.of(java.util.Map.Entry<L, R>)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "58761",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.tuple.ImmutablePairTest.testPairOf()",
+      "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testPairOfObjects_821cded2",
+      "test_name": "testPairOfObjects",
+      "test_path": "org/apache/commons/lang3/tuple/ImmutablePairTest",
+      "dataset_json_relpath": "commons-lang/58761.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.tuple.ImmutablePair.of(L, R)"
+      ]
+    },
+    {
+      "project": "commons-lang",
+      "id": "58830",
+      "ground_truth_test_fqn": "org.apache.commons.lang3.tuple.TripleTest.testComparable2()",
+      "current_db_test_name": "org.apache.commons.lang3.tuple.TripleTest_testComparable2_72343a27",
+      "test_name": "testComparable2",
+      "test_path": "org/apache/commons/lang3/tuple/TripleTest",
+      "dataset_json_relpath": "commons-lang/58830.json",
+      "gold_labels": [
+        "org.apache.commons.lang3.tuple.Triple.compareTo(org.apache.commons.lang3.tuple.Triple<L, M, R>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1",
+      "ground_truth_test_fqn": "com.google.gson.CommentsTest.testParseComments()",
+      "current_db_test_name": "com.google.gson.CommentsTest_testParseComments_49081355",
+      "test_name": "testParseComments",
+      "test_path": "com/google/gson/CommentsTest",
+      "dataset_json_relpath": "gson/1.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "3",
+      "ground_truth_test_fqn": "com.google.gson.DefaultMapJsonSerializerTest.testEmptyMapNoTypeSerialization()",
+      "current_db_test_name": "com.google.gson.DefaultMapJsonSerializerTest_testEmptyMapNoTypeSerialization_4914ae53",
+      "test_name": "testEmptyMapNoTypeSerialization",
+      "test_path": "com/google/gson/DefaultMapJsonSerializerTest",
+      "dataset_json_relpath": "gson/3.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "4",
+      "ground_truth_test_fqn": "com.google.gson.DefaultMapJsonSerializerTest.testEmptyMapSerialization()",
+      "current_db_test_name": "com.google.gson.DefaultMapJsonSerializerTest_testEmptyMapSerialization_7c30772e",
+      "test_name": "testEmptyMapSerialization",
+      "test_path": "com/google/gson/DefaultMapJsonSerializerTest",
+      "dataset_json_relpath": "gson/4.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "5",
+      "ground_truth_test_fqn": "com.google.gson.DefaultMapJsonSerializerTest.testNonEmptyMapSerialization()",
+      "current_db_test_name": "com.google.gson.DefaultMapJsonSerializerTest_testNonEmptyMapSerialization_fa9fe645",
+      "test_name": "testNonEmptyMapSerialization",
+      "test_path": "com/google/gson/DefaultMapJsonSerializerTest",
+      "dataset_json_relpath": "gson/5.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "13",
+      "ground_truth_test_fqn": "com.google.gson.FieldAttributesTest.testDeclaringClass()",
+      "current_db_test_name": "com.google.gson.FieldAttributesTest_testDeclaringClass_dcb51ee6",
+      "test_name": "testDeclaringClass",
+      "test_path": "com/google/gson/FieldAttributesTest",
+      "dataset_json_relpath": "gson/13.json",
+      "gold_labels": [
+        "com.google.gson.FieldAttributes.getDeclaringClass()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "14",
+      "ground_truth_test_fqn": "com.google.gson.FieldAttributesTest.testModifiers()",
+      "current_db_test_name": "com.google.gson.FieldAttributesTest_testModifiers_10fd8a7f",
+      "test_name": "testModifiers",
+      "test_path": "com/google/gson/FieldAttributesTest",
+      "dataset_json_relpath": "gson/14.json",
+      "gold_labels": [
+        "com.google.gson.FieldAttributes.hasModifier(int)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "15",
+      "ground_truth_test_fqn": "com.google.gson.FieldAttributesTest.testName()",
+      "current_db_test_name": "com.google.gson.FieldAttributesTest_testName_77c09c2c",
+      "test_name": "testName",
+      "test_path": "com/google/gson/FieldAttributesTest",
+      "dataset_json_relpath": "gson/15.json",
+      "gold_labels": [
+        "com.google.gson.FieldAttributes.getName()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "21",
+      "ground_truth_test_fqn": "com.google.gson.GenericArrayTypeTest.testNotEquals()",
+      "current_db_test_name": "com.google.gson.GenericArrayTypeTest_testNotEquals_489df098",
+      "test_name": "testNotEquals",
+      "test_path": "com/google/gson/GenericArrayTypeTest",
+      "dataset_json_relpath": "gson/21.json",
+      "gold_labels": [
+        "com.google.gson.reflect.TypeToken.getType()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "22",
+      "ground_truth_test_fqn": "com.google.gson.GenericArrayTypeTest.testOurTypeFunctionality()",
+      "current_db_test_name": "com.google.gson.GenericArrayTypeTest_testOurTypeFunctionality_f10b1bcf",
+      "test_name": "testOurTypeFunctionality",
+      "test_path": "com/google/gson/GenericArrayTypeTest",
+      "dataset_json_relpath": "gson/22.json",
+      "gold_labels": [
+        "com.google.gson.reflect.TypeToken.getType()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "23",
+      "ground_truth_test_fqn": "com.google.gson.GsonBuilderTest.testCreatingMoreThanOnce()",
+      "current_db_test_name": "com.google.gson.GsonBuilderTest_testCreatingMoreThanOnce_be5036c8",
+      "test_name": "testCreatingMoreThanOnce",
+      "test_path": "com/google/gson/GsonBuilderTest",
+      "dataset_json_relpath": "gson/23.json",
+      "gold_labels": [
+        "com.google.gson.GsonBuilder.create()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "56",
+      "ground_truth_test_fqn": "com.google.gson.GsonTest.testOverridesDefaultExcluder()",
+      "current_db_test_name": "com.google.gson.GsonTest_testOverridesDefaultExcluder_7a31aa8d",
+      "test_name": "testOverridesDefaultExcluder",
+      "test_path": "com/google/gson/GsonTest",
+      "dataset_json_relpath": "gson/56.json",
+      "gold_labels": [
+        "com.google.gson.Gson(com.google.gson.GsonBuilder)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "99",
+      "ground_truth_test_fqn": "com.google.gson.JsonArrayTest.testRemove()",
+      "current_db_test_name": "com.google.gson.JsonArrayTest_testRemove_7ebb2bb3",
+      "test_name": "testRemove",
+      "test_path": "com/google/gson/JsonArrayTest",
+      "dataset_json_relpath": "gson/99.json",
+      "gold_labels": [
+        "com.google.gson.JsonArray.remove(int)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "105",
+      "ground_truth_test_fqn": "com.google.gson.JsonNullTest.testEqualsAndHashcode()",
+      "current_db_test_name": "com.google.gson.JsonNullTest_testEqualsAndHashcode_c0614b86",
+      "test_name": "testEqualsAndHashcode",
+      "test_path": "com/google/gson/JsonNullTest",
+      "dataset_json_relpath": "gson/105.json",
+      "gold_labels": [
+        "com.google.gson.JsonNull.hashCode()",
+        "com.google.gson.JsonNull.equals(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "120",
+      "ground_truth_test_fqn": "com.google.gson.JsonObjectTest.testAddingAndRemovingObjectProperties()",
+      "current_db_test_name": "com.google.gson.JsonObjectTest_testAddingAndRemovingObjectProperties_a76d4264",
+      "test_name": "testAddingAndRemovingObjectProperties",
+      "test_path": "com/google/gson/JsonObjectTest",
+      "dataset_json_relpath": "gson/120.json",
+      "gold_labels": [
+        "com.google.gson.JsonObject.add(java.lang.String, com.google.gson.JsonElement)",
+        "com.google.gson.JsonObject.remove(java.lang.String)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "195",
+      "ground_truth_test_fqn": "com.google.gson.JsonStreamParserTest.testNoSideEffectForHasNext()",
+      "current_db_test_name": "com.google.gson.JsonStreamParserTest_testNoSideEffectForHasNext_46b456ac",
+      "test_name": "testNoSideEffectForHasNext",
+      "test_path": "com/google/gson/JsonStreamParserTest",
+      "dataset_json_relpath": "gson/195.json",
+      "gold_labels": [
+        "com.google.gson.JsonStreamParser.hasNext()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "203",
+      "ground_truth_test_fqn": "com.google.gson.MixedStreamTest.testReadClosed()",
+      "current_db_test_name": "com.google.gson.MixedStreamTest_testReadClosed_03b3b04b",
+      "test_name": "testReadClosed",
+      "test_path": "com/google/gson/MixedStreamTest",
+      "dataset_json_relpath": "gson/203.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type)",
+        "com.google.gson.stream.JsonReader.close()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "232",
+      "ground_truth_test_fqn": "com.google.gson.OverrideCoreTypeAdaptersTest.testOverrideStringAdapter()",
+      "current_db_test_name": "com.google.gson.OverrideCoreTypeAdaptersTest_testOverrideStringAdapter_a3b3ef6b",
+      "test_name": "testOverrideStringAdapter",
+      "test_path": "com/google/gson/OverrideCoreTypeAdaptersTest",
+      "dataset_json_relpath": "gson/232.json",
+      "gold_labels": [
+        "com.google.gson.GsonBuilder.registerTypeAdapter(java.lang.reflect.Type, java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "282",
+      "ground_truth_test_fqn": "com.google.gson.functional.CircularReferenceTest.testDirectedAcyclicGraphSerialization()",
+      "current_db_test_name": "com.google.gson.functional.CircularReferenceTest_testDirectedAcyclicGraphSerialization_17d3dc35",
+      "test_name": "testDirectedAcyclicGraphSerialization",
+      "test_path": "com/google/gson/functional/CircularReferenceTest",
+      "dataset_json_relpath": "gson/282.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "466",
+      "ground_truth_test_fqn": "com.google.gson.functional.ExposeFieldsTest.testNullExposeFieldSerialization()",
+      "current_db_test_name": "com.google.gson.functional.ExposeFieldsTest_testNullExposeFieldSerialization_ec54683f",
+      "test_name": "testNullExposeFieldSerialization",
+      "test_path": "com/google/gson/functional/ExposeFieldsTest",
+      "dataset_json_relpath": "gson/466.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "601",
+      "ground_truth_test_fqn": "com.google.gson.functional.JsonTreeTest.testToJsonTree()",
+      "current_db_test_name": "com.google.gson.functional.JsonTreeTest_testToJsonTree_6cad0b36",
+      "test_name": "testToJsonTree",
+      "test_path": "com/google/gson/functional/JsonTreeTest",
+      "dataset_json_relpath": "gson/601.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJsonTree(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "635",
+      "ground_truth_test_fqn": "com.google.gson.functional.MapTest.testMapSerializationEmpty()",
+      "current_db_test_name": "com.google.gson.functional.MapTest_testMapSerializationEmpty_4e1db82a",
+      "test_name": "testMapSerializationEmpty",
+      "test_path": "com/google/gson/functional/MapTest",
+      "dataset_json_relpath": "gson/635.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "937",
+      "ground_truth_test_fqn": "com.google.gson.functional.SerializedNameTest.testFirstNameIsChosenForSerialization()",
+      "current_db_test_name": "com.google.gson.functional.SerializedNameTest_testFirstNameIsChosenForSerialization_400b6fd4",
+      "test_name": "testFirstNameIsChosenForSerialization",
+      "test_path": "com/google/gson/functional/SerializedNameTest",
+      "dataset_json_relpath": "gson/937.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "938",
+      "ground_truth_test_fqn": "com.google.gson.functional.SerializedNameTest.testMultipleNamesDeserializedCorrectly()",
+      "current_db_test_name": "com.google.gson.functional.SerializedNameTest_testMultipleNamesDeserializedCorrectly_0e35d0b4",
+      "test_name": "testMultipleNamesDeserializedCorrectly",
+      "test_path": "com/google/gson/functional/SerializedNameTest",
+      "dataset_json_relpath": "gson/938.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "957",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testAssignmentCharDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testAssignmentCharDeserialization_1e7ae124",
+      "test_name": "testAssignmentCharDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/957.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "958",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testAssignmentCharSerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testAssignmentCharSerialization_90ca3463",
+      "test_name": "testAssignmentCharSerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/958.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "959",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapedBackslashInStringDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedBackslashInStringDeserialization_d41b154a",
+      "test_name": "testEscapedBackslashInStringDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/959.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "960",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapedBackslashInStringSerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedBackslashInStringSerialization_2d153a09",
+      "test_name": "testEscapedBackslashInStringSerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/960.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "961",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapedCtrlNInStringDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlNInStringDeserialization_24730257",
+      "test_name": "testEscapedCtrlNInStringDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/961.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "962",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapedCtrlNInStringSerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlNInStringSerialization_fcaf0656",
+      "test_name": "testEscapedCtrlNInStringSerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/962.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "963",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapedCtrlRInStringDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlRInStringDeserialization_f2b1135b",
+      "test_name": "testEscapedCtrlRInStringDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/963.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "964",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapedCtrlRInStringSerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlRInStringSerialization_e685885a",
+      "test_name": "testEscapedCtrlRInStringSerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/964.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "965",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapingQuotesInStringDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapingQuotesInStringDeserialization_42d90a2c",
+      "test_name": "testEscapingQuotesInStringDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/965.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "966",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testEscapingQuotesInStringSerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testEscapingQuotesInStringSerialization_bb2eff6b",
+      "test_name": "testEscapingQuotesInStringSerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/966.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "967",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testJavascriptKeywordsInStringDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testJavascriptKeywordsInStringDeserialization_eee0c9ce",
+      "test_name": "testJavascriptKeywordsInStringDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/967.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "968",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testJavascriptKeywordsInStringSerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testJavascriptKeywordsInStringSerialization_40063f8d",
+      "test_name": "testJavascriptKeywordsInStringSerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/968.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "969",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testSingleQuoteInStringDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testSingleQuoteInStringDeserialization_2b7266c7",
+      "test_name": "testSingleQuoteInStringDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/969.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "971",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testStringValueAsSingleElementArraySerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testStringValueAsSingleElementArraySerialization_cd007973",
+      "test_name": "testStringValueAsSingleElementArraySerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/971.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)",
+        "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "972",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testStringValueDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testStringValueDeserialization_12c51b5d",
+      "test_name": "testStringValueDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/972.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "973",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testStringValueSerialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testStringValueSerialization_249fa8dc",
+      "test_name": "testStringValueSerialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/973.json",
+      "gold_labels": [
+        "com.google.gson.Gson.toJson(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "974",
+      "ground_truth_test_fqn": "com.google.gson.functional.StringTest.testStringWithEscapedSlashDeserialization()",
+      "current_db_test_name": "com.google.gson.functional.StringTest_testStringWithEscapedSlashDeserialization_338ed232",
+      "test_name": "testStringWithEscapedSlashDeserialization",
+      "test_path": "com/google/gson/functional/StringTest",
+      "dataset_json_relpath": "gson/974.json",
+      "gold_labels": [
+        "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1041",
+      "ground_truth_test_fqn": "com.google.gson.internal.LazilyParsedNumberTest.testEquals()",
+      "current_db_test_name": "com.google.gson.internal.LazilyParsedNumberTest_testEquals_86d6316d",
+      "test_name": "testEquals",
+      "test_path": "com/google/gson/internal/LazilyParsedNumberTest",
+      "dataset_json_relpath": "gson/1041.json",
+      "gold_labels": [
+        "com.google.gson.internal.LazilyParsedNumber.equals(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1042",
+      "ground_truth_test_fqn": "com.google.gson.internal.LazilyParsedNumberTest.testHashCode()",
+      "current_db_test_name": "com.google.gson.internal.LazilyParsedNumberTest_testHashCode_48dcad11",
+      "test_name": "testHashCode",
+      "test_path": "com/google/gson/internal/LazilyParsedNumberTest",
+      "dataset_json_relpath": "gson/1042.json",
+      "gold_labels": [
+        "com.google.gson.internal.LazilyParsedNumber.hashCode()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1046",
+      "ground_truth_test_fqn": "com.google.gson.internal.LinkedTreeMapTest.testContainsNullKeyIsAlwaysFalse()",
+      "current_db_test_name": "com.google.gson.internal.LinkedTreeMapTest_testContainsNullKeyIsAlwaysFalse_60e6a263",
+      "test_name": "testContainsNullKeyIsAlwaysFalse",
+      "test_path": "com/google/gson/internal/LinkedTreeMapTest",
+      "dataset_json_relpath": "gson/1046.json",
+      "gold_labels": [
+        "com.google.gson.internal.LinkedTreeMap.containsKey(java.lang.Object)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1117",
+      "ground_truth_test_fqn": "com.google.gson.internal.bind.JsonTreeWriterTest.testPrematureClose()",
+      "current_db_test_name": "com.google.gson.internal.bind.JsonTreeWriterTest_testPrematureClose_9dbcfa3a",
+      "test_name": "testPrematureClose",
+      "test_path": "com/google/gson/internal/bind/JsonTreeWriterTest",
+      "dataset_json_relpath": "gson/1117.json",
+      "gold_labels": [
+        "com.google.gson.internal.bind.JsonTreeWriter.close()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1153",
+      "ground_truth_test_fqn": "com.google.gson.reflect.TypeTokenTest.testIsAssignableFromRawTypes()",
+      "current_db_test_name": "com.google.gson.reflect.TypeTokenTest_testIsAssignableFromRawTypes_c8cbb5cc",
+      "test_name": "testIsAssignableFromRawTypes",
+      "test_path": "com/google/gson/reflect/TypeTokenTest",
+      "dataset_json_relpath": "gson/1153.json",
+      "gold_labels": [
+        "com.google.gson.reflect.TypeToken.isAssignableFrom(java.lang.Class<?>)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1174",
+      "ground_truth_test_fqn": "com.google.gson.stream.JsonReaderPathTest.path()",
+      "current_db_test_name": "com.google.gson.stream.JsonReaderPathTest_path_37d311cc",
+      "test_name": "path",
+      "test_path": "com/google/gson/stream/JsonReaderPathTest",
+      "dataset_json_relpath": "gson/1174.json",
+      "gold_labels": [
+        "com.google.gson.internal.bind.JsonTreeReader.getPath()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1175",
+      "ground_truth_test_fqn": "com.google.gson.stream.JsonReaderPathTest.path()",
+      "current_db_test_name": "com.google.gson.stream.JsonReaderPathTest_path_548b77ba",
+      "test_name": "path",
+      "test_path": "com/google/gson/stream/JsonReaderPathTest",
+      "dataset_json_relpath": "gson/1175.json",
+      "gold_labels": [
+        "com.google.gson.stream.JsonReader.getPath()"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1254",
+      "ground_truth_test_fqn": "com.google.gson.stream.JsonReaderTest.testNulls()",
+      "current_db_test_name": "com.google.gson.stream.JsonReaderTest_testNulls_ee8507a7",
+      "test_name": "testNulls",
+      "test_path": "com/google/gson/stream/JsonReaderTest",
+      "dataset_json_relpath": "gson/1254.json",
+      "gold_labels": [
+        "com.google.gson.stream.JsonReader(java.io.Reader)"
+      ]
+    },
+    {
+      "project": "gson",
+      "id": "1372",
+      "ground_truth_test_fqn": "com.google.gson.stream.JsonWriterTest.testNullName()",
+      "current_db_test_name": "com.google.gson.stream.JsonWriterTest_testNullName_8f0585ad",
+      "test_name": "testNullName",
+      "test_path": "com/google/gson/stream/JsonWriterTest",
+      "dataset_json_relpath": "gson/1372.json",
+      "gold_labels": [
+        "com.google.gson.stream.JsonWriter.name(java.lang.String)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "68",
+      "ground_truth_test_fqn": "org.jfree.chart.XYBarChartTest.testSetSeriesToolTipGenerator()",
+      "current_db_test_name": "org.jfree.chart.XYBarChartTest_testSetSeriesToolTipGenerator_8ab92898",
+      "test_name": "testSetSeriesToolTipGenerator",
+      "test_path": "org/jfree/chart/XYBarChartTest",
+      "dataset_json_relpath": "jfreechart/68.json",
+      "gold_labels": [
+        "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getToolTipGenerator(int, int)",
+        "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setSeriesToolTipGenerator(int, org.jfree.chart.labels.XYToolTipGenerator)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "200",
+      "ground_truth_test_fqn": "org.jfree.chart.axis.ExtendedCategoryAxisTest.testCloning2()",
+      "current_db_test_name": "org.jfree.chart.axis.ExtendedCategoryAxisTest_testCloning2_59b115cb",
+      "test_name": "testCloning2",
+      "test_path": "org/jfree/chart/axis/ExtendedCategoryAxisTest",
+      "dataset_json_relpath": "jfreechart/200.json",
+      "gold_labels": [
+        "org.jfree.chart.axis.ExtendedCategoryAxis.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "316",
+      "ground_truth_test_fqn": "org.jfree.chart.block.GridArrangementTest.testNF()",
+      "current_db_test_name": "org.jfree.chart.block.GridArrangementTest_testNF_bba22c4b",
+      "test_name": "testNF",
+      "test_path": "org/jfree/chart/block/GridArrangementTest",
+      "dataset_json_relpath": "jfreechart/316.json",
+      "gold_labels": [
+        "org.jfree.chart.block.BlockContainer.arrange(java.awt.Graphics2D, org.jfree.chart.block.RectangleConstraint)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "452",
+      "ground_truth_test_fqn": "org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest.testCloning()",
+      "current_db_test_name": "org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest_testCloning_02e4ace9",
+      "test_name": "testCloning",
+      "test_path": "org/jfree/chart/labels/StandardCategoryToolTipGeneratorTest",
+      "dataset_json_relpath": "jfreechart/452.json",
+      "gold_labels": [
+        "org.jfree.chart.labels.StandardCategoryToolTipGenerator.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "597",
+      "ground_truth_test_fqn": "org.jfree.chart.plot.MarkerTest.testGetSetLabelTextAnchor()",
+      "current_db_test_name": "org.jfree.chart.plot.MarkerTest_testGetSetLabelTextAnchor_3de3ff19",
+      "test_name": "testGetSetLabelTextAnchor",
+      "test_path": "org/jfree/chart/plot/MarkerTest",
+      "dataset_json_relpath": "jfreechart/597.json",
+      "gold_labels": [
+        "org.jfree.chart.plot.Marker.getLabelTextAnchor()",
+        "org.jfree.chart.plot.Marker.setLabelTextAnchor(org.jfree.chart.text.TextAnchor)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "608",
+      "ground_truth_test_fqn": "org.jfree.chart.plot.MeterPlotTest.testCloning()",
+      "current_db_test_name": "org.jfree.chart.plot.MeterPlotTest_testCloning_02e4ace9",
+      "test_name": "testCloning",
+      "test_path": "org/jfree/chart/plot/MeterPlotTest",
+      "dataset_json_relpath": "jfreechart/608.json",
+      "gold_labels": [
+        "org.jfree.chart.plot.MeterPlot.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "707",
+      "ground_truth_test_fqn": "org.jfree.chart.needle.PlumNeedleTest.testCloning()",
+      "current_db_test_name": "org.jfree.chart.plot.compass.PlumNeedleTest_testCloning_02e4ace9",
+      "test_name": "testCloning",
+      "test_path": "org/jfree/chart/plot/compass/PlumNeedleTest",
+      "dataset_json_relpath": "jfreechart/707.json",
+      "gold_labels": [
+        "org.jfree.chart.plot.compass.PlumNeedle.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "795",
+      "ground_truth_test_fqn": "org.jfree.chart.plot.PiePlotTest.testBug1126_c()",
+      "current_db_test_name": "org.jfree.chart.plot.pie.PiePlotTest_testBug1126_c_7ff9d8cb",
+      "test_name": "testBug1126_c",
+      "test_path": "org/jfree/chart/plot/pie/PiePlotTest",
+      "dataset_json_relpath": "jfreechart/795.json",
+      "gold_labels": [
+        "org.jfree.chart.plot.pie.PiePlot.clone()",
+        "org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke(K, java.awt.Stroke)",
+        "org.jfree.chart.plot.pie.PiePlot.getSectionOutlineStroke(K)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "832",
+      "ground_truth_test_fqn": "org.jfree.chart.renderer.LookupPaintScaleTest.testCloning()",
+      "current_db_test_name": "org.jfree.chart.renderer.LookupPaintScaleTest_testCloning_02e4ace9",
+      "test_name": "testCloning",
+      "test_path": "org/jfree/chart/renderer/LookupPaintScaleTest",
+      "dataset_json_relpath": "jfreechart/832.json",
+      "gold_labels": [
+        "org.jfree.chart.renderer.LookupPaintScale.add(double, java.awt.Paint)",
+        "org.jfree.chart.renderer.LookupPaintScale.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "889",
+      "ground_truth_test_fqn": "org.jfree.chart.renderer.category.BoxAndWhiskerRendererTest.testGetLegendItem()",
+      "current_db_test_name": "org.jfree.chart.renderer.category.BoxAndWhiskerRendererTest_testGetLegendItem_ec3c0945",
+      "test_name": "testGetLegendItem",
+      "test_path": "org/jfree/chart/renderer/category/BoxAndWhiskerRendererTest",
+      "dataset_json_relpath": "jfreechart/889.json",
+      "gold_labels": [
+        "org.jfree.chart.renderer.category.BoxAndWhiskerRenderer.getLegendItem(int, int)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "913",
+      "ground_truth_test_fqn": "org.jfree.chart.renderer.category.GroupedStackedBarRendererTest.testDrawWithNullInfo()",
+      "current_db_test_name": "org.jfree.chart.renderer.category.GroupedStackedBarRendererTest_testDrawWithNullInfo_f39d2692",
+      "test_name": "testDrawWithNullInfo",
+      "test_path": "org/jfree/chart/renderer/category/GroupedStackedBarRendererTest",
+      "dataset_json_relpath": "jfreechart/913.json",
+      "gold_labels": [
+        "org.jfree.chart.JFreeChart.createBufferedImage(int, int, org.jfree.chart.ChartRenderingInfo)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1129",
+      "ground_truth_test_fqn": "org.jfree.chart.renderer.xy.XYBubbleRendererTest.testHashcode()",
+      "current_db_test_name": "org.jfree.chart.renderer.xy.XYBubbleRendererTest_testHashcode_181f3c6e",
+      "test_name": "testHashcode",
+      "test_path": "org/jfree/chart/renderer/xy/XYBubbleRendererTest",
+      "dataset_json_relpath": "jfreechart/1129.json",
+      "gold_labels": [
+        "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1172",
+      "ground_truth_test_fqn": "org.jfree.chart.renderer.xy.XYStepAreaRendererTest.testCloning()",
+      "current_db_test_name": "org.jfree.chart.renderer.xy.XYStepAreaRendererTest_testCloning_02e4ace9",
+      "test_name": "testCloning",
+      "test_path": "org/jfree/chart/renderer/xy/XYStepAreaRendererTest",
+      "dataset_json_relpath": "jfreechart/1172.json",
+      "gold_labels": [
+        "org.jfree.chart.renderer.xy.XYStepAreaRenderer.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1338",
+      "ground_truth_test_fqn": "org.jfree.data.KeyedObjects2DTest.testRemoveColumnByIndex()",
+      "current_db_test_name": "org.jfree.data.KeyedObjects2DTest_testRemoveColumnByIndex_1efb5bb0",
+      "test_name": "testRemoveColumnByIndex",
+      "test_path": "org/jfree/data/KeyedObjects2DTest",
+      "dataset_json_relpath": "jfreechart/1338.json",
+      "gold_labels": [
+        "org.jfree.data.KeyedObjects2D.removeColumn(int)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1372",
+      "ground_truth_test_fqn": "org.jfree.data.category.CategoryToPieDatasetTest.testGetKey()",
+      "current_db_test_name": "org.jfree.data.category.CategoryToPieDatasetTest_testGetKey_9f45249c",
+      "test_name": "testGetKey",
+      "test_path": "org/jfree/data/category/CategoryToPieDatasetTest",
+      "dataset_json_relpath": "jfreechart/1372.json",
+      "gold_labels": [
+        "org.jfree.data.category.CategoryToPieDataset.getKey(int)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1390",
+      "ground_truth_test_fqn": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest.testCloning()",
+      "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testCloning_02e4ace9",
+      "test_name": "testCloning",
+      "test_path": "org/jfree/data/category/DefaultIntervalCategoryDatasetTest",
+      "dataset_json_relpath": "jfreechart/1390.json",
+      "gold_labels": [
+        "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1403",
+      "ground_truth_test_fqn": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest.testGetValue()",
+      "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testGetValue_210c4c2e",
+      "test_name": "testGetValue",
+      "test_path": "org/jfree/data/category/DefaultIntervalCategoryDatasetTest",
+      "dataset_json_relpath": "jfreechart/1403.json",
+      "gold_labels": [
+        "org.jfree.data.category.DefaultIntervalCategoryDataset.getEndValue(java.lang.Comparable, java.lang.Comparable)",
+        "org.jfree.data.category.DefaultIntervalCategoryDataset.getStartValue(java.lang.Comparable, java.lang.Comparable)",
+        "org.jfree.data.category.DefaultIntervalCategoryDataset.getValue(java.lang.Comparable, java.lang.Comparable)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1598",
+      "ground_truth_test_fqn": "org.jfree.data.statistics.DefaultStatisticalCategoryDatasetTest.testGetRangeBounds2()",
+      "current_db_test_name": "org.jfree.data.statistics.DefaultStatisticalCategoryDatasetTest_testGetRangeBounds2_25d08ba5",
+      "test_name": "testGetRangeBounds2",
+      "test_path": "org/jfree/data/statistics/DefaultStatisticalCategoryDatasetTest",
+      "dataset_json_relpath": "jfreechart/1598.json",
+      "gold_labels": [
+        "org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds(boolean)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1649",
+      "ground_truth_test_fqn": "org.jfree.data.statistics.StatisticsTest.testCorrelation2()",
+      "current_db_test_name": "org.jfree.data.statistics.StatisticsTest_testCorrelation2_2fd9cd23",
+      "test_name": "testCorrelation2",
+      "test_path": "org/jfree/data/statistics/StatisticsTest",
+      "dataset_json_relpath": "jfreechart/1649.json",
+      "gold_labels": [
+        "org.jfree.data.statistics.Statistics.getCorrelation(java.lang.Number[], java.lang.Number[])"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1731",
+      "ground_truth_test_fqn": "org.jfree.data.time.MillisecondTest.testGetSerialIndex()",
+      "current_db_test_name": "org.jfree.data.time.MillisecondTest_testGetSerialIndex_0515e1bb",
+      "test_name": "testGetSerialIndex",
+      "test_path": "org/jfree/data/time/MillisecondTest",
+      "dataset_json_relpath": "jfreechart/1731.json",
+      "gold_labels": [
+        "org.jfree.data.time.Millisecond.getSerialIndex()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1903",
+      "ground_truth_test_fqn": "org.jfree.data.time.TimeSeriesTest.testBug1864222()",
+      "current_db_test_name": "org.jfree.data.time.TimeSeriesTest_testBug1864222_2408742c",
+      "test_name": "testBug1864222",
+      "test_path": "org/jfree/data/time/TimeSeriesTest",
+      "dataset_json_relpath": "jfreechart/1903.json",
+      "gold_labels": [
+        "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1931",
+      "ground_truth_test_fqn": "org.jfree.data.time.TimeSeriesTest.testRemoveAgedItems5()",
+      "current_db_test_name": "org.jfree.data.time.TimeSeriesTest_testRemoveAgedItems5_9eae2971",
+      "test_name": "testRemoveAgedItems5",
+      "test_path": "org/jfree/data/time/TimeSeriesTest",
+      "dataset_json_relpath": "jfreechart/1931.json",
+      "gold_labels": [
+        "org.jfree.data.time.TimeSeries.removeAgedItems(long, boolean)"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "1957",
+      "ground_truth_test_fqn": "org.jfree.data.time.WeekTest.testGetStart()",
+      "current_db_test_name": "org.jfree.data.time.WeekTest_testGetStart_a22986df",
+      "test_name": "testGetStart",
+      "test_path": "org/jfree/data/time/WeekTest",
+      "dataset_json_relpath": "jfreechart/1957.json",
+      "gold_labels": [
+        "org.jfree.data.time.RegularTimePeriod.getStart()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "2031",
+      "ground_truth_test_fqn": "org.jfree.data.xy.CategoryTableXYDatasetTest.testCloning2()",
+      "current_db_test_name": "org.jfree.data.xy.CategoryTableXYDatasetTest_testCloning2_59b115cb",
+      "test_name": "testCloning2",
+      "test_path": "org/jfree/data/xy/CategoryTableXYDatasetTest",
+      "dataset_json_relpath": "jfreechart/2031.json",
+      "gold_labels": [
+        "org.jfree.data.xy.CategoryTableXYDataset.clone()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "2104",
+      "ground_truth_test_fqn": "org.jfree.data.xy.TableXYDatasetTest.test788597()",
+      "current_db_test_name": "org.jfree.data.xy.TableXYDatasetTest_test788597_6d0c29cf",
+      "test_name": "test788597",
+      "test_path": "org/jfree/data/xy/TableXYDatasetTest",
+      "dataset_json_relpath": "jfreechart/2104.json",
+      "gold_labels": [
+        "org.jfree.data.xy.DefaultTableXYDataset.addSeries(org.jfree.data.xy.XYSeries<S>)",
+        "org.jfree.data.xy.DefaultTableXYDataset.getItemCount()",
+        "org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries()"
+      ]
+    },
+    {
+      "project": "jfreechart",
+      "id": "2113",
+      "ground_truth_test_fqn": "org.jfree.data.xy.VectorDataItemTest.testCloning()",
+      "current_db_test_name": "org.jfree.data.xy.VectorDataItemTest_testCloning_02e4ace9",
+      "test_name": "testCloning",
+      "test_path": "org/jfree/data/xy/VectorDataItemTest",
+      "dataset_json_relpath": "jfreechart/2113.json",
+      "gold_labels": [
+        "org.jfree.data.ComparableObjectItem.clone()"
+      ]
+    }
+  ]
+}

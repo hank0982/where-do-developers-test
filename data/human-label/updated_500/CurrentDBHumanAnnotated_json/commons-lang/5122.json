@@ -1,0 +1,36 @@
+{
+  "id": "5122",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.ReflectionToStringBuilderExcludeTest_test_toStringExcludeArrayWithNulls_426d284f",
+  "test_path": "org/apache/commons/lang3/builder/ReflectionToStringBuilderExcludeTest_test",
+  "test_name": "toStringExcludeArrayWithNulls",
+  "body": "@Test\n    void test_toStringExcludeArrayWithNulls() {\n        final String toString = ReflectionToStringBuilder.toStringExclude(new TestFixture(), null, null);\n        validateSecretFieldPresent(toString);\n    }",
+  "invocations": [
+    "toStringExclude"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.ReflectionToStringBuilder.toStringExclude(java.lang.Object, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.ReflectionToStringBuilder.toStringExclude(java.lang.Object, java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.ReflectionToStringBuilder.toStringExclude(java.lang.Object, java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 697,
+      "class_name": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+      "method_name": "toStringExclude",
+      "signature": "org.apache.commons.lang3.builder.ReflectionToStringBuilder.toStringExclude(java.lang.Object, java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

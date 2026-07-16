@@ -1,0 +1,48 @@
+{
+  "id": "1957",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.time.WeekTest_testGetStart_a22986df",
+  "test_path": "org/jfree/data/time/WeekTest",
+  "test_name": "testGetStart",
+  "body": "@Test\n    public void testGetStart() {\n        Locale saved = Locale.getDefault();\n        Locale.setDefault(Locale.ITALY);\n        Calendar cal = Calendar.getInstance(Locale.ITALY);\n        cal.set(2006, Calendar.JANUARY, 16, 0, 0, 0);\n        cal.set(Calendar.MILLISECOND, 0);\n        Week w = new Week(3, 2006);\n        assertEquals(cal.getTime(), w.getStart());\n        Locale.setDefault(saved);\n    }",
+  "invocations": [
+    "getStart",
+    "RegularTimePeriod",
+    "Week"
+  ],
+  "signature": {
+    "org.jfree.data.time.RegularTimePeriod.getStart()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.RegularTimePeriod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Week(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.time.RegularTimePeriod.getStart()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.time.RegularTimePeriod.getStart()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1226,
+      "class_name": "org.jfree.data.time.RegularTimePeriod",
+      "method_name": "getStart",
+      "signature": "org.jfree.data.time.RegularTimePeriod.getStart()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

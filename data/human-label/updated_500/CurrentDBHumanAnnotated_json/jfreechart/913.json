@@ -1,0 +1,173 @@
+{
+  "id": "913",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.renderer.category.GroupedStackedBarRendererTest_testDrawWithNullInfo_f39d2692",
+  "test_path": "org/jfree/chart/renderer/category/GroupedStackedBarRendererTest",
+  "test_name": "testDrawWithNullInfo",
+  "body": "@Test\n    public void testDrawWithNullInfo() {\n        try {\n            DefaultCategoryDataset<String, String> dataset = new DefaultCategoryDataset<>();\n            dataset.addValue(1.0, \"S1\", \"C1\");\n            dataset.addValue(2.0, \"S1\", \"C2\");\n            dataset.addValue(3.0, \"S2\", \"C1\");\n            dataset.addValue(4.0, \"S2\", \"C2\");\n            GroupedStackedBarRenderer renderer\n                    = new GroupedStackedBarRenderer();\n            CategoryPlot<String, String> plot = new CategoryPlot<>(dataset,\n                    new CategoryAxis(\"Category\"), new NumberAxis(\"Value\"),\n                    renderer);\n            JFreeChart chart = new JFreeChart(plot);\n            /* BufferedImage image = */ chart.createBufferedImage(300, 200,\n                    null);\n        }\n        catch (NullPointerException e) {\n            fail(\"No exception should be thrown.\");\n        }\n    }",
+  "invocations": [
+    "AbstractDataset",
+    "DefaultCategoryDataset",
+    "addValue",
+    "BarRenderer",
+    "StackedBarRenderer",
+    "StackedBarRenderer",
+    "AbstractCategoryItemRenderer",
+    "GroupedStackedBarRenderer",
+    "AbstractRenderer",
+    "Plot",
+    "CategoryPlot",
+    "JFreeChart",
+    "createBufferedImage",
+    "JFreeChart",
+    "CategoryAxis",
+    "Axis",
+    "ValueAxis",
+    "NumberAxis",
+    "createStandardTickUnits"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultCategoryDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultCategoryDataset.addValue(double, R, C)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "R",
+        "C"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.BarRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.StackedBarRenderer(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.StackedBarRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.category.GroupedStackedBarRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.AbstractRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.Plot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.CategoryPlot(org.jfree.data.category.CategoryDataset<R, C>, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.chart.renderer.category.CategoryItemRenderer)": {
+      "params_len": 4,
+      "params": [
+        "org.jfree.data.category.CategoryDataset<R",
+        "C>",
+        "org.jfree.chart.axis.CategoryAxis",
+        "org.jfree.chart.axis.ValueAxis",
+        "org.jfree.chart.renderer.category.CategoryItemRenderer"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart(java.lang.String, java.awt.Font, org.jfree.chart.plot.Plot, boolean)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.awt.Font",
+        "org.jfree.chart.plot.Plot",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart.createBufferedImage(int, int, org.jfree.chart.ChartRenderingInfo)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "int",
+        "org.jfree.chart.ChartRenderingInfo"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart(org.jfree.chart.plot.Plot)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.plot.Plot"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.CategoryAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.Axis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.ValueAxis(java.lang.String, org.jfree.chart.axis.TickUnitSource)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "org.jfree.chart.axis.TickUnitSource"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.NumberAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.NumberAxis.createStandardTickUnits()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.renderer.category.GroupedStackedBarRenderer.drawItem(java.awt.Graphics2D, org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D, org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.data.category.CategoryDataset, int, int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.renderer.category.GroupedStackedBarRenderer.drawItem(java.awt.Graphics2D, org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D, org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.data.category.CategoryDataset, int, int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4660,
+      "class_name": "org.jfree.chart.renderer.category.GroupedStackedBarRenderer",
+      "method_name": "drawItem",
+      "signature": "org.jfree.chart.renderer.category.GroupedStackedBarRenderer.drawItem(java.awt.Graphics2D, org.jfree.chart.renderer.category.CategoryItemRendererState, java.awt.geom.Rectangle2D, org.jfree.chart.plot.CategoryPlot, org.jfree.chart.axis.CategoryAxis, org.jfree.chart.axis.ValueAxis, org.jfree.data.category.CategoryDataset, int, int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

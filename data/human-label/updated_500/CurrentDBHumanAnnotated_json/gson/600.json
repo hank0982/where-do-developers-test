@@ -1,0 +1,128 @@
+{
+  "id": "600",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.JsonTreeTest_testToJsonTreeObjectType_cd646fdd",
+  "test_path": "com/google/gson/functional/JsonTreeTest",
+  "test_name": "testToJsonTreeObjectType",
+  "body": "@Test\n  public void testToJsonTreeObjectType() {\n    SubTypeOfBagOfPrimitives bag = new SubTypeOfBagOfPrimitives(10L, 5, false, \"foo\", 1.4F);\n    JsonElement json = gson.toJsonTree(bag, BagOfPrimitives.class);\n    assertThat(json.isJsonObject()).isTrue();\n    JsonObject obj = json.getAsJsonObject();\n    Set<Entry<String, JsonElement>> children = obj.entrySet();\n    assertThat(children).hasSize(4);\n    assertContains(obj, new JsonPrimitive(10L));\n    assertContains(obj, new JsonPrimitive(5));\n    assertContains(obj, new JsonPrimitive(false));\n    assertContains(obj, new JsonPrimitive(\"foo\"));\n  }",
+  "invocations": [
+    "isJsonObject",
+    "getAsJsonObject",
+    "getAsJsonPrimitive",
+    "isJsonPrimitive",
+    "JsonElement",
+    "size",
+    "iterator",
+    "hasNext",
+    "getValue",
+    "toJsonTree",
+    "entrySet",
+    "JsonPrimitive",
+    "JsonPrimitive",
+    "equals",
+    "JsonPrimitive"
+  ],
+  "signature": {
+    "com.google.gson.JsonElement.isJsonObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonElement.getAsJsonObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonElement.getAsJsonPrimitive()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonElement.isJsonPrimitive()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonElement()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LinkedTreeMap$EntrySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LinkedTreeMap$EntrySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LinkedTreeMap$Node.getValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonObject.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonPrimitive(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonPrimitive(java.lang.Number)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Number"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonPrimitive.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonPrimitive(java.lang.Boolean)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 794,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJsonTree",
+      "signature": "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

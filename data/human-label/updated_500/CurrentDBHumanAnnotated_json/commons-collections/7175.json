@@ -1,0 +1,120 @@
+{
+  "id": "7175",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.set.MapBackedSet2Test_testCollectionRemove_17ca4175",
+  "test_path": "org/apache/commons/collections4/set/MapBackedSet2Test",
+  "test_name": "testCollectionRemove",
+  "body": "@Test\n    void testCollectionRemove() {\n        if (!isRemoveSupported()) {\n            return;\n        }\n\n        resetEmpty();\n        final E[] elements = getFullElements();\n        for (final E element : elements) {\n            assertFalse(getCollection().remove(element), \"Shouldn't remove nonexistent element\");\n            verify();\n        }\n\n        final E[] other = getOtherElements();\n\n        resetFull();\n        for (final E element : other) {\n            assertFalse(getCollection().remove(element), \"Shouldn't remove nonexistent other element\");\n            verify();\n        }\n\n        final int size = getCollection().size();\n        for (final E element : elements) {\n            resetFull();\n            assertTrue(getCollection().remove(element),\n                    \"Collection should remove extant element: \" + element);\n\n            // if the elements aren't distinguishable, we can just remove a\n            // matching element from the confirmed collection and verify\n            // contents are still the same.  Otherwise, we don't have the\n            // ability to distinguish the elements and determine which to\n            // remove from the confirmed collection (in which case, we don't\n            // verify because we don't know how).\n            //\n            // see areEqualElementsDistinguishable()\n            if (!areEqualElementsDistinguishable()) {\n                getConfirmed().remove(element);\n                verify();\n            }\n\n            assertEquals(size - 1, getCollection().size(), \"Collection should shrink after remove\");\n        }\n    }",
+  "invocations": [
+    "LinkedMap",
+    "AbstractLinkedMap",
+    "next",
+    "hasNext",
+    "AbstractHashedMap",
+    "hashCode",
+    "isEmpty",
+    "size",
+    "mapBackedSet",
+    "iterator",
+    "remove",
+    "addAll",
+    "hasNext"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.LinkedMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractLinkedMap(int, float, int)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "float",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractLinkedMap$KeySetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractLinkedMap$LinkIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float, int)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "float",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.MapBackedSet.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.MapBackedSet.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.MapBackedSet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.MapBackedSet.mapBackedSet(java.util.Map<E, ? super V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<E",
+        "? super V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.MapBackedSet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.MapBackedSet.remove(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.MapBackedSet.addAll(java.util.Collection<? extends E>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<? extends E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.AbstractEmptyIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.set.MapBackedSet.remove(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.set.MapBackedSet.remove(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2326,
+      "class_name": "org.apache.commons.collections4.set.MapBackedSet",
+      "method_name": "remove",
+      "signature": "org.apache.commons.collections4.set.MapBackedSet.remove(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "4310",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMapKStrongVWeakIdCTest_testKeySetIteratorRemoveChangesMap_6319a2a1",
+  "test_path": "org/apache/commons/collections4/map/ConcurrentReferenceHashMapKStrongVWeakIdCTest",
+  "test_name": "testKeySetIteratorRemoveChangesMap",
+  "body": "@Test\n    void testKeySetIteratorRemoveChangesMap() {\n        resetFull();\n        for (final Iterator<K> iter = getMap().keySet().iterator(); iter.hasNext();) {\n            final K key = iter.next();\n            try {\n                iter.remove();\n            } catch (final UnsupportedOperationException e) {\n                return;\n            }\n            assertFalse(getMap().containsKey(key));\n        }\n    }",
+  "invocations": [
+    "get",
+    "strongKeys",
+    "setOptions",
+    "weakValues",
+    "size",
+    "put",
+    "containsKey",
+    "entrySet",
+    "keySet",
+    "builder",
+    "hasNext",
+    "remove",
+    "next",
+    "iterator"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.strongKeys()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.setOptions(java.util.EnumSet<org.apache.commons.collections4.map.ConcurrentReferenceHashMap.Option>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.EnumSet<org.apache.commons.collections4.map.ConcurrentReferenceHashMap.Option>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.weakValues()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.containsKey(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.remove()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$KeyIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$KeySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.keySet()",
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.remove()",
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$KeySet.iterator()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.keySet()",
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.remove()",
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$KeySet.iterator()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1279,
+      "class_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap",
+      "method_name": "keySet",
+      "signature": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.keySet()"
+    },
+    {
+      "method_id": 1294,
+      "class_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator",
+      "method_name": "remove",
+      "signature": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$HashIterator.remove()"
+    },
+    {
+      "method_id": 1311,
+      "class_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$KeySet",
+      "method_name": "iterator",
+      "signature": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$KeySet.iterator()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

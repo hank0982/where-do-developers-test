@@ -1,0 +1,33 @@
+{
+  "id": "319",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.core.server.DefaultServerFactoryTest_hasResponseMeteredLevel_cf6cc258",
+  "test_path": "io/dropwizard/core/server/DefaultServerFactoryTest",
+  "test_name": "hasResponseMeteredLevel",
+  "body": "@Test\n    void hasResponseMeteredLevel() {\n        assertThat(http.getResponseMeteredLevel())\n            .isEqualTo(ALL);\n    }",
+  "invocations": [
+    "getResponseMeteredLevel"
+  ],
+  "signature": {
+    "io.dropwizard.core.server.AbstractServerFactory.getResponseMeteredLevel()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "io.dropwizard.core.server.AbstractServerFactory.getResponseMeteredLevel()"
+  ],
+  "current_db_human_annotation": [
+    "io.dropwizard.core.server.AbstractServerFactory.getResponseMeteredLevel()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 621,
+      "class_name": "io.dropwizard.core.server.AbstractServerFactory",
+      "method_name": "getResponseMeteredLevel",
+      "signature": "io.dropwizard.core.server.AbstractServerFactory.getResponseMeteredLevel()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

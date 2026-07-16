@@ -1,0 +1,61 @@
+{
+  "id": "2370",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.linear.UnmodifiableArrayRealVectorTest_testAddToEntry_00eb4908",
+  "test_path": "org/apache/commons/math4/legacy/linear/UnmodifiableArrayRealVectorTest",
+  "test_name": "testAddToEntry",
+  "body": "@Test(expected = MathUnsupportedOperationException.class)\n    public void testAddToEntry() {\n        RealVector u = createVector();\n        RealVector v = RealVector.unmodifiableRealVector(u);\n        for (int i = 0; i < DIM; i++) {\n            v.addToEntry(i, 0d);\n        }\n    }",
+  "invocations": [
+    "unmodifiableRealVector",
+    "addToEntry",
+    "setEntry",
+    "ArrayRealVector"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.linear.RealVector.unmodifiableRealVector(org.apache.commons.math4.legacy.linear.RealVector)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.linear.RealVector"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.RealVector$Anonymous2.addToEntry(int, double)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.ArrayRealVector.setEntry(int, double)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.linear.ArrayRealVector(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.linear.RealVector$Anonymous2.addToEntry(int, double)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.linear.RealVector$Anonymous2.addToEntry(int, double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1490,
+      "class_name": "org.apache.commons.math4.legacy.linear.RealVector$Anonymous2",
+      "method_name": "addToEntry",
+      "signature": "org.apache.commons.math4.legacy.linear.RealVector$Anonymous2.addToEntry(int, double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

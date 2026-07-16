@@ -1,0 +1,202 @@
+{
+  "id": "5029",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.HashedMapTest_testMapIsEmpty_c2fbc23a",
+  "test_path": "org/apache/commons/collections4/map/HashedMapTest",
+  "test_name": "testMapIsEmpty",
+  "body": "@Test\n    void testMapIsEmpty() {\n        resetEmpty();\n        assertTrue(getMap().isEmpty(), \"Map.isEmpty() should return true with an empty map\");\n        verify();\n\n        resetFull();\n        assertFalse(getMap().isEmpty(), \"Map.isEmpty() should return false with a non-empty map\");\n        verify();\n    }",
+  "invocations": [
+    "next",
+    "next",
+    "iterator",
+    "contains",
+    "size",
+    "next",
+    "iterator",
+    "size",
+    "size",
+    "equals",
+    "values",
+    "put",
+    "AbstractHashedMap",
+    "keySet",
+    "isEmpty",
+    "entrySet",
+    "hashCode",
+    "iterator",
+    "size",
+    "contains",
+    "getValue",
+    "getKey",
+    "toString",
+    "hashCode",
+    "hasNext",
+    "HashedMap",
+    "hasNext"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$ValuesIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$Values.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$Values.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.values()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float, int)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "float",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.getValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.getKey()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.HashedMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.AbstractEmptyIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.AbstractHashedMap.isEmpty()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.AbstractHashedMap.isEmpty()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1053,
+      "class_name": "org.apache.commons.collections4.map.AbstractHashedMap",
+      "method_name": "isEmpty",
+      "signature": "org.apache.commons.collections4.map.AbstractHashedMap.isEmpty()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

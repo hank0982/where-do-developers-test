@@ -1,0 +1,113 @@
+{
+  "id": "274",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.DeprecatedAttributesTest_testBuilderNonDefaults_b88c0557",
+  "test_path": "org/apache/commons/cli/DeprecatedAttributesTest",
+  "test_name": "testBuilderNonDefaults",
+  "body": "@Test\n    void testBuilderNonDefaults() {\n        // @formatter:off\n        final DeprecatedAttributes value = DeprecatedAttributes.builder()\n                .setDescription(\"Use Bar instead!\")\n                .setForRemoval(true)\n                .setSince(\"2.0\")\n                .get();\n        // @formatter:on\n        assertEquals(\"Use Bar instead!\", value.getDescription());\n        assertEquals(\"2.0\", value.getSince());\n        assertEquals(true, value.isForRemoval());\n    }",
+  "invocations": [
+    "getDescription",
+    "builder",
+    "getSince",
+    "isForRemoval",
+    "setDescription",
+    "setSince",
+    "setForRemoval",
+    "get"
+  ],
+  "signature": {
+    "org.apache.commons.cli.DeprecatedAttributes.getDescription()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.DeprecatedAttributes.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.DeprecatedAttributes.getSince()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.DeprecatedAttributes.isForRemoval()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setDescription(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setSince(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setForRemoval(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.DeprecatedAttributes.builder()",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setDescription(java.lang.String)",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setSince(java.lang.String)",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setForRemoval(boolean)",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.get()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.DeprecatedAttributes.builder()",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setDescription(java.lang.String)",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setSince(java.lang.String)",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.setForRemoval(boolean)",
+    "org.apache.commons.cli.DeprecatedAttributes$Builder.get()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 30,
+      "class_name": "org.apache.commons.cli.DeprecatedAttributes",
+      "method_name": "builder",
+      "signature": "org.apache.commons.cli.DeprecatedAttributes.builder()"
+    },
+    {
+      "method_id": 36,
+      "class_name": "org.apache.commons.cli.DeprecatedAttributes$Builder",
+      "method_name": "setDescription",
+      "signature": "org.apache.commons.cli.DeprecatedAttributes$Builder.setDescription(java.lang.String)"
+    },
+    {
+      "method_id": 37,
+      "class_name": "org.apache.commons.cli.DeprecatedAttributes$Builder",
+      "method_name": "setSince",
+      "signature": "org.apache.commons.cli.DeprecatedAttributes$Builder.setSince(java.lang.String)"
+    },
+    {
+      "method_id": 38,
+      "class_name": "org.apache.commons.cli.DeprecatedAttributes$Builder",
+      "method_name": "setForRemoval",
+      "signature": "org.apache.commons.cli.DeprecatedAttributes$Builder.setForRemoval(boolean)"
+    },
+    {
+      "method_id": 39,
+      "class_name": "org.apache.commons.cli.DeprecatedAttributes$Builder",
+      "method_name": "get",
+      "signature": "org.apache.commons.cli.DeprecatedAttributes$Builder.get()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "6431",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.reflect.FieldUtilsTest_testGetFieldForceAccess_fc2d971a",
+  "test_path": "org/apache/commons/lang3/reflect/FieldUtilsTest",
+  "test_name": "testGetFieldForceAccess",
+  "body": "@Test\n    void testGetFieldForceAccess() {\n        assertEquals(PublicChild.class, FieldUtils.getField(PublicChild.class, \"VALUE\", true).getDeclaringClass());\n        assertEquals(parentClass, FieldUtils.getField(PublicChild.class, \"s\", true).getDeclaringClass());\n        assertEquals(parentClass, FieldUtils.getField(PublicChild.class, \"b\", true).getDeclaringClass());\n        assertEquals(parentClass, FieldUtils.getField(PublicChild.class, \"i\", true).getDeclaringClass());\n        assertEquals(parentClass, FieldUtils.getField(PublicChild.class, \"d\", true).getDeclaringClass());\n        assertEquals(Foo.class, FieldUtils.getField(PubliclyShadowedChild.class, \"VALUE\", true).getDeclaringClass());\n        assertEquals(PubliclyShadowedChild.class, FieldUtils.getField(PubliclyShadowedChild.class, \"s\", true).getDeclaringClass());\n        assertEquals(PubliclyShadowedChild.class, FieldUtils.getField(PubliclyShadowedChild.class, \"b\", true).getDeclaringClass());\n        assertEquals(PubliclyShadowedChild.class, FieldUtils.getField(PubliclyShadowedChild.class, \"i\", true).getDeclaringClass());\n        assertEquals(PubliclyShadowedChild.class, FieldUtils.getField(PubliclyShadowedChild.class, \"d\", true).getDeclaringClass());\n        assertEquals(Foo.class, FieldUtils.getField(PrivatelyShadowedChild.class, \"VALUE\", true).getDeclaringClass());\n        assertEquals(PrivatelyShadowedChild.class, FieldUtils.getField(PrivatelyShadowedChild.class, \"s\", true).getDeclaringClass());\n        assertEquals(PrivatelyShadowedChild.class, FieldUtils.getField(PrivatelyShadowedChild.class, \"b\", true).getDeclaringClass());\n        assertEquals(PrivatelyShadowedChild.class, FieldUtils.getField(PrivatelyShadowedChild.class, \"i\", true).getDeclaringClass());\n        assertEquals(PrivatelyShadowedChild.class, FieldUtils.getField(PrivatelyShadowedChild.class, \"d\", true).getDeclaringClass());\n    }",
+  "invocations": [
+    "getField"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Class<?>",
+        "java.lang.String",
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4210,
+      "class_name": "org.apache.commons.lang3.reflect.FieldUtils",
+      "method_name": "getField",
+      "signature": "org.apache.commons.lang3.reflect.FieldUtils.getField(java.lang.Class<?>, java.lang.String, boolean)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

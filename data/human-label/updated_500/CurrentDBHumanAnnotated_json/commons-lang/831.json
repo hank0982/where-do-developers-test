@@ -1,0 +1,44 @@
+{
+  "id": "831",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ClassUtilsTest_testGetClassArray_051a0238",
+  "test_path": "org/apache/commons/lang3/ClassUtilsTest",
+  "test_name": "testGetClassArray",
+  "body": "@ParameterizedTest\n    @IntRangeSource(from = 1, to = 255)\n    void testGetClassArray(final int dimensions) throws ClassNotFoundException {\n        assertEquals(dimensions,\n                getDimension(ClassUtils.getClass(\"org.apache.commons.lang3.ClassUtilsTest$Inner.DeeplyNested\" + StringUtils.repeat(\"[]\", dimensions))));\n        assertEquals(dimensions, getDimension(ClassUtils.getClass(\"java.lang.String\" + StringUtils.repeat(\"[]\", dimensions))));\n    }",
+  "invocations": [
+    "repeat",
+    "getClass"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.StringUtils.repeat(java.lang.String, int)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ClassUtils.getClass(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ClassUtils.getClass(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ClassUtils.getClass(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1484,
+      "class_name": "org.apache.commons.lang3.ClassUtils",
+      "method_name": "getClass",
+      "signature": "org.apache.commons.lang3.ClassUtils.getClass(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

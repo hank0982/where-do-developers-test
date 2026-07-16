@@ -1,0 +1,67 @@
+{
+  "id": "4807",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.CompareToBuilderTest_testObjectComparator_06d24568",
+  "test_path": "org/apache/commons/lang3/builder/CompareToBuilderTest",
+  "test_name": "testObjectComparator",
+  "body": "@Test\n    void testObjectComparator() {\n        final String o1 = \"Fred\";\n        String o2 = \"Fred\";\n        assertEquals(0, new CompareToBuilder().append(o1, o1, String.CASE_INSENSITIVE_ORDER).toComparison());\n        assertEquals(0, new CompareToBuilder().append(o1, o2, String.CASE_INSENSITIVE_ORDER).toComparison());\n        o2 = \"FRED\";\n        assertEquals(0, new CompareToBuilder().append(o1, o2, String.CASE_INSENSITIVE_ORDER).toComparison());\n        assertEquals(0, new CompareToBuilder().append(o2, o1, String.CASE_INSENSITIVE_ORDER).toComparison());\n        o2 = \"FREDA\";\n        assertTrue(new CompareToBuilder().append(o1, o2, String.CASE_INSENSITIVE_ORDER).toComparison() < 0);\n        assertTrue(new CompareToBuilder().append(o2, o1, String.CASE_INSENSITIVE_ORDER).toComparison() > 0);\n\n        assertTrue(new CompareToBuilder().append(o1, null, String.CASE_INSENSITIVE_ORDER).toComparison() > 0);\n        assertEquals(0, new CompareToBuilder().append(null, null, String.CASE_INSENSITIVE_ORDER).toComparison());\n        assertTrue(new CompareToBuilder().append(null, o1, String.CASE_INSENSITIVE_ORDER).toComparison() < 0);\n    }",
+  "invocations": [
+    "append",
+    "toComparison",
+    "append",
+    "CompareToBuilder"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.CompareToBuilder.append(java.lang.Object[], java.lang.Object[], java.util.Comparator<?>)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object[]",
+        "java.lang.Object[]",
+        "java.util.Comparator<?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.CompareToBuilder.toComparison()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.CompareToBuilder.append(java.lang.Object, java.lang.Object, java.util.Comparator<?>)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "java.lang.Object",
+        "java.util.Comparator<?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.CompareToBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.CompareToBuilder.toComparison()",
+    "org.apache.commons.lang3.builder.CompareToBuilder.append(java.lang.Object, java.lang.Object, java.util.Comparator<?>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.CompareToBuilder.toComparison()",
+    "org.apache.commons.lang3.builder.CompareToBuilder.append(java.lang.Object, java.lang.Object, java.util.Comparator<?>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1012,
+      "class_name": "org.apache.commons.lang3.builder.CompareToBuilder",
+      "method_name": "toComparison",
+      "signature": "org.apache.commons.lang3.builder.CompareToBuilder.toComparison()"
+    },
+    {
+      "method_id": 1015,
+      "class_name": "org.apache.commons.lang3.builder.CompareToBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.builder.CompareToBuilder.append(java.lang.Object, java.lang.Object, java.util.Comparator<?>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

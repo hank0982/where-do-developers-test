@@ -1,0 +1,76 @@
+{
+  "id": "4925",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.WindowsLineEndingInputStreamTest_testTwoLinesAtEnd_ByteArrayIndex_c9a11ede",
+  "test_path": "org/apache/commons/io/input/WindowsLineEndingInputStreamTest_testTwoLinesAtEnd",
+  "test_name": "ByteArrayIndex",
+  "body": "@Test\n    void testTwoLinesAtEnd_ByteArrayIndex() throws Exception {\n        assertEquals(\"a\\r\\n\\r\\n\", roundtripReadByteArrayIndex(\"a\\r\\n\\r\\n\"));\n    }",
+  "invocations": [
+    "setCharSequence",
+    "setCharset",
+    "get",
+    "builder",
+    "close",
+    "read",
+    "WindowsLineEndingInputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.build.AbstractOriginSupplier.setCharSequence(java.lang.CharSequence)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream$Builder.setCharset(java.nio.charset.Charset)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.charset.Charset"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.WindowsLineEndingInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.WindowsLineEndingInputStream.read()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.WindowsLineEndingInputStream(java.io.InputStream, boolean)": {
+      "params_len": 2,
+      "params": [
+        "java.io.InputStream",
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.WindowsLineEndingInputStream.read()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.WindowsLineEndingInputStream.read()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1920,
+      "class_name": "org.apache.commons.io.input.WindowsLineEndingInputStream",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.input.WindowsLineEndingInputStream.read()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

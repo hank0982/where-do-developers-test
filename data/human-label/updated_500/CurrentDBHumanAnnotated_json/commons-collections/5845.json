@@ -1,0 +1,118 @@
+{
+  "id": "5845",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.ReferenceMapTest_testEntrySetRemove1_f25caacc",
+  "test_path": "org/apache/commons/collections4/map/ReferenceMapTest",
+  "test_name": "testEntrySetRemove1",
+  "body": "@Test\n    void testEntrySetRemove1() {\n        if (!isRemoveSupported()) {\n            return;\n        }\n        resetFull();\n        final int size = getMap().size();\n        final Set<Map.Entry<K, V>> entrySet = getMap().entrySet();\n        final Map.Entry<K, V> entry = entrySet.iterator().next();\n        final K key = entry.getKey();\n\n        assertTrue(entrySet.remove(entry));\n        assertFalse(getMap().containsKey(key));\n        assertEquals(size - 1, getMap().size());\n    }",
+  "invocations": [
+    "put",
+    "entrySet",
+    "keySet",
+    "containsKey",
+    "size",
+    "AbstractReferenceMap",
+    "next",
+    "getKey",
+    "iterator",
+    "remove",
+    "AbstractHashedMap",
+    "ReferenceMap"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.AbstractReferenceMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.containsKey(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap(org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, int, float, boolean)": {
+      "params_len": 5,
+      "params": [
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "int",
+        "float",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap$ReferenceEntrySetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap$ReferenceEntry.getKey()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.remove(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "float"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ReferenceMap(org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.remove(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.remove(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1004,
+      "class_name": "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet",
+      "method_name": "remove",
+      "signature": "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.remove(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

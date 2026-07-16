@@ -1,0 +1,61 @@
+{
+  "id": "1706",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.select.SelectorTest_testNestedHas_6e543e72",
+  "test_path": "org/jsoup/select/SelectorTest",
+  "test_name": "testNestedHas",
+  "body": "@Test public void testNestedHas() {\n        Document doc = Jsoup.parse(\"<div><p><span>One</span></p></div> <div><p>Two</p></div>\");\n        Elements divs = doc.select(\"div:has(p:has(span))\");\n        assertEquals(1, divs.size());\n        assertEquals(\"One\", divs.first().text());\n\n        // test matches in has\n        divs = doc.select(\"div:has(p:matches((?i)two))\");\n        assertEquals(1, divs.size());\n        assertEquals(\"div\", divs.first().tagName());\n        assertEquals(\"Two\", divs.first().text());\n\n        // test contains in has\n        divs = doc.select(\"div:has(p:contains(two))\");\n        assertEquals(1, divs.size());\n        assertEquals(\"div\", divs.first().tagName());\n        assertEquals(\"Two\", divs.first().text());\n    }",
+  "invocations": [
+    "parse",
+    "select",
+    "text",
+    "tagName",
+    "first"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.select(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.text()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.tagName()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.select.Elements.first()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.nodes.Element.select(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.nodes.Element.select(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 734,
+      "class_name": "org.jsoup.nodes.Element",
+      "method_name": "select",
+      "signature": "org.jsoup.nodes.Element.select(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

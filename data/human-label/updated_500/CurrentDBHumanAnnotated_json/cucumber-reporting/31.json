@@ -1,0 +1,44 @@
+{
+  "id": "31",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_setTagsToExcludeFromChart_OnInvalidRegexPattern_ThrowsValidationException_f54a3abd",
+  "test_path": "net/masterthought/cucumber/ConfigurationTest_setTagsToExcludeFromChart_OnInvalidRegexPattern",
+  "test_name": "ThrowsValidationException",
+  "body": "@Test\n    void setTagsToExcludeFromChart_OnInvalidRegexPattern_ThrowsValidationException() {\n\n        // given\n        Configuration configuration = new Configuration(outputDirectory, projectName);\n\n        // then & then\n        assertThatThrownBy(() -> configuration.setTagsToExcludeFromChart(\"\\\\invalid.regex\\\\\")).isInstanceOf(ValidationException.class);\n    }",
+  "invocations": [
+    "setTagsToExcludeFromChart",
+    "Configuration"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.Configuration.setTagsToExcludeFromChart(java.lang.String[])": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.Configuration.setTagsToExcludeFromChart(java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.Configuration.setTagsToExcludeFromChart(java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 226,
+      "class_name": "net.masterthought.cucumber.Configuration",
+      "method_name": "setTagsToExcludeFromChart",
+      "signature": "net.masterthought.cucumber.Configuration.setTagsToExcludeFromChart(java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

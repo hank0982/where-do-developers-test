@@ -1,0 +1,35 @@
+{
+  "id": "937",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.SerializedNameTest_testFirstNameIsChosenForSerialization_400b6fd4",
+  "test_path": "com/google/gson/functional/SerializedNameTest",
+  "test_name": "testFirstNameIsChosenForSerialization",
+  "body": "@Test\n  public void testFirstNameIsChosenForSerialization() {\n    MyClass target = new MyClass(\"v1\", \"v2\");\n    // Ensure name1 occurs exactly once, and name2 and name3 don't appear\n    assertThat(gson.toJson(target)).isEqualTo(\"{\\\"name\\\":\\\"v1\\\",\\\"name1\\\":\\\"v2\\\"}\");\n  }",
+  "invocations": [
+    "toJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

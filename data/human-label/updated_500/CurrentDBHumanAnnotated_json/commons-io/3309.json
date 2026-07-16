@@ -1,0 +1,47 @@
+{
+  "id": "3309",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.function.IOStreamTest_testUnordered_c57617c3",
+  "test_path": "org/apache/commons/io/function/IOStreamTest",
+  "test_name": "testUnordered",
+  "body": "@SuppressWarnings(\"resource\") // custom stream not recognized by compiler warning machinery\n    @Test\n    void testUnordered() {\n        // Sanity check\n        assertArrayEquals(new String[] { \"A\", \"B\" }, Stream.of(\"A\", \"B\").unordered().toArray());\n        // Test\n        assertArrayEquals(new String[] { \"A\", \"B\" }, IOStream.of(\"A\", \"B\").unordered().toArray());\n    }",
+  "invocations": [
+    "toArray",
+    "of",
+    "unordered"
+  ],
+  "signature": {
+    "org.apache.commons.io.function.IOStream.toArray()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.function.IOStream.of(T[])": {
+      "params_len": 1,
+      "params": [
+        "T[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.function.IOBaseStream.unordered()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.function.IOBaseStream.unordered()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.function.IOBaseStream.unordered()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2829,
+      "class_name": "org.apache.commons.io.function.IOBaseStream",
+      "method_name": "unordered",
+      "signature": "org.apache.commons.io.function.IOBaseStream.unordered()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

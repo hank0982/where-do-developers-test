@@ -1,0 +1,63 @@
+{
+  "id": "942",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.TestPoolableConnection_testFastFailValidation_ffbfe1a6",
+  "test_path": "org/apache/commons/dbcp2/TestPoolableConnection",
+  "test_name": "testFastFailValidation",
+  "body": "@Test\n    void testFastFailValidation() throws Exception {\n        pool.setTestOnReturn(true);\n        final PoolableConnectionFactory factory = (PoolableConnectionFactory) pool.getFactory();\n        factory.setFastFailValidation(true);\n        final PoolableConnection conn = pool.borrowObject();\n        final TesterConnection nativeConnection = (TesterConnection) conn.getInnermostDelegate();\n\n        // Set up non-fatal exception\n        nativeConnection.setFailure(new SQLException(\"Not fatal error.\", \"Invalid syntax.\"));\n        assertThrows(SQLException.class, conn::createStatement);\n        // cleanup failure\n        nativeConnection.setFailure(null);\n\n        // validate should not fail - error was not fatal and condition was cleaned up\n        conn.validate(\"SELECT 1\", 1000);\n\n        // now set up fatal failure\n        nativeConnection.setFailure(new SQLException(\"Fatal connection error.\", \"01002\"));\n        assertThrows(SQLException.class, conn::createStatement);\n        // cleanup failure\n        nativeConnection.setFailure(null);\n\n        // validate should now fail because of previous fatal error, despite cleanup\n        assertThrows(SQLException.class, () -> conn.validate(\"SELECT 1\", 1000), \"Should throw SQL exception on validation.\");\n\n        // verify that bad connection does not get returned to the pool\n        conn.close(); // testOnReturn triggers validate, which should fail\n        assertEquals(0, pool.getNumActive(), \"The pool should have no active connections\");\n        assertEquals(0, pool.getNumIdle(), \"The pool should have no idle connections\");\n    }",
+  "invocations": [
+    "setFastFailValidation",
+    "createStatement",
+    "getInnermostDelegate"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.setFastFailValidation(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingConnection.getInnermostDelegate()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.PoolableConnection.validate(java.lang.String, int)",
+    "org.apache.commons.dbcp2.PoolableConnection.close()",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.PoolableConnection.validate(java.lang.String, int)",
+    "org.apache.commons.dbcp2.PoolableConnection.close()",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1380,
+      "class_name": "org.apache.commons.dbcp2.PoolableConnection",
+      "method_name": "validate",
+      "signature": "org.apache.commons.dbcp2.PoolableConnection.validate(java.lang.String, int)"
+    },
+    {
+      "method_id": 1387,
+      "class_name": "org.apache.commons.dbcp2.PoolableConnection",
+      "method_name": "close",
+      "signature": "org.apache.commons.dbcp2.PoolableConnection.close()"
+    },
+    {
+      "method_id": 1601,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "createStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.createStatement()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

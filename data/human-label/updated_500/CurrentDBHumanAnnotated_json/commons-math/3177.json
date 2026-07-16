@@ -1,0 +1,97 @@
+{
+  "id": "3177",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.stat.descriptive.SynchronizedDescriptiveStatisticsTest_testInitCopy_3a8c7757",
+  "test_path": "org/apache/commons/math4/legacy/stat/descriptive/SynchronizedDescriptiveStatisticsTest",
+  "test_name": "testInitCopy",
+  "body": "@Test\n    public void testInitCopy() {\n        //test copy constructor\n        int initialDoubleArray = random.nextInt(1024 //some random\n            //memory consumption and test size limitation\n        );\n        DescriptiveStatistics original = new DescriptiveStatistics(initialDoubleArray);\n        DescriptiveStatistics instance = new DescriptiveStatistics(original);\n        Assert.assertEquals(original.getGeometricMean(),\n                            instance.getGeometricMean(),\n                            0);\n        Assert.assertEquals(original.getKurtosis(),\n                            instance.getKurtosis(),\n                            0);\n        Assert.assertEquals(original.getMax(),\n                            instance.getMax(),\n                            0);\n        Assert.assertEquals(original.getMean(),\n                            instance.getMean(),\n                            0);\n        Assert.assertEquals(original.getMin(),\n                            instance.getMin(),\n                            0);\n        Assert.assertEquals(original.getN(),\n                            instance.getN());\n        Assert.assertEquals(original.getSkewness(),\n                            instance.getSkewness(),\n                            0);\n        Assert.assertArrayEquals(original.getValues(),\n                                 instance.getValues(),\n                                 0);\n        Assert.assertEquals(original.getWindowSize(),\n                            instance.getWindowSize());\n            //doesn't implement equals\n    }",
+  "invocations": [
+    "getMean",
+    "getN",
+    "getMin",
+    "DescriptiveStatistics",
+    "getSkewness",
+    "getValues",
+    "getGeometricMean",
+    "DescriptiveStatistics",
+    "getWindowSize",
+    "getMax",
+    "getKurtosis"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getMean()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getN()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getMin()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getSkewness()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getValues()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getGeometricMean()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics(org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getWindowSize()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getMax()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getKurtosis()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.copy(org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics, org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.copy(org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics, org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 775,
+      "class_name": "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics",
+      "method_name": "copy",
+      "signature": "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.copy(org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics, org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

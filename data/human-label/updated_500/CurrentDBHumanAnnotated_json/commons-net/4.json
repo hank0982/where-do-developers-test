@@ -1,0 +1,45 @@
+{
+  "id": "4",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.bsd.RCommandClientTest_testConstructor_09312f09",
+  "test_path": "org/apache/commons/net/bsd/RCommandClientTest",
+  "test_name": "testConstructor",
+  "body": "@Test\n    public void testConstructor() {\n        assertDoesNotThrow(RCommandClient::new);\n    }",
+  "invocations": [
+    "RExecClient",
+    "RCommandClient",
+    "SocketClient"
+  ],
+  "signature": {
+    "org.apache.commons.net.bsd.RExecClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.bsd.RCommandClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.bsd.RCommandClient()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.bsd.RCommandClient()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 327,
+      "class_name": "org.apache.commons.net.bsd.RCommandClient",
+      "method_name": "RCommandClient",
+      "signature": "org.apache.commons.net.bsd.RCommandClient()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

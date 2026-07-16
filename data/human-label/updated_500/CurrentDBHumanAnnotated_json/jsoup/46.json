@@ -1,0 +1,35 @@
+{
+  "id": "46",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.helper.HttpConnectionTest_fixesHeaderEncodingIfRequired_082cefb4",
+  "test_path": "org/jsoup/helper/HttpConnectionTest",
+  "test_name": "fixesHeaderEncodingIfRequired",
+  "body": "@ParameterizedTest\n    @ValueSource(strings = {\"search.php?moji=\u6211\u7684\", \"latin=caf\u00e9\", \"\ud83c\udf55\", \"ascii\"})",
+  "invocations": [
+    "fixHeaderEncoding"
+  ],
+  "signature": {
+    "org.jsoup.helper.HttpConnection$Response.fixHeaderEncoding(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.helper.HttpConnection$Response.fixHeaderEncoding(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.helper.HttpConnection$Response.fixHeaderEncoding(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 172,
+      "class_name": "org.jsoup.helper.HttpConnection$Response",
+      "method_name": "fixHeaderEncoding",
+      "signature": "org.jsoup.helper.HttpConnection$Response.fixHeaderEncoding(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

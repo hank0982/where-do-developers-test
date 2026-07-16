@@ -1,0 +1,14 @@
+{
+  "id": "1485",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.IOCaseTest_test_serialization_23a5eb44",
+  "test_path": "org/apache/commons/io/IOCaseTest_test",
+  "test_name": "serialization",
+  "body": "@Test\n    void test_serialization() throws Exception {\n        assertSame(IOCase.SENSITIVE, serialize(IOCase.SENSITIVE));\n        assertSame(IOCase.INSENSITIVE, serialize(IOCase.INSENSITIVE));\n        assertSame(IOCase.SYSTEM, serialize(IOCase.SYSTEM));\n    }",
+  "invocations": [],
+  "signature": {},
+  "label": [],
+  "current_db_human_annotation": [],
+  "current_db_human_annotation_details": [],
+  "label_source": "reviewed_empty"
+}

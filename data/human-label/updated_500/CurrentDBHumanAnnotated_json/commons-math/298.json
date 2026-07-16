@@ -1,0 +1,54 @@
+{
+  "id": "298",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.analysis.function.GaussianTest_testParametricValue_9356a6cf",
+  "test_path": "org/apache/commons/math4/legacy/analysis/function/GaussianTest",
+  "test_name": "testParametricValue",
+  "body": "@Test\n    public void testParametricValue() {\n        final double norm = 2;\n        final double mean = 3;\n        final double sigma = 4;\n        final Gaussian f = new Gaussian(norm, mean, sigma);\n\n        final Gaussian.Parametric g = new Gaussian.Parametric();\n        Assert.assertEquals(f.value(-1), g.value(-1, new double[] {norm, mean, sigma}), 0);\n        Assert.assertEquals(f.value(0), g.value(0, new double[] {norm, mean, sigma}), 0);\n        Assert.assertEquals(f.value(2), g.value(2, new double[] {norm, mean, sigma}), 0);\n    }",
+  "invocations": [
+    "Gaussian",
+    "value",
+    "value"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.analysis.function.Gaussian(double, double, double)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.function.Gaussian.value(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.function.Gaussian$Parametric.value(double, double[])": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.analysis.function.Gaussian$Parametric.value(double, double[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.analysis.function.Gaussian$Parametric.value(double, double[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4169,
+      "class_name": "org.apache.commons.math4.legacy.analysis.function.Gaussian$Parametric",
+      "method_name": "value",
+      "signature": "org.apache.commons.math4.legacy.analysis.function.Gaussian$Parametric.value(double, double[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

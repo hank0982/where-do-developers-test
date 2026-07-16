@@ -1,0 +1,33 @@
+{
+  "id": "152",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.requests.data.library.RemoveAlbumsForCurrentUserRequestTest_shouldReturnDefault_async_bd47513c",
+  "test_path": "se/michaelthelin/spotify/requests/data/library/RemoveAlbumsForCurrentUserRequestTest_shouldReturnDefault",
+  "test_name": "async",
+  "body": "@Test\n  public void shouldReturnDefault_async() throws ExecutionException, InterruptedException {\n    shouldReturnDefault(defaultRequest.executeAsync().get());\n  }",
+  "invocations": [
+    "executeAsync"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.requests.AbstractRequest.executeAsync()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "se.michaelthelin.spotify.requests.AbstractRequest.executeAsync()"
+  ],
+  "current_db_human_annotation": [
+    "se.michaelthelin.spotify.requests.AbstractRequest.executeAsync()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2366,
+      "class_name": "se.michaelthelin.spotify.requests.AbstractRequest",
+      "method_name": "executeAsync",
+      "signature": "se.michaelthelin.spotify.requests.AbstractRequest.executeAsync()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

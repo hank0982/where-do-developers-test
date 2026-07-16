@@ -1,0 +1,179 @@
+{
+  "id": "2936",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.SimplexOptimizerTest_testFunctionWithMultiDirectional_d1e91b3b",
+  "test_path": "org/apache/commons/math4/legacy/optim/nonlinear/scalar/noderiv/SimplexOptimizerTest",
+  "test_name": "testFunctionWithMultiDirectional",
+  "body": "@ParameterizedTest\n    @CsvFileSource(resources = MULTIDIRECTIONAL_INPUT_FILE)\n    void testFunctionWithMultiDirectional(@AggregateWith(TaskAggregator.class) Task task) {\n        task.run(new MultiDirectionalTransform());\n    }",
+  "invocations": [
+    "AbstractConvergenceChecker",
+    "ObjectiveFunction",
+    "MultivariateOptimizer",
+    "optimize",
+    "SimplexOptimizer",
+    "SimplexOptimizer",
+    "equalSidesAlongAxes",
+    "MultiDirectionalTransform",
+    "MultiDirectionalTransform",
+    "SimpleValueChecker",
+    "InitialGuess",
+    "getEvaluations",
+    "BaseOptimizer",
+    "BaseOptimizer",
+    "getPoint",
+    "MaxEval",
+    "BaseMultivariateOptimizer",
+    "getValue",
+    "distance"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.optim.AbstractConvergenceChecker(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.ObjectiveFunction(org.apache.commons.math4.legacy.analysis.MultivariateFunction)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.analysis.MultivariateFunction"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer(org.apache.commons.math4.legacy.optim.ConvergenceChecker<org.apache.commons.math4.legacy.optim.PointValuePair>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.optim.ConvergenceChecker<org.apache.commons.math4.legacy.optim.PointValuePair>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer.optimize(org.apache.commons.math4.legacy.optim.OptimizationData[])": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.optim.OptimizationData[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.SimplexOptimizer(org.apache.commons.math4.legacy.optim.ConvergenceChecker<org.apache.commons.math4.legacy.optim.PointValuePair>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.optim.ConvergenceChecker<org.apache.commons.math4.legacy.optim.PointValuePair>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.SimplexOptimizer(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.Simplex.equalSidesAlongAxes(int, double)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.MultiDirectionalTransform()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.noderiv.MultiDirectionalTransform(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.SimpleValueChecker(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.InitialGuess(double[])": {
+      "params_len": 1,
+      "params": [
+        "double[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.BaseOptimizer.getEvaluations()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.BaseOptimizer(org.apache.commons.math4.legacy.optim.ConvergenceChecker<PAIR>, int, int)": {
+      "params_len": 3,
+      "params": [
+        "org.apache.commons.math4.legacy.optim.ConvergenceChecker<PAIR>",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.BaseOptimizer(org.apache.commons.math4.legacy.optim.ConvergenceChecker<PAIR>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.optim.ConvergenceChecker<PAIR>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.PointValuePair.getPoint()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.MaxEval(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.optim.BaseMultivariateOptimizer(org.apache.commons.math4.legacy.optim.ConvergenceChecker<PAIR>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.optim.ConvergenceChecker<PAIR>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.core.Pair.getValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.core.MathArrays.distance(double[], double[])": {
+      "params_len": 2,
+      "params": [
+        "double[]",
+        "double[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer.optimize(org.apache.commons.math4.legacy.optim.OptimizationData[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer.optimize(org.apache.commons.math4.legacy.optim.OptimizationData[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4459,
+      "class_name": "org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer",
+      "method_name": "optimize",
+      "signature": "org.apache.commons.math4.legacy.optim.nonlinear.scalar.MultivariateOptimizer.optimize(org.apache.commons.math4.legacy.optim.OptimizationData[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

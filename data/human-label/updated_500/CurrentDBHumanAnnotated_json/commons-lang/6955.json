@@ -1,0 +1,36 @@
+{
+  "id": "6955",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_test_LANG_1114_3d4567c8",
+  "test_path": "org/apache/commons/lang3/reflect/TypeUtilsTest_test_LANG",
+  "test_name": "1114",
+  "body": "@Test\n    void test_LANG_1114() throws NoSuchFieldException {\n        final Type nonWildcardType = getClass().getDeclaredField(\"wildcardComparable\").getGenericType();\n        final Type wildcardType = ((ParameterizedType) nonWildcardType).getActualTypeArguments()[0];\n\n        assertFalse(TypeUtils.equals(wildcardType, nonWildcardType));\n        assertFalse(TypeUtils.equals(nonWildcardType, wildcardType));\n    }",
+  "invocations": [
+    "equals"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.reflect.TypeUtils.equals(java.lang.reflect.Type, java.lang.reflect.Type)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.reflect.Type",
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.reflect.TypeUtils.equals(java.lang.reflect.Type, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.reflect.TypeUtils.equals(java.lang.reflect.Type, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4149,
+      "class_name": "org.apache.commons.lang3.reflect.TypeUtils",
+      "method_name": "equals",
+      "signature": "org.apache.commons.lang3.reflect.TypeUtils.equals(java.lang.reflect.Type, java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

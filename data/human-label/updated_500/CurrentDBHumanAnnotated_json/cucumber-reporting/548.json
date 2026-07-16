@@ -1,0 +1,43 @@
+{
+  "id": "548",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.sorting.SortingFactoryTest_sortFeatures_OnNATURAL_ReturnsSameList_9edf418f",
+  "test_path": "net/masterthought/cucumber/sorting/SortingFactoryTest_sortFeatures_OnNATURAL",
+  "test_name": "ReturnsSameList",
+  "body": "@Test\n    void sortFeatures_OnNATURAL_ReturnsSameList() {\n\n        // given\n        SortingFactory sortingFactory = new SortingFactory(SortingMethod.NATURAL);\n\n        // when\n        List<Feature> featureList = sortingFactory.sortFeatures(features);\n\n        // then\n        assertThat(featureList).containsExactly(features.get(0), features.get(1));\n    }",
+  "invocations": [
+    "sortFeatures",
+    "SortingFactory"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.sorting.SortingFactory.sortFeatures(java.util.Collection<net.masterthought.cucumber.json.Feature>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<net.masterthought.cucumber.json.Feature>"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.sorting.SortingFactory(net.masterthought.cucumber.sorting.SortingMethod)": {
+      "params_len": 1,
+      "params": [
+        "net.masterthought.cucumber.sorting.SortingMethod"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.sorting.SortingFactory.sortFeatures(java.util.Collection<net.masterthought.cucumber.json.Feature>)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.sorting.SortingFactory.sortFeatures(java.util.Collection<net.masterthought.cucumber.json.Feature>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 389,
+      "class_name": "net.masterthought.cucumber.sorting.SortingFactory",
+      "method_name": "sortFeatures",
+      "signature": "net.masterthought.cucumber.sorting.SortingFactory.sortFeatures(java.util.Collection<net.masterthought.cucumber.json.Feature>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

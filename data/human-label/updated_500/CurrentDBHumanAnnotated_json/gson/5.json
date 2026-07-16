@@ -1,0 +1,82 @@
+{
+  "id": "5",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.DefaultMapJsonSerializerTest_testNonEmptyMapSerialization_fa9fe645",
+  "test_path": "com/google/gson/DefaultMapJsonSerializerTest",
+  "test_name": "testNonEmptyMapSerialization",
+  "body": "@Test\n  public void testNonEmptyMapSerialization() {\n    Type mapType = new TypeToken<Map<String, String>>() {}.getType();\n    Map<String, String> myMap = new HashMap<>();\n    String key = \"key1\";\n    myMap.put(key, \"value1\");\n    Gson gson = new Gson();\n    JsonElement element = gson.toJsonTree(myMap, mapType);\n\n    assertThat(element.isJsonObject()).isTrue();\n    JsonObject mapJsonObject = element.getAsJsonObject();\n    assertThat(mapJsonObject.has(key)).isTrue();\n  }",
+  "invocations": [
+    "isJsonObject",
+    "getAsJsonObject",
+    "Gson",
+    "toJsonTree",
+    "Gson",
+    "has",
+    "getType",
+    "TypeToken"
+  ],
+  "signature": {
+    "com.google.gson.JsonElement.isJsonObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonElement.getAsJsonObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson(com.google.gson.GsonBuilder)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.GsonBuilder"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonObject.has(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken.getType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 794,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJsonTree",
+      "signature": "com.google.gson.Gson.toJsonTree(java.lang.Object, java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

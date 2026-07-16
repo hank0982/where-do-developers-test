@@ -1,0 +1,35 @@
+{
+  "id": "128",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_factory_total_Iterable_nullNotFirst_d321b735",
+  "test_path": "org/joda/money/TestBigMoney_test_factory_total_Iterable",
+  "test_name": "nullNotFirst",
+  "body": "@Test\n    void test_factory_total_Iterable_nullNotFirst() {\n        Iterable<BigMoney> iterable = Arrays.asList(GBP_2_33, null, GBP_2_36);\n        assertThatExceptionOfType(NullPointerException.class)\n            .isThrownBy(() -> BigMoney.total(iterable));\n    }",
+  "invocations": [
+    "total"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.total(java.lang.Iterable<? extends org.joda.money.BigMoneyProvider>)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Iterable<? extends org.joda.money.BigMoneyProvider>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.total(java.lang.Iterable<? extends org.joda.money.BigMoneyProvider>)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.total(java.lang.Iterable<? extends org.joda.money.BigMoneyProvider>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 208,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "total",
+      "signature": "org.joda.money.BigMoney.total(java.lang.Iterable<? extends org.joda.money.BigMoneyProvider>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

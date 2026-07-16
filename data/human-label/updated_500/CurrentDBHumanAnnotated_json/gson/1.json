@@ -1,0 +1,62 @@
+{
+  "id": "1",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.CommentsTest_testParseComments_49081355",
+  "test_path": "com/google/gson/CommentsTest",
+  "test_name": "testParseComments",
+  "body": "@Test\n  public void testParseComments() {\n    String json =\n        \"[\\n\"\n            + \"  // this is a comment\\n\"\n            + \"  \\\"a\\\",\\n\"\n            + \"  /* this is another comment */\\n\"\n            + \"  \\\"b\\\",\\n\"\n            + \"  # this is yet another comment\\n\"\n            + \"  \\\"c\\\"\\n\"\n            + \"]\";\n\n    List<String> abc = new Gson().fromJson(json, new TypeToken<List<String>>() {}.getType());\n    assertThat(abc).containsExactly(\"a\", \"b\", \"c\").inOrder();\n  }",
+  "invocations": [
+    "Gson",
+    "fromJson",
+    "Gson",
+    "getType",
+    "TypeToken"
+  ],
+  "signature": {
+    "com.google.gson.Gson(com.google.gson.GsonBuilder)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.GsonBuilder"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.reflect.Type)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken.getType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 791,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

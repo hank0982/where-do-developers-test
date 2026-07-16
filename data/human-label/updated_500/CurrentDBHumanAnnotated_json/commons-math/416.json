@@ -1,0 +1,90 @@
+{
+  "id": "416",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.analysis.integration.SimpsonIntegratorTest_testSinFunction_f91e70de",
+  "test_path": "org/apache/commons/math4/legacy/analysis/integration/SimpsonIntegratorTest",
+  "test_name": "testSinFunction",
+  "body": "@Test\n    public void testSinFunction() {\n        UnivariateFunction f = new Sin();\n        UnivariateIntegrator integrator = new SimpsonIntegrator();\n        double min;\n        double max;\n        double expected;\n        double result;\n        double tolerance;\n\n        min = 0; max = JdkMath.PI; expected = 2;\n        tolerance = JdkMath.abs(expected * integrator.getRelativeAccuracy());\n        result = integrator.integrate(1000, f, min, max);\n        Assert.assertTrue(integrator.getEvaluations() < 100);\n        Assert.assertTrue(integrator.getIterations()  < 10);\n        Assert.assertEquals(expected, result, tolerance);\n\n        min = -JdkMath.PI/3; max = 0; expected = -0.5;\n        tolerance = JdkMath.abs(expected * integrator.getRelativeAccuracy());\n        result = integrator.integrate(1000, f, min, max);\n        Assert.assertTrue(integrator.getEvaluations() < 50);\n        Assert.assertTrue(integrator.getIterations()  < 10);\n        Assert.assertEquals(expected, result, tolerance);\n    }",
+  "invocations": [
+    "abs",
+    "SimpsonIntegrator",
+    "BaseAbstractUnivariateIntegrator",
+    "getIterations",
+    "BaseAbstractUnivariateIntegrator",
+    "getEvaluations",
+    "getRelativeAccuracy",
+    "integrate"
+  ],
+  "signature": {
+    "org.apache.commons.math4.core.jdkmath.JdkMath.abs(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.SimpsonIntegrator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator.getIterations()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator(double, double, int, int)": {
+      "params_len": 4,
+      "params": [
+        "double",
+        "double",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator.getEvaluations()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator.getRelativeAccuracy()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator.integrate(int, org.apache.commons.math4.legacy.analysis.UnivariateFunction, double, double)": {
+      "params_len": 4,
+      "params": [
+        "int",
+        "org.apache.commons.math4.legacy.analysis.UnivariateFunction",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator.integrate(int, org.apache.commons.math4.legacy.analysis.UnivariateFunction, double, double)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator.integrate(int, org.apache.commons.math4.legacy.analysis.UnivariateFunction, double, double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3983,
+      "class_name": "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator",
+      "method_name": "integrate",
+      "signature": "org.apache.commons.math4.legacy.analysis.integration.BaseAbstractUnivariateIntegrator.integrate(int, org.apache.commons.math4.legacy.analysis.UnivariateFunction, double, double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

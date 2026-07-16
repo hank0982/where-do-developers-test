@@ -1,0 +1,35 @@
+{
+  "id": "999",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.core.jdkmath.AccurateMathTest_testExpSpecialCases_5f6f5dd5",
+  "test_path": "org/apache/commons/math4/legacy/core/jdkmath/AccurateMathTest",
+  "test_name": "testExpSpecialCases",
+  "body": "@Test\n    public void testExpSpecialCases() {\n        // Smallest value that will round up to Double.MIN_VALUE\n        assertEquals(Double.MIN_VALUE, AccurateMath.exp(-745.1332191019411), Precision.EPSILON);\n        assertEquals(\"exp(-745.1332191019412) should be 0.0\", 0.0, AccurateMath.exp(-745.1332191019412), Precision.EPSILON);\n        assertTrue(\"exp of NaN should be NaN\", Double.isNaN(AccurateMath.exp(Double.NaN)));\n        assertEquals(\"exp of infinity should be infinity\", Double.POSITIVE_INFINITY, AccurateMath.exp(Double.POSITIVE_INFINITY), 1.0);\n        assertEquals(\"exp of -infinity should be 0.0\", 0.0, AccurateMath.exp(Double.NEGATIVE_INFINITY), Precision.EPSILON);\n        assertEquals(\"exp(1) should be Math.E\", Math.E, AccurateMath.exp(1.0), Precision.EPSILON);\n    }",
+  "invocations": [
+    "exp"
+  ],
+  "signature": {
+    "org.apache.commons.math4.core.jdkmath.AccurateMath.exp(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.core.jdkmath.AccurateMath.exp(double)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.core.jdkmath.AccurateMath.exp(double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 69,
+      "class_name": "org.apache.commons.math4.core.jdkmath.AccurateMath",
+      "method_name": "exp",
+      "signature": "org.apache.commons.math4.core.jdkmath.AccurateMath.exp(double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

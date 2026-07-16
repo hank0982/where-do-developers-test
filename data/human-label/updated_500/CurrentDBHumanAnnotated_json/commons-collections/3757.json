@@ -1,0 +1,118 @@
+{
+  "id": "3757",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMapKSoftVSoftIdCTest_testEntrySetContains2_ee6dc792",
+  "test_path": "org/apache/commons/collections4/map/ConcurrentReferenceHashMapKSoftVSoftIdCTest",
+  "test_name": "testEntrySetContains2",
+  "body": "@Test\n    void testEntrySetContains2() {\n        resetFull();\n        final Set<Map.Entry<K, V>> entrySet = getMap().entrySet();\n        final Map.Entry<K, V> entry = entrySet.iterator().next();\n        final Map.Entry<K, V> test = cloneMapEntry(entry);\n        assertTrue(entrySet.contains(test));\n    }",
+  "invocations": [
+    "next",
+    "iterator",
+    "contains",
+    "get",
+    "softValues",
+    "setOptions",
+    "softKeys",
+    "getKey",
+    "getValue",
+    "size",
+    "put",
+    "entrySet",
+    "keySet",
+    "builder"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntryIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.softValues()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.setOptions(java.util.EnumSet<org.apache.commons.collections4.map.ConcurrentReferenceHashMap.Option>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.EnumSet<org.apache.commons.collections4.map.ConcurrentReferenceHashMap.Option>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$Builder.softKeys()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$SimpleEntry.getKey()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$SimpleEntry.getValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet.contains(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet.contains(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1191,
+      "class_name": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet",
+      "method_name": "contains",
+      "signature": "org.apache.commons.collections4.map.ConcurrentReferenceHashMap$EntrySet.contains(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

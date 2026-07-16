@@ -1,0 +1,88 @@
+{
+  "id": "2",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.assets.AssetsBundleTest_canHaveDifferentDefaultMediaType_9226715f",
+  "test_path": "io/dropwizard/assets/AssetsBundleTest",
+  "test_name": "canHaveDifferentDefaultMediaType",
+  "body": "@Test\n    void canHaveDifferentDefaultMediaType() {\n        runBundle(new AssetsBundle(\"/assets\", \"/assets\", \"index.html\", \"assets\", \"text/plain\"));\n\n        assertThat(servletPath).isEqualTo(\"/assets/*\");\n        assertThat(servlet.getIndexFile()).isEqualTo(\"index.html\");\n        assertThat(servlet.getResourceURL()).isEqualTo(normalize(\"/assets\"));\n        assertThat(servlet.getUriPath()).isEqualTo(\"/assets\");\n        assertThat(servlet.getDefaultMediaType()).isEqualTo(\"text/plain\");\n    }",
+  "invocations": [
+    "run",
+    "AssetsBundle",
+    "getDefaultMediaType",
+    "getResourceURL",
+    "getUriPath",
+    "getIndexFile",
+    "appendTrailingSlash"
+  ],
+  "signature": {
+    "io.dropwizard.assets.AssetsBundle.run(io.dropwizard.assets.Configuration, io.dropwizard.assets.Environment)": {
+      "params_len": 2,
+      "params": [
+        "io.dropwizard.assets.Configuration",
+        "io.dropwizard.assets.Environment"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.assets.AssetsBundle(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)": {
+      "params_len": 5,
+      "params": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.servlets.assets.AssetServlet.getDefaultMediaType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.servlets.assets.AssetServlet.getResourceURL()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.servlets.assets.AssetServlet.getUriPath()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.servlets.assets.AssetServlet.getIndexFile()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "io.dropwizard.servlets.assets.ResourceURL.appendTrailingSlash(java.net.URL)": {
+      "params_len": 1,
+      "params": [
+        "java.net.URL"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "io.dropwizard.assets.AssetsBundle.run(io.dropwizard.assets.Configuration, io.dropwizard.assets.Environment)",
+    "io.dropwizard.assets.AssetsBundle(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "io.dropwizard.assets.AssetsBundle.run(io.dropwizard.assets.Configuration, io.dropwizard.assets.Environment)",
+    "io.dropwizard.assets.AssetsBundle(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 99,
+      "class_name": "io.dropwizard.assets.AssetsBundle",
+      "method_name": "run",
+      "signature": "io.dropwizard.assets.AssetsBundle.run(io.dropwizard.assets.Configuration, io.dropwizard.assets.Environment)"
+    },
+    {
+      "method_id": 101,
+      "class_name": "io.dropwizard.assets.AssetsBundle",
+      "method_name": "AssetsBundle",
+      "signature": "io.dropwizard.assets.AssetsBundle(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

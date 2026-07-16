@@ -1,0 +1,36 @@
+{
+  "id": "775",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ClassPathUtilsTest_testToFullyQualifiedPathPackageNullString_b3443f7b",
+  "test_path": "org/apache/commons/lang3/ClassPathUtilsTest",
+  "test_name": "testToFullyQualifiedPathPackageNullString",
+  "body": "@Test\n    void testToFullyQualifiedPathPackageNullString() {\n        assertNullPointerException(\n                () -> ClassPathUtils.toFullyQualifiedPath((Package) null, \"Test.properties\"));\n    }",
+  "invocations": [
+    "toFullyQualifiedPath"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.ClassPathUtils.toFullyQualifiedPath(java.lang.Package, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Package",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ClassPathUtils.toFullyQualifiedPath(java.lang.Package, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ClassPathUtils.toFullyQualifiedPath(java.lang.Package, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1450,
+      "class_name": "org.apache.commons.lang3.ClassPathUtils",
+      "method_name": "toFullyQualifiedPath",
+      "signature": "org.apache.commons.lang3.ClassPathUtils.toFullyQualifiedPath(java.lang.Package, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "58761",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testPairOfObjects_821cded2",
+  "test_path": "org/apache/commons/lang3/tuple/ImmutablePairTest",
+  "test_name": "testPairOfObjects",
+  "body": "@Test\n    void testPairOfObjects() {\n        final ImmutablePair<Integer, String> pair = ImmutablePair.of(0, \"foo\");\n        assertEquals(0, pair.left.intValue());\n        assertEquals(0, pair.getLeft().intValue());\n        assertEquals(\"foo\", pair.right);\n        assertEquals(\"foo\", pair.getRight());\n        final ImmutablePair<Object, String> pair2 = ImmutablePair.of(null, \"bar\");\n        assertNull(pair2.left);\n        assertNull(pair2.getLeft());\n        assertEquals(\"bar\", pair2.right);\n        assertEquals(\"bar\", pair2.getRight());\n        final ImmutablePair<?, ?> pair3 = ImmutablePair.of(null, null);\n        assertNull(pair3.left);\n        assertNull(pair3.right);\n    }",
+  "invocations": [
+    "getLeft",
+    "of",
+    "getRight"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.tuple.ImmutablePair.getLeft()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.ImmutablePair.of(L, R)": {
+      "params_len": 2,
+      "params": [
+        "L",
+        "R"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.ImmutablePair.getRight()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.tuple.ImmutablePair.of(L, R)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.tuple.ImmutablePair.of(L, R)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3799,
+      "class_name": "org.apache.commons.lang3.tuple.ImmutablePair",
+      "method_name": "of",
+      "signature": "org.apache.commons.lang3.tuple.ImmutablePair.of(L, R)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

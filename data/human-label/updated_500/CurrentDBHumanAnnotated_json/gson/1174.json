@@ -1,0 +1,125 @@
+{
+  "id": "1174",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.stream.JsonReaderPathTest_path_37d311cc",
+  "test_path": "com/google/gson/stream/JsonReaderPathTest",
+  "test_name": "path",
+  "body": "@Test\n  public void path() throws IOException {\n    JsonReader reader = factory.create(\"{\\\"a\\\":[2,true,false,null,\\\"b\\\",{\\\"c\\\":\\\"d\\\"},[3]]}\");\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$\");\n    assertThat(reader.getPath()).isEqualTo(\"$\");\n    reader.beginObject();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.\");\n    assertThat(reader.getPath()).isEqualTo(\"$.\");\n    String unused1 = reader.nextName();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a\");\n    reader.beginArray();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[0]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[0]\");\n    int unused2 = reader.nextInt();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[0]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[1]\");\n    boolean unused3 = reader.nextBoolean();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[1]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[2]\");\n    boolean unused4 = reader.nextBoolean();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[2]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[3]\");\n    reader.nextNull();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[3]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[4]\");\n    String unused5 = reader.nextString();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[4]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[5]\");\n    reader.beginObject();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[5].\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[5].\");\n    String unused6 = reader.nextName();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[5].c\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[5].c\");\n    String unused7 = reader.nextString();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[5].c\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[5].c\");\n    reader.endObject();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[5]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[6]\");\n    reader.beginArray();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[6][0]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[6][0]\");\n    int unused8 = reader.nextInt();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[6][0]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[6][1]\");\n    reader.endArray();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a[6]\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a[7]\");\n    reader.endArray();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$.a\");\n    assertThat(reader.getPath()).isEqualTo(\"$.a\");\n    reader.endObject();\n    assertThat(reader.getPreviousPath()).isEqualTo(\"$\");\n    assertThat(reader.getPath()).isEqualTo(\"$\");\n  }",
+  "invocations": [
+    "JsonReader",
+    "parse",
+    "nextNull",
+    "endObject",
+    "beginObject",
+    "nextInt",
+    "endArray",
+    "getPreviousPath",
+    "nextName",
+    "JsonTreeReader",
+    "getPath",
+    "nextBoolean",
+    "nextString",
+    "beginArray"
+  ],
+  "signature": {
+    "com.google.gson.stream.JsonReader(java.io.Reader)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Reader"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.Streams.parse(com.google.gson.stream.JsonReader)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.stream.JsonReader"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.nextNull()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.endObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.beginObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.nextInt()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.endArray()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.getPreviousPath()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.nextName()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader(com.google.gson.JsonElement)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.JsonElement"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.getPath()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.nextBoolean()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.nextString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.bind.JsonTreeReader.beginArray()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.internal.bind.JsonTreeReader.getPreviousPath()",
+    "com.google.gson.internal.bind.JsonTreeReader.getPath()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.internal.bind.JsonTreeReader.getPreviousPath()",
+    "com.google.gson.internal.bind.JsonTreeReader.getPath()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 556,
+      "class_name": "com.google.gson.internal.bind.JsonTreeReader",
+      "method_name": "getPreviousPath",
+      "signature": "com.google.gson.internal.bind.JsonTreeReader.getPreviousPath()"
+    },
+    {
+      "method_id": 559,
+      "class_name": "com.google.gson.internal.bind.JsonTreeReader",
+      "method_name": "getPath",
+      "signature": "com.google.gson.internal.bind.JsonTreeReader.getPath()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

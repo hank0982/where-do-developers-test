@@ -1,0 +1,54 @@
+{
+  "id": "1",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.SocketClientTest_testConnectResolved_c495cd11",
+  "test_path": "org/apache/commons/net/SocketClientTest",
+  "test_name": "testConnectResolved",
+  "body": "@Test\n    public void testConnectResolved() {\n        final SocketClient socketClient = new FTPClient();\n\n        assertThrows(IOException.class, () -> socketClient.connect(LOCALHOST_ADDRESS, REMOTE_PORT));\n        final InetSocketAddress remoteAddress = socketClient.getRemoteInetSocketAddress();\n        assertFalse(remoteAddress.isUnresolved());\n        assertEquals(LOCALHOST_ADDRESS, remoteAddress.getHostString());\n        assertEquals(REMOTE_PORT, remoteAddress.getPort());\n    }",
+  "invocations": [
+    "SocketClient",
+    "connect",
+    "FTPClient",
+    "FTP"
+  ],
+  "signature": {
+    "org.apache.commons.net.SocketClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient.connect(java.lang.String, int)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTP()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.SocketClient.connect(java.lang.String, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.SocketClient.connect(java.lang.String, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 735,
+      "class_name": "org.apache.commons.net.SocketClient",
+      "method_name": "connect",
+      "signature": "org.apache.commons.net.SocketClient.connect(java.lang.String, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

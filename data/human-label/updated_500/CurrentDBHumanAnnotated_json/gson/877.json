@@ -1,0 +1,35 @@
+{
+  "id": "877",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.PrimitiveTest_testPrimitiveIntegerAutoboxedSerialization_f17e41f6",
+  "test_path": "com/google/gson/functional/PrimitiveTest",
+  "test_name": "testPrimitiveIntegerAutoboxedSerialization",
+  "body": "@Test\n  public void testPrimitiveIntegerAutoboxedSerialization() {\n    assertThat(gson.toJson(1)).isEqualTo(\"1\");\n  }",
+  "invocations": [
+    "toJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

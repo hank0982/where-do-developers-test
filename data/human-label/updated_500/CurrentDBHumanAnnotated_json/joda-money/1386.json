@@ -1,0 +1,78 @@
+{
+  "id": "1386",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.format.TestMoneyFormatterBuilder_test_appendCurrencyNumeric3Code_parse_tooShort_30e76ec9",
+  "test_path": "org/joda/money/format/TestMoneyFormatterBuilder_test_appendCurrencyNumeric3Code_parse",
+  "test_name": "tooShort",
+  "body": "@Test\n    void test_appendCurrencyNumeric3Code_parse_tooShort() {\n        iBuilder.appendCurrencyNumeric3Code();\n        var test = iBuilder.toFormatter();\n        var parsed = test.parse(\"82\", 0);\n        assertThat(parsed.isError()).isTrue();\n        assertThat(parsed.getIndex()).isEqualTo(0);\n        assertThat(parsed.getErrorIndex()).isEqualTo(0);\n        assertThat(parsed.getAmount()).isNull();\n        assertThat(parsed.getCurrency()).isNull();\n    }",
+  "invocations": [
+    "appendCurrencyNumeric3Code",
+    "toFormatter",
+    "parse",
+    "getErrorIndex",
+    "getCurrency",
+    "getIndex",
+    "getAmount",
+    "isError"
+  ],
+  "signature": {
+    "org.joda.money.format.MoneyFormatterBuilder.appendCurrencyNumeric3Code()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyFormatterBuilder.toFormatter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.CharSequence",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyParseContext.getErrorIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyParseContext.getCurrency()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyParseContext.getIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyParseContext.getAmount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyParseContext.isError()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 115,
+      "class_name": "org.joda.money.format.MoneyFormatter",
+      "method_name": "parse",
+      "signature": "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

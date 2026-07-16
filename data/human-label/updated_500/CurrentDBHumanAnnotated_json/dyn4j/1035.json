@@ -1,0 +1,90 @@
+{
+  "id": "1035",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.dynamics.joint.DistanceJointTest_setSameLimitValid_9fbc7b09",
+  "test_path": "org/dyn4j/dynamics/joint/DistanceJointTest",
+  "test_name": "setSameLimitValid",
+  "body": "@Test\n\tpublic void setSameLimitValid() {\n\t\tDistanceJoint<Body> dj = new DistanceJoint<Body>(b1, b2, new Vector2(), new Vector2(0.0, 1.0));\n\t\t\n\t\tTestCase.assertEquals(1.0, dj.getLowerLimit());\n\t\tTestCase.assertEquals(1.0, dj.getUpperLimit());\n\t\t\n\t\tdj.setLimits(2.0);\n\t\t\n\t\tTestCase.assertEquals(2.0, dj.getLowerLimit());\n\t\tTestCase.assertEquals(2.0, dj.getUpperLimit());\n\t}",
+  "invocations": [
+    "AbstractJoint",
+    "getUpperLimit",
+    "getLowerLimit",
+    "DistanceJoint",
+    "setLimits",
+    "AbstractPairedBodyJoint",
+    "Vector2",
+    "Vector2"
+  ],
+  "signature": {
+    "org.dyn4j.dynamics.joint.AbstractJoint(java.util.List<T>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<T>"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.joint.DistanceJoint.getUpperLimit()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.joint.DistanceJoint.getLowerLimit()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.joint.DistanceJoint(T, T, org.dyn4j.geometry.Vector2, org.dyn4j.geometry.Vector2)": {
+      "params_len": 4,
+      "params": [
+        "T",
+        "T",
+        "org.dyn4j.geometry.Vector2",
+        "org.dyn4j.geometry.Vector2"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.joint.DistanceJoint.setLimits(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.joint.AbstractPairedBodyJoint(T, T)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Vector2(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Vector2()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.dynamics.joint.DistanceJoint.setLimits(double)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.dynamics.joint.DistanceJoint.setLimits(double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 681,
+      "class_name": "org.dyn4j.dynamics.joint.DistanceJoint",
+      "method_name": "setLimits",
+      "signature": "org.dyn4j.dynamics.joint.DistanceJoint.setLimits(double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

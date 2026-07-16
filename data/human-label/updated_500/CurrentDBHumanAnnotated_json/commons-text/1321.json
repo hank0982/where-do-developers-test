@@ -1,0 +1,44 @@
+{
+  "id": "1321",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.similarity.DamerauLevenshteinDistanceTest_testCalculateDamerauLevenshteinDistance_SimilarityInput_d4021729",
+  "test_path": "org/apache/commons/text/similarity/DamerauLevenshteinDistanceTest_testCalculateDamerauLevenshteinDistance",
+  "test_name": "SimilarityInput",
+  "body": "@ParameterizedTest(name = \"DamerauLevenshteinDistance.unlimitedCompare(\\\"{0}\\\", \\\"{1}\\\") should return {2} ({3})\")",
+  "invocations": [
+    "apply",
+    "input"
+  ],
+  "signature": {
+    "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(org.apache.commons.text.similarity.SimilarityInput<E>, org.apache.commons.text.similarity.SimilarityInput<E>)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.text.similarity.SimilarityInput<E>",
+        "org.apache.commons.text.similarity.SimilarityInput<E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.similarity.SimilarityInput.input(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(org.apache.commons.text.similarity.SimilarityInput<E>, org.apache.commons.text.similarity.SimilarityInput<E>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(org.apache.commons.text.similarity.SimilarityInput<E>, org.apache.commons.text.similarity.SimilarityInput<E>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 697,
+      "class_name": "org.apache.commons.text.similarity.DamerauLevenshteinDistance",
+      "method_name": "apply",
+      "signature": "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(org.apache.commons.text.similarity.SimilarityInput<E>, org.apache.commons.text.similarity.SimilarityInput<E>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

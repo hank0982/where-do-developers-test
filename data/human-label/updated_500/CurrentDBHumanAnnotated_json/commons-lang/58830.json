@@ -1,0 +1,47 @@
+{
+  "id": "58830",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.tuple.TripleTest_testComparable2_72343a27",
+  "test_path": "org/apache/commons/lang3/tuple/TripleTest",
+  "test_name": "testComparable2",
+  "body": "@Test\n    void testComparable2() {\n        final Triple<String, String, String> triple1 = Triple.of(\"A\", \"C\", \"B\");\n        final Triple<String, String, String> triple2 = Triple.of(\"A\", \"D\", \"B\");\n        assertEquals(0, triple1.compareTo(triple1));\n        assertTrue(triple1.compareTo(triple2) < 0);\n        assertEquals(0, triple2.compareTo(triple2));\n        assertTrue(triple2.compareTo(triple1) > 0);\n    }",
+  "invocations": [
+    "of",
+    "compareTo"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.tuple.Triple.of(L, M, R)": {
+      "params_len": 3,
+      "params": [
+        "L",
+        "M",
+        "R"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.Triple.compareTo(org.apache.commons.lang3.tuple.Triple<L, M, R>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.lang3.tuple.Triple<L",
+        "M",
+        "R>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.tuple.Triple.compareTo(org.apache.commons.lang3.tuple.Triple<L, M, R>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.tuple.Triple.compareTo(org.apache.commons.lang3.tuple.Triple<L, M, R>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3772,
+      "class_name": "org.apache.commons.lang3.tuple.Triple",
+      "method_name": "compareTo",
+      "signature": "org.apache.commons.lang3.tuple.Triple.compareTo(org.apache.commons.lang3.tuple.Triple<L, M, R>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

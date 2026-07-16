@@ -1,0 +1,119 @@
+{
+  "id": "173",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_detectAABB_305579d3",
+  "test_path": "org/dyn4j/collision/broadphase/CollisionBodyBroadphaseTest",
+  "test_name": "detectAABB",
+  "body": "@Test\n\tpublic void detectAABB() {\n\t\tTestCollisionBody ct1 = new TestCollisionBody(Geometry.createCircle(1.0));\n\t\tTestCollisionBody ct2 = new TestCollisionBody(Geometry.createUnitCirclePolygon(5, 0.5));\n\t\tTestCollisionBody ct3 = new TestCollisionBody(Geometry.createRectangle(1.0, 0.5));\n\t\tTestCollisionBody ct4 = new TestCollisionBody(Geometry.createVerticalSegment(2.0));\n\t\t\n\t\tct1.translate(-2.0, 0.0);\n\t\tct2.translate(-1.0, 1.0);\n\t\tct3.translate(0.5, -2.0);\n\t\tct4.translate(1.0, 1.0);\n\t\t\n\t\t// add the items to the broadphases\n\t\tthis.broadphase.add(ct1); this.broadphase.add(ct2); this.broadphase.add(ct3); this.broadphase.add(ct4);\n\t\t\n\t\t// this aabb should include:\n\t\t// ct3 and ct4\n\t\tAABB aabb = new AABB(0.0, -2.0, 1.0, 1.0);\n\t\tList<TestCollisionBody> list;\n\t\t\n\t\tlist = this.broadphase.detect(aabb);\n\t\tTestCase.assertEquals(2, list.size());\n\t\tTestCase.assertTrue(this.containsItem(ct3, list));\n\t\tTestCase.assertTrue(this.containsItem(ct4, list));\n\t\t\n\t\t// should include:\n\t\t// ct2, ct3, and ct4\n\t\taabb = new AABB(-0.75, -3.0, 2.0, 1.0);\n\t\t\n\t\tlist = this.broadphase.detect(aabb);\n\t\tTestCase.assertEquals(3, list.size());\n\t\tTestCase.assertTrue(this.containsItem(ct2, list));\n\t\tTestCase.assertTrue(this.containsItem(ct3, list));\n\t\tTestCase.assertTrue(this.containsItem(ct4, list));\n\t}",
+  "invocations": [
+    "Fixture",
+    "translate",
+    "AbstractCollisionBody",
+    "AbstractCollisionBody",
+    "add",
+    "detect",
+    "createUnitCirclePolygon",
+    "createRectangle",
+    "createVerticalSegment",
+    "createCircle",
+    "AABB"
+  ],
+  "signature": {
+    "org.dyn4j.collision.Fixture(org.dyn4j.geometry.Convex)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.Convex"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody.translate(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.BruteForceBroadphase.add(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.detect(org.dyn4j.geometry.AABB)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.AABB"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createUnitCirclePolygon(int, double)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createRectangle(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createVerticalSegment(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createCircle(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.AABB(double, double, double, double)": {
+      "params_len": 4,
+      "params": [
+        "double",
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.detect(org.dyn4j.geometry.AABB)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.detect(org.dyn4j.geometry.AABB)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1424,
+      "class_name": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector",
+      "method_name": "detect",
+      "signature": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.detect(org.dyn4j.geometry.AABB)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

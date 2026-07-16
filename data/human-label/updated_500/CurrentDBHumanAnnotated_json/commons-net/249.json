@@ -1,0 +1,35 @@
+{
+  "id": "249",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.imap.IMAPCommandTest_getCommand_ef226146",
+  "test_path": "org/apache/commons/net/imap/IMAPCommandTest",
+  "test_name": "getCommand",
+  "body": "@ParameterizedTest(name = \"Command for IMAPCommand::{1} should be `{0}`\")",
+  "invocations": [
+    "getCommand"
+  ],
+  "signature": {
+    "org.apache.commons.net.imap.IMAPCommand.getCommand(org.apache.commons.net.imap.IMAPCommand)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.net.imap.IMAPCommand"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.imap.IMAPCommand.getCommand(org.apache.commons.net.imap.IMAPCommand)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.imap.IMAPCommand.getCommand(org.apache.commons.net.imap.IMAPCommand)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 413,
+      "class_name": "org.apache.commons.net.imap.IMAPCommand",
+      "method_name": "getCommand",
+      "signature": "org.apache.commons.net.imap.IMAPCommand.getCommand(org.apache.commons.net.imap.IMAPCommand)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

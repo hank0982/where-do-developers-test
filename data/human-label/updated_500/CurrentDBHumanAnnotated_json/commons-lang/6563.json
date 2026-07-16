@@ -1,0 +1,35 @@
+{
+  "id": "6563",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.reflect.TypeUtilsTest_testIsArrayGenericTypes_9e88b120",
+  "test_path": "org/apache/commons/lang3/reflect/TypeUtilsTest",
+  "test_name": "testIsArrayGenericTypes",
+  "body": "@Test\n    void testIsArrayGenericTypes() throws NoSuchFieldException {\n        final Type rawListType = GenericTypeHolder.class.getDeclaredField(\"rawList\").getGenericType();\n        final Type objectListType = GenericTypeHolder.class.getDeclaredField(\"objectList\").getGenericType();\n        final Type unboundListType = GenericTypeHolder.class.getDeclaredField(\"unboundList\").getGenericType();\n        final Type superObjectListType = GenericTypeHolder.class.getDeclaredField(\"superObjectList\").getGenericType();\n        final Type stringListType = GenericTypeHolder.class.getDeclaredField(\"stringList\").getGenericType();\n        final Type subStringListType = GenericTypeHolder.class.getDeclaredField(\"subStringList\").getGenericType();\n        final Type superStringListType = GenericTypeHolder.class.getDeclaredField(\"superStringList\").getGenericType();\n\n        assertFalse(TypeUtils.isArrayType(rawListType));\n        assertFalse(TypeUtils.isArrayType(objectListType));\n        assertFalse(TypeUtils.isArrayType(unboundListType));\n        assertFalse(TypeUtils.isArrayType(superObjectListType));\n        assertFalse(TypeUtils.isArrayType(stringListType));\n        assertFalse(TypeUtils.isArrayType(subStringListType));\n        assertFalse(TypeUtils.isArrayType(superStringListType));\n\n        final Type rawListTypeArray = GenericTypeHolder.class.getDeclaredField(\"rawListArray\").getGenericType();\n        final Type objectListTypeArray = GenericTypeHolder.class.getDeclaredField(\"objectListArray\").getGenericType();\n        final Type unboundListTypeArray = GenericTypeHolder.class.getDeclaredField(\"unboundListArray\").getGenericType();\n        final Type superObjectListTypeArray = GenericTypeHolder.class.getDeclaredField(\"superObjectListArray\").getGenericType();\n        final Type stringListTypeArray = GenericTypeHolder.class.getDeclaredField(\"stringListArray\").getGenericType();\n        final Type subStringListTypeArray = GenericTypeHolder.class.getDeclaredField(\"subStringListArray\").getGenericType();\n        final Type superStringListTypeArray = GenericTypeHolder.class.getDeclaredField(\"superStringListArray\").getGenericType();\n\n        assertTrue(TypeUtils.isArrayType(rawListTypeArray));\n        assertTrue(TypeUtils.isArrayType(objectListTypeArray));\n        assertTrue(TypeUtils.isArrayType(unboundListTypeArray));\n        assertTrue(TypeUtils.isArrayType(superObjectListTypeArray));\n        assertTrue(TypeUtils.isArrayType(stringListTypeArray));\n        assertTrue(TypeUtils.isArrayType(subStringListTypeArray));\n        assertTrue(TypeUtils.isArrayType(superStringListTypeArray));\n    }",
+  "invocations": [
+    "isArrayType"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.reflect.TypeUtils.isArrayType(java.lang.reflect.Type)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.reflect.TypeUtils.isArrayType(java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.reflect.TypeUtils.isArrayType(java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4137,
+      "class_name": "org.apache.commons.lang3.reflect.TypeUtils",
+      "method_name": "isArrayType",
+      "signature": "org.apache.commons.lang3.reflect.TypeUtils.isArrayType(java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

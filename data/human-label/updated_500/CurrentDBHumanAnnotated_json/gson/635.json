@@ -1,0 +1,48 @@
+{
+  "id": "635",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.MapTest_testMapSerializationEmpty_4e1db82a",
+  "test_path": "com/google/gson/functional/MapTest",
+  "test_name": "testMapSerializationEmpty",
+  "body": "@Test\n  public void testMapSerializationEmpty() {\n    Map<String, Integer> map = new LinkedHashMap<>();\n    Type typeOfMap = new TypeToken<Map<String, Integer>>() {}.getType();\n    String json = gson.toJson(map, typeOfMap);\n    assertThat(json).isEqualTo(\"{}\");\n  }",
+  "invocations": [
+    "toJson",
+    "getType",
+    "TypeToken"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken.getType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.reflect.TypeToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 810,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

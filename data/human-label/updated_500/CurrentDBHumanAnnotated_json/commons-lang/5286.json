@@ -1,0 +1,83 @@
+{
+  "id": "5286",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.ToStringBuilderTest_testShortArray_6af6e2b0",
+  "test_path": "org/apache/commons/lang3/builder/ToStringBuilderTest",
+  "test_name": "testShortArray",
+  "body": "@Test\n    void testShortArray() {\n        short[] array = { 1, 2, -3, 4 };\n        assertEquals(baseStr + \"[{1,2,-3,4}]\", new ToStringBuilder(base).append(array).toString());\n        assertEquals(baseStr + \"[{1,2,-3,4}]\", new ToStringBuilder(base).append((Object) array).toString());\n        array = null;\n        assertEquals(baseStr + \"[<null>]\", new ToStringBuilder(base).append(array).toString());\n        assertEquals(baseStr + \"[<null>]\", new ToStringBuilder(base).append((Object) array).toString());\n    }",
+  "invocations": [
+    "append",
+    "append",
+    "toString",
+    "ToStringBuilder",
+    "ToStringBuilder"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(short[])": {
+      "params_len": 1,
+      "params": [
+        "short[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder(java.lang.Object, org.apache.commons.lang3.builder.ToStringStyle, java.lang.StringBuffer)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "org.apache.commons.lang3.builder.ToStringStyle",
+        "java.lang.StringBuffer"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)",
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(short[])",
+    "org.apache.commons.lang3.builder.ToStringBuilder.toString()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)",
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(short[])",
+    "org.apache.commons.lang3.builder.ToStringBuilder.toString()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 611,
+      "class_name": "org.apache.commons.lang3.builder.ToStringBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)"
+    },
+    {
+      "method_id": 627,
+      "class_name": "org.apache.commons.lang3.builder.ToStringBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.builder.ToStringBuilder.append(short[])"
+    },
+    {
+      "method_id": 630,
+      "class_name": "org.apache.commons.lang3.builder.ToStringBuilder",
+      "method_name": "toString",
+      "signature": "org.apache.commons.lang3.builder.ToStringBuilder.toString()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "207",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_getAABBExpansionMethod_c5e5a705",
+  "test_path": "org/dyn4j/collision/broadphase/CollisionBodyBroadphaseTest",
+  "test_name": "getAABBExpansionMethod",
+  "body": "@Test\n\tpublic void getAABBExpansionMethod() {\n\t\tAABBExpansionMethod<TestCollisionBody> method = this.broadphase.getAABBExpansionMethod();\n\t\tTestCase.assertNotNull(method);\n\t}",
+  "invocations": [
+    "getAABBExpansionMethod"
+  ],
+  "signature": {
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getAABBExpansionMethod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getAABBExpansionMethod()"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getAABBExpansionMethod()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1420,
+      "class_name": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector",
+      "method_name": "getAABBExpansionMethod",
+      "signature": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.getAABBExpansionMethod()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

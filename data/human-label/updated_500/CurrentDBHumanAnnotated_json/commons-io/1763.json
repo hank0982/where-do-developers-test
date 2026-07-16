@@ -1,0 +1,35 @@
+{
+  "id": "1763",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.LineIteratorTest_testConstructor_09312f09",
+  "test_path": "org/apache/commons/io/LineIteratorTest",
+  "test_name": "testConstructor",
+  "body": "@Test\n    void testConstructor() {\n        assertThrows(NullPointerException.class, () -> new LineIterator(null));\n    }",
+  "invocations": [
+    "LineIterator"
+  ],
+  "signature": {
+    "org.apache.commons.io.LineIterator(java.io.Reader)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Reader"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.LineIterator(java.io.Reader)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.LineIterator(java.io.Reader)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 213,
+      "class_name": "org.apache.commons.io.LineIterator",
+      "method_name": "LineIterator",
+      "signature": "org.apache.commons.io.LineIterator(java.io.Reader)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

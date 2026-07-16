@@ -1,0 +1,129 @@
+{
+  "id": "182",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradientTest_testCompose_2140dca0",
+  "test_path": "org/apache/commons/math4/legacy/analysis/differentiation/SparseGradientTest",
+  "test_name": "testCompose",
+  "body": "@Test\n    public void testCompose() {\n        PolynomialFunction poly =\n                new PolynomialFunction(new double[] { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 });\n        for (double x = 0.1; x < 1.2; x += 0.001) {\n            SparseGradient sgX = SparseGradient.createVariable(0, x);\n            SparseGradient sgY1 = sgX.getField().getZero();\n            for (int i = poly.degree(); i >= 0; --i) {\n                sgY1 = sgY1.multiply(sgX).add(poly.getCoefficients()[i]);\n            }\n            SparseGradient sgY2 = sgX.compose(poly.value(x), poly.polynomialDerivative().value(x));\n            SparseGradient zero = sgY1.subtract(sgY2);\n            checkF0F1(zero, 0.0, 0.0);\n        }\n    }",
+  "invocations": [
+    "getDerivative",
+    "getValue",
+    "getField",
+    "compose",
+    "subtract",
+    "add",
+    "multiply",
+    "createVariable",
+    "getZero",
+    "getCoefficients",
+    "degree",
+    "PolynomialFunction",
+    "polynomialDerivative",
+    "value"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.getDerivative(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.getValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.getField()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.compose(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.subtract(org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.add(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.multiply(org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.createVariable(int, double)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient$Anonymous1.getZero()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction.getCoefficients()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction.degree()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction(double[])": {
+      "params_len": 1,
+      "params": [
+        "double[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction.polynomialDerivative()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.polynomials.PolynomialFunction.value(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.compose(double, double)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.compose(double, double)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3689,
+      "class_name": "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient",
+      "method_name": "compose",
+      "signature": "org.apache.commons.math4.legacy.analysis.differentiation.SparseGradient.compose(double, double)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

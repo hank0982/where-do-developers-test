@@ -1,0 +1,36 @@
+{
+  "id": "3137",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.filefilter.SymbolicLinkFileFilterTest_testFileNameFilter_HardFile_d45957b6",
+  "test_path": "org/apache/commons/io/filefilter/SymbolicLinkFileFilterTest_testFileNameFilter",
+  "test_name": "HardFile",
+  "body": "@Test\n    void testFileNameFilter_HardFile() {\n        assertFalse(filter.accept(parentDirectoryFile, TARGET_NAME));\n    }",
+  "invocations": [
+    "accept"
+  ],
+  "signature": {
+    "org.apache.commons.io.filefilter.AbstractFileFilter.accept(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.filefilter.AbstractFileFilter.accept(java.io.File, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.filefilter.AbstractFileFilter.accept(java.io.File, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2613,
+      "class_name": "org.apache.commons.io.filefilter.AbstractFileFilter",
+      "method_name": "accept",
+      "signature": "org.apache.commons.io.filefilter.AbstractFileFilter.accept(java.io.File, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

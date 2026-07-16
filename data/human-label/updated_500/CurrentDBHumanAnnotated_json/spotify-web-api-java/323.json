@@ -1,0 +1,141 @@
+{
+  "id": "323",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequestTest_shouldReturnDefault_sync_fbd7583d",
+  "test_path": "se/michaelthelin/spotify/requests/data/tracks/GetAudioFeaturesForTrackRequestTest_shouldReturnDefault",
+  "test_name": "sync",
+  "body": "@Test\n  public void shouldReturnDefault_sync() throws IOException, SpotifyWebApiException, ParseException {\n    shouldReturnDefault(defaultRequest.execute());\n  }",
+  "invocations": [
+    "getAcousticness",
+    "getDurationMs",
+    "getSpeechiness",
+    "getId",
+    "getKey",
+    "getLoudness",
+    "getType",
+    "getUri",
+    "getLiveness",
+    "getMode",
+    "getTimeSignature",
+    "getEnergy",
+    "getInstrumentalness",
+    "getDanceability",
+    "getAnalysisUrl",
+    "getTrackHref",
+    "getTempo",
+    "getValence",
+    "execute"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getAcousticness()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getDurationMs()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getSpeechiness()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getId()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getKey()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getLoudness()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getType()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getUri()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getLiveness()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getMode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getTimeSignature()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getEnergy()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getInstrumentalness()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getDanceability()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getAnalysisUrl()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getTrackHref()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getTempo()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.model_objects.specification.AudioFeatures.getValence()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequest.execute()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequest.execute()"
+  ],
+  "current_db_human_annotation": [
+    "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequest.execute()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2305,
+      "class_name": "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequest",
+      "method_name": "execute",
+      "signature": "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequest.execute()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

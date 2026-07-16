@@ -1,0 +1,106 @@
+{
+  "id": "283",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.StrSubstitutorTest_testReplaceEmpty_769246ec",
+  "test_path": "org/apache/commons/text/StrSubstitutorTest",
+  "test_name": "testReplaceEmpty",
+  "body": "@Test\n    void testReplaceEmpty() {\n        doTestNoReplace(\"\");\n    }",
+  "invocations": [
+    "mapLookup",
+    "StrSubstitutor",
+    "StrSubstitutor",
+    "replace",
+    "replaceIn",
+    "StrSubstitutor",
+    "StrBuilder",
+    "toString"
+  ],
+  "signature": {
+    "org.apache.commons.text.StrLookup.mapLookup(java.util.Map<java.lang.String, V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<java.lang.String",
+        "V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrSubstitutor(org.apache.commons.text.StrLookup<?>, org.apache.commons.text.StrMatcher, org.apache.commons.text.StrMatcher, char, org.apache.commons.text.StrMatcher)": {
+      "params_len": 5,
+      "params": [
+        "org.apache.commons.text.StrLookup<?>",
+        "org.apache.commons.text.StrMatcher",
+        "org.apache.commons.text.StrMatcher",
+        "char",
+        "org.apache.commons.text.StrMatcher"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrSubstitutor(org.apache.commons.text.StrLookup<?>, org.apache.commons.text.StrMatcher, org.apache.commons.text.StrMatcher, char)": {
+      "params_len": 4,
+      "params": [
+        "org.apache.commons.text.StrLookup<?>",
+        "org.apache.commons.text.StrMatcher",
+        "org.apache.commons.text.StrMatcher",
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrSubstitutor.replace(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrSubstitutor.replaceIn(org.apache.commons.text.StrBuilder)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.text.StrBuilder"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrSubstitutor(java.util.Map<java.lang.String, V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<java.lang.String",
+        "V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrBuilder(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StrBuilder.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.StrSubstitutor.replace(java.lang.String)",
+    "org.apache.commons.text.StrSubstitutor.replaceIn(org.apache.commons.text.StrBuilder)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.StrSubstitutor.replace(java.lang.String)",
+    "org.apache.commons.text.StrSubstitutor.replaceIn(org.apache.commons.text.StrBuilder)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 453,
+      "class_name": "org.apache.commons.text.StrSubstitutor",
+      "method_name": "replace",
+      "signature": "org.apache.commons.text.StrSubstitutor.replace(java.lang.String)"
+    },
+    {
+      "method_id": 454,
+      "class_name": "org.apache.commons.text.StrSubstitutor",
+      "method_name": "replaceIn",
+      "signature": "org.apache.commons.text.StrSubstitutor.replaceIn(org.apache.commons.text.StrBuilder)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

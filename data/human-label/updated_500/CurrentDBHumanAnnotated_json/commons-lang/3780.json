@@ -1,0 +1,35 @@
+{
+  "id": "3780",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ObjectUtilsTest_testPossibleCloneOfNotCloneable_85c1eb76",
+  "test_path": "org/apache/commons/lang3/ObjectUtilsTest",
+  "test_name": "testPossibleCloneOfNotCloneable",
+  "body": "@Test\n    void testPossibleCloneOfNotCloneable() {\n        final String string = \"apache\";\n        assertSame(string, ObjectUtils.cloneIfPossible(string));\n    }",
+  "invocations": [
+    "cloneIfPossible"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.ObjectUtils.cloneIfPossible(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ObjectUtils.cloneIfPossible(T)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ObjectUtils.cloneIfPossible(T)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1845,
+      "class_name": "org.apache.commons.lang3.ObjectUtils",
+      "method_name": "cloneIfPossible",
+      "signature": "org.apache.commons.lang3.ObjectUtils.cloneIfPossible(T)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

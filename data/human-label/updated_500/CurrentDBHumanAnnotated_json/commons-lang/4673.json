@@ -1,0 +1,37 @@
+{
+  "id": "4673",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ValidateTest$NotBlank$WithMessage_shouldThrowIllegalArgumentExceptionWithGivenMessageForEmptyString_e3131635",
+  "test_path": "org/apache/commons/lang3/ValidateTest$NotBlank$WithMessage",
+  "test_name": "shouldThrowIllegalArgumentExceptionWithGivenMessageForEmptyString",
+  "body": "@Test\n            void shouldThrowIllegalArgumentExceptionWithGivenMessageForEmptyString() {\n                final IllegalArgumentException ex = assertIllegalArgumentException(() -> Validate.notBlank(\"\", \"MSG\"));\n                assertEquals(\"MSG\", ex.getMessage());\n            }",
+  "invocations": [
+    "notBlank"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.Validate.notBlank(T, java.lang.String, java.lang.Object[])": {
+      "params_len": 3,
+      "params": [
+        "T",
+        "java.lang.String",
+        "java.lang.Object[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.Validate.notBlank(T, java.lang.String, java.lang.Object[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.Validate.notBlank(T, java.lang.String, java.lang.Object[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 86,
+      "class_name": "org.apache.commons.lang3.Validate",
+      "method_name": "notBlank",
+      "signature": "org.apache.commons.lang3.Validate.notBlank(T, java.lang.String, java.lang.Object[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

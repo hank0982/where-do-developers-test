@@ -1,0 +1,33 @@
+{
+  "id": "15",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.FieldAttributesTest_testName_77c09c2c",
+  "test_path": "com/google/gson/FieldAttributesTest",
+  "test_name": "testName",
+  "body": "@Test\n  public void testName() {\n    assertThat(fieldAttributes.getName()).isEqualTo(\"bar\");\n  }",
+  "invocations": [
+    "getName"
+  ],
+  "signature": {
+    "com.google.gson.FieldAttributes.getName()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.FieldAttributes.getName()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.FieldAttributes.getName()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 193,
+      "class_name": "com.google.gson.FieldAttributes",
+      "method_name": "getName",
+      "signature": "com.google.gson.FieldAttributes.getName()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

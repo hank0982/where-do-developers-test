@@ -1,0 +1,112 @@
+{
+  "id": "6348",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.multimap.ArrayListValuedLinkedHashMapTest_testAsMapRemove_617eaafd",
+  "test_path": "org/apache/commons/collections4/multimap/ArrayListValuedLinkedHashMapTest",
+  "test_name": "testAsMapRemove",
+  "body": "@Test\n    void testAsMapRemove() {\n        assumeTrue(isRemoveSupported());\n        resetFull();\n        final Map<K, Collection<V>> mapCol = getMap().asMap();\n        final int maxK = getSampleKeySize();\n        int expectedSize = getMap().size();\n        for (int k = 0; k < maxK; k++) {\n            final K key = makeKey(k);\n            mapCol.remove(key);\n            assertFalse(getMap().containsKey(key));\n            expectedSize -= getSampleCountPerKey();\n            assertEquals(expectedSize, getMap().size());\n        }\n        assertFalse(getMap().containsKey(\"k0\"));\n        assertEquals(0, getMap().size());\n    }",
+  "invocations": [
+    "AbstractListValuedMap",
+    "ArrayListValuedLinkedHashMap",
+    "ArrayListValuedLinkedHashMap",
+    "ArrayListValuedHashMap",
+    "ArrayListValuedHashMap",
+    "put",
+    "size",
+    "asMap",
+    "AbstractMultiValuedMap",
+    "containsKey",
+    "remove"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.multimap.AbstractListValuedMap(java.util.Map<K, ? extends java.util.List<V>>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<K",
+        "? extends java.util.List<V>>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.ArrayListValuedLinkedHashMap(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.ArrayListValuedLinkedHashMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.ArrayListValuedHashMap(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.ArrayListValuedHashMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap.asMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap(java.util.Map<K, ? extends java.util.Collection<V>>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<K",
+        "? extends java.util.Collection<V>>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap.containsKey(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap.remove(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap.remove(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap.remove(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4810,
+      "class_name": "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap",
+      "method_name": "remove",
+      "signature": "org.apache.commons.collections4.multimap.AbstractMultiValuedMap$AsMap.remove(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

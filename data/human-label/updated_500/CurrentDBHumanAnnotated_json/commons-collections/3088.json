@@ -1,0 +1,47 @@
+{
+  "id": "3088",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.list.DefaultAbstractLinkedListJava21Test_testListGetByIndexBoundsChecking_c03faa05",
+  "test_path": "org/apache/commons/collections4/list/DefaultAbstractLinkedListJava21Test",
+  "test_name": "testListGetByIndexBoundsChecking",
+  "body": "@Test\n    void testListGetByIndexBoundsChecking() {\n        final List<E> list = makeObject();\n\n        assertThrows(IndexOutOfBoundsException.class, () -> list.get(Integer.MIN_VALUE),\n                \"List.get should throw IndexOutOfBoundsException [Integer.MIN_VALUE]\");\n\n        assertThrows(IndexOutOfBoundsException.class, () -> list.get(-1),\n                \"List.get should throw IndexOutOfBoundsException [-1]\");\n\n        assertThrows(IndexOutOfBoundsException.class, () -> list.get(0),\n                \"List.get should throw IndexOutOfBoundsException [0]\");\n\n        assertThrows(IndexOutOfBoundsException.class, () -> list.get(1),\n                \"List.get should throw IndexOutOfBoundsException [1]\");\n\n        assertThrows(IndexOutOfBoundsException.class, () -> list.get(Integer.MAX_VALUE),\n                \"List.get should throw IndexOutOfBoundsException [Integer.MAX_VALUE]\");\n    }",
+  "invocations": [
+    "get",
+    "AbstractLinkedListJava21",
+    "init"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.list.AbstractLinkedListJava21.get(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.AbstractLinkedListJava21()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.AbstractLinkedListJava21.init()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.list.AbstractLinkedListJava21.get(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.list.AbstractLinkedListJava21.get(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3574,
+      "class_name": "org.apache.commons.collections4.list.AbstractLinkedListJava21",
+      "method_name": "get",
+      "signature": "org.apache.commons.collections4.list.AbstractLinkedListJava21.get(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "244",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsAlias_4d2e1c91",
+  "test_path": "org/apache/commons/io/CharsetsTest",
+  "test_name": "testIsAlias",
+  "body": "@ParameterizedTest\n    @MethodSource(\"charsetAliasProvider\")\n    void testIsAlias(final Charset charset, final String charsetAlias) {\n        assertTrue(Charsets.isAlias(charset, charsetAlias));\n        assertTrue(Charsets.isAlias(charset, charsetAlias.toLowerCase()));\n        assertTrue(Charsets.isAlias(charset, charsetAlias.toUpperCase()));\n        assertTrue(Charsets.isAlias(charset, charset.name()));\n        assertFalse(Charsets.isAlias(charset, null));\n    }",
+  "invocations": [
+    "isAlias"
+  ],
+  "signature": {
+    "org.apache.commons.io.Charsets.isAlias(java.nio.charset.Charset, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.nio.charset.Charset",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.Charsets.isAlias(java.nio.charset.Charset, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.Charsets.isAlias(java.nio.charset.Charset, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 518,
+      "class_name": "org.apache.commons.io.Charsets",
+      "method_name": "isAlias",
+      "signature": "org.apache.commons.io.Charsets.isAlias(java.nio.charset.Charset, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

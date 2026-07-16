@@ -1,0 +1,44 @@
+{
+  "id": "3549",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.transform.FastCosineTransformerTest_testTransformRealInvalidDataSize_d751749d",
+  "test_path": "org/apache/commons/math4/transform/FastCosineTransformerTest",
+  "test_name": "testTransformRealInvalidDataSize",
+  "body": "@Test\n    public void testTransformRealInvalidDataSize() {\n        for (int i = 0; i < getNumberOfInvalidDataSizes(); i++) {\n            final int n = getInvalidDataSize(i);\n            for (boolean type : new boolean[] {true, false}) {\n                try {\n                    final RealTransform transformer = createRealTransformer(type);\n                    transformer.apply(createRealData(n));\n                    Assert.fail(type + \", \" + n);\n                } catch (IllegalArgumentException e) {\n                    // Expected: do nothing\n                }\n            }\n        }\n    }",
+  "invocations": [
+    "FastCosineTransform",
+    "apply"
+  ],
+  "signature": {
+    "org.apache.commons.math4.transform.FastCosineTransform(org.apache.commons.math4.transform.FastCosineTransform.Norm, boolean)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.math4.transform.FastCosineTransform.Norm",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.transform.FastCosineTransform.apply(double[])": {
+      "params_len": 1,
+      "params": [
+        "double[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.transform.FastCosineTransform.apply(double[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.transform.FastCosineTransform.apply(double[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 5372,
+      "class_name": "org.apache.commons.math4.transform.FastCosineTransform",
+      "method_name": "apply",
+      "signature": "org.apache.commons.math4.transform.FastCosineTransform.apply(double[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

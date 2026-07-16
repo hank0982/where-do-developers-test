@@ -1,0 +1,81 @@
+{
+  "id": "753",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.plot.dial.DialTextAnnotationTest_testSerialization_703231ff",
+  "test_path": "org/jfree/chart/plot/dial/DialTextAnnotationTest",
+  "test_name": "testSerialization",
+  "body": "@Test\n    public void testSerialization() {\n        // test a default instance\n        DialTextAnnotation a1 = new DialTextAnnotation(\"A1\");\n        DialTextAnnotation a2 = TestUtils.serialised(a1);\n        assertEquals(a1, a2);\n\n        // test a custom instance\n        a1 = new DialTextAnnotation(\"A1\");\n        a1.setPaint(new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f,\n                Color.BLUE));\n\n        a2 = TestUtils.serialised(a1);\n        assertEquals(a1, a2);\n    }",
+  "invocations": [
+    "AbstractDialLayer",
+    "equals",
+    "setPaint",
+    "writeObject",
+    "readObject",
+    "DialTextAnnotation"
+  ],
+  "signature": {
+    "org.jfree.chart.plot.dial.AbstractDialLayer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.dial.DialTextAnnotation.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.dial.DialTextAnnotation.setPaint(java.awt.Paint)": {
+      "params_len": 1,
+      "params": [
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.dial.DialTextAnnotation.writeObject(java.io.ObjectOutputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.ObjectOutputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.dial.DialTextAnnotation.readObject(java.io.ObjectInputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.ObjectInputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.dial.DialTextAnnotation(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.plot.dial.DialTextAnnotation.writeObject(java.io.ObjectOutputStream)",
+    "org.jfree.chart.plot.dial.DialTextAnnotation.readObject(java.io.ObjectInputStream)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.plot.dial.DialTextAnnotation.writeObject(java.io.ObjectOutputStream)",
+    "org.jfree.chart.plot.dial.DialTextAnnotation.readObject(java.io.ObjectInputStream)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 7088,
+      "class_name": "org.jfree.chart.plot.dial.DialTextAnnotation",
+      "method_name": "writeObject",
+      "signature": "org.jfree.chart.plot.dial.DialTextAnnotation.writeObject(java.io.ObjectOutputStream)"
+    },
+    {
+      "method_id": 7091,
+      "class_name": "org.jfree.chart.plot.dial.DialTextAnnotation",
+      "method_name": "readObject",
+      "signature": "org.jfree.chart.plot.dial.DialTextAnnotation.readObject(java.io.ObjectInputStream)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

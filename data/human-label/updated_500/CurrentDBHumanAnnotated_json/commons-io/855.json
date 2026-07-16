@@ -1,0 +1,35 @@
+{
+  "id": "855",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.CharsetsTest_testIsUTF8Charset_51226463",
+  "test_path": "org/apache/commons/io/CharsetsTest",
+  "test_name": "testIsUTF8Charset",
+  "body": "@ParameterizedTest\n    @MethodSource(\"availableCharsetsValues\")\n    void testIsUTF8Charset(final Charset charset) {\n        assumeFalse(StandardCharsets.UTF_8.equals(charset));\n        charset.aliases().forEach(n -> assertFalse(Charsets.isUTF8(Charset.forName(n))));\n    }",
+  "invocations": [
+    "isUTF8"
+  ],
+  "signature": {
+    "org.apache.commons.io.Charsets.isUTF8(java.nio.charset.Charset)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.charset.Charset"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.Charsets.isUTF8(java.nio.charset.Charset)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.Charsets.isUTF8(java.nio.charset.Charset)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 522,
+      "class_name": "org.apache.commons.io.Charsets",
+      "method_name": "isUTF8",
+      "signature": "org.apache.commons.io.Charsets.isUTF8(java.nio.charset.Charset)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "814",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.help.OptionFormatterTest_testSetSyntaxFormatFunction_6833cec3",
+  "test_path": "org/apache/commons/cli/help/OptionFormatterTest",
+  "test_name": "testSetSyntaxFormatFunction",
+  "body": "@Test\n    void testSetSyntaxFormatFunction() {\n        final BiFunction<OptionFormatter, Boolean, String> func = (o, b) -> \"Yep, it worked\";\n        final Option option = Option.builder().option(\"o\").longOpt(\"opt\").hasArg().get();\n\n        OptionFormatter.Builder builder = OptionFormatter.builder().setSyntaxFormatFunction(func);\n        assertEquals(\"Yep, it worked\", builder.build(option).toSyntaxOption());\n\n        builder = OptionFormatter.builder().setSyntaxFormatFunction(null);\n        assertEquals(\"[-o <arg>]\", builder.build(option).toSyntaxOption());\n    }",
+  "invocations": [
+    "setSyntaxFormatFunction",
+    "build",
+    "toSyntaxOption",
+    "builder",
+    "longOpt",
+    "hasArg",
+    "get",
+    "option",
+    "builder"
+  ],
+  "signature": {
+    "org.apache.commons.cli.help.OptionFormatter$Builder.setSyntaxFormatFunction(java.util.function.BiFunction<org.apache.commons.cli.help.OptionFormatter, java.lang.Boolean, java.lang.String>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.function.BiFunction<org.apache.commons.cli.help.OptionFormatter",
+        "java.lang.Boolean",
+        "java.lang.String>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.OptionFormatter$Builder.build(org.apache.commons.cli.Option)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.cli.Option"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.OptionFormatter.toSyntaxOption()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.OptionFormatter.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.longOpt(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.hasArg()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.option(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.help.OptionFormatter$Builder.setSyntaxFormatFunction(java.util.function.BiFunction<org.apache.commons.cli.help.OptionFormatter, java.lang.Boolean, java.lang.String>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.help.OptionFormatter$Builder.setSyntaxFormatFunction(java.util.function.BiFunction<org.apache.commons.cli.help.OptionFormatter, java.lang.Boolean, java.lang.String>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 179,
+      "class_name": "org.apache.commons.cli.help.OptionFormatter$Builder",
+      "method_name": "setSyntaxFormatFunction",
+      "signature": "org.apache.commons.cli.help.OptionFormatter$Builder.setSyntaxFormatFunction(java.util.function.BiFunction<org.apache.commons.cli.help.OptionFormatter, java.lang.Boolean, java.lang.String>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

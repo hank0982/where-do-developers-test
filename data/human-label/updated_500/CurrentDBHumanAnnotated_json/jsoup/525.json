@@ -1,0 +1,97 @@
+{
+  "id": "525",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.nodes.ElementTest_elementIsIterable_a5f34ad9",
+  "test_path": "org/jsoup/nodes/ElementTest",
+  "test_name": "elementIsIterable",
+  "body": "@Test void elementIsIterable() {\n        Document doc = Jsoup.parse(\"<div><a id=1>One</a> Two <a id=2>Three<b>Four</a><a id=3>Five</a></div>\");\n        String expect = \"div;a#1;a#2;b;b;a#3;\"; // elements only, in doc order\n        Element div = doc.expectFirst(\"div\");\n\n        // for each pattern\n        StringBuilder seen = new StringBuilder();\n        for (Element el: div) {\n            trackSeen(el, seen);\n        }\n        assertEquals(expect, seen.toString());\n\n        // iterator\n        seen = new StringBuilder();\n        Iterator<Element> iterator = div.iterator();\n        assertIterates(iterator, expect);\n    }",
+  "invocations": [
+    "parse",
+    "hasAttr",
+    "iterator",
+    "expectFirst",
+    "tagName",
+    "id",
+    "next",
+    "hasNext"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Node.hasAttr(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.expectFirst(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.tagName()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.id()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.NodeIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.NodeIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.nodes.Element.iterator()",
+    "org.jsoup.nodes.NodeIterator.next()",
+    "org.jsoup.nodes.NodeIterator.hasNext()"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.nodes.Element.iterator()",
+    "org.jsoup.nodes.NodeIterator.next()",
+    "org.jsoup.nodes.NodeIterator.hasNext()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 739,
+      "class_name": "org.jsoup.nodes.Element",
+      "method_name": "iterator",
+      "signature": "org.jsoup.nodes.Element.iterator()"
+    },
+    {
+      "method_id": 937,
+      "class_name": "org.jsoup.nodes.NodeIterator",
+      "method_name": "next",
+      "signature": "org.jsoup.nodes.NodeIterator.next()"
+    },
+    {
+      "method_id": 940,
+      "class_name": "org.jsoup.nodes.NodeIterator",
+      "method_name": "hasNext",
+      "signature": "org.jsoup.nodes.NodeIterator.hasNext()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "846",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.io.StringSubstitutorFilterReaderTest_testReplaceUnknownShortestKeyOnly_de24953a",
+  "test_path": "org/apache/commons/text/io/StringSubstitutorFilterReaderTest",
+  "test_name": "testReplaceUnknownShortestKeyOnly",
+  "body": "@Test\n    void testReplaceUnknownShortestKeyOnly() throws IOException {\n        final String expected = \"${U}\";\n        assertEqualsCharSeq(expected, replace(new StringSubstitutor(values), expected));\n    }",
+  "invocations": [
+    "StringSubstitutorReader",
+    "read",
+    "mapStringLookup",
+    "StringSubstitutor",
+    "StringSubstitutor",
+    "StringSubstitutor"
+  ],
+  "signature": {
+    "org.apache.commons.text.io.StringSubstitutorReader(java.io.Reader, org.apache.commons.text.StringSubstitutor)": {
+      "params_len": 2,
+      "params": [
+        "java.io.Reader",
+        "org.apache.commons.text.StringSubstitutor"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.io.StringSubstitutorReader.read(char[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.lookup.StringLookupFactory.mapStringLookup(java.util.Map<java.lang.String, V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<java.lang.String",
+        "V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StringSubstitutor(java.util.Map<java.lang.String, V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<java.lang.String",
+        "V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StringSubstitutor(org.apache.commons.text.lookup.StringLookup, org.apache.commons.text.matcher.StringMatcher, org.apache.commons.text.matcher.StringMatcher, char)": {
+      "params_len": 4,
+      "params": [
+        "org.apache.commons.text.lookup.StringLookup",
+        "org.apache.commons.text.matcher.StringMatcher",
+        "org.apache.commons.text.matcher.StringMatcher",
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StringSubstitutor(org.apache.commons.text.lookup.StringLookup, org.apache.commons.text.matcher.StringMatcher, org.apache.commons.text.matcher.StringMatcher, char, org.apache.commons.text.matcher.StringMatcher)": {
+      "params_len": 5,
+      "params": [
+        "org.apache.commons.text.lookup.StringLookup",
+        "org.apache.commons.text.matcher.StringMatcher",
+        "org.apache.commons.text.matcher.StringMatcher",
+        "char",
+        "org.apache.commons.text.matcher.StringMatcher"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.io.StringSubstitutorReader.read(char[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.io.StringSubstitutorReader.read(char[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 78,
+      "class_name": "org.apache.commons.text.io.StringSubstitutorReader",
+      "method_name": "read",
+      "signature": "org.apache.commons.text.io.StringSubstitutorReader.read(char[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

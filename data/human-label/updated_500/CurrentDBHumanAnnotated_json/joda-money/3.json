@@ -1,0 +1,35 @@
+{
+  "id": "3",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_compareTo_BigMoney_bae7ddad",
+  "test_path": "org/joda/money/TestBigMoney_test_compareTo",
+  "test_name": "BigMoney",
+  "body": "@Test\n    void test_compareTo_BigMoney() {\n        var a = GBP_2_34;\n        var b = GBP_2_35;\n        var c = GBP_2_36;\n        assertThat(a.compareTo(a)).isEqualTo(0);\n        assertThat(b.compareTo(b)).isEqualTo(0);\n        assertThat(c.compareTo(c)).isEqualTo(0);\n\n        assertThat(a.compareTo(b)).isEqualTo(-1);\n        assertThat(b.compareTo(a)).isEqualTo(1);\n\n        assertThat(a.compareTo(c)).isEqualTo(-1);\n        assertThat(c.compareTo(a)).isEqualTo(1);\n\n        assertThat(b.compareTo(c)).isEqualTo(-1);\n        assertThat(c.compareTo(b)).isEqualTo(1);\n    }",
+  "invocations": [
+    "compareTo"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.compareTo(org.joda.money.BigMoneyProvider)": {
+      "params_len": 1,
+      "params": [
+        "org.joda.money.BigMoneyProvider"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.compareTo(org.joda.money.BigMoneyProvider)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.compareTo(org.joda.money.BigMoneyProvider)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 188,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "compareTo",
+      "signature": "org.joda.money.BigMoney.compareTo(org.joda.money.BigMoneyProvider)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,223 @@
+{
+  "id": "5022",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.HashedMapTest_testMapComputeIfPresent_4cf9a2b2",
+  "test_path": "org/apache/commons/collections4/map/HashedMapTest",
+  "test_name": "testMapComputeIfPresent",
+  "body": "@Test\n    void testMapComputeIfPresent() {\n        resetEmpty();\n        final K[] keys = getSampleKeys();\n        final V[] values = getSampleValues();\n        final V[] newValues = getNewSampleValues();\n        if (isPutAddSupported()) {\n            for (final AtomicInteger inc = new AtomicInteger(); inc.get() < keys.length; inc.incrementAndGet()) {\n                final int i = inc.get();\n                final K key = keys[i];\n                final V value = values[i];\n                final boolean expectKey = getMap().containsKey(key);\n                final Map<K, V> oldMap = new HashMap<>(getMap());\n                final Object computedValue = getMap().computeIfPresent(key, (k, v) -> value);\n                // map is updated if new or old value is not null\n                getConfirmed().computeIfPresent(key, (k, v) -> value);\n                if (!isLazyMapTest()) {\n                    // TODO LazyMap tests do not like this check\n                    verify();\n                }\n                final Supplier<String> messageSupplier = () -> String.format(\"[%,d] map.computeIfPresent key '%s', value '%s', old %s\", inc.get(), key, value,\n                        oldMap);\n                assertNull(computedValue, messageSupplier);\n                if (isLazyMapTest()) {\n                    // TODO Is there a better way to write abstract tests?\n                    assertTrue(getMap().containsKey(key), messageSupplier);\n                    assertEquals(value == null, getMap().containsValue(value), messageSupplier);\n                } else {\n                    assertEquals(expectKey, getMap().containsKey(key), messageSupplier);\n                    assertEquals(expectKey, getMap().containsValue(value), messageSupplier);\n                }\n                // again, same result\n                getConfirmed().computeIfPresent(key, (k, v) -> value);\n                assertNull(computedValue, messageSupplier);\n            }\n            if (isPutChangeSupported()) {\n                // Piggyback on isPutChangeSupported() for computeIfAbsent with a caveat for null values.\n                for (final AtomicInteger inc = new AtomicInteger(); inc.get() < keys.length; inc.incrementAndGet()) {\n                    final int i = inc.get();\n                    final K key = keys[i];\n                    final V value = values[i];\n                    final V newValue = newValues[i];\n                    final boolean valueAlreadyPresent = getMap().containsValue(newValue);\n                    final V prevValue = getMap().get(key);\n                    final Map<K, V> oldMap = new HashMap<>(getMap());\n                    final Supplier<String> messageSupplier0 = () -> String.format(\"[%,d] map.computeIfPresent key '%s', value '%s', old %s\", inc.get(), key,\n                            value, oldMap);\n                    final Supplier<String> messageSupplier1 = () -> String.format(\"[%,d] map.computeIfPresent key '%s', newValue '%s', old %s\", inc.get(), key,\n                            newValue, oldMap);\n                    // compute same\n                    oldMap.clear();\n                    oldMap.putAll(getMap());\n                    getMap().put(key, value);\n                    getConfirmed().put(key, value);\n                    V computedValue = getMap().computeIfPresent(key, (k, v) -> value);\n                    getConfirmed().computeIfPresent(key, (k, v) -> value);\n                    if (value != null) {\n                        assertNotNull(computedValue, messageSupplier0);\n                    } else {\n                        assertNull(computedValue, messageSupplier0);\n                    }\n                    // compute new (mod null)\n                    oldMap.clear();\n                    oldMap.putAll(getMap());\n                    final boolean keyPresent = getMap().containsKey(key);\n                    computedValue = getMap().computeIfPresent(key, (k, v) -> newValue);\n                    getConfirmed().computeIfPresent(key, (k, v) -> newValue);\n                    if (!isLazyMapTest()) {\n                        // TODO LazyMap tests do not like this check\n                        verify();\n                    }\n                    if (keyPresent && value != null) {\n                        assertEquals(newValue, computedValue, messageSupplier1);\n                    } else {\n                        assertNull(computedValue, messageSupplier1);\n                    }\n                    assertEquals(newValue != null, getMap().containsKey(key), messageSupplier1);\n                    // if duplicates are allowed, we're not guaranteed that the value\n                    // no longer exists, so don't try checking that.\n                    if (!isAllowDuplicateValues() && valueAlreadyPresent && newValue != null) {\n                        assertFalse(getMap().containsValue(value),\n                                String.format(\n                                        \"Map should not contain old value after computeIfPresent when changed: [%,d] key '%s', prevValue '%s', newValue '%s'\",\n                                        i, key, prevValue, newValue));\n                    }\n                }\n            } else {\n                try {\n                    // two possible exception here, either valid\n                    getMap().computeIfPresent(keys[0], (k, v) -> newValues[0]);\n                    fail(\"Expected IllegalArgumentException or UnsupportedOperationException on putIfAbsent (change)\");\n                } catch (final IllegalArgumentException | UnsupportedOperationException ex) {\n                    // ignore\n                }\n            }\n        } else if (isPutChangeSupported()) {\n            // compute if present is a put.\n            resetEmpty();\n            getMap().computeIfPresent(keys[0], (k, v) -> values[0]);\n            if (isPutAddSupported()) {\n                resetFull();\n                int i = 0;\n                for (final Iterator<K> it = getMap().keySet().iterator(); it.hasNext() && i < newValues.length; i++) {\n                    final K key = it.next();\n                    final V newValue = newValues[i];\n                    final boolean newValueAlready = getMap().containsValue(newValue);\n                    final V prevValue = getMap().get(key);\n                    final V oldValue = getMap().computeIfPresent(key, (k, v) -> newValue);\n                    final V value = getConfirmed().computeIfPresent(key, (k, v) -> newValue);\n                    verify();\n                    assertEquals(value, oldValue, \"Map.putIfAbsent should return previous value when changed\");\n                    assertEquals(prevValue, oldValue, \"Map.putIfAbsent should return previous value when changed\");\n                    if (prevValue == null) {\n                        assertEquals(newValue, getMap().get(key), String.format(\"[%,d] key '%s', prevValue '%s', newValue '%s'\", i, key, prevValue, newValue));\n                    } else {\n                        assertEquals(oldValue, getMap().get(key), String.format(\"[%,d] key '%s', prevValue '%s', newValue '%s'\", i, key, prevValue, newValue));\n                    }\n                    assertTrue(getMap().containsKey(key), \"Map should still contain key after putIfAbsent when changed\");\n                    if (newValueAlready && newValue != null) {\n                        // TODO The test fixture already contain a null value, so we condition this assertion\n                        assertFalse(getMap().containsValue(newValue),\n                                String.format(\"[%,d] Map at '%s' shouldn't contain new value '%s' after putIfAbsent when changed\", i, key, newValue));\n                    }\n                    // if duplicates are allowed, we're not guaranteed that the value\n                    // no longer exists, so don't try checking that.\n                    if (!isAllowDuplicateValues()) {\n                        assertFalse(getMap().containsValue(values[i]), \"Map should not contain old value after putIfAbsent when changed\");\n                    }\n                }\n            }\n        } else if (getMap().containsKey(keys[0])) {\n            assertThrows(UnsupportedOperationException.class, () -> getMap().computeIfPresent(keys[0], (k, v) -> values[0]),\n                    \"Expected UnsupportedOperationException on put (add)\");\n        } else {\n            // doesn't throw\n            getMap().computeIfPresent(keys[0], (k, v) -> values[0]);\n        }\n    }",
+  "invocations": [
+    "next",
+    "next",
+    "iterator",
+    "contains",
+    "size",
+    "next",
+    "iterator",
+    "size",
+    "size",
+    "equals",
+    "values",
+    "put",
+    "AbstractHashedMap",
+    "keySet",
+    "containsValue",
+    "remove",
+    "isEmpty",
+    "entrySet",
+    "containsKey",
+    "get",
+    "hashCode",
+    "iterator",
+    "size",
+    "contains",
+    "getValue",
+    "getKey",
+    "toString",
+    "hashCode",
+    "hasNext",
+    "HashedMap",
+    "hasNext"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$ValuesIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$EntrySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$Values.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$Values.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.values()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float, int)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "float",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.containsValue(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.remove(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.containsKey(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.get(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$KeySet.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.getValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.getKey()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashEntry.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap$HashIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.HashedMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.AbstractEmptyIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [],
+  "current_db_human_annotation": [],
+  "current_db_human_annotation_details": [],
+  "label_source": "reviewed_empty"
+}

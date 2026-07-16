@@ -1,0 +1,74 @@
+{
+  "id": "832",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.renderer.LookupPaintScaleTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/chart/renderer/LookupPaintScaleTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        LookupPaintScale g1 = new LookupPaintScale();\n        LookupPaintScale g2 = CloneUtils.clone(g1);\n        assertNotSame(g1, g2);\n        assertSame(g1.getClass(), g2.getClass());\n        assertEquals(g1, g2);\n\n        // check independence\n        g1.add(0.5, Color.RED);\n        assertNotEquals(g1, g2);\n        g2.add(0.5, Color.RED);\n        assertEquals(g1, g2);\n\n        // try with gradient paint\n        g1 = new LookupPaintScale(1.0, 2.0, new GradientPaint(1.0f, 2.0f,\n                Color.RED, 3.0f, 4.0f, Color.GREEN));\n        g1.add(1.5, new GradientPaint(1.0f, 2.0f, Color.RED, 3.0f, 4.0f,\n                Color.BLUE));\n        g2 = (LookupPaintScale) g1.clone();\n        assertNotSame(g1, g2);\n        assertSame(g1.getClass(), g2.getClass());\n        assertEquals(g1, g2);\n    }",
+  "invocations": [
+    "clone",
+    "equals",
+    "add",
+    "LookupPaintScale",
+    "LookupPaintScale",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.chart.renderer.LookupPaintScale.clone()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.LookupPaintScale.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.LookupPaintScale.add(double, java.awt.Paint)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.LookupPaintScale()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.LookupPaintScale(double, double, java.awt.Paint)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "double",
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.renderer.LookupPaintScale.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.renderer.LookupPaintScale.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4913,
+      "class_name": "org.jfree.chart.renderer.LookupPaintScale",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.renderer.LookupPaintScale.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

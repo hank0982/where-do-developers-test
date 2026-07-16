@@ -1,0 +1,194 @@
+{
+  "id": "187",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.axis.DateAxisTest_testPreviousStandardDateYearA_8a4250b1",
+  "test_path": "org/jfree/chart/axis/DateAxisTest",
+  "test_name": "testPreviousStandardDateYearA",
+  "body": "@Test\n    public void testPreviousStandardDateYearA() {\n        MyDateAxis axis = new MyDateAxis(\"Year\");\n        Year y2006 = new Year(2006);\n        Year y2007 = new Year(2007);\n\n        // five dates to check...\n        Date d0 = new Date(y2006.getFirstMillisecond());\n        Date d1 = new Date(y2006.getFirstMillisecond() + 500L);\n        Date d2 = new Date(y2006.getMiddleMillisecond());\n        Date d3 = new Date(y2006.getMiddleMillisecond() + 500L);\n        Date d4 = new Date(y2006.getLastMillisecond());\n\n        Date end = new Date(y2007.getLastMillisecond());\n\n        DateTickUnit unit = new DateTickUnit(DateTickUnitType.YEAR, 1);\n        axis.setTickUnit(unit);\n\n        // START: check d0 and d1\n        axis.setTickMarkPosition(DateTickMarkPosition.START);\n\n        axis.setRange(d0, end);\n        Date psd = axis.previousStandardDate(d0, unit);\n        Date nsd = unit.addToDate(psd, TimeZone.getDefault());\n        assertTrue(psd.getTime() < d0.getTime());\n        assertTrue(nsd.getTime() >= d0.getTime());\n\n        axis.setRange(d1, end);\n        psd = axis.previousStandardDate(d1, unit);\n        nsd = unit.addToDate(psd, TimeZone.getDefault());\n        assertTrue(psd.getTime() < d1.getTime());\n        assertTrue(nsd.getTime() >= d1.getTime());\n\n        // MIDDLE: check d1, d2 and d3\n        axis.setTickMarkPosition(DateTickMarkPosition.MIDDLE);\n\n        axis.setRange(d1, end);\n        psd = axis.previousStandardDate(d1, unit);\n        nsd = unit.addToDate(psd, TimeZone.getDefault());\n        assertTrue(psd.getTime() < d1.getTime());\n        assertTrue(nsd.getTime() >= d1.getTime());\n\n        axis.setRange(d2, end);\n        psd = axis.previousStandardDate(d2, unit);\n        nsd = unit.addToDate(psd, TimeZone.getDefault());\n        assertTrue(psd.getTime() < d2.getTime());\n        assertTrue(nsd.getTime() >= d2.getTime());\n\n        axis.setRange(d3, end);\n        psd = axis.previousStandardDate(d3, unit);\n        nsd = unit.addToDate(psd, TimeZone.getDefault());\n        assertTrue(psd.getTime() < d3.getTime());\n        assertTrue(nsd.getTime() >= d3.getTime());\n\n        // END: check d3 and d4\n        axis.setTickMarkPosition(DateTickMarkPosition.END);\n\n        axis.setRange(d3, end);\n        psd = axis.previousStandardDate(d3, unit);\n        nsd = unit.addToDate(psd, TimeZone.getDefault());\n        assertTrue(psd.getTime() < d3.getTime());\n        assertTrue(nsd.getTime() >= d3.getTime());\n\n        axis.setRange(d4, end);\n        psd = axis.previousStandardDate(d4, unit);\n        nsd = unit.addToDate(psd, TimeZone.getDefault());\n        assertTrue(psd.getTime() < d4.getTime());\n        assertTrue(nsd.getTime() >= d4.getTime());\n    }",
+  "invocations": [
+    "getMiddleMillisecond",
+    "RegularTimePeriod",
+    "getFirstMillisecond",
+    "Year",
+    "getLastMillisecond",
+    "DateTickUnit",
+    "getMillisecondCount",
+    "addToDate",
+    "DateTickUnit",
+    "DateTickUnit",
+    "Axis",
+    "DateAxis",
+    "setTickUnit",
+    "setTickMarkPosition",
+    "DateAxis",
+    "setRange",
+    "createStandardDateTickUnits",
+    "previousStandardDate",
+    "ValueAxis",
+    "TickUnit"
+  ],
+  "signature": {
+    "org.jfree.data.time.RegularTimePeriod.getMiddleMillisecond()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.RegularTimePeriod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Year.getFirstMillisecond()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Year(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Year.getLastMillisecond()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateTickUnit(org.jfree.chart.axis.DateTickUnitType, int)": {
+      "params_len": 2,
+      "params": [
+        "org.jfree.chart.axis.DateTickUnitType",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateTickUnit.getMillisecondCount(org.jfree.chart.axis.DateTickUnitType, int)": {
+      "params_len": 2,
+      "params": [
+        "org.jfree.chart.axis.DateTickUnitType",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateTickUnit.addToDate(java.util.Date, java.util.TimeZone)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Date",
+        "java.util.TimeZone"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateTickUnit(org.jfree.chart.axis.DateTickUnitType, int, org.jfree.chart.axis.DateTickUnitType, int, java.text.DateFormat)": {
+      "params_len": 5,
+      "params": [
+        "org.jfree.chart.axis.DateTickUnitType",
+        "int",
+        "org.jfree.chart.axis.DateTickUnitType",
+        "int",
+        "java.text.DateFormat"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateTickUnit(org.jfree.chart.axis.DateTickUnitType, int, java.text.DateFormat)": {
+      "params_len": 3,
+      "params": [
+        "org.jfree.chart.axis.DateTickUnitType",
+        "int",
+        "java.text.DateFormat"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.Axis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateAxis.setTickUnit(org.jfree.chart.axis.DateTickUnit)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.axis.DateTickUnit"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateAxis.setTickMarkPosition(org.jfree.chart.axis.DateTickMarkPosition)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.axis.DateTickMarkPosition"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateAxis(java.lang.String, java.util.TimeZone, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateAxis.setRange(java.util.Date, java.util.Date)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Date",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateAxis.createStandardDateTickUnits(java.util.TimeZone, java.util.Locale)": {
+      "params_len": 2,
+      "params": [
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.DateAxis.previousStandardDate(java.util.Date, org.jfree.chart.axis.DateTickUnit)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Date",
+        "org.jfree.chart.axis.DateTickUnit"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.ValueAxis(java.lang.String, org.jfree.chart.axis.TickUnitSource)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "org.jfree.chart.axis.TickUnitSource"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.TickUnit(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.axis.DateAxis.previousStandardDate(java.util.Date, org.jfree.chart.axis.DateTickUnit)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.axis.DateAxis.previousStandardDate(java.util.Date, org.jfree.chart.axis.DateTickUnit)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 8468,
+      "class_name": "org.jfree.chart.axis.DateAxis",
+      "method_name": "previousStandardDate",
+      "signature": "org.jfree.chart.axis.DateAxis.previousStandardDate(java.util.Date, org.jfree.chart.axis.DateTickUnit)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

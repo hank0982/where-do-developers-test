@@ -1,0 +1,35 @@
+{
+  "id": "2",
+  "project": "commons-jxpath",
+  "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testNodes_66a19a80",
+  "test_path": "org/apache/commons/jxpath/BasicNodeSetTest",
+  "test_name": "testNodes",
+  "body": "@Test\n    void testNodes() {\n        addPointers(\"/document/vendor/contact\");\n        assertEquals(\n                list(\"/document/vendor[1]/contact[1]\", \"/document/vendor[1]/contact[2]\", \"/document/vendor[1]/contact[3]\", \"/document/vendor[1]/contact[4]\")\n                        .toString(),\n                nodeSet.getPointers().toString());\n        assertEquals(list(\"John\", \"Jack\", \"Jim\", \"Jack Black\"), nodeSet.getValues());\n        assertElementNames(list(\"contact\", \"contact\", \"contact\", \"contact\"), nodeSet.getNodes());\n        assertElementValues(list(\"John\", \"Jack\", \"Jim\", \"Jack Black\"), nodeSet.getNodes());\n    }",
+  "invocations": [
+    "iteratePointers"
+  ],
+  "signature": {
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.iteratePointers(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.jxpath.BasicNodeSet.getNodes()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.jxpath.BasicNodeSet.getNodes()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 19,
+      "class_name": "org.apache.commons.jxpath.BasicNodeSet",
+      "method_name": "getNodes",
+      "signature": "org.apache.commons.jxpath.BasicNodeSet.getNodes()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

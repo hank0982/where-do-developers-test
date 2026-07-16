@@ -1,0 +1,41 @@
+{
+  "id": "58763",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.tuple.ImmutablePairTest_testToStringLeft_7a7a2606",
+  "test_path": "org/apache/commons/lang3/tuple/ImmutablePairTest",
+  "test_name": "testToStringLeft",
+  "body": "@Test\n    void testToStringLeft() {\n        final Pair<String, String> pair = ImmutablePair.left(\"Key\");\n        assertEquals(\"(Key,null)\", pair.toString());\n    }",
+  "invocations": [
+    "toString",
+    "left"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.tuple.Pair.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.tuple.ImmutablePair.left(L)": {
+      "params_len": 1,
+      "params": [
+        "L"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.tuple.Pair.toString()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.tuple.Pair.toString()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3741,
+      "class_name": "org.apache.commons.lang3.tuple.Pair",
+      "method_name": "toString",
+      "signature": "org.apache.commons.lang3.tuple.Pair.toString()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

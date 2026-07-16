@@ -1,0 +1,145 @@
+{
+  "id": "5544",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.DeferredFileOutputStreamTest_testTempFileAboveThreshold_56177d00",
+  "test_path": "org/apache/commons/io/output/DeferredFileOutputStreamTest",
+  "test_name": "testTempFileAboveThreshold",
+  "body": "@ParameterizedTest(name = \"initialBufferSize = {0}\")",
+  "invocations": [
+    "getThreshold",
+    "getByteCount",
+    "write",
+    "isThresholdExceeded",
+    "getData",
+    "getFile",
+    "getPath",
+    "close",
+    "isInMemory",
+    "builder",
+    "setSuffix",
+    "get",
+    "setPrefix",
+    "setThreshold",
+    "setDirectory",
+    "setBufferSize"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.ThresholdingOutputStream.getThreshold()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream.getByteCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.ThresholdingOutputStream.isThresholdExceeded()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.getData()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.getFile()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.getPath()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.isInMemory()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream$Builder.setSuffix(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream$Builder.setPrefix(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream$Builder.setThreshold(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.DeferredFileOutputStream$Builder.setDirectory(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractStreamBuilder.setBufferSize(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)",
+    "org.apache.commons.io.output.DeferredFileOutputStream.thresholdReached()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)",
+    "org.apache.commons.io.output.DeferredFileOutputStream.thresholdReached()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 669,
+      "class_name": "org.apache.commons.io.output.ThresholdingOutputStream",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.ThresholdingOutputStream.write(byte[], int, int)"
+    },
+    {
+      "method_id": 708,
+      "class_name": "org.apache.commons.io.output.DeferredFileOutputStream",
+      "method_name": "thresholdReached",
+      "signature": "org.apache.commons.io.output.DeferredFileOutputStream.thresholdReached()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

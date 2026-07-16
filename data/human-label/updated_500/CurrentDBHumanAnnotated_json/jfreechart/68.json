@@ -1,0 +1,83 @@
+{
+  "id": "68",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.XYBarChartTest_testSetSeriesToolTipGenerator_8ab92898",
+  "test_path": "org/jfree/chart/XYBarChartTest",
+  "test_name": "testSetSeriesToolTipGenerator",
+  "body": "@Test\n    public void testSetSeriesToolTipGenerator() {\n        XYPlot<?> plot = (XYPlot) this.chart.getPlot();\n        XYItemRenderer renderer = plot.getRenderer();\n        StandardXYToolTipGenerator tt = new StandardXYToolTipGenerator();\n        renderer.setSeriesToolTipGenerator(0, tt);\n        XYToolTipGenerator tt2 = renderer.getToolTipGenerator(0, 0);\n        assertSame(tt2, tt);\n    }",
+  "invocations": [
+    "setSeriesToolTipGenerator",
+    "getToolTipGenerator",
+    "getRenderer",
+    "getPlot",
+    "StandardXYToolTipGenerator",
+    "StandardXYToolTipGenerator",
+    "AbstractXYItemLabelGenerator"
+  ],
+  "signature": {
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setSeriesToolTipGenerator(int, org.jfree.chart.labels.XYToolTipGenerator)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "org.jfree.chart.labels.XYToolTipGenerator"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.getToolTipGenerator(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.XYPlot.getRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart.getPlot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.StandardXYToolTipGenerator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.StandardXYToolTipGenerator(java.lang.String, java.text.NumberFormat, java.text.NumberFormat)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.text.NumberFormat",
+        "java.text.NumberFormat"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.AbstractXYItemLabelGenerator(java.lang.String, java.text.NumberFormat, java.text.NumberFormat)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.text.NumberFormat",
+        "java.text.NumberFormat"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setSeriesToolTipGenerator(int, org.jfree.chart.labels.XYToolTipGenerator)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setSeriesToolTipGenerator(int, org.jfree.chart.labels.XYToolTipGenerator)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3573,
+      "class_name": "org.jfree.chart.renderer.xy.AbstractXYItemRenderer",
+      "method_name": "setSeriesToolTipGenerator",
+      "signature": "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.setSeriesToolTipGenerator(int, org.jfree.chart.labels.XYToolTipGenerator)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

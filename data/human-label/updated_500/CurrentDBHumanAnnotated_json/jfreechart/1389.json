@@ -1,0 +1,90 @@
+{
+  "id": "1389",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.category.DefaultIntervalCategoryDatasetTest_testCloning2_59b115cb",
+  "test_path": "org/jfree/data/category/DefaultIntervalCategoryDatasetTest",
+  "test_name": "testCloning2",
+  "body": "@Test\n    public void testCloning2() throws CloneNotSupportedException {\n        DefaultIntervalCategoryDataset d1\n                = new DefaultIntervalCategoryDataset(new double[0][0],\n                    new double[0][0]);\n        DefaultIntervalCategoryDataset d2;\n        d2 = (DefaultIntervalCategoryDataset) d1.clone();\n        assertNotSame(d1, d2);\n        assertSame(d1.getClass(), d2.getClass());\n        assertEquals(d1, d2);\n    }",
+  "invocations": [
+    "AbstractSeriesDataset",
+    "AbstractDataset",
+    "DefaultIntervalCategoryDataset",
+    "equals",
+    "DefaultIntervalCategoryDataset",
+    "clone",
+    "DefaultIntervalCategoryDataset",
+    "createNumberArray2D"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractSeriesDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset(java.lang.Comparable[], java.lang.Comparable[], java.lang.Number[][], java.lang.Number[][])": {
+      "params_len": 4,
+      "params": [
+        "java.lang.Comparable[]",
+        "java.lang.Comparable[]",
+        "java.lang.Number[][]",
+        "java.lang.Number[][]"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset(double[][], double[][])": {
+      "params_len": 2,
+      "params": [
+        "double[][]",
+        "double[][]"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultIntervalCategoryDataset(java.lang.Number[][], java.lang.Number[][])": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Number[][]",
+        "java.lang.Number[][]"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.DataUtils.createNumberArray2D(double[][])": {
+      "params_len": 1,
+      "params": [
+        "double[][]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1052,
+      "class_name": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+      "method_name": "clone",
+      "signature": "org.jfree.data.category.DefaultIntervalCategoryDataset.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

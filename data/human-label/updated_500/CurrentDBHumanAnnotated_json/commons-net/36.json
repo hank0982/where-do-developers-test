@@ -1,0 +1,54 @@
+{
+  "id": "36",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.echo.EchoUDPClientTest_testSend_66260dbb",
+  "test_path": "org/apache/commons/net/echo/EchoUDPClientTest",
+  "test_name": "testSend",
+  "body": "@Test\n    public void testSend() {\n        try (EchoUDPClient client = new EchoUDPClient()) {\n            // Not connected\n            assertThrows(NullPointerException.class, () -> client.send(new byte[0], InetAddress.getLocalHost()));\n            assertThrows(NullPointerException.class, () -> client.send(new byte[0], 0, InetAddress.getLocalHost()));\n        }\n    }",
+  "invocations": [
+    "DiscardUDPClient",
+    "EchoUDPClient",
+    "send",
+    "DatagramSocketClient"
+  ],
+  "signature": {
+    "org.apache.commons.net.discard.DiscardUDPClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.echo.EchoUDPClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.echo.EchoUDPClient.send(byte[], java.net.InetAddress)": {
+      "params_len": 2,
+      "params": [
+        "byte[]",
+        "java.net.InetAddress"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.DatagramSocketClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.echo.EchoUDPClient.send(byte[], java.net.InetAddress)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.echo.EchoUDPClient.send(byte[], java.net.InetAddress)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 456,
+      "class_name": "org.apache.commons.net.echo.EchoUDPClient",
+      "method_name": "send",
+      "signature": "org.apache.commons.net.echo.EchoUDPClient.send(byte[], java.net.InetAddress)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

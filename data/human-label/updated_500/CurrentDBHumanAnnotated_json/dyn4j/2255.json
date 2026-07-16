@@ -1,0 +1,49 @@
+{
+  "id": "2255",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.world.AbstractCollisionWorldTest_removeBodyNegativeIndex_c2b992f7",
+  "test_path": "org/dyn4j/world/AbstractCollisionWorldTest",
+  "test_name": "removeBodyNegativeIndex",
+  "body": "@Test(expected = IndexOutOfBoundsException.class)\n\tpublic void removeBodyNegativeIndex() {\n\t\tTestWorld w = new TestWorld();\n\t\tw.removeBody(-1);\n\t}",
+  "invocations": [
+    "AbstractCollisionWorld",
+    "AbstractCollisionWorld",
+    "removeBody"
+  ],
+  "signature": {
+    "org.dyn4j.world.AbstractCollisionWorld()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2790,
+      "class_name": "org.dyn4j.world.AbstractCollisionWorld",
+      "method_name": "removeBody",
+      "signature": "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

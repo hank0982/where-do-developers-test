@@ -1,0 +1,59 @@
+{
+  "id": "707",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.plot.compass.PlumNeedleTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/chart/plot/compass/PlumNeedleTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        PlumNeedle n1 = new PlumNeedle();\n        PlumNeedle n2 = CloneUtils.clone(n1);\n        assertNotSame(n1, n2);\n        assertSame(n1.getClass(), n2.getClass());\n        assertEquals(n1, n2);\n    }",
+  "invocations": [
+    "PlumNeedle",
+    "equals",
+    "MeterNeedle",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.chart.plot.compass.PlumNeedle()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.compass.PlumNeedle.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.compass.MeterNeedle(java.awt.Paint, java.awt.Paint, java.awt.Paint)": {
+      "params_len": 3,
+      "params": [
+        "java.awt.Paint",
+        "java.awt.Paint",
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.plot.compass.PlumNeedle.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.plot.compass.PlumNeedle.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 6707,
+      "class_name": "org.jfree.chart.plot.compass.PlumNeedle",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.plot.compass.PlumNeedle.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

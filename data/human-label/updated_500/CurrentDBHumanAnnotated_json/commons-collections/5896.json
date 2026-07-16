@@ -1,0 +1,90 @@
+{
+  "id": "5896",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.ReferenceMapTest_testValuesRemoveAll_20cfb74a",
+  "test_path": "org/apache/commons/collections4/map/ReferenceMapTest",
+  "test_name": "testValuesRemoveAll",
+  "body": "@Test\n    void testValuesRemoveAll() {\n        resetFull();\n        final Collection<V> values = getMap().values();\n        final List<V> sampleValuesAsList = Arrays.asList(getSampleValues());\n        if (!values.equals(sampleValuesAsList)) {\n            return;\n        }\n        try {\n            assertFalse(values.removeAll(Collections.<V>emptySet()));\n        } catch (final UnsupportedOperationException e) {\n            // if values.removeAll is unsupported, just skip this test\n            return;\n        }\n        assertEquals(sampleValuesAsList.size(), getMap().size());\n        try {\n            assertTrue(values.removeAll(sampleValuesAsList));\n        } catch (final UnsupportedOperationException e) {\n            // if values.removeAll is unsupported, just skip this test\n            return;\n        }\n        assertTrue(getMap().isEmpty());\n    }",
+  "invocations": [
+    "put",
+    "entrySet",
+    "keySet",
+    "size",
+    "values",
+    "AbstractReferenceMap",
+    "AbstractHashedMap",
+    "ReferenceMap"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.AbstractReferenceMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap.values()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractReferenceMap(org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, int, float, boolean)": {
+      "params_len": 5,
+      "params": [
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "int",
+        "float",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractHashedMap(int, float)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "float"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ReferenceMap(org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength, org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength",
+        "org.apache.commons.collections4.map.AbstractReferenceMap.ReferenceStrength"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.AbstractReferenceMap.values()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.AbstractReferenceMap.values()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 766,
+      "class_name": "org.apache.commons.collections4.map.AbstractReferenceMap",
+      "method_name": "values",
+      "signature": "org.apache.commons.collections4.map.AbstractReferenceMap.values()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

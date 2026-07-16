@@ -1,0 +1,83 @@
+{
+  "id": "5",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testMan_b8a29269",
+  "test_path": "org/apache/commons/cli/ApplicationTest",
+  "test_name": "testMan",
+  "body": "@Test\n    void testMan() {\n        final String cmdLine = \"man [-c|-f|-k|-w|-tZT device] [-adlhu7V] [-Mpath] [-Ppager] [-Slist] [-msystem] [-pstring] [-Llocale] [-eextension] [section]\"\n            + \" page ...\";\n        //@formatter:off\n        final Options options = new Options().\n                addOption(\"a\", \"all\", false, \"find all matching manual pages.\").\n                addOption(\"d\", \"debug\", false, \"emit debugging messages.\").\n                addOption(\"e\", \"extension\", false, \"limit search to extension type 'extension'.\").\n                addOption(\"f\", \"whatis\", false, \"equivalent to whatis.\").\n                addOption(\"k\", \"apropos\", false, \"equivalent to apropos.\").\n                addOption(\"w\", \"location\", false, \"print physical location of man page(s).\").\n                addOption(\"l\", \"local-file\", false, \"interpret 'page' argument(s) as local file name(s)\").\n                addOption(\"u\", \"update\", false, \"force a cache consistency check.\").\n                //FIXME - should generate -r,--prompt string\n                addOption(\"r\", \"prompt\", true, \"provide 'less' pager with prompt.\").\n                addOption(\"c\", \"catman\", false, \"used by catman to reformat out of date cat pages.\").\n                addOption(\"7\", \"ascii\", false, \"display ASCII translation or certain latin1 chars.\").\n                addOption(\"t\", \"troff\", false, \"use troff format pages.\").\n                //FIXME - should generate -T,--troff-device device\n                addOption(\"T\", \"troff-device\", true, \"use groff with selected device.\").\n                addOption(\"Z\", \"ditroff\", false, \"use groff with selected device.\").\n                addOption(\"D\", \"default\", false, \"reset all options to their default values.\").\n                //FIXME - should generate -M,--manpath path\n                addOption(\"M\", \"manpath\", true, \"set search path for manual pages to 'path'.\").\n                //FIXME - should generate -P,--pager pager\n                addOption(\"P\", \"pager\", true, \"use program 'pager' to display output.\").\n                //FIXME - should generate -S,--sections list\n                addOption(\"S\", \"sections\", true, \"use colon separated section list.\").\n                //FIXME - should generate -m,--systems system\n                addOption(\"m\", \"systems\", true, \"search for man pages from other Unix system(s).\").\n                //FIXME - should generate -L,--locale locale\n                addOption(\"L\", \"locale\", true, \"define the locale for this particular man search.\").\n                //FIXME - should generate -p,--preprocessor string\n                addOption(\"p\", \"preprocessor\", true, \"string indicates which preprocessor to run.\\n\" +\n                         \" e - [n]eqn  p - pic     t - tbl\\n\" +\n                         \" g - grap    r - refer   v - vgrind\").\n                addOption(\"V\", \"version\", false, \"show version.\").\n                addOption(\"h\", \"help\", false, \"show this usage message.\");\n        //@formatter:on\n\n        final HelpFormatter hf = new HelpFormatter();\n        final String eol = System.lineSeparator();\n        final StringWriter out = new StringWriter();\n        hf.printHelp(new PrintWriter(out), 60, cmdLine, null, options, HelpFormatter.DEFAULT_LEFT_PAD, HelpFormatter.DEFAULT_DESC_PAD, null, false);\n        //@formatter:off\n        assertEquals(\"usage: man [-c|-f|-k|-w|-tZT device] [-adlhu7V] [-Mpath]\" + eol +\n                        \"           [-Ppager] [-Slist] [-msystem] [-pstring]\" + eol +\n                        \"           [-Llocale] [-eextension] [section] page ...\" + eol +\n                        \" -7,--ascii                display ASCII translation or\" + eol +\n                        \"                           certain latin1 chars.\" + eol +\n                        \" -a,--all                  find all matching manual pages.\" + eol +\n                        \" -c,--catman               used by catman to reformat out of\" + eol +\n                        \"                           date cat pages.\" + eol +\n                        \" -d,--debug                emit debugging messages.\" + eol +\n                        \" -D,--default              reset all options to their\" + eol +\n                        \"                           default values.\" + eol +\n                        \" -e,--extension            limit search to extension type\" + eol +\n                        \"                           'extension'.\" + eol +\n                        \" -f,--whatis               equivalent to whatis.\" + eol +\n                        \" -h,--help                 show this usage message.\" + eol +\n                        \" -k,--apropos              equivalent to apropos.\" + eol +\n                        \" -l,--local-file           interpret 'page' argument(s) as\" + eol +\n                        \"                           local file name(s)\" + eol +\n                        \" -L,--locale <arg>         define the locale for this\" + eol +\n                        \"                           particular man search.\" + eol +\n                        \" -M,--manpath <arg>        set search path for manual pages\" + eol +\n                        \"                           to 'path'.\" + eol +\n                        \" -m,--systems <arg>        search for man pages from other\" + eol +\n                        \"                           Unix system(s).\" + eol +\n                        \" -P,--pager <arg>          use program 'pager' to display\" + eol +\n                        \"                           output.\" + eol +\n                        \" -p,--preprocessor <arg>   string indicates which\" + eol +\n                        \"                           preprocessor to run.\" + eol +\n                        \"                           e - [n]eqn  p - pic     t - tbl\" + eol +\n                        \"                           g - grap    r - refer   v -\" + eol +\n                        \"                           vgrind\" + eol +\n                        \" -r,--prompt <arg>         provide 'less' pager with prompt.\" + eol +\n                        \" -S,--sections <arg>       use colon separated section list.\" + eol +\n                        \" -t,--troff                use troff format pages.\" + eol +\n                        \" -T,--troff-device <arg>   use groff with selected device.\" + eol +\n                        \" -u,--update               force a cache consistency check.\" + eol +\n                        \" -V,--version              show version.\" + eol +\n                        \" -w,--location             print physical location of man\" + eol +\n                        \"                           page(s).\" + eol +\n                        \" -Z,--ditroff              use groff with selected device.\" + eol,\n                out.toString());\n        //@formatter:on\n    }",
+  "invocations": [
+    "addOption",
+    "Options",
+    "createDefaultPrintWriter",
+    "HelpFormatter",
+    "printHelp",
+    "HelpFormatter"
+  ],
+  "signature": {
+    "org.apache.commons.cli.Options.addOption(java.lang.String, java.lang.String, boolean, java.lang.String)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.lang.String",
+        "boolean",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.HelpFormatter.createDefaultPrintWriter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.HelpFormatter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.HelpFormatter.printHelp(java.io.PrintWriter, int, java.lang.String, java.lang.String, org.apache.commons.cli.Options, int, int, java.lang.String, boolean)": {
+      "params_len": 9,
+      "params": [
+        "java.io.PrintWriter",
+        "int",
+        "java.lang.String",
+        "java.lang.String",
+        "org.apache.commons.cli.Options",
+        "int",
+        "int",
+        "java.lang.String",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.HelpFormatter(java.util.function.Function<org.apache.commons.cli.Option, java.lang.String>, java.io.PrintWriter, boolean)": {
+      "params_len": 3,
+      "params": [
+        "java.util.function.Function<org.apache.commons.cli.Option",
+        "java.lang.String>",
+        "java.io.PrintWriter",
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.HelpFormatter.printHelp(java.io.PrintWriter, int, java.lang.String, java.lang.String, org.apache.commons.cli.Options, int, int, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.HelpFormatter.printHelp(java.io.PrintWriter, int, java.lang.String, java.lang.String, org.apache.commons.cli.Options, int, int, java.lang.String, boolean)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 321,
+      "class_name": "org.apache.commons.cli.HelpFormatter",
+      "method_name": "printHelp",
+      "signature": "org.apache.commons.cli.HelpFormatter.printHelp(java.io.PrintWriter, int, java.lang.String, java.lang.String, org.apache.commons.cli.Options, int, int, java.lang.String, boolean)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

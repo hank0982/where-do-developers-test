@@ -1,0 +1,51 @@
+{
+  "id": "1496",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.IOIndexedExceptionTest_testPlain_cb26ff59",
+  "test_path": "org/apache/commons/io/IOIndexedExceptionTest",
+  "test_name": "testPlain",
+  "body": "@Test\n    void testPlain() {\n        final EOFException e = new EOFException(\"end\");\n        final IOIndexedException exception = new IOIndexedException(0, e);\n        assertEquals(0, exception.getIndex());\n        assertEquals(e, exception.getCause());\n        assertNotNull(exception.getMessage());\n    }",
+  "invocations": [
+    "toMessage",
+    "getIndex",
+    "IOIndexedException"
+  ],
+  "signature": {
+    "org.apache.commons.io.IOIndexedException.toMessage(int, java.lang.Throwable)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "java.lang.Throwable"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.IOIndexedException.getIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.IOIndexedException(int, java.lang.Throwable)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "java.lang.Throwable"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.IOIndexedException(int, java.lang.Throwable)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.IOIndexedException(int, java.lang.Throwable)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3038,
+      "class_name": "org.apache.commons.io.IOIndexedException",
+      "method_name": "IOIndexedException",
+      "signature": "org.apache.commons.io.IOIndexedException(int, java.lang.Throwable)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

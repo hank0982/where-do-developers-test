@@ -1,0 +1,74 @@
+{
+  "id": "232",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.OverrideCoreTypeAdaptersTest_testOverrideStringAdapter_a3b3ef6b",
+  "test_path": "com/google/gson/OverrideCoreTypeAdaptersTest",
+  "test_name": "testOverrideStringAdapter",
+  "body": "@Test\n  public void testOverrideStringAdapter() {\n    Gson gson = new GsonBuilder().registerTypeAdapter(String.class, swapCaseStringAdapter).create();\n    assertThat(gson.toJson(\"Hello\", String.class)).isEqualTo(\"\\\"HELLO\\\"\");\n    assertThat(gson.fromJson(\"\\\"Hello\\\"\", String.class)).isEqualTo(\"hello\");\n  }",
+  "invocations": [
+    "toJson",
+    "fromJson",
+    "registerTypeAdapter",
+    "GsonBuilder",
+    "create"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.lang.reflect.Type"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder.registerTypeAdapter(java.lang.reflect.Type, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.reflect.Type",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.GsonBuilder.create()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)",
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)",
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 810,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object, java.lang.reflect.Type)"
+    },
+    {
+      "method_id": 811,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

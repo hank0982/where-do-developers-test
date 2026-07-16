@@ -1,0 +1,150 @@
+{
+  "id": "1469",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.gantt.TaskSeriesCollectionTest_testGetStartValue2_32b87520",
+  "test_path": "org/jfree/data/gantt/TaskSeriesCollectionTest",
+  "test_name": "testGetStartValue2",
+  "body": "@Test\n    public void testGetStartValue2() {\n        TaskSeriesCollection<String, String> c = createCollection2();\n        assertEquals(10L, c.getStartValue(\"S1\", \"Task 1\", 0));\n        assertEquals(16L, c.getStartValue(\"S1\", \"Task 1\", 1));\n        assertEquals(30L, c.getStartValue(\"S1\", \"Task 2\", 0));\n        assertEquals(36L, c.getStartValue(\"S1\", \"Task 2\", 1));\n        assertEquals(50L, c.getStartValue(\"S2\", \"Task 3\", 0));\n        assertEquals(56L, c.getStartValue(\"S2\", \"Task 3\", 1));\n\n        assertEquals(10L, c.getStartValue(0, 0, 0));\n        assertEquals(16L, c.getStartValue(0, 0, 1));\n        assertEquals(30L, c.getStartValue(0, 1, 0));\n        assertEquals(36L, c.getStartValue(0, 1, 1));\n        assertEquals(50L, c.getStartValue(1, 2, 0));\n        assertEquals(56L, c.getStartValue(1, 2, 1));\n\n        TaskSeriesCollection<String, String> c3 = createCollection3();\n        assertEquals(11L, c3.getStartValue(0, 0, 0));\n        assertEquals(22L, c3.getStartValue(0, 1, 0));\n        assertEquals(33L, c3.getStartValue(0, 1, 1));\n        assertNull(c3.getStartValue(1, 0, 0));\n        assertEquals(44L, c3.getStartValue(1, 1, 0));\n        assertEquals(55L, c3.getStartValue(1, 1, 1));\n        assertEquals(66L, c3.getStartValue(1, 1, 2));\n    }",
+  "invocations": [
+    "Series",
+    "AbstractSeriesDataset",
+    "AbstractDataset",
+    "getStartValue",
+    "getStartValue",
+    "add",
+    "TaskSeriesCollection",
+    "Task",
+    "addSubtask",
+    "Task",
+    "setPercentComplete",
+    "add",
+    "SimpleTimePeriod",
+    "SimpleTimePeriod"
+  ],
+  "signature": {
+    "org.jfree.data.general.Series(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractSeriesDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(int, int, int)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(R, C, int)": {
+      "params_len": 3,
+      "params": [
+        "R",
+        "C",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.TaskSeriesCollection.add(org.jfree.data.gantt.TaskSeries<R>)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.gantt.TaskSeries<R>"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.TaskSeriesCollection()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.Task(java.lang.String, java.util.Date, java.util.Date)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.util.Date",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.Task.addSubtask(org.jfree.data.gantt.Task)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.gantt.Task"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.Task(java.lang.String, org.jfree.data.time.TimePeriod)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "org.jfree.data.time.TimePeriod"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.Task.setPercentComplete(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.gantt.TaskSeries.add(org.jfree.data.gantt.Task)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.gantt.Task"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.SimpleTimePeriod(java.util.Date, java.util.Date)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Date",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.SimpleTimePeriod(long, long)": {
+      "params_len": 2,
+      "params": [
+        "long",
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(int, int, int)",
+    "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(R, C, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(int, int, int)",
+    "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(R, C, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 902,
+      "class_name": "org.jfree.data.gantt.TaskSeriesCollection",
+      "method_name": "getStartValue",
+      "signature": "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(int, int, int)"
+    },
+    {
+      "method_id": 910,
+      "class_name": "org.jfree.data.gantt.TaskSeriesCollection",
+      "method_name": "getStartValue",
+      "signature": "org.jfree.data.gantt.TaskSeriesCollection.getStartValue(R, C, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "3176",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.stat.descriptive.SynchronizedDescriptiveStatisticsTest_testInit0_b87013ae",
+  "test_path": "org/apache/commons/math4/legacy/stat/descriptive/SynchronizedDescriptiveStatisticsTest",
+  "test_name": "testInit0",
+  "body": "@Test\n    public void testInit0() {\n        //test window constructor\n        int window = 1 + random.nextInt(Integer.MAX_VALUE-1);\n        DescriptiveStatistics instance = new DescriptiveStatistics(window);\n        Assert.assertEquals(window,\n                            instance.getWindowSize());\n    }",
+  "invocations": [
+    "DescriptiveStatistics",
+    "getWindowSize"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics.getWindowSize()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 761,
+      "class_name": "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics",
+      "method_name": "DescriptiveStatistics",
+      "signature": "org.apache.commons.math4.legacy.stat.descriptive.DescriptiveStatistics(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

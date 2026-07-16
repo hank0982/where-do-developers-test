@@ -1,0 +1,43 @@
+{
+  "id": "6377",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.mutable.MutableObjectTest_testEquals_4d3b87b2",
+  "test_path": "org/apache/commons/lang3/mutable/MutableObjectTest",
+  "test_name": "testEquals",
+  "body": "@Test\n    void testEquals() {\n        final MutableObject<String> mutNumA = new MutableObject<>(\"ALPHA\");\n        final MutableObject<String> mutNumB = new MutableObject<>(\"ALPHA\");\n        final MutableObject<String> mutNumC = new MutableObject<>(\"BETA\");\n        final MutableObject<String> mutNumNull1 = new MutableObject<>(null);\n        final MutableObject<String> mutNumNull2 = new MutableObject<>(null);\n        assertFalse(mutNumA.equals(null));\n        assertEquals(mutNumA, mutNumA);\n        assertEquals(mutNumA, mutNumB);\n        assertEquals(mutNumB, mutNumA);\n        assertEquals(mutNumB, mutNumB);\n        assertNotEquals(mutNumA, mutNumC);\n        assertNotEquals(mutNumB, mutNumC);\n        assertEquals(mutNumC, mutNumC);\n        assertNotEquals(mutNumA, mutNumNull1);\n        assertEquals(mutNumNull1, mutNumNull1);\n        assertEquals(mutNumNull1, mutNumNull2);\n        assertEquals(mutNumNull2, mutNumNull1);\n\n        assertNotEquals(null, mutNumA);\n        assertNotEquals(mutNumA, new Object());\n        assertNotEquals(\"0\", mutNumA);\n    }",
+  "invocations": [
+    "MutableObject",
+    "equals"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.mutable.MutableObject(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.mutable.MutableObject.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.mutable.MutableObject.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.mutable.MutableObject.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2075,
+      "class_name": "org.apache.commons.lang3.mutable.MutableObject",
+      "method_name": "equals",
+      "signature": "org.apache.commons.lang3.mutable.MutableObject.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

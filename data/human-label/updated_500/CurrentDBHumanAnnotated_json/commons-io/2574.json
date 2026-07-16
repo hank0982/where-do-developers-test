@@ -1,0 +1,194 @@
+{
+  "id": "2574",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.file.CopyDirectoryVisitorTest_testCopyDirectoryFolders1FileSize0_767012ce",
+  "test_path": "org/apache/commons/io/file/CopyDirectoryVisitorTest",
+  "test_name": "testCopyDirectoryFolders1FileSize0",
+  "body": "@ParameterizedTest\n    @MethodSource(\"pathCounters\")\n    void testCopyDirectoryFolders1FileSize0(final PathCounters pathCounters) throws IOException {\n        final Path sourceDir = Paths.get(\"src/test/resources/org/apache/commons/io/dirs-1-file-size-0\");\n        final Supplier<CopyDirectoryVisitor> supplier = () -> new CopyDirectoryVisitor(pathCounters, sourceDir, targetDir, EXPECTED_COPY_OPTIONS);\n        final CopyDirectoryVisitor visitFileTree = PathUtils.visitFileTree(supplier.get(), sourceDir);\n        assertCounts(1, 1, 0, visitFileTree);\n        assertArrayEquals(EXPECTED_COPY_OPTIONS, visitFileTree.getCopyOptions());\n        assertEquals(sourceDir, visitFileTree.getSourceDirectory());\n        assertEquals(targetDir, visitFileTree.getTargetDirectory());\n        assertTrue(Files.exists(targetDir.resolve(\"file-size-0.bin\")));\n        // Tests equals and hashCode\n        assertEquals(visitFileTree, supplier.get());\n        assertEquals(visitFileTree.hashCode(), supplier.get().hashCode());\n        assertEquals(visitFileTree.hashCode(), visitFileTree.hashCode());\n    }",
+  "invocations": [
+    "getDirectoryCounter",
+    "getFileCounter",
+    "getByteCounter",
+    "getLong",
+    "getBigInteger",
+    "get",
+    "getTargetDirectory",
+    "getSourceDirectory",
+    "equals",
+    "getCopyOptions",
+    "CopyDirectoryVisitor",
+    "hashCode",
+    "SimplePathVisitor",
+    "AbstractBuilder",
+    "setPathCounters",
+    "AbstractBuilder",
+    "Builder",
+    "CountingPathVisitor",
+    "getPathCounters",
+    "CountingPathVisitor",
+    "AbstractSupplier"
+  ],
+  "signature": {
+    "org.apache.commons.io.file.Counters$AbstractPathCounters.getDirectoryCounter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$AbstractPathCounters.getFileCounter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$AbstractPathCounters.getByteCounter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$LongCounter.getLong()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$LongCounter.getBigInteger()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.Counters$LongCounter.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CopyDirectoryVisitor.getTargetDirectory()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CopyDirectoryVisitor.getSourceDirectory()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CopyDirectoryVisitor.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CopyDirectoryVisitor.getCopyOptions()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CopyDirectoryVisitor(org.apache.commons.io.file.Counters.PathCounters, java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])": {
+      "params_len": 4,
+      "params": [
+        "org.apache.commons.io.file.Counters.PathCounters",
+        "java.nio.file.Path",
+        "java.nio.file.Path",
+        "java.nio.file.CopyOption[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CopyDirectoryVisitor.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.SimplePathVisitor(org.apache.commons.io.file.SimplePathVisitor.AbstractBuilder<?, ?>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.file.SimplePathVisitor.AbstractBuilder<?",
+        "?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.SimplePathVisitor$AbstractBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CountingPathVisitor$AbstractBuilder.setPathCounters(org.apache.commons.io.file.Counters.PathCounters)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.file.Counters.PathCounters"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CountingPathVisitor$AbstractBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CountingPathVisitor$Builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CountingPathVisitor(org.apache.commons.io.file.Counters.PathCounters)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.file.Counters.PathCounters"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CountingPathVisitor.getPathCounters()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.file.CountingPathVisitor(org.apache.commons.io.file.CountingPathVisitor.AbstractBuilder<?, ?>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.file.CountingPathVisitor.AbstractBuilder<?",
+        "?>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractSupplier()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.file.CopyDirectoryVisitor.copy(java.nio.file.Path, java.nio.file.Path)",
+    "org.apache.commons.io.file.CopyDirectoryVisitor.visitFile(java.nio.file.Path, java.nio.file.attribute.BasicFileAttributes)",
+    "org.apache.commons.io.file.CopyDirectoryVisitor(org.apache.commons.io.file.Counters.PathCounters, java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])",
+    "org.apache.commons.io.file.CopyDirectoryVisitor.preVisitDirectory(java.nio.file.Path, java.nio.file.attribute.BasicFileAttributes)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.file.CopyDirectoryVisitor.copy(java.nio.file.Path, java.nio.file.Path)",
+    "org.apache.commons.io.file.CopyDirectoryVisitor.visitFile(java.nio.file.Path, java.nio.file.attribute.BasicFileAttributes)",
+    "org.apache.commons.io.file.CopyDirectoryVisitor(org.apache.commons.io.file.Counters.PathCounters, java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])",
+    "org.apache.commons.io.file.CopyDirectoryVisitor.preVisitDirectory(java.nio.file.Path, java.nio.file.attribute.BasicFileAttributes)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1078,
+      "class_name": "org.apache.commons.io.file.CopyDirectoryVisitor",
+      "method_name": "copy",
+      "signature": "org.apache.commons.io.file.CopyDirectoryVisitor.copy(java.nio.file.Path, java.nio.file.Path)"
+    },
+    {
+      "method_id": 1080,
+      "class_name": "org.apache.commons.io.file.CopyDirectoryVisitor",
+      "method_name": "visitFile",
+      "signature": "org.apache.commons.io.file.CopyDirectoryVisitor.visitFile(java.nio.file.Path, java.nio.file.attribute.BasicFileAttributes)"
+    },
+    {
+      "method_id": 1086,
+      "class_name": "org.apache.commons.io.file.CopyDirectoryVisitor",
+      "method_name": "CopyDirectoryVisitor",
+      "signature": "org.apache.commons.io.file.CopyDirectoryVisitor(org.apache.commons.io.file.Counters.PathCounters, java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])"
+    },
+    {
+      "method_id": 1087,
+      "class_name": "org.apache.commons.io.file.CopyDirectoryVisitor",
+      "method_name": "preVisitDirectory",
+      "signature": "org.apache.commons.io.file.CopyDirectoryVisitor.preVisitDirectory(java.nio.file.Path, java.nio.file.attribute.BasicFileAttributes)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

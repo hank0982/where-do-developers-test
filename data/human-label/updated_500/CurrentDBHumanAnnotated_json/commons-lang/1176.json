@@ -1,0 +1,35 @@
+{
+  "id": "1176",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testBinaryToHexDigitMsb0_bits_aa6a84d2",
+  "test_path": "org/apache/commons/lang3/ConversionTest_testBinaryToHexDigitMsb0",
+  "test_name": "bits",
+  "body": "@Test\n    void testBinaryToHexDigitMsb0_bits() {\n        assertEquals(\n            '0',\n            Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, false, false, false}));\n        assertEquals(\n            '1',\n            Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, false, false, true}));\n        assertEquals(\n            '2',\n            Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, false, true, false}));\n        assertEquals(\n            '3', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, false, true, true}));\n        assertEquals(\n            '4',\n            Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, true, false, false}));\n        assertEquals(\n            '5', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, true, false, true}));\n        assertEquals(\n            '6', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, true, true, false}));\n        assertEquals(\n            '7', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{false, true, true, true}));\n        assertEquals(\n            '8',\n            Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, false, false, false}));\n        assertEquals(\n            '9', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, false, false, true}));\n        assertEquals(\n            'a', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, false, true, false}));\n        assertEquals(\n            'b', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, false, true, true}));\n        assertEquals(\n            'c', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, true, false, false}));\n        assertEquals(\n            'd', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, true, false, true}));\n        assertEquals(\n            'e', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, true, true, false}));\n        assertEquals(\n            'f', Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{true, true, true, true}));\n        assertIllegalArgumentException(() -> Conversion.binaryToHexDigitMsb0_4bits(new boolean[]{}));\n    }",
+  "invocations": [
+    "binaryToHexDigitMsb0_4bits"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.Conversion.binaryToHexDigitMsb0_4bits(boolean[])": {
+      "params_len": 1,
+      "params": [
+        "boolean[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.Conversion.binaryToHexDigitMsb0_4bits(boolean[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.Conversion.binaryToHexDigitMsb0_4bits(boolean[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1404,
+      "class_name": "org.apache.commons.lang3.Conversion",
+      "method_name": "binaryToHexDigitMsb0_4bits",
+      "signature": "org.apache.commons.lang3.Conversion.binaryToHexDigitMsb0_4bits(boolean[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

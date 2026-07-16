@@ -1,0 +1,41 @@
+{
+  "id": "1042",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.internal.LazilyParsedNumberTest_testHashCode_48dcad11",
+  "test_path": "com/google/gson/internal/LazilyParsedNumberTest",
+  "test_name": "testHashCode",
+  "body": "@Test\n  public void testHashCode() {\n    LazilyParsedNumber n1 = new LazilyParsedNumber(\"1\");\n    LazilyParsedNumber n1Another = new LazilyParsedNumber(\"1\");\n    assertThat(n1Another.hashCode()).isEqualTo(n1.hashCode());\n  }",
+  "invocations": [
+    "hashCode",
+    "LazilyParsedNumber"
+  ],
+  "signature": {
+    "com.google.gson.internal.LazilyParsedNumber.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.internal.LazilyParsedNumber(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.internal.LazilyParsedNumber.hashCode()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.internal.LazilyParsedNumber.hashCode()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 284,
+      "class_name": "com.google.gson.internal.LazilyParsedNumber",
+      "method_name": "hashCode",
+      "signature": "com.google.gson.internal.LazilyParsedNumber.hashCode()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

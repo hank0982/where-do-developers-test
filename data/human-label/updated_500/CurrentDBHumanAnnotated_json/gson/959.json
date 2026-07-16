@@ -1,0 +1,36 @@
+{
+  "id": "959",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedBackslashInStringDeserialization_d41b154a",
+  "test_path": "com/google/gson/functional/StringTest",
+  "test_name": "testEscapedBackslashInStringDeserialization",
+  "body": "@Test\n  public void testEscapedBackslashInStringDeserialization() {\n    String actual = gson.fromJson(\"'a\\\\\\\\b'\", String.class);\n    assertThat(actual).isEqualTo(\"a\\\\b\");\n  }",
+  "invocations": [
+    "fromJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 811,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

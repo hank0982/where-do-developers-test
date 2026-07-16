@@ -1,0 +1,58 @@
+{
+  "id": "4997",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.HashCodeBuilderTest_testSuper_7a06ecca",
+  "test_path": "org/apache/commons/lang3/builder/HashCodeBuilderTest",
+  "test_name": "testSuper",
+  "body": "@Test\n    void testSuper() {\n        final Object obj = new Object();\n        assertEquals(INITIAL * CONSTANT + 19 * 41 + obj.hashCode(), new HashCodeBuilder(INITIAL, CONSTANT).appendSuper(\n                new HashCodeBuilder(19, 41).append(obj).toHashCode()).toHashCode());\n    }",
+  "invocations": [
+    "toHashCode",
+    "HashCodeBuilder",
+    "append",
+    "appendSuper"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.HashCodeBuilder.toHashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.HashCodeBuilder(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.HashCodeBuilder.append(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.HashCodeBuilder.appendSuper(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.HashCodeBuilder.appendSuper(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.HashCodeBuilder.appendSuper(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 794,
+      "class_name": "org.apache.commons.lang3.builder.HashCodeBuilder",
+      "method_name": "appendSuper",
+      "signature": "org.apache.commons.lang3.builder.HashCodeBuilder.appendSuper(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

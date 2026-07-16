@@ -1,0 +1,36 @@
+{
+  "id": "128",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ArrayUtilsRemoveMultipleTest_testRemoveAllNullObjectArray_85570fc9",
+  "test_path": "org/apache/commons/lang3/ArrayUtilsRemoveMultipleTest",
+  "test_name": "testRemoveAllNullObjectArray",
+  "body": "@Test\n    void testRemoveAllNullObjectArray() {\n        assertNull(ArrayUtils.removeAll((Object[]) null));\n        assertNull(ArrayUtils.removeAll((Object[]) null, 0));\n        assertNull(ArrayUtils.removeAll((Object[]) null, NULL_INDICES));\n        final Object[] array0 = {};\n        assertArrayEquals(array0, ArrayUtils.removeAll(array0, NULL_INDICES));\n        assertNotSame(array0, ArrayUtils.removeAll(array0, NULL_INDICES));\n        final Object[] array1 = new Object[1];\n        assertArrayEquals(array1, ArrayUtils.removeAll(array1, NULL_INDICES));\n        assertNotSame(array1, ArrayUtils.removeAll(array1, NULL_INDICES));\n    }",
+  "invocations": [
+    "removeAll"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.ArrayUtils.removeAll(T[], int[])": {
+      "params_len": 2,
+      "params": [
+        "T[]",
+        "int[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ArrayUtils.removeAll(T[], int[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ArrayUtils.removeAll(T[], int[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3259,
+      "class_name": "org.apache.commons.lang3.ArrayUtils",
+      "method_name": "removeAll",
+      "signature": "org.apache.commons.lang3.ArrayUtils.removeAll(T[], int[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

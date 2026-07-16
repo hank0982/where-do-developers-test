@@ -1,0 +1,83 @@
+{
+  "id": "5238",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.builder.ToStringBuilderTest_testFloatArray_81f8e8d0",
+  "test_path": "org/apache/commons/lang3/builder/ToStringBuilderTest",
+  "test_name": "testFloatArray",
+  "body": "@Test\n    void testFloatArray() {\n        float[] array = { 1.0f, 2.9876f, -3.00001f, 4.3f };\n        assertEquals(baseStr + \"[{1.0,2.9876,-3.00001,4.3}]\", new ToStringBuilder(base).append(array).toString());\n        assertEquals(baseStr + \"[{1.0,2.9876,-3.00001,4.3}]\", new ToStringBuilder(base).append((Object) array).toString());\n        array = null;\n        assertEquals(baseStr + \"[<null>]\", new ToStringBuilder(base).append(array).toString());\n        assertEquals(baseStr + \"[<null>]\", new ToStringBuilder(base).append((Object) array).toString());\n    }",
+  "invocations": [
+    "append",
+    "append",
+    "toString",
+    "ToStringBuilder",
+    "ToStringBuilder"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(float[])": {
+      "params_len": 1,
+      "params": [
+        "float[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.builder.ToStringBuilder(java.lang.Object, org.apache.commons.lang3.builder.ToStringStyle, java.lang.StringBuffer)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "org.apache.commons.lang3.builder.ToStringStyle",
+        "java.lang.StringBuffer"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)",
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(float[])",
+    "org.apache.commons.lang3.builder.ToStringBuilder.toString()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)",
+    "org.apache.commons.lang3.builder.ToStringBuilder.append(float[])",
+    "org.apache.commons.lang3.builder.ToStringBuilder.toString()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 611,
+      "class_name": "org.apache.commons.lang3.builder.ToStringBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.builder.ToStringBuilder.append(java.lang.Object)"
+    },
+    {
+      "method_id": 624,
+      "class_name": "org.apache.commons.lang3.builder.ToStringBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.builder.ToStringBuilder.append(float[])"
+    },
+    {
+      "method_id": 630,
+      "class_name": "org.apache.commons.lang3.builder.ToStringBuilder",
+      "method_name": "toString",
+      "signature": "org.apache.commons.lang3.builder.ToStringBuilder.toString()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

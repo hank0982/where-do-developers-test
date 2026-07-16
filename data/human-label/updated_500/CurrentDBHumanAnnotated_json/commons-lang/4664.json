@@ -1,0 +1,35 @@
+{
+  "id": "4664",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ValidateTest$NoNullElements$WithCollection$WithoutMessage_shouldNotThrowExceptionForNonEmptyCollection_8a7f369f",
+  "test_path": "org/apache/commons/lang3/ValidateTest$NoNullElements$WithCollection$WithoutMessage",
+  "test_name": "shouldNotThrowExceptionForNonEmptyCollection",
+  "body": "@Test\n                void shouldNotThrowExceptionForNonEmptyCollection() {\n                    Validate.noNullElements(Collections.singleton(\"a\"));\n                }",
+  "invocations": [
+    "noNullElements"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.Validate.noNullElements(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.Validate.noNullElements(T)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.Validate.noNullElements(T)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 90,
+      "class_name": "org.apache.commons.lang3.Validate",
+      "method_name": "noNullElements",
+      "signature": "org.apache.commons.lang3.Validate.noNullElements(T)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "2519",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.comparator.NameFileComparatorTest_testSortListNull_ff9d4076",
+  "test_path": "org/apache/commons/io/comparator/NameFileComparatorTest",
+  "test_name": "testSortListNull",
+  "body": "@Test\n    void testSortListNull() {\n        assertNull(comparator.sort((List<File>) null));\n    }",
+  "invocations": [
+    "sort"
+  ],
+  "signature": {
+    "org.apache.commons.io.comparator.AbstractFileComparator.sort(java.util.List<java.io.File>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<java.io.File>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.comparator.AbstractFileComparator.sort(java.util.List<java.io.File>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.comparator.AbstractFileComparator.sort(java.util.List<java.io.File>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1348,
+      "class_name": "org.apache.commons.io.comparator.AbstractFileComparator",
+      "method_name": "sort",
+      "signature": "org.apache.commons.io.comparator.AbstractFileComparator.sort(java.util.List<java.io.File>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

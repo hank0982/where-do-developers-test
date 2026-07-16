@@ -1,0 +1,52 @@
+{
+  "id": "456",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest_testPublicCloneable_d4c44add",
+  "test_path": "org/jfree/chart/labels/StandardCategoryToolTipGeneratorTest",
+  "test_name": "testPublicCloneable",
+  "body": "@Test\n    public void testPublicCloneable() {\n        StandardCategoryToolTipGenerator g1\n                = new StandardCategoryToolTipGenerator();\n        assertTrue(g1 instanceof PublicCloneable);\n    }",
+  "invocations": [
+    "StandardCategoryToolTipGenerator",
+    "AbstractCategoryItemLabelGenerator",
+    "AbstractCategoryItemLabelGenerator"
+  ],
+  "signature": {
+    "org.jfree.chart.labels.StandardCategoryToolTipGenerator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.AbstractCategoryItemLabelGenerator(java.lang.String, java.text.NumberFormat)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.text.NumberFormat"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.AbstractCategoryItemLabelGenerator(java.lang.String, java.text.NumberFormat, java.text.NumberFormat)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.text.NumberFormat",
+        "java.text.NumberFormat"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.labels.StandardCategoryToolTipGenerator()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.labels.StandardCategoryToolTipGenerator()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 7469,
+      "class_name": "org.jfree.chart.labels.StandardCategoryToolTipGenerator",
+      "method_name": "StandardCategoryToolTipGenerator",
+      "signature": "org.jfree.chart.labels.StandardCategoryToolTipGenerator()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

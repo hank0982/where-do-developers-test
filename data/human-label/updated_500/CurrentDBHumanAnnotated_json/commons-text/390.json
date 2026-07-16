@@ -1,0 +1,44 @@
+{
+  "id": "390",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.StringEscapeUtilsTest_testEscapeJava_a4ca4436",
+  "test_path": "org/apache/commons/text/StringEscapeUtilsTest",
+  "test_name": "testEscapeJava",
+  "body": "@Test\n    void testEscapeJava() throws IOException {\n        assertNull(StringEscapeUtils.escapeJava(null));\n        try {\n            StringEscapeUtils.ESCAPE_JAVA.translate(null, null);\n            fail(\"Exception expected!\");\n        } catch (final IOException ex) {\n            fail(\"Exception expected!\");\n        } catch (final IllegalArgumentException ex) {\n            // expected\n        }\n        try {\n            StringEscapeUtils.ESCAPE_JAVA.translate(\"\", null);\n            fail(\"Exception expected!\");\n        } catch (final IOException ex) {\n            fail(\"Exception expected!\");\n        } catch (final IllegalArgumentException ex) {\n            // expected\n        }\n\n        assertEscapeJava(\"\", \"\", \"empty string\");\n        assertEscapeJava(FOO, FOO);\n        assertEscapeJava(\"\\\\t\", \"\\t\", \"tab\");\n        assertEscapeJava(\"\\\\\\\\\", \"\\\\\", \"backslash\");\n        assertEscapeJava(\"'\", \"'\", \"single quote should not be escaped\");\n        assertEscapeJava(\"\\\\\\\\\\\\b\\\\t\\\\r\", \"\\\\\\b\\t\\r\");\n        assertEscapeJava(\"\\\\u1234\", \"\\u1234\");\n        assertEscapeJava(\"\\\\u0234\", \"\\u0234\");\n        assertEscapeJava(\"\\\\u00EF\", \"\\u00ef\");\n        assertEscapeJava(\"\\\\u0001\", \"\\u0001\");\n        assertEscapeJava(\"\\\\uABCD\", \"\\uabcd\", \"Should use capitalized Unicode hex\");\n\n        assertEscapeJava(\"He didn't say, \\\\\\\"stop!\\\\\\\"\", \"He didn't say, \\\"stop!\\\"\");\n        assertEscapeJava(\"This space is non-breaking:\\\\u00A0\", \"This space is non-breaking:\\u00a0\", \"non-breaking space\");\n        assertEscapeJava(\"\\\\uABCD\\\\u1234\\\\u012C\", \"\\uABCD\\u1234\\u012C\");\n    }",
+  "invocations": [
+    "escapeJava",
+    "translate"
+  ],
+  "signature": {
+    "org.apache.commons.text.StringEscapeUtils.escapeJava(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.translate.CharSequenceTranslator.translate(java.lang.CharSequence, java.io.Writer)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.CharSequence",
+        "java.io.Writer"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.StringEscapeUtils.escapeJava(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.StringEscapeUtils.escapeJava(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 98,
+      "class_name": "org.apache.commons.text.StringEscapeUtils",
+      "method_name": "escapeJava",
+      "signature": "org.apache.commons.text.StringEscapeUtils.escapeJava(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

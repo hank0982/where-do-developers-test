@@ -1,0 +1,67 @@
+{
+  "id": "511",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.util.SubnetUtilsTest_testSubnetAddressStreamCount_92bde828",
+  "test_path": "org/apache/commons/net/util/SubnetUtilsTest",
+  "test_name": "testSubnetAddressStreamCount",
+  "body": "@ParameterizedTest\n    @FieldSource(\"CIDR_SIZES\")\n    public void testSubnetAddressStreamCount(final ImmutablePair<String, Long> pair) {\n        final String cidrNotation = pair.getKey();\n        final long max = pair.getValue();\n        final SubnetUtils subnetUtils = new SubnetUtils(cidrNotation);\n        // Fixture values includes counting the host\n        subnetUtils.setInclusiveHostCount(true);\n        assertEquals(max, subnetUtils.getInfo().streamAddressStrings().count());\n    }",
+  "invocations": [
+    "SubnetUtils",
+    "setInclusiveHostCount",
+    "getInfo",
+    "streamAddressStrings",
+    "hasNext",
+    "next"
+  ],
+  "signature": {
+    "org.apache.commons.net.util.SubnetUtils(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.util.SubnetUtils.setInclusiveHostCount(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.util.SubnetUtils.getInfo()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.util.SubnetUtils$SubnetInfo.streamAddressStrings()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.util.SubnetUtils$SubnetAddressStringIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.util.SubnetUtils$SubnetAddressStringIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.util.SubnetUtils$SubnetInfo.streamAddressStrings()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.util.SubnetUtils$SubnetInfo.streamAddressStrings()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 85,
+      "class_name": "org.apache.commons.net.util.SubnetUtils$SubnetInfo",
+      "method_name": "streamAddressStrings",
+      "signature": "org.apache.commons.net.util.SubnetUtils$SubnetInfo.streamAddressStrings()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

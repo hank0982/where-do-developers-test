@@ -1,0 +1,36 @@
+{
+  "id": "414",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.DefaultTypeAdaptersTest_testStringBuilderDeserialization_0ef59af7",
+  "test_path": "com/google/gson/functional/DefaultTypeAdaptersTest",
+  "test_name": "testStringBuilderDeserialization",
+  "body": "@Test\n  public void testStringBuilderDeserialization() {\n    StringBuilder sb = gson.fromJson(\"'abc'\", StringBuilder.class);\n    assertThat(sb.toString()).isEqualTo(\"abc\");\n  }",
+  "invocations": [
+    "fromJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 811,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

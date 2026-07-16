@@ -1,0 +1,54 @@
+{
+  "id": "14209",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastDateParserTest_testParses_18bdca72",
+  "test_path": "org/apache/commons/lang3/time/FastDateParserTest",
+  "test_name": "testParses",
+  "body": "@CartesianTest\n    @CartesianTest.MethodFactory(\"testParsesFactory\")\n    // Check that all Locales can parse the formats we use\n    void testParses(final String format, final Locale locale, final TimeZone timeZone, final int year) throws Exception {\n        final Calendar cal = getEraStart(year, timeZone, locale);\n        final Date centuryStart = cal.getTime();\n        cal.set(Calendar.MONTH, 1);\n        cal.set(Calendar.DAY_OF_MONTH, 10);\n        final Date in = cal.getTime();\n        final FastDateParser fastDateParser = new FastDateParser(format, timeZone, locale, centuryStart);\n        validateSdfFormatFdpParseEquality(format, locale, timeZone, fastDateParser, in, year, centuryStart);\n    }",
+  "invocations": [
+    "parse",
+    "FastDateParser"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2598,
+      "class_name": "org.apache.commons.lang3.time.FastDateParser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+    },
+    {
+      "method_id": 2605,
+      "class_name": "org.apache.commons.lang3.time.FastDateParser",
+      "method_name": "FastDateParser",
+      "signature": "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

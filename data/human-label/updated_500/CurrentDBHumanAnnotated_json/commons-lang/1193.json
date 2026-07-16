@@ -1,0 +1,39 @@
+{
+  "id": "1193",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ConversionTest_testHexToByte_b3dd16ad",
+  "test_path": "org/apache/commons/lang3/ConversionTest",
+  "test_name": "testHexToByte",
+  "body": "@Test\n    void testHexToByte() {\n        final String src = \"CDF1F0C10F12345678\";\n        assertEquals((byte) 0x00, Conversion.hexToByte(src, 0, (byte) 0, 0, 0));\n        assertEquals((byte) 0x0C, Conversion.hexToByte(src, 0, (byte) 0, 0, 1));\n        assertEquals((byte) 0xDC, Conversion.hexToByte(src, 0, (byte) 0, 0, 2));\n        assertEquals((byte) 0xFD, Conversion.hexToByte(src, 1, (byte) 0, 0, 2));\n        assertEquals((byte) 0x34, Conversion.hexToByte(src, 0, (byte) 0x34, 0, 0));\n        assertEquals((byte) 0x84, Conversion.hexToByte(src, 17, (byte) 0x34, 4, 1));\n        assertThrows(StringIndexOutOfBoundsException.class, () -> Conversion.hexToByte(src, src.length(), (byte) 0, 0, 1));\n        assertThrows(StringIndexOutOfBoundsException.class, () -> Conversion.hexToByte(src, Integer.MIN_VALUE, (byte) 0, 0, 1));\n        assertThrows(StringIndexOutOfBoundsException.class, () -> Conversion.hexToByte(src, Integer.MAX_VALUE, (byte) 0, 0, 1));\n    }",
+  "invocations": [
+    "hexToByte"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.Conversion.hexToByte(java.lang.String, int, byte, int, int)": {
+      "params_len": 5,
+      "params": [
+        "java.lang.String",
+        "int",
+        "byte",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.Conversion.hexToByte(java.lang.String, int, byte, int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.Conversion.hexToByte(java.lang.String, int, byte, int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1410,
+      "class_name": "org.apache.commons.lang3.Conversion",
+      "method_name": "hexToByte",
+      "signature": "org.apache.commons.lang3.Conversion.hexToByte(java.lang.String, int, byte, int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

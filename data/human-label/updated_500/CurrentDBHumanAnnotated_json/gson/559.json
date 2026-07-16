@@ -1,0 +1,66 @@
+{
+  "id": "559",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.JsonAdapterAnnotationOnClassesTest_testJsonAdapterInvoked_5818f907",
+  "test_path": "com/google/gson/functional/JsonAdapterAnnotationOnClassesTest",
+  "test_name": "testJsonAdapterInvoked",
+  "body": "@Test\n  public void testJsonAdapterInvoked() {\n    Gson gson = new Gson();\n    String json = gson.toJson(new A(\"bar\"));\n    assertThat(json).isEqualTo(\"\\\"jsonAdapter\\\"\");\n\n    // Also invoke the JsonAdapter javadoc sample\n    json = gson.toJson(new User(\"Inderjeet\", \"Singh\"));\n    assertThat(json).isEqualTo(\"{\\\"name\\\":\\\"Inderjeet Singh\\\"}\");\n    User user = gson.fromJson(\"{'name':'Joel Leitch'}\", User.class);\n    assertThat(user.firstName).isEqualTo(\"Joel\");\n    assertThat(user.lastName).isEqualTo(\"Leitch\");\n\n    json = gson.toJson(Foo.BAR);\n    assertThat(json).isEqualTo(\"\\\"bar\\\"\");\n    Foo baz = gson.fromJson(\"\\\"baz\\\"\", Foo.class);\n    assertThat(baz).isEqualTo(Foo.BAZ);\n  }",
+  "invocations": [
+    "Gson",
+    "toJson",
+    "Gson",
+    "fromJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson(com.google.gson.GsonBuilder)": {
+      "params_len": 1,
+      "params": [
+        "com.google.gson.GsonBuilder"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)",
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)",
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    },
+    {
+      "method_id": 811,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

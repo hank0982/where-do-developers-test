@@ -1,0 +1,44 @@
+{
+  "id": "1571",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.views.common.ViewMessageBodyWriterTest_detectLocaleShouldReturnCorrectLocale_4206df05",
+  "test_path": "io/dropwizard/views/common/ViewMessageBodyWriterTest",
+  "test_name": "detectLocaleShouldReturnCorrectLocale",
+  "body": "@Test\n    void detectLocaleShouldReturnCorrectLocale() {\n        final Locale fakeLocale = new Locale(\"en-US\");\n        when(headers.getAcceptableLanguages()).thenReturn(Collections.singletonList(fakeLocale));\n\n        final ViewMessageBodyWriter writer = new ViewMessageBodyWriter(metricRegistry, Collections.emptyList());\n\n        assertThat(writer.detectLocale(headers))\n            .isSameAs(fakeLocale);\n    }",
+  "invocations": [
+    "detectLocale",
+    "ViewMessageBodyWriter"
+  ],
+  "signature": {
+    "io.dropwizard.views.common.ViewMessageBodyWriter.detectLocale(io.dropwizard.views.common.HttpHeaders)": {
+      "params_len": 1,
+      "params": [
+        "io.dropwizard.views.common.HttpHeaders"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.views.common.ViewMessageBodyWriter(io.dropwizard.views.common.MetricRegistry, java.lang.Iterable<io.dropwizard.views.common.ViewRenderer>)": {
+      "params_len": 2,
+      "params": [
+        "io.dropwizard.views.common.MetricRegistry",
+        "java.lang.Iterable<io.dropwizard.views.common.ViewRenderer>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "io.dropwizard.views.common.ViewMessageBodyWriter.detectLocale(io.dropwizard.views.common.HttpHeaders)"
+  ],
+  "current_db_human_annotation": [
+    "io.dropwizard.views.common.ViewMessageBodyWriter.detectLocale(io.dropwizard.views.common.HttpHeaders)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2753,
+      "class_name": "io.dropwizard.views.common.ViewMessageBodyWriter",
+      "method_name": "detectLocale",
+      "signature": "io.dropwizard.views.common.ViewMessageBodyWriter.detectLocale(io.dropwizard.views.common.HttpHeaders)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

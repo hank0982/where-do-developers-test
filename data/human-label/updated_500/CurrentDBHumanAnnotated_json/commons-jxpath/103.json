@@ -1,0 +1,58 @@
+{
+  "id": "103",
+  "project": "commons-jxpath",
+  "current_db_test_name": "org.apache.commons.jxpath.ri.compiler.VariableTest_testRemovePathArrayElement_15b7907f",
+  "test_path": "org/apache/commons/jxpath/ri/compiler/VariableTest",
+  "test_name": "testRemovePathArrayElement",
+  "body": "@Test\n    void testRemovePathArrayElement() {\n        // Remove array element - reassigns the new array to the var\n        context.getVariables().declareVariable(\"temp\", new String[] { \"temp1\", \"temp2\" });\n        context.removePath(\"$temp[1]\");\n        assertEquals(\"temp2\", context.getValue(\"$temp[1]\"), \"Remove array element\");\n    }",
+  "invocations": [
+    "removePath",
+    "getValue",
+    "declareVariable",
+    "getVariables"
+  ],
+  "signature": {
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.removePath(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.getValue(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.BasicVariables.declareVariable(java.lang.String, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.JXPathContext.getVariables()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.removePath(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.removePath(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 238,
+      "class_name": "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl",
+      "method_name": "removePath",
+      "signature": "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.removePath(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

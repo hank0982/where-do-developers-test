@@ -1,0 +1,166 @@
+{
+  "id": "424",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionItemBroadphaseTest_updateSmall_57a50668",
+  "test_path": "org/dyn4j/collision/broadphase/CollisionItemBroadphaseTest",
+  "test_name": "updateSmall",
+  "body": "@Test\n\tpublic void updateSmall() {\n\t\tAABBExpansionMethod<?> method = this.broadphase.getAABBExpansionMethod();\n\t\tif (!(method instanceof NullAABBExpansionMethod)) {\n\t\t\tTestCollisionBody ct = new TestCollisionBody(Geometry.createCircle(1.0));\n\t\t\tFixture f = ct.getFixture(0);\n\t\t\t\n\t\t\t// add the item to the broadphases\n\t\t\tthis.broadphase.add(ct);\n\t\t\tthis.broadphase.clearUpdates();\n\t\t\t\n\t\t\t// get the current aabb\n\t\t\tAABB aabb = this.broadphase.getAABB(ct, f).copy();\n\t\t\t\n\t\t\t// move the collidable a bit\n\t\t\tdouble dx = EXPANSION / 2.0;\n\t\t\tif (dx <= 0.0) {\n\t\t\t\tdx = 0.05;\n\t\t\t}\n\t\t\tct.translate(dx, 0.0);\n\t\t\t\n\t\t\t// update the broadphases\n\t\t\tthis.broadphase.update(ct, f);\n\t\t\t\n\t\t\t// the aabbs should not have been updated because of the expansion code\n\t\t\tTestCase.assertEquals(aabb, this.broadphase.getAABB(ct, f));\n\t\t\t\n\t\t\t// check for update\n\t\t\tif (this.broadphase.isUpdateTrackingEnabled()) {\n\t\t\t\tTestCase.assertFalse(this.broadphase.isUpdated(ct));\n\t\t\t\tTestCase.assertFalse(this.broadphase.isUpdated(new BasicCollisionItem<TestCollisionBody, Fixture>(ct, f)));\n\t\t\t\tTestCase.assertFalse(this.broadphase.isUpdated(ct, f));\n\t\t\t}\n\t\t}\n\t}",
+  "invocations": [
+    "Fixture",
+    "translate",
+    "getFixture",
+    "AbstractCollisionBody",
+    "AbstractCollisionBody",
+    "getAABB",
+    "isUpdated",
+    "isUpdated",
+    "update",
+    "add",
+    "isUpdateTrackingEnabled",
+    "clearUpdates",
+    "getAABBExpansionMethod",
+    "isUpdated",
+    "BasicCollisionItem",
+    "createCircle",
+    "equals",
+    "copy"
+  ],
+  "signature": {
+    "org.dyn4j.collision.Fixture(org.dyn4j.geometry.Convex)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.Convex"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody.translate(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody.getFixture(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.getAABB(T, E)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.isUpdated(T, E)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.isUpdated(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.update(T, E)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.add(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.BroadphaseDetectorDecoratorAdapter.isUpdateTrackingEnabled()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.BroadphaseDetectorDecoratorAdapter.clearUpdates()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.BroadphaseDetectorDecoratorAdapter.getAABBExpansionMethod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.BroadphaseDetectorDecoratorAdapter.isUpdated(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.BasicCollisionItem(T, E)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createCircle(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.AABB.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.AABB.copy()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.update(T, E)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.update(T, E)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1320,
+      "class_name": "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter",
+      "method_name": "update",
+      "signature": "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.update(T, E)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

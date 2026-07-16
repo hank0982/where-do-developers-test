@@ -1,0 +1,45 @@
+{
+  "id": "195",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.JsonStreamParserTest_testNoSideEffectForHasNext_46b456ac",
+  "test_path": "com/google/gson/JsonStreamParserTest",
+  "test_name": "testNoSideEffectForHasNext",
+  "body": "@Test\n  public void testNoSideEffectForHasNext() {\n    assertThat(parser.hasNext()).isTrue();\n    assertThat(parser.hasNext()).isTrue();\n    assertThat(parser.hasNext()).isTrue();\n    assertThat(parser.next().getAsString()).isEqualTo(\"one\");\n\n    assertThat(parser.hasNext()).isTrue();\n    assertThat(parser.hasNext()).isTrue();\n    assertThat(parser.next().getAsString()).isEqualTo(\"two\");\n\n    assertThat(parser.hasNext()).isFalse();\n    assertThat(parser.hasNext()).isFalse();\n  }",
+  "invocations": [
+    "hasNext",
+    "next",
+    "getAsString"
+  ],
+  "signature": {
+    "com.google.gson.JsonStreamParser.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonStreamParser.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonPrimitive.getAsString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.JsonStreamParser.hasNext()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.JsonStreamParser.hasNext()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 927,
+      "class_name": "com.google.gson.JsonStreamParser",
+      "method_name": "hasNext",
+      "signature": "com.google.gson.JsonStreamParser.hasNext()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

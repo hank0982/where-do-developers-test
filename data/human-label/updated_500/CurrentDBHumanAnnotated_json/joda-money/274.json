@@ -1,0 +1,47 @@
+{
+  "id": "274",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_negated_negative_86d1bf80",
+  "test_path": "org/joda/money/TestBigMoney_test_negated",
+  "test_name": "negative",
+  "body": "@Test\n    void test_negated_negative() {\n        var test = BigMoney.parse(\"GBP -2.34\").negated();\n        assertThat(test).hasToString(\"GBP 2.34\");\n    }",
+  "invocations": [
+    "parse",
+    "negated",
+    "toString"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.BigMoney.negated()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.BigMoney.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.negated()"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.negated()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 234,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "negated",
+      "signature": "org.joda.money.BigMoney.negated()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

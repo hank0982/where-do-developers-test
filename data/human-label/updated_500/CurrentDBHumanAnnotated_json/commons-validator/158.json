@@ -1,0 +1,71 @@
+{
+  "id": "158",
+  "project": "commons-validator",
+  "current_db_test_name": "org.apache.commons.validator.routines.ByteValidatorTest_testRangeMinMax_05f6e71e",
+  "test_path": "org/apache/commons/validator/routines/ByteValidatorTest",
+  "test_name": "testRangeMinMax",
+  "body": "@Test\n    void testRangeMinMax() {\n        final Number number9 = Integer.valueOf(9);\n        final Number number10 = Integer.valueOf(10);\n        final Number number11 = Integer.valueOf(11);\n        final Number number19 = Integer.valueOf(19);\n        final Number number20 = Integer.valueOf(20);\n        final Number number21 = Integer.valueOf(21);\n\n        // Test isInRange()\n        assertFalse(strictValidator.isInRange(number9, number10, number20), \"isInRange() < min\");\n        assertTrue(strictValidator.isInRange(number10, number10, number20), \"isInRange() = min\");\n        assertTrue(strictValidator.isInRange(number11, number10, number20), \"isInRange() in range\");\n        assertTrue(strictValidator.isInRange(number20, number10, number20), \"isInRange() = max\");\n        assertFalse(strictValidator.isInRange(number21, number10, number20), \"isInRange() > max\");\n\n        // Test minValue()\n        assertFalse(strictValidator.minValue(number9, number10), \"minValue() < min\");\n        assertTrue(strictValidator.minValue(number10, number10), \"minValue() = min\");\n        assertTrue(strictValidator.minValue(number11, number10), \"minValue() > min\");\n\n        // Test minValue()\n        assertTrue(strictValidator.maxValue(number19, number20), \"maxValue() < max\");\n        assertTrue(strictValidator.maxValue(number20, number20), \"maxValue() = max\");\n        assertFalse(strictValidator.maxValue(number21, number20), \"maxValue() > max\");\n    }",
+  "invocations": [
+    "minValue",
+    "maxValue",
+    "isInRange"
+  ],
+  "signature": {
+    "org.apache.commons.validator.routines.AbstractNumberValidator.minValue(java.lang.Number, java.lang.Number)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Number",
+        "java.lang.Number"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.routines.AbstractNumberValidator.maxValue(java.lang.Number, java.lang.Number)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Number",
+        "java.lang.Number"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.routines.AbstractNumberValidator.isInRange(java.lang.Number, java.lang.Number, java.lang.Number)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Number",
+        "java.lang.Number",
+        "java.lang.Number"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.validator.routines.AbstractNumberValidator.minValue(java.lang.Number, java.lang.Number)",
+    "org.apache.commons.validator.routines.AbstractNumberValidator.maxValue(java.lang.Number, java.lang.Number)",
+    "org.apache.commons.validator.routines.AbstractNumberValidator.isInRange(java.lang.Number, java.lang.Number, java.lang.Number)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.validator.routines.AbstractNumberValidator.minValue(java.lang.Number, java.lang.Number)",
+    "org.apache.commons.validator.routines.AbstractNumberValidator.maxValue(java.lang.Number, java.lang.Number)",
+    "org.apache.commons.validator.routines.AbstractNumberValidator.isInRange(java.lang.Number, java.lang.Number, java.lang.Number)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 406,
+      "class_name": "org.apache.commons.validator.routines.AbstractNumberValidator",
+      "method_name": "minValue",
+      "signature": "org.apache.commons.validator.routines.AbstractNumberValidator.minValue(java.lang.Number, java.lang.Number)"
+    },
+    {
+      "method_id": 411,
+      "class_name": "org.apache.commons.validator.routines.AbstractNumberValidator",
+      "method_name": "maxValue",
+      "signature": "org.apache.commons.validator.routines.AbstractNumberValidator.maxValue(java.lang.Number, java.lang.Number)"
+    },
+    {
+      "method_id": 416,
+      "class_name": "org.apache.commons.validator.routines.AbstractNumberValidator",
+      "method_name": "isInRange",
+      "signature": "org.apache.commons.validator.routines.AbstractNumberValidator.isInRange(java.lang.Number, java.lang.Number, java.lang.Number)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

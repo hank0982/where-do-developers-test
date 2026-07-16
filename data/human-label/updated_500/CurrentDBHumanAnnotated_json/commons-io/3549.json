@@ -1,0 +1,53 @@
+{
+  "id": "3549",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.BrokenReaderTest_testReadCharArrayIndexed_7e0fd364",
+  "test_path": "org/apache/commons/io/input/BrokenReaderTest",
+  "test_name": "testReadCharArrayIndexed",
+  "body": "@ParameterizedTest\n    @MethodSource(\"org.apache.commons.io.BrokenTestFactories#parameters\")\n    void testReadCharArrayIndexed(final Class<Throwable> clazz) throws Exception {\n        final Throwable exception = clazz.newInstance();\n        @SuppressWarnings(\"resource\")\n        final BrokenReader brokenReader = createBrokenReader(exception);\n        final char[] cbuf = new char[1];\n        assertEquals(exception, assertThrows(clazz, () -> brokenReader.read(cbuf, 0, 1)));\n        // Also throws the exception before checking arguments\n        assertEquals(exception, assertThrows(clazz, () -> brokenReader.read(cbuf, -1, 1)));\n        assertEquals(exception, assertThrows(clazz, () -> brokenReader.read(cbuf, 0, -1)));\n        assertEquals(exception, assertThrows(clazz, () -> brokenReader.read(cbuf, 1, 1)));\n        assertEquals(exception, assertThrows(clazz, () -> brokenReader.read(null, 0, 0)));\n\n    }",
+  "invocations": [
+    "BrokenReader",
+    "BrokenReader",
+    "read"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.BrokenReader(java.util.function.Supplier<java.lang.Throwable>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.function.Supplier<java.lang.Throwable>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BrokenReader(java.io.IOException)": {
+      "params_len": 1,
+      "params": [
+        "java.io.IOException"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.BrokenReader.read(char[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.BrokenReader.read(char[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.BrokenReader.read(char[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2004,
+      "class_name": "org.apache.commons.io.input.BrokenReader",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.input.BrokenReader.read(char[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

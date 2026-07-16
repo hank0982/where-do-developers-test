@@ -1,0 +1,33 @@
+{
+  "id": "7309",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.text.translate.EntityArraysTest_testHTML40_EXTENDED_ESCAPE_74427542",
+  "test_path": "org/apache/commons/lang3/text/translate/EntityArraysTest_testHTML40_EXTENDED",
+  "test_name": "ESCAPE",
+  "body": "@Test\n    void testHTML40_EXTENDED_ESCAPE() {\n        final Set<String> col0 = new HashSet<>();\n        final Set<String> col1 = new HashSet<>();\n        final String[][] sa = EntityArrays.HTML40_EXTENDED_ESCAPE();\n        for (int i = 0; i < sa.length; i++) {\n            assertTrue(col0.add(sa[i][0]), \"Already added entry 0: \" + i + \" \" + sa[i][0]);\n            assertTrue(col1.add(sa[i][1]), \"Already added entry 1: \" + i + \" \" + sa[i][1]);\n        }\n    }",
+  "invocations": [
+    "HTML40_EXTENDED_ESCAPE"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.text.translate.EntityArrays.HTML40_EXTENDED_ESCAPE()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.text.translate.EntityArrays.HTML40_EXTENDED_ESCAPE()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.text.translate.EntityArrays.HTML40_EXTENDED_ESCAPE()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 179,
+      "class_name": "org.apache.commons.lang3.text.translate.EntityArrays",
+      "method_name": "HTML40_EXTENDED_ESCAPE",
+      "signature": "org.apache.commons.lang3.text.translate.EntityArrays.HTML40_EXTENDED_ESCAPE()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

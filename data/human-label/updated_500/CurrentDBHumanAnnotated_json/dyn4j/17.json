@@ -1,0 +1,39 @@
+{
+  "id": "17",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.AVLTreeTest_isEmpty_7aab3243",
+  "test_path": "org/dyn4j/AVLTreeTest",
+  "test_name": "isEmpty",
+  "body": "@Test\n\tpublic void isEmpty() {\n\t\tTestCase.assertFalse(tree.isEmpty());\n\t\t\n\t\tAVLTree<Integer> test = new AVLTree<Integer>();\n\t\tTestCase.assertTrue(test.isEmpty());\n\t}",
+  "invocations": [
+    "isEmpty",
+    "AVLTree"
+  ],
+  "signature": {
+    "org.dyn4j.AVLTree.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.AVLTree()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.AVLTree.isEmpty()"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.AVLTree.isEmpty()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2504,
+      "class_name": "org.dyn4j.AVLTree",
+      "method_name": "isEmpty",
+      "signature": "org.dyn4j.AVLTree.isEmpty()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

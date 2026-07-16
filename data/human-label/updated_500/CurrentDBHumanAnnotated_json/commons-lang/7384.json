@@ -1,0 +1,58 @@
+{
+  "id": "7384",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.CalendarUtilsTest_testToLocalDateTime_14c6bf1f",
+  "test_path": "org/apache/commons/lang3/time/CalendarUtilsTest",
+  "test_name": "testToLocalDateTime",
+  "body": "@ParameterizedTest\n    @MethodSource(TimeZonesTest.TIME_ZONE_GET_AVAILABLE_IDS)\n    void testToLocalDateTime(final String timeZoneId) {\n        final TimeZone timeZone = TimeZones.getTimeZone(timeZoneId);\n        final ZoneId zoneId = timeZone.toZoneId();\n        final Calendar calendar = new GregorianCalendar(timeZone);\n        calendar.setTimeInMillis(0);\n        assertEquals(LocalDateTime.ofInstant(calendar.toInstant(), calendar.getTimeZone().toZoneId()), new CalendarUtils(calendar).toLocalDateTime());\n        final ZonedDateTime zdt1 = ZonedDateTime.of(1, 2, 3, 4, 5, 6, 0, zoneId);\n        calendar.setTimeInMillis(zdt1.toInstant().toEpochMilli());\n        assertEquals(LocalDateTime.ofInstant(zdt1.toInstant(), calendar.getTimeZone().toZoneId()), new CalendarUtils(calendar).toLocalDateTime());\n    }",
+  "invocations": [
+    "getTimeZone",
+    "CalendarUtils",
+    "CalendarUtils",
+    "toLocalDateTime"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.TimeZones.getTimeZone(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils(java.util.Calendar, java.util.Locale)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Calendar",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils.toLocalDateTime()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.CalendarUtils.toLocalDateTime()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.CalendarUtils.toLocalDateTime()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2706,
+      "class_name": "org.apache.commons.lang3.time.CalendarUtils",
+      "method_name": "toLocalDateTime",
+      "signature": "org.apache.commons.lang3.time.CalendarUtils.toLocalDateTime()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

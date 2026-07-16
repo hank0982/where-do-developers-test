@@ -1,0 +1,57 @@
+{
+  "id": "5684",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.concurrent.UncheckedFutureTest_testOnFuture_d8146335",
+  "test_path": "org/apache/commons/lang3/concurrent/UncheckedFutureTest",
+  "test_name": "testOnFuture",
+  "body": "@Test\n    void testOnFuture() {\n        assertEquals(\"Z\", UncheckedFuture.on(new TestFuture<>(\"Z\")).get());\n    }",
+  "invocations": [
+    "AbstractFutureProxy",
+    "constantFuture",
+    "on",
+    "get"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.concurrent.AbstractFutureProxy(java.util.concurrent.Future<V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.concurrent.Future<V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.ConcurrentUtils.constantFuture(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.UncheckedFuture.on(java.util.concurrent.Future<T>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.concurrent.Future<T>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.concurrent.UncheckedFutureImpl.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.concurrent.UncheckedFuture.on(java.util.concurrent.Future<T>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.concurrent.UncheckedFuture.on(java.util.concurrent.Future<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2378,
+      "class_name": "org.apache.commons.lang3.concurrent.UncheckedFuture",
+      "method_name": "on",
+      "signature": "org.apache.commons.lang3.concurrent.UncheckedFuture.on(java.util.concurrent.Future<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

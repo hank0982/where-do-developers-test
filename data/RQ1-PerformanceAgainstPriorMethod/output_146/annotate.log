@@ -1,0 +1,291 @@
+06/25/2026 02:19:43 - INFO - __main__ -   Namespace(lang='', eval_task='', model_type='codet5', add_lang_ids=False, data_num=-1, start_epoch=0, num_train_epochs=100, patience=2, cache_path='/home/agent/where/TestWhere/old_tech/inference_output_paper_mapped_revised_labels_latest/cache', summary_dir='/home/agent/where/TestWhere/old_tech/inference_output_paper_mapped_revised_labels_latest/summary', res_dir='/home/agent/where/TestWhere/old_tech/inference_output_paper_mapped_revised_labels_latest/prediction', add_task_prefix=False, save_last_checkpoints=True, always_save_model=True, do_eval_bleu=False, model_name_or_path='/home/agent/where/TestWhere/old_tech/pretrained-models/codet5-base', output_dir='/home/agent/where/TestWhere/old_tech/inference_output_paper_mapped_revised_labels_latest', load_model_path=None, train_filename=None, dev_filename=None, test_filename=None, config_name='', tokenizer_name='roberta-base', max_source_length=512, max_target_length=3, only_model=False, do_train=False, do_eval=False, do_test=True, do_lower_case=False, no_cuda=True, train_batch_size=8, eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, beam_size=10, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, save_steps=-1, log_steps=-1, max_steps=-1, eval_steps=-1, train_steps=-1, warmup_steps=1000, local_rank=-1, seed=1234, fp16=False, fp16_opt_level='O1', top_k=1, projects_dir='/home/agent/where/TestWhere/old_tech/HumanLabeled_dataset_current_db_json_revised_labels_paper_mapped', eval_all_projects=True, checkpoints_dir='/home/agent/where/TestWhere/old_tech/codet5-base/checkpoint-best-acc_and_f1', inference_only=True)
+/home/agent/where/TestWhere/.venv-old-tech/lib/python3.10/site-packages/torch/cuda/__init__.py:611: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+06/25/2026 02:19:43 - WARNING - __main__ -   Process rank: -1, device: cpu, n_gpu: 0, distributed training: False, cpu count: 32
+06/25/2026 02:19:45 - INFO - __main__ -   Finish loading model [223M] from /home/agent/where/TestWhere/old_tech/pretrained-models/codet5-base
+/home/agent/where/TestWhere/.venv-old-tech/lib/python3.10/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+06/25/2026 02:19:45 - INFO - __main__ -     ***** Testing *****
+06/25/2026 02:19:45 - INFO - __main__ -     Batch size = 16
+06/25/2026 02:19:46 - INFO - utils -   LOOKING AT /home/agent/where/TestWhere/old_tech/HumanLabeled_dataset_current_db_json_revised_labels_paper_mapped/commons-lang
+total examples of commons-lang:   0%|          | 0/42 [00:00<?, ?it/s]/home/agent/where/TestWhere/old_tech/code/RQ/rq1_Effectiveness/codet5/models.py:174: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  prob = nn.functional.softmax(logits)
+total examples of commons-lang:   2%|▏         | 1/42 [00:01<01:19,  1.94s/it]total examples of commons-lang:   5%|▍         | 2/42 [00:02<00:41,  1.03s/it]total examples of commons-lang:   7%|▋         | 3/42 [00:02<00:28,  1.36it/s]total examples of commons-lang:  12%|█▏        | 5/42 [00:03<00:15,  2.33it/s]total examples of commons-lang:  14%|█▍        | 6/42 [00:03<00:14,  2.42it/s]total examples of commons-lang:  17%|█▋        | 7/42 [00:04<00:21,  1.61it/s]total examples of commons-lang:  21%|██▏       | 9/42 [00:04<00:13,  2.36it/s]total examples of commons-lang:  24%|██▍       | 10/42 [00:06<00:19,  1.68it/s]total examples of commons-lang:  26%|██▌       | 11/42 [00:07<00:22,  1.37it/s]total examples of commons-lang:  29%|██▊       | 12/42 [00:09<00:31,  1.05s/it]total examples of commons-lang:  31%|███       | 13/42 [00:11<00:40,  1.40s/it]total examples of commons-lang:  33%|███▎      | 14/42 [00:12<00:36,  1.32s/it]total examples of commons-lang:  38%|███▊      | 16/42 [00:14<00:32,  1.24s/it]total examples of commons-lang:  40%|████      | 17/42 [00:17<00:37,  1.49s/it]total examples of commons-lang:  43%|████▎     | 18/42 [00:17<00:31,  1.30s/it]total examples of commons-lang:  48%|████▊     | 20/42 [00:22<00:37,  1.70s/it]total examples of commons-lang:  50%|█████     | 21/42 [00:23<00:35,  1.68s/it]total examples of commons-lang:  52%|█████▏    | 22/42 [00:24<00:29,  1.48s/it]total examples of commons-lang:  57%|█████▋    | 24/42 [00:25<00:17,  1.04it/s]total examples of commons-lang:  64%|██████▍   | 27/42 [00:26<00:09,  1.60it/s]total examples of commons-lang:  67%|██████▋   | 28/42 [00:26<00:08,  1.72it/s]total examples of commons-lang:  69%|██████▉   | 29/42 [00:27<00:08,  1.44it/s]total examples of commons-lang:  71%|███████▏  | 30/42 [00:29<00:11,  1.03it/s]total examples of commons-lang:  74%|███████▍  | 31/42 [00:31<00:13,  1.20s/it]total examples of commons-lang:  76%|███████▌  | 32/42 [00:33<00:13,  1.37s/it]total examples of commons-lang:  79%|███████▊  | 33/42 [00:37<00:19,  2.21s/it]total examples of commons-lang:  81%|████████  | 34/42 [00:39<00:15,  1.99s/it]total examples of commons-lang:  86%|████████▌ | 36/42 [00:39<00:07,  1.28s/it]total examples of commons-lang:  88%|████████▊ | 37/42 [00:41<00:06,  1.24s/it]total examples of commons-lang:  90%|█████████ | 38/42 [00:41<00:04,  1.02s/it]res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 2, ['org.apache.commons.lang3.ClassUtils.getName(Class, String)', 'org.apache.commons.lang3.ClassUtils.getName(Object, String)'], ['getName', 'ClassUtils', 'Object', 'Named', 'Inner'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.Conversion.binaryToHexDigitMsb0_4bits(boolean[])'], ['binaryToHexDigitMsb0_4bits'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 3, ['org.apache.commons.lang3.ArrayUtils.removeAll(Object, int)', 'org.apache.commons.lang3.ArrayUtils.removeAll(T[], int)', 'org.apache.commons.lang3.ArrayUtils.removeAll(Object[])'], ['removeAll'])
+org.apache.commons.lang3.LocaleUtils.languagesByCountry
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.LocaleUtils.languagesByCountry'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 8, ['org.apache.commons.lang3.ArrayUtils.isNotEmpty(int[])', 'org.apache.commons.lang3.ArrayUtils.isNotEmpty(long[])', 'org.apache.commons.lang3.ArrayUtils.isNotEmpty(double[])', 'org.apache.commons.lang3.ArrayUtils.isNotEmpty(boolean[])', 'org.apache.commons.lang3.ArrayUtils.isNotEmpty(byte[])', 'org.apache.commons.lang3.ArrayUtils.isNotEmpty(short[])', 'org.apache.commons.lang3.ArrayUtils.isNotEmpty(float[])', 'org.apache.commons.lang3.ArrayUtils.isNotEmpty(char[])'], ['isNotEmpty'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.ObjectUtils.cloneIfPossible(T)'], ['cloneIfPossible'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.RandomStringUtils.nextPrint(int, int)'], ['nextPrint', 'length', 'matches'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.Range.isBeforeRange(Range)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.StringUtils.containsIgnoreCase(CharSequence, CharSequence)'], ['containsIgnoreCase'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.StringUtils.defaultIfBlank(T, T)'], ['defaultIfBlank', 'toString', 'wrap'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.builder.CompareToBuilder.toComparison()'], ['toComparison', 'append', 'CompareToBuilder'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 2, ['org.apache.commons.lang3.builder.EqualsBuilder.append(Object, Object)', 'org.apache.commons.lang3.builder.EqualsBuilder.append(Object[], Object[])'], ['append', 'setTestRecursive', 'isEquals', 'EqualsBuilder', 'TestRecursiveCycleObject'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.builder.HashCodeBuilder.appendSuper(int)'], ['appendSuper', 'append', 'HashCodeBuilder', 'toHashCode', 'hashCode', 'Object'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 4, ['org.apache.commons.lang3.builder.ToStringBuilder.append(float[])', 'org.apache.commons.lang3.builder.ToStringBuilder.append(Object[])', 'org.apache.commons.lang3.builder.ToStringBuilder.append(Object)', 'org.apache.commons.lang3.builder.ToStringBuilder.append(float)'], ['append', 'ToStringBuilder', 'toString'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.builder.ToStringStyle.setSizeStartText(String)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.concurrent.AbstractCircuitBreaker.addChangeListener(PropertyChangeListener)'], ['addChangeListener', 'ChangeListener', 'open', 'close', 'EventCountCircuitBreaker', 'verify'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.concurrent.MultiBackgroundInitializer.addInitializer(String, BackgroundInitializer)'], ['addInitializer', 'start', 'get', 'isSuccessful', 'Exception', 'createChildBackgroundInitializer'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.time.FastTimeZone.getTimeZone(String)'], ['getTimeZone', 'getGmtTimeZone'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.time.GmtTimeZone.getRawOffset()'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.tuple.ImmutablePair.of(Entry)'], ['of', 'nullPair', 'put', 'iterator', 'entrySet', 'HashMap', 'next', 'getKey', 'getLeft', 'getValue', 'getRight'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.tuple.ImmutablePair.of(L, R)'], ['of', 'getLeft', 'intValue', 'getRight'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.tuple.Triple.compareTo(Triple)'], ['compareTo', 'of'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.math.NumberUtils.isDigits(String)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.math.NumberUtils.max(int)'], ['max'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.mutable.MutableInt.increment()'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.mutable.MutableShort.toString()'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.reflect.FieldUtils.getField(Class, String, boolean)'], ['getField', 'getDeclaringClass'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.reflect.FieldUtils.getField(Class, String)'], ['getField'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.reflect.TypeUtils.isArrayType(Type)'], ['isArrayType', 'getGenericType', 'getDeclaredField'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 5, ['org.apache.commons.lang3.reflect.TypeUtils.equals(Type, Type)', 'org.apache.commons.lang3.reflect.TypeUtils.equals(GenericArrayType, Type)', 'org.apache.commons.lang3.reflect.TypeUtils.equals(WildcardType, Type)', 'org.apache.commons.lang3.reflect.TypeUtils.equals(Type[], Type[])', 'org.apache.commons.lang3.reflect.TypeUtils.equals(ParameterizedType, Type)'], ['equals', 'getGenericType', 'getClass', 'getActualTypeArguments', 'getDeclaredField'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 3, ['org.apache.commons.lang3.text.StrBuilder.append(CharSequence, int, int)', 'org.apache.commons.lang3.text.StrBuilder.append(String, Object)', 'org.apache.commons.lang3.text.StrBuilder.append(String, int, int)'], ['append', 'toString', 'getInstance', 'getGroupingSeparator', 'StrBuilder'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 3, ['org.apache.commons.lang3.text.StrBuilder.append(CharSequence, int, int)', 'org.apache.commons.lang3.text.StrBuilder.append(StringBuilder, int, int)', 'org.apache.commons.lang3.text.StrBuilder.append(String, int, int)'], ['append', 'toString', 'StringBuilder', 'setNullText', 'StrBuilder'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.text.StrBuilder.ensureCapacity(int)'], ['ensureCapacity', 'setLength', 'capacity', 'clear', 'length', 'minimizeCapacity', 'size', 'toString', 'append', 'StrBuilder', 'isEmpty'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.text.StrBuilder.deleteFirst(String)'], ['deleteFirst', 'indexOf', 'contains', 'StrBuilder'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.CharSet.hashCode()'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.text.StrLookup.mapLookup(Map)'], ['mapLookup', 'lookup'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.text.StrSubstitutor.replace(Object, Map, String, String)'], ['replace', 'put', 'HashMap'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 3, ['org.apache.commons.lang3.CharSetUtils.keep(String)', 'org.apache.commons.lang3.CharSetUtils.keep(null)', 'org.apache.commons.lang3.CharSetUtils.keep(String, String)'], ['keep'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.lang3.text.translate.EntityArrays.HTML40_EXTENDED_ESCAPE()'])
+res_by_rule (False, None, None, None, None)
+res_by_model total examples of commons-lang:  95%|█████████▌| 40/42 [00:41<00:01,  1.49it/s]total examples of commons-lang:  98%|█████████▊| 41/42 [00:42<00:00,  1.66it/s]total examples of commons-lang: 100%|██████████| 42/42 [00:43<00:00,  1.23it/s]total examples of commons-lang: 100%|██████████| 42/42 [00:43<00:00,  1.04s/it]
+06/25/2026 02:20:30 - INFO - utils -   LOOKING AT /home/agent/where/TestWhere/old_tech/HumanLabeled_dataset_current_db_json_revised_labels_paper_mapped/commons-io
+(0, 0, 1, ['org.apache.commons.lang3.ClassPathUtils.toFullyQualifiedPath(Package, String)'], ['toFullyQualifiedPath'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.time.DateUtils.parseDate(String, String)'], ['parseDate'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.lang3.time.DateParser.parse(String)'], ['parse', 'setTime', 'get', 'getInstance'])
+total examples of commons-io:   0%|          | 0/29 [00:00<?, ?it/s]total examples of commons-io:   7%|▋         | 2/29 [00:05<01:17,  2.87s/it]total examples of commons-io:  10%|█         | 3/29 [00:07<00:59,  2.27s/it]total examples of commons-io:  14%|█▍        | 4/29 [00:10<01:09,  2.77s/it]total examples of commons-io:  17%|█▋        | 5/29 [00:14<01:11,  2.97s/it]total examples of commons-io:  24%|██▍       | 7/29 [00:16<00:44,  2.04s/it]total examples of commons-io:  28%|██▊       | 8/29 [00:18<00:43,  2.07s/it]total examples of commons-io:  31%|███       | 9/29 [00:20<00:42,  2.10s/it]total examples of commons-io:  34%|███▍      | 10/29 [00:21<00:30,  1.62s/it]total examples of commons-io:  41%|████▏     | 12/29 [00:22<00:20,  1.22s/it]total examples of commons-io:  45%|████▍     | 13/29 [00:25<00:26,  1.68s/it]total examples of commons-io:  52%|█████▏    | 15/29 [00:26<00:14,  1.07s/it]total examples of commons-io:  59%|█████▊    | 17/29 [00:28<00:13,  1.09s/it]total examples of commons-io:  76%|███████▌  | 22/29 [00:29<00:04,  1.59it/s]total examples of commons-io:  79%|███████▉  | 23/29 [00:32<00:05,  1.08it/s]total examples of commons-io:  83%|████████▎ | 24/29 [00:33<00:04,  1.05it/s]total examples of commons-io:  97%|█████████▋| 28/29 [00:34<00:00,  1.60it/s]total examples of commons-io: 100%|██████████| 29/29 [00:37<00:00,  1.06it/s]total examples of commons-io: 100%|██████████| 29/29 [00:37<00:00,  1.29s/it]
+06/25/2026 02:21:07 - INFO - utils -   LOOKING AT /home/agent/where/TestWhere/old_tech/HumanLabeled_dataset_current_db_json_revised_labels_paper_mapped/gson
+org.apache.commons.io.DirectoryWalker.missingStartDirectory
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.DirectoryWalker.missingStartDirectory'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FileUtils.copyDirectoryToDirectory(File, File)'], ['copyDirectoryToDirectory', 'sizeOfDirectory', 'deleteDirectory', 'getTempDirectoryPath', 'writeStringToFile', 'toPath', 'exists', 'getName', 'newOutputStream', 'mkdir', 'getParentFile', 'File', 'BufferedOutputStream', 'generateTestData'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FileUtils.moveDirectoryToDirectory(File, File, boolean)'], ['moveDirectoryToDirectory', 'exists', 'mkdirs', 'File'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FileUtils.moveDirectory(File, File)'], ['moveDirectory', 'mkdir', 'toPath', 'exists', 'getParentFile', 'newOutputStream', 'File', 'BufferedOutputStream', 'generateTestData'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FileUtils.moveFileToDirectory(File, File, boolean)'], ['moveFileToDirectory', 'toPath', 'getParentFile', 'exists', 'closeQuietly', 'newOutputStream', 'BufferedOutputStream', 'File', 'generateTestData'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.FileUtils.readFileToByteArray(File)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FileUtils.writeLines(File, Collection, boolean)'], ['writeLines', 'writeStringToFile', 'readFileToString', 'lineSeparator', 'newFile', 'asList'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FileUtils.writeLines(File, Collection, String, boolean)'], ['writeLines', 'writeStringToFile', 'readFileToString', 'lineSeparator', 'newFile', 'asList'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FileUtils.writeLines(File, String, Collection, String, boolean)'], ['writeLines', 'writeStringToFile', 'readFileToString', 'lineSeparator', 'newFile', 'asList'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.FilenameUtils.getPathNoEndSeparator(String)'], ['getPathNoEndSeparator'])
+org.apache.commons.io.IOCase.serialization
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.IOCase.serialization'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.IOUtils.copyLarge(InputStream, OutputStream, long, long)'], ['copyLarge', 'ByteArrayInputStream', 'toByteArray', 'ByteArrayOutputStream'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.IOUtils.read(ReadableByteChannel, ByteBuffer)'], ['read', 'getChannel', 'readFully', 'FileInputStream', 'closeQuietly', 'clear', 'allocate', 'remaining'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.TaggedIOException(IOException, Serializable)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.comparator.AbstractFileComparator.sort(List)'], ['sort'])
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.input.AutoCloseInputStream.close()'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.input.CountingInputStream.resetCount()'], ['resetCount', 'read', 'getCount', 'CountingInputStream', 'getBytes', 'ByteArrayInputStream'])
+org.apache.commons.io.input.WindowsLineEndingInputStream.twoLinesAtEnd_ByteArrayIndex
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.input.WindowsLineEndingInputStream.twoLinesAtEnd_ByteArrayIndex'])
+org.apache.commons.io.input.WindowsLineEndingInputStream.twoLinesAtEnd_ByteArray
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.input.WindowsLineEndingInputStream.twoLinesAtEnd_ByteArray'])
+org.apache.commons.io.input.WindowsLineEndingInputStream.twoLinesAtEnd_Byte
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.input.WindowsLineEndingInputStream.twoLinesAtEnd_Byte'])
+org.apache.commons.io.input.XmlStreamReaderUtilities.textXml
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.input.XmlStreamReaderUtilities.textXml'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.output.AppendableOutputStream.write(byte[])'], ['write', 'getAppendable', 'toString', 'getBytes'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.output.DeferredFileOutputStream(int, int, String, String, File)'], ['DeferredFileOutputStream', 'write', 'close', 'isInMemory', 'getByteCount', 'getPath', 'getFile'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.output.StringBuilderWriter()'], ['append', 'toString', 'StringBuilderWriter'])
+org.apache.commons.io.output.WriterOutputStream.largeUTF8WithSingleByteWrite
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.output.WriterOutputStream.largeUTF8WithSingleByteWrite'])
+org.apache.commons.io.output.XmlStreamWriter.latin7Encoding
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.output.XmlStreamWriter.latin7Encoding'])
+org.apache.commons.io.output.XmlStreamWriter.uTF16BEEncoding
+res_by_rule (True, 0, 0, 1, ['org.apache.commons.io.output.XmlStreamWriter.uTF16BEEncoding'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.serialization.ValidatingObjectInputStream.accept(String, String)'], ['accept', 'addCloseable', 'newFixture'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.apache.commons.io.DirectoryWalker.CancelException.getFile()'], ['find', 'getName', 'getFile', 'TestCancelWalker', 'getDepth', 'get', 'size'])
+total examples of gson:   0%|          | 0/49 [00:00<?, ?it/s]total examples of gson:   2%|▏         | 1/49 [00:02<01:45,  2.20s/it]total examples of gson:   8%|▊         | 4/49 [00:03<00:32,  1.40it/s]total examples of gson:  10%|█         | 5/49 [00:03<00:27,  1.60it/s]total examples of gson:  12%|█▏        | 6/49 [00:05<00:37,  1.15it/s]total examples of gson:  14%|█▍        | 7/49 [00:05<00:35,  1.19it/s]total examples of gson:  16%|█▋        | 8/49 [00:10<01:23,  2.04s/it]total examples of gson:  18%|█▊        | 9/49 [00:15<01:51,  2.79s/it]total examples of gson:  20%|██        | 10/49 [00:18<01:45,  2.72s/it]total examples of gson:  22%|██▏       | 11/49 [00:18<01:16,  2.02s/it]total examples of gson:  24%|██▍       | 12/49 [00:19<01:00,  1.65s/it]total examples of gson:  27%|██▋       | 13/49 [00:20<00:57,  1.60s/it]total examples of gson:  29%|██▊       | 14/49 [00:21<00:43,  1.23s/it]total examples of gson:  31%|███       | 15/49 [00:21<00:33,  1.02it/s]total examples of gson:  33%|███▎      | 16/49 [00:22<00:33,  1.02s/it]total examples of gson:  35%|███▍      | 17/49 [00:25<00:53,  1.68s/it]total examples of gson:  37%|███▋      | 18/49 [00:26<00:46,  1.51s/it]total examples of gson:  39%|███▉      | 19/49 [00:28<00:44,  1.48s/it]total examples of gson:  41%|████      | 20/49 [00:30<00:46,  1.59s/it]total examples of gson:  43%|████▎     | 21/49 [00:31<00:46,  1.66s/it]total examples of gson:  45%|████▍     | 22/49 [00:33<00:43,  1.60s/it]total examples of gson:  47%|████▋     | 23/49 [00:35<00:47,  1.81s/it]total examples of gson:  49%|████▉     | 24/49 [00:38<00:51,  2.07s/it]total examples of gson:  51%|█████     | 25/49 [00:39<00:42,  1.78s/it]total examples of gson:  53%|█████▎    | 26/49 [00:42<00:52,  2.28s/it]total examples of gson:  55%|█████▌    | 27/49 [00:44<00:44,  2.02s/it]total examples of gson:  59%|█████▉    | 29/49 [00:45<00:28,  1.42s/it]total examples of gson:  61%|██████    | 30/49 [00:46<00:23,  1.25s/it]total examples of gson:  63%|██████▎   | 31/49 [00:46<00:18,  1.03s/it]total examples of gson:  65%|██████▌   | 32/49 [00:47<00:14,  1.18it/s]total examples of gson:  67%|██████▋   | 33/49 [00:47<00:11,  1.39it/s]total examples of gson:  69%|██████▉   | 34/49 [00:48<00:09,  1.61it/s]total examples of gson:  71%|███████▏  | 35/49 [00:48<00:07,  1.81it/s]total examples of gson:  73%|███████▎  | 36/49 [00:48<00:06,  1.99it/s]total examples of gson:  76%|███████▌  | 37/49 [00:49<00:05,  2.15it/s]total examples of gson:  78%|███████▊  | 38/49 [00:49<00:04,  2.27it/s]total examples of gson:  80%|███████▉  | 39/49 [00:49<00:04,  2.37it/s]total examples of gson:  82%|████████▏ | 40/49 [00:50<00:03,  2.45it/s]total examples of gson:  84%|████████▎ | 41/49 [00:51<00:04,  1.96it/s]total examples of gson:  86%|████████▌ | 42/49 [00:52<00:04,  1.45it/s]total examples of gson:  88%|████████▊ | 43/49 [00:52<00:03,  1.68it/s]total examples of gson:  90%|████████▉ | 44/49 [00:52<00:02,  1.88it/s]total examples of gson:  92%|█████████▏| 45/49 [00:53<00:01,  2.06it/s]total examples of gson:  94%|█████████▍| 46/49 [00:53<00:01,  2.20it/s]total examples of gson:  96%|█████████▌| 47/49 [00:54<00:00,  2.32it/s]total examples of gson:  98%|█████████▊| 48/49 [00:54<00:00,  2.41it/s]total examples of gson: 100%|██████████| 49/49 [00:54<00:00,  1.11s/it]
+06/25/2026 02:22:02 - INFO - utils -   LOOKING AT /home/agent/where/TestWhere/old_tech/HumanLabeled_dataset_current_db_json_revised_labels_paper_mapped/jfreechart
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 3, ['com.google.gson.Gson.fromJson(String, TypeToken)', 'com.google.gson.Gson.fromJson(String, Class)', 'com.google.gson.Gson.fromJson(String, Type)'], ['fromJson', 'getType', 'Gson', 'TypeToken', 'containsExactly', 'inOrder'])
+res_by_rule (True, 0, 0, 1, ['com.google.gson.internal.LazilyParsedNumber.equals(Object)'])
+res_by_rule (True, 0, 0, 1, ['com.google.gson.internal.LazilyParsedNumber.hashCode()'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.internal.LinkedTreeMap.containsKey(Object)'], ['containsKey', 'put', 'LinkedTreeMap'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.JsonNull()'], ['JsonNull'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.internal.bind.JsonTreeWriter.close()'], ['close', 'setStrictness', 'beginArray', 'JsonTreeWriter'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.reflect.TypeToken.isAssignableFrom(Class)'], ['isAssignableFrom', 'get'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.stream.JsonReader.getPath()'], ['create', 'getPath', 'getPreviousPath', 'nextName', 'nextNull', 'beginObject', 'nextString', 'beginArray', 'endObject', 'nextInt', 'endArray', 'nextBoolean'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.stream.JsonReader.getPath()'], ['create', 'getPath', 'getPreviousPath', 'nextName', 'nextNull', 'beginObject', 'nextString', 'beginArray', 'endObject', 'nextInt', 'endArray', 'nextBoolean'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.JsonObject.remove(String)'], ['remove', 'add', 'JsonObject', 'get', 'JsonPrimitive', 'has', 'isNull'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.stream.JsonReader(null)'], ['JsonReader'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.FieldAttributes.getDeclaringClass()'], ['getDeclaringClass', 'isAssignableTo'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.stream.JsonWriter.name(String)'], ['name', 'beginObject', 'JsonWriter', 'StringWriter'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.FieldAttributes.hasModifier(int)'], ['hasModifier'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.FieldAttributes.getName()'], ['getName'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.JsonStreamParser.hasNext()'], ['hasNext', 'next', 'getAsString'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.stream.JsonReader.close()'], ['close', 'JsonReader', 'fromJson', 'getType', 'Gson', 'StringReader', 'TypeToken', 'hasCauseThat'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.reflect.TypeToken.getType()'], ['equals', 'getType', 'TypeToken'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.reflect.TypeToken.getType()'], ['getType', 'TypeToken', 'getGenericComponentType', 'hashCode'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.GsonBuilder.create()'], ['create', 'setFieldNamingStrategy', 'GsonBuilder', 'isNotNull', 'isNotSameInstanceAs'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.GsonBuilder.create()'], ['create', 'GsonBuilder', 'registerTypeAdapter', 'toJson', 'fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson', 'ContainsReferenceToSelfType', 'add', 'isNotNull'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJsonTree(Object, Type)'], ['toJsonTree', 'entrySet', 'HashMap', 'isEmpty', 'getClass', 'isInstanceOf'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJsonTree(Object, Type)'], ['toJsonTree', 'entrySet', 'HashMap', 'getType', 'TypeToken', 'isEmpty', 'isInstanceOf'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['getExpectedJson', 'ClassWithExposedFields', 'toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJsonTree(Object, Type)'], ['toJsonTree', 'HashMap', 'getAsJsonObject', 'getType', 'put', 'Gson', 'has', 'TypeToken', 'isJsonObject'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fieldNamingStrategy()'], ['createGson', 'fieldNamingStrategy', 'serializeNulls', 'htmlSafe'])
+res_by_rule (True, 0, 0, 1, ['com.google.gson.Gson.toJsonTree(Object)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 2, ['com.google.gson.Gson.toJson(Object, Type)', 'com.google.gson.Gson.toJson(Object, Appendable)'], ['toJson', 'LinkedHashMap', 'getType', 'TypeToken'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson', 'MyClass'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson', 'fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson', 'substring', 'length'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 2, ['com.google.gson.Gson.toJson(Object, Type)', 'com.google.gson.Gson.toJson(Object)'], ['toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.toJson(Object)'], ['toJson'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['com.google.gson.Gson.fromJson(String, Class)'], ['fromJson'])
+res_by_rule (True, 0, 0, 2, ['com.google.gson.JsonArray.remove(JsonElement)', 'com.google.gson.JsonArray.remove(int)'])
+total examples of jfreechart:   0%|          | 0/26 [00:00<?, ?it/s]total examples of jfreechart:   4%|▍         | 1/26 [00:00<00:18,  1.32it/s]total examples of jfreechart:   8%|▊         | 2/26 [00:01<00:23,  1.04it/s]total examples of jfreechart:  12%|█▏        | 3/26 [00:03<00:31,  1.38s/it]total examples of jfreechart:  19%|█▉        | 5/26 [00:05<00:24,  1.14s/it]total examples of jfreechart:  27%|██▋       | 7/26 [00:07<00:18,  1.05it/s]total examples of jfreechart:  31%|███       | 8/26 [00:07<00:14,  1.23it/s]total examples of jfreechart:  38%|███▊      | 10/26 [00:08<00:12,  1.29it/s]total examples of jfreechart:  42%|████▏     | 11/26 [00:12<00:21,  1.40s/it]total examples of jfreechart:  50%|█████     | 13/26 [00:15<00:18,  1.42s/it]total examples of jfreechart:  54%|█████▍    | 14/26 [00:17<00:19,  1.60s/it]total examples of jfreechart:  58%|█████▊    | 15/26 [00:19<00:18,  1.66s/it]total examples of jfreechart:  62%|██████▏   | 16/26 [00:20<00:15,  1.51s/it]total examples of jfreechart:  65%|██████▌   | 17/26 [00:21<00:12,  1.41s/it]total examples of jfreechart:  69%|██████▉   | 18/26 [00:22<00:10,  1.33s/it]total examples of jfreechart:  73%|███████▎  | 19/26 [00:24<00:10,  1.49s/it]total examples of jfreechart:  77%|███████▋  | 20/26 [00:28<00:12,  2.10s/it]total examples of jfreechart:  85%|████████▍ | 22/26 [00:29<00:05,  1.40s/it]total examples of jfreechart:  88%|████████▊ | 23/26 [00:31<00:04,  1.59s/it]total examples of jfreechart:  92%|█████████▏| 24/26 [00:33<00:03,  1.65s/it]total examples of jfreechart: 100%|██████████| 26/26 [00:36<00:00,  1.60s/it]total examples of jfreechart: 100%|██████████| 26/26 [00:36<00:00,  1.40s/it]
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode()'], ['hashCode', 'XYBubbleRenderer'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.internal.CloneUtils.clone(T)'], ['clone', 'getClass', 'XYStepAreaRenderer'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.data.KeyedObjects2D.removeColumn(int)'], ['removeColumn', 'getColumnCount', 'getObject', 'setObject', 'KeyedObjects2D'])
+res_by_rule (True, 0, 0, 1, ['org.jfree.data.category.CategoryToPieDataset.getKey(int)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.data.category.DefaultIntervalCategoryDataset.clone()'], ['clone', 'setStartValue', 'DefaultIntervalCategoryDataset', 'createNumberArray2D', 'getClass'])
+res_by_rule (True, 0, 0, 1, ['org.jfree.data.category.DefaultIntervalCategoryDataset.getValue(Comparable, Comparable)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.data.statistics.DefaultStatisticalCategoryDataset.getRangeBounds(boolean)'], ['getRangeBounds', 'add', 'DefaultStatisticalCategoryDataset', 'Range'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.data.statistics.Statistics.getCorrelation(Number[], Number[])'], ['getCorrelation'])
+res_by_rule (True, 0, 0, 1, ['org.jfree.data.time.Millisecond.getSerialIndex()'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.data.time.TimeSeries.add(RegularTimePeriod, Number)'], ['add', 'createCopy', 'TimeSeries', 'Day'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.data.time.TimeSeries.removeAgedItems(long, boolean)'], ['removeAgedItems', 'add', 'setMaximumItemAge', 'getItemCount', 'TimeSeries', 'getMiddleMillisecond', 'Year', 'getMinY', 'getMaxY'])
+res_by_rule (True, 0, 0, 1, ['org.jfree.data.time.RegularTimePeriod.getStart()'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.axis.ExtendedCategoryAxis.clone()'], ['clone', 'addCategoryLabelToolTip', 'ExtendedCategoryAxis', 'setTickLabelFont', 'setTickLabelPaint', 'getClass', 'GradientPaint', 'Font'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.internal.CloneUtils.clone(T)'], ['clone', 'add', 'CategoryTableXYDataset', 'setIntervalPositionFactor', 'setIntervalWidth', 'getClass'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.data.xy.DefaultTableXYDataset.removeAllSeries()'], ['removeAllSeries', 'getItemCount', 'addSeries', 'DefaultTableXYDataset', 'createSeries1'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.internal.CloneUtils.clone(T)'], ['clone', 'VectorDataItem', 'getClass'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.block.BlockContainer.arrange(Graphics2D, RectangleConstraint)'], ['arrange', 'toFixedHeight', 'createTestContainer1'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.internal.CloneUtils.clone(T)'], ['clone', 'StandardCategoryToolTipGenerator', 'getClass'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.plot.Marker.setLabelTextAnchor(TextAnchor)'], ['setLabelTextAnchor', 'getLabelTextAnchor', 'addChangeListener', 'getMarker', 'ValueMarker'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.internal.CloneUtils.clone(T)'], ['clone', 'addInterval', 'MeterPlot', 'getTickLabelFormat', 'getDataset', 'setMinimumIntegerDigits', 'getClass', 'MeterInterval', 'Range'])
+res_by_rule (True, 0, 0, 1, ['org.jfree.chart.renderer.xy.XYItemRenderer.setSeriesToolTipGenerator(int, XYToolTipGenerator)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.internal.CloneUtils.clone(T)'], ['clone', 'PlumNeedle', 'getClass'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.plot.pie.PiePlot.setSectionOutlineStroke(K, Stroke)'], ['setSectionOutlineStroke', 'getSectionOutlineStroke', 'clone', 'PiePlot', 'BasicStroke', 'DefaultPieDataset'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 2, ['org.jfree.chart.renderer.LookupPaintScale.clone()', 'org.jfree.chart.internal.CloneUtils.clone(T)'], ['clone', 'add', 'LookupPaintScale', 'GradientPaint', 'getClass'])
+res_by_rule (True, 0, 0, 1, ['org.jfree.chart.renderer.category.BoxAndWhiskerRenderer.getLegendItem(int, int)'])
+res_by_rule (False, None, None, None, None)
+res_by_model (0, 0, 1, ['org.jfree.chart.JFreeChart.createBufferedImage(int, int, ChartRenderingInfo)'], ['createBufferedImage', 'GroupedStackedBarRenderer', 'CategoryPlot', 'addValue', 'CategoryAxis', 'DefaultCategoryDataset', 'NumberAxis', 'JFreeChart'])
+total time:  171.97444462776184

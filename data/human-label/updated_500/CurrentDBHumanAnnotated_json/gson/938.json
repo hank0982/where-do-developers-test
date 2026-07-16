@@ -1,0 +1,36 @@
+{
+  "id": "938",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.SerializedNameTest_testMultipleNamesDeserializedCorrectly_0e35d0b4",
+  "test_path": "com/google/gson/functional/SerializedNameTest",
+  "test_name": "testMultipleNamesDeserializedCorrectly",
+  "body": "@Test\n  public void testMultipleNamesDeserializedCorrectly() {\n    assertThat(gson.fromJson(\"{'name':'v1'}\", MyClass.class).a).isEqualTo(\"v1\");\n\n    // Both name1 and name2 gets deserialized to b\n    assertThat(gson.fromJson(\"{'name1':'v11'}\", MyClass.class).b).isEqualTo(\"v11\");\n    assertThat(gson.fromJson(\"{'name2':'v2'}\", MyClass.class).b).isEqualTo(\"v2\");\n    assertThat(gson.fromJson(\"{'name3':'v3'}\", MyClass.class).b).isEqualTo(\"v3\");\n  }",
+  "invocations": [
+    "fromJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Class<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 811,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "fromJson",
+      "signature": "com.google.gson.Gson.fromJson(java.lang.String, java.lang.Class<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

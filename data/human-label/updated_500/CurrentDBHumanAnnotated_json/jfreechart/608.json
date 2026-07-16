@@ -1,0 +1,113 @@
+{
+  "id": "608",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.plot.MeterPlotTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/chart/plot/MeterPlotTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        MeterPlot p1 = new MeterPlot();\n        MeterPlot p2 = CloneUtils.clone(p1);\n        assertNotSame(p1, p2);\n        assertSame(p1.getClass(), p2.getClass());\n        assertEquals(p1, p2);\n\n        // the clone and the original share a reference to the SAME dataset\n        assertSame(p1.getDataset(), p2.getDataset());\n\n        // try a few checks to ensure that the clone is independent of the\n        // original\n        p1.getTickLabelFormat().setMinimumIntegerDigits(99);\n        assertNotEquals(p1, p2);\n        p2.getTickLabelFormat().setMinimumIntegerDigits(99);\n        assertEquals(p1, p2);\n\n        p1.addInterval(new MeterInterval(\"Test\", new Range(1.234, 5.678)));\n        assertNotEquals(p1, p2);\n        p2.addInterval(new MeterInterval(\"Test\", new Range(1.234, 5.678)));\n        assertEquals(p1, p2);\n\n    }",
+  "invocations": [
+    "Range",
+    "Plot",
+    "MeterPlot",
+    "equals",
+    "getDataset",
+    "addInterval",
+    "MeterPlot",
+    "getTickLabelFormat",
+    "MeterInterval",
+    "MeterInterval",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.data.Range(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.Plot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterPlot(org.jfree.data.general.ValueDataset)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.general.ValueDataset"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterPlot.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterPlot.getDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterPlot.addInterval(org.jfree.chart.plot.MeterInterval)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.plot.MeterInterval"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterPlot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterPlot.getTickLabelFormat()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterInterval(java.lang.String, org.jfree.data.Range)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "org.jfree.data.Range"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.MeterInterval(java.lang.String, org.jfree.data.Range, java.awt.Paint, java.awt.Stroke, java.awt.Paint)": {
+      "params_len": 5,
+      "params": [
+        "java.lang.String",
+        "org.jfree.data.Range",
+        "java.awt.Paint",
+        "java.awt.Stroke",
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.plot.MeterPlot.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.plot.MeterPlot.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 6320,
+      "class_name": "org.jfree.chart.plot.MeterPlot",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.plot.MeterPlot.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

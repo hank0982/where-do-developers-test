@@ -1,0 +1,63 @@
+{
+  "id": "192",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.JsonStreamParserTest_testIncompleteInput_a0e47667",
+  "test_path": "com/google/gson/JsonStreamParserTest",
+  "test_name": "testIncompleteInput",
+  "body": "@Test\n  public void testIncompleteInput() {\n    JsonStreamParser parser = new JsonStreamParser(\"[\");\n    assertThat(parser.hasNext()).isTrue();\n    assertThrows(JsonSyntaxException.class, parser::next);\n  }",
+  "invocations": [
+    "hasNext",
+    "JsonStreamParser",
+    "next",
+    "JsonStreamParser"
+  ],
+  "signature": {
+    "com.google.gson.JsonStreamParser.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonStreamParser(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonStreamParser.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.JsonStreamParser(java.io.Reader)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Reader"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.JsonStreamParser.hasNext()",
+    "com.google.gson.JsonStreamParser.next()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.JsonStreamParser.hasNext()",
+    "com.google.gson.JsonStreamParser.next()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 927,
+      "class_name": "com.google.gson.JsonStreamParser",
+      "method_name": "hasNext",
+      "signature": "com.google.gson.JsonStreamParser.hasNext()"
+    },
+    {
+      "method_id": 929,
+      "class_name": "com.google.gson.JsonStreamParser",
+      "method_name": "next",
+      "signature": "com.google.gson.JsonStreamParser.next()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

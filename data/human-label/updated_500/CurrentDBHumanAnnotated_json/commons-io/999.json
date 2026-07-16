@@ -1,0 +1,51 @@
+{
+  "id": "999",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testCancel_233c73ad",
+  "test_path": "org/apache/commons/io/DirectoryWalkerTest",
+  "test_name": "testCancel",
+  "body": "@Test\n    void testCancel() {\n        String cancelName = null;\n\n        // Cancel on a file\n        try {\n            cancelName = \"DirectoryWalker.java\";\n            new TestCancelWalker(cancelName, false).find(javaDir);\n            fail(\"CancelException not thrown for '\" + cancelName + \"'\");\n        } catch (final DirectoryWalker.CancelException cancel) {\n            assertEquals(cancelName, cancel.getFile().getName(), \"File:  \" + cancelName);\n            assertEquals(5, cancel.getDepth(), \"Depth: \" + cancelName);\n        } catch (final IOException ex) {\n            fail(\"IOException: \" + cancelName + \" \" + ex);\n        }\n\n        // Cancel on a directory\n        try {\n            cancelName = \"commons\";\n            new TestCancelWalker(cancelName, false).find(javaDir);\n            fail(\"CancelException not thrown for '\" + cancelName + \"'\");\n        } catch (final DirectoryWalker.CancelException cancel) {\n            assertEquals(cancelName, cancel.getFile().getName(), \"File:  \" + cancelName);\n            assertEquals(3, cancel.getDepth(), \"Depth: \" + cancelName);\n        } catch (final IOException ex) {\n            fail(\"IOException: \" + cancelName + \" \" + ex);\n        }\n\n        // Suppress CancelException (use same file name as preceding test)\n        try {\n            final List<File> results = new TestCancelWalker(cancelName, true).find(javaDir);\n            final File lastFile = results.get(results.size() - 1);\n            assertEquals(cancelName, lastFile.getName(), \"Suppress:  \" + cancelName);\n        } catch (final IOException ex) {\n            fail(\"Suppress threw \" + ex);\n        }\n\n    }",
+  "invocations": [
+    "DirectoryWalker",
+    "walk",
+    "DirectoryWalker"
+  ],
+  "signature": {
+    "org.apache.commons.io.DirectoryWalker(java.io.FileFilter, int)": {
+      "params_len": 2,
+      "params": [
+        "java.io.FileFilter",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.util.Collection<T>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.DirectoryWalker()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2910,
+      "class_name": "org.apache.commons.io.DirectoryWalker",
+      "method_name": "walk",
+      "signature": "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

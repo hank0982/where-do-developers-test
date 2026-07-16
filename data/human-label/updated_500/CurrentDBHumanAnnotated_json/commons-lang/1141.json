@@ -1,0 +1,51 @@
+{
+  "id": "1141",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ClassUtilsTest_test_getName_Object_75d0ec2b",
+  "test_path": "org/apache/commons/lang3/ClassUtilsTest_test_getName",
+  "test_name": "Object",
+  "body": "@Test\n    void test_getName_Object() {\n        assertEquals(\"org.apache.commons.lang3.ClassUtils\", ClassUtils.getName(new ClassUtils(), \"<null>\"));\n        assertEquals(\"org.apache.commons.lang3.ClassUtilsTest$Inner\", ClassUtils.getName(new Inner(), \"<null>\"));\n        assertEquals(\"java.lang.String\", ClassUtils.getName(\"hello\", \"<null>\"));\n        assertEquals(\"<null>\", ClassUtils.getName(null, \"<null>\"));\n\n        // Inner types\n        final class Named {\n            // empty\n        }\n        assertEquals(\"org.apache.commons.lang3.ClassUtilsTest$4\", ClassUtils.getName(new Object() {\n            // empty\n        }, \"<null>\"));\n        assertEquals(\"org.apache.commons.lang3.ClassUtilsTest$4Named\", ClassUtils.getName(new Named(), \"<null>\"));\n        assertEquals(\"org.apache.commons.lang3.ClassUtilsTest$Inner\", ClassUtils.getName(new Inner(), \"<null>\"));\n    }",
+  "invocations": [
+    "getName",
+    "getName",
+    "ClassUtils"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.ClassUtils.getName(java.lang.Object, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ClassUtils.getName(java.lang.Class<?>, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Class<?>",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.ClassUtils()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ClassUtils.getName(java.lang.Object, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ClassUtils.getName(java.lang.Object, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1489,
+      "class_name": "org.apache.commons.lang3.ClassUtils",
+      "method_name": "getName",
+      "signature": "org.apache.commons.lang3.ClassUtils.getName(java.lang.Object, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

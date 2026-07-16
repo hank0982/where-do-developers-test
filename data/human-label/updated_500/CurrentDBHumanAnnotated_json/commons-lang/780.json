@@ -1,0 +1,35 @@
+{
+  "id": "780",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.ClassUtilsShortClassNameTest_testDollarSignImmediatelyAfterPackage_e9afe15e",
+  "test_path": "org/apache/commons/lang3/ClassUtilsShortClassNameTest",
+  "test_name": "testDollarSignImmediatelyAfterPackage",
+  "body": "@Test\n    void testDollarSignImmediatelyAfterPackage() {\n        assertEquals(\"$trange\", ClassUtils.getShortClassName($trange.class));\n    }",
+  "invocations": [
+    "getShortClassName"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.ClassUtils.getShortClassName(java.lang.Class<?>)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Class<?>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.ClassUtils.getShortClassName(java.lang.Class<?>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.ClassUtils.getShortClassName(java.lang.Class<?>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1518,
+      "class_name": "org.apache.commons.lang3.ClassUtils",
+      "method_name": "getShortClassName",
+      "signature": "org.apache.commons.lang3.ClassUtils.getShortClassName(java.lang.Class<?>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

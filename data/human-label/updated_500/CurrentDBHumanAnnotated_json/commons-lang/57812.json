@@ -1,0 +1,80 @@
+{
+  "id": "57812",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.FastDateParser_TimeZoneStrategyTest_testTimeZoneStrategy_TimeZone_d7bc7609",
+  "test_path": "org/apache/commons/lang3/time/FastDateParser_TimeZoneStrategyTest_testTimeZoneStrategy",
+  "test_name": "TimeZone",
+  "body": "@ParameterizedTest\n    @MethodSource(\"org.apache.commons.lang3.LocaleUtils#availableLocaleList()\")\n    void testTimeZoneStrategy_TimeZone(final Locale locale) {\n        testTimeZoneStrategyPattern_TimeZone_getAvailableIDs(locale);\n    }",
+  "invocations": [
+    "parse",
+    "FastDateParser",
+    "FastDateParser",
+    "getTimeZone",
+    "isAvailableLocale",
+    "isLanguageUndetermined"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale, java.util.Date)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale",
+        "java.util.Date"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.FastDateParser(java.lang.String, java.util.TimeZone, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.util.TimeZone",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.TimeZones.getTimeZone(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.LocaleUtils.isAvailableLocale(java.util.Locale)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.LocaleUtils.isLanguageUndetermined(java.util.Locale)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2598,
+      "class_name": "org.apache.commons.lang3.time.FastDateParser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

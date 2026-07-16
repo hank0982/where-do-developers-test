@@ -1,0 +1,33 @@
+{
+  "id": "969",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.dynamics.joint.AbstractPairedBodyJointTest_getBodyIterator_ad7c76a6",
+  "test_path": "org/dyn4j/dynamics/joint/AbstractPairedBodyJointTest",
+  "test_name": "getBodyIterator",
+  "body": "@Test\n\tpublic void getBodyIterator() {\n\t\tIterator<Body> it = aj.getBodyIterator();\n\t\tTestCase.assertNotNull(it);\n\t\t\n\t\tBody b1 = null;\n\t\tBody b2 = null;\n\t\t\n\t\t\n\t\tint n = 0;\n\t\twhile (it.hasNext()) {\n\t\t\tif (n == 0) b1 = it.next();\n\t\t\tif (n == 1) b2 = it.next();\n\t\t\tn++;\n\t\t}\n\t\t\n\t\tTestCase.assertEquals(2, n);\n\t\tTestCase.assertEquals(this.b1, b1);\n\t\tTestCase.assertEquals(this.b2, b2);\n\t}",
+  "invocations": [
+    "getBodyIterator"
+  ],
+  "signature": {
+    "org.dyn4j.dynamics.joint.AbstractJoint.getBodyIterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.dynamics.joint.AbstractJoint.getBodyIterator()"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.dynamics.joint.AbstractJoint.getBodyIterator()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 507,
+      "class_name": "org.dyn4j.dynamics.joint.AbstractJoint",
+      "method_name": "getBodyIterator",
+      "signature": "org.dyn4j.dynamics.joint.AbstractJoint.getBodyIterator()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

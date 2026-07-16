@@ -1,0 +1,35 @@
+{
+  "id": "5135",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.XmlStreamReaderUtilitiesTest_testTextXml_e9ad09b9",
+  "test_path": "org/apache/commons/io/input/XmlStreamReaderUtilitiesTest",
+  "test_name": "testTextXml",
+  "body": "@Test\n    void testTextXml() {\n        checkTextXml(false, null);\n        checkTextXml(false, \"\");\n        checkTextXml(true,  \"text/xml\");\n        checkTextXml(true,  \"text/xml-external-parsed-entity\");\n        checkTextXml(true,  \"text/soap+xml\");\n        checkTextXml(true,  \"text/atom+xml\");\n        checkTextXml(false, \"text/atomxml\");\n        checkTextXml(false, \"application/xml\");\n        checkTextXml(false, \"application/atom+xml\");\n    }",
+  "invocations": [
+    "isTextXml"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.XmlStreamReader.isTextXml(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.XmlStreamReader.isTextXml(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.XmlStreamReader.isTextXml(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1817,
+      "class_name": "org.apache.commons.io.input.XmlStreamReader",
+      "method_name": "isTextXml",
+      "signature": "org.apache.commons.io.input.XmlStreamReader.isTextXml(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

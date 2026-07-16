@@ -1,0 +1,43 @@
+{
+  "id": "37",
+  "project": "commons-exec",
+  "current_db_test_name": "org.apache.commons.exec.DefaultExecutorTest_testEnvironmentVariables_520dd3d7",
+  "test_path": "org/apache/commons/exec/DefaultExecutorTest",
+  "test_name": "testEnvironmentVariables",
+  "body": "@Test\n    void testEnvironmentVariables() throws Exception {\n        exec.execute(new CommandLine(environmentSript));\n        final String environment = baos.toString().trim();\n        assertFalse(environment.isEmpty(), \"Found no environment variables\");\n        assertFalse(environment.contains(\"NEW_VAR\"));\n    }",
+  "invocations": [
+    "execute",
+    "CommandLine"
+  ],
+  "signature": {
+    "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.exec.CommandLine"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.CommandLine(java.nio.file.Path)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.file.Path"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 105,
+      "class_name": "org.apache.commons.exec.DefaultExecutor",
+      "method_name": "execute",
+      "signature": "org.apache.commons.exec.DefaultExecutor.execute(org.apache.commons.exec.CommandLine)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

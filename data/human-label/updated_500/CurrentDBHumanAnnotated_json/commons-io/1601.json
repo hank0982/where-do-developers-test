@@ -1,0 +1,38 @@
+{
+  "id": "1601",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testCopyLarge_NoSkip_1357438c",
+  "test_path": "org/apache/commons/io/IOUtilsTest_testCopyLarge",
+  "test_name": "NoSkip",
+  "body": "@Test\n    void testCopyLarge_NoSkip() throws IOException {\n        try (ByteArrayInputStream is = new ByteArrayInputStream(iarr); ByteArrayOutputStream os = new ByteArrayOutputStream()) {\n            // Test our copy method\n            assertEquals(100, IOUtils.copyLarge(is, os, 0, 100));\n            final byte[] oarr = os.toByteArray();\n            // check that output length is correct\n            assertEquals(100, oarr.length);\n            // check that output data corresponds to input data\n            assertEquals(1, oarr[1]);\n            assertEquals(79, oarr[79]);\n            assertEquals(-1, oarr[80]);\n        }\n    }",
+  "invocations": [
+    "copyLarge"
+  ],
+  "signature": {
+    "org.apache.commons.io.IOUtils.copyLarge(java.io.InputStream, java.io.OutputStream, long, long)": {
+      "params_len": 4,
+      "params": [
+        "java.io.InputStream",
+        "java.io.OutputStream",
+        "long",
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.IOUtils.copyLarge(java.io.InputStream, java.io.OutputStream, long, long)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.IOUtils.copyLarge(java.io.InputStream, java.io.OutputStream, long, long)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 144,
+      "class_name": "org.apache.commons.io.IOUtils",
+      "method_name": "copyLarge",
+      "signature": "org.apache.commons.io.IOUtils.copyLarge(java.io.InputStream, java.io.OutputStream, long, long)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "354",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.TestDelegatingDatabaseMetaData_testGetConnection_c94f53e3",
+  "test_path": "org/apache/commons/dbcp2/TestDelegatingDatabaseMetaData",
+  "test_name": "testGetConnection",
+  "body": "@Test\n    void testGetConnection() throws Exception {\n        try {\n            delegate.getConnection();\n        } catch (final SQLException e) {\n            // ignore\n        }\n        verify(obj, times(0)).getConnection();\n    }",
+  "invocations": [
+    "getConnection"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.DelegatingDatabaseMetaData.getConnection()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.DelegatingDatabaseMetaData.getConnection()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.DelegatingDatabaseMetaData.getConnection()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1494,
+      "class_name": "org.apache.commons.dbcp2.DelegatingDatabaseMetaData",
+      "method_name": "getConnection",
+      "signature": "org.apache.commons.dbcp2.DelegatingDatabaseMetaData.getConnection()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

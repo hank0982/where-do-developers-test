@@ -1,0 +1,58 @@
+{
+  "id": "8212",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.CalendarUtilsTest_testToOffsetDateTime_5d8a5c7d",
+  "test_path": "org/apache/commons/lang3/time/CalendarUtilsTest",
+  "test_name": "testToOffsetDateTime",
+  "body": "@ParameterizedTest\n    @MethodSource(TimeZonesTest.TIME_ZONE_GET_AVAILABLE_IDS)\n    void testToOffsetDateTime(final String timeZoneId) {\n        final TimeZone timeZone = TimeZones.getTimeZone(timeZoneId);\n        final ZoneId zoneId = timeZone.toZoneId();\n        final Calendar calendar = new GregorianCalendar(timeZone);\n        calendar.setTimeInMillis(0);\n        assertEquals(OffsetDateTime.ofInstant(calendar.toInstant(), calendar.getTimeZone().toZoneId()), new CalendarUtils(calendar).toOffsetDateTime());\n        final ZonedDateTime zdt1 = ZonedDateTime.of(1, 2, 3, 4, 5, 6, 0, zoneId);\n        calendar.setTimeInMillis(zdt1.toInstant().toEpochMilli());\n        assertEquals(OffsetDateTime.ofInstant(zdt1.toInstant(), calendar.getTimeZone().toZoneId()), new CalendarUtils(calendar).toOffsetDateTime());\n    }",
+  "invocations": [
+    "getTimeZone",
+    "CalendarUtils",
+    "toOffsetDateTime",
+    "CalendarUtils"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.TimeZones.getTimeZone(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils(java.util.Calendar)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Calendar"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils.toOffsetDateTime()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.time.CalendarUtils(java.util.Calendar, java.util.Locale)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Calendar",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.CalendarUtils.toOffsetDateTime()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.CalendarUtils.toOffsetDateTime()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2702,
+      "class_name": "org.apache.commons.lang3.time.CalendarUtils",
+      "method_name": "toOffsetDateTime",
+      "signature": "org.apache.commons.lang3.time.CalendarUtils.toOffsetDateTime()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

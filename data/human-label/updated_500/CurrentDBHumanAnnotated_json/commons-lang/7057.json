@@ -1,0 +1,56 @@
+{
+  "id": "7057",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderAppendInsertTest_testAppend_FormattedString_a58cb65b",
+  "test_path": "org/apache/commons/lang3/text/StrBuilderAppendInsertTest_testAppend",
+  "test_name": "FormattedString",
+  "body": "@Test\n    void testAppend_FormattedString() {\n        StrBuilder sb;\n\n        sb = new StrBuilder();\n        sb.append(\"Hi\", (Object[]) null);\n        assertEquals(\"Hi\", sb.toString());\n\n        sb = new StrBuilder();\n        sb.append(\"Hi\", \"Alice\");\n        assertEquals(\"Hi\", sb.toString());\n\n        sb = new StrBuilder();\n        sb.append(\"Hi %s\", \"Alice\");\n        assertEquals(\"Hi Alice\", sb.toString());\n\n        sb = new StrBuilder();\n        sb.append(\"Hi %s %,d\", \"Alice\", 5000);\n        // group separator depends on system locale\n        final char groupingSeparator = DecimalFormatSymbols.getInstance().getGroupingSeparator();\n        final String expected = \"Hi Alice 5\" + groupingSeparator + \"000\";\n        assertEquals(expected, sb.toString());\n    }",
+  "invocations": [
+    "toString",
+    "StrBuilder",
+    "StrBuilder",
+    "append"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.text.StrBuilder.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String, java.lang.Object[])": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Object[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String, java.lang.Object[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String, java.lang.Object[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 499,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String, java.lang.Object[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "656",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.TextStringBuilderTest_testContains_String_204aa8a0",
+  "test_path": "org/apache/commons/text/TextStringBuilderTest_testContains",
+  "test_name": "String",
+  "body": "@Test\n    void testContains_String() {\n        final TextStringBuilder sb = new TextStringBuilder(\"abcdefghijklmnopqrstuvwxyz\");\n        assertTrue(sb.contains(\"a\"));\n        assertTrue(sb.contains(\"pq\"));\n        assertTrue(sb.contains(\"z\"));\n        assertFalse(sb.contains(\"zyx\"));\n        assertFalse(sb.contains((String) null));\n    }",
+  "invocations": [
+    "TextStringBuilder",
+    "contains",
+    "TextStringBuilder"
+  ],
+  "signature": {
+    "org.apache.commons.text.TextStringBuilder(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder.contains(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.TextStringBuilder.contains(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.TextStringBuilder.contains(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 551,
+      "class_name": "org.apache.commons.text.TextStringBuilder",
+      "method_name": "contains",
+      "signature": "org.apache.commons.text.TextStringBuilder.contains(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

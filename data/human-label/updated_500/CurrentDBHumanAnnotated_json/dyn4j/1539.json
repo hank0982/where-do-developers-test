@@ -1,0 +1,46 @@
+{
+  "id": "1539",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.geometry.GeometryTest_minkowskiSumInvalidCount1_b1e872de",
+  "test_path": "org/dyn4j/geometry/GeometryTest",
+  "test_name": "minkowskiSumInvalidCount1",
+  "body": "@Test(expected = IllegalArgumentException.class)\n\tpublic void minkowskiSumInvalidCount1() {\n\t\tGeometry.minkowskiSum(Geometry.createUnitCirclePolygon(5, 0.5), 0.2, 0);\n\t}",
+  "invocations": [
+    "createUnitCirclePolygon",
+    "minkowskiSum"
+  ],
+  "signature": {
+    "org.dyn4j.geometry.Geometry.createUnitCirclePolygon(int, double)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.minkowskiSum(org.dyn4j.geometry.Polygon, double, int)": {
+      "params_len": 3,
+      "params": [
+        "org.dyn4j.geometry.Polygon",
+        "double",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.geometry.Geometry.minkowskiSum(org.dyn4j.geometry.Polygon, double, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.geometry.Geometry.minkowskiSum(org.dyn4j.geometry.Polygon, double, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2152,
+      "class_name": "org.dyn4j.geometry.Geometry",
+      "method_name": "minkowskiSum",
+      "signature": "org.dyn4j.geometry.Geometry.minkowskiSum(org.dyn4j.geometry.Polygon, double, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

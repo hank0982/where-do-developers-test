@@ -1,0 +1,35 @@
+{
+  "id": "206",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_minusMinor_zero_53c4eb96",
+  "test_path": "org/joda/money/TestBigMoney_test_minusMinor",
+  "test_name": "zero",
+  "body": "@Test\n    void test_minusMinor_zero() {\n        var test = GBP_2_34.minusMinor(0);\n        assertThat(test).isSameAs(GBP_2_34);\n    }",
+  "invocations": [
+    "minusMinor"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.minusMinor(long)": {
+      "params_len": 1,
+      "params": [
+        "long"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.minusMinor(long)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.minusMinor(long)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 204,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "minusMinor",
+      "signature": "org.joda.money.BigMoney.minusMinor(long)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

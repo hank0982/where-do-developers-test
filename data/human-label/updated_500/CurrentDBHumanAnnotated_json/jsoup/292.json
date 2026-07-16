@@ -1,0 +1,37 @@
+{
+  "id": "292",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.integration.FuzzFixesTest_testHtmlParse_f238cdce",
+  "test_path": "org/jsoup/integration/FuzzFixesTest",
+  "test_name": "testHtmlParse",
+  "body": "@ParameterizedTest\n    @MethodSource(\"testFiles\")\n    void testHtmlParse(File file) throws IOException {\n        Document doc = Jsoup.parse(file, \"UTF-8\", \"https://example.com/\");\n        assertNotNull(doc);\n        doc = Jsoup.parse(file, \"UTF-8\", \"\"); // no base href attr; so same as a parse(string), which can have subtly different semantics\n        assertNotNull(doc);\n    }",
+  "invocations": [
+    "parse"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.io.File, java.lang.String, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "java.io.File",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.Jsoup.parse(java.io.File, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.Jsoup.parse(java.io.File, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 128,
+      "class_name": "org.jsoup.Jsoup",
+      "method_name": "parse",
+      "signature": "org.jsoup.Jsoup.parse(java.io.File, java.lang.String, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

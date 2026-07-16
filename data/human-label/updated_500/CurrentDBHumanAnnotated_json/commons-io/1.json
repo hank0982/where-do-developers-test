@@ -1,0 +1,33 @@
+{
+  "id": "1",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.ByteOrderMarkTest_testConstantCharsetNames_fffb6b53",
+  "test_path": "org/apache/commons/io/ByteOrderMarkTest",
+  "test_name": "testConstantCharsetNames",
+  "body": "@Test\n    void testConstantCharsetNames() {\n        assertNotNull(Charset.forName(ByteOrderMark.UTF_8.getCharsetName()));\n        assertNotNull(Charset.forName(ByteOrderMark.UTF_16BE.getCharsetName()));\n        assertNotNull(Charset.forName(ByteOrderMark.UTF_16LE.getCharsetName()));\n        assertNotNull(Charset.forName(ByteOrderMark.UTF_32BE.getCharsetName()));\n        assertNotNull(Charset.forName(ByteOrderMark.UTF_32LE.getCharsetName()));\n    }",
+  "invocations": [
+    "getCharsetName"
+  ],
+  "signature": {
+    "org.apache.commons.io.ByteOrderMark.getCharsetName()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.ByteOrderMark.getCharsetName()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.ByteOrderMark.getCharsetName()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3022,
+      "class_name": "org.apache.commons.io.ByteOrderMark",
+      "method_name": "getCharsetName",
+      "signature": "org.apache.commons.io.ByteOrderMark.getCharsetName()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

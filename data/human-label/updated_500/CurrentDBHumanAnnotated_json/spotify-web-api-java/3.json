@@ -1,0 +1,36 @@
+{
+  "id": "3",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.SpotifyHttpManagerTest_throwsSpotifyWebApiExceptionForAll4xxStatusCodes_28573e23",
+  "test_path": "se/michaelthelin/spotify/SpotifyHttpManagerTest",
+  "test_name": "throwsSpotifyWebApiExceptionForAll4xxStatusCodes",
+  "body": "@ParameterizedTest\n  @ValueSource(ints = {405, 409, 410, 414, 422, 431, 499})",
+  "invocations": [
+    "get"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.SpotifyHttpManager.get(java.net.URI, se.michaelthelin.spotify.Header[])": {
+      "params_len": 2,
+      "params": [
+        "java.net.URI",
+        "se.michaelthelin.spotify.Header[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "se.michaelthelin.spotify.SpotifyHttpManager.get(java.net.URI, se.michaelthelin.spotify.Header[])"
+  ],
+  "current_db_human_annotation": [
+    "se.michaelthelin.spotify.SpotifyHttpManager.get(java.net.URI, se.michaelthelin.spotify.Header[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 173,
+      "class_name": "se.michaelthelin.spotify.SpotifyHttpManager",
+      "method_name": "get",
+      "signature": "se.michaelthelin.spotify.SpotifyHttpManager.get(java.net.URI, se.michaelthelin.spotify.Header[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

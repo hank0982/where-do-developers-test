@@ -1,0 +1,35 @@
+{
+  "id": "964",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.StringTest_testEscapedCtrlRInStringSerialization_e685885a",
+  "test_path": "com/google/gson/functional/StringTest",
+  "test_name": "testEscapedCtrlRInStringSerialization",
+  "body": "@Test\n  public void testEscapedCtrlRInStringSerialization() {\n    String value = \"a\\rb\";\n    String json = gson.toJson(value);\n    assertThat(json).isEqualTo(\"\\\"a\\\\rb\\\"\");\n  }",
+  "invocations": [
+    "toJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

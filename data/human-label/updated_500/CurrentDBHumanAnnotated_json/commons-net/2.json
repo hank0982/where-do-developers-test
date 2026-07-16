@@ -1,0 +1,56 @@
+{
+  "id": "2",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.SocketClientTest_testConnectUnresolved_fc690a6a",
+  "test_path": "org/apache/commons/net/SocketClientTest",
+  "test_name": "testConnectUnresolved",
+  "body": "@Test\n    public void testConnectUnresolved() {\n        final SocketClient socketClient = new FTPClient();\n\n        assertThrows(UnknownHostException.class, () -> socketClient.connect(UNRESOLVED_HOST, REMOTE_PORT, null, -1));\n        final InetSocketAddress remoteAddress = socketClient.getRemoteInetSocketAddress();\n        assertTrue(remoteAddress.isUnresolved());\n        assertEquals(UNRESOLVED_HOST, remoteAddress.getHostString());\n        assertEquals(REMOTE_PORT, remoteAddress.getPort());\n    }",
+  "invocations": [
+    "connect",
+    "SocketClient",
+    "FTPClient",
+    "FTP"
+  ],
+  "signature": {
+    "org.apache.commons.net.SocketClient.connect(java.lang.String, int, java.net.InetAddress, int)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "int",
+        "java.net.InetAddress",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.SocketClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTPClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.net.ftp.FTP()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.SocketClient.connect(java.lang.String, int, java.net.InetAddress, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.SocketClient.connect(java.lang.String, int, java.net.InetAddress, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 723,
+      "class_name": "org.apache.commons.net.SocketClient",
+      "method_name": "connect",
+      "signature": "org.apache.commons.net.SocketClient.connect(java.lang.String, int, java.net.InetAddress, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

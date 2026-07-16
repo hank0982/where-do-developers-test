@@ -1,0 +1,171 @@
+{
+  "id": "7094",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.text.StrBuilderTest_testCapacityAndLength_a284b652",
+  "test_path": "org/apache/commons/lang3/text/StrBuilderTest",
+  "test_name": "testCapacityAndLength",
+  "body": "@Test\n    void testCapacityAndLength() {\n        final StrBuilder sb = new StrBuilder();\n        assertEquals(32, sb.capacity());\n        assertEquals(0, sb.length());\n        assertEquals(0, sb.size());\n        assertTrue(sb.isEmpty());\n\n        sb.minimizeCapacity();\n        assertEquals(0, sb.capacity());\n        assertEquals(0, sb.length());\n        assertEquals(0, sb.size());\n        assertTrue(sb.isEmpty());\n\n        sb.ensureCapacity(32);\n        assertTrue(sb.capacity() >= 32);\n        assertEquals(0, sb.length());\n        assertEquals(0, sb.size());\n        assertTrue(sb.isEmpty());\n\n        sb.append(\"foo\");\n        assertTrue(sb.capacity() >= 32);\n        assertEquals(3, sb.length());\n        assertEquals(3, sb.size());\n        assertFalse(sb.isEmpty());\n\n        sb.clear();\n        assertTrue(sb.capacity() >= 32);\n        assertEquals(0, sb.length());\n        assertEquals(0, sb.size());\n        assertTrue(sb.isEmpty());\n\n        sb.append(\"123456789012345678901234567890123\");\n        assertTrue(sb.capacity() > 32);\n        assertEquals(33, sb.length());\n        assertEquals(33, sb.size());\n        assertFalse(sb.isEmpty());\n\n        sb.ensureCapacity(16);\n        assertTrue(sb.capacity() > 16);\n        assertEquals(33, sb.length());\n        assertEquals(33, sb.size());\n        assertFalse(sb.isEmpty());\n\n        sb.minimizeCapacity();\n        assertEquals(33, sb.capacity());\n        assertEquals(33, sb.length());\n        assertEquals(33, sb.size());\n        assertFalse(sb.isEmpty());\n\n        assertIndexOutOfBoundsException(() -> sb.setLength(-1), \"setLength(-1) expected StringIndexOutOfBoundsException\");\n\n        sb.setLength(33);\n        assertEquals(33, sb.capacity());\n        assertEquals(33, sb.length());\n        assertEquals(33, sb.size());\n        assertFalse(sb.isEmpty());\n\n        sb.setLength(16);\n        assertTrue(sb.capacity() >= 16);\n        assertEquals(16, sb.length());\n        assertEquals(16, sb.size());\n        assertEquals(\"1234567890123456\", sb.toString());\n        assertFalse(sb.isEmpty());\n\n        sb.setLength(32);\n        assertTrue(sb.capacity() >= 32);\n        assertEquals(32, sb.length());\n        assertEquals(32, sb.size());\n        assertEquals(\"1234567890123456\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\", sb.toString());\n        assertFalse(sb.isEmpty());\n\n        sb.setLength(0);\n        assertTrue(sb.capacity() >= 32);\n        assertEquals(0, sb.length());\n        assertEquals(0, sb.size());\n        assertTrue(sb.isEmpty());\n    }",
+  "invocations": [
+    "length",
+    "toString",
+    "capacity",
+    "StrBuilder",
+    "append",
+    "isEmpty",
+    "ensureCapacity",
+    "StrBuilder",
+    "minimizeCapacity",
+    "setLength",
+    "size",
+    "clear"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.text.StrBuilder.length()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.capacity()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.ensureCapacity(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.setLength(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.lang3.text.StrBuilder.clear()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.text.StrBuilder.length()",
+    "org.apache.commons.lang3.text.StrBuilder.capacity()",
+    "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String)",
+    "org.apache.commons.lang3.text.StrBuilder.isEmpty()",
+    "org.apache.commons.lang3.text.StrBuilder.ensureCapacity(int)",
+    "org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()",
+    "org.apache.commons.lang3.text.StrBuilder.setLength(int)",
+    "org.apache.commons.lang3.text.StrBuilder.size()",
+    "org.apache.commons.lang3.text.StrBuilder.clear()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.text.StrBuilder.length()",
+    "org.apache.commons.lang3.text.StrBuilder.capacity()",
+    "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String)",
+    "org.apache.commons.lang3.text.StrBuilder.isEmpty()",
+    "org.apache.commons.lang3.text.StrBuilder.ensureCapacity(int)",
+    "org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()",
+    "org.apache.commons.lang3.text.StrBuilder.setLength(int)",
+    "org.apache.commons.lang3.text.StrBuilder.size()",
+    "org.apache.commons.lang3.text.StrBuilder.clear()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 382,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "length",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.length()"
+    },
+    {
+      "method_id": 422,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "capacity",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.capacity()"
+    },
+    {
+      "method_id": 434,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "append",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.append(java.lang.String)"
+    },
+    {
+      "method_id": 451,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "isEmpty",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.isEmpty()"
+    },
+    {
+      "method_id": 473,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "ensureCapacity",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.ensureCapacity(int)"
+    },
+    {
+      "method_id": 493,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "minimizeCapacity",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.minimizeCapacity()"
+    },
+    {
+      "method_id": 501,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "setLength",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.setLength(int)"
+    },
+    {
+      "method_id": 505,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "size",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.size()"
+    },
+    {
+      "method_id": 513,
+      "class_name": "org.apache.commons.lang3.text.StrBuilder",
+      "method_name": "clear",
+      "signature": "org.apache.commons.lang3.text.StrBuilder.clear()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

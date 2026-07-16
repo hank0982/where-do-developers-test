@@ -1,0 +1,35 @@
+{
+  "id": "1254",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.stream.JsonReaderTest_testNulls_ee8507a7",
+  "test_path": "com/google/gson/stream/JsonReaderTest",
+  "test_name": "testNulls",
+  "body": "@SuppressWarnings(\"unused\")\n  @Test\n  public void testNulls() {\n    assertThrows(NullPointerException.class, () -> new JsonReader(null));\n  }",
+  "invocations": [
+    "JsonReader"
+  ],
+  "signature": {
+    "com.google.gson.stream.JsonReader(java.io.Reader)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Reader"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.stream.JsonReader(java.io.Reader)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.stream.JsonReader(java.io.Reader)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 154,
+      "class_name": "com.google.gson.stream.JsonReader",
+      "method_name": "JsonReader",
+      "signature": "com.google.gson.stream.JsonReader(java.io.Reader)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

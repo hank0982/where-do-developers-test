@@ -1,0 +1,62 @@
+{
+  "id": "968",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.parser.HtmlParserTest_handlesXmlDeclAndCommentsBeforeDoctype_eb16c7ff",
+  "test_path": "org/jsoup/parser/HtmlParserTest",
+  "test_name": "handlesXmlDeclAndCommentsBeforeDoctype",
+  "body": "@Test public void handlesXmlDeclAndCommentsBeforeDoctype() throws IOException {\n        File in = ParseTest.getFile(\"/htmltests/comments.html\");\n        Document doc = Jsoup.parse(in, \"UTF-8\");\n\n        // split out to confirm comment nodes indent correct\n        assertEquals(\"<!--?xml version=\\\"1.0\\\" encoding=\\\"utf-8\\\"?-->\\n\" +\n            \"<!-- so -->\\n\" +\n            \"<!DOCTYPE html PUBLIC \\\"-//W3C//DTD XHTML 1.0 Transitional//EN\\\" \\\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\\\">\\n\" +\n            \"<!-- what -->\\n\" +\n            \"<html xml:lang=\\\"en\\\" lang=\\\"en\\\" xmlns=\\\"http://www.w3.org/1999/xhtml\\\">\\n\" +\n            \" <!-- now -->\\n\" +\n            \" <head>\\n\" +\n            \"  <!-- then -->\\n\" +\n            \"  <meta http-equiv=\\\"Content-type\\\" content=\\\"text/html; charset=utf-8\\\">\\n\" +\n            \"  <title>A Certain Kind of Test</title>\\n\" +\n            \" </head>\\n\" +\n            \" <body>\\n\" +\n            \"  <h1>Hello</h1>\\n\" +\n            \"  (There is a UTF8 hidden BOM at the top of this file.)\\n\" +\n            \" </body>\\n\" +\n            \"</html>\", doc.html());\n\n        assertEquals(\"A Certain Kind of Test\", doc.head().select(\"title\").text());\n    }",
+  "invocations": [
+    "parse",
+    "select",
+    "html",
+    "head",
+    "text"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.select(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.html()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Document.head()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.select.Elements.text()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.Jsoup.parse(java.io.File, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.Jsoup.parse(java.io.File, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 131,
+      "class_name": "org.jsoup.Jsoup",
+      "method_name": "parse",
+      "signature": "org.jsoup.Jsoup.parse(java.io.File, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "4127",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.StringUtilsContainsTest_testContainsIgnoreCase_StringString_dbcb960f",
+  "test_path": "org/apache/commons/lang3/StringUtilsContainsTest_testContainsIgnoreCase",
+  "test_name": "StringString",
+  "body": "@Test\n    void testContainsIgnoreCase_StringString() {\n        assertFalse(StringUtils.containsIgnoreCase(null, null));\n\n        // Null tests\n        assertFalse(StringUtils.containsIgnoreCase(null, \"\"));\n        assertFalse(StringUtils.containsIgnoreCase(null, \"a\"));\n        assertFalse(StringUtils.containsIgnoreCase(null, \"abc\"));\n\n        assertFalse(StringUtils.containsIgnoreCase(\"\", null));\n        assertFalse(StringUtils.containsIgnoreCase(\"a\", null));\n        assertFalse(StringUtils.containsIgnoreCase(\"abc\", null));\n\n        // Match len = 0\n        assertTrue(StringUtils.containsIgnoreCase(\"\", \"\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"a\", \"\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"abc\", \"\"));\n\n        // Match len = 1\n        assertFalse(StringUtils.containsIgnoreCase(\"\", \"a\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"a\", \"a\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"abc\", \"a\"));\n        assertFalse(StringUtils.containsIgnoreCase(\"\", \"A\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"a\", \"A\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"abc\", \"A\"));\n\n        // Match len > 1\n        assertFalse(StringUtils.containsIgnoreCase(\"\", \"abc\"));\n        assertFalse(StringUtils.containsIgnoreCase(\"a\", \"abc\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"xabcz\", \"abc\"));\n        assertFalse(StringUtils.containsIgnoreCase(\"\", \"ABC\"));\n        assertFalse(StringUtils.containsIgnoreCase(\"a\", \"ABC\"));\n        assertTrue(StringUtils.containsIgnoreCase(\"xabcz\", \"ABC\"));\n    }",
+  "invocations": [
+    "containsIgnoreCase"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.StringUtils.containsIgnoreCase(java.lang.CharSequence, java.lang.CharSequence)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.CharSequence",
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.StringUtils.containsIgnoreCase(java.lang.CharSequence, java.lang.CharSequence)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.StringUtils.containsIgnoreCase(java.lang.CharSequence, java.lang.CharSequence)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1183,
+      "class_name": "org.apache.commons.lang3.StringUtils",
+      "method_name": "containsIgnoreCase",
+      "signature": "org.apache.commons.lang3.StringUtils.containsIgnoreCase(java.lang.CharSequence, java.lang.CharSequence)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "7109",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.set.ListOrderedSet2Test_testCollectionContains_15824850",
+  "test_path": "org/apache/commons/collections4/set/ListOrderedSet2Test",
+  "test_name": "testCollectionContains",
+  "body": "@Test\n    void testCollectionContains() {\n        Object[] elements;\n\n        resetEmpty();\n        elements = getFullElements();\n        for (int i = 0; i < elements.length; i++) {\n            assertFalse(getCollection().contains(elements[i]), \"Empty collection shouldn't contain element[\" + i + \"]\");\n        }\n        // make sure calls to \"contains\" don't change anything\n        verify();\n\n        elements = getOtherElements();\n        for (int i = 0; i < elements.length; i++) {\n            assertFalse(getCollection().contains(elements[i]), \"Empty collection shouldn't contain element[\" + i + \"]\");\n        }\n        // make sure calls to \"contains\" don't change anything\n        verify();\n\n        resetFull();\n        elements = getFullElements();\n        for (int i = 0; i < elements.length; i++) {\n            assertTrue(getCollection().contains(elements[i]),\n                    \"Full collection should contain element[\" + i + \"]\");\n        }\n        // make sure calls to \"contains\" don't change anything\n        verify();\n\n        resetFull();\n        elements = getOtherElements();\n        for (final Object element : elements) {\n            assertFalse(getCollection().contains(element), \"Full collection shouldn't contain element\");\n        }\n    }",
+  "invocations": [
+    "AbstractSerializableSetDecorator",
+    "iterator",
+    "ListOrderedSet",
+    "addAll",
+    "next",
+    "hashCode",
+    "AbstractSetDecorator",
+    "hasNext",
+    "contains",
+    "AbstractCollectionDecorator",
+    "isEmpty",
+    "size"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.set.AbstractSerializableSetDecorator(java.util.Set<E>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Set<E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.ListOrderedSet.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.ListOrderedSet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.ListOrderedSet.addAll(java.util.Collection<? extends E>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<? extends E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.ListOrderedSet$OrderedSetIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.AbstractSetDecorator.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.set.AbstractSetDecorator(java.util.Set<E>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Set<E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.contains(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator(java.util.Collection<E>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.contains(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.contains(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4057,
+      "class_name": "org.apache.commons.collections4.collection.AbstractCollectionDecorator",
+      "method_name": "contains",
+      "signature": "org.apache.commons.collections4.collection.AbstractCollectionDecorator.contains(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

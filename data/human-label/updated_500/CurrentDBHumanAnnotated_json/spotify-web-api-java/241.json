@@ -1,0 +1,39 @@
+{
+  "id": "241",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.requests.data.playlists.AddItemsToPlaylistRequestTest_shouldReturnDefault_sync_fbd7583d",
+  "test_path": "se/michaelthelin/spotify/requests/data/playlists/AddItemsToPlaylistRequestTest_shouldReturnDefault",
+  "test_name": "sync",
+  "body": "@Test\n  public void shouldReturnDefault_sync() throws IOException, SpotifyWebApiException, ParseException {\n    shouldReturnDefault(defaultRequest.execute());\n  }",
+  "invocations": [
+    "getSnapshotId",
+    "execute"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.model_objects.special.SnapshotResult.getSnapshotId()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.data.playlists.AddItemsToPlaylistRequest.execute()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "se.michaelthelin.spotify.requests.data.playlists.AddItemsToPlaylistRequest.execute()"
+  ],
+  "current_db_human_annotation": [
+    "se.michaelthelin.spotify.requests.data.playlists.AddItemsToPlaylistRequest.execute()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1739,
+      "class_name": "se.michaelthelin.spotify.requests.data.playlists.AddItemsToPlaylistRequest",
+      "method_name": "execute",
+      "signature": "se.michaelthelin.spotify.requests.data.playlists.AddItemsToPlaylistRequest.execute()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

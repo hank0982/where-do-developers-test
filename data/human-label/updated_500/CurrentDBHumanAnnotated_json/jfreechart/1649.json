@@ -1,0 +1,36 @@
+{
+  "id": "1649",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.statistics.StatisticsTest_testCorrelation2_2fd9cd23",
+  "test_path": "org/jfree/data/statistics/StatisticsTest",
+  "test_name": "testCorrelation2",
+  "body": "@Test\n    public void testCorrelation2() {\n        Number[] data1 = new Number[20];\n        data1[0] = 68.0;\n        data1[1] = 71.0;\n        data1[2] = 62.0;\n        data1[3] = 75.0;\n        data1[4] = 58.0;\n        data1[5] = 60.0;\n        data1[6] = 67.0;\n        data1[7] = 68.0;\n        data1[8] = 71.0;\n        data1[9] = 69.0;\n        data1[10] = 68.0;\n        data1[11] = 67.0;\n        data1[12] = 63.0;\n        data1[13] = 62.0;\n        data1[14] = 60.0;\n        data1[15] = 63.0;\n        data1[16] = 65.0;\n        data1[17] = 67.0;\n        data1[18] = 63.0;\n        data1[19] = 61.0;\n        Number[] data2 = new Number[20];\n        data2[0] = 4.1;\n        data2[1] = 4.6;\n        data2[2] = 3.8;\n        data2[3] = 4.4;\n        data2[4] = 3.2;\n        data2[5] = 3.1;\n        data2[6] = 3.8;\n        data2[7] = 4.1;\n        data2[8] = 4.3;\n        data2[9] = 3.7;\n        data2[10] = 3.5;\n        data2[11] = 3.2;\n        data2[12] = 3.7;\n        data2[13] = 3.3;\n        data2[14] = 3.4;\n        data2[15] = 4.0;\n        data2[16] = 4.1;\n        data2[17] = 3.8;\n        data2[18] = 3.4;\n        data2[19] = 3.6;\n        double r = Statistics.getCorrelation(data1, data2);\n        assertEquals(0.7306356862792885, r, 0.000000000001);\n    }",
+  "invocations": [
+    "getCorrelation"
+  ],
+  "signature": {
+    "org.jfree.data.statistics.Statistics.getCorrelation(java.lang.Number[], java.lang.Number[])": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Number[]",
+        "java.lang.Number[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.statistics.Statistics.getCorrelation(java.lang.Number[], java.lang.Number[])"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.statistics.Statistics.getCorrelation(java.lang.Number[], java.lang.Number[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2070,
+      "class_name": "org.jfree.data.statistics.Statistics",
+      "method_name": "getCorrelation",
+      "signature": "org.jfree.data.statistics.Statistics.getCorrelation(java.lang.Number[], java.lang.Number[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

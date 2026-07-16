@@ -1,0 +1,36 @@
+{
+  "id": "3866",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.RandomStringUtilsTest_testRandomPrintRange_a8e34e50",
+  "test_path": "org/apache/commons/lang3/RandomStringUtilsTest",
+  "test_name": "testRandomPrintRange",
+  "body": "@ParameterizedTest\n    @MethodSource(\"randomProvider\")\n    void testRandomPrintRange(final RandomStringUtils rsu) {\n        final int expectedMinLengthInclusive = 1;\n        final int expectedMaxLengthExclusive = 11;\n        final String pattern = \"^\\\\p{Print}{\" + expectedMinLengthInclusive + ',' + expectedMaxLengthExclusive + \"}$\";\n\n        int maxCreatedLength = expectedMinLengthInclusive;\n        int minCreatedLength = expectedMaxLengthExclusive - 1;\n        for (int i = 0; i < LOOP_COUNT; i++) {\n            final String s = rsu.nextPrint(expectedMinLengthInclusive, expectedMaxLengthExclusive);\n            assertTrue(s.length() >= expectedMinLengthInclusive, \"within range\");\n            assertTrue(s.length() <= expectedMaxLengthExclusive - 1, \"within range\");\n            assertTrue(s.matches(pattern), s);\n\n            if (s.length() < minCreatedLength) {\n                minCreatedLength = s.length();\n            }\n\n            if (s.length() > maxCreatedLength) {\n                maxCreatedLength = s.length();\n            }\n        }\n        assertEquals(expectedMinLengthInclusive, minCreatedLength, \"min generated, may fail randomly rarely\");\n        assertEquals(expectedMaxLengthExclusive - 1, maxCreatedLength, \"max generated, may fail randomly rarely\");\n    }",
+  "invocations": [
+    "nextPrint"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.RandomStringUtils.nextPrint(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.RandomStringUtils.nextPrint(int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.RandomStringUtils.nextPrint(int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2545,
+      "class_name": "org.apache.commons.lang3.RandomStringUtils",
+      "method_name": "nextPrint",
+      "signature": "org.apache.commons.lang3.RandomStringUtils.nextPrint(int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "1375",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testToURLs3a_c804d4c0",
+  "test_path": "org/apache/commons/io/FileUtilsTest",
+  "test_name": "testToURLs3a",
+  "body": "@Test\n    void testToURLs3a() throws Exception {\n        final File[] files = {}; // empty array\n        final URL[] urls = FileUtils.toURLs(files);\n        assertEquals(0, urls.length);\n    }",
+  "invocations": [
+    "toURLs"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.toURLs(java.io.File[])": {
+      "params_len": 1,
+      "params": [
+        "java.io.File[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.toURLs(java.io.File[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.toURLs(java.io.File[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 361,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "toURLs",
+      "signature": "org.apache.commons.io.FileUtils.toURLs(java.io.File[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

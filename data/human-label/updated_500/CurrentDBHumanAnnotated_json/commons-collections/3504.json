@@ -1,0 +1,74 @@
+{
+  "id": "3504",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.list.TreeListTest_testListEquals_a0b67570",
+  "test_path": "org/apache/commons/collections4/list/TreeListTest",
+  "test_name": "testListEquals",
+  "body": "@Test\n    void testListEquals() {\n        resetEmpty();\n        List<E> list = getCollection();\n        assertTrue(list.equals(getConfirmed()), \"Empty lists should be equal\");\n        verify();\n        assertTrue(list.equals(list), \"Empty list should equal self\");\n        verify();\n\n        List<E> list2 = Arrays.asList(getFullElements());\n        assertFalse(list.equals(list2), \"Empty list shouldn't equal full\");\n        verify();\n\n        list2 = Arrays.asList(getOtherElements());\n        assertFalse(list.equals(list2), \"Empty list shouldn't equal other\");\n        verify();\n\n        resetFull();\n        list = getCollection();\n        assertTrue(list.equals(getConfirmed()), \"Full lists should be equal\");\n        verify();\n        assertTrue(list.equals(list), \"Full list should equal self\");\n        verify();\n\n        list2 = makeObject();\n        assertFalse(list.equals(list2), \"Full list shouldn't equal empty\");\n        verify();\n\n        list2 = Arrays.asList(getOtherElements());\n        assertFalse(list.equals(list2), \"Full list shouldn't equal other\");\n        verify();\n\n        list2 = Arrays.asList(getFullElements());\n        if (list2.size() < 2 && isAddSupported()) {\n            // main list is only size 1, so let's add other elements to get a better list\n            list.addAll(Arrays.asList(getOtherElements()));\n            getConfirmed().addAll(Arrays.asList(getOtherElements()));\n            list2 = new ArrayList<>(list2);\n            list2.addAll(Arrays.asList(getOtherElements()));\n        }\n        if (list2.size() > 1) {\n            Collections.reverse(list2);\n            assertFalse(list.equals(list2), \"Full list shouldn't equal full list with same elements but different order\");\n            verify();\n        }\n\n        resetFull();\n        list = getCollection();\n        assertFalse(list.isEmpty(), \"List shouldn't equal String\");\n        verify();\n\n        final List<E> listForC = Arrays.asList(getFullElements());\n        final Collection<E> c = new AbstractCollection<E>() {\n            @Override\n            public Iterator<E> iterator() {\n                return listForC.iterator();\n            }\n\n            @Override\n            public int size() {\n                return listForC.size();\n            }\n        };\n\n        assertFalse(list.equals(c), \"List shouldn't equal nonlist with same elements in same order\");\n        verify();\n    }",
+  "invocations": [
+    "addAll",
+    "listIterator",
+    "get",
+    "size",
+    "TreeList",
+    "iterator",
+    "toArray",
+    "hasNext",
+    "next"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.list.TreeList.addAll(java.util.Collection<? extends E>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Collection<? extends E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList.listIterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList.get(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList.toArray()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList$TreeListIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.TreeList$TreeListIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [],
+  "current_db_human_annotation": [],
+  "current_db_human_annotation_details": [],
+  "label_source": "reviewed_empty"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "1286",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.stream.JsonReaderTest_testSkipValueAfterEndOfDocument_2dc2ac70",
+  "test_path": "com/google/gson/stream/JsonReaderTest",
+  "test_name": "testSkipValueAfterEndOfDocument",
+  "body": "@Test\n  public void testSkipValueAfterEndOfDocument() throws IOException {\n    JsonReader reader = new JsonReader(reader(\"{}\"));\n    reader.beginObject();\n    reader.endObject();\n    assertThat(reader.peek()).isEqualTo(JsonToken.END_DOCUMENT);\n\n    assertThat(reader.getPath()).isEqualTo(\"$\");\n    reader.skipValue();\n    assertThat(reader.peek()).isEqualTo(JsonToken.END_DOCUMENT);\n    assertThat(reader.getPath()).isEqualTo(\"$\");\n  }",
+  "invocations": [
+    "JsonReader",
+    "getPath",
+    "peek",
+    "endObject",
+    "skipValue",
+    "beginObject"
+  ],
+  "signature": {
+    "com.google.gson.stream.JsonReader(java.io.Reader)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Reader"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonReader.getPath()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonReader.peek()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonReader.endObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonReader.skipValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonReader.beginObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.stream.JsonReader.skipValue()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.stream.JsonReader.skipValue()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 186,
+      "class_name": "com.google.gson.stream.JsonReader",
+      "method_name": "skipValue",
+      "signature": "com.google.gson.stream.JsonReader.skipValue()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

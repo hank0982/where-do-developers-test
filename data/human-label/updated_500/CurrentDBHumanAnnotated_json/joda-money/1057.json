@@ -1,0 +1,101 @@
+{
+  "id": "1057",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.format.TestMoneyFormatterBuilder_test_appendAmount_MoneyAmountStyle_BHD_d5b68663",
+  "test_path": "org/joda/money/format/TestMoneyFormatterBuilder_test_appendAmount_MoneyAmountStyle",
+  "test_name": "BHD",
+  "body": "@ParameterizedTest\n    @MethodSource(\"data_appendAmount_MoneyAmountStyle\")\n    void test_appendAmount_MoneyAmountStyle_BHD(\n            MoneyAmountStyle style,\n            String amount,\n            String expected) {\n\n        iBuilder.appendAmount(style);\n        var test = iBuilder.toFormatter();\n        var money = BigMoney.of(BHD, new BigDecimal(amount));\n        assertThat(test.print(money)).isEqualTo(expected);\n        if (!style.isAbsValue()) {\n            assertThat(test.parse(expected, 0).getAmount()).isEqualTo(money.getAmount());\n        } else {\n            assertThat(test.parse(expected, 0).getAmount()).isEqualTo(money.getAmount().abs());\n        }",
+  "invocations": [
+    "isAbsValue",
+    "appendAmount",
+    "toFormatter",
+    "print",
+    "parse",
+    "getAmount",
+    "of",
+    "getAmount"
+  ],
+  "signature": {
+    "org.joda.money.format.MoneyAmountStyle.isAbsValue()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyFormatterBuilder.appendAmount(org.joda.money.format.MoneyAmountStyle)": {
+      "params_len": 1,
+      "params": [
+        "org.joda.money.format.MoneyAmountStyle"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyFormatterBuilder.toFormatter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyFormatter.print(org.joda.money.BigMoneyProvider)": {
+      "params_len": 1,
+      "params": [
+        "org.joda.money.BigMoneyProvider"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.CharSequence",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.format.MoneyParseContext.getAmount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.joda.money.BigMoney.of(org.joda.money.CurrencyUnit, java.math.BigDecimal)": {
+      "params_len": 2,
+      "params": [
+        "org.joda.money.CurrencyUnit",
+        "java.math.BigDecimal"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.BigMoney.getAmount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.format.MoneyFormatterBuilder.appendAmount(org.joda.money.format.MoneyAmountStyle)",
+    "org.joda.money.format.MoneyFormatter.print(org.joda.money.BigMoneyProvider)",
+    "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.format.MoneyFormatterBuilder.appendAmount(org.joda.money.format.MoneyAmountStyle)",
+    "org.joda.money.format.MoneyFormatter.print(org.joda.money.BigMoneyProvider)",
+    "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 95,
+      "class_name": "org.joda.money.format.MoneyFormatterBuilder",
+      "method_name": "appendAmount",
+      "signature": "org.joda.money.format.MoneyFormatterBuilder.appendAmount(org.joda.money.format.MoneyAmountStyle)"
+    },
+    {
+      "method_id": 110,
+      "class_name": "org.joda.money.format.MoneyFormatter",
+      "method_name": "print",
+      "signature": "org.joda.money.format.MoneyFormatter.print(org.joda.money.BigMoneyProvider)"
+    },
+    {
+      "method_id": 115,
+      "class_name": "org.joda.money.format.MoneyFormatter",
+      "method_name": "parse",
+      "signature": "org.joda.money.format.MoneyFormatter.parse(java.lang.CharSequence, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "4703",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.SwappedDataInputStreamTest_testReadUTF_e4f11c80",
+  "test_path": "org/apache/commons/io/input/SwappedDataInputStreamTest",
+  "test_name": "testReadUTF",
+  "body": "@Test\n    void testReadUTF() {\n        assertThrows(UnsupportedOperationException.class, () -> this.sdis.readUTF(), \"readUTF should be unsupported.\");\n    }",
+  "invocations": [
+    "readUTF"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.SwappedDataInputStream.readUTF()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.SwappedDataInputStream.readUTF()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.SwappedDataInputStream.readUTF()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2188,
+      "class_name": "org.apache.commons.io.input.SwappedDataInputStream",
+      "method_name": "readUTF",
+      "signature": "org.apache.commons.io.input.SwappedDataInputStream.readUTF()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

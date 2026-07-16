@@ -1,0 +1,39 @@
+{
+  "id": "7232",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.text.StrSubstitutorTest_testStaticReplacePrefixSuffix_8e764ed8",
+  "test_path": "org/apache/commons/lang3/text/StrSubstitutorTest",
+  "test_name": "testStaticReplacePrefixSuffix",
+  "body": "@Test\n    void testStaticReplacePrefixSuffix() {\n        final Map<String, String> map = new HashMap<>();\n        map.put(\"name\", \"commons\");\n        assertEquals(\"Hi commons!\", StrSubstitutor.replace(\"Hi <name>!\", map, \"<\", \">\"));\n    }",
+  "invocations": [
+    "replace"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.text.StrSubstitutor.replace(java.lang.Object, java.util.Map<java.lang.String, V>, java.lang.String, java.lang.String)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.Object",
+        "java.util.Map<java.lang.String",
+        "V>",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.text.StrSubstitutor.replace(java.lang.Object, java.util.Map<java.lang.String, V>, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.text.StrSubstitutor.replace(java.lang.Object, java.util.Map<java.lang.String, V>, java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 326,
+      "class_name": "org.apache.commons.lang3.text.StrSubstitutor",
+      "method_name": "replace",
+      "signature": "org.apache.commons.lang3.text.StrSubstitutor.replace(java.lang.Object, java.util.Map<java.lang.String, V>, java.lang.String, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "735",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.collision.shapes.RectangleSegmentTest_detectSat_90e77643",
+  "test_path": "org/dyn4j/collision/shapes/RectangleSegmentTest",
+  "test_name": "detectSat",
+  "body": "@Test\n\tpublic void detectSat() {\n\t\tPenetration p = new Penetration();\n\t\tTransform t1 = new Transform();\n\t\tTransform t2 = new Transform();\n\t\t\n\t\tVector2 n = null;\n\t\t\n\t\t// test containment\n\t\tTestCase.assertTrue(this.sat.detect(rect, t1, seg, t2, p));\n\t\tTestCase.assertTrue(this.sat.detect(rect, t1, seg, t2));\n\t\tn = p.getNormal();\n\t\tTestCase.assertEquals(0.466, p.getDepth(), 1.0e-3);\n\t\tTestCase.assertEquals(-0.485, n.x, 1.0e-3);\n\t\tTestCase.assertEquals(-0.874, n.y, 1.0e-3);\n\t\t\n\t\t// try reversing the shapes\n\t\tp.clear();\n\t\tTestCase.assertTrue(this.sat.detect(seg, t2, rect, t1, p));\n\t\tTestCase.assertTrue(this.sat.detect(seg, t2, rect, t1));\n\t\tn = p.getNormal();\n\t\tTestCase.assertEquals(0.466, p.getDepth(), 1.0e-3);\n\t\tTestCase.assertEquals(0.485, n.x, 1.0e-3);\n\t\tTestCase.assertEquals(0.874, n.y, 1.0e-3);\n\t\t\n\t\t// test overlap\n\t\tp.clear();\n\t\tt1.translate(-0.5, 0.0);\n\t\tTestCase.assertTrue(this.sat.detect(rect, t1, seg, t2, p));\n\t\tTestCase.assertTrue(this.sat.detect(rect, t1, seg, t2));\n\t\tn = p.getNormal();\n\t\tTestCase.assertEquals(0.650, p.getDepth(), 1.0e-3);\n\t\tTestCase.assertEquals(0.485, n.x, 1.0e-3);\n\t\tTestCase.assertEquals(0.874, n.y, 1.0e-3);\n\t\t\n\t\t// try reversing the shapes\n\t\tp.clear();\n\t\tTestCase.assertTrue(this.sat.detect(seg, t2, rect, t1, p));\n\t\tTestCase.assertTrue(this.sat.detect(seg, t2, rect, t1));\n\t\tn = p.getNormal();\n\t\tTestCase.assertEquals(0.650, p.getDepth(), 1.0e-3);\n\t\tTestCase.assertEquals(-0.485, n.x, 1.0e-3);\n\t\tTestCase.assertEquals(-0.874, n.y, 1.0e-3);\n\t\t\n\t\t// test AABB overlap\n\t\tp.clear();\n\t\tt1.translate(-0.3, -0.7);\n\t\tTestCase.assertFalse(this.sat.detect(rect, t1, seg, t2, p));\n\t\tTestCase.assertFalse(this.sat.detect(rect, t1, seg, t2));\n\t\t\n\t\t// try reversing the shapes\n\t\tp.clear();\n\t\tTestCase.assertFalse(this.sat.detect(seg, t2, rect, t1, p));\n\t\tTestCase.assertFalse(this.sat.detect(seg, t2, rect, t1));\n\t\t\n\t\t// test no overlap\n\t\tp.clear();\n\t\tt1.translate(0.0, -0.3);\n\t\tTestCase.assertFalse(this.sat.detect(rect, t1, seg, t2, p));\n\t\tTestCase.assertFalse(this.sat.detect(rect, t1, seg, t2));\n\t\t\n\t\t// try reversing the shapes\n\t\tp.clear();\n\t\tTestCase.assertFalse(this.sat.detect(seg, t2, rect, t1, p));\n\t\tTestCase.assertFalse(this.sat.detect(seg, t2, rect, t1));\n\t}",
+  "invocations": [
+    "detect",
+    "detect",
+    "getNormal",
+    "clear",
+    "getDepth",
+    "Penetration",
+    "translate",
+    "Transform"
+  ],
+  "signature": {
+    "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform)": {
+      "params_len": 4,
+      "params": [
+        "org.dyn4j.geometry.Convex",
+        "org.dyn4j.geometry.Transform",
+        "org.dyn4j.geometry.Convex",
+        "org.dyn4j.geometry.Transform"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.collision.narrowphase.Penetration)": {
+      "params_len": 5,
+      "params": [
+        "org.dyn4j.geometry.Convex",
+        "org.dyn4j.geometry.Transform",
+        "org.dyn4j.geometry.Convex",
+        "org.dyn4j.geometry.Transform",
+        "org.dyn4j.collision.narrowphase.Penetration"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.narrowphase.Penetration.getNormal()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.narrowphase.Penetration.clear()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.narrowphase.Penetration.getDepth()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.narrowphase.Penetration()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Transform.translate(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Transform()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform)",
+    "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.collision.narrowphase.Penetration)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform)",
+    "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.collision.narrowphase.Penetration)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 999,
+      "class_name": "org.dyn4j.collision.narrowphase.Sat",
+      "method_name": "detect",
+      "signature": "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform)"
+    },
+    {
+      "method_id": 1000,
+      "class_name": "org.dyn4j.collision.narrowphase.Sat",
+      "method_name": "detect",
+      "signature": "org.dyn4j.collision.narrowphase.Sat.detect(org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.geometry.Convex, org.dyn4j.geometry.Transform, org.dyn4j.collision.narrowphase.Penetration)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

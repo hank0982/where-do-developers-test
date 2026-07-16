@@ -1,0 +1,74 @@
+{
+  "id": "1908",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.time.TimeSeriesTest_testCreateCopy1_2ff0694f",
+  "test_path": "org/jfree/data/time/TimeSeriesTest",
+  "test_name": "testCreateCopy1",
+  "body": "@Test\n    public void testCreateCopy1() {\n        TimeSeries<String> series = new TimeSeries<>(\"Series\");\n        series.add(new Month(MonthConstants.JANUARY, 2003), 45.0);\n        series.add(new Month(MonthConstants.FEBRUARY, 2003), 55.0);\n        series.add(new Month(MonthConstants.JUNE, 2003), 35.0);\n        series.add(new Month(MonthConstants.NOVEMBER, 2003), 85.0);\n        series.add(new Month(MonthConstants.DECEMBER, 2003), 75.0);\n\n        try {\n            // copy a range before the start of the series data...\n            TimeSeries<String> result1 = series.createCopy(\n                    new Month(MonthConstants.NOVEMBER, 2002),\n                    new Month(MonthConstants.DECEMBER, 2002));\n            assertEquals(0, result1.getItemCount());\n\n            // copy a range that includes only the first item in the series...\n            TimeSeries<String> result2 = series.createCopy(\n                    new Month(MonthConstants.NOVEMBER, 2002),\n                    new Month(MonthConstants.JANUARY, 2003));\n            assertEquals(1, result2.getItemCount());\n\n            // copy a range that begins before and ends in the middle of the\n            // series...\n            TimeSeries<String> result3 = series.createCopy(\n                    new Month(MonthConstants.NOVEMBER, 2002),\n                    new Month(MonthConstants.APRIL, 2003));\n            assertEquals(2, result3.getItemCount());\n\n            TimeSeries<String> result4 = series.createCopy(\n                    new Month(MonthConstants.NOVEMBER, 2002),\n                    new Month(MonthConstants.DECEMBER, 2003));\n            assertEquals(5, result4.getItemCount());\n\n            TimeSeries<String> result5 = series.createCopy(\n                    new Month(MonthConstants.NOVEMBER, 2002),\n                    new Month(MonthConstants.MARCH, 2004));\n            assertEquals(5, result5.getItemCount());\n\n            TimeSeries<String> result6 = series.createCopy(\n                    new Month(MonthConstants.JANUARY, 2003),\n                    new Month(MonthConstants.JANUARY, 2003));\n            assertEquals(1, result6.getItemCount());\n\n            TimeSeries<String> result7 = series.createCopy(\n                    new Month(MonthConstants.JANUARY, 2003),\n                    new Month(MonthConstants.APRIL, 2003));\n            assertEquals(2, result7.getItemCount());\n\n            TimeSeries<String> result8 = series.createCopy(\n                    new Month(MonthConstants.JANUARY, 2003),\n                    new Month(MonthConstants.DECEMBER, 2003));\n            assertEquals(5, result8.getItemCount());\n\n            TimeSeries<String> result9 = series.createCopy(\n                    new Month(MonthConstants.JANUARY, 2003),\n                    new Month(MonthConstants.MARCH, 2004));\n            assertEquals(5, result9.getItemCount());\n\n            TimeSeries<String> result10 = series.createCopy(\n                    new Month(MonthConstants.MAY, 2003),\n                    new Month(MonthConstants.DECEMBER, 2003));\n            assertEquals(3, result10.getItemCount());\n\n            TimeSeries<String> result11 = series.createCopy(\n                    new Month(MonthConstants.MAY, 2003),\n                    new Month(MonthConstants.MARCH, 2004));\n            assertEquals(3, result11.getItemCount());\n\n            TimeSeries<String> result12 = series.createCopy(\n                    new Month(MonthConstants.DECEMBER, 2003),\n                    new Month(MonthConstants.DECEMBER, 2003));\n            assertEquals(1, result12.getItemCount());\n\n            TimeSeries<String> result13 = series.createCopy(\n                    new Month(MonthConstants.DECEMBER, 2003),\n                    new Month(MonthConstants.MARCH, 2004));\n            assertEquals(1, result13.getItemCount());\n\n            TimeSeries<String> result14 = series.createCopy(\n                    new Month(MonthConstants.JANUARY, 2004),\n                    new Month(MonthConstants.MARCH, 2004));\n            assertEquals(0, result14.getItemCount());\n        }\n        catch (CloneNotSupportedException e) {\n            fail();\n        }\n    }",
+  "invocations": [
+    "Series",
+    "RegularTimePeriod",
+    "Month",
+    "getItemCount",
+    "add",
+    "createCopy"
+  ],
+  "signature": {
+    "org.jfree.data.general.Series(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.RegularTimePeriod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Month(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.TimeSeries.getItemCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.TimeSeries.add(org.jfree.data.time.RegularTimePeriod, double)": {
+      "params_len": 2,
+      "params": [
+        "org.jfree.data.time.RegularTimePeriod",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)": {
+      "params_len": 2,
+      "params": [
+        "org.jfree.data.time.RegularTimePeriod",
+        "org.jfree.data.time.RegularTimePeriod"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1608,
+      "class_name": "org.jfree.data.time.TimeSeries",
+      "method_name": "createCopy",
+      "signature": "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

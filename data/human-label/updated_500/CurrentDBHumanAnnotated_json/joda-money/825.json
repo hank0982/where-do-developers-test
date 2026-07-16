@@ -1,0 +1,42 @@
+{
+  "id": "825",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestMoney_test_withAmount_doubleRoundingMode_19b8f5fd",
+  "test_path": "org/joda/money/TestMoney_test_withAmount",
+  "test_name": "doubleRoundingMode",
+  "body": "@Test\n    void test_withAmount_doubleRoundingMode() {\n        var test = GBP_2_34.withAmount(-5.78d, RoundingMode.UNNECESSARY);\n        assertThat(test).hasToString(\"GBP -5.78\");\n    }",
+  "invocations": [
+    "withAmount",
+    "toString"
+  ],
+  "signature": {
+    "org.joda.money.Money.withAmount(double, java.math.RoundingMode)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "java.math.RoundingMode"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.Money.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.Money.withAmount(double, java.math.RoundingMode)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.Money.withAmount(double, java.math.RoundingMode)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 307,
+      "class_name": "org.joda.money.Money",
+      "method_name": "withAmount",
+      "signature": "org.joda.money.Money.withAmount(double, java.math.RoundingMode)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

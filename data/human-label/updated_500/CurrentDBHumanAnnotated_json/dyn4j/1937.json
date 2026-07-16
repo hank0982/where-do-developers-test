@@ -1,0 +1,44 @@
+{
+  "id": "1937",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.geometry.decompose.EarClippingTest_triangulateFailSelfIntersection4_3bfb8915",
+  "test_path": "org/dyn4j/geometry/decompose/EarClippingTest",
+  "test_name": "triangulateFailSelfIntersection4",
+  "body": "@Test(expected = IllegalArgumentException.class)\n\tpublic void triangulateFailSelfIntersection4() {\n\t\tVector2[] vertices = new Vector2[] {\n\t\t\tnew Vector2(-0.22574647794211955, 0.3562272754868271),\n\t\t\tnew Vector2(-0.24724056392833493, -0.06552204150010887),\n\t\t\tnew Vector2(0.2551995234048088, -0.4678431592201415),\n\t\t\tnew Vector2(-0.11272047497863902, -0.40936273068655504)\n\t\t};\n\t\t\n\t\t// decompose the poly\n\t\tthis.algo.triangulate(vertices);\n\t}",
+  "invocations": [
+    "Vector2",
+    "triangulate"
+  ],
+  "signature": {
+    "org.dyn4j.geometry.Vector2(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.decompose.EarClipping.triangulate(org.dyn4j.geometry.Vector2[])": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.Vector2[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.geometry.decompose.EarClipping.triangulate(org.dyn4j.geometry.Vector2[])"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.geometry.decompose.EarClipping.triangulate(org.dyn4j.geometry.Vector2[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2237,
+      "class_name": "org.dyn4j.geometry.decompose.EarClipping",
+      "method_name": "triangulate",
+      "signature": "org.dyn4j.geometry.decompose.EarClipping.triangulate(org.dyn4j.geometry.Vector2[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "191",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.integration.ConnectTest_throwsExceptionOn404_650906d8",
+  "test_path": "org/jsoup/integration/ConnectTest",
+  "test_name": "throwsExceptionOn404",
+  "body": "@Test\n    public void throwsExceptionOn404() {\n        String url = EchoServlet.Url;\n        Connection con = Jsoup.connect(url).header(EchoServlet.CodeParam, \"404\");\n\n        boolean threw = false;\n        try {\n            Document doc = con.get();\n        } catch (HttpStatusException e) {\n            threw = true;\n            assertEquals(\"org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[\" + e.getUrl() + \"]\", e.toString());\n            assertTrue(e.getUrl().startsWith(url));\n            assertEquals(404, e.getStatusCode());\n        } catch (IOException e) {\n        }\n        assertTrue(threw);\n    }",
+  "invocations": [
+    "connect",
+    "get",
+    "header"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.connect(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.helper.HttpConnection.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.helper.HttpConnection.header(java.lang.String, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.helper.HttpConnection.get()"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.helper.HttpConnection.get()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 216,
+      "class_name": "org.jsoup.helper.HttpConnection",
+      "method_name": "get",
+      "signature": "org.jsoup.helper.HttpConnection.get()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

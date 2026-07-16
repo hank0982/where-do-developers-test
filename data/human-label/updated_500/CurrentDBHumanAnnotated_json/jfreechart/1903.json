@@ -1,0 +1,69 @@
+{
+  "id": "1903",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.time.TimeSeriesTest_testBug1864222_2408742c",
+  "test_path": "org/jfree/data/time/TimeSeriesTest",
+  "test_name": "testBug1864222",
+  "body": "@Test\n    public void testBug1864222() {\n        TimeSeries<String> s = new TimeSeries<>(\"S\");\n        s.add(new Day(19, 8, 2005), 1);\n        s.add(new Day(31, 1, 2006), 1);\n        boolean pass = true;\n        try {\n            s.createCopy(new Day(1, 12, 2005), new Day(18, 1, 2006));\n        }\n        catch (CloneNotSupportedException e) {\n            pass = false;\n        }\n        assertTrue(pass);\n    }",
+  "invocations": [
+    "Series",
+    "RegularTimePeriod",
+    "Day",
+    "add",
+    "createCopy"
+  ],
+  "signature": {
+    "org.jfree.data.general.Series(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.RegularTimePeriod()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.Day(int, int, int)": {
+      "params_len": 3,
+      "params": [
+        "int",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.TimeSeries.add(org.jfree.data.time.RegularTimePeriod, double)": {
+      "params_len": 2,
+      "params": [
+        "org.jfree.data.time.RegularTimePeriod",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)": {
+      "params_len": 2,
+      "params": [
+        "org.jfree.data.time.RegularTimePeriod",
+        "org.jfree.data.time.RegularTimePeriod"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1608,
+      "class_name": "org.jfree.data.time.TimeSeries",
+      "method_name": "createCopy",
+      "signature": "org.jfree.data.time.TimeSeries.createCopy(org.jfree.data.time.RegularTimePeriod, org.jfree.data.time.RegularTimePeriod)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

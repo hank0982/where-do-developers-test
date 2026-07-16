@@ -1,0 +1,120 @@
+{
+  "id": "55",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.CommandLineTest_testGetOptionPropertiesWithOption_cd51a648",
+  "test_path": "org/apache/commons/cli/CommandLineTest",
+  "test_name": "testGetOptionPropertiesWithOption",
+  "body": "@Test\n    void testGetOptionPropertiesWithOption() throws Exception {\n        final String[] args = {\"-Dparam1=value1\", \"-Dparam2=value2\", \"-Dparam3\", \"-Dparam4=value4\", \"-D\", \"--property\", \"foo=bar\"};\n\n        final Options options = new Options();\n        final Option optionD = Option.builder(\"D\").valueSeparator().numberOfArgs(2).optionalArg(true).get();\n        final Option optionProperty = Option.builder().valueSeparator().numberOfArgs(2).longOpt(\"property\").get();\n        options.addOption(optionD);\n        options.addOption(optionProperty);\n\n        final Parser parser = new GnuParser();\n        final CommandLine cl = parser.parse(options, args);\n\n        final Properties props = cl.getOptionProperties(optionD);\n        assertNotNull(props, \"null properties\");\n        assertEquals(4, props.size(), \"number of properties in \" + props);\n        assertEquals(\"value1\", props.getProperty(\"param1\"), \"property 1\");\n        assertEquals(\"value2\", props.getProperty(\"param2\"), \"property 2\");\n        assertEquals(\"true\", props.getProperty(\"param3\"), \"property 3\");\n        assertEquals(\"value4\", props.getProperty(\"param4\"), \"property 4\");\n\n        assertEquals(\"bar\", cl.getOptionProperties(optionProperty).getProperty(\"foo\"), \"property with long format\");\n    }",
+  "invocations": [
+    "GnuParser",
+    "addOption",
+    "Options",
+    "Parser",
+    "parse",
+    "getOptionProperties",
+    "longOpt",
+    "valueSeparator",
+    "get",
+    "numberOfArgs",
+    "optionalArg",
+    "builder",
+    "builder"
+  ],
+  "signature": {
+    "org.apache.commons.cli.GnuParser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options.addOption(org.apache.commons.cli.Option)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.cli.Option"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.cli.Options",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.getOptionProperties(org.apache.commons.cli.Option)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.cli.Option"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.longOpt(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.valueSeparator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.numberOfArgs(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option$Builder.optionalArg(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option.builder(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.CommandLine.getOptionProperties(org.apache.commons.cli.Option)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.CommandLine.getOptionProperties(org.apache.commons.cli.Option)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 391,
+      "class_name": "org.apache.commons.cli.CommandLine",
+      "method_name": "getOptionProperties",
+      "signature": "org.apache.commons.cli.CommandLine.getOptionProperties(org.apache.commons.cli.Option)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

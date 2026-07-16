@@ -1,0 +1,38 @@
+{
+  "id": "3586",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.transform.TransformUtilsTest_testSampleNegativeNumberOfPoints_d752e794",
+  "test_path": "org/apache/commons/math4/transform/TransformUtilsTest",
+  "test_name": "testSampleNegativeNumberOfPoints",
+  "body": "@Test\n    public void testSampleNegativeNumberOfPoints() {\n        assertThrows(TransformException.class, () ->\n                TransformUtils.sample(SIN, 0.0, Math.PI, -1));\n    }",
+  "invocations": [
+    "sample"
+  ],
+  "signature": {
+    "org.apache.commons.math4.transform.TransformUtils.sample(java.util.function.DoubleUnaryOperator, double, double, int)": {
+      "params_len": 4,
+      "params": [
+        "java.util.function.DoubleUnaryOperator",
+        "double",
+        "double",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.transform.TransformUtils.sample(java.util.function.DoubleUnaryOperator, double, double, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.transform.TransformUtils.sample(java.util.function.DoubleUnaryOperator, double, double, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 5368,
+      "class_name": "org.apache.commons.math4.transform.TransformUtils",
+      "method_name": "sample",
+      "signature": "org.apache.commons.math4.transform.TransformUtils.sample(java.util.function.DoubleUnaryOperator, double, double, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

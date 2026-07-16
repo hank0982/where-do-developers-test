@@ -1,0 +1,85 @@
+{
+  "id": "5844",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.XmlStreamWriterTest_testLatin7Encoding_c8ef8459",
+  "test_path": "org/apache/commons/io/output/XmlStreamWriterTest",
+  "test_name": "testLatin7Encoding",
+  "body": "@Test\n    void testLatin7Encoding() throws IOException {\n        checkXmlWriter(TEXT_LATIN7, \"ISO-8859-7\");\n    }",
+  "invocations": [
+    "get",
+    "getEncoding",
+    "close",
+    "write",
+    "builder",
+    "setCharset",
+    "setOutputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.XmlStreamWriter$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.XmlStreamWriter.getEncoding()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.XmlStreamWriter.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.XmlStreamWriter.write(char[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "char[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.XmlStreamWriter.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractStreamBuilder.setCharset(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractOriginSupplier.setOutputStream(java.io.OutputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.OutputStream"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.XmlStreamWriter.detectEncoding(char[], int, int)",
+    "org.apache.commons.io.output.XmlStreamWriter.write(char[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.XmlStreamWriter.detectEncoding(char[], int, int)",
+    "org.apache.commons.io.output.XmlStreamWriter.write(char[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 844,
+      "class_name": "org.apache.commons.io.output.XmlStreamWriter",
+      "method_name": "detectEncoding",
+      "signature": "org.apache.commons.io.output.XmlStreamWriter.detectEncoding(char[], int, int)"
+    },
+    {
+      "method_id": 855,
+      "class_name": "org.apache.commons.io.output.XmlStreamWriter",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.XmlStreamWriter.write(char[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

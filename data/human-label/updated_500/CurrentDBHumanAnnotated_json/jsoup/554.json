@@ -1,0 +1,58 @@
+{
+  "id": "554",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.nodes.ElementTest_insertChildrenArgumentValidation_a8d1268f",
+  "test_path": "org/jsoup/nodes/ElementTest",
+  "test_name": "insertChildrenArgumentValidation",
+  "body": "@Test\n    public void insertChildrenArgumentValidation() {\n        Document doc = Jsoup.parse(\"<div id=1>Text <p>One</p> Text <p>Two</p></div><div id=2></div>\");\n        Element div1 = doc.select(\"div\").get(0);\n        Element div2 = doc.select(\"div\").get(1);\n        List<Node> children = div1.childNodes();\n\n        try {\n            div2.insertChildren(6, children);\n            fail();\n        } catch (IllegalArgumentException e) {\n        }\n\n        try {\n            div2.insertChildren(-5, children);\n            fail();\n        } catch (IllegalArgumentException e) {\n        }\n\n        try {\n            div2.insertChildren(0, (Collection<? extends Node>) null);\n            fail();\n        } catch (IllegalArgumentException e) {\n        }\n    }",
+  "invocations": [
+    "parse",
+    "childNodes",
+    "select",
+    "insertChildren"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Node.childNodes()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.select(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.insertChildren(int, java.util.Collection<? extends org.jsoup.nodes.Node>)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "java.util.Collection<? extends org.jsoup.nodes.Node>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.nodes.Element.insertChildren(int, java.util.Collection<? extends org.jsoup.nodes.Node>)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.nodes.Element.insertChildren(int, java.util.Collection<? extends org.jsoup.nodes.Node>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 766,
+      "class_name": "org.jsoup.nodes.Element",
+      "method_name": "insertChildren",
+      "signature": "org.jsoup.nodes.Element.insertChildren(int, java.util.Collection<? extends org.jsoup.nodes.Node>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

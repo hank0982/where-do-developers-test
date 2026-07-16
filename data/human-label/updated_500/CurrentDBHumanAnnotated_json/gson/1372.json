@@ -1,0 +1,49 @@
+{
+  "id": "1372",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.stream.JsonWriterTest_testNullName_8f0585ad",
+  "test_path": "com/google/gson/stream/JsonWriterTest",
+  "test_name": "testNullName",
+  "body": "@Test\n  public void testNullName() throws IOException {\n    StringWriter stringWriter = new StringWriter();\n    JsonWriter jsonWriter = new JsonWriter(stringWriter);\n    jsonWriter.beginObject();\n    assertThrows(NullPointerException.class, () -> jsonWriter.name(null));\n  }",
+  "invocations": [
+    "name",
+    "JsonWriter",
+    "beginObject"
+  ],
+  "signature": {
+    "com.google.gson.stream.JsonWriter.name(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonWriter(java.io.Writer)": {
+      "params_len": 1,
+      "params": [
+        "java.io.Writer"
+      ],
+      "detail_sigs": []
+    },
+    "com.google.gson.stream.JsonWriter.beginObject()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.stream.JsonWriter.name(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.stream.JsonWriter.name(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 106,
+      "class_name": "com.google.gson.stream.JsonWriter",
+      "method_name": "name",
+      "signature": "com.google.gson.stream.JsonWriter.name(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

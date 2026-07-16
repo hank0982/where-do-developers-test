@@ -1,0 +1,36 @@
+{
+  "id": "162",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.CollectionUtilsTest_testIsEqualCollectionToSelf_814c95be",
+  "test_path": "org/apache/commons/collections4/CollectionUtilsTest",
+  "test_name": "testIsEqualCollectionToSelf",
+  "body": "@Test\n    void testIsEqualCollectionToSelf() {\n        assertTrue(CollectionUtils.isEqualCollection(collectionA, collectionA));\n        assertTrue(CollectionUtils.isEqualCollection(collectionB, collectionB));\n    }",
+  "invocations": [
+    "isEqualCollection"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.CollectionUtils.isEqualCollection(java.util.Collection<?>, java.util.Collection<?>)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Collection<?>",
+        "java.util.Collection<?>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.CollectionUtils.isEqualCollection(java.util.Collection<?>, java.util.Collection<?>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.CollectionUtils.isEqualCollection(java.util.Collection<?>, java.util.Collection<?>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2627,
+      "class_name": "org.apache.commons.collections4.CollectionUtils",
+      "method_name": "isEqualCollection",
+      "signature": "org.apache.commons.collections4.CollectionUtils.isEqualCollection(java.util.Collection<?>, java.util.Collection<?>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

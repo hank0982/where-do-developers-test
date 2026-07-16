@@ -1,0 +1,99 @@
+{
+  "id": "2031",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.xy.CategoryTableXYDatasetTest_testCloning2_59b115cb",
+  "test_path": "org/jfree/data/xy/CategoryTableXYDatasetTest",
+  "test_name": "testCloning2",
+  "body": "@Test\n    public void testCloning2() throws CloneNotSupportedException {\n        CategoryTableXYDataset d1 = new CategoryTableXYDataset();\n        d1.add(1.0, 1.1, \"Series 1\");\n        d1.add(2.0, 2.2, \"Series 1\");\n        d1.setIntervalWidth(1.23);\n\n        CategoryTableXYDataset d2 = CloneUtils.clone(d1);\n        assertNotSame(d1, d2);\n        assertSame(d1.getClass(), d2.getClass());\n        assertEquals(d1, d2);\n\n        d1.add(3.0, 3.3, \"Series 1\");\n        assertNotEquals(d1, d2);\n        d2.add(3.0, 3.3, \"Series 1\");\n        assertEquals(d1, d2);\n\n        d1.setIntervalPositionFactor(0.33);\n        assertNotEquals(d1, d2);\n        d2.setIntervalPositionFactor(0.33);\n        assertEquals(d1, d2);\n    }",
+  "invocations": [
+    "equals",
+    "CategoryTableXYDataset",
+    "add",
+    "setIntervalWidth",
+    "setIntervalPositionFactor",
+    "AbstractXYDataset",
+    "AbstractIntervalXYDataset",
+    "AbstractSeriesDataset",
+    "AbstractDataset",
+    "clone"
+  ],
+  "signature": {
+    "org.jfree.data.xy.CategoryTableXYDataset.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.CategoryTableXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.CategoryTableXYDataset.add(double, double, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "double",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.CategoryTableXYDataset.setIntervalWidth(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.CategoryTableXYDataset.setIntervalPositionFactor(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.AbstractXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.AbstractIntervalXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractSeriesDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.xy.CategoryTableXYDataset.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.xy.CategoryTableXYDataset.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 48,
+      "class_name": "org.jfree.data.xy.CategoryTableXYDataset",
+      "method_name": "clone",
+      "signature": "org.jfree.data.xy.CategoryTableXYDataset.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

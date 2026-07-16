@@ -1,0 +1,8 @@
+torch==2.1.1
+transformers==4.30.0
+tensorboardX==2.6.5
+jsonlines==4.0.0
+tqdm==4.68.3
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.7.0

@@ -1,0 +1,55 @@
+{
+  "id": "146",
+  "project": "commons-validator",
+  "current_db_test_name": "org.apache.commons.validator.routines.BigIntegerValidatorTest_testInvalidNotStrict_eddec738",
+  "test_path": "org/apache/commons/validator/routines/BigIntegerValidatorTest",
+  "test_name": "testInvalidNotStrict",
+  "body": "@Test\n    void testInvalidNotStrict() {\n        for (int i = 0; i < invalid.length; i++) {\n            final String text = \"idx=[\" + i + \"] value=[\" + invalid[i] + \"]\";\n            assertNull(validator.parse(invalid[i], null, Locale.US), \"(A) \" + text);\n            assertFalse(validator.isValid(invalid[i], null, Locale.US), \"(B) \" + text);\n            assertNull(validator.parse(invalid[i], testPattern, null), \"(C) \" + text);\n            assertFalse(validator.isValid(invalid[i], testPattern, null), \"(D) \" + text);\n        }\n    }",
+  "invocations": [
+    "isValid",
+    "parse"
+  ],
+  "signature": {
+    "org.apache.commons.validator.routines.AbstractNumberValidator.isValid(java.lang.String, java.lang.String, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.validator.routines.AbstractNumberValidator.parse(java.lang.String, java.lang.String, java.util.Locale)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.lang.String",
+        "java.util.Locale"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.validator.routines.AbstractNumberValidator.isValid(java.lang.String, java.lang.String, java.util.Locale)",
+    "org.apache.commons.validator.routines.AbstractNumberValidator.parse(java.lang.String, java.lang.String, java.util.Locale)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.validator.routines.AbstractNumberValidator.isValid(java.lang.String, java.lang.String, java.util.Locale)",
+    "org.apache.commons.validator.routines.AbstractNumberValidator.parse(java.lang.String, java.lang.String, java.util.Locale)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 409,
+      "class_name": "org.apache.commons.validator.routines.AbstractNumberValidator",
+      "method_name": "isValid",
+      "signature": "org.apache.commons.validator.routines.AbstractNumberValidator.isValid(java.lang.String, java.lang.String, java.util.Locale)"
+    },
+    {
+      "method_id": 415,
+      "class_name": "org.apache.commons.validator.routines.AbstractNumberValidator",
+      "method_name": "parse",
+      "signature": "org.apache.commons.validator.routines.AbstractNumberValidator.parse(java.lang.String, java.lang.String, java.util.Locale)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

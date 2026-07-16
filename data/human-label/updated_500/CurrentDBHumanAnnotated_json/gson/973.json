@@ -1,0 +1,35 @@
+{
+  "id": "973",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.functional.StringTest_testStringValueSerialization_249fa8dc",
+  "test_path": "com/google/gson/functional/StringTest",
+  "test_name": "testStringValueSerialization",
+  "body": "@Test\n  public void testStringValueSerialization() {\n    String value = \"someRandomStringValue\";\n    assertThat(gson.toJson(value)).isEqualTo('\"' + value + '\"');\n  }",
+  "invocations": [
+    "toJson"
+  ],
+  "signature": {
+    "com.google.gson.Gson.toJson(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.Gson.toJson(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 800,
+      "class_name": "com.google.gson.Gson",
+      "method_name": "toJson",
+      "signature": "com.google.gson.Gson.toJson(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

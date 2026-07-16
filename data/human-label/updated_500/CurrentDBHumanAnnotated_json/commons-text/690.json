@@ -1,0 +1,57 @@
+{
+  "id": "690",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.TextStringBuilderTest_testLang412Left_1b03835d",
+  "test_path": "org/apache/commons/text/TextStringBuilderTest",
+  "test_name": "testLang412Left",
+  "body": "@Test\n    void testLang412Left() {\n        final TextStringBuilder sb = new TextStringBuilder();\n        sb.appendFixedWidthPadLeft(null, 10, '*');\n        assertEquals(\"**********\", sb.toString(), \"Failed to invoke appendFixedWidthPadLeft correctly\");\n    }",
+  "invocations": [
+    "TextStringBuilder",
+    "TextStringBuilder",
+    "appendFixedWidthPadLeft",
+    "toString"
+  ],
+  "signature": {
+    "org.apache.commons.text.TextStringBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder.appendFixedWidthPadLeft(java.lang.Object, int, char)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "int",
+        "char"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.TextStringBuilder.appendFixedWidthPadLeft(java.lang.Object, int, char)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.TextStringBuilder.appendFixedWidthPadLeft(java.lang.Object, int, char)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 657,
+      "class_name": "org.apache.commons.text.TextStringBuilder",
+      "method_name": "appendFixedWidthPadLeft",
+      "signature": "org.apache.commons.text.TextStringBuilder.appendFixedWidthPadLeft(java.lang.Object, int, char)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

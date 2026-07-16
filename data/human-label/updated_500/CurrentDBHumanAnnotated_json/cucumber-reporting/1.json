@@ -1,0 +1,50 @@
+{
+  "id": "1",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addClassificationFiles_addsPropertyFiles_56fba4e2",
+  "test_path": "net/masterthought/cucumber/ConfigurationTest_addClassificationFiles",
+  "test_name": "addsPropertyFiles",
+  "body": "@Test\n    void addClassificationFiles_addsPropertyFiles() {\n\n        // given\n        Configuration configuration = new Configuration(outputDirectory, projectName);\n        List<String> propertiesFiles = new ArrayList<>();\n        propertiesFiles.add(\"properties-1.properties\");\n        propertiesFiles.add(\"properties-2.properties\");\n\n        // when\n        configuration.addClassificationFiles(propertiesFiles);\n\n        // then\n        List<String> returnedPropertiesFiles = configuration.getClassificationFiles();\n        assertThat(returnedPropertiesFiles).hasSize(2);\n        assertThat(returnedPropertiesFiles).containsExactly(\n                (\"properties-1.properties\"),\n                (\"properties-2.properties\")\n        );\n    }",
+  "invocations": [
+    "addClassificationFiles",
+    "getClassificationFiles",
+    "Configuration"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.Configuration.addClassificationFiles(java.util.List<java.lang.String>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<java.lang.String>"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration.getClassificationFiles()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.Configuration.addClassificationFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.Configuration.addClassificationFiles(java.util.List<java.lang.String>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 231,
+      "class_name": "net.masterthought.cucumber.Configuration",
+      "method_name": "addClassificationFiles",
+      "signature": "net.masterthought.cucumber.Configuration.addClassificationFiles(java.util.List<java.lang.String>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

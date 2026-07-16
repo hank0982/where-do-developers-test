@@ -1,0 +1,82 @@
+{
+  "id": "2345",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.iterators.ArrayListIterator2Test_testFullIterator_d373ab10",
+  "test_path": "org/apache/commons/collections4/iterators/ArrayListIterator2Test",
+  "test_name": "testFullIterator",
+  "body": "@Test\n    void testFullIterator() {\n        if (!supportsFullIterator()) {\n            return;\n        }\n\n        final Iterator<E> it = makeObject();\n\n        // hasNext() must be true (ensure makeFullIterator is correct!)\n        assertTrue(it.hasNext(), \"hasNext() should return true for at least one element\");\n\n        // next() must not throw exception (ensure makeFullIterator is correct!)\n        assertDoesNotThrow(it::next, \"Full iterators must have at least one element\");\n\n        // iterate through\n        while (it.hasNext()) {\n            it.next();\n            verify();\n        }\n\n        // next() must throw NoSuchElementException now\n        assertThrows(NoSuchElementException.class, () -> it.next(),\n                \"NoSuchElementException must be thrown when Iterator is exhausted\");\n\n        assertNotNull(it.toString());\n    }",
+  "invocations": [
+    "ArrayListIterator",
+    "next",
+    "ArrayIterator",
+    "hasNext",
+    "ArrayIterator",
+    "ArrayIterator"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.iterators.ArrayListIterator(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayListIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayIterator(java.lang.Object, int)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayIterator(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayIterator(java.lang.Object, int, int)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.iterators.ArrayListIterator.next()",
+    "org.apache.commons.collections4.iterators.ArrayIterator.hasNext()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.iterators.ArrayListIterator.next()",
+    "org.apache.commons.collections4.iterators.ArrayIterator.hasNext()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2847,
+      "class_name": "org.apache.commons.collections4.iterators.ArrayListIterator",
+      "method_name": "next",
+      "signature": "org.apache.commons.collections4.iterators.ArrayListIterator.next()"
+    },
+    {
+      "method_id": 3002,
+      "class_name": "org.apache.commons.collections4.iterators.ArrayIterator",
+      "method_name": "hasNext",
+      "signature": "org.apache.commons.collections4.iterators.ArrayIterator.hasNext()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

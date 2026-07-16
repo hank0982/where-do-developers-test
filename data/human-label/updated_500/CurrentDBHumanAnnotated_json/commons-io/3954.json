@@ -1,0 +1,109 @@
+{
+  "id": "3954",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.CharSequenceInputStreamTest_testBufferedRead_AvailableCharset_8e700429",
+  "test_path": "org/apache/commons/io/input/CharSequenceInputStreamTest_testBufferedRead",
+  "test_name": "AvailableCharset",
+  "body": "@ParameterizedTest(name = \"{0}\")",
+  "invocations": [
+    "toCharset",
+    "setBufferSize",
+    "setCharSequence",
+    "setCharset",
+    "CharSequenceInputStream",
+    "close",
+    "CharSequenceInputStream",
+    "builder",
+    "read",
+    "CharSequenceInputStream"
+  ],
+  "signature": {
+    "org.apache.commons.io.Charsets.toCharset(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractStreamBuilder.setBufferSize(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.build.AbstractOriginSupplier.setCharSequence(java.lang.CharSequence)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream$Builder.setCharset(java.nio.charset.Charset)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.charset.Charset"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream(org.apache.commons.io.input.CharSequenceInputStream.Builder)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.io.input.CharSequenceInputStream.Builder"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream(java.lang.CharSequence, java.nio.charset.Charset, int)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.CharSequence",
+        "java.nio.charset.Charset",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream.read(byte[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CharSequenceInputStream(java.lang.CharSequence, java.lang.String, int)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.CharSequence",
+        "java.lang.String",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.CharSequenceInputStream.read(byte[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.CharSequenceInputStream.read(byte[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1680,
+      "class_name": "org.apache.commons.io.input.CharSequenceInputStream",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.input.CharSequenceInputStream.read(byte[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

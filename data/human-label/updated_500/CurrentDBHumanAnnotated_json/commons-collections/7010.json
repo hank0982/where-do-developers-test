@@ -1,0 +1,55 @@
+{
+  "id": "7010",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.queue.TransformedQueueTest_testCollectionIteratorRemove_e8947003",
+  "test_path": "org/apache/commons/collections4/queue/TransformedQueueTest",
+  "test_name": "testCollectionIteratorRemove",
+  "body": "@Test\n    @SuppressWarnings(\"unchecked\")\n    public void testCollectionIteratorRemove() {\n        if (!isRemoveSupported()) {\n            return;\n        }\n\n        resetEmpty();\n        assertThrows(IllegalStateException.class, () -> getCollection().iterator().remove(),\n                \"New iterator.remove should raise IllegalState\");\n        verify();\n\n        final Iterator<E> iter0 = getCollection().iterator();\n        iter0.hasNext();\n        assertThrows(IllegalStateException.class, () -> iter0.remove(),\n                \"New iterator.remove should raise IllegalState even after hasNext\");\n        verify();\n\n        resetFull();\n        int size = getCollection().size();\n        Iterator<E> iter = getCollection().iterator();\n        while (iter.hasNext()) {\n            Object o = iter.next();\n            // TreeMap reuses the Map Entry, so the verify below fails\n            // Clone it here if necessary\n            if (o instanceof Map.Entry) {\n                o = cloneMapEntry((Map.Entry<E, E>) o);\n            }\n            iter.remove();\n\n            // if the elements aren't distinguishable, we can just remove a\n            // matching element from the confirmed collection and verify\n            // contents are still the same.  Otherwise, we don't have the\n            // ability to distinguish the elements and determine which to\n            // remove from the confirmed collection (in which case, we don't\n            // verify because we don't know how).\n            //\n            // see areEqualElementsDistinguishable()\n            if (!areEqualElementsDistinguishable()) {\n                getConfirmed().remove(o);\n                verify();\n            }\n\n            size--;\n            assertEquals(size, getCollection().size(),\n                    \"Collection should shrink by one after iterator.remove\");\n        }\n        assertTrue(getCollection().isEmpty(), \"Collection should be empty after iterator purge\");\n\n        resetFull();\n        iter = getCollection().iterator();\n        iter.next();\n        iter.remove();\n        final Iterator<E> finalIter = iter;\n        assertThrows(IllegalStateException.class, () -> finalIter.remove(),\n                \"Second iter.remove should raise IllegalState\");\n    }",
+  "invocations": [
+    "transformingQueue",
+    "iterator",
+    "isEmpty",
+    "size"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.queue.TransformedQueue.transformingQueue(java.util.Queue<E>, org.apache.commons.collections4.Transformer<? super E, ? extends E>)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Queue<E>",
+        "org.apache.commons.collections4.Transformer<? super E",
+        "? extends E>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.isEmpty()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.iterator()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.collection.AbstractCollectionDecorator.iterator()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4052,
+      "class_name": "org.apache.commons.collections4.collection.AbstractCollectionDecorator",
+      "method_name": "iterator",
+      "signature": "org.apache.commons.collections4.collection.AbstractCollectionDecorator.iterator()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

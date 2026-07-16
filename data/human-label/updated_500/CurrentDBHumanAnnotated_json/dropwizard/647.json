@@ -1,0 +1,46 @@
+{
+  "id": "647",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.jersey.jackson.JacksonMessageBodyProviderTest_deserializesRequestEntities_93aef5fd",
+  "test_path": "io/dropwizard/jersey/jackson/JacksonMessageBodyProviderTest",
+  "test_name": "deserializesRequestEntities",
+  "body": "@Test\n    void deserializesRequestEntities() throws Exception {\n        final ByteArrayInputStream entity = new ByteArrayInputStream(\"{\\\"id\\\":1}\".getBytes(StandardCharsets.UTF_8));\n        final Class<?> klass = Example.class;\n\n        final Object obj = provider.readFrom((Class<Object>) klass,\n                                             Example.class,\n                                             NONE,\n                                             MediaType.APPLICATION_JSON_TYPE,\n                                             new MultivaluedHashMap<>(),\n                                             entity);\n\n        assertThat(obj)\n                .isInstanceOf(Example.class);\n\n        assertThat(((Example) obj).id)\n                .isEqualTo(1);\n    }",
+  "invocations": [
+    "nameForField",
+    "findBeanDeserializer",
+    "findBeanDeserializer"
+  ],
+  "signature": {
+    "io.dropwizard.jackson.AnnotationSensitivePropertyNamingStrategy.nameForField(io.dropwizard.jackson.MapperConfig<?>, io.dropwizard.jackson.AnnotatedField, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "io.dropwizard.jackson.MapperConfig<?>",
+        "io.dropwizard.jackson.AnnotatedField",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.jackson.CaffeineModule$CaffeineDeserializers.findBeanDeserializer(io.dropwizard.jackson.JavaType, io.dropwizard.jackson.DeserializationConfig, io.dropwizard.jackson.BeanDescription)": {
+      "params_len": 3,
+      "params": [
+        "io.dropwizard.jackson.JavaType",
+        "io.dropwizard.jackson.DeserializationConfig",
+        "io.dropwizard.jackson.BeanDescription"
+      ],
+      "detail_sigs": []
+    },
+    "io.dropwizard.jackson.GuavaExtrasModule$GuavaExtrasDeserializers.findBeanDeserializer(io.dropwizard.jackson.JavaType, io.dropwizard.jackson.DeserializationConfig, io.dropwizard.jackson.BeanDescription)": {
+      "params_len": 3,
+      "params": [
+        "io.dropwizard.jackson.JavaType",
+        "io.dropwizard.jackson.DeserializationConfig",
+        "io.dropwizard.jackson.BeanDescription"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [],
+  "current_db_human_annotation": [],
+  "current_db_human_annotation_details": [],
+  "label_source": "reviewed_empty"
+}

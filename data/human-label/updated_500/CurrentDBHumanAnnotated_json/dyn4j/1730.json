@@ -1,0 +1,44 @@
+{
+  "id": "1730",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.geometry.RayTest_createNullStart_e631457f",
+  "test_path": "org/dyn4j/geometry/RayTest",
+  "test_name": "createNullStart",
+  "body": "@Test(expected = NullPointerException.class)\n\tpublic void createNullStart() {\n\t\tnew Ray(null, Math.toRadians(10));\n\t}",
+  "invocations": [
+    "Vector2",
+    "Ray"
+  ],
+  "signature": {
+    "org.dyn4j.geometry.Vector2(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Ray(org.dyn4j.geometry.Vector2, org.dyn4j.geometry.Vector2)": {
+      "params_len": 2,
+      "params": [
+        "org.dyn4j.geometry.Vector2",
+        "org.dyn4j.geometry.Vector2"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.geometry.Ray(org.dyn4j.geometry.Vector2, org.dyn4j.geometry.Vector2)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.geometry.Ray(org.dyn4j.geometry.Vector2, org.dyn4j.geometry.Vector2)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2171,
+      "class_name": "org.dyn4j.geometry.Ray",
+      "method_name": "Ray",
+      "signature": "org.dyn4j.geometry.Ray(org.dyn4j.geometry.Vector2, org.dyn4j.geometry.Vector2)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "382",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorTest_testGenerateURLFragment_b4d3cd39",
+  "test_path": "org/jfree/chart/imagemap/StandardToolTipTagFragmentGeneratorTest",
+  "test_name": "testGenerateURLFragment",
+  "body": "@Test\n    public void testGenerateURLFragment() {\n        StandardToolTipTagFragmentGenerator g\n                = new StandardToolTipTagFragmentGenerator();\n        assertEquals(\" title=\\\"abc\\\" alt=\\\"\\\"\",\n                g.generateToolTipFragment(\"abc\"));\n        assertEquals(\" title=\\\"Series &quot;A&quot;, 100.0\\\" alt=\\\"\\\"\",\n                g.generateToolTipFragment(\"Series \\\"A\\\", 100.0\"));\n    }",
+  "invocations": [
+    "StandardToolTipTagFragmentGenerator",
+    "generateToolTipFragment"
+  ],
+  "signature": {
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator.generateToolTipFragment(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator.generateToolTipFragment(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator.generateToolTipFragment(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 7307,
+      "class_name": "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator",
+      "method_name": "generateToolTipFragment",
+      "signature": "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator.generateToolTipFragment(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

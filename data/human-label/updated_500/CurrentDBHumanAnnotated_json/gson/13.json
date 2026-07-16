@@ -1,0 +1,33 @@
+{
+  "id": "13",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.FieldAttributesTest_testDeclaringClass_dcb51ee6",
+  "test_path": "com/google/gson/FieldAttributesTest",
+  "test_name": "testDeclaringClass",
+  "body": "@Test\n  public void testDeclaringClass() {\n    assertThat(fieldAttributes.getDeclaringClass()).isAssignableTo(Foo.class);\n  }",
+  "invocations": [
+    "getDeclaringClass"
+  ],
+  "signature": {
+    "com.google.gson.FieldAttributes.getDeclaringClass()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.FieldAttributes.getDeclaringClass()"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.FieldAttributes.getDeclaringClass()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 191,
+      "class_name": "com.google.gson.FieldAttributes",
+      "method_name": "getDeclaringClass",
+      "signature": "com.google.gson.FieldAttributes.getDeclaringClass()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

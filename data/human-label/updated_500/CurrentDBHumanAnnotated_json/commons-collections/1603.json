@@ -1,0 +1,82 @@
+{
+  "id": "1603",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.bloomfilter.ArrayCountingBloomFilterTest_testExcludesDuplicates_3027f7f4",
+  "test_path": "org/apache/commons/collections4/bloomfilter/ArrayCountingBloomFilterTest",
+  "test_name": "testExcludesDuplicates",
+  "body": "@Test\n    void testExcludesDuplicates() {\n\n        // create a hasher that produces duplicates with the specified shape.\n        // this setup produces 5, 17, 29, 41, 53, 65 two times\n        final Shape shape = Shape.fromKM(12, 72);\n        final Hasher hasher = new IncrementingHasher(5, 12);\n\n        CountingBloomFilter bf1 = createFilter(shape, hasher);\n        assertEquals(6, bf1.cardinality());\n        bf1.processCells((x, y) -> {\n            assertEquals(1, y, \"Hasher in constructor results in value not equal to 1\");\n            return true;\n        });\n\n        bf1 = createEmptyFilter(shape);\n        bf1.merge(hasher);\n        assertEquals(6, bf1.cardinality());\n        bf1.processCells((x, y) -> {\n            assertEquals(1, y, \"Hasher in merge results in value not equal to 1\");\n            return true;\n        });\n\n        bf1 = createEmptyFilter(shape);\n        bf1.merge(hasher);\n        bf1.remove(hasher);\n        assertEquals(0, bf1.cardinality());\n        assertTrue(bf1.processCells((x, y) -> false), \"Hasher in removes results in value not equal to 0\");\n    }",
+  "invocations": [
+    "remove",
+    "merge",
+    "ArrayCountingBloomFilter",
+    "cardinality",
+    "processCells",
+    "fromKM"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.remove(org.apache.commons.collections4.bloomfilter.Hasher)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.bloomfilter.Hasher"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.merge(org.apache.commons.collections4.bloomfilter.Hasher)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.bloomfilter.Hasher"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.bloomfilter.ArrayCountingBloomFilter(org.apache.commons.collections4.bloomfilter.Shape)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.bloomfilter.Shape"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.bloomfilter.ArrayCountingBloomFilter.cardinality()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.bloomfilter.ArrayCountingBloomFilter.processCells(org.apache.commons.collections4.bloomfilter.CellExtractor.CellPredicate)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.bloomfilter.CellExtractor.CellPredicate"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.bloomfilter.Shape.fromKM(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.remove(org.apache.commons.collections4.bloomfilter.Hasher)",
+    "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.merge(org.apache.commons.collections4.bloomfilter.Hasher)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.remove(org.apache.commons.collections4.bloomfilter.Hasher)",
+    "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.merge(org.apache.commons.collections4.bloomfilter.Hasher)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1774,
+      "class_name": "org.apache.commons.collections4.bloomfilter.CountingBloomFilter",
+      "method_name": "remove",
+      "signature": "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.remove(org.apache.commons.collections4.bloomfilter.Hasher)"
+    },
+    {
+      "method_id": 1778,
+      "class_name": "org.apache.commons.collections4.bloomfilter.CountingBloomFilter",
+      "method_name": "merge",
+      "signature": "org.apache.commons.collections4.bloomfilter.CountingBloomFilter.merge(org.apache.commons.collections4.bloomfilter.Hasher)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

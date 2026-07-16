@@ -1,0 +1,69 @@
+{
+  "id": "3280",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.list.NodeCachingLinkedListTest_testObjectHashCodeEqualsContract_b58f2c7e",
+  "test_path": "org/apache/commons/collections4/list/NodeCachingLinkedListTest",
+  "test_name": "testObjectHashCodeEqualsContract",
+  "body": "@Test\n    void testObjectHashCodeEqualsContract() {\n        final Object obj1 = makeObject();\n        if (obj1.equals(obj1)) {\n            assertEquals(\n                    obj1.hashCode(), obj1.hashCode(),\n                    \"[1] When two objects are equal, their hashCodes should be also.\");\n        }\n        final Object obj2 = makeObject();\n        if (obj1.equals(obj2)) {\n            assertEquals(\n                    obj1.hashCode(), obj2.hashCode(),\n                    \"[2] When two objects are equal, their hashCodes should be also.\");\n            assertEquals(obj2, obj1, \"When obj1.equals(obj2) is true, then obj2.equals(obj1) should also be true\");\n        }\n    }",
+  "invocations": [
+    "AbstractLinkedList",
+    "hashCode",
+    "equals",
+    "NodeCachingLinkedList",
+    "NodeCachingLinkedList"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.list.AbstractLinkedList()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.AbstractLinkedList.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.AbstractLinkedList.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.NodeCachingLinkedList()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.list.NodeCachingLinkedList(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.list.AbstractLinkedList.hashCode()",
+    "org.apache.commons.collections4.list.AbstractLinkedList.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.list.AbstractLinkedList.hashCode()",
+    "org.apache.commons.collections4.list.AbstractLinkedList.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3284,
+      "class_name": "org.apache.commons.collections4.list.AbstractLinkedList",
+      "method_name": "hashCode",
+      "signature": "org.apache.commons.collections4.list.AbstractLinkedList.hashCode()"
+    },
+    {
+      "method_id": 3304,
+      "class_name": "org.apache.commons.collections4.list.AbstractLinkedList",
+      "method_name": "equals",
+      "signature": "org.apache.commons.collections4.list.AbstractLinkedList.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

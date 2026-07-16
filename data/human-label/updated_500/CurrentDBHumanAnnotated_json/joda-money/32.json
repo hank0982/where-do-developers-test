@@ -1,0 +1,42 @@
+{
+  "id": "32",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_dividedBy_long_negative_bf2682af",
+  "test_path": "org/joda/money/TestBigMoney_test_dividedBy_long",
+  "test_name": "negative",
+  "body": "@Test\n    void test_dividedBy_long_negative() {\n        var test = GBP_2_34.dividedBy(-3, RoundingMode.DOWN);\n        assertThat(test).hasToString(\"GBP -0.78\");\n    }",
+  "invocations": [
+    "dividedBy",
+    "toString"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.dividedBy(long, java.math.RoundingMode)": {
+      "params_len": 2,
+      "params": [
+        "long",
+        "java.math.RoundingMode"
+      ],
+      "detail_sigs": []
+    },
+    "org.joda.money.BigMoney.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.dividedBy(long, java.math.RoundingMode)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.dividedBy(long, java.math.RoundingMode)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 192,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "dividedBy",
+      "signature": "org.joda.money.BigMoney.dividedBy(long, java.math.RoundingMode)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

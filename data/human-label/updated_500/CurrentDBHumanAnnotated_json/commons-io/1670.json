@@ -1,0 +1,36 @@
+{
+  "id": "1670",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.IOUtilsTest_testToByteArray_InputStream_NegativeSize_35f405a7",
+  "test_path": "org/apache/commons/io/IOUtilsTest_testToByteArray_InputStream",
+  "test_name": "NegativeSize",
+  "body": "@Test\n    void testToByteArray_InputStream_NegativeSize() throws Exception {\n        try (InputStream fin = Files.newInputStream(testFilePath)) {\n            final IllegalArgumentException exc = assertThrows(IllegalArgumentException.class, () -> IOUtils.toByteArray(fin, -1));\n            assertTrue(exc.getMessage().startsWith(\"size < 0\"), exc.getMessage());\n        }\n    }",
+  "invocations": [
+    "toByteArray"
+  ],
+  "signature": {
+    "org.apache.commons.io.IOUtils.toByteArray(java.io.InputStream, int)": {
+      "params_len": 2,
+      "params": [
+        "java.io.InputStream",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.IOUtils.toByteArray(java.io.InputStream, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.IOUtils.toByteArray(java.io.InputStream, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 25,
+      "class_name": "org.apache.commons.io.IOUtils",
+      "method_name": "toByteArray",
+      "signature": "org.apache.commons.io.IOUtils.toByteArray(java.io.InputStream, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

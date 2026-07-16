@@ -1,0 +1,41 @@
+{
+  "id": "62",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.OssFuzzTest_testStringSubstitutorInterpolatorFuzzer5447769450741760_91feca83",
+  "test_path": "org/apache/commons/text/OssFuzzTest",
+  "test_name": "testStringSubstitutorInterpolatorFuzzer5447769450741760",
+  "body": "*\n     */\n    @Test\n    public void testStringSubstitutorInterpolatorFuzzer5447769450741760() {\n        StringSubstitutor.createInterpolator().replace(\"${date:swswswswswsswswswswswswwswsswswswswsswswswswsswswswswswswswswswswsws}\");\n    }",
+  "invocations": [
+    "replace",
+    "createInterpolator"
+  ],
+  "signature": {
+    "org.apache.commons.text.StringSubstitutor.replace(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.StringSubstitutor.createInterpolator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.StringSubstitutor.replace(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.StringSubstitutor.replace(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1014,
+      "class_name": "org.apache.commons.text.StringSubstitutor",
+      "method_name": "replace",
+      "signature": "org.apache.commons.text.StringSubstitutor.replace(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

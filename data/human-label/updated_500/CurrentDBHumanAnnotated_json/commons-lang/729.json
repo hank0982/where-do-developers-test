@@ -1,0 +1,36 @@
+{
+  "id": "729",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.CharSetUtilsTest_testKeep_StringStringarray_6e78f230",
+  "test_path": "org/apache/commons/lang3/CharSetUtilsTest_testKeep",
+  "test_name": "StringStringarray",
+  "body": "@Test\n    void testKeep_StringStringarray() {\n        assertNull(CharSetUtils.keep(null, (String[]) null));\n        assertNull(CharSetUtils.keep(null));\n        assertNull(CharSetUtils.keep(null, (String) null));\n        assertNull(CharSetUtils.keep(null, \"a-e\"));\n\n        assertEquals(\"\", CharSetUtils.keep(\"\", (String[]) null));\n        assertEquals(\"\", CharSetUtils.keep(\"\"));\n        assertEquals(\"\", CharSetUtils.keep(\"\", (String) null));\n        assertEquals(\"\", CharSetUtils.keep(\"\", \"a-e\"));\n\n        assertEquals(\"\", CharSetUtils.keep(\"hello\", (String[]) null));\n        assertEquals(\"\", CharSetUtils.keep(\"hello\"));\n        assertEquals(\"\", CharSetUtils.keep(\"hello\", (String) null));\n        assertEquals(\"e\", CharSetUtils.keep(\"hello\", \"a-e\"));\n\n        assertEquals(\"e\", CharSetUtils.keep(\"hello\", \"a-e\"));\n        assertEquals(\"ell\", CharSetUtils.keep(\"hello\", \"el\"));\n        assertEquals(\"hello\", CharSetUtils.keep(\"hello\", \"elho\"));\n        assertEquals(\"hello\", CharSetUtils.keep(\"hello\", \"a-z\"));\n        assertEquals(\"----\", CharSetUtils.keep(\"----\", \"-\"));\n        assertEquals(\"ll\", CharSetUtils.keep(\"hello\", \"l\"));\n    }",
+  "invocations": [
+    "keep"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.CharSetUtils.keep(java.lang.String, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.CharSetUtils.keep(java.lang.String, java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.CharSetUtils.keep(java.lang.String, java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 4280,
+      "class_name": "org.apache.commons.lang3.CharSetUtils",
+      "method_name": "keep",
+      "signature": "org.apache.commons.lang3.CharSetUtils.keep(java.lang.String, java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "2380",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.channels.FileChannelsTest_testContentEqualsFileChannel_2a0c25e5",
+  "test_path": "org/apache/commons/io/channels/FileChannelsTest",
+  "test_name": "testContentEqualsFileChannel",
+  "body": "@CartesianTest\n    void testContentEqualsFileChannel(\n            @Values(ints = { 1, 2, IOUtils.DEFAULT_BUFFER_SIZE / 10, IOUtils.DEFAULT_BUFFER_SIZE, IOUtils.DEFAULT_BUFFER_SIZE * 10 }) final int bufferSize)",
+  "invocations": [
+    "contentEquals"
+  ],
+  "signature": {
+    "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.FileChannel, java.nio.channels.FileChannel, int)": {
+      "params_len": 3,
+      "params": [
+        "java.nio.channels.FileChannel",
+        "java.nio.channels.FileChannel",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.FileChannel, java.nio.channels.FileChannel, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.FileChannel, java.nio.channels.FileChannel, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 405,
+      "class_name": "org.apache.commons.io.channels.FileChannels",
+      "method_name": "contentEquals",
+      "signature": "org.apache.commons.io.channels.FileChannels.contentEquals(java.nio.channels.FileChannel, java.nio.channels.FileChannel, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

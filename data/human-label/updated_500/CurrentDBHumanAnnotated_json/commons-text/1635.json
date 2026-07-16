@@ -1,0 +1,36 @@
+{
+  "id": "1635",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.similarity.StringMetricFromTest_testMissingMetric_10a7eb45",
+  "test_path": "org/apache/commons/text/similarity/StringMetricFromTest",
+  "test_name": "testMissingMetric",
+  "body": "@Test\n    void testMissingMetric() {\n        assertThrows(IllegalArgumentException.class, () -> new EditDistanceFrom<Number>(null, \"no go\"));\n    }",
+  "invocations": [
+    "EditDistanceFrom"
+  ],
+  "signature": {
+    "org.apache.commons.text.similarity.EditDistanceFrom(org.apache.commons.text.similarity.EditDistance<R>, java.lang.CharSequence)": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.text.similarity.EditDistance<R>",
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.similarity.EditDistanceFrom(org.apache.commons.text.similarity.EditDistance<R>, java.lang.CharSequence)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.similarity.EditDistanceFrom(org.apache.commons.text.similarity.EditDistance<R>, java.lang.CharSequence)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 705,
+      "class_name": "org.apache.commons.text.similarity.EditDistanceFrom",
+      "method_name": "EditDistanceFrom",
+      "signature": "org.apache.commons.text.similarity.EditDistanceFrom(org.apache.commons.text.similarity.EditDistance<R>, java.lang.CharSequence)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "1",
+  "project": "commons-exec",
+  "current_db_test_name": "org.apache.commons.exec.CommandLineTest_testAddArgumentWithBothQuotes_0d5199eb",
+  "test_path": "org/apache/commons/exec/CommandLineTest",
+  "test_name": "testAddArgumentWithBothQuotes",
+  "body": "@Test\n    void testAddArgumentWithBothQuotes() {\n        final CommandLine cmdl = new CommandLine(\"test\");\n        assertThrows(IllegalArgumentException.class, () -> cmdl.addArgument(\"b\\\"a'r\"));\n    }",
+  "invocations": [
+    "addArgument",
+    "CommandLine"
+  ],
+  "signature": {
+    "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.exec.CommandLine(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 252,
+      "class_name": "org.apache.commons.exec.CommandLine",
+      "method_name": "addArgument",
+      "signature": "org.apache.commons.exec.CommandLine.addArgument(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

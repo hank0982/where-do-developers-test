@@ -1,0 +1,84 @@
+{
+  "id": "1",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.JsoupTest_parseWithPath_4110d75f",
+  "test_path": "org/jsoup/JsoupTest",
+  "test_name": "parseWithPath",
+  "body": "@Test\n    void parseWithPath() throws IOException {\n        // parse(Path path, @Nullable String charsetName, String baseUri)\n        Path path = ParseTest.getPath(\"/htmltests/medium.html\");\n        Document doc = Jsoup.parse(path, \"UTF-8\", \"https://example.com/\");\n        String title = \"Medium HTML\";\n        assertEquals(title, doc.title());\n\n        // parse(Path path)\n        doc = Jsoup.parse(path);\n        assertEquals(title, doc.title());\n\n        // (Path path, @Nullable String charsetName, String baseUri, Parser parser)\n        doc = Jsoup.parse(path, \"UTF-8\", \"https://example.com/\", Parser.htmlParser());\n        assertEquals(title, doc.title());\n    }",
+  "invocations": [
+    "parse",
+    "parse",
+    "parse",
+    "title",
+    "htmlParser"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String, org.jsoup.parser.Parser)": {
+      "params_len": 4,
+      "params": [
+        "java.nio.file.Path",
+        "java.lang.String",
+        "java.lang.String",
+        "org.jsoup.parser.Parser"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "java.nio.file.Path",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.Jsoup.parse(java.nio.file.Path)": {
+      "params_len": 1,
+      "params": [
+        "java.nio.file.Path"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Document.title()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.parser.Parser.htmlParser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String, org.jsoup.parser.Parser)",
+    "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String)",
+    "org.jsoup.Jsoup.parse(java.nio.file.Path)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String, org.jsoup.parser.Parser)",
+    "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String)",
+    "org.jsoup.Jsoup.parse(java.nio.file.Path)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 117,
+      "class_name": "org.jsoup.Jsoup",
+      "method_name": "parse",
+      "signature": "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String, org.jsoup.parser.Parser)"
+    },
+    {
+      "method_id": 130,
+      "class_name": "org.jsoup.Jsoup",
+      "method_name": "parse",
+      "signature": "org.jsoup.Jsoup.parse(java.nio.file.Path, java.lang.String, java.lang.String)"
+    },
+    {
+      "method_id": 134,
+      "class_name": "org.jsoup.Jsoup",
+      "method_name": "parse",
+      "signature": "org.jsoup.Jsoup.parse(java.nio.file.Path)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

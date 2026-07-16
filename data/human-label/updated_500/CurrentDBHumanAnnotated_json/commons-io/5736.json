@@ -1,0 +1,53 @@
+{
+  "id": "5736",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.StringBuilderWriterTest_testAppendChar_6fe0e843",
+  "test_path": "org/apache/commons/io/output/StringBuilderWriterTest",
+  "test_name": "testAppendChar",
+  "body": "@Test\n    void testAppendChar() throws IOException {\n        try (Writer writer = new StringBuilderWriter()) {\n            writer.append('F').append('o').append('o');\n            assertEquals(\"Foo\", writer.toString());\n        }\n    }",
+  "invocations": [
+    "toString",
+    "StringBuilderWriter",
+    "close",
+    "append"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.StringBuilderWriter.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.StringBuilderWriter()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.StringBuilderWriter.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.StringBuilderWriter.append(char)": {
+      "params_len": 1,
+      "params": [
+        "char"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.StringBuilderWriter.append(char)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.StringBuilderWriter.append(char)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 749,
+      "class_name": "org.apache.commons.io.output.StringBuilderWriter",
+      "method_name": "append",
+      "signature": "org.apache.commons.io.output.StringBuilderWriter.append(char)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

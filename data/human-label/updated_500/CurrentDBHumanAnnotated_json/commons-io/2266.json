@@ -1,0 +1,45 @@
+{
+  "id": "2266",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.channels.CloseShieldChannelTest_testCloseIsShielded_d6100c63",
+  "test_path": "org/apache/commons/io/channels/CloseShieldChannelTest",
+  "test_name": "testCloseIsShielded",
+  "body": "@ParameterizedTest\n    @MethodSource(\"channelInterfaces\")\n    void testCloseIsShielded(final Class<? extends Channel> channelInterface) throws Exception {\n        final Channel channel = mock(channelInterface);\n        when(channel.isOpen()).thenReturn(true, false, true, false);\n        final Channel shield = CloseShieldChannel.wrap(channel);\n        // Reflects delegate state initially\n        assertTrue(shield.isOpen(), \"isOpen reflects delegate state\");\n        assertFalse(shield.isOpen(), \"isOpen reflects delegate state\");\n        verify(channel, times(2)).isOpen();\n        shield.close();\n        // Reflects shield state after close\n        assertFalse(shield.isOpen(), \"isOpen reflects shield state\");\n        assertFalse(shield.isOpen(), \"isOpen reflects shield state\");\n        verify(channel, times(2)).isOpen();\n    }",
+  "invocations": [
+    "invoke",
+    "wrap"
+  ],
+  "signature": {
+    "org.apache.commons.io.channels.CloseShieldChannelHandler.invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[])": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "java.lang.reflect.Method",
+        "java.lang.Object[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 407,
+      "class_name": "org.apache.commons.io.channels.CloseShieldChannel",
+      "method_name": "wrap",
+      "signature": "org.apache.commons.io.channels.CloseShieldChannel.wrap(T)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

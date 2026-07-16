@@ -1,0 +1,34 @@
+{
+  "id": "321",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.requests.data.tracks.GetAudioFeaturesForTrackRequestTest_shouldComplyWithReference_8c390477",
+  "test_path": "se/michaelthelin/spotify/requests/data/tracks/GetAudioFeaturesForTrackRequestTest",
+  "test_name": "shouldComplyWithReference",
+  "body": "@Test\n  public void shouldComplyWithReference() {\n    assertHasAuthorizationHeader(defaultRequest);\n    assertEquals(\n      \"https://api.spotify.com:443/v1/audio-features/01iyCAUm8EvOFqVWYJ3dVX\",\n      defaultRequest.getUri().toString());\n  }",
+  "invocations": [
+    "getAccessToken",
+    "getHeaders",
+    "getUri"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.SpotifyApi.getAccessToken()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.AbstractRequest.getHeaders()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.AbstractRequest.getUri()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [],
+  "current_db_human_annotation": [],
+  "current_db_human_annotation_details": [],
+  "label_source": "reviewed_empty"
+}

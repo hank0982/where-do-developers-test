@@ -1,0 +1,55 @@
+{
+  "id": "221",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.collision.broadphase.CollisionBodyBroadphaseTest_getSetUpdateTrackingEnabled_4c6bc341",
+  "test_path": "org/dyn4j/collision/broadphase/CollisionBodyBroadphaseTest",
+  "test_name": "getSetUpdateTrackingEnabled",
+  "body": "@Test\n\tpublic void getSetUpdateTrackingEnabled() {\n\t\tif (this.broadphase.isUpdateTrackingSupported()) {\n\t\t\tthis.broadphase.setUpdateTrackingEnabled(true);\n\t\t\tthis.broadphase.setUpdateTrackingEnabled(false);\n\t\t\tTestCase.assertFalse(this.broadphase.isUpdateTrackingEnabled());\n\t\t\tthis.broadphase.setUpdateTrackingEnabled(true);\n\t\t\tTestCase.assertTrue(this.broadphase.isUpdateTrackingEnabled());\n\t\t} else {\n\t\t\tTestCase.assertFalse(this.broadphase.isUpdateTrackingEnabled());\n\t\t\tthis.broadphase.setUpdateTrackingEnabled(true);\n\t\t\tTestCase.assertFalse(this.broadphase.isUpdateTrackingEnabled());\n\t\t}\n\t}",
+  "invocations": [
+    "isUpdateTrackingSupported",
+    "setUpdateTrackingEnabled",
+    "isUpdateTrackingEnabled"
+  ],
+  "signature": {
+    "org.dyn4j.collision.broadphase.Sap.isUpdateTrackingSupported()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.Sap.setUpdateTrackingEnabled(boolean)": {
+      "params_len": 1,
+      "params": [
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.isUpdateTrackingEnabled()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.collision.broadphase.Sap.setUpdateTrackingEnabled(boolean)",
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.isUpdateTrackingEnabled()"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.collision.broadphase.Sap.setUpdateTrackingEnabled(boolean)",
+    "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.isUpdateTrackingEnabled()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1357,
+      "class_name": "org.dyn4j.collision.broadphase.Sap",
+      "method_name": "setUpdateTrackingEnabled",
+      "signature": "org.dyn4j.collision.broadphase.Sap.setUpdateTrackingEnabled(boolean)"
+    },
+    {
+      "method_id": 1425,
+      "class_name": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector",
+      "method_name": "isUpdateTrackingEnabled",
+      "signature": "org.dyn4j.collision.broadphase.AbstractBroadphaseDetector.isUpdateTrackingEnabled()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

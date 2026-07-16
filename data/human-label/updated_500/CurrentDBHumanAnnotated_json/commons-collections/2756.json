@@ -1,0 +1,36 @@
+{
+  "id": "2756",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.iterators.SingletonIterator2Test_testSerializeDeserializeThenCompare_e3ebba58",
+  "test_path": "org/apache/commons/collections4/iterators/SingletonIterator2Test",
+  "test_name": "testSerializeDeserializeThenCompare",
+  "body": "@Test\n    public void testSerializeDeserializeThenCompare() throws Exception {\n        final Object obj = makeObject();\n        if (obj instanceof Serializable && isTestSerialization()) {\n            final Object dest = serializeDeserialize(obj);\n            if (isEqualsCheckable()) {\n                assertEquals(obj, dest, \"obj != deserialize(serialize(obj))\");\n            }\n        }\n    }",
+  "invocations": [
+    "SingletonIterator"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.iterators.SingletonIterator(E, boolean)": {
+      "params_len": 2,
+      "params": [
+        "E",
+        "boolean"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.iterators.SingletonIterator(E, boolean)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.iterators.SingletonIterator(E, boolean)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2801,
+      "class_name": "org.apache.commons.collections4.iterators.SingletonIterator",
+      "method_name": "SingletonIterator",
+      "signature": "org.apache.commons.collections4.iterators.SingletonIterator(E, boolean)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

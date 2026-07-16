@@ -1,0 +1,81 @@
+{
+  "id": "227",
+  "project": "spotify-web-api-java",
+  "current_db_test_name": "se.michaelthelin.spotify.requests.data.player.StartResumeUsersPlaybackRequestNumericTest_shouldPreserveBooleanParametersAsBooleans_e9a3edd1",
+  "test_path": "se/michaelthelin/spotify/requests/data/player/StartResumeUsersPlaybackRequestNumericTest",
+  "test_name": "shouldPreserveBooleanParametersAsBooleans",
+  "body": "@Test\n    public void shouldPreserveBooleanParametersAsBooleans() {\n        // Create a request with JSON array uris\n        JsonArray uris = new JsonArray();\n        uris.add(\"spotify:track:test1\");\n        uris.add(\"spotify:track:test2\");\n\n        StartResumeUsersPlaybackRequest request = new SpotifyApi.Builder()\n            .setAccessToken(\"test-token\")\n            .build()\n            .startResumeUsersPlayback()\n            .uris(uris)\n            .build();\n\n        // Generate the JSON body\n        String json = request.bodyParametersToJson(request.getBodyParameters());\n\n        // The JSON should contain a proper JSON array\n        assertTrue(json.contains(\"\\\"uris\\\":[\"),\n            \"uris should be a JSON array. Actual JSON: \" + json);\n        assertTrue(json.contains(\"spotify:track:test1\"),\n            \"uris should contain the track URIs. Actual JSON: \" + json);\n    }",
+  "invocations": [
+    "startResumeUsersPlayback",
+    "Builder",
+    "build",
+    "setAccessToken",
+    "build",
+    "uris",
+    "getBodyParameters",
+    "bodyParametersToJson"
+  ],
+  "signature": {
+    "se.michaelthelin.spotify.SpotifyApi.startResumeUsersPlayback()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.SpotifyApi$Builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.SpotifyApi$Builder.build()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.SpotifyApi$Builder.setAccessToken(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.data.player.StartResumeUsersPlaybackRequest$Builder.build()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.data.player.StartResumeUsersPlaybackRequest$Builder.uris(se.michaelthelin.spotify.requests.data.player.JsonArray)": {
+      "params_len": 1,
+      "params": [
+        "se.michaelthelin.spotify.requests.data.player.JsonArray"
+      ],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.AbstractRequest.getBodyParameters()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "se.michaelthelin.spotify.requests.AbstractRequest.bodyParametersToJson(java.util.List<se.michaelthelin.spotify.requests.NameValuePair>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.List<se.michaelthelin.spotify.requests.NameValuePair>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "se.michaelthelin.spotify.SpotifyApi.startResumeUsersPlayback()"
+  ],
+  "current_db_human_annotation": [
+    "se.michaelthelin.spotify.SpotifyApi.startResumeUsersPlayback()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 103,
+      "class_name": "se.michaelthelin.spotify.SpotifyApi",
+      "method_name": "startResumeUsersPlayback",
+      "signature": "se.michaelthelin.spotify.SpotifyApi.startResumeUsersPlayback()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "1372",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.category.CategoryToPieDatasetTest_testGetKey_9f45249c",
+  "test_path": "org/jfree/data/category/CategoryToPieDatasetTest",
+  "test_name": "testGetKey",
+  "body": "@Test\n    public void testGetKey() {\n        DefaultCategoryDataset<String, String> underlying = new DefaultCategoryDataset<>();\n        underlying.addValue(1.1, \"R1\", \"C1\");\n        underlying.addValue(2.2, \"R1\", \"C2\");\n        CategoryToPieDataset d1 = new CategoryToPieDataset(underlying,\n                TableOrder.BY_ROW, 0);\n        assertEquals(d1.getKey(0), \"C1\");\n        assertEquals(d1.getKey(1), \"C2\");\n\n        // check negative index throws exception\n        try {\n            /* Number n = */ d1.getKey(-1);\n            fail(\"Expected IndexOutOfBoundsException.\");\n        }\n        catch (IndexOutOfBoundsException e) {\n            // this is expected\n        }\n\n        // check index == getItemCount() throws exception\n        try {\n            /* Number n = */ d1.getKey(d1.getItemCount());\n            fail(\"Expected IndexOutOfBoundsException.\");\n        }\n        catch (IndexOutOfBoundsException e) {\n            // this is expected\n        }\n\n        // test null source\n        CategoryToPieDataset p1 = new CategoryToPieDataset(null,\n                TableOrder.BY_COLUMN, 0);\n        try {\n            /* Number n = */ p1.getKey(0);\n            fail(\"Expected IndexOutOfBoundsException.\");\n        }\n        catch (IndexOutOfBoundsException e) {\n            // this is expected\n        }\n    }",
+  "invocations": [
+    "AbstractDataset",
+    "CategoryToPieDataset",
+    "getItemCount",
+    "getKey",
+    "DefaultCategoryDataset",
+    "addValue"
+  ],
+  "signature": {
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.CategoryToPieDataset(org.jfree.data.category.CategoryDataset, org.jfree.chart.api.TableOrder, int)": {
+      "params_len": 3,
+      "params": [
+        "org.jfree.data.category.CategoryDataset",
+        "org.jfree.chart.api.TableOrder",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.CategoryToPieDataset.getItemCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.CategoryToPieDataset.getKey(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultCategoryDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.category.DefaultCategoryDataset.addValue(double, R, C)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "R",
+        "C"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.category.CategoryToPieDataset.getKey(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.category.CategoryToPieDataset.getKey(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1087,
+      "class_name": "org.jfree.data.category.CategoryToPieDataset",
+      "method_name": "getKey",
+      "signature": "org.jfree.data.category.CategoryToPieDataset.getKey(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

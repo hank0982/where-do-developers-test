@@ -1,0 +1,131 @@
+{
+  "id": "6",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testNLT_b8a6bc85",
+  "test_path": "org/apache/commons/cli/ApplicationTest",
+  "test_name": "testNLT",
+  "body": "@Test\n    void testNLT() throws Exception {\n        final Option help = new Option(\"h\", \"help\", false, \"print this message\");\n        final Option version = new Option(\"v\", \"version\", false, \"print version information\");\n        final Option newRun = new Option(\"n\", \"new\", false, \"Create NLT cache entries only for new items\");\n        final Option trackerRun = new Option(\"t\", \"tracker\", false, \"Create NLT cache entries only for tracker items\");\n\n        //@formatter:off\n        final Option timeLimit = OptionBuilder.withLongOpt(\"limit\").hasArg()\n                                        .withValueSeparator()\n                                        .withDescription(\"Set time limit for execution, in minutes\")\n                                        .create(\"l\");\n\n        final Option age = OptionBuilder.withLongOpt(\"age\").hasArg()\n                                  .withValueSeparator()\n                                  .withDescription(\"Age (in days) of cache item before being recomputed\")\n                                  .create(\"a\");\n\n        final Option server = OptionBuilder.withLongOpt(\"server\").hasArg()\n                                     .withValueSeparator()\n                                     .withDescription(\"The NLT server address\")\n                                     .create(\"s\");\n\n        final Option numResults = OptionBuilder.withLongOpt(\"results\").hasArg()\n                                         .withValueSeparator()\n                                         .withDescription(\"Number of results per item\")\n                                         .create(\"r\");\n\n        final Option configFile = OptionBuilder.withLongOpt(\"file\").hasArg()\n                                         .withValueSeparator()\n                                         .withDescription(\"Use the specified configuration file\")\n                                         .create();\n        //@formatter:on\n\n        final Options options = new Options();\n        options.addOption(help);\n        options.addOption(version);\n        options.addOption(newRun);\n        options.addOption(trackerRun);\n        options.addOption(timeLimit);\n        options.addOption(age);\n        options.addOption(server);\n        options.addOption(numResults);\n        options.addOption(configFile);\n\n        // create the command line parser\n        final CommandLineParser parser = new PosixParser();\n\n        final String[] args = {\"-v\", \"-l\", \"10\", \"-age\", \"5\", \"-file\", \"filename\"};\n\n        final CommandLine line = parser.parse(options, args);\n        assertTrue(line.hasOption(\"v\"));\n        assertEquals(line.getOptionValue(\"l\"), \"10\");\n        assertEquals(line.getOptionValue(\"limit\"), \"10\");\n        assertEquals(line.getOptionValue(\"a\"), \"5\");\n        assertEquals(line.getOptionValue(\"age\"), \"5\");\n        assertEquals(line.getOptionValue(\"file\"), \"filename\");\n    }",
+  "invocations": [
+    "PosixParser",
+    "addOption",
+    "Options",
+    "Parser",
+    "parse",
+    "create",
+    "withLongOpt",
+    "create",
+    "withDescription",
+    "withValueSeparator",
+    "hasArg",
+    "getOptionValue",
+    "hasOption",
+    "Option"
+  ],
+  "signature": {
+    "org.apache.commons.cli.PosixParser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options.addOption(org.apache.commons.cli.Option)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.cli.Option"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.cli.Options",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.create(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withLongOpt(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.create()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withDescription(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withValueSeparator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.hasArg()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.getOptionValue(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.hasOption(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Option(java.lang.String, java.lang.String, boolean, java.lang.String)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.lang.String",
+        "boolean",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 282,
+      "class_name": "org.apache.commons.cli.Parser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

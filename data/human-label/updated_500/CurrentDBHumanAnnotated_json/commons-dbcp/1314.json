@@ -1,0 +1,239 @@
+{
+  "id": "1314",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.managed.TestBasicManagedDataSource_testBackPointers_83ce46d0",
+  "test_path": "org/apache/commons/dbcp2/managed/TestBasicManagedDataSource",
+  "test_name": "testBackPointers",
+  "body": "@Test\n    void testBackPointers() throws Exception {\n        // normal statement\n        Connection conn = newConnection();\n        assertBackPointers(conn, conn.createStatement());\n        conn = newConnection();\n        assertBackPointers(conn, conn.createStatement(0, 0));\n        conn = newConnection();\n        assertBackPointers(conn, conn.createStatement(0, 0, 0));\n\n        // prepared statement\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareStatement(\"select * from dual\"));\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareStatement(\"select * from dual\", 0));\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareStatement(\"select * from dual\", 0, 0));\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareStatement(\"select * from dual\", 0, 0, 0));\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareStatement(\"select * from dual\", new int[0]));\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareStatement(\"select * from dual\", new String[0]));\n\n        // callable statement\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareCall(\"select * from dual\"));\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareCall(\"select * from dual\", 0, 0));\n        conn = newConnection();\n        assertBackPointers(conn, conn.prepareCall(\"select * from dual\", 0, 0, 0));\n    }",
+  "invocations": [
+    "getWarnings",
+    "getStatement",
+    "getConnection",
+    "close",
+    "createStatement",
+    "isClosed",
+    "executeQuery",
+    "getResultSet",
+    "getWarnings",
+    "getGeneratedKeys",
+    "getConnection"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.DelegatingResultSet.getWarnings()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingResultSet.getStatement()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.BasicDataSource.getConnection()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.managed.ManagedConnection.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingConnection.isClosed()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingStatement.executeQuery(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingStatement.getResultSet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingStatement.getWarnings()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingStatement.getGeneratedKeys()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.DelegatingStatement.getConnection()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery()",
+    "org.apache.commons.dbcp2.DelegatingResultSet.getStatement()",
+    "org.apache.commons.dbcp2.managed.ManagedConnection.close()",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String, int, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement()",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, java.lang.String[])",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement(int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement(int, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int[])",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String)",
+    "org.apache.commons.dbcp2.DelegatingStatement.executeQuery(java.lang.String)",
+    "org.apache.commons.dbcp2.DelegatingStatement.getResultSet()",
+    "org.apache.commons.dbcp2.DelegatingStatement.getGeneratedKeys()",
+    "org.apache.commons.dbcp2.DelegatingStatement.getConnection()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery()",
+    "org.apache.commons.dbcp2.DelegatingResultSet.getStatement()",
+    "org.apache.commons.dbcp2.managed.ManagedConnection.close()",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String, int, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement()",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, java.lang.String[])",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement(int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.createStatement(int, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int, int)",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int[])",
+    "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String)",
+    "org.apache.commons.dbcp2.DelegatingStatement.executeQuery(java.lang.String)",
+    "org.apache.commons.dbcp2.DelegatingStatement.getResultSet()",
+    "org.apache.commons.dbcp2.DelegatingStatement.getGeneratedKeys()",
+    "org.apache.commons.dbcp2.DelegatingStatement.getConnection()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 61,
+      "class_name": "org.apache.commons.dbcp2.DelegatingPreparedStatement",
+      "method_name": "executeQuery",
+      "signature": "org.apache.commons.dbcp2.DelegatingPreparedStatement.executeQuery()"
+    },
+    {
+      "method_id": 452,
+      "class_name": "org.apache.commons.dbcp2.DelegatingResultSet",
+      "method_name": "getStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingResultSet.getStatement()"
+    },
+    {
+      "method_id": 938,
+      "class_name": "org.apache.commons.dbcp2.managed.ManagedConnection",
+      "method_name": "close",
+      "signature": "org.apache.commons.dbcp2.managed.ManagedConnection.close()"
+    },
+    {
+      "method_id": 1579,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int, int, int)"
+    },
+    {
+      "method_id": 1585,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareCall",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String, int, int, int)"
+    },
+    {
+      "method_id": 1593,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int)"
+    },
+    {
+      "method_id": 1601,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "createStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.createStatement()"
+    },
+    {
+      "method_id": 1607,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, java.lang.String[])"
+    },
+    {
+      "method_id": 1613,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareCall",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String, int, int)"
+    },
+    {
+      "method_id": 1622,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "createStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.createStatement(int, int)"
+    },
+    {
+      "method_id": 1623,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "createStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.createStatement(int, int, int)"
+    },
+    {
+      "method_id": 1633,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareCall",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareCall(java.lang.String)"
+    },
+    {
+      "method_id": 1634,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int, int)"
+    },
+    {
+      "method_id": 1650,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String, int[])"
+    },
+    {
+      "method_id": 1654,
+      "class_name": "org.apache.commons.dbcp2.DelegatingConnection",
+      "method_name": "prepareStatement",
+      "signature": "org.apache.commons.dbcp2.DelegatingConnection.prepareStatement(java.lang.String)"
+    },
+    {
+      "method_id": 1665,
+      "class_name": "org.apache.commons.dbcp2.DelegatingStatement",
+      "method_name": "executeQuery",
+      "signature": "org.apache.commons.dbcp2.DelegatingStatement.executeQuery(java.lang.String)"
+    },
+    {
+      "method_id": 1689,
+      "class_name": "org.apache.commons.dbcp2.DelegatingStatement",
+      "method_name": "getResultSet",
+      "signature": "org.apache.commons.dbcp2.DelegatingStatement.getResultSet()"
+    },
+    {
+      "method_id": 1714,
+      "class_name": "org.apache.commons.dbcp2.DelegatingStatement",
+      "method_name": "getGeneratedKeys",
+      "signature": "org.apache.commons.dbcp2.DelegatingStatement.getGeneratedKeys()"
+    },
+    {
+      "method_id": 1727,
+      "class_name": "org.apache.commons.dbcp2.DelegatingStatement",
+      "method_name": "getConnection",
+      "signature": "org.apache.commons.dbcp2.DelegatingStatement.getConnection()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "5973",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.map.StaticBucketMapTest_testKeySetRetainAll_87651868",
+  "test_path": "org/apache/commons/collections4/map/StaticBucketMapTest",
+  "test_name": "testKeySetRetainAll",
+  "body": "@Test\n    void testKeySetRetainAll() {\n        resetFull();\n        final Set<K> keys = getMap().keySet();\n        final List<K> sampleKeysAsList = Arrays.asList(getSampleKeys());\n        if (!keys.equals(sampleKeysAsList)) {\n            return;\n        }\n        try {\n            assertFalse(keys.retainAll(sampleKeysAsList));\n        } catch (final UnsupportedOperationException e) {\n            return;\n        }\n        assertEquals(sampleKeysAsList, keys);\n        try {\n            assertTrue(keys.retainAll(Collections.<K>emptySet()));\n        } catch (final UnsupportedOperationException e) {\n            return;\n        }\n        assertTrue(getMap().isEmpty());\n    }",
+  "invocations": [
+    "AbstractIterableMap",
+    "entrySet",
+    "put",
+    "size",
+    "keySet",
+    "StaticBucketMap"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.AbstractIterableMap()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.StaticBucketMap.entrySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.StaticBucketMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.StaticBucketMap.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.StaticBucketMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.StaticBucketMap(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.map.StaticBucketMap.keySet()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.map.StaticBucketMap.keySet()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1704,
+      "class_name": "org.apache.commons.collections4.map.StaticBucketMap",
+      "method_name": "keySet",
+      "signature": "org.apache.commons.collections4.map.StaticBucketMap.keySet()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

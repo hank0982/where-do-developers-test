@@ -1,0 +1,69 @@
+{
+  "id": "2464",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.iterators.FilterIteratorTest_testRemoveNextEmpty_e1083705",
+  "test_path": "org/apache/commons/collections4/iterators/FilterIteratorTest",
+  "test_name": "testRemoveNextEmpty",
+  "body": "@Test\n    void testRemoveNextEmpty() {\n        final FilterIterator<E> empty = makeEmptyIterator();\n        assertThrows(NoSuchElementException.class, empty::removeNext);\n    }",
+  "invocations": [
+    "removeNext",
+    "ArrayIterator",
+    "ArrayIterator",
+    "ArrayIterator",
+    "FilterIterator"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.iterators.IteratorOperations.removeNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayIterator(java.lang.Object, int)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayIterator(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.ArrayIterator(java.lang.Object, int, int)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.Object",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.FilterIterator(java.util.Iterator<? extends E>, org.apache.commons.collections4.Predicate<? super E>)": {
+      "params_len": 2,
+      "params": [
+        "java.util.Iterator<? extends E>",
+        "org.apache.commons.collections4.Predicate<? super E>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.iterators.IteratorOperations.removeNext()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.iterators.IteratorOperations.removeNext()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2946,
+      "class_name": "org.apache.commons.collections4.iterators.IteratorOperations",
+      "method_name": "removeNext",
+      "signature": "org.apache.commons.collections4.iterators.IteratorOperations.removeNext()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

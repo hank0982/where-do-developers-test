@@ -1,0 +1,35 @@
+{
+  "id": "1346",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testReadFileToByteArray_2b1894f3",
+  "test_path": "org/apache/commons/io/FileUtilsTest",
+  "test_name": "testReadFileToByteArray",
+  "body": "@Test\n    void testReadFileToByteArray() throws Exception {\n        final File file = new File(tempDirFile, \"read.txt\");\n        Files.write(file.toPath(), new byte[] {11, 21, 31});\n\n        final byte[] data = FileUtils.readFileToByteArray(file);\n        assertEquals(3, data.length);\n        assertEquals(11, data[0]);\n        assertEquals(21, data[1]);\n        assertEquals(31, data[2]);\n    }",
+  "invocations": [
+    "readFileToByteArray"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.readFileToByteArray(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.readFileToByteArray(java.io.File)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.readFileToByteArray(java.io.File)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 236,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "readFileToByteArray",
+      "signature": "org.apache.commons.io.FileUtils.readFileToByteArray(java.io.File)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

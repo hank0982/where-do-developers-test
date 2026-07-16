@@ -1,0 +1,57 @@
+{
+  "id": "427",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.json.HookTest_hasContent_WithEmbedding_ReturnsTrue_b08b2ba4",
+  "test_path": "net/masterthought/cucumber/json/HookTest_hasContent_WithEmbedding",
+  "test_name": "ReturnsTrue",
+  "body": "@Test\n    void hasContent_WithEmbedding_ReturnsTrue() {\n\n        // given\n        Hook hook = features.get(1).getElements()[0].getSteps()[0].getBefore()[0];\n\n        // when\n        boolean hasContent = hook.hasContent();\n\n        // then\n        assertThat(hook.getEmbeddings()).isNotEmpty();\n        assertThat(hasContent).isTrue();\n    }",
+  "invocations": [
+    "getEmbeddings",
+    "hasContent",
+    "getBefore",
+    "getSteps",
+    "getElements"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.json.Hook.getEmbeddings()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.Hook.hasContent()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.Step.getBefore()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.Element.getSteps()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.json.Feature.getElements()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.json.Hook.hasContent()"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.json.Hook.hasContent()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 73,
+      "class_name": "net.masterthought.cucumber.json.Hook",
+      "method_name": "hasContent",
+      "signature": "net.masterthought.cucumber.json.Hook.hasContent()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

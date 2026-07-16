@@ -1,0 +1,35 @@
+{
+  "id": "4009",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.RangeTest_testIsStartedBy_cbade8bd",
+  "test_path": "org/apache/commons/lang3/RangeTest",
+  "test_name": "testIsStartedBy",
+  "body": "@Test\n    void testIsStartedBy() {\n        assertFalse(intRange.isStartedBy(null));\n\n        assertFalse(intRange.isStartedBy(5));\n        assertTrue(intRange.isStartedBy(10));\n        assertFalse(intRange.isStartedBy(15));\n        assertFalse(intRange.isStartedBy(20));\n        assertFalse(intRange.isStartedBy(25));\n    }",
+  "invocations": [
+    "isStartedBy"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.Range.isStartedBy(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.Range.isStartedBy(T)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.Range.isStartedBy(T)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1556,
+      "class_name": "org.apache.commons.lang3.Range",
+      "method_name": "isStartedBy",
+      "signature": "org.apache.commons.lang3.Range.isStartedBy(T)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

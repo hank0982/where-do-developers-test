@@ -1,0 +1,51 @@
+{
+  "id": "2",
+  "project": "cucumber-reporting",
+  "current_db_test_name": "net.masterthought.cucumber.ConfigurationTest_addClassifications_AddsClassification_0243cb8c",
+  "test_path": "net/masterthought/cucumber/ConfigurationTest_addClassifications",
+  "test_name": "AddsClassification",
+  "body": "@Test\n    void addClassifications_AddsClassification() {\n\n        // given\n        Configuration configuration = new Configuration(outputDirectory, projectName);\n        final String classificationName = \"Browser\";\n        final String classificationValue = \"Firefox 1.0\";\n\n        // when\n        configuration.addClassifications(classificationName, classificationValue);\n\n        // then\n        assertThat(configuration.getClassifications()).hasSize(1);\n        Map.Entry<String, String> classification = configuration.getClassifications().get(0);\n        assertThat(classification.getKey()).isEqualTo(classificationName);\n        assertThat(classification.getValue()).isEqualTo(classificationValue);\n    }",
+  "invocations": [
+    "addClassifications",
+    "getClassifications",
+    "Configuration"
+  ],
+  "signature": {
+    "net.masterthought.cucumber.Configuration.addClassifications(java.lang.String, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration.getClassifications()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "net.masterthought.cucumber.Configuration(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "net.masterthought.cucumber.Configuration.addClassifications(java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "net.masterthought.cucumber.Configuration.addClassifications(java.lang.String, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 227,
+      "class_name": "net.masterthought.cucumber.Configuration",
+      "method_name": "addClassifications",
+      "signature": "net.masterthought.cucumber.Configuration.addClassifications(java.lang.String, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

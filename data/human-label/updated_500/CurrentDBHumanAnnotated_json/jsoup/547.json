@@ -1,0 +1,55 @@
+{
+  "id": "547",
+  "project": "jsoup",
+  "current_db_test_name": "org.jsoup.nodes.ElementTest_getElementsMatchingOwnText_4baafbaa",
+  "test_path": "org/jsoup/nodes/ElementTest",
+  "test_name": "getElementsMatchingOwnText",
+  "body": "@Test void getElementsMatchingOwnText() {\n        Document doc = Jsoup.parse(\"<div id=1>One</div><div>Two</div>\");\n        Elements els = doc.body().getElementsMatchingOwnText(\"O\\\\w+\");\n        assertEquals(1, els.size());\n        assertEquals(\"1\", els.get(0).id());\n    }",
+  "invocations": [
+    "parse",
+    "getElementsMatchingOwnText",
+    "id",
+    "body"
+  ],
+  "signature": {
+    "org.jsoup.Jsoup.parse(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.getElementsMatchingOwnText(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Element.id()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jsoup.nodes.Document.body()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jsoup.nodes.Element.getElementsMatchingOwnText(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.jsoup.nodes.Element.getElementsMatchingOwnText(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 750,
+      "class_name": "org.jsoup.nodes.Element",
+      "method_name": "getElementsMatchingOwnText",
+      "signature": "org.jsoup.nodes.Element.getElementsMatchingOwnText(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

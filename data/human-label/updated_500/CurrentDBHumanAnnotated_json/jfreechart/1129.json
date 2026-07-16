@@ -1,0 +1,67 @@
+{
+  "id": "1129",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.renderer.xy.XYBubbleRendererTest_testHashcode_181f3c6e",
+  "test_path": "org/jfree/chart/renderer/xy/XYBubbleRendererTest",
+  "test_name": "testHashcode",
+  "body": "@Test\n    public void testHashcode() {\n        XYBubbleRenderer r1 = new XYBubbleRenderer();\n        XYBubbleRenderer r2 = new XYBubbleRenderer();\n        assertEquals(r1, r2);\n        int h1 = r1.hashCode();\n        int h2 = r2.hashCode();\n        assertEquals(h1, h2);\n    }",
+  "invocations": [
+    "AbstractXYItemRenderer",
+    "hashCode",
+    "XYBubbleRenderer",
+    "XYBubbleRenderer",
+    "equals",
+    "AbstractRenderer"
+  ],
+  "signature": {
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYBubbleRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYBubbleRenderer(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYBubbleRenderer.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.AbstractRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3577,
+      "class_name": "org.jfree.chart.renderer.xy.AbstractXYItemRenderer",
+      "method_name": "hashCode",
+      "signature": "org.jfree.chart.renderer.xy.AbstractXYItemRenderer.hashCode()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

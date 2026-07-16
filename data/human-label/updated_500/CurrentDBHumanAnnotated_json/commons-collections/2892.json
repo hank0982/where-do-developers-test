@@ -1,0 +1,136 @@
+{
+  "id": "2892",
+  "project": "commons-collections",
+  "current_db_test_name": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIteratorTest_testMapIteratorOrder_cdecb7b7",
+  "test_path": "org/apache/commons/collections4/iterators/UnmodifiableOrderedMapIteratorTest",
+  "test_name": "testMapIteratorOrder",
+  "body": "@Test\n    void testMapIteratorOrder() {\n        if (!supportsFullIterator()) {\n            return;\n        }\n\n        final OrderedMapIterator<K, V> it = makeObject();\n        final Map<K, V> map = getMap();\n\n        assertEquals(new ArrayList<>(map.keySet()), new ArrayList<>(map.keySet()), \"keySet() not consistent\");\n\n        final Iterator<K> it2 = map.keySet().iterator();\n        assertTrue(it.hasNext());\n        assertTrue(it2.hasNext());\n        final List<K> list = new ArrayList<>();\n        while (it.hasNext()) {\n            final K key = it.next();\n            assertEquals(it2.next(), key);\n            list.add(key);\n        }\n        assertEquals(map.size(), list.size());\n        while (it.hasPrevious()) {\n            final K key = it.previous();\n            assertEquals(list.get(list.size() - 1), key);\n            list.remove(list.size() - 1);\n        }\n        assertEquals(0, list.size());\n    }",
+  "invocations": [
+    "iterator",
+    "size",
+    "put",
+    "keySet",
+    "mapIterator",
+    "listOrderedMap",
+    "next",
+    "size",
+    "hasNext",
+    "next",
+    "previous",
+    "hasPrevious",
+    "hasNext",
+    "unmodifiableOrderedMapIterator"
+  ],
+  "signature": {
+    "org.apache.commons.collections4.map.ListOrderedMap$KeySetView.iterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap$KeySetView.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.put(K, V)": {
+      "params_len": 2,
+      "params": [
+        "K",
+        "V"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.keySet()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.mapIterator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap.listOrderedMap(java.util.Map<K, V>)": {
+      "params_len": 1,
+      "params": [
+        "java.util.Map<K",
+        "V>"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.ListOrderedMap$KeySetView$Anonymous1.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.map.AbstractMapDecorator.size()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.previous()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.hasPrevious()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.unmodifiableOrderedMapIterator(org.apache.commons.collections4.OrderedMapIterator<K, ? extends V>)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.collections4.OrderedMapIterator<K",
+        "? extends V>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.next()",
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.previous()",
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.unmodifiableOrderedMapIterator(org.apache.commons.collections4.OrderedMapIterator<K, ? extends V>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.next()",
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.previous()",
+    "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.unmodifiableOrderedMapIterator(org.apache.commons.collections4.OrderedMapIterator<K, ? extends V>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3056,
+      "class_name": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator",
+      "method_name": "next",
+      "signature": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.next()"
+    },
+    {
+      "method_id": 3059,
+      "class_name": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator",
+      "method_name": "previous",
+      "signature": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.previous()"
+    },
+    {
+      "method_id": 3063,
+      "class_name": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator",
+      "method_name": "unmodifiableOrderedMapIterator",
+      "signature": "org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator.unmodifiableOrderedMapIterator(org.apache.commons.collections4.OrderedMapIterator<K, ? extends V>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

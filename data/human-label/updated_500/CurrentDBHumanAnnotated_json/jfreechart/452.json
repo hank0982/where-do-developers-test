@@ -1,0 +1,68 @@
+{
+  "id": "452",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.labels.StandardCategoryToolTipGeneratorTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/chart/labels/StandardCategoryToolTipGeneratorTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        StandardCategoryToolTipGenerator g1\n                = new StandardCategoryToolTipGenerator();\n        StandardCategoryToolTipGenerator g2 = CloneUtils.clone(g1);\n        assertNotSame(g1, g2);\n        assertSame(g1.getClass(), g2.getClass());\n        assertEquals(g1, g2);\n    }",
+  "invocations": [
+    "clone",
+    "StandardCategoryToolTipGenerator",
+    "equals",
+    "AbstractCategoryItemLabelGenerator",
+    "AbstractCategoryItemLabelGenerator"
+  ],
+  "signature": {
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.StandardCategoryToolTipGenerator()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.StandardCategoryToolTipGenerator.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.AbstractCategoryItemLabelGenerator(java.lang.String, java.text.NumberFormat)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.text.NumberFormat"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.labels.AbstractCategoryItemLabelGenerator(java.lang.String, java.text.NumberFormat, java.text.NumberFormat)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "java.text.NumberFormat",
+        "java.text.NumberFormat"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.labels.StandardCategoryToolTipGenerator.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.labels.StandardCategoryToolTipGenerator.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 7465,
+      "class_name": "org.jfree.chart.labels.StandardCategoryToolTipGenerator",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.labels.StandardCategoryToolTipGenerator.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

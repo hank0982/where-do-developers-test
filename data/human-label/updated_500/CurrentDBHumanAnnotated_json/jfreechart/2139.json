@@ -1,0 +1,65 @@
+{
+  "id": "2139",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.data.xy.XIntervalDataItemTest_testEquals_4d3b87b2",
+  "test_path": "org/jfree/data/xy/XIntervalDataItemTest",
+  "test_name": "testEquals",
+  "body": "@Test\n    public void testEquals() {\n        XIntervalDataItem item1 = new XIntervalDataItem(1.0, 2.0, 3.0, 4.0);\n        XIntervalDataItem item2 = new XIntervalDataItem(1.0, 2.0, 3.0, 4.0);\n        assertEquals(item1, item2);\n        assertEquals(item2, item1);\n\n        // x\n        item1 = new XIntervalDataItem(1.1, 2.0, 3.0, 4.0);\n        assertNotEquals(item1, item2);\n        item2 = new XIntervalDataItem(1.1, 2.0, 3.0, 4.0);\n        assertEquals(item1, item2);\n\n        // xLow\n        item1 = new XIntervalDataItem(1.1, 2.2, 3.0, 4.0);\n        assertNotEquals(item1, item2);\n        item2 = new XIntervalDataItem(1.1, 2.2, 3.0, 4.0);\n        assertEquals(item1, item2);\n\n        // xHigh\n        item1 = new XIntervalDataItem(1.1, 2.2, 3.3, 4.0);\n        assertNotEquals(item1, item2);\n        item2 = new XIntervalDataItem(1.1, 2.2, 3.3, 4.0);\n        assertEquals(item1, item2);\n\n        // y\n        item1 = new XIntervalDataItem(1.1, 2.2, 3.3, 4.4);\n        assertNotEquals(item1, item2);\n        item2 = new XIntervalDataItem(1.1, 2.2, 3.3, 4.4);\n        assertEquals(item1, item2);\n\n    }",
+  "invocations": [
+    "XIntervalDataItem",
+    "YWithXInterval",
+    "ComparableObjectItem",
+    "equals"
+  ],
+  "signature": {
+    "org.jfree.data.xy.XIntervalDataItem(double, double, double, double)": {
+      "params_len": 4,
+      "params": [
+        "double",
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.YWithXInterval(double, double, double)": {
+      "params_len": 3,
+      "params": [
+        "double",
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.ComparableObjectItem(java.lang.Comparable, java.lang.Object)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Comparable",
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.ComparableObjectItem.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.data.ComparableObjectItem.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.data.ComparableObjectItem.equals(java.lang.Object)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1922,
+      "class_name": "org.jfree.data.ComparableObjectItem",
+      "method_name": "equals",
+      "signature": "org.jfree.data.ComparableObjectItem.equals(java.lang.Object)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

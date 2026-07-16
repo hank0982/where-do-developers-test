@@ -1,0 +1,36 @@
+{
+  "id": "489",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.StringSubstitutorTest_testSubstituteDefaultProperties_305f07e9",
+  "test_path": "org/apache/commons/text/StringSubstitutorTest",
+  "test_name": "testSubstituteDefaultProperties",
+  "body": "@Test\n    void testSubstituteDefaultProperties() {\n        final String org = \"${doesnotwork}\";\n        System.setProperty(\"doesnotwork\", \"It works!\");\n\n        // create a new Properties object with the System.getProperties as default\n        final Properties props = new Properties(System.getProperties());\n\n        assertEqualsCharSeq(\"It works!\", StringSubstitutor.replace(org, props));\n    }",
+  "invocations": [
+    "replace"
+  ],
+  "signature": {
+    "org.apache.commons.text.StringSubstitutor.replace(java.lang.Object, java.util.Properties)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.Object",
+        "java.util.Properties"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.StringSubstitutor.replace(java.lang.Object, java.util.Properties)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.StringSubstitutor.replace(java.lang.Object, java.util.Properties)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1019,
+      "class_name": "org.apache.commons.text.StringSubstitutor",
+      "method_name": "replace",
+      "signature": "org.apache.commons.text.StringSubstitutor.replace(java.lang.Object, java.util.Properties)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

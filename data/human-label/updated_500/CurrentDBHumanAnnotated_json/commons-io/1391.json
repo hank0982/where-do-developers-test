@@ -1,0 +1,47 @@
+{
+  "id": "1391",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testWriteLines_4arg_32a42a70",
+  "test_path": "org/apache/commons/io/FileUtilsTest_testWriteLines",
+  "test_name": "4arg",
+  "body": "@Test\n    void testWriteLines_4arg() throws Exception {\n        final Object[] data = {\n                \"hello\", new StringBuffer(\"world\"), \"\", \"this is\", null, \"some text\"};\n        final List<Object> list = Arrays.asList(data);\n\n        final File file = TestUtils.newFile(tempDirFile, \"lines.txt\");\n        FileUtils.writeLines(file, StandardCharsets.US_ASCII.name(), list, \"*\");\n\n        final String expected = \"hello*world**this is**some text*\";\n        final String actual = FileUtils.readFileToString(file, StandardCharsets.US_ASCII.name());\n        assertEquals(expected, actual);\n    }",
+  "invocations": [
+    "writeLines",
+    "readFileToString"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.lang.String, java.util.Collection<?>, java.lang.String)": {
+      "params_len": 4,
+      "params": [
+        "java.io.File",
+        "java.lang.String",
+        "java.util.Collection<?>",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.FileUtils.readFileToString(java.io.File, java.lang.String)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.lang.String, java.util.Collection<?>, java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.lang.String, java.util.Collection<?>, java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 232,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "writeLines",
+      "signature": "org.apache.commons.io.FileUtils.writeLines(java.io.File, java.lang.String, java.util.Collection<?>, java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

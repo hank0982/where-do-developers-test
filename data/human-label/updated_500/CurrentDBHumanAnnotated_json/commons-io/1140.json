@@ -1,0 +1,37 @@
+{
+  "id": "1140",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileSystemTest_testNameLengthStrategyTruncate_Throws_2ec2adc0",
+  "test_path": "org/apache/commons/io/FileSystemTest_testNameLengthStrategyTruncate",
+  "test_name": "Throws",
+  "body": "static Stream<Arguments> testNameLengthStrategyTruncate_Throws() {\n        final Stream<Arguments> common = Stream.of(\n                // Encoding issues\n                Arguments.of(BYTES, 10, \"caf\u00e9\", US_ASCII, \"US-ASCII\"),\n                Arguments.of(UTF16_CODE_UNITS, 10, \"\\uD800.txt\", UTF_8, \"UTF-16\"),\n                Arguments.of(UTF16_CODE_UNITS, 10, \"\\uDC00.txt\", UTF_8, \"UTF-16\"),\n                // Extension too long\n                Arguments.of(BYTES, 4, \"a.txt\", UTF_8, \"extension\"),\n                Arguments.of(UTF16_CODE_UNITS, 4, \"a.txt\", UTF_8, \"extension\"),\n                // Limit too small\n                Arguments.of(BYTES, 3, CHAR_UTF8_4B, UTF_8, \"truncated to 1 character\"),\n                Arguments.of(UTF16_CODE_UNITS, 1, CHAR_UTF8_4B, UTF_8, \"truncated to 1 character\"));\n        return SystemUtils.isJavaVersionAtMost(JavaVersion.JAVA_19)\n                ? common\n                : Stream.concat(\n                        common,\n                        // In JDK 20+ the grapheme cluster CHAR_UTF8_69B is treated as a single character,\n                        // so cannot be truncated to 2 or 7 code units\n                        Stream.of(\n                                Arguments.of(BYTES, 68, CHAR_UTF8_69B, UTF_8, \"truncated to 29 characters\"),\n                                Arguments.of(UTF16_CODE_UNITS, 30, CHAR_UTF8_69B, UTF_8, \"truncated to 30 characters\")));\n    }",
+  "invocations": [
+    "truncate"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileSystem$NameLengthStrategy$Anonymous1.truncate(java.lang.CharSequence, int, java.nio.charset.Charset)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.CharSequence",
+        "int",
+        "java.nio.charset.Charset"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileSystem$NameLengthStrategy$Anonymous1.truncate(java.lang.CharSequence, int, java.nio.charset.Charset)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileSystem$NameLengthStrategy$Anonymous1.truncate(java.lang.CharSequence, int, java.nio.charset.Charset)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3071,
+      "class_name": "org.apache.commons.io.FileSystem$NameLengthStrategy$Anonymous1",
+      "method_name": "truncate",
+      "signature": "org.apache.commons.io.FileSystem$NameLengthStrategy$Anonymous1.truncate(java.lang.CharSequence, int, java.nio.charset.Charset)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

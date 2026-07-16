@@ -1,0 +1,33 @@
+{
+  "id": "40",
+  "project": "dropwizard",
+  "current_db_test_name": "io.dropwizard.client.ConfiguredCloseableHttpClientTest_getClient_returns_config_provided_at_construction_19023ee5",
+  "test_path": "io/dropwizard/client/ConfiguredCloseableHttpClientTest_getClient_returns_config_provided_at",
+  "test_name": "construction",
+  "body": "@Test\n    void getClient_returns_config_provided_at_construction() {\n        assertThat(configuredClient.getClient()).isEqualTo(closeableHttpClientMock);\n    }",
+  "invocations": [
+    "getClient"
+  ],
+  "signature": {
+    "io.dropwizard.client.ConfiguredCloseableHttpClient.getClient()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "io.dropwizard.client.ConfiguredCloseableHttpClient.getClient()"
+  ],
+  "current_db_human_annotation": [
+    "io.dropwizard.client.ConfiguredCloseableHttpClient.getClient()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 346,
+      "class_name": "io.dropwizard.client.ConfiguredCloseableHttpClient",
+      "method_name": "getClient",
+      "signature": "io.dropwizard.client.ConfiguredCloseableHttpClient.getClient()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

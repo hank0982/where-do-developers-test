@@ -1,0 +1,73 @@
+{
+  "id": "3",
+  "project": "commons-jxpath",
+  "current_db_test_name": "org.apache.commons.jxpath.BasicNodeSetTest_testRemove_0c02e337",
+  "test_path": "org/apache/commons/jxpath/BasicNodeSetTest",
+  "test_name": "testRemove",
+  "body": "@Test\n    void testRemove() {\n        addPointers(\"/bean/integers\");\n        removePointers(\"/bean/integers[4]\");\n        assertEquals(list(\"/bean/integers[1]\", \"/bean/integers[2]\", \"/bean/integers[3]\").toString(), nodeSet.getPointers().toString());\n        assertEquals(list(Integer.valueOf(1), Integer.valueOf(2), Integer.valueOf(3)), nodeSet.getValues());\n        assertEquals(list(Integer.valueOf(1), Integer.valueOf(2), Integer.valueOf(3)), nodeSet.getNodes());\n    }",
+  "invocations": [
+    "getPointers",
+    "getValues",
+    "add",
+    "getNodes",
+    "iteratePointers",
+    "hasNext",
+    "next"
+  ],
+  "signature": {
+    "org.apache.commons.jxpath.BasicNodeSet.getPointers()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.BasicNodeSet.getValues()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.BasicNodeSet.add(org.apache.commons.jxpath.Pointer)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.jxpath.Pointer"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.BasicNodeSet.getNodes()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.ri.JXPathContextReferenceImpl.iteratePointers(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.ri.EvalContext.hasNext()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.jxpath.ri.EvalContext.next()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.jxpath.BasicNodeSet.remove(org.apache.commons.jxpath.Pointer)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.jxpath.BasicNodeSet.remove(org.apache.commons.jxpath.Pointer)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 14,
+      "class_name": "org.apache.commons.jxpath.BasicNodeSet",
+      "method_name": "remove",
+      "signature": "org.apache.commons.jxpath.BasicNodeSet.remove(org.apache.commons.jxpath.Pointer)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

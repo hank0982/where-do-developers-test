@@ -1,0 +1,68 @@
+{
+  "id": "1237",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.FileUtilsTest_testCopyDirectoryToDirectory_NonExistingDest_63b75268",
+  "test_path": "org/apache/commons/io/FileUtilsTest_testCopyDirectoryToDirectory",
+  "test_name": "NonExistingDest",
+  "body": "@Test\n    void testCopyDirectoryToDirectory_NonExistingDest() throws Exception {\n        if (!testFile1.getParentFile().exists()) {\n            fail(\"Cannot create file \" + testFile1\n                    + \" as the parent directory does not exist\");\n        }\n        try (OutputStream output1 = new BufferedOutputStream(Files.newOutputStream(testFile1.toPath()))) {\n            TestUtils.generateTestData(output1, 1234);\n        }\n        if (!testFile2.getParentFile().exists()) {\n            fail(\"Cannot create file \" + testFile2\n                    + \" as the parent directory does not exist\");\n        }\n        try (OutputStream output = new BufferedOutputStream(Files.newOutputStream(testFile2.toPath()))) {\n            TestUtils.generateTestData(output, 4321);\n        }\n        final File srcDir = tempDirFile;\n        final File subDir = new File(srcDir, \"sub\");\n        subDir.mkdir();\n        final File subFile = new File(subDir, \"A.txt\");\n        FileUtils.writeStringToFile(subFile, \"HELLO WORLD\", \"UTF8\");\n        final File destDir = new File(FileUtils.getTempDirectoryPath(), \"tmp-FileUtilsTestCase\");\n        FileUtils.deleteDirectory(destDir);\n        final File actualDestDir = new File(destDir, srcDir.getName());\n\n        FileUtils.copyDirectoryToDirectory(srcDir, destDir);\n\n        assertTrue(destDir.exists(), \"Check exists\");\n        assertTrue(actualDestDir.exists(), \"Check exists\");\n        final long srcSize = FileUtils.sizeOfDirectory(srcDir);\n        assertTrue(srcSize > 0, \"Size > 0\");\n        assertEquals(srcSize, FileUtils.sizeOfDirectory(actualDestDir), \"Check size\");\n        assertTrue(new File(actualDestDir, \"sub/A.txt\").exists());\n        FileUtils.deleteDirectory(destDir);\n    }",
+  "invocations": [
+    "getTempDirectoryPath",
+    "copyDirectoryToDirectory",
+    "sizeOfDirectory",
+    "writeStringToFile",
+    "deleteDirectory"
+  ],
+  "signature": {
+    "org.apache.commons.io.FileUtils.getTempDirectoryPath()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.FileUtils.copyDirectoryToDirectory(java.io.File, java.io.File)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.FileUtils.sizeOfDirectory(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.FileUtils.writeStringToFile(java.io.File, java.lang.String, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "java.io.File",
+        "java.lang.String",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.FileUtils.deleteDirectory(java.io.File)": {
+      "params_len": 1,
+      "params": [
+        "java.io.File"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.FileUtils.copyDirectoryToDirectory(java.io.File, java.io.File)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.FileUtils.copyDirectoryToDirectory(java.io.File, java.io.File)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 241,
+      "class_name": "org.apache.commons.io.FileUtils",
+      "method_name": "copyDirectoryToDirectory",
+      "signature": "org.apache.commons.io.FileUtils.copyDirectoryToDirectory(java.io.File, java.io.File)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

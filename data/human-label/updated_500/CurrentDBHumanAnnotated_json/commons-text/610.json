@@ -1,0 +1,55 @@
+{
+  "id": "610",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.TextStringBuilderAppendInsertTest_testAppendln_CharArray_bba5b2d3",
+  "test_path": "org/apache/commons/text/TextStringBuilderAppendInsertTest_testAppendln",
+  "test_name": "CharArray",
+  "body": "@Test\n    void testAppendln_CharArray() {\n        final TextStringBuilder sb = spy(new TextStringBuilder());\n        final char[] input = \"foo\".toCharArray();\n        sb.appendln(input);\n\n        assertEquals(\"foo\" + SEP, sb.toString());\n\n        verify(sb, times(1)).append(input);\n        verify(sb, times(1)).appendNewLine();\n    }",
+  "invocations": [
+    "TextStringBuilder",
+    "TextStringBuilder",
+    "appendln",
+    "toString"
+  ],
+  "signature": {
+    "org.apache.commons.text.TextStringBuilder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder.appendln(char[])": {
+      "params_len": 1,
+      "params": [
+        "char[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.TextStringBuilder.toString()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.TextStringBuilder.appendln(char[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.TextStringBuilder.appendln(char[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 608,
+      "class_name": "org.apache.commons.text.TextStringBuilder",
+      "method_name": "appendln",
+      "signature": "org.apache.commons.text.TextStringBuilder.appendln(char[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

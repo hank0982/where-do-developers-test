@@ -1,0 +1,221 @@
+{
+  "id": "1140",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.renderer.xy.XYDotRendererTest_testGetLegendItemSeriesIndex_05c58ff8",
+  "test_path": "org/jfree/chart/renderer/xy/XYDotRendererTest",
+  "test_name": "testGetLegendItemSeriesIndex",
+  "body": "@Test\n    public void testGetLegendItemSeriesIndex() {\n        XYSeriesCollection<String> d1 = new XYSeriesCollection<>();\n        XYSeries<String> s1 = new XYSeries<>(\"S1\");\n        s1.add(1.0, 1.1);\n        XYSeries<String> s2 = new XYSeries<>(\"S2\");\n        s2.add(1.0, 1.1);\n        d1.addSeries(s1);\n        d1.addSeries(s2);\n\n        XYSeriesCollection<String> d2 = new XYSeriesCollection<>();\n        XYSeries<String> s3 = new XYSeries<>(\"S3\");\n        s3.add(1.0, 1.1);\n        XYSeries<String> s4 = new XYSeries<>(\"S4\");\n        s4.add(1.0, 1.1);\n        XYSeries<String> s5 = new XYSeries<>(\"S5\");\n        s5.add(1.0, 1.1);\n        d2.addSeries(s3);\n        d2.addSeries(s4);\n        d2.addSeries(s5);\n\n        XYDotRenderer r = new XYDotRenderer();\n        XYPlot<String> plot = new XYPlot<>(d1, new NumberAxis(\"x\"),\n                new NumberAxis(\"y\"), r);\n        plot.setDataset(1, d2);\n        /*JFreeChart chart =*/ new JFreeChart(plot);\n        LegendItem li = r.getLegendItem(1, 2);\n        assertEquals(\"S5\", li.getLabel());\n        assertEquals(1, li.getDatasetIndex());\n        assertEquals(2, li.getSeriesIndex());\n    }",
+  "invocations": [
+    "Series",
+    "AbstractXYDataset",
+    "XYSeriesCollection",
+    "XYSeriesCollection",
+    "addSeries",
+    "AbstractIntervalXYDataset",
+    "add",
+    "XYSeries",
+    "AbstractSeriesDataset",
+    "AbstractDataset",
+    "XYDotRenderer",
+    "getLegendItem",
+    "AbstractXYItemRenderer",
+    "AbstractRenderer",
+    "XYPlot",
+    "setDataset",
+    "Plot",
+    "JFreeChart",
+    "JFreeChart",
+    "getSeriesIndex",
+    "getLabel",
+    "getDatasetIndex",
+    "Axis",
+    "ValueAxis",
+    "NumberAxis",
+    "createStandardTickUnits"
+  ],
+  "signature": {
+    "org.jfree.data.general.Series(K)": {
+      "params_len": 1,
+      "params": [
+        "K"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.AbstractXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.XYSeriesCollection()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.XYSeriesCollection(org.jfree.data.xy.XYSeries<S>)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.xy.XYSeries<S>"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.XYSeriesCollection.addSeries(org.jfree.data.xy.XYSeries<S>)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.data.xy.XYSeries<S>"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.AbstractIntervalXYDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.XYSeries.add(double, double)": {
+      "params_len": 2,
+      "params": [
+        "double",
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.xy.XYSeries(K, boolean, boolean)": {
+      "params_len": 3,
+      "params": [
+        "K",
+        "boolean",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractSeriesDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.data.general.AbstractDataset()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYDotRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.XYDotRenderer.getLegendItem(int, int)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.xy.AbstractXYItemRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.renderer.AbstractRenderer()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.XYPlot(org.jfree.data.xy.XYDataset<S>, org.jfree.chart.axis.ValueAxis, org.jfree.chart.axis.ValueAxis, org.jfree.chart.renderer.xy.XYItemRenderer)": {
+      "params_len": 4,
+      "params": [
+        "org.jfree.data.xy.XYDataset<S>",
+        "org.jfree.chart.axis.ValueAxis",
+        "org.jfree.chart.axis.ValueAxis",
+        "org.jfree.chart.renderer.xy.XYItemRenderer"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.XYPlot.setDataset(int, org.jfree.data.xy.XYDataset<S>)": {
+      "params_len": 2,
+      "params": [
+        "int",
+        "org.jfree.data.xy.XYDataset<S>"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.plot.Plot()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart(java.lang.String, java.awt.Font, org.jfree.chart.plot.Plot, boolean)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.awt.Font",
+        "org.jfree.chart.plot.Plot",
+        "boolean"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.JFreeChart(org.jfree.chart.plot.Plot)": {
+      "params_len": 1,
+      "params": [
+        "org.jfree.chart.plot.Plot"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.legend.LegendItem.getSeriesIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.legend.LegendItem.getLabel()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.legend.LegendItem.getDatasetIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.Axis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.ValueAxis(java.lang.String, org.jfree.chart.axis.TickUnitSource)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "org.jfree.chart.axis.TickUnitSource"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.NumberAxis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.axis.NumberAxis.createStandardTickUnits()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.renderer.xy.XYDotRenderer.getLegendItem(int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.renderer.xy.XYDotRenderer.getLegendItem(int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3442,
+      "class_name": "org.jfree.chart.renderer.xy.XYDotRenderer",
+      "method_name": "getLegendItem",
+      "signature": "org.jfree.chart.renderer.xy.XYDotRenderer.getLegendItem(int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

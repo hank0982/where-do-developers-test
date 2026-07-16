@@ -1,0 +1,39 @@
+{
+  "id": "3005",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.random.HaltonSequenceGeneratorTest_test3DReference_42a69408",
+  "test_path": "org/apache/commons/math4/legacy/random/HaltonSequenceGeneratorTest",
+  "test_name": "test3DReference",
+  "body": "@Test\n    public void test3DReference() {\n        for (int i = 0; i < referenceValues.length; i++) {\n            double[] result = generator.get();\n            Assert.assertArrayEquals(referenceValues[i], result, 1e-3);\n            Assert.assertEquals(i + 1, generator.getNextIndex());\n        }\n    }",
+  "invocations": [
+    "get",
+    "getNextIndex"
+  ],
+  "signature": {
+    "org.apache.commons.math4.legacy.random.HaltonSequenceGenerator.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.random.HaltonSequenceGenerator.getNextIndex()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.random.HaltonSequenceGenerator.get()"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.random.HaltonSequenceGenerator.get()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2749,
+      "class_name": "org.apache.commons.math4.legacy.random.HaltonSequenceGenerator",
+      "method_name": "get",
+      "signature": "org.apache.commons.math4.legacy.random.HaltonSequenceGenerator.get()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

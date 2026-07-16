@@ -1,0 +1,52 @@
+{
+  "id": "1212",
+  "project": "commons-dbcp",
+  "current_db_test_name": "org.apache.commons.dbcp2.datasources.TestPerUserPoolDataSource_testPerUserMinEvictableIdleTimeMillisWithUserMapNotInitialized_d46b1fff",
+  "test_path": "org/apache/commons/dbcp2/datasources/TestPerUserPoolDataSource",
+  "test_name": "testPerUserMinEvictableIdleTimeMillisWithUserMapNotInitialized",
+  "body": "@Test\n    void testPerUserMinEvictableIdleTimeMillisWithUserMapNotInitialized() {\n        final PerUserPoolDataSource ds = (PerUserPoolDataSource) this.ds;\n        ds.setPerUserMinEvictableIdleTimeMillis(user, 0L);\n        assertEquals(0L, ds.getPerUserMinEvictableIdleTimeMillis(user));\n    }",
+  "invocations": [
+    "setPerUserMinEvictableIdleTimeMillis",
+    "getPerUserMinEvictableIdleTimeMillis"
+  ],
+  "signature": {
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.setPerUserMinEvictableIdleTimeMillis(java.lang.String, java.lang.Long)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.Long"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.getPerUserMinEvictableIdleTimeMillis(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.setPerUserMinEvictableIdleTimeMillis(java.lang.String, java.lang.Long)",
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.getPerUserMinEvictableIdleTimeMillis(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.setPerUserMinEvictableIdleTimeMillis(java.lang.String, java.lang.Long)",
+    "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.getPerUserMinEvictableIdleTimeMillis(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 204,
+      "class_name": "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource",
+      "method_name": "setPerUserMinEvictableIdleTimeMillis",
+      "signature": "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.setPerUserMinEvictableIdleTimeMillis(java.lang.String, java.lang.Long)"
+    },
+    {
+      "method_id": 214,
+      "class_name": "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource",
+      "method_name": "getPerUserMinEvictableIdleTimeMillis",
+      "signature": "org.apache.commons.dbcp2.datasources.PerUserPoolDataSource.getPerUserMinEvictableIdleTimeMillis(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

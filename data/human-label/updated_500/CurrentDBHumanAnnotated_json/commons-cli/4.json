@@ -1,0 +1,135 @@
+{
+  "id": "4",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.ApplicationTest_testLs_bba1ec7a",
+  "test_path": "org/apache/commons/cli/ApplicationTest",
+  "test_name": "testLs",
+  "body": "@Test\n    void testLs() throws Exception {\n        // create the command line parser\n        final CommandLineParser parser = new PosixParser();\n        final Options options = new Options();\n        options.addOption(\"a\", \"all\", false, \"do not hide entries starting with .\");\n        options.addOption(\"A\", \"almost-all\", false, \"do not list implied . and ..\");\n        options.addOption(\"b\", \"escape\", false, \"print octal escapes for nongraphic characters\");\n        //@formatter:off\n        options.addOption(OptionBuilder.withLongOpt(\"block-size\")\n                                        .withDescription(\"use SIZE-byte blocks\")\n                                        .hasArg()\n                                        .withArgName(\"SIZE\")\n                                        .create());\n        //@formatter:on\n        options.addOption(\"B\", \"ignore-backups\", false, \"do not list implied entried ending with ~\");\n        options.addOption(\"c\", false, \"with -lt: sort by, and show, ctime (time of last modification of file status information) with \"\n            + \"-l:show ctime and sort by name otherwise: sort by ctime\");\n        options.addOption(\"C\", false, \"list entries by columns\");\n\n        final String[] args = {\"--block-size=10\"};\n\n        final CommandLine line = parser.parse(options, args);\n        assertTrue(line.hasOption(\"block-size\"));\n        assertEquals(line.getOptionValue(\"block-size\"), \"10\");\n    }",
+  "invocations": [
+    "PosixParser",
+    "addOption",
+    "addOption",
+    "Options",
+    "addOption",
+    "Parser",
+    "parse",
+    "withArgName",
+    "withLongOpt",
+    "create",
+    "withDescription",
+    "hasArg",
+    "getOptionValue",
+    "hasOption"
+  ],
+  "signature": {
+    "org.apache.commons.cli.PosixParser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options.addOption(org.apache.commons.cli.Option)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.cli.Option"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options.addOption(java.lang.String, java.lang.String, boolean, java.lang.String)": {
+      "params_len": 4,
+      "params": [
+        "java.lang.String",
+        "java.lang.String",
+        "boolean",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Options.addOption(java.lang.String, boolean, java.lang.String)": {
+      "params_len": 3,
+      "params": [
+        "java.lang.String",
+        "boolean",
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "org.apache.commons.cli.Options",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withArgName(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withLongOpt(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.create()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.withDescription(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.OptionBuilder.hasArg()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.getOptionValue(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.CommandLine.hasOption(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 282,
+      "class_name": "org.apache.commons.cli.Parser",
+      "method_name": "parse",
+      "signature": "org.apache.commons.cli.Parser.parse(org.apache.commons.cli.Options, java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "14",
+  "project": "gson",
+  "current_db_test_name": "com.google.gson.FieldAttributesTest_testModifiers_10fd8a7f",
+  "test_path": "com/google/gson/FieldAttributesTest",
+  "test_name": "testModifiers",
+  "body": "@Test\n  public void testModifiers() {\n    assertThat(fieldAttributes.hasModifier(Modifier.STATIC)).isFalse();\n    assertThat(fieldAttributes.hasModifier(Modifier.FINAL)).isFalse();\n    assertThat(fieldAttributes.hasModifier(Modifier.ABSTRACT)).isFalse();\n    assertThat(fieldAttributes.hasModifier(Modifier.VOLATILE)).isFalse();\n    assertThat(fieldAttributes.hasModifier(Modifier.PROTECTED)).isFalse();\n\n    assertThat(fieldAttributes.hasModifier(Modifier.PUBLIC)).isTrue();\n    assertThat(fieldAttributes.hasModifier(Modifier.TRANSIENT)).isTrue();\n  }",
+  "invocations": [
+    "hasModifier"
+  ],
+  "signature": {
+    "com.google.gson.FieldAttributes.hasModifier(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "com.google.gson.FieldAttributes.hasModifier(int)"
+  ],
+  "current_db_human_annotation": [
+    "com.google.gson.FieldAttributes.hasModifier(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 198,
+      "class_name": "com.google.gson.FieldAttributes",
+      "method_name": "hasModifier",
+      "signature": "com.google.gson.FieldAttributes.hasModifier(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

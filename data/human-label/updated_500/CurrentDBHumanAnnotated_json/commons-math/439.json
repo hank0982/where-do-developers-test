@@ -1,0 +1,57 @@
+{
+  "id": "439",
+  "project": "commons-math",
+  "current_db_test_name": "org.apache.commons.math4.legacy.analysis.integration.gauss.HermiteParametricTest_testAllMonomials_ec4bca18",
+  "test_path": "org/apache/commons/math4/legacy/analysis/integration/gauss/HermiteParametricTest",
+  "test_name": "testAllMonomials",
+  "body": "@Test\n    public void testAllMonomials() {\n        for (int n = 0; n <= maxDegree; n++) {\n            final double expected = getExpectedValue(n);\n\n            final Power monomial = new Power(n);\n            final double actual = integrator.integrate(monomial);\n\n            // System.out.println(n + \"/\" + maxDegree + \" \" + integrator.getNumberOfPoints()\n            //                    + \" \" + expected + \" \" + actual + \" \" + Math.ulp(expected));\n            if (expected == 0) {\n                Assert.assertEquals(\"while integrating monomial x**\" + n +\n                                    \" with a \" +\n                                    integrator.getNumberOfPoints() + \"-point quadrature rule\",\n                                    expected, actual, eps);\n            } else {\n                double err = JdkMath.abs(actual - expected) / Math.ulp(expected);\n                Assert.assertEquals(\"while integrating monomial x**\" + n + \" with a \" +\n                                    + integrator.getNumberOfPoints() + \"-point quadrature rule, \" +\n                                    \" error was \" + err + \" ulps\",\n                                    expected, actual, Math.ulp(expected) * numUlps);\n            }\n        }\n    }",
+  "invocations": [
+    "abs",
+    "getNumberOfPoints",
+    "integrate",
+    "Power"
+  ],
+  "signature": {
+    "org.apache.commons.math4.core.jdkmath.JdkMath.abs(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.gauss.GaussIntegrator.getNumberOfPoints()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.integration.gauss.SymmetricGaussIntegrator.integrate(org.apache.commons.math4.legacy.analysis.UnivariateFunction)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.math4.legacy.analysis.UnivariateFunction"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.math4.legacy.analysis.function.Power(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.math4.legacy.analysis.integration.gauss.SymmetricGaussIntegrator.integrate(org.apache.commons.math4.legacy.analysis.UnivariateFunction)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.math4.legacy.analysis.integration.gauss.SymmetricGaussIntegrator.integrate(org.apache.commons.math4.legacy.analysis.UnivariateFunction)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 3938,
+      "class_name": "org.apache.commons.math4.legacy.analysis.integration.gauss.SymmetricGaussIntegrator",
+      "method_name": "integrate",
+      "signature": "org.apache.commons.math4.legacy.analysis.integration.gauss.SymmetricGaussIntegrator.integrate(org.apache.commons.math4.legacy.analysis.UnivariateFunction)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

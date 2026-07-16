@@ -1,0 +1,44 @@
+{
+  "id": "1384",
+  "project": "commons-text",
+  "current_db_test_name": "org.apache.commons.text.similarity.DamerauLevenshteinDistanceTest_testCalculateDamerauLevenshteinDistance_eb5dd5ff",
+  "test_path": "org/apache/commons/text/similarity/DamerauLevenshteinDistanceTest",
+  "test_name": "testCalculateDamerauLevenshteinDistance",
+  "body": "@ParameterizedTest(name = \"DamerauLevenshteinDistance.unlimitedCompare(\\\"{0}\\\", \\\"{1}\\\") should return {2}\")",
+  "invocations": [
+    "DamerauLevenshteinDistance",
+    "apply"
+  ],
+  "signature": {
+    "org.apache.commons.text.similarity.DamerauLevenshteinDistance(java.lang.Integer)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Integer"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(java.lang.CharSequence, java.lang.CharSequence)": {
+      "params_len": 2,
+      "params": [
+        "java.lang.CharSequence",
+        "java.lang.CharSequence"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(java.lang.CharSequence, java.lang.CharSequence)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(java.lang.CharSequence, java.lang.CharSequence)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 700,
+      "class_name": "org.apache.commons.text.similarity.DamerauLevenshteinDistance",
+      "method_name": "apply",
+      "signature": "org.apache.commons.text.similarity.DamerauLevenshteinDistance.apply(java.lang.CharSequence, java.lang.CharSequence)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

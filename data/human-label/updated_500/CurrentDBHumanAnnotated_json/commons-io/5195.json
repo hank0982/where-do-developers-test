@@ -1,0 +1,41 @@
+{
+  "id": "5195",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.output.AppendableOutputStreamTest_testWriteStringBuilder_5384fe9e",
+  "test_path": "org/apache/commons/io/output/AppendableOutputStreamTest",
+  "test_name": "testWriteStringBuilder",
+  "body": "@Test\n    void testWriteStringBuilder() throws Exception {\n        final String testData = \"ABCD\";\n\n        out.write(testData.getBytes());\n\n        assertEquals(testData, out.getAppendable().toString());\n    }",
+  "invocations": [
+    "getAppendable",
+    "write"
+  ],
+  "signature": {
+    "org.apache.commons.io.output.AppendableOutputStream.getAppendable()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.output.AppendableOutputStream.write(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.output.AppendableOutputStream.write(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.output.AppendableOutputStream.write(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 681,
+      "class_name": "org.apache.commons.io.output.AppendableOutputStream",
+      "method_name": "write",
+      "signature": "org.apache.commons.io.output.AppendableOutputStream.write(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

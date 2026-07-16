@@ -1,0 +1,176 @@
+{
+  "id": "2256",
+  "project": "dyn4j",
+  "current_db_test_name": "org.dyn4j.world.AbstractCollisionWorldTest_removeBody_4172c446",
+  "test_path": "org/dyn4j/world/AbstractCollisionWorldTest",
+  "test_name": "removeBody",
+  "body": "@Test\n\tpublic void removeBody() {\n\t\tTestWorld w = new TestWorld();\n\t\t\n\t\t// setup the bodies\n\t\tConvex c1 = Geometry.createCircle(1.0);\n\t\tConvex c2 = Geometry.createEquilateralTriangle(0.5);\n\t\tBody b1 = new Body(); b1.addFixture(c1); b1.setMass(MassType.NORMAL);\n\t\tBody b2 = new Body(); b2.addFixture(c2); b2.setMass(MassType.NORMAL);\n\t\t\n\t\t// add them to the world\n\t\tw.addBody(b1);\n\t\tw.addBody(b2);\n\t\t\n\t\tw.detect();\n\t\t\n\t\t// test removing a null body\n\t\tTestCase.assertFalse(w.removeBody((Body) null));\n\t\t\n\t\t// test removing a body not in the list\n\t\tTestCase.assertFalse(w.removeBody(new Body()));\n\t\t\n\t\tTestCase.assertTrue(w.removeBody(b1));\n\t\t\n\t\tTestCase.assertNull(b1.getOwner());\n\t\tTestCase.assertNull(b1.getFixtureModificationHandler());\n\t\tTestCase.assertNotNull(b2.getOwner());\n\t\tTestCase.assertNotNull(b2.getFixtureModificationHandler());\n\t\tTestCase.assertEquals(1, w.bodies.size());\n\t\t\n\t\tTestCase.assertFalse(w.broadphaseDetector.contains(b1));\n\t\tTestCase.assertFalse(w.broadphaseDetector.contains(b1, b1.getFixture(0)));\n\t\tTestCase.assertTrue(w.broadphaseDetector.contains(b2));\n\t\tTestCase.assertTrue(w.broadphaseDetector.contains(b2, b2.getFixture(0)));\n\t\t\n\t\t// NOTE: collision data will be removed in the next iteration\n\t\tTestCase.assertEquals(1, w.collisionData.size());\n\t\t\n\t\tw.detect();\n\t\t\n\t\t// it should be removed now\n\t\tTestCase.assertEquals(0, w.collisionData.size());\n\t\t\n\t\tTestCase.assertTrue(w.removeBody(0));\n\t\tTestCase.assertNull(b2.getOwner());\n\t\tTestCase.assertNull(b2.getFixtureModificationHandler());\n\t\tTestCase.assertEquals(0, w.bodies.size());\n\t\t\n\t\tTestCase.assertFalse(w.broadphaseDetector.contains(b2));\n\t\tTestCase.assertFalse(w.broadphaseDetector.contains(b2, b2.getFixture(0)));\n\t}",
+  "invocations": [
+    "AbstractPhysicsBody",
+    "setMass",
+    "addFixture",
+    "AbstractPhysicsBody",
+    "Body",
+    "getOwner",
+    "getFixture",
+    "AbstractCollisionBody",
+    "getFixtureModificationHandler",
+    "contains",
+    "contains",
+    "createEquilateralTriangle",
+    "createCircle",
+    "AbstractCollisionWorld",
+    "AbstractCollisionWorld",
+    "removeBody",
+    "detect",
+    "addBody",
+    "removeBody"
+  ],
+  "signature": {
+    "org.dyn4j.dynamics.AbstractPhysicsBody()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.AbstractPhysicsBody.setMass(org.dyn4j.geometry.MassType)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.MassType"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.AbstractPhysicsBody.addFixture(org.dyn4j.geometry.Convex)": {
+      "params_len": 1,
+      "params": [
+        "org.dyn4j.geometry.Convex"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.AbstractPhysicsBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.dynamics.Body()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody.getOwner()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody.getFixture(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.AbstractCollisionBody.getFixtureModificationHandler()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.contains(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.collision.broadphase.CollisionItemBroadphaseDetectorAdapter.contains(T, E)": {
+      "params_len": 2,
+      "params": [
+        "T",
+        "E"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createEquilateralTriangle(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.geometry.Geometry.createCircle(double)": {
+      "params_len": 1,
+      "params": [
+        "double"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld.detect()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld.addBody(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(T)",
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)"
+  ],
+  "current_db_human_annotation": [
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(T)",
+    "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2769,
+      "class_name": "org.dyn4j.world.AbstractCollisionWorld",
+      "method_name": "removeBody",
+      "signature": "org.dyn4j.world.AbstractCollisionWorld.removeBody(T)"
+    },
+    {
+      "method_id": 2790,
+      "class_name": "org.dyn4j.world.AbstractCollisionWorld",
+      "method_name": "removeBody",
+      "signature": "org.dyn4j.world.AbstractCollisionWorld.removeBody(int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

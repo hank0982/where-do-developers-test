@@ -1,0 +1,36 @@
+{
+  "id": "350",
+  "project": "commons-net",
+  "current_db_test_name": "org.apache.commons.net.telnet.SimpleOptionHandlerTest_testAnswerSubnegotiation_28bd1572",
+  "test_path": "org/apache/commons/net/telnet/SimpleOptionHandlerTest",
+  "test_name": "testAnswerSubnegotiation",
+  "body": "@Test\n    public void testAnswerSubnegotiation() {\n        final int[] subn = { TelnetCommand.IAC, TelnetCommand.SB, 4, 1, TelnetCommand.IAC, TelnetCommand.SE, };\n\n        final int[] resp1 = opthand1.answerSubnegotiation(subn, subn.length);\n\n        assertNull(resp1);\n    }",
+  "invocations": [
+    "answerSubnegotiation"
+  ],
+  "signature": {
+    "org.apache.commons.net.telnet.TelnetOptionHandler.answerSubnegotiation(int[], int)": {
+      "params_len": 2,
+      "params": [
+        "int[]",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.net.telnet.TelnetOptionHandler.answerSubnegotiation(int[], int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.net.telnet.TelnetOptionHandler.answerSubnegotiation(int[], int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 870,
+      "class_name": "org.apache.commons.net.telnet.TelnetOptionHandler",
+      "method_name": "answerSubnegotiation",
+      "signature": "org.apache.commons.net.telnet.TelnetOptionHandler.answerSubnegotiation(int[], int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

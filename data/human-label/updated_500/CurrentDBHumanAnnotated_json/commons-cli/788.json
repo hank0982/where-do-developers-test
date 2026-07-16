@@ -1,0 +1,71 @@
+{
+  "id": "788",
+  "project": "commons-cli",
+  "current_db_test_name": "org.apache.commons.cli.help.HelpFormatterTest_testToArgNameTest_cbd7a0c7",
+  "test_path": "org/apache/commons/cli/help/HelpFormatterTest",
+  "test_name": "testToArgNameTest",
+  "body": "@Test\n    void testToArgNameTest() {\n        final StringBuilder sb = new StringBuilder();\n        final TextHelpAppendable serializer = new TextHelpAppendable(sb);\n        final HelpFormatter formatter = HelpFormatter.builder().setHelpAppendable(serializer).get();\n\n        assertEquals(\"<some Arg>\", formatter.toArgName(\"some Arg\"));\n        assertEquals(\"<>\", formatter.toArgName(\"\"));\n        assertEquals(\"<>\", formatter.toArgName(null));\n    }",
+  "invocations": [
+    "TextHelpAppendable",
+    "FilterHelpAppendable",
+    "setHelpAppendable",
+    "toArgName",
+    "builder",
+    "get"
+  ],
+  "signature": {
+    "org.apache.commons.cli.help.TextHelpAppendable(java.lang.Appendable)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Appendable"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.FilterHelpAppendable(java.lang.Appendable)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Appendable"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.AbstractHelpFormatter$Builder.setHelpAppendable(org.apache.commons.cli.help.HelpAppendable)": {
+      "params_len": 1,
+      "params": [
+        "org.apache.commons.cli.help.HelpAppendable"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.AbstractHelpFormatter.toArgName(java.lang.String)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.String"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.HelpFormatter.builder()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.cli.help.HelpFormatter$Builder.get()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.cli.help.AbstractHelpFormatter.toArgName(java.lang.String)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.cli.help.AbstractHelpFormatter.toArgName(java.lang.String)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 155,
+      "class_name": "org.apache.commons.cli.help.AbstractHelpFormatter",
+      "method_name": "toArgName",
+      "signature": "org.apache.commons.cli.help.AbstractHelpFormatter.toArgName(java.lang.String)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

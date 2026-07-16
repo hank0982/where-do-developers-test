@@ -1,0 +1,36 @@
+{
+  "id": "290",
+  "project": "joda-money",
+  "current_db_test_name": "org.joda.money.TestBigMoney_test_plusRetainScale_BigDecimalRoundingMode_zero_66cd689f",
+  "test_path": "org/joda/money/TestBigMoney_test_plusRetainScale_BigDecimalRoundingMode",
+  "test_name": "zero",
+  "body": "@Test\n    void test_plusRetainScale_BigDecimalRoundingMode_zero() {\n        var test = GBP_2_34.plusRetainScale(BigDecimal.ZERO, RoundingMode.UNNECESSARY);\n        assertThat(test).isSameAs(GBP_2_34);\n    }",
+  "invocations": [
+    "plusRetainScale"
+  ],
+  "signature": {
+    "org.joda.money.BigMoney.plusRetainScale(java.math.BigDecimal, java.math.RoundingMode)": {
+      "params_len": 2,
+      "params": [
+        "java.math.BigDecimal",
+        "java.math.RoundingMode"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.joda.money.BigMoney.plusRetainScale(java.math.BigDecimal, java.math.RoundingMode)"
+  ],
+  "current_db_human_annotation": [
+    "org.joda.money.BigMoney.plusRetainScale(java.math.BigDecimal, java.math.RoundingMode)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 267,
+      "class_name": "org.joda.money.BigMoney",
+      "method_name": "plusRetainScale",
+      "signature": "org.joda.money.BigMoney.plusRetainScale(java.math.BigDecimal, java.math.RoundingMode)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

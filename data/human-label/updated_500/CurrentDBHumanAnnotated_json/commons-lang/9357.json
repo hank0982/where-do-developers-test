@@ -1,0 +1,36 @@
+{
+  "id": "9357",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.time.DateUtilsTest_testLANG799_DE_FAIL_0cfacff5",
+  "test_path": "org/apache/commons/lang3/time/DateUtilsTest_testLANG799_DE",
+  "test_name": "FAIL",
+  "body": "@DefaultLocale(language = \"de\")\n    @Test\n    void testLANG799_DE_FAIL() {\n        assertThrows(ParseException.class, () -> DateUtils.parseDate(\"Wed, 09 Apr 2008 23:55:38 GMT\", \"EEE, dd MMM yyyy HH:mm:ss zzz\"));\n    }",
+  "invocations": [
+    "parseDate"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.time.DateUtils.parseDate(java.lang.String, java.lang.String[])": {
+      "params_len": 2,
+      "params": [
+        "java.lang.String",
+        "java.lang.String[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.time.DateUtils.parseDate(java.lang.String, java.lang.String[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.time.DateUtils.parseDate(java.lang.String, java.lang.String[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2867,
+      "class_name": "org.apache.commons.lang3.time.DateUtils",
+      "method_name": "parseDate",
+      "signature": "org.apache.commons.lang3.time.DateUtils.parseDate(java.lang.String, java.lang.String[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

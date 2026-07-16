@@ -1,0 +1,87 @@
+{
+  "id": "4195",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.input.CountingInputStreamTest_testResetting_e2572e8c",
+  "test_path": "org/apache/commons/io/input/CountingInputStreamTest",
+  "test_name": "testResetting",
+  "body": "@Test\n    void testResetting() throws Exception {\n        final String text = \"A piece of text\";\n        final byte[] bytes = text.getBytes();\n        final ByteArrayInputStream bais = new ByteArrayInputStream(bytes);\n        try (CountingInputStream cis = new CountingInputStream(bais)) {\n\n            final byte[] result = new byte[bytes.length];\n\n            int found = cis.read(result, 0, 5);\n            assertEquals(found, cis.getCount());\n\n            final int count = cis.resetCount();\n            found = cis.read(result, 6, 5);\n            assertEquals(found, count);\n        }\n    }",
+  "invocations": [
+    "getCount",
+    "CountingInputStream",
+    "resetCount",
+    "close",
+    "ProxyInputStream",
+    "read"
+  ],
+  "signature": {
+    "org.apache.commons.io.input.CountingInputStream.getCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CountingInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.CountingInputStream.resetCount()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.close()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream(java.io.InputStream)": {
+      "params_len": 1,
+      "params": [
+        "java.io.InputStream"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.input.ProxyInputStream.read(byte[], int, int)": {
+      "params_len": 3,
+      "params": [
+        "byte[]",
+        "int",
+        "int"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.input.CountingInputStream.getCount()",
+    "org.apache.commons.io.input.CountingInputStream.resetCount()",
+    "org.apache.commons.io.input.ProxyInputStream.read(byte[], int, int)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.input.CountingInputStream.getCount()",
+    "org.apache.commons.io.input.CountingInputStream.resetCount()",
+    "org.apache.commons.io.input.ProxyInputStream.read(byte[], int, int)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1648,
+      "class_name": "org.apache.commons.io.input.CountingInputStream",
+      "method_name": "getCount",
+      "signature": "org.apache.commons.io.input.CountingInputStream.getCount()"
+    },
+    {
+      "method_id": 1650,
+      "class_name": "org.apache.commons.io.input.CountingInputStream",
+      "method_name": "resetCount",
+      "signature": "org.apache.commons.io.input.CountingInputStream.resetCount()"
+    },
+    {
+      "method_id": 1777,
+      "class_name": "org.apache.commons.io.input.ProxyInputStream",
+      "method_name": "read",
+      "signature": "org.apache.commons.io.input.ProxyInputStream.read(byte[], int, int)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

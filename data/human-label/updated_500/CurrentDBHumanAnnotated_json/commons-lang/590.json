@@ -1,0 +1,35 @@
+{
+  "id": "590",
+  "project": "commons-lang",
+  "current_db_test_name": "org.apache.commons.lang3.BooleanUtilsTest_testOneHot_primitive_nullInput_68f1dee6",
+  "test_path": "org/apache/commons/lang3/BooleanUtilsTest_testOneHot_primitive",
+  "test_name": "nullInput",
+  "body": "@Test\n    void testOneHot_primitive_nullInput() {\n        assertNullPointerException(() -> BooleanUtils.oneHot((boolean[]) null));\n    }",
+  "invocations": [
+    "oneHot"
+  ],
+  "signature": {
+    "org.apache.commons.lang3.BooleanUtils.oneHot(boolean[])": {
+      "params_len": 1,
+      "params": [
+        "boolean[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.lang3.BooleanUtils.oneHot(boolean[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.lang3.BooleanUtils.oneHot(boolean[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1135,
+      "class_name": "org.apache.commons.lang3.BooleanUtils",
+      "method_name": "oneHot",
+      "signature": "org.apache.commons.lang3.BooleanUtils.oneHot(boolean[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

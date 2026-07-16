@@ -1,0 +1,37 @@
+{
+  "id": "2744",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.file.PathUtilsTest_testCopyDirectoryForDifferentFilesystemsWithRelativePathReverse_7a37b29a",
+  "test_path": "org/apache/commons/io/file/PathUtilsTest",
+  "test_name": "testCopyDirectoryForDifferentFilesystemsWithRelativePathReverse",
+  "body": "@Test\n    void testCopyDirectoryForDifferentFilesystemsWithRelativePathReverse() throws IOException {\n        try (FileSystem archive = openArchive(tempDirPath.resolve(TEST_JAR_NAME), true)) {\n            // relative dir -> relative jar\n            Path targetDir = archive.getPath(\"target\");\n            Files.createDirectory(targetDir);\n            final Path sourceDir = Paths.get(\"src/test/resources/org/apache/commons/io/dirs-2-file-size-2\");\n            PathUtils.copyDirectory(sourceDir, targetDir);\n            assertTrue(Files.exists(targetDir.resolve(\"dirs-a-file-size-1\")));\n\n            // relative dir -> absolute jar\n            targetDir = archive.getPath(\"/\");\n            PathUtils.copyDirectory(sourceDir, targetDir);\n            assertTrue(Files.exists(targetDir.resolve(\"dirs-a-file-size-1\")));\n        }\n    }",
+  "invocations": [
+    "copyDirectory"
+  ],
+  "signature": {
+    "org.apache.commons.io.file.PathUtils.copyDirectory(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])": {
+      "params_len": 3,
+      "params": [
+        "java.nio.file.Path",
+        "java.nio.file.Path",
+        "java.nio.file.CopyOption[]"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.file.PathUtils.copyDirectory(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.file.PathUtils.copyDirectory(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 1103,
+      "class_name": "org.apache.commons.io.file.PathUtils",
+      "method_name": "copyDirectory",
+      "signature": "org.apache.commons.io.file.PathUtils.copyDirectory(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption[])"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "1012",
+  "project": "commons-io",
+  "current_db_test_name": "org.apache.commons.io.DirectoryWalkerTest_testMissingStartDirectory_e40cb700",
+  "test_path": "org/apache/commons/io/DirectoryWalkerTest",
+  "test_name": "testMissingStartDirectory",
+  "body": "@Test\n    void testMissingStartDirectory() {\n\n        // TODO is this what we want with invalid directory?\n        final File invalidDir = new File(\"invalid-dir\");\n        final List<File> results = new TestFileFinder(null, -1).find(invalidDir);\n        assertEquals(1, results.size(), \"Result Size\");\n        assertTrue(results.contains(invalidDir), \"Current Dir\");\n\n        assertThrows(NullPointerException.class, () -> new TestFileFinder(null, -1).find(null));\n    }",
+  "invocations": [
+    "DirectoryWalker",
+    "walk"
+  ],
+  "signature": {
+    "org.apache.commons.io.DirectoryWalker(java.io.FileFilter, int)": {
+      "params_len": 2,
+      "params": [
+        "java.io.FileFilter",
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)": {
+      "params_len": 2,
+      "params": [
+        "java.io.File",
+        "java.util.Collection<T>"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+  ],
+  "current_db_human_annotation": [
+    "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 2910,
+      "class_name": "org.apache.commons.io.DirectoryWalker",
+      "method_name": "walk",
+      "signature": "org.apache.commons.io.DirectoryWalker.walk(java.io.File, java.util.Collection<T>)"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}

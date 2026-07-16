@@ -1,0 +1,114 @@
+{
+  "id": "1225",
+  "project": "jfreechart",
+  "current_db_test_name": "org.jfree.chart.title.DateTitleTest_testCloning_02e4ace9",
+  "test_path": "org/jfree/chart/title/DateTitleTest",
+  "test_name": "testCloning",
+  "body": "@Test\n    public void testCloning() throws CloneNotSupportedException {\n        DateTitle t1 = new DateTitle();\n        DateTitle t2 = CloneUtils.clone(t1);\n        assertNotSame(t1, t2);\n        assertSame(t1.getClass(), t2.getClass());\n        assertEquals(t1, t2);\n    }",
+  "invocations": [
+    "AbstractBlock",
+    "clone",
+    "equals",
+    "TextTitle",
+    "Title",
+    "DateTitle",
+    "DateTitle",
+    "DateTitle",
+    "DateTitle"
+  ],
+  "signature": {
+    "org.jfree.chart.block.AbstractBlock()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.internal.CloneUtils.clone(T)": {
+      "params_len": 1,
+      "params": [
+        "T"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.title.TextTitle.equals(java.lang.Object)": {
+      "params_len": 1,
+      "params": [
+        "java.lang.Object"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.title.TextTitle(java.lang.String, java.awt.Font, java.awt.Paint, org.jfree.chart.api.RectangleEdge, org.jfree.chart.api.HorizontalAlignment, org.jfree.chart.api.VerticalAlignment, org.jfree.chart.api.RectangleInsets)": {
+      "params_len": 7,
+      "params": [
+        "java.lang.String",
+        "java.awt.Font",
+        "java.awt.Paint",
+        "org.jfree.chart.api.RectangleEdge",
+        "org.jfree.chart.api.HorizontalAlignment",
+        "org.jfree.chart.api.VerticalAlignment",
+        "org.jfree.chart.api.RectangleInsets"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.title.Title(org.jfree.chart.api.RectangleEdge, org.jfree.chart.api.HorizontalAlignment, org.jfree.chart.api.VerticalAlignment, org.jfree.chart.api.RectangleInsets)": {
+      "params_len": 4,
+      "params": [
+        "org.jfree.chart.api.RectangleEdge",
+        "org.jfree.chart.api.HorizontalAlignment",
+        "org.jfree.chart.api.VerticalAlignment",
+        "org.jfree.chart.api.RectangleInsets"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.title.DateTitle()": {
+      "params_len": 0,
+      "params": [],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.title.DateTitle(int, java.util.Locale, java.awt.Font, java.awt.Paint, org.jfree.chart.api.RectangleEdge, org.jfree.chart.api.HorizontalAlignment, org.jfree.chart.api.VerticalAlignment, org.jfree.chart.api.RectangleInsets)": {
+      "params_len": 8,
+      "params": [
+        "int",
+        "java.util.Locale",
+        "java.awt.Font",
+        "java.awt.Paint",
+        "org.jfree.chart.api.RectangleEdge",
+        "org.jfree.chart.api.HorizontalAlignment",
+        "org.jfree.chart.api.VerticalAlignment",
+        "org.jfree.chart.api.RectangleInsets"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.title.DateTitle(int)": {
+      "params_len": 1,
+      "params": [
+        "int"
+      ],
+      "detail_sigs": []
+    },
+    "org.jfree.chart.title.DateTitle(int, java.util.Locale, java.awt.Font, java.awt.Paint)": {
+      "params_len": 4,
+      "params": [
+        "int",
+        "java.util.Locale",
+        "java.awt.Font",
+        "java.awt.Paint"
+      ],
+      "detail_sigs": []
+    }
+  },
+  "label": [
+    "org.jfree.chart.title.TextTitle.clone()"
+  ],
+  "current_db_human_annotation": [
+    "org.jfree.chart.title.TextTitle.clone()"
+  ],
+  "current_db_human_annotation_details": [
+    {
+      "method_id": 7897,
+      "class_name": "org.jfree.chart.title.TextTitle",
+      "method_name": "clone",
+      "signature": "org.jfree.chart.title.TextTitle.clone()"
+    }
+  ],
+  "label_source": "annotated_level_zero_human"
+}
