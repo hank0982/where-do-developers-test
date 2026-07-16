@@ -62,6 +62,48 @@ The dynamic-analysis bundle is intentionally self-contained. In particular, `scr
 
 The top-level `data/` and `documentation/` directories are retained for packaging convenience, but the runnable artifacts for the current submission snapshot are under `src/replication_dynamic_analysis/`.
 
+## RQ1 Data
+
+The `data/` directory now includes the reviewer-facing RQ1 artifacts for ground truth construction, internal-validity checks, model-agreement analysis, and comparison against the prior method.
+
+### Human-Labeled Ground Truth
+
+The [`data/human-label/`](data/human-label/) directory contains the human-labeled gold data used for RQ1:
+
+- [`data/human-label/suggested_label_146.json`](data/human-label/suggested_label_146.json) stores the 146-case ground-truth file used for the prior comparison set.
+- [`data/human-label/updated_500/current_db_human_annotation_500.json`](data/human-label/updated_500/current_db_human_annotation_500.json) stores the updated 500-case ground-truth file.
+- [`data/human-label/updated_500/CurrentDBHumanAnnotated_json/`](data/human-label/updated_500/CurrentDBHumanAnnotated_json/) contains the project-level JSON package for the updated 500-case annotations.
+- [`data/human-label/label_difference_review_report.pdf`](data/human-label/label_difference_review_report.pdf) summarizes the reviewed differences between our updated labels and the previous labels.
+
+### Internal Validity
+
+The [`data/Internal_validity/`](data/Internal_validity/) directory contains the two annotator files and their comparison outputs:
+
+- [`data/Internal_validity/coder1.json`](data/Internal_validity/coder1.json)
+- [`data/Internal_validity/coder2.json`](data/Internal_validity/coder2.json)
+- [`data/Internal_validity/similarity_result.txt`](data/Internal_validity/similarity_result.txt)
+- [`data/Internal_validity/calculate_score.py`](data/Internal_validity/calculate_score.py)
+
+These files report the annotator differences used for the internal-validity discussion.
+
+### Model Agreement
+
+The [`data/RQ1-models-agreement/`](data/RQ1-models-agreement/) directory contains the scripts and copied model outputs used to measure agreement across the RQ1 annotation models. See [`data/RQ1-models-agreement/README.md`](data/RQ1-models-agreement/README.md) for reproduction details and expected agreement values.
+
+### Performance Against the Prior Method
+
+The [`data/RQ1-PerformanceAgainstPriorMethod/`](data/RQ1-PerformanceAgainstPriorMethod/) directory contains:
+
+- the `CallWalker` machine-annotation exports for both the 146-case and updated-500 comparisons
+- the copied `TestLinker` outputs used for the prior-method baseline
+- the scoring script that reproduces the paper table
+
+See [`data/RQ1-PerformanceAgainstPriorMethod/README.md`](data/RQ1-PerformanceAgainstPriorMethod/README.md) for the exact layout and rerun instructions.
+
+### Repository Size Note
+
+This repository does not include every runtime-generated artifact from the original experiments because the full database would exceed GitHub storage limits. The current package includes the outputs needed to inspect and reproduce the reported RQ1 comparisons, and the complete database will be released after paper acceptance.
+
 ## RQ2 and RQ3 Data
 
 The `data/RQ2and3/` directory contains the combined method-level export used for RQ2 and RQ3:
